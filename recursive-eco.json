@@ -1,0 +1,26 @@
+{
+  "_note": "Channel manifest for recursive.eco. This makes the repo self-describing: recursive.eco can 'import this repo as a channel' by reading this file from raw.githubusercontent.com/<owner>/<repo>/<branch>/recursive-eco.json. It declares the channel's identity (rendered as a channel-document, document_data.is_channel=true), where its grammars live, and who maintains it. Membership lives in `tools` (channel_slug). Modeled on recursive-tarot/recursive-eco.json and recursive-astrology/recursive-eco.json — the `grammars.paths` glob and `id_map` path are this repo's own (grammars/*/grammar.json, ids.json at root), matching astro's convention rather than tarot's tarot/_eco_ids.json. TODO before this is live: confirm the exact channel-import contract with someone who's actually run a recursive.eco channel import (this manifest is modeled on the sibling sites' shape, not verified against the importer code in this session).",
+  "schema_version": 1,
+  "channel": {
+    "slug": "iching",
+    "name": "The Recursive I Ching",
+    "type": "repo",
+    "icon": "☯",
+    "gradient": "from-red-50 to-orange-100 dark:from-red-950 dark:to-orange-900",
+    "description": "A public-domain library of the I Ching — the 64 hexagrams in full, a contemplative reading practice, and a cross-lens synthesis with Human Design gates, zodiac signs, and chakras. Bound to its GitHub repo.",
+    "landing_url": "https://iching.recursive.eco",
+    "hero": {
+      "title": "The Recursive I Ching",
+      "subtitle": "Read a hexagram to know yourself, not to be told your fate — the 64 changes, held as a mirror.",
+      "body_md": "The classical text in full, a contemplative reading practice built from it, and a cross-lens synthesis against Human Design gates, zodiac signs, and chakras. Built in the open and bound to its GitHub repo — fork it, correct it, or read with it.\n\nA hexagram is a mirror, not a fate: read to reflect, never to obey."
+    }
+  },
+  "grammars": {
+    "paths": ["grammars/*/grammar.json"],
+    "exclude": [],
+    "_exclude_note": "All four grammars in this repo are real, castable/readable content — none are generated meta or reference-only apparatus, so nothing is excluded (unlike tarot's all-decks-many-lenses / tree-of-tarot / people-of-tarot / books-of-tarot, which are meta grammars this repo has no equivalent of yet).",
+    "id_map": "ids.json"
+  },
+  "maintainers": ["pp@playfulprocess.com"],
+  "default_branch": "main"
+}

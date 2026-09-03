@@ -1,0 +1,126 @@
+{
+  "repo": "PlayfulProcess/recursive-starter",
+  "branch": "main",
+  "github_url": "https://github.com/PlayfulProcess/recursive-starter",
+  "collection": "iching",
+  "name": "The Recursive I Ching",
+  "version": "1.0.0",
+  "license": "Mixed — see each grammar's own `license` field (public-domain classical text; original synthesis/interpretation CC-BY-SA-4.0)",
+  "original_creator": null,
+  "creator_name": "PlayfulProcess",
+  "meta_grammar": "i-ching-summarized",
+  "branches": [
+    {
+      "id": "primary-sources",
+      "name": "Primary Sources — the classical text itself, in translation",
+      "deck_slugs": [
+        "i-ching-chinese-original",
+        "i-ching-summarized",
+        "ten-wings",
+        "zhouyi-core"
+      ]
+    },
+    {
+      "id": "synthesis",
+      "name": "Synthesis — cross-lens readings of the 64 hexagrams",
+      "deck_slugs": [
+        "three-lenses-64"
+      ]
+    },
+    {
+      "id": "readings",
+      "name": "Readings — thematic contemplative practices, not interpretation sets",
+      "deck_slugs": [
+        "repair-iching"
+      ]
+    }
+  ],
+  "grammars": [
+    {
+      "slug": "i-ching-chinese-original",
+      "name": "I Ching — Chinese Original (Project Gutenberg)",
+      "type": "iching",
+      "branch": "primary-sources",
+      "is_meta": false,
+      "default_preview": null,
+      "items": 64,
+      "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
+      "blurb": "The classical Chinese source text -- Judgment, Image, and all six Line statements -- for each of the 64 hexagrams, character for character as digitized by Project Gutenberg (ebook #25501, 易經, catalogu…",
+      "path": "grammars/i-ching-chinese-original/grammar.json",
+      "provenance": "record",
+      "year": -1000,
+      "year_label": "Zhou I Ching, compiled c. 1046–256 BCE · classical Chinese, Project Gutenberg ebook #25501, no translation layer"
+    },
+    {
+      "slug": "i-ching-summarized",
+      "name": "The 64 Hexagrams",
+      "type": "iching",
+      "branch": "primary-sources",
+      "is_meta": false,
+      "default_preview": null,
+      "items": 64,
+      "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
+      "blurb": "The Judgment, Image, and all six line texts for each of the 64 hexagrams, in condensed English, with a short interpretation gloss per hexagram. This is the flagship reading text of The Recursive I Chi…",
+      "path": "grammars/i-ching-summarized/grammar.json",
+      "provenance": "record",
+      "year": -1000,
+      "year_label": "Zhou I Ching, compiled c. 1046–256 BCE · this English condensation's own translation lineage is undocumented"
+    },
+    {
+      "slug": "repair-iching",
+      "name": "The Repair I Ching: A Contemplative Practice",
+      "type": "iching",
+      "branch": "readings",
+      "is_meta": false,
+      "default_preview": null,
+      "items": 14,
+      "cover_image_url": null,
+      "blurb": "A meta-grammar that weaves the I Ching into the Repair framework. Twelve hexagrams — one for each chapter of 'Repair: An Open Source Book' — chosen not to predict but to reperceive. Each hexagram illu…",
+      "path": "grammars/repair-iching/grammar.json",
+      "provenance": "living"
+    },
+    {
+      "slug": "ten-wings",
+      "name": "The Ten Wings — the Confucian Layer",
+      "type": "custom",
+      "branch": "primary-sources",
+      "is_meta": false,
+      "default_preview": null,
+      "items": 72,
+      "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Konfuzius-1770.jpg",
+      "blurb": "The commentarial stratum of the I Ching, held apart as its own grammar so you can SEE the moralizing layer as an addition, not the origin. The Ten Wings (Shiyi) were composed by multiple hands in the …",
+      "path": "grammars/ten-wings/grammar.json",
+      "provenance": "record",
+      "year": -250,
+      "year_label": "Ten Wings, Confucian school, late Warring States–early Han, c. 350–100 BCE · English: James Legge 1882, public domain"
+    },
+    {
+      "slug": "three-lenses-64",
+      "name": "Three Lenses for Viewing the 64 Hexagrams",
+      "type": "custom",
+      "branch": "synthesis",
+      "is_meta": false,
+      "default_preview": null,
+      "items": 94,
+      "cover_image_url": "https://commons.wikimedia.org/wiki/File:Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg",
+      "blurb": "This interpretation maps the 64 I Ching hexagrams to Human Design 'gates'—a synthesis channeled by Ra Uru Hu in 1987 after an eight-day encounter with 'the Voice' on Ibiza. The system is only about 30…",
+      "path": "grammars/three-lenses-64/grammar.json",
+      "provenance": "living"
+    },
+    {
+      "slug": "zhouyi-core",
+      "name": "Zhouyi Core — the Oldest Layer",
+      "type": "iching",
+      "branch": "primary-sources",
+      "is_meta": false,
+      "default_preview": null,
+      "items": 64,
+      "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
+      "blurb": "The bottom stratum of the I Ching: for each of the 64 hexagrams, the Judgment (guaci) and the six Line statements (yaoci) — and nothing else. No Image, no 'superior man', no moral philosophy: those be…",
+      "path": "grammars/zhouyi-core/grammar.json",
+      "provenance": "record",
+      "year": -825,
+      "year_label": "Zhouyi core (Judgment + Line statements), late Western Zhou, c. 9th century BCE (Shaughnessy) · English: James Legge 1882, public domain"
+    }
+  ]
+}

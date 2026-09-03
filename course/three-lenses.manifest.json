@@ -1,0 +1,208 @@
+{
+  "_note": "Manifest for the reading 'Three Lenses' (Human Design gates / zodiac signs / chakras, cross-read against the 64 hexagrams). Read by pages/course-viewer.html via ?course=three-lenses. Chapters come from grammars/three-lenses-64/grammar.json, whose item ids fall into five families: hex-1..64 (the 64 hexagram-gates, used as chapters), l3-trigrams / l3-signs / l3-chakras (three meta-category syntheses, used as the appendix), and sign-* / chakra-* / trigram-* (the 12 signs / 7 chakras / 8 trigrams themselves) which this course does not surface as chapters or appendix — an honest omission, not a hidden fallback: a course needs one throughline, and the 64 gates are that throughline here.",
+  "title": "Three Lenses",
+  "kicker": "The Recursive I Ching · a reading of the 64 hexagrams through three grouping lenses",
+  "description": "The 64 hexagrams, read one gate at a time, then synthesized through three cross-cutting lenses: Human Design's zodiac-wheel placement, the twelve zodiac signs, and the seven chakras.",
+  "sourceGrammar": "three-lenses-64",
+  "chapterIdPrefix": "hex-",
+  "appendixIdPrefix": "l3-",
+  "appendixTitle": "Three lenses, synthesized",
+  "appendixIntro": "Three cross-cutting syntheses drawn from the same grammar — not another gate, but a thread running through all 64.",
+  "sectionOrder": [],
+  "appendixSectionOrder": [],
+  "companions": {
+    "_note": "chapter item id -> array of grammar slugs (from ids.json) offered as 'Read the primary source' links. Every hex-N chapter links to the fuller classical-text reading of the same hexagram number in i-ching-summarized (id mapping is mechanical: hex-N <-> hexagram-N).",
+    "hex-1": [
+      "i-ching-summarized"
+    ],
+    "hex-2": [
+      "i-ching-summarized"
+    ],
+    "hex-3": [
+      "i-ching-summarized"
+    ],
+    "hex-4": [
+      "i-ching-summarized"
+    ],
+    "hex-5": [
+      "i-ching-summarized"
+    ],
+    "hex-6": [
+      "i-ching-summarized"
+    ],
+    "hex-7": [
+      "i-ching-summarized"
+    ],
+    "hex-8": [
+      "i-ching-summarized"
+    ],
+    "hex-9": [
+      "i-ching-summarized"
+    ],
+    "hex-10": [
+      "i-ching-summarized"
+    ],
+    "hex-11": [
+      "i-ching-summarized"
+    ],
+    "hex-12": [
+      "i-ching-summarized"
+    ],
+    "hex-13": [
+      "i-ching-summarized"
+    ],
+    "hex-14": [
+      "i-ching-summarized"
+    ],
+    "hex-15": [
+      "i-ching-summarized"
+    ],
+    "hex-16": [
+      "i-ching-summarized"
+    ],
+    "hex-17": [
+      "i-ching-summarized"
+    ],
+    "hex-18": [
+      "i-ching-summarized"
+    ],
+    "hex-19": [
+      "i-ching-summarized"
+    ],
+    "hex-20": [
+      "i-ching-summarized"
+    ],
+    "hex-21": [
+      "i-ching-summarized"
+    ],
+    "hex-22": [
+      "i-ching-summarized"
+    ],
+    "hex-23": [
+      "i-ching-summarized"
+    ],
+    "hex-24": [
+      "i-ching-summarized"
+    ],
+    "hex-25": [
+      "i-ching-summarized"
+    ],
+    "hex-26": [
+      "i-ching-summarized"
+    ],
+    "hex-27": [
+      "i-ching-summarized"
+    ],
+    "hex-28": [
+      "i-ching-summarized"
+    ],
+    "hex-29": [
+      "i-ching-summarized"
+    ],
+    "hex-30": [
+      "i-ching-summarized"
+    ],
+    "hex-31": [
+      "i-ching-summarized"
+    ],
+    "hex-32": [
+      "i-ching-summarized"
+    ],
+    "hex-33": [
+      "i-ching-summarized"
+    ],
+    "hex-34": [
+      "i-ching-summarized"
+    ],
+    "hex-35": [
+      "i-ching-summarized"
+    ],
+    "hex-36": [
+      "i-ching-summarized"
+    ],
+    "hex-37": [
+      "i-ching-summarized"
+    ],
+    "hex-38": [
+      "i-ching-summarized"
+    ],
+    "hex-39": [
+      "i-ching-summarized"
+    ],
+    "hex-40": [
+      "i-ching-summarized"
+    ],
+    "hex-41": [
+      "i-ching-summarized"
+    ],
+    "hex-42": [
+      "i-ching-summarized"
+    ],
+    "hex-43": [
+      "i-ching-summarized"
+    ],
+    "hex-44": [
+      "i-ching-summarized"
+    ],
+    "hex-45": [
+      "i-ching-summarized"
+    ],
+    "hex-46": [
+      "i-ching-summarized"
+    ],
+    "hex-47": [
+      "i-ching-summarized"
+    ],
+    "hex-48": [
+      "i-ching-summarized"
+    ],
+    "hex-49": [
+      "i-ching-summarized"
+    ],
+    "hex-50": [
+      "i-ching-summarized"
+    ],
+    "hex-51": [
+      "i-ching-summarized"
+    ],
+    "hex-52": [
+      "i-ching-summarized"
+    ],
+    "hex-53": [
+      "i-ching-summarized"
+    ],
+    "hex-54": [
+      "i-ching-summarized"
+    ],
+    "hex-55": [
+      "i-ching-summarized"
+    ],
+    "hex-56": [
+      "i-ching-summarized"
+    ],
+    "hex-57": [
+      "i-ching-summarized"
+    ],
+    "hex-58": [
+      "i-ching-summarized"
+    ],
+    "hex-59": [
+      "i-ching-summarized"
+    ],
+    "hex-60": [
+      "i-ching-summarized"
+    ],
+    "hex-61": [
+      "i-ching-summarized"
+    ],
+    "hex-62": [
+      "i-ching-summarized"
+    ],
+    "hex-63": [
+      "i-ching-summarized"
+    ],
+    "hex-64": [
+      "i-ching-summarized"
+    ]
+  }
+}

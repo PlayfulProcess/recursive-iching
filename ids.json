@@ -1,0 +1,7 @@
+{
+  "_note": "Slug -> recursive.eco grammar UUID (the deckId) for the I Ching channel. Used by recursive.eco to bind repo grammars to their live rows and to build per-grammar links (Cast / View / Edit — see viewers/eco-links.js). Mirrors recursive-astrology/ids.json and recursive-tarot/tarot/_eco_ids.json. Keep this updated when new grammars are created or published.",
+  "_preview_links": "Every grammar renders with no extra hosting: swap <id> for the UUID from `ids` once published. This channel's grammar_type param is 'iching'. Play = https://flow.recursive.eco/play?id=<id> | Edit = https://flow.recursive.eco/create/dashboard/unified/new?id=<id> | Cards = https://recursive.eco/pages/grammar-viewer.html?type=iching&id=<id>",
+  "_status": "SKELETON — no grammar in this repo has been imported into recursive.eco yet. `ids` is empty and `_public_now` is empty on purpose: publishing (import each grammar.json into recursive.eco, set is_public=true, add it to the `iching` channel, then record its UUID here) is a separate step from building this site — see docs/PLAYBOOK-FIELD-REPORT.md and the playbook's step 4 (\"The eco binding\"). Until this file is filled in, every recursive.eco-hosted link (Cast/View/Edit, the course's companion links, the assistant's grammar context) will be present in the markup but non-functional for a logged-out visitor.",
+  "ids": {},
+  "_public_now": []
+}

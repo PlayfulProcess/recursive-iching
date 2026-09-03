@@ -1,0 +1,1475 @@
+{
+ "_grammar_commons": {
+  "schema_version": "1.0",
+  "license": "Public-domain English translation: James Legge, The Yî King, Sacred Books of the East vol. XVI (Oxford University Press, 1882; 2nd ed. 1899), Appendixes. Legge died in 1897; the translation is public domain worldwide. The 64 Great Image (Daxiang) texts are Legge verbatim; the ten 'wing' concept items are this site's own synthesis (clearly marked per item, with confidence markers) and are CC-BY-SA-4.0 (PlayfulProcess), as are the description and curation.",
+  "attribution": [
+   "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI, 1882/1899 — public domain",
+   "Digitizations cross-verified: sacred-texts.com transcription (via two mirrors) and two independently maintained datasets (accelon/cct, limjiechao/ts-hexagram-generator, both on GitHub)",
+   "Scholarly grounding for the wing summaries: Edward L. Shaughnessy; Richard Rutt, Zhouyi: A Bronze Age Document (1996); Geoffrey Redmond & Tze-ki Hon, Teaching the I Ching (2014)",
+   "PlayfulProcess (wing summaries, curation, description)"
+  ]
+ },
+ "name": "The Ten Wings — the Confucian Layer",
+ "description": "The commentarial stratum of the I Ching, held apart as its own grammar so you can SEE the moralizing layer as an addition, not the origin. The Ten Wings (Shiyi) were composed by multiple hands in the Confucian school between the late Warring States and the early Han — roughly 350–100 BCE, several centuries after the Zhouyi divination core they comment on. The traditional claim that Confucius wrote them has been doubted since Ouyang Xiu in the 11th century and is rejected by modern scholarship (Shaughnessy; Rutt; Redmond & Hon) — which takes nothing away from the Wings themselves: they are the moment a Bronze Age oracle was canonized into philosophy, and much of what the world thinks of as 'the I Ching' — yin-yang cosmology, the superior man, the moral reading of every hexagram — lives HERE, not in the core text. This grammar carries: (1) one item per hexagram with the complete Great Image (Daxiang) commentary — the 'superior man, in accordance with this...' readings — in James Legge's public-domain translation (1882), the most recognizable Confucian voice in the book; and (2) ten concept items describing each Wing, written as the site's own clearly-marked synthesis with verbatim Legge samples. Read it stacked against 'Zhouyi Core — the Oldest Layer' in the Source Text viewer: same hexagram, two voices, centuries apart.",
+ "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Konfuzius-1770.jpg",
+ "grammar_type": "custom",
+ "tags": [
+  "ten-wings",
+  "confucian",
+  "legge",
+  "public-domain",
+  "commentary",
+  "stratigraphy"
+ ],
+ "creator_name": "PlayfulProcess",
+ "creator_link": "https://recursive.eco",
+ "is_published": true,
+ "items": [
+  {
+   "id": "hex-1",
+   "name": "The Creative",
+   "symbol": "䷀",
+   "category": "great-image",
+   "sort_order": 0,
+   "sections": {
+    "Great Image (Daxiang)": "Heaven, in its motion, (gives the idea of) strength. The superior man, in accordance with this, nerves himself to ceaseless activity."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 1,
+    "binary": "111111",
+    "pinyin": "Qián",
+    "chinese_name": "乾",
+    "legge_title": "Khien",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-2",
+   "name": "The Receptive",
+   "symbol": "䷁",
+   "category": "great-image",
+   "sort_order": 1,
+   "sections": {
+    "Great Image (Daxiang)": "The (capacity and sustaining) power of the earth is what is denoted by Khwăn. The superior man, in accordance with this, with his large virtue supports (men and) things."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 2,
+    "binary": "000000",
+    "pinyin": "Kūn",
+    "chinese_name": "坤",
+    "legge_title": "Khwăn",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-3",
+   "name": "Difficulty at the Beginning",
+   "symbol": "䷂",
+   "category": "great-image",
+   "sort_order": 2,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) clouds and (that representing) thunder form Kun. The superior man, in accordance with this, (adjusts his measures of government) as in sorting the threads of the warp and woof."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 3,
+    "binary": "100010",
+    "pinyin": "Zhūn",
+    "chinese_name": "屯",
+    "legge_title": "Kun",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-4",
+   "name": "Youthful Folly",
+   "symbol": "䷃",
+   "category": "great-image",
+   "sort_order": 3,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) a mountain, and beneath it that for a spring issuing forth form Măng. The superior man, in accordance with this, strives to be resolute in his conduct and nourishes his virtue."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 4,
+    "binary": "010001",
+    "pinyin": "Méng",
+    "chinese_name": "蒙",
+    "legge_title": "Măng",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-5",
+   "name": "Waiting (Nourishment)",
+   "symbol": "䷄",
+   "category": "great-image",
+   "sort_order": 4,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram for) clouds ascending over that for the sky forms Hsü. The superior man, in accordance with this, eats and drinks, feasts and enjoys himself (as if there were nothing else to employ him)."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 5,
+    "binary": "111010",
+    "pinyin": "Xū",
+    "chinese_name": "需",
+    "legge_title": "Hsü",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-6",
+   "name": "Conflict",
+   "symbol": "䷅",
+   "category": "great-image",
+   "sort_order": 5,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) heaven and (that representing) water, moving away from each other, form Sung. The superior man, in accordance with this, in the transaction of affairs takes good counsel about his first steps."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 6,
+    "binary": "010111",
+    "pinyin": "Sòng",
+    "chinese_name": "訟",
+    "legge_title": "Sung",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-7",
+   "name": "The Army",
+   "symbol": "䷆",
+   "category": "great-image",
+   "sort_order": 6,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) the earth and in the midst of it that representing water, form Sze. The superior man, in accordance with this, nourishes and educates the people, and collects (from among them) the multitudes (of the hosts)."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 7,
+    "binary": "010000",
+    "pinyin": "Shī",
+    "chinese_name": "師",
+    "legge_title": "Sze",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-8",
+   "name": "Holding Together [Union]",
+   "symbol": "䷇",
+   "category": "great-image",
+   "sort_order": 7,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) the earth, and over it (that representing) water, form Pî. The ancient kings, in accordance with this, established the various states and maintained an affectionate relation to their princes."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 8,
+    "binary": "000010",
+    "pinyin": "Bǐ",
+    "chinese_name": "比",
+    "legge_title": "Pî",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-9",
+   "name": "The Taming Power of the Small",
+   "symbol": "䷈",
+   "category": "great-image",
+   "sort_order": 8,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) the sky, and that representing wind moving above it, form Hsiâo Khû The superior man, in accordance with this, adorns the outward manifestation of his virtue."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 9,
+    "binary": "111011",
+    "pinyin": "Xiǎo Chù",
+    "chinese_name": "小畜",
+    "legge_title": "HsiâoKhû",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-10",
+   "name": "Treading [Conduct]",
+   "symbol": "䷉",
+   "category": "great-image",
+   "sort_order": 9,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) the sky above, and below it (that representing the waters of) a marsh, form Lî. The superior man, in accordance with this, discriminates between high and low, and gives settlement to the aims of the people."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 10,
+    "binary": "110111",
+    "pinyin": "Lǚ",
+    "chinese_name": "履",
+    "legge_title": "Lî",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-11",
+   "name": "Peace",
+   "symbol": "䷊",
+   "category": "great-image",
+   "sort_order": 10,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigrams for) heaven and earth in communication together form Thâi. The (sage) sovereign, in harmony with this, fashions and completes (his regulations) after the courses of heaven and earth, and assists the application of the adaptations furnished by them,—in order to benefit the people."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 11,
+    "binary": "111000",
+    "pinyin": "Tài",
+    "chinese_name": "泰",
+    "legge_title": "Thâi",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-12",
+   "name": "Standstill [Stagnation]",
+   "symbol": "䷋",
+   "category": "great-image",
+   "sort_order": 11,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigrams of) heaven and earth, not in intercommunication, form Phî. The superior man, in accordance with this, restrains (the manifestation of) his virtue, and avoids the calamities (that threaten him). There is no opportunity of conferring on him the glory of emolument."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 12,
+    "binary": "000111",
+    "pinyin": "Pǐ",
+    "chinese_name": "否",
+    "legge_title": "Phî",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-13",
+   "name": "Fellowship with Men",
+   "symbol": "䷌",
+   "category": "great-image",
+   "sort_order": 12,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigrams for) heaven and fire form Thung Zăn. The superior man, in accordance with this, distinguishes things according to their kinds and classes."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 13,
+    "binary": "101111",
+    "pinyin": "Tóng Rén",
+    "chinese_name": "同人",
+    "legge_title": "ThungZăn",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-14",
+   "name": "Possession in Great Measure",
+   "symbol": "䷍",
+   "category": "great-image",
+   "sort_order": 13,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram for) heaven and (that of) fire above it form Tâ Yû The superior man, in accordance with this, represses what is evil and gives distinction to what is good, in sympathy with the excellent Heaven-conferred (nature)."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 14,
+    "binary": "111101",
+    "pinyin": "Dà Yǒu",
+    "chinese_name": "大有",
+    "legge_title": "Tâ Yû",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-15",
+   "name": "Modesty",
+   "symbol": "䷎",
+   "category": "great-image",
+   "sort_order": 14,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram for) the earth and (that of) a mountain in the midst of it form Khien. The superior man, in accordance with this, diminishes what is excessive (in himself), and increases where there is any defect, bringing about an equality, according to the nature of the case, in his treatment (of himself and others)."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 15,
+    "binary": "001000",
+    "pinyin": "Qiān",
+    "chinese_name": "謙",
+    "legge_title": "Khien",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-16",
+   "name": "Enthusiasm",
+   "symbol": "䷏",
+   "category": "great-image",
+   "sort_order": 15,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigrams for) the earth and thunder issuing from it with its crashing noise form Yü. The ancient kings, in accordance with this, composed their music and did honour to virtue, presenting it especially and most grandly to God, when they associated with Him (at the service) their highest ancestor and their father."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 16,
+    "binary": "000100",
+    "pinyin": "Yù",
+    "chinese_name": "豫",
+    "legge_title": "Yü",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-17",
+   "name": "Following",
+   "symbol": "䷐",
+   "category": "great-image",
+   "sort_order": 16,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram for the waters of) a marsh and (that for) thunder (hidden) in the midst of it form Sui. The superior man in accordance with this, when it is getting towards dark, enters (his house) and rests."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 17,
+    "binary": "100110",
+    "pinyin": "Suí",
+    "chinese_name": "隨",
+    "legge_title": "Sui",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-18",
+   "name": "Work on what has been spoiled [Decay]",
+   "symbol": "䷑",
+   "category": "great-image",
+   "sort_order": 17,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram for) a mountain, and below it that for wind, form Kû. The superior man, in accordance with this, (addresses himself to) help the people and nourish his own virtue."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 18,
+    "binary": "011001",
+    "pinyin": "Gǔ",
+    "chinese_name": "蠱",
+    "legge_title": "Kû",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-19",
+   "name": "Approach",
+   "symbol": "䷒",
+   "category": "great-image",
+   "sort_order": 18,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram for) the waters of a marsh and that for the earth above it form Lin. The superior man, in accordance with this, has his purposes of instruction that are inexhaustible, and nourishes and supports the people without limit."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 19,
+    "binary": "110000",
+    "pinyin": "Lín",
+    "chinese_name": "臨",
+    "legge_title": "Lin",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-20",
+   "name": "Contemplation [View]",
+   "symbol": "䷓",
+   "category": "great-image",
+   "sort_order": 19,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) the earth, and that for wind moving above it, form Kwan. The ancient kings, in accordance with this, examined the (different) regions (of the kingdom), to see the (ways of the) people, and set forth their instructions."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 20,
+    "binary": "000011",
+    "pinyin": "Guān",
+    "chinese_name": "觀",
+    "legge_title": "Kwân",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-21",
+   "name": "Biting Through",
+   "symbol": "䷔",
+   "category": "great-image",
+   "sort_order": 20,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigrams representing) thunder and lightning form Shih Ho. The ancient kings, in accordance with this, framed their penalties with intelligence, and promulgated their laws."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 21,
+    "binary": "100101",
+    "pinyin": "Shì Kè",
+    "chinese_name": "噬嗑",
+    "legge_title": "Shih Ho",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-22",
+   "name": "Grace",
+   "symbol": "䷕",
+   "category": "great-image",
+   "sort_order": 21,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) a mountain and that for fire under it form Pî. The superior man, in accordance with this, throws a brilliancy around his various processes of government, but does not dare (in a similar way) to decide cases of criminal litigation."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 22,
+    "binary": "101001",
+    "pinyin": "Bì",
+    "chinese_name": "賁",
+    "legge_title": "Pî",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-23",
+   "name": "Splitting Apart",
+   "symbol": "䷖",
+   "category": "great-image",
+   "sort_order": 22,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigrams representing) the earth, and (above it) that for a mountain, which adheres to the earth, form Po. Superiors, in accordance with this, seek to strengthen those below them, to secure the peace and stability of their own position."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 23,
+    "binary": "000001",
+    "pinyin": "Bō",
+    "chinese_name": "剝",
+    "legge_title": "Po",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-24",
+   "name": "Return (The Turning Point)",
+   "symbol": "䷗",
+   "category": "great-image",
+   "sort_order": 23,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) the earth and that for thunder in the midst of it form Fû. The ancient kings, in accordance with this, on the day. of the (winter) solstice, shut the gates of the passes (from one state to another), so that the travelling merchants could not (then) pursue their journeys, nor the princes go on with the inspection of their states."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 24,
+    "binary": "100000",
+    "pinyin": "Fù",
+    "chinese_name": "復",
+    "legge_title": "Fû",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-25",
+   "name": "Innocence (The Unexpected)",
+   "symbol": "䷘",
+   "category": "great-image",
+   "sort_order": 24,
+   "sections": {
+    "Great Image (Daxiang)": "The thunder rolls all under the sky, and to (every)thing there is given (its nature), free from all insincerity. The ancient kings, in accordance with this, (made their regulations) in complete accordance with the seasons, thereby nourishing all things."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 25,
+    "binary": "100111",
+    "pinyin": "Wú Wàng",
+    "chinese_name": "無妄",
+    "legge_title": "XXV: The Wû Wang",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-26",
+   "name": "The Taming Power of the Great",
+   "symbol": "䷙",
+   "category": "great-image",
+   "sort_order": 25,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) a mountain, and in the midst of it that (representing) heaven, form Tâ Khû. The superior man, in accordance with this, stores largely in his memory the words and deeds of former men, to subserve the accumulation of his virtue."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 26,
+    "binary": "111001",
+    "pinyin": "Dà Chù",
+    "chinese_name": "大畜",
+    "legge_title": "Tâ Khû",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-27",
+   "name": "The Corners of the Mouth (Providing Nourishment)",
+   "symbol": "䷚",
+   "category": "great-image",
+   "sort_order": 26,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) a mountain and under it that for thunder form Î. The superior man, in accordance with this, (enjoins) watchfulness over our words, and the temperate regulation of our eating and drinking."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 27,
+    "binary": "100001",
+    "pinyin": "Yí",
+    "chinese_name": "頤",
+    "legge_title": "Î",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-28",
+   "name": "Preponderance of the Great",
+   "symbol": "䷛",
+   "category": "great-image",
+   "sort_order": 27,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) trees hidden beneath that for the waters of a marsh forms Tâ Kwo. The superior man, in accordance with this, stands up alone and has no fear, and keeps retired from the world without regret."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 28,
+    "binary": "011110",
+    "pinyin": "Dà Guò",
+    "chinese_name": "大過",
+    "legge_title": "Tâ Kwo",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-29",
+   "name": "The Abysmal (Water)",
+   "symbol": "䷜",
+   "category": "great-image",
+   "sort_order": 28,
+   "sections": {
+    "Great Image (Daxiang)": "(The representation of) water flowing on continuously forms the repeated Khan. The superior man, in accordance with this, maintains constantly the virtue (of his heart) and (the integrity of) his conduct, and practises the business of instruction."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 29,
+    "binary": "010010",
+    "pinyin": "Kǎn",
+    "chinese_name": "坎",
+    "legge_title": "Khan",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-30",
+   "name": "The Clinging, Fire",
+   "symbol": "䷝",
+   "category": "great-image",
+   "sort_order": 29,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram for) brightness, repeated, forms Lî. The great man, in accordance with this, cultivates more and more his brilliant (virtue), and diffuses its brightness over the four quarters (of the land)."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 30,
+    "binary": "101101",
+    "pinyin": "Lí",
+    "chinese_name": "離",
+    "legge_title": "Lî",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-31",
+   "name": "Influence (Wooing)",
+   "symbol": "䷞",
+   "category": "great-image",
+   "sort_order": 30,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) a mountain and above it that for (the waters of) a marsh form Hsien. The superior man, in accordance with this, keeps his mind free from pre-occupation, and open to receive (the influences of) others."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 31,
+    "binary": "001110",
+    "pinyin": "Xián",
+    "chinese_name": "咸",
+    "legge_title": "Hsien",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-32",
+   "name": "Duration",
+   "symbol": "䷟",
+   "category": "great-image",
+   "sort_order": 31,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) thunder and that for wind form Hăng. The superior man, in accordance with this, stands firm, and does not change his method (of operation)."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 32,
+    "binary": "011100",
+    "pinyin": "Héng",
+    "chinese_name": "恆",
+    "legge_title": "Hăng",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-33",
+   "name": "Retreat",
+   "symbol": "䷠",
+   "category": "great-image",
+   "sort_order": 32,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) the sky and below it that for a mountain form Thun. The superior man, in accordance with this, keeps small men at a distance, not by showing that he hates them, but by his own. dignified gravity."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 33,
+    "binary": "001111",
+    "pinyin": "Dùn",
+    "chinese_name": "遯",
+    "legge_title": "Thun",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-34",
+   "name": "The Power of the Great",
+   "symbol": "䷡",
+   "category": "great-image",
+   "sort_order": 33,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) heaven and above it that for thunder form Tâ Kwang. The superior man, in accordance with this, does not take a step which is not according to propriety."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 34,
+    "binary": "111100",
+    "pinyin": "Dà Zhuàng",
+    "chinese_name": "大壯",
+    "legge_title": "TâKwang",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-35",
+   "name": "Progress",
+   "symbol": "䷢",
+   "category": "great-image",
+   "sort_order": 34,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) the earth and that for the bright (sun) coming forth above it form Žin. The superior man, according to this, gives himself to make more brilliant his bright virtue."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 35,
+    "binary": "000101",
+    "pinyin": "Jìn",
+    "chinese_name": "晉",
+    "legge_title": "Žin",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-36",
+   "name": "Darkening of the Light",
+   "symbol": "䷣",
+   "category": "great-image",
+   "sort_order": 35,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) the earth and that for the bright (sun) entering within it form Ming Î. The superior man, in accordance with this, conducts his management of men;—he shows his intelligence by keeping it obscured."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 36,
+    "binary": "101000",
+    "pinyin": "Míng Yí",
+    "chinese_name": "明夷",
+    "legge_title": "Ming Î",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-37",
+   "name": "The Family [The Clan]",
+   "symbol": "䷤",
+   "category": "great-image",
+   "sort_order": 36,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) fire, and that for wind coming forth from it, form Kiâ Zăn. The superior man, in accordance with this, orders his words according to (the truth of) things, and his conduct so that it is uniformly consistent."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 37,
+    "binary": "101011",
+    "pinyin": "Jiā Rén",
+    "chinese_name": "家人",
+    "legge_title": "KiâZăn",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-38",
+   "name": "Opposition",
+   "symbol": "䷥",
+   "category": "great-image",
+   "sort_order": 37,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) fire above, and that for (the waters of) a marsh below, form Khwei. The superior man, in accordance with this, where there is a general agreement, yet admits diversity."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 38,
+    "binary": "110101",
+    "pinyin": "Kuí",
+    "chinese_name": "睽",
+    "legge_title": "Khwei",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-39",
+   "name": "Obstruction",
+   "symbol": "䷦",
+   "category": "great-image",
+   "sort_order": 38,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) a mountain, and above it that for water, form Kien. The superior man, in accordance with this, turns round (and examines) himself, and cultivates his virtue."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 39,
+    "binary": "001010",
+    "pinyin": "Jiǎn",
+    "chinese_name": "蹇",
+    "legge_title": "Kien",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-40",
+   "name": "Deliverance",
+   "symbol": "䷧",
+   "category": "great-image",
+   "sort_order": 39,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) thunder and that for rain, with these phenomena in a state of manifestation, form Kieh. The superior man, in accordance with this, forgives errors, and deals gently with crimes."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 40,
+    "binary": "010100",
+    "pinyin": "Xiè",
+    "chinese_name": "解",
+    "legge_title": "Kieh",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-41",
+   "name": "Decrease",
+   "symbol": "䷨",
+   "category": "great-image",
+   "sort_order": 40,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) a mountain and beneath it that for the waters of a marsh form Sun. The superior man, in accordance with this, restrains his wrath and represses his desires."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 41,
+    "binary": "110001",
+    "pinyin": "Sǔn",
+    "chinese_name": "損",
+    "legge_title": "Sun",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-42",
+   "name": "Increase",
+   "symbol": "䷩",
+   "category": "great-image",
+   "sort_order": 41,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) wind and that for thunder form Yî. The superior man, in accordance with this, when he sees what is good, moves towards it; and when he sees his errors, he turns from them."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 42,
+    "binary": "100011",
+    "pinyin": "Yì",
+    "chinese_name": "益",
+    "legge_title": "Yî",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-43",
+   "name": "Break-through (Resoluteness)",
+   "symbol": "䷪",
+   "category": "great-image",
+   "sort_order": 42,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) heaven and that for the waters of a marsh mounting above it form Kwâi. The superior man, in accordance with this, bestows emolument on those below him, and dislikes allowing his gifts to accumulate (undispensed)."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 43,
+    "binary": "111110",
+    "pinyin": "Guài",
+    "chinese_name": "夬",
+    "legge_title": "Kwâi",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-44",
+   "name": "Coming to Meet",
+   "symbol": "䷫",
+   "category": "great-image",
+   "sort_order": 43,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) wind and that for the sky above it form Kâu. The sovereign, in accordance with this, delivers his charges, and promulgates his announcements throughout the four quarters (of the kingdom)."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 44,
+    "binary": "011111",
+    "pinyin": "Gòu",
+    "chinese_name": "姤",
+    "legge_title": "Kâu",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-45",
+   "name": "Gathering Together [Massing]",
+   "symbol": "䷬",
+   "category": "great-image",
+   "sort_order": 44,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing the) earth and that for the waters of a marsh raised above it form Žhui. The superior man, in accordance with this, has his weapons of war put in good repair, to be prepared against unforeseen contingencies."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 45,
+    "binary": "000110",
+    "pinyin": "Cuì",
+    "chinese_name": "萃",
+    "legge_title": "Žhui",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-46",
+   "name": "Pushing Upward",
+   "symbol": "䷭",
+   "category": "great-image",
+   "sort_order": 45,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) wood and that for the earth with the wood growing in the midst of it form Shăng. The superior man, in accordance with this, pays careful attention to his virtue, and accumulates the small developments of it till it is high and great."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 46,
+    "binary": "011000",
+    "pinyin": "Shēng",
+    "chinese_name": "升",
+    "legge_title": "Shăng",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-47",
+   "name": "Oppression (Exhaustion)",
+   "symbol": "䷮",
+   "category": "great-image",
+   "sort_order": 46,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) a marsh, and (below it that for a defile, which has drained the other dry so that there is) no water in it, form Khwăn. The superior man, in accordance with this, will sacrifice his life in order to carry out his purpose."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 47,
+    "binary": "010110",
+    "pinyin": "Kùn",
+    "chinese_name": "困",
+    "legge_title": "Khwăn",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-48",
+   "name": "The Well",
+   "symbol": "䷯",
+   "category": "great-image",
+   "sort_order": 47,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) wood and above it that for water form Žing. The superior man, in accordance with this, comforts the people, and. stimulates them to mutual helpfulness."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 48,
+    "binary": "011010",
+    "pinyin": "Jǐng",
+    "chinese_name": "井",
+    "legge_title": "Žing",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-49",
+   "name": "Revolution (Molting)",
+   "symbol": "䷰",
+   "category": "great-image",
+   "sort_order": 48,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing the waters of) a marsh and that for fire in the midst of them form Ko. The superior man, in accordance with this, regulates his (astronomical) calculations, and makes clear the seasons and times."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 49,
+    "binary": "101110",
+    "pinyin": "Gé",
+    "chinese_name": "革",
+    "legge_title": "Ko",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-50",
+   "name": "The Caldron",
+   "symbol": "䷱",
+   "category": "great-image",
+   "sort_order": 49,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) wood and above it that for fire form Ting. The superior man, in accordance with this, keeps his every position correct, and maintains secure the appointment (of Heaven)."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 50,
+    "binary": "011101",
+    "pinyin": "Dǐng",
+    "chinese_name": "鼎",
+    "legge_title": "Ting",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-51",
+   "name": "The Arousing (Shock, Thunder)",
+   "symbol": "䷲",
+   "category": "great-image",
+   "sort_order": 50,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) thunder, being repeated, forms Kăn. The superior man, in accordance with this, is fearful and apprehensive, cultivates (his virtue), and examines (his faults)."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 51,
+    "binary": "100100",
+    "pinyin": "Zhèn",
+    "chinese_name": "震",
+    "legge_title": "Kăn",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-52",
+   "name": "Keeping Still, Mountain",
+   "symbol": "䷳",
+   "category": "great-image",
+   "sort_order": 51,
+   "sections": {
+    "Great Image (Daxiang)": "(Two trigrams representing) a mountain, one over the other, form Kăn. The superior man, in accordance with this, does not go in his thoughts beyond the (duties of the) position in which he is."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 52,
+    "binary": "001001",
+    "pinyin": "Gèn",
+    "chinese_name": "艮",
+    "legge_title": "Kăn",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-53",
+   "name": "Development (Gradual Progress)",
+   "symbol": "䷴",
+   "category": "great-image",
+   "sort_order": 52,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) a mountain and above it that for a tree form Kien. The superior man, in accordance with this, attains to and maintains his extraordinary virtue, and makes the manners of the people good."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 53,
+    "binary": "001011",
+    "pinyin": "Jiàn",
+    "chinese_name": "漸",
+    "legge_title": "Kien",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-54",
+   "name": "The Marrying Maiden",
+   "symbol": "䷵",
+   "category": "great-image",
+   "sort_order": 53,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing the waters of) a marsh and over it that for thunder form Kwei Mei. The superior man, in accordance with this, having regard to the far-distant end, knows the mischief (that may be done at the beginning)."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 54,
+    "binary": "110100",
+    "pinyin": "Guī Mèi",
+    "chinese_name": "歸妹",
+    "legge_title": "Kwei Mei",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-55",
+   "name": "Abundance",
+   "symbol": "䷶",
+   "category": "great-image",
+   "sort_order": 54,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigrams representing) thunder and lightning combine to form Făng. The superior man, in accordance with this, decides cases of litigation, and apportions punishments with exactness."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 55,
+    "binary": "101100",
+    "pinyin": "Fēng",
+    "chinese_name": "豐",
+    "legge_title": "Făng",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-56",
+   "name": "The Wanderer",
+   "symbol": "䷷",
+   "category": "great-image",
+   "sort_order": 55,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) a mountain and above it that for fire form Lü. The superior man, in accordance with this, exerts his wisdom and caution in the use of punishments and not allowing litigations to continue."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 56,
+    "binary": "001101",
+    "pinyin": "Lǚ",
+    "chinese_name": "旅",
+    "legge_title": "Lü",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-57",
+   "name": "The Gentle (The Penetrating, Wind)",
+   "symbol": "䷸",
+   "category": "great-image",
+   "sort_order": 56,
+   "sections": {
+    "Great Image (Daxiang)": "(Two trigrams representing) wind, following each other, form Sun. The superior man, in accordance with this, reiterates his orders, and secures the practice of his affairs."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 57,
+    "binary": "011011",
+    "pinyin": "Xùn",
+    "chinese_name": "巽",
+    "legge_title": "Sun",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-58",
+   "name": "The Joyous, Lake",
+   "symbol": "䷹",
+   "category": "great-image",
+   "sort_order": 57,
+   "sections": {
+    "Great Image (Daxiang)": "(Two symbols representing) the waters of a marsh, one over the other, form Tui. The superior man, in accordance with this, (encourages) the conversation of friends and (the stimulus of) their (common) practice."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 58,
+    "binary": "110110",
+    "pinyin": "Duì",
+    "chinese_name": "兌",
+    "legge_title": "Tui",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-59",
+   "name": "Dispersion [Dissolution]",
+   "symbol": "䷺",
+   "category": "great-image",
+   "sort_order": 58,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) water and that for wind moving above the water form Hwân. The ancient kings, in accordance with this, presented offerings to God and established the ancestral temple."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 59,
+    "binary": "010011",
+    "pinyin": "Huàn",
+    "chinese_name": "渙",
+    "legge_title": "Hwân",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-60",
+   "name": "Limitation",
+   "symbol": "䷻",
+   "category": "great-image",
+   "sort_order": 59,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) a lake, and above it that for water, form Kieh. The superior man, in accordance with this, constructs his (methods of) numbering and measurement, and discusses (points of) virtue and conduct."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 60,
+    "binary": "110010",
+    "pinyin": "Jié",
+    "chinese_name": "節",
+    "legge_title": "Kieh",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-61",
+   "name": "Inner Truth",
+   "symbol": "䷼",
+   "category": "great-image",
+   "sort_order": 60,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing the waters of) a marsh and that for wind above it form Kung Fû. The superior man, in accordance with this, deliberates about cases of litigation and delays (the infliction of) death."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 61,
+    "binary": "110011",
+    "pinyin": "Zhōng Fú",
+    "chinese_name": "中孚",
+    "legge_title": "Kung Fû",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-62",
+   "name": "Preponderance of the Small",
+   "symbol": "䷽",
+   "category": "great-image",
+   "sort_order": 61,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) a hill and that for thunder above it form Hsiâo Kwo. The superior man, in accordance with this, in his conduct exceeds in humility, in mourning exceeds in sorrow, and in his expenditure exceeds in economy."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 62,
+    "binary": "001100",
+    "pinyin": "Xiǎo Guò",
+    "chinese_name": "小過",
+    "legge_title": "Hsiâo Kwo",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-63",
+   "name": "After Completion",
+   "symbol": "䷾",
+   "category": "great-image",
+   "sort_order": 62,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) fire and that for water above it form Kî Žî. The superior man, in accordance with this, thinks of evil (that may come), and beforehand guards against it."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 63,
+    "binary": "101010",
+    "pinyin": "Jì Jì",
+    "chinese_name": "既濟",
+    "legge_title": "Kî Žî",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "hex-64",
+   "name": "Before Completion",
+   "symbol": "䷿",
+   "category": "great-image",
+   "sort_order": 63,
+   "sections": {
+    "Great Image (Daxiang)": "(The trigram representing) water and that for fire above it form Wei Žî. The superior man, in accordance with this, carefully discriminates among (the qualities of) things, and the (different) positions they (naturally) occupy."
+   },
+   "keywords": [],
+   "metadata": {
+    "number": 64,
+    "binary": "010101",
+    "pinyin": "Wèi Jì",
+    "chinese_name": "未濟",
+    "legge_title": "Wei Žî",
+    "confidence": "high",
+    "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations."
+   }
+  },
+  {
+   "id": "wings-overview",
+   "name": "The Ten Wings — what this layer is",
+   "category": "wing",
+   "sort_order": 100,
+   "sections": {
+    "What it is": "The Shiyi (十翼), the 'Ten Wings', are the classical commentaries bound together with the Zhouyi core to make the book we call the I Ching. They are what turned a Bronze Age divination manual into a work of philosophy: the cosmology of yin and yang, the 'superior man' who reads each hexagram as moral instruction, the whole metaphysical frame that most readers now assume IS the I Ching. This grammar holds that layer apart so you can see it as a layer — an addition, magnificent on its own terms, but not the origin. The ten are: the Tuan Zhuan in two parts (wings 1–2), the Xiang Zhuan in two parts (wings 3–4), the Xici or Great Commentary in two parts (wings 5–6), the Wenyan (wing 7), the Shuogua (wing 8), the Xugua (wing 9), and the Zagua (wing 10).",
+    "Dating & authorship": "Tradition credits all ten to Confucius (551–479 BCE). That attribution has been doubted at least since the Song scholar Ouyang Xiu (1007–1072) ✔, and modern scholarship rejects it: the Wings are composite works by multiple hands in the Confucian school, composed roughly between the late Warring States and the early Han — c. 350–100 BCE, several centuries after the Zhouyi core ✔ (Shaughnessy, 'I ching (Chou I)' in Early Chinese Texts; Rutt, Zhouyi: A Bronze Age Document, 1996; Redmond & Hon, Teaching the I Ching, 2014). The earliest physical witness to any Wing is the Mawangdui silk manuscript, from a tomb sealed 168 BCE, which contains a version of the Xici ✔. None of this makes the Wings lesser — it makes them legible as what they are: the moment a divination text was canonized into philosophy.",
+    "Note": "This summary is the site's own synthesis, written for this grammar — not a quotation. Confidence markers: ✔ verified against a named source; ○ real scholarship, paraphrased; ◆ contested or uncertain."
+   },
+   "keywords": [
+    "ten wings",
+    "shiyi",
+    "commentary",
+    "confucian"
+   ],
+   "metadata": {
+    "confidence": "high",
+    "_source": "Synthesis grounded in Shaughnessy (Early Chinese Texts, 1993), Rutt (Zhouyi: A Bronze Age Document, 1996), Redmond & Hon (Teaching the I Ching, 2014); dating and Ouyang Xiu attribution-doubt verified via current reference works, Jul 2026."
+   }
+  },
+  {
+   "id": "wing-tuan",
+   "name": "Tuan Zhuan — Commentary on the Judgments (wings 1–2)",
+   "category": "wing",
+   "sort_order": 101,
+   "sections": {
+    "What it is": "A hexagram-by-hexagram commentary on the Judgment texts, explaining each verdict through the hexagram's structure: the trigrams' imagery, which lines are strong or weak, central or correct. This is where systematic hexagram-analysis begins — the core text never explains itself; the Tuan Zhuan does, and its methods (line positions, correlates, centrality) became the grammar of all later Yijing interpretation. ○",
+    "In Legge's translation (1882)": "On hexagram 1: \"Vast is the 'great and originating (power)' indicated by Khien! All things owe to it their beginning:—it contains all the meaning belonging to (the name) heaven.\" (Appendix I in Legge's arrangement.) ✔",
+    "Note": "This summary is the site's own synthesis, written for this grammar — not a quotation. Confidence markers: ✔ verified against a named source; ○ real scholarship, paraphrased; ◆ contested or uncertain."
+   },
+   "keywords": [
+    "tuan zhuan",
+    "judgments",
+    "commentary"
+   ],
+   "metadata": {
+    "confidence": "medium",
+    "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix I; characterization is paraphrased scholarship (○)."
+   }
+  },
+  {
+   "id": "wing-xiang",
+   "name": "Xiang Zhuan — Commentary on the Images (wings 3–4)",
+   "category": "wing",
+   "sort_order": 102,
+   "sections": {
+    "What it is": "Two commentaries in one: the Great Images (Daxiang) — one meditation per hexagram reading the paired trigrams as a natural image and drawing a moral for the junzi, the 'superior man' — and the Small Images (Xiaoxiang), brief verse comments on each line statement. The Daxiang is the most recognizable Confucian voice in the book, and the clearest example of the moralizing layer: the old oracle says 'dragon hidden in the deep; do not act', and the Daxiang answers with what a gentleman should cultivate. The 64 hexagram items in THIS grammar carry the complete Daxiang, so you can read the moral layer straight through. ○",
+    "In Legge's translation (1882)": "On hexagram 1: \"Heaven, in its motion, (gives the idea of) strength. The superior man, in accordance with this, nerves himself to ceaseless activity.\" (Appendix II in Legge's arrangement.) ✔",
+    "Note": "This summary is the site's own synthesis, written for this grammar — not a quotation. Confidence markers: ✔ verified against a named source; ○ real scholarship, paraphrased; ◆ contested or uncertain."
+   },
+   "keywords": [
+    "xiang zhuan",
+    "daxiang",
+    "great image",
+    "superior man"
+   ],
+   "metadata": {
+    "confidence": "medium",
+    "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix II; characterization is paraphrased scholarship (○)."
+   }
+  },
+  {
+   "id": "wing-xici",
+   "name": "Xici / Dazhuan — the Great Commentary (wings 5–6)",
+   "category": "wing",
+   "sort_order": 103,
+   "sections": {
+    "What it is": "The philosophical heart of the Wings: not a hexagram-by-hexagram commentary but a treatise on what the Yi IS — how the sages made it, how change itself works, why the alternation of yin and yang is the pattern of the world. Its cosmology (the Taiji producing the two forms, the four emblems, the eight trigrams) shaped two thousand years of Chinese thought, Confucian and Daoist alike. ○ Edward Shaughnessy places its editing between about 320 and 168 BCE; a version was in the Mawangdui tomb sealed 168 BCE. ✔",
+    "In Legge's translation (1882)": "\"Therefore in (the system of) the Yî there is the Grand Terminus, which produced the two elementary Forms. Those two Forms produced the Four emblematic Symbols, which again produced the eight Trigrams.\" (Xici I; Legge's 'Great Appendix', Appendix III.) ✔",
+    "Note": "This summary is the site's own synthesis, written for this grammar — not a quotation. Confidence markers: ✔ verified against a named source; ○ real scholarship, paraphrased; ◆ contested or uncertain."
+   },
+   "keywords": [
+    "xici",
+    "dazhuan",
+    "great commentary",
+    "taiji",
+    "yin yang"
+   ],
+   "metadata": {
+    "confidence": "high",
+    "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix III; dating per Shaughnessy ('The Writing of the Xici Zhuan and the Making of the Yijing') and the Mawangdui find, verified Jul 2026."
+   }
+  },
+  {
+   "id": "wing-wenyan",
+   "name": "Wenyan — Words of the Text (wing 7)",
+   "category": "wing",
+   "sort_order": 104,
+   "sections": {
+    "What it is": "An extended moral-philosophical meditation on the first two hexagrams only — Qian and Kun, heaven and earth — much of it framed as answers by 'the Master'. That framing is exactly how a later school writes its teacher's voice into an older text, and it is the main reason the whole book was traditionally credited to Confucius. ○",
+    "In Legge's translation (1882)": "On hexagram 2: \"The family that accumulates goodness is sure to have superabundant happiness, and the family that accumulates evil is sure to have superabundant misery.\" (Legge's Appendix IV.) ✔",
+    "Note": "This summary is the site's own synthesis, written for this grammar — not a quotation. Confidence markers: ✔ verified against a named source; ○ real scholarship, paraphrased; ◆ contested or uncertain."
+   },
+   "keywords": [
+    "wenyan",
+    "words of the text",
+    "qian",
+    "kun"
+   ],
+   "metadata": {
+    "confidence": "medium",
+    "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix IV; characterization is paraphrased scholarship (○)."
+   }
+  },
+  {
+   "id": "wing-shuogua",
+   "name": "Shuogua — Discussion of the Trigrams (wing 8)",
+   "category": "wing",
+   "sort_order": 105,
+   "sections": {
+    "What it is": "A treatise on the eight trigrams: their family roles (father, mother, three sons, three daughters), compass directions, animals, body parts, and natural images. It reads like a diviner's reference distilled into scripture — much of the symbol-vocabulary later tradition treats as timeless is codified here. Parts of its material also circulated with the Xici in the Mawangdui manuscript. ○",
+    "In Legge's translation (1882)": "\"Anciently, when the sages made the Yî, in order to give mysterious assistance to the spiritual Intelligences, they produced (the rules for the use of) the divining plant.\" (Legge's Appendix V.) ✔",
+    "Note": "This summary is the site's own synthesis, written for this grammar — not a quotation. Confidence markers: ✔ verified against a named source; ○ real scholarship, paraphrased; ◆ contested or uncertain."
+   },
+   "keywords": [
+    "shuogua",
+    "trigrams",
+    "eight trigrams",
+    "bagua"
+   ],
+   "metadata": {
+    "confidence": "medium",
+    "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix V; characterization is paraphrased scholarship (○)."
+   }
+  },
+  {
+   "id": "wing-xugua",
+   "name": "Xugua — Sequence of the Hexagrams (wing 9)",
+   "category": "wing",
+   "sort_order": 106,
+   "sections": {
+    "What it is": "A short chain of reasoning that walks through all 64 hexagrams in the received (King Wen) order, explaining why each follows from the last — reading the sequence itself as a story about how situations give rise to one another. Generally considered among the latest Wings. ○",
+    "In Legge's translation (1882)": "\"When there were heaven and earth, then afterwards all things were produced. What fills up (the space) between heaven and earth are (those) all things. Hence (Khien and Khwăn) are followed by Kun.\" (Legge's Appendix VI.) ✔",
+    "Note": "This summary is the site's own synthesis, written for this grammar — not a quotation. Confidence markers: ✔ verified against a named source; ○ real scholarship, paraphrased; ◆ contested or uncertain."
+   },
+   "keywords": [
+    "xugua",
+    "sequence",
+    "king wen order"
+   ],
+   "metadata": {
+    "confidence": "medium",
+    "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix VI; characterization is paraphrased scholarship (○)."
+   }
+  },
+  {
+   "id": "wing-zagua",
+   "name": "Zagua — Miscellaneous Notes on the Hexagrams (wing 10)",
+   "category": "wing",
+   "sort_order": 107,
+   "sections": {
+    "What it is": "The shortest Wing: a rhymed list pairing hexagrams by contrast — one epithet each, often for opposite or inverted pairs. Something like a mnemonic jingle for the whole set; generally considered among the latest Wings. ○",
+    "In Legge's translation (1882)": "\"Strength in Khien, weakness in Khwăn we find.\" (Legge's Appendix VII, which he renders in rhyme.) ✔",
+    "Note": "This summary is the site's own synthesis, written for this grammar — not a quotation. Confidence markers: ✔ verified against a named source; ○ real scholarship, paraphrased; ◆ contested or uncertain."
+   },
+   "keywords": [
+    "zagua",
+    "miscellaneous",
+    "pairs"
+   ],
+   "metadata": {
+    "confidence": "medium",
+    "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix VII; characterization is paraphrased scholarship (○)."
+   }
+  }
+ ]
+}

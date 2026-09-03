@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.25">
+<title>Source Text — the classical Chinese I Ching · The Recursive I Ching</title>
+<link rel="stylesheet" href="../theme.css?v=3">
+<style>
+  /* Layout only — every colour comes from theme.css (the one source). */
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);color-scheme:light;
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+  .wrap{max-width:640px;margin:0 auto;padding:22px 16px 90px}
+  header.hero{padding:10px 0 6px}
+  .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
+  h1{font-family:"Fraunces",Georgia,serif;font-size:26px;margin:6px 0 8px;color:var(--ink);display:flex;align-items:center;gap:10px}
+  h1 svg{flex:none;color:var(--accent)}
+  .lede{color:var(--muted);font-size:14.5px;max-width:60ch}
+
+  .honesty{margin:16px 0 18px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;
+    background:var(--chip,#eaf0f7);font-size:13px;color:var(--ink-soft);line-height:1.6}
+  .honesty b{color:var(--ink)}
+  .honesty a{color:var(--accent)}
+
+  /* hexagram picker */
+  .picker{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px;
+    display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+  .picker select{font-family:inherit;font-size:13.5px;color:var(--ink);background:var(--surface);
+    border:1px solid var(--line);border-radius:8px;padding:7px 8px;flex:1 1 200px;min-width:150px}
+  .navbtns{display:flex;gap:6px}
+  button{font-family:inherit;cursor:pointer}
+  .btn{font-size:13px;font-weight:600;padding:8px 14px;border-radius:8px;border:1px solid var(--line);
+    background:var(--panel);color:var(--ink-soft);transition:border-color .15s,color .15s,background .15s}
+  .btn:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* hexagram head */
+  .hexhead{display:flex;gap:14px;align-items:center;margin-bottom:18px}
+  .hexsym{font-size:44px;line-height:1;color:var(--accent);flex:none}
+  .hexnum{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+  .hexname{font-family:"Fraunces",Georgia,serif;font-size:22px;color:var(--ink);margin:1px 0}
+  .hexsub{font-size:13px;color:var(--muted)}
+
+  /* stacked layers */
+  .layer{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;
+    box-shadow:var(--shadow-card);margin-bottom:16px}
+  .layer .lyt{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);
+    font-weight:700;margin:0 0 3px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .layer .lyt .src{font-weight:400;text-transform:none;letter-spacing:normal;color:var(--muted);font-size:11.5px}
+  .layer .lynote{font-size:12px;color:var(--muted);margin:0 0 12px;line-height:1.5}
+  .sec{margin:0 0 12px}
+  .sec:last-child{margin-bottom:0}
+  .sec .st{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin:0 0 4px}
+  .sec .sb{font-size:13.5px;color:var(--ink);margin:0}
+  .sec.chinese .sb{font-family:"Noto Serif SC","Songti SC","STSong",serif;font-size:17px;line-height:1.9;letter-spacing:.02em}
+  .sec .interp{font-size:12.5px;color:var(--muted);font-style:italic}
+  .gutenberg-link{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--accent);
+    text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 11px;margin-top:10px}
+  .gutenberg-link:hover{border-color:var(--accent)}
+
+  .lensrow{display:flex;flex-wrap:wrap;gap:6px}
+  .lenspill{font-size:11.5px;padding:4px 10px;border-radius:999px;background:var(--chip,#f1ece1);color:var(--ink-soft)}
+
+  .placeholder{text-align:center;padding:40px 18px;color:var(--muted);font-size:13.5px}
+
+  @media (max-width:420px){
+    .wrap{padding:16px 12px 90px}
+    h1{font-size:22px}
+    .hexsym{font-size:36px}
+    .hexname{font-size:19px}
+    .sec.chinese .sb{font-size:16px}
+  }
+</style>
+</head>
+<body>
+<script src="../site-header.js?v=46"></script>
+<site-header active="source"></site-header>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker">The Recursive I Ching · read the public-domain book itself</div>
+    <h1>
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H19a1 1 0 0 1 1 1v15a1 1 0 0 1-1 1H6.5A2.5 2.5 0 0 0 4 22.5V5.5Z"/>
+        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+        <path d="M8 7.5h8M8 11h8"/>
+      </svg>
+      Source Text
+    </h1>
+    <p class="lede">The classical Chinese for one hexagram at a time, stacked with this library's own English readings — layer by layer, each one clearly labeled.</p>
+  </header>
+
+  <div class="honesty">
+    <b>Honestly, first:</b> the Chinese below is the <b>public-domain source text</b> — digitized by
+    <a href="https://www.gutenberg.org/ebooks/25501" target="_blank" rel="noopener">Project Gutenberg ebook #25501</a>
+    (易經, catalogued as "Anonymous"). Gutenberg only distributes works confirmed public domain in the US, and this
+    is the ≈3,000-year-old Zhouyi/Yijing text itself — no modern translator, no added copyright layer. The short
+    English hexagram <em>name</em> under each is an <b>AI-generated one-line gloss</b> (Claude Code), a title, not a
+    scholarly translation of the full passage — do not mistake it for Wilhelm, Legge, or any human translation.
+    The other layers below (this site's English reading, the cross-lens gate/sign/chakra reading) are separate,
+    later, clearly-marked works — never confused with the source above them. The two <b>Legge layers</b>
+    (Zhouyi core; Ten Wings Great Image) are James Legge's <b>public-domain translation</b> (1882), stacked in
+    stratigraphic order: the Western Zhou divination core first, the Confucian commentary — added centuries
+    later — after it, each labeled with its own era.
+  </div>
+
+  <div class="picker">
+    <div class="navbtns">
+      <button class="btn" id="prev-btn" type="button" title="Previous hexagram">← Prev</button>
+      <button class="btn" id="next-btn" type="button" title="Next hexagram">Next →</button>
+    </div>
+    <select id="hex-pick" aria-label="Choose a hexagram"></select>
+  </div>
+
+  <div id="content"><p class="placeholder">Loading the source text…</p></div>
+</div>
+
+<script src="../assistant.js" defer></script>
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const PFX = '../';
+  const LINE_ORDER = ['Judgment', 'Image', 'Line 1', 'Line 2', 'Line 3', 'Line 4', 'Line 5', 'Line 6'];
+
+  let byNumber = {}; // n -> { chinese: item, zhouyi: item|null, wings: item|null, summ: item, lens: item|null }
+  let current = 1;
+
+  async function boot() {
+    const [chinese, zhouyi, wings, summarized, lenses] = await Promise.all([
+      fetch(PFX + 'grammars/i-ching-chinese-original/grammar.json').then(r => r.json()),
+      fetch(PFX + 'grammars/zhouyi-core/grammar.json').then(r => r.json()).catch(() => null),
+      fetch(PFX + 'grammars/ten-wings/grammar.json').then(r => r.json()).catch(() => null),
+      fetch(PFX + 'grammars/i-ching-summarized/grammar.json').then(r => r.json()).catch(() => null),
+      fetch(PFX + 'grammars/three-lenses-64/grammar.json').then(r => r.json()).catch(() => null),
+    ]);
+
+    const numOf = it => (it.metadata && it.metadata.number) || (( /^hex-(\d+)$/.exec(it.id || '') || [])[1] && +/^hex-(\d+)$/.exec(it.id)[1]) || null;
+    const byNum = g => {
+      const map = {};
+      if (g && g.items) for (const it of g.items) { const n = numOf(it); if (n) map[n] = it; }
+      return map;
+    };
+    const zhouyiByNum = byNum(zhouyi), wingsByNum = byNum(wings), summByNum = byNum(summarized);
+    const lensByNum = {};
+    if (lenses && lenses.items) {
+      for (const it of lenses.items) {
+        const m = /^hex-(\d+)$/.exec(it.id || '');
+        if (m) lensByNum[+m[1]] = it;
+      }
+    }
+    for (const it of chinese.items) {
+      const n = it.metadata.number;
+      byNumber[n] = { chinese: it, zhouyi: zhouyiByNum[n] || null, wings: wingsByNum[n] || null,
+                      summ: summByNum[n] || null, lens: lensByNum[n] || null };
+    }
+
+    populatePicker();
+    wireEvents();
+
+    const deep = +(new URLSearchParams(location.search).get('hex'));
+    current = (deep >= 1 && deep <= 64 && byNumber[deep]) ? deep : 1;
+    $('#hex-pick').value = String(current);
+    render();
+  }
+
+  function populatePicker() {
+    const nums = Object.keys(byNumber).map(Number).sort((a, b) => a - b);
+    $('#hex-pick').innerHTML = nums.map(n =>
+      `<option value="${n}">${n} — ${esc(byNumber[n].chinese.name)} (${esc(byNumber[n].chinese.metadata.chinese_name)})</option>`
+    ).join('');
+  }
+
+  function go(n) {
+    current = n;
+    $('#hex-pick').value = String(n);
+    const url = new URL(location.href);
+    url.searchParams.set('hex', String(n));
+    history.replaceState(null, '', url);
+    render();
+  }
+
+  function wireEvents() {
+    $('#hex-pick').onchange = e => go(+e.target.value);
+    $('#prev-btn').onclick = () => go(current > 1 ? current - 1 : 64);
+    $('#next-btn').onclick = () => go(current < 64 ? current + 1 : 1);
+  }
+
+  function sectionsHTML(sections, cls) {
+    const entries = LINE_ORDER
+      .filter(k => sections && typeof sections[k] === 'string' && sections[k].trim())
+      .map(k => [k, sections[k]]);
+    // include any extra section keys (e.g. Interpretation) not in LINE_ORDER, at the end
+    for (const [k, v] of Object.entries(sections || {})) {
+      if (!LINE_ORDER.includes(k) && typeof v === 'string' && v.trim()) entries.push([k, v]);
+    }
+    return entries.map(([k, v]) =>
+      `<div class="sec ${cls || ''}${k === 'Interpretation' ? ' interp' : ''}"><div class="st">${esc(k)}</div><p class="sb">${esc(v)}</p></div>`
+    ).join('');
+  }
+
+  function render() {
+    const rec = byNumber[current];
+    if (!rec) { $('#content').innerHTML = '<p class="placeholder">Hexagram not found.</p>'; return; }
+    const c = rec.chinese, z = rec.zhouyi, w = rec.wings, s = rec.summ, l = rec.lens;
+
+    let html = `<div class="hexhead">
+      <div class="hexsym">${esc(c.symbol)}</div>
+      <div>
+        <div class="hexnum">Hexagram ${current}</div>
+        <div class="hexname">${esc(c.name)}</div>
+        <div class="hexsub">${esc(c.metadata.chinese_name)} · ${esc(c.metadata.pinyin)}</div>
+      </div>
+    </div>`;
+
+    // Layer 1 — Chinese original (the point of this page)
+    html += `<div class="layer">
+      <div class="lyt">Original Chinese <span class="src">· Project Gutenberg, public domain</span></div>
+      <p class="lynote">Digitized source text, unmodified. The name above is a short AI gloss, not a translation of what follows.</p>
+      ${sectionsHTML(c.sections, 'chinese')}
+      <a class="gutenberg-link" href="https://www.gutenberg.org/ebooks/25501" target="_blank" rel="noopener">Read ebook #25501 on Project Gutenberg ↗</a>
+    </div>`;
+
+    // Layer 2 — the Zhouyi core, the OLDEST stratum (late Western Zhou), Legge's PD translation
+    if (z) {
+      html += `<div class="layer">
+        <div class="lyt">Zhouyi core — the oldest layer <span class="src">· Judgment + Line statements, late Western Zhou (c. 9th c. BCE) · English: James Legge 1882, public domain</span></div>
+        <p class="lynote">The divination text at the bottom of the book — pre-Confucian, no moral commentary. Everything in (parentheses) is Legge's own interpolation, not the original.</p>
+        ${sectionsHTML(z.sections, '')}
+      </div>`;
+    }
+
+    // Layer 3 — the Ten Wings' Great Image, the Confucian stratum (Warring States–Han)
+    if (w) {
+      html += `<div class="layer">
+        <div class="lyt">Ten Wings — the Confucian layer <span class="src">· Great Image (Daxiang), c. 350–100 BCE, added centuries later · English: James Legge 1882, public domain</span></div>
+        <p class="lynote">The 'superior man' moral reading — a later stratum, so you can see the moralizing layer as an addition, not the origin.</p>
+        ${sectionsHTML(w.sections, '')}
+      </div>`;
+    }
+
+    // Layer 4 — this site's English condensation
+    if (s) {
+      html += `<div class="layer">
+        <div class="lyt">This site's English reading <span class="src">· i-ching-summarized, translation lineage unverified</span></div>
+        ${sectionsHTML(s.sections, '')}
+      </div>`;
+    }
+
+    // Layer 5 — cross-lens synthesis (if this hexagram has one)
+    if (l) {
+      html += `<div class="layer">
+        <div class="lyt">Cross-lens reading <span class="src">· Three Lenses (Human Design / zodiac / chakra synthesis, held lightly)</span></div>
+        <div class="sec"><div class="st">${esc(l.name)}</div>
+          <div class="lensrow">${(l.keywords || []).map(k => `<span class="lenspill">${esc(k)}</span>`).join('')}</div>
+        </div>
+      </div>`;
+    }
+
+    $('#content').innerHTML = html;
+  }
+
+  boot().catch(err => {
+    $('#content').innerHTML = `<p class="placeholder">Could not load the source text. (${esc(err && err.message || err)})</p>`;
+  });
+})();
+</script>
+
+<script src="../site-footer.js"></script>
+<site-footer base="../"></site-footer>
+</body>
+</html>

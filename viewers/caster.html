@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.25">
+<title>The Path Caster — cast a journey through the hexagrams · The Recursive I Ching</title>
+<link rel="stylesheet" href="../theme.css?v=3">
+<style>
+  /* Layout only — every colour comes from theme.css (the one source). */
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);color-scheme:light;
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+  .wrap{max-width:640px;margin:0 auto;padding:22px 16px 90px}
+  header.hero{padding:10px 0 6px}
+  .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
+  h1{font-family:"Fraunces",Georgia,serif;font-size:26px;margin:6px 0 8px;color:var(--ink);display:flex;align-items:center;gap:10px}
+  h1 svg{flex:none;color:var(--accent)}
+  .lede{color:var(--muted);font-size:14.5px;max-width:60ch}
+
+  .honesty{margin:16px 0 18px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;
+    background:var(--chip,#eaf0f7);font-size:13px;color:var(--ink-soft);line-height:1.55}
+  .honesty b{color:var(--ink)}
+
+  /* mode pills */
+  .modebar{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 4px}
+  .modepill{font-family:inherit;font-size:13px;font-weight:600;padding:8px 14px;border-radius:999px;
+    border:1px solid var(--line);background:var(--panel);color:var(--ink-soft);cursor:pointer;
+    transition:border-color .15s,color .15s,background .15s}
+  .modepill:hover{border-color:var(--accent);color:var(--ink)}
+  .modepill.on{background:var(--chip,#f1ece1);border-color:var(--accent);color:var(--accent)}
+  .mode-hint{font-size:12.5px;color:var(--muted);margin:2px 0 16px}
+
+  /* settings */
+  .settings{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 14px 12px;margin-bottom:18px}
+  .srow{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:flex-end;margin-bottom:10px}
+  .srow:last-child{margin-bottom:0}
+  .sfield{display:flex;flex-direction:column;gap:3px;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;flex:1 1 140px;min-width:120px}
+  .sfield select{font-family:inherit;font-size:13.5px;color:var(--ink);background:var(--surface);border:1px solid var(--line);
+    border-radius:8px;padding:7px 8px;text-transform:none;letter-spacing:normal}
+  button{font-family:inherit;cursor:pointer}
+  .btn{font-size:13px;font-weight:600;padding:8px 14px;border-radius:8px;border:1px solid var(--line);
+    background:var(--panel);color:var(--ink-soft);transition:border-color .15s,color .15s,background .15s}
+  .btn:hover{border-color:var(--accent);color:var(--accent)}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.primary:hover{background:var(--gold);opacity:.9}
+  .btn:disabled{opacity:.4;cursor:not-allowed}
+  .btn[hidden]{display:none}
+  #dist-preview{font-size:12.5px;color:var(--muted);align-self:center}
+
+  [data-modes]{display:none}
+  body.mode-cast [data-modes~="cast"],
+  body.mode-sequential [data-modes~="sequential"],
+  body.mode-explore [data-modes~="explore"]{display:flex}
+
+  /* status / progress bar */
+  .statusbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:2px 0 14px;font-size:13.5px;color:var(--ink-soft)}
+  .statusbar b{color:var(--ink)}
+
+  /* stack of hexagram cards + connectors */
+  #stack{display:flex;flex-direction:column;gap:0}
+  .hexcard{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow-card)}
+  .hexcard-head{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+  .hexsym{font-size:34px;line-height:1;color:var(--accent);flex:none}
+  .hexnum{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+  .hexname{font-family:"Fraunces",Georgia,serif;font-size:19px;color:var(--ink);margin:1px 0}
+  .hexsub{font-size:12px;color:var(--muted)}
+
+  .linediagram{display:flex;flex-direction:column;gap:5px;margin:12px 0;max-width:220px}
+  .lrow{display:flex;align-items:center;gap:8px;padding:3px 4px;border-radius:6px}
+  .lrow .lnum{font-size:10px;color:var(--muted);width:14px;text-align:right;flex:none}
+  .lbar{position:relative;height:10px;flex:1 1 auto;border-radius:3px}
+  .lbar.solid{background:var(--ink-soft)}
+  .lbar.broken{background:transparent}
+  .lbar.broken::before,.lbar.broken::after{content:'';position:absolute;top:0;bottom:0;width:44%;background:var(--ink-soft);border-radius:3px}
+  .lbar.broken::before{left:0}
+  .lbar.broken::after{right:0}
+  .lrow.flipped{background:var(--chip,#f1ece1)}
+  .lrow.flipped .lbar.solid,.lrow.flipped .lbar.broken::before,.lrow.flipped .lbar.broken::after{background:var(--accent)}
+  .lrow.tappable{cursor:pointer}
+  .lrow.tappable:hover{background:var(--chip,#eaf0f7)}
+  .lrow.tappable:hover .lbar.solid,.lrow.tappable:hover .lbar.broken::before,.lrow.tappable:hover .lbar.broken::after{background:var(--accent)}
+
+  .hexjudgment{font-size:13.5px;color:var(--ink);margin:0}
+  .hexinterp{font-size:12.5px;color:var(--muted);margin:6px 0 0;font-style:italic}
+
+  .connector{display:flex;align-items:flex-start;gap:10px;padding:12px 10px 12px 30px;position:relative}
+  .connector::before{content:'';position:absolute;left:23px;top:-2px;bottom:-2px;width:2px;background:var(--line-soft)}
+  .connector .cdot{position:absolute;left:16px;top:14px;width:16px;height:16px;border-radius:50%;
+    background:var(--accent);color:#fff;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center}
+  .connector .ctext{flex:1;background:var(--panel2);border:1px dashed var(--line);border-radius:10px;padding:9px 12px}
+  .connector .cline{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);font-weight:700;margin:0 0 3px}
+  .connector .cbody{font-size:13px;color:var(--ink-soft);margin:0}
+
+  .complete-banner{margin-top:16px;padding:16px 18px;border:1px solid var(--accent);border-radius:12px;
+    background:var(--panel);text-align:center}
+  .complete-banner b{color:var(--accent);display:block;font-family:"Fraunces",Georgia,serif;font-size:17px;margin-bottom:4px}
+  .complete-banner p{margin:0 0 12px;font-size:13px;color:var(--muted)}
+
+  .placeholder{text-align:center;padding:40px 18px;color:var(--muted);font-size:13.5px}
+
+  @media (max-width:420px){
+    .wrap{padding:16px 12px 90px}
+    h1{font-size:22px}
+    .modepill{font-size:12px;padding:7px 11px}
+  }
+</style>
+</head>
+<body class="mode-explore">
+<script src="../site-header.js?v=46"></script>
+<site-header active="caster"></site-header>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker">The Recursive I Ching · a casting, not a prediction</div>
+    <h1>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="4" y="4" width="16" height="2.4" rx="1"/>
+        <rect x="4" y="10.8" width="7" height="2.4" rx="1"/><rect x="13" y="10.8" width="7" height="2.4" rx="1"/>
+        <rect x="4" y="17.6" width="16" height="2.4" rx="1"/>
+      </svg>
+      The Path Caster
+    </h1>
+    <p class="lede">Cast an origin and a destiny hexagram, then find your own way through the changing lines between them.</p>
+  </header>
+
+  <div class="honesty">
+    <b>Honestly, first:</b> a single changing line turning one hexagram into another is exactly what the
+    I Ching's own logic describes (之卦, the "going-to" hexagram) — read the line text for whichever line
+    moves. <b>A journey of several transitions — a path through intermediate hexagrams — is this project's
+    own extension</b>, not a classical technique. Held lightly, as synthesis, not scripture.
+  </div>
+
+  <div class="modebar" role="group" aria-label="Casting mode">
+    <button class="modepill on" data-mode="explore" type="button">Explore</button>
+    <button class="modepill" data-mode="cast" type="button">Cast the Path</button>
+    <button class="modepill" data-mode="sequential" type="button">Sequential Caster</button>
+  </div>
+  <p class="mode-hint" id="mode-hint"></p>
+
+  <div class="settings">
+    <div class="srow">
+      <label class="sfield">Origin
+        <select id="origin-pick"></select>
+      </label>
+      <label class="sfield">Destiny
+        <select id="destiny-pick"></select>
+      </label>
+      <button class="btn" id="cast-both-btn" type="button" title="Cast both hexagrams at random, using the chosen method below">Cast both ▸</button>
+    </div>
+    <div class="srow">
+      <label class="sfield">Randomness
+        <select id="method-pick">
+          <option value="coin">Three coins</option>
+          <option value="yarrow">Yarrow stalks</option>
+        </select>
+      </label>
+      <label class="sfield" data-modes="cast sequential">Style
+        <select id="style-pick">
+          <option value="direct">Direct (shortest routes)</option>
+          <option value="wandering">Wandering (may detour)</option>
+        </select>
+      </label>
+      <label class="sfield" data-modes="cast sequential">Steps
+        <select id="budget-pick"></select>
+      </label>
+    </div>
+    <div class="srow">
+      <button class="btn primary" id="begin-btn" type="button">Begin</button>
+      <span id="dist-preview"></span>
+    </div>
+  </div>
+
+  <div class="statusbar" id="statusbar" hidden>
+    <span id="status-txt"></span>
+    <button class="btn" id="undo-btn" hidden type="button">↺ Undo</button>
+    <button class="btn" id="next-btn" hidden type="button">Next step ▸</button>
+    <button class="btn" id="auto-btn" hidden type="button">▸ Auto-advance</button>
+  </div>
+
+  <div id="stack"><p class="placeholder">Pick or cast an origin and destiny hexagram above, then press <b>Begin</b>.</p></div>
+
+  <div class="complete-banner" id="complete-banner" hidden>
+    <b>Arrived.</b>
+    <p id="complete-txt"></p>
+    <button class="btn primary" id="save-btn" type="button">⬇ Save this path</button>
+  </div>
+</div>
+
+<script src="../assistant.js" defer></script>
+<script src="caster-engine.js"></script>
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const PFX = '../';
+  const E = window.CasterEngine;
+
+  // ── state ───────────────────────────────────────────────────────────
+  let hexData = { byNumber: {}, byBinary: {} };
+  let state = {
+    mode: 'explore',
+    method: 'coin',
+    style: 'direct',
+    budget: 0,
+    originNum: 1,
+    destinyNum: 2,
+    started: false,
+    exploreStack: null,   // [{binary, flippedIdx}]
+    path: null,            // [{binary, flippedIdx}] — cast/sequential
+    revealed: 0,            // sequential: how many of `path` are shown (0 = just origin)
+    autoTimer: null,
+  };
+
+  // ── boot: load the verified binary table + the two content grammars ──
+  async function boot() {
+    const [table, summarized, lenses] = await Promise.all([
+      fetch(PFX + 'scripts/hexagram-binary.json').then(r => r.json()),
+      fetch(PFX + 'grammars/i-ching-summarized/grammar.json').then(r => r.json()),
+      fetch(PFX + 'grammars/three-lenses-64/grammar.json').then(r => r.json()).catch(() => null),
+    ]);
+
+    const lensByNum = {};
+    if (lenses && lenses.items) {
+      for (const it of lenses.items) {
+        const m = /^hex-(\d+)$/.exec(it.id || '');
+        if (m) lensByNum[+m[1]] = it;
+      }
+    }
+    const summByNum = {};
+    for (const it of (summarized.items || [])) {
+      const n = it.metadata && it.metadata.number;
+      if (n) summByNum[n] = it;
+    }
+
+    for (const [numStr, entry] of Object.entries(table.hexagrams)) {
+      const n = +numStr;
+      const summ = summByNum[n] || {};
+      const lens = lensByNum[n];
+      hexData.byNumber[n] = {
+        number: n,
+        binary: entry.binary, // the VERIFIED table — never trust the grammar's own metadata.binary
+        name: summ.name || entry.name,
+        symbol: summ.symbol || entry.symbol || '',
+        chinese_name: summ.metadata && summ.metadata.chinese_name || entry.chinese_name || '',
+        pinyin: summ.metadata && summ.metadata.pinyin || entry.pinyin || '',
+        sections: summ.sections || {},
+        lensName: lens ? lens.name : null,
+        lensKeywords: lens ? (lens.keywords || []) : [],
+      };
+      hexData.byBinary[entry.binary] = n;
+    }
+
+    populateSelect('#origin-pick', 1);
+    populateSelect('#destiny-pick', 2);
+    populateBudgets();
+    wireEvents();
+    setMode('explore');
+    updateDistPreview();
+  }
+
+  function populateSelect(sel, defaultNum) {
+    const el = $(sel);
+    const nums = Object.keys(hexData.byNumber).map(Number).sort((a, b) => a - b);
+    el.innerHTML = nums.map(n => `<option value="${n}">${n} — ${esc(hexData.byNumber[n].name)}</option>`).join('');
+    el.value = String(defaultNum);
+  }
+
+  // ── settings / mode wiring ────────────────────────────────────────────
+  function setMode(m) {
+    state.mode = m;
+    document.body.className = 'mode-' + m;
+    for (const p of document.querySelectorAll('.modepill')) p.classList.toggle('on', p.dataset.mode === m);
+    $('#mode-hint').textContent = {
+      explore: 'Pick or cast an origin and destiny hexagram, then press Begin. Tap any line on the current hexagram to flip it — the stack grows one hexagram per tap, in any direction (a detour is allowed). Undo pops the last flip. Reach the destiny and the path is complete.',
+      cast: 'Pick or cast an origin and destiny, choose a step budget and a style, then Begin — the whole path casts at once. The final step is always deterministic, so the destiny always lands.',
+      sequential: 'Same casting as Cast the Path, but intermediates are revealed one at a time — press Next, or let it auto-advance slowly. The final step is always deterministic.',
+    }[m];
+    resetRun();
+    updateDistPreview();
+  }
+
+  function currentDistance() {
+    return E.hamming(hexData.byNumber[state.originNum].binary, hexData.byNumber[state.destinyNum].binary);
+  }
+
+  function populateBudgets() {
+    const d = currentDistance();
+    const budgets = E.validBudgets(d, state.style, 6);
+    const el = $('#budget-pick');
+    el.innerHTML = budgets.map(b => `<option value="${b}">${b} step${b === 1 ? '' : 's'}${b === d ? ' (shortest)' : ''}</option>`).join('');
+    state.budget = budgets[0];
+  }
+
+  function updateDistPreview() {
+    const d = currentDistance();
+    $('#dist-preview').textContent = d === 0
+      ? 'Origin and destiny are the same hexagram.'
+      : `Distance: ${d} line${d === 1 ? '' : 's'} differ.`;
+  }
+
+  function resetRun() {
+    state.started = false;
+    state.exploreStack = null;
+    state.path = null;
+    state.revealed = 0;
+    stopAuto();
+    $('#stack').innerHTML = '<p class="placeholder">Pick or cast an origin and destiny hexagram above, then press <b>Begin</b>.</p>';
+    $('#statusbar').hidden = true;
+    $('#complete-banner').hidden = true;
+    $('#undo-btn').hidden = true;
+    $('#next-btn').hidden = true;
+    $('#auto-btn').hidden = true;
+  }
+
+  // ── begin ─────────────────────────────────────────────────────────────
+  function begin() {
+    stopAuto();
+    const origin = hexData.byNumber[state.originNum].binary;
+    const destiny = hexData.byNumber[state.destinyNum].binary;
+    state.started = true;
+    $('#statusbar').hidden = false;
+    $('#complete-banner').hidden = true;
+
+    if (state.mode === 'explore') {
+      state.exploreStack = [{ binary: origin, flippedIdx: null }];
+      $('#undo-btn').hidden = false;
+      renderExplore();
+    } else {
+      const d = E.hamming(origin, destiny);
+      state.path = E.buildPath(origin, destiny, state.budget, state.style);
+      if (state.mode === 'cast') {
+        state.revealed = state.path.length - 1;
+        renderPath(state.path.length);
+        markComplete();
+      } else {
+        state.revealed = 0;
+        $('#next-btn').hidden = false;
+        $('#auto-btn').hidden = false;
+        renderPath(1);
+        if (state.path.length === 1) markComplete();
+      }
+    }
+  }
+
+  // ── explore mode ──────────────────────────────────────────────────────
+  function renderExplore() {
+    const destinyBin = hexData.byNumber[state.destinyNum].binary;
+    const html = state.exploreStack.map((step, i) => cardHTML(step, i, i === state.exploreStack.length - 1)).join('');
+    $('#stack').innerHTML = html;
+    const dRemaining = E.hamming(state.exploreStack[state.exploreStack.length - 1].binary, destinyBin);
+    $('#status-txt').innerHTML = `Distance remaining: <b>${dRemaining}</b> · ${state.exploreStack.length - 1} flip${state.exploreStack.length - 1 === 1 ? '' : 's'} so far`;
+    $('#undo-btn').disabled = state.exploreStack.length <= 1;
+    if (dRemaining === 0) markComplete(); else $('#complete-banner').hidden = true;
+  }
+
+  function flipExploreLine(idx) {
+    const last = state.exploreStack[state.exploreStack.length - 1];
+    const newBin = E.flipBit(last.binary, idx);
+    state.exploreStack.push({ binary: newBin, flippedIdx: idx });
+    renderExplore();
+  }
+
+  function undoExplore() {
+    if (state.exploreStack.length > 1) state.exploreStack.pop();
+    renderExplore();
+  }
+
+  // ── cast / sequential mode ────────────────────────────────────────────
+  function renderPath(count) {
+    const html = state.path.slice(0, count).map((step, i) => cardHTML(step, i, false)).join('');
+    $('#stack').innerHTML = html;
+    if (state.mode === 'sequential') {
+      $('#status-txt').innerHTML = `Step <b>${count - 1}</b> of <b>${state.path.length - 1}</b>`;
+      $('#next-btn').disabled = count >= state.path.length;
+      if (count >= state.path.length) { $('#next-btn').hidden = true; $('#auto-btn').hidden = true; }
+    } else {
+      $('#status-txt').innerHTML = `Cast in <b>${state.path.length - 1}</b> step${state.path.length - 1 === 1 ? '' : 's'} (${state.style})`;
+    }
+  }
+
+  function nextStep() {
+    if (state.revealed >= state.path.length - 1) return;
+    state.revealed++;
+    renderPath(state.revealed + 1);
+    if (state.revealed >= state.path.length - 1) { markComplete(); stopAuto(); }
+  }
+
+  function toggleAuto() {
+    if (state.autoTimer) { stopAuto(); return; }
+    $('#auto-btn').textContent = '❚❚ Pause';
+    state.autoTimer = setInterval(() => {
+      nextStep();
+      if (state.revealed >= state.path.length - 1) stopAuto();
+    }, 2200);
+  }
+  function stopAuto() {
+    if (state.autoTimer) clearInterval(state.autoTimer);
+    state.autoTimer = null;
+    const b = $('#auto-btn'); if (b) b.textContent = '▸ Auto-advance';
+  }
+
+  // ── rendering: one hexagram card + its incoming connector ────────────
+  function cardHTML(step, indexInStack, tappable) {
+    const n = hexData.byBinary[step.binary];
+    const hex = hexData.byNumber[n];
+    let out = '';
+    if (indexInStack > 0) out += connectorHTML(step, indexInStack);
+    const lineRows = [5, 4, 3, 2, 1, 0].map(i => {
+      const justFlipped = indexInStack > 0 && i === step.flippedIdx;
+      return `<div class="lrow${tappable ? ' tappable' : ''}${justFlipped ? ' flipped' : ''}" data-line-idx="${i}" data-card="${indexInStack}"
+        title="Line ${i + 1}${tappable ? ' — tap to flip' : justFlipped ? ' — just changed' : ''}">
+        <span class="lnum">${i + 1}</span><span class="lbar ${step.binary[i] === '1' ? 'solid' : 'broken'}"></span>
+      </div>`;
+    }).join('');
+    const stripThe = s => String(s || '').replace(/^the\s+/i, '').trim().toLowerCase();
+    const lensBit = hex.lensName && stripThe(hex.lensName) !== stripThe(hex.name)
+      ? ` · also read as "${esc(hex.lensName)}"${hex.lensKeywords && hex.lensKeywords.length ? ' (' + hex.lensKeywords.slice(0, 3).map(esc).join(', ') + ')' : ''}`
+      : '';
+    out += `<div class="hexcard" data-stack-index="${indexInStack}">
+      <div class="hexcard-head">
+        <div class="hexsym">${esc(hex.symbol)}</div>
+        <div>
+          <div class="hexnum">Hexagram ${n}${indexInStack === 0 ? ' · origin' : ''}</div>
+          <div class="hexname">${esc(hex.name)}</div>
+          <div class="hexsub">${esc(hex.chinese_name)} · ${esc(hex.pinyin)}${lensBit}</div>
+        </div>
+      </div>
+      <div class="linediagram">${lineRows}</div>
+      <p class="hexjudgment">${esc(hex.sections && hex.sections.Judgment || '')}</p>
+      ${hex.sections && hex.sections.Interpretation ? `<p class="hexinterp">${esc(hex.sections.Interpretation)}</p>` : ''}
+    </div>`;
+    return out;
+  }
+
+  function connectorHTML(step, indexInStack) {
+    const prevList = state.mode === 'explore' ? state.exploreStack : state.path;
+    const prevBinary = prevList[indexInStack - 1].binary;
+    const prevNum = hexData.byBinary[prevBinary];
+    const prevHex = hexData.byNumber[prevNum];
+    const lineLabel = `Line ${step.flippedIdx + 1}`;
+    const lineText = (prevHex.sections && prevHex.sections[lineLabel]) || '—';
+    return `<div class="connector">
+      <span class="cdot">${step.flippedIdx + 1}</span>
+      <div class="ctext">
+        <p class="cline">${lineLabel} changes (from Hexagram ${prevNum})</p>
+        <p class="cbody">${esc(lineText)}</p>
+      </div>
+    </div>`;
+  }
+
+  function markComplete() {
+    $('#complete-banner').hidden = false;
+    const dNum = state.destinyNum;
+    $('#complete-txt').textContent = `You have reached Hexagram ${dNum} — ${hexData.byNumber[dNum].name}.`;
+  }
+
+  // ── save as grammar ───────────────────────────────────────────────────
+  function activeSteps() {
+    if (state.mode === 'explore') return state.exploreStack;
+    if (state.mode === 'sequential') return state.path.slice(0, state.revealed + 1);
+    return state.path;
+  }
+  function buildSequenceGrammar() {
+    const steps = activeSteps();
+    const items = steps.map((s, i) => {
+      const n = hexData.byBinary[s.binary];
+      const hex = hexData.byNumber[n];
+      const changing = s.flippedIdx === null ? null : {
+        line: s.flippedIdx + 1,
+        from_hexagram: hexData.byBinary[steps[i - 1].binary],
+        text: (hexData.byNumber[hexData.byBinary[steps[i - 1].binary]].sections || {})['Line ' + (s.flippedIdx + 1)] || '',
+      };
+      return {
+        id: `step-${i}`,
+        name: `${i === 0 ? 'Origin' : 'Step ' + i}: Hexagram ${n} — ${hex.name}`,
+        level: 1,
+        category: 'custom',
+        keywords: [],
+        metadata: { step: i, hexagram_number: n, binary: s.binary, changing_line: changing },
+        sections: {
+          Judgment: (hex.sections && hex.sections.Judgment) || '',
+          'Changing line': changing ? `Line ${changing.line} of Hexagram ${changing.from_hexagram}: ${changing.text}` : '— origin, nothing has changed yet —',
+        },
+        questions: [],
+        sort_order: i,
+      };
+    });
+    return {
+      name: `Path Caster journey — Hexagram ${state.originNum} to Hexagram ${state.destinyNum}`,
+      description: 'Cast with The Recursive I Ching’s Path Caster (docs/DESIGN-path-caster.md). One transition — a changing line — is classical (之卦, the "going-to" hexagram); a multi-step journey through intermediate hexagrams is this project’s own extension, not a classical technique. A casting, not a prediction.',
+      cover_image_url: null,
+      tags: ['path-caster', 'journey'],
+      grammar_type: 'custom',
+      items,
+      creator_name: 'PlayfulProcess',
+      creator_link: '',
+      is_published: false,
+    };
+  }
+  function saveAsGrammar() {
+    const grammar = buildSequenceGrammar();
+    const blob = new Blob([JSON.stringify(grammar, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `path-caster-${state.originNum}-to-${state.destinyNum}.json`;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+  }
+
+  // ── events ────────────────────────────────────────────────────────────
+  function wireEvents() {
+    for (const p of document.querySelectorAll('.modepill')) p.onclick = () => setMode(p.dataset.mode);
+    $('#origin-pick').onchange = e => { state.originNum = +e.target.value; populateBudgets(); updateDistPreview(); resetRun(); };
+    $('#destiny-pick').onchange = e => { state.destinyNum = +e.target.value; populateBudgets(); updateDistPreview(); resetRun(); };
+    $('#method-pick').onchange = e => { state.method = e.target.value; };
+    $('#style-pick').onchange = e => { state.style = e.target.value; populateBudgets(); };
+    $('#budget-pick').onchange = e => { state.budget = +e.target.value; };
+    $('#cast-both-btn').onclick = () => {
+      const oBin = E.castBinary(state.method);
+      const dBin = E.castBinary(state.method);
+      state.originNum = hexData.byBinary[oBin];
+      state.destinyNum = hexData.byBinary[dBin];
+      $('#origin-pick').value = String(state.originNum);
+      $('#destiny-pick').value = String(state.destinyNum);
+      populateBudgets();
+      updateDistPreview();
+      resetRun();
+    };
+    $('#begin-btn').onclick = begin;
+    $('#undo-btn').onclick = undoExplore;
+    $('#next-btn').onclick = nextStep;
+    $('#auto-btn').onclick = toggleAuto;
+    $('#save-btn').onclick = saveAsGrammar;
+    $('#stack').addEventListener('click', e => {
+      const row = e.target.closest('.lrow.tappable');
+      if (!row || state.mode !== 'explore') return;
+      const stackIdx = +row.dataset.card;
+      if (stackIdx !== state.exploreStack.length - 1) return; // only the current (last) card is live
+      flipExploreLine(+row.dataset.lineIdx);
+    });
+  }
+
+  boot().catch(err => {
+    $('#stack').innerHTML = `<p class="placeholder">Could not load the hexagram data. (${esc(err && err.message || err)})</p>`;
+  });
+})();
+</script>
+
+<script src="../site-footer.js"></script>
+<site-footer base="../"></site-footer>
+</body>
+</html>

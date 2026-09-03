@@ -1,0 +1,464 @@
+{
+  "_meta": {
+    "description": "King Wen sequence (1-64) to 6-line binary hexagram mapping for The Recursive I Ching's Path Caster (docs/DESIGN-path-caster.md). This is the one load-bearing lookup for all Hamming-distance / changing-line math in caster.html — every consumer should read from here rather than re-deriving it.",
+    "convention": "Bottom-to-top. Character index 0 (leftmost) = Line 1 (bottom line of the hexagram); index 5 (rightmost) = Line 6 (top line). '1' = yang/solid, '0' = yin/broken. This matches the Fu Xi/Shao Yong binary-sequence convention (line 1 = least significant bit) and the i-ching-summarized grammar's own 'Line 1'..'Line 6' section keys (Line 1 = binary[0]).",
+    "how_this_was_built": "Recomputed from this repo's own grammars/i-ching-summarized/grammar.json metadata.trigram_above / metadata.trigram_below fields (NOT from that file's own metadata.binary field — see caveat below), using the standard trigram-to-3-bit mapping confirmed via WebSearch (2026-07-08): Qian/Heaven=111, Kun/Earth=000, Zhen/Thunder=100 (eldest son, yang at bottom), Kan/Water=010 (middle son, yang in middle), Gen/Mountain=001 (youngest son, yang at top), Xun/Wind=011 (eldest daughter, yin at bottom), Li/Fire=101 (middle daughter, yin in middle), Dui/Lake=110 (youngest daughter, yin at top). binary = trigram_bits[lower] + trigram_bits[upper].",
+    "caveat_the_grammar_own_binary_field_has_bugs": "grammars/i-ching-summarized/grammar.json's own metadata.binary field was cross-checked against its own trigram_above/trigram_below fields for all 64 hexagrams and DISAGREED in 5 places: hexagrams 15 (Modesty), 16 (Enthusiasm), 46 (Pushing Upward), 63 (After Completion), 64 (Before Completion) -- the 63/64 pair's binary values were literally swapped with each other. Do not use that file's metadata.binary field for math; this table supersedes it. (The grammar file itself was left unedited -- its binary field is unused by the reader, only Judgment/Image/Line-N section text and symbol/pinyin/chinese_name are read from it.)",
+    "verification": [
+      "Self-consistency: recomputed binary bijects onto all 64 possible 6-bit values (0..63), no duplicates.",
+      "Landmark check per docs/DESIGN-path-caster.md's own request: hexagram 1 (Creative) = 111111 (six yang), hexagram 2 (Receptive) = 000000 (six yin), hexagrams 11 (Peace, Earth-above-Heaven-below) and 12 (Standstill, Heaven-above-Earth-below) are exact bitwise complements (111000 / 000111) -- matches their famous classical relationship.",
+      "Cross-referenced hexagrams 1-15 by name and binary (accounting for a bottom-to-top vs top-to-bottom mirroring between sources) against the independent adamblvck/iching-wilhelm-dataset (Wilhelm translation, GitHub, fetched 2026-07-08) -- names matched for all 15, and binaries matched for 13 of 15, with the 2 exceptions being exactly the two entries (15, 16) already flagged as buggy in this repo's stored metadata.binary, confirming the bug is in that field, not in this table's trigram-based reconstruction.",
+      "Confirmed the trigram sons/daughters family (Zhen/Kan/Gen = eldest/middle/youngest son, one yang line at bottom/middle/top; Xun/Li/Dui = eldest/middle/youngest daughter, one yin line at bottom/middle/top) via WebSearch against general I Ching reference material, independent of this repo's own data."
+    ]
+  },
+  "hexagrams": {
+    "1": {
+      "name": "The Creative",
+      "binary": "111111",
+      "chinese_name": "乾",
+      "pinyin": "Qián",
+      "symbol": "䷀"
+    },
+    "2": {
+      "name": "The Receptive",
+      "binary": "000000",
+      "chinese_name": "坤",
+      "pinyin": "Kūn",
+      "symbol": "䷁"
+    },
+    "3": {
+      "name": "Difficulty at the Beginning",
+      "binary": "100010",
+      "chinese_name": "屯",
+      "pinyin": "Zhūn",
+      "symbol": "䷂"
+    },
+    "4": {
+      "name": "Youthful Folly",
+      "binary": "010001",
+      "chinese_name": "蒙",
+      "pinyin": "Méng",
+      "symbol": "䷃"
+    },
+    "5": {
+      "name": "Waiting (Nourishment)",
+      "binary": "111010",
+      "chinese_name": "需",
+      "pinyin": "Xū",
+      "symbol": "䷄"
+    },
+    "6": {
+      "name": "Conflict",
+      "binary": "010111",
+      "chinese_name": "訟",
+      "pinyin": "Sòng",
+      "symbol": "䷅"
+    },
+    "7": {
+      "name": "The Army",
+      "binary": "010000",
+      "chinese_name": "師",
+      "pinyin": "Shī",
+      "symbol": "䷆"
+    },
+    "8": {
+      "name": "Holding Together [Union]",
+      "binary": "000010",
+      "chinese_name": "比",
+      "pinyin": "Bǐ",
+      "symbol": "䷇"
+    },
+    "9": {
+      "name": "The Taming Power of the Small",
+      "binary": "111011",
+      "chinese_name": "小畜",
+      "pinyin": "Xiǎo Xù",
+      "symbol": "䷈"
+    },
+    "10": {
+      "name": "Treading [Conduct]",
+      "binary": "110111",
+      "chinese_name": "履",
+      "pinyin": "Lǚ",
+      "symbol": "䷉"
+    },
+    "11": {
+      "name": "Peace",
+      "binary": "111000",
+      "chinese_name": "泰",
+      "pinyin": "Tài",
+      "symbol": "䷊"
+    },
+    "12": {
+      "name": "Standstill [Stagnation]",
+      "binary": "000111",
+      "chinese_name": "否",
+      "pinyin": "Pǐ",
+      "symbol": "䷋"
+    },
+    "13": {
+      "name": "Fellowship with Men",
+      "binary": "101111",
+      "chinese_name": "同人",
+      "pinyin": "Tóng Rén",
+      "symbol": "䷌"
+    },
+    "14": {
+      "name": "Possession in Great Measure",
+      "binary": "111101",
+      "chinese_name": "大有",
+      "pinyin": "Dà Yǒu",
+      "symbol": "䷍"
+    },
+    "15": {
+      "name": "Modesty",
+      "binary": "001000",
+      "chinese_name": "謙",
+      "pinyin": "Qiān",
+      "symbol": "䷎"
+    },
+    "16": {
+      "name": "Enthusiasm",
+      "binary": "000100",
+      "chinese_name": "豫",
+      "pinyin": "Yù",
+      "symbol": "䷏"
+    },
+    "17": {
+      "name": "Following",
+      "binary": "100110",
+      "chinese_name": "隨",
+      "pinyin": "Suí",
+      "symbol": "䷐"
+    },
+    "18": {
+      "name": "Work on what has been spoiled [Decay]",
+      "binary": "011001",
+      "chinese_name": "蠱",
+      "pinyin": "Gǔ",
+      "symbol": "䷑"
+    },
+    "19": {
+      "name": "Approach",
+      "binary": "110000",
+      "chinese_name": "臨",
+      "pinyin": "Lín",
+      "symbol": "䷒"
+    },
+    "20": {
+      "name": "Contemplation [View]",
+      "binary": "000011",
+      "chinese_name": "觀",
+      "pinyin": "Guān",
+      "symbol": "䷓"
+    },
+    "21": {
+      "name": "Biting Through",
+      "binary": "100101",
+      "chinese_name": "噬嗑",
+      "pinyin": "Shì Kè",
+      "symbol": "䷔"
+    },
+    "22": {
+      "name": "Grace",
+      "binary": "101001",
+      "chinese_name": "賁",
+      "pinyin": "Bì",
+      "symbol": "䷕"
+    },
+    "23": {
+      "name": "Splitting Apart",
+      "binary": "000001",
+      "chinese_name": "剝",
+      "pinyin": "Bō",
+      "symbol": "䷖"
+    },
+    "24": {
+      "name": "Return (The Turning Point)",
+      "binary": "100000",
+      "chinese_name": "復",
+      "pinyin": "Fù",
+      "symbol": "䷗"
+    },
+    "25": {
+      "name": "Innocence (The Unexpected)",
+      "binary": "100111",
+      "chinese_name": "無妄",
+      "pinyin": "Wú Wàng",
+      "symbol": "䷘"
+    },
+    "26": {
+      "name": "The Taming Power of the Great",
+      "binary": "111001",
+      "chinese_name": "大畜",
+      "pinyin": "Dà Xù",
+      "symbol": "䷙"
+    },
+    "27": {
+      "name": "The Corners of the Mouth (Providing Nourishment)",
+      "binary": "100001",
+      "chinese_name": "頤",
+      "pinyin": "Yí",
+      "symbol": "䷚"
+    },
+    "28": {
+      "name": "Preponderance of the Great",
+      "binary": "011110",
+      "chinese_name": "大過",
+      "pinyin": "Dà Guò",
+      "symbol": "䷛"
+    },
+    "29": {
+      "name": "The Abysmal (Water)",
+      "binary": "010010",
+      "chinese_name": "坎",
+      "pinyin": "Kǎn",
+      "symbol": "䷜"
+    },
+    "30": {
+      "name": "The Clinging, Fire",
+      "binary": "101101",
+      "chinese_name": "離",
+      "pinyin": "Lí",
+      "symbol": "䷝"
+    },
+    "31": {
+      "name": "Influence (Wooing)",
+      "binary": "001110",
+      "chinese_name": "咸",
+      "pinyin": "Xián",
+      "symbol": "䷞"
+    },
+    "32": {
+      "name": "Duration",
+      "binary": "011100",
+      "chinese_name": "恆",
+      "pinyin": "Héng",
+      "symbol": "䷟"
+    },
+    "33": {
+      "name": "Retreat",
+      "binary": "001111",
+      "chinese_name": "遯",
+      "pinyin": "Dùn",
+      "symbol": "䷠"
+    },
+    "34": {
+      "name": "The Power of the Great",
+      "binary": "111100",
+      "chinese_name": "大壯",
+      "pinyin": "Dà Zhuàng",
+      "symbol": "䷡"
+    },
+    "35": {
+      "name": "Progress",
+      "binary": "000101",
+      "chinese_name": "晉",
+      "pinyin": "Jìn",
+      "symbol": "䷢"
+    },
+    "36": {
+      "name": "Darkening of the Light",
+      "binary": "101000",
+      "chinese_name": "明夷",
+      "pinyin": "Míng Yí",
+      "symbol": "䷣"
+    },
+    "37": {
+      "name": "The Family [The Clan]",
+      "binary": "101011",
+      "chinese_name": "家人",
+      "pinyin": "Jiā Rén",
+      "symbol": "䷤"
+    },
+    "38": {
+      "name": "Opposition",
+      "binary": "110101",
+      "chinese_name": "睽",
+      "pinyin": "Kuí",
+      "symbol": "䷥"
+    },
+    "39": {
+      "name": "Obstruction",
+      "binary": "001010",
+      "chinese_name": "蹇",
+      "pinyin": "Jiǎn",
+      "symbol": "䷦"
+    },
+    "40": {
+      "name": "Deliverance",
+      "binary": "010100",
+      "chinese_name": "解",
+      "pinyin": "Xiè",
+      "symbol": "䷧"
+    },
+    "41": {
+      "name": "Decrease",
+      "binary": "110001",
+      "chinese_name": "損",
+      "pinyin": "Sǔn",
+      "symbol": "䷨"
+    },
+    "42": {
+      "name": "Increase",
+      "binary": "100011",
+      "chinese_name": "益",
+      "pinyin": "Yì",
+      "symbol": "䷩"
+    },
+    "43": {
+      "name": "Break-through (Resoluteness)",
+      "binary": "111110",
+      "chinese_name": "夬",
+      "pinyin": "Guài",
+      "symbol": "䷪"
+    },
+    "44": {
+      "name": "Coming to Meet",
+      "binary": "011111",
+      "chinese_name": "姤",
+      "pinyin": "Gòu",
+      "symbol": "䷫"
+    },
+    "45": {
+      "name": "Gathering Together [Massing]",
+      "binary": "000110",
+      "chinese_name": "萃",
+      "pinyin": "Cuì",
+      "symbol": "䷬"
+    },
+    "46": {
+      "name": "Pushing Upward",
+      "binary": "011000",
+      "chinese_name": "升",
+      "pinyin": "Shēng",
+      "symbol": "䷭"
+    },
+    "47": {
+      "name": "Oppression (Exhaustion)",
+      "binary": "010110",
+      "chinese_name": "困",
+      "pinyin": "Kùn",
+      "symbol": "䷮"
+    },
+    "48": {
+      "name": "The Well",
+      "binary": "011010",
+      "chinese_name": "井",
+      "pinyin": "Jǐng",
+      "symbol": "䷯"
+    },
+    "49": {
+      "name": "Revolution (Molting)",
+      "binary": "101110",
+      "chinese_name": "革",
+      "pinyin": "Gé",
+      "symbol": "䷰"
+    },
+    "50": {
+      "name": "The Caldron",
+      "binary": "011101",
+      "chinese_name": "鼎",
+      "pinyin": "Dǐng",
+      "symbol": "䷱"
+    },
+    "51": {
+      "name": "The Arousing (Shock, Thunder)",
+      "binary": "100100",
+      "chinese_name": "震",
+      "pinyin": "Zhèn",
+      "symbol": "䷲"
+    },
+    "52": {
+      "name": "Keeping Still, Mountain",
+      "binary": "001001",
+      "chinese_name": "艮",
+      "pinyin": "Gèn",
+      "symbol": "䷳"
+    },
+    "53": {
+      "name": "Development (Gradual Progress)",
+      "binary": "001011",
+      "chinese_name": "漸",
+      "pinyin": "Jiàn",
+      "symbol": "䷴"
+    },
+    "54": {
+      "name": "The Marrying Maiden",
+      "binary": "110100",
+      "chinese_name": "歸妹",
+      "pinyin": "Guī Mèi",
+      "symbol": "䷵"
+    },
+    "55": {
+      "name": "Abundance",
+      "binary": "101100",
+      "chinese_name": "豐",
+      "pinyin": "Fēng",
+      "symbol": "䷶"
+    },
+    "56": {
+      "name": "The Wanderer",
+      "binary": "001101",
+      "chinese_name": "旅",
+      "pinyin": "Lǚ",
+      "symbol": "䷷"
+    },
+    "57": {
+      "name": "The Gentle (The Penetrating, Wind)",
+      "binary": "011011",
+      "chinese_name": "巽",
+      "pinyin": "Xùn",
+      "symbol": "䷸"
+    },
+    "58": {
+      "name": "The Joyous, Lake",
+      "binary": "110110",
+      "chinese_name": "兌",
+      "pinyin": "Duì",
+      "symbol": "䷹"
+    },
+    "59": {
+      "name": "Dispersion [Dissolution]",
+      "binary": "010011",
+      "chinese_name": "渙",
+      "pinyin": "Huàn",
+      "symbol": "䷺"
+    },
+    "60": {
+      "name": "Limitation",
+      "binary": "110010",
+      "chinese_name": "節",
+      "pinyin": "Jié",
+      "symbol": "䷻"
+    },
+    "61": {
+      "name": "Inner Truth",
+      "binary": "110011",
+      "chinese_name": "中孚",
+      "pinyin": "Zhōng Fú",
+      "symbol": "䷼"
+    },
+    "62": {
+      "name": "Preponderance of the Small",
+      "binary": "001100",
+      "chinese_name": "小過",
+      "pinyin": "Xiǎo Guò",
+      "symbol": "䷽"
+    },
+    "63": {
+      "name": "After Completion",
+      "binary": "101010",
+      "chinese_name": "既濟",
+      "pinyin": "Jì Jì",
+      "symbol": "䷾"
+    },
+    "64": {
+      "name": "Before Completion",
+      "binary": "010101",
+      "chinese_name": "未濟",
+      "pinyin": "Wèi Jì",
+      "symbol": "䷿"
+    }
+  }
+}
