@@ -66,6 +66,13 @@
   .bknote{width:100%;min-height:74px;font-family:inherit;font-size:13.5px;line-height:1.5;color:var(--ink);background:var(--surface);
     border:1px solid var(--line);border-radius:8px;padding:8px 10px;resize:vertical;margin-top:4px}
   .bknote:focus{outline:none;border-color:var(--accent)}
+  .booknav{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0 6px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+  .booknav .muted{font-size:12.5px;color:var(--muted)}
+  .bookexit{margin-top:10px;padding:9px 12px;border:1px dashed var(--line);border-radius:10px;background:var(--panel2)}
+  .bookexit .cline{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);font-weight:700;margin:0 0 3px}
+  .bookexit .cbody{font-size:13px;color:var(--ink-soft);margin:0}
+  .resume{padding:14px 16px;border:1px solid var(--accent);border-radius:12px;background:var(--panel);margin:0 0 12px;font-size:13.5px}
+  .resume b{color:var(--accent)}
 
   /* status / progress bar */
   .statusbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:2px 0 14px;font-size:13.5px;color:var(--ink-soft)}
@@ -215,7 +222,7 @@
   // ── state ───────────────────────────────────────────────────────────
   let hexData = { byNumber: {}, byBinary: {} };
   let book = null;            // grammars/the-recursive-iching-book/grammar.json: { intro, end, byNumber }
-  const NOTES_KEY = 'iching-book-notes-v1';
+  const BOOK_KEY = 'iching-book-current-v1';
   let state = {
     mode: 'explore',
     method: 'coin',
@@ -308,6 +315,7 @@
     if (m === 'book') {
       state.destinyNum = 1;
       $('#destiny-pick').value = '1';
+      if (state.originNum === 1) castOriginNotOne();
       if (state.style === 'direct') { state.style = 'wandering'; $('#style-pick').value = 'wandering'; }
       populateBudgets();
       $('#cast-both-btn').textContent = 'Cast where you are ▸';
@@ -318,24 +326,48 @@
     }
     resetRun();
     updateDistPreview();
+    if (m === 'book') {
+      const b = loadSavedBook();
+      if (b) {
+        const o = hexData.byNumber[b.originNum];
+        $('#stack').innerHTML = `<div class="resume"><b>You have an unfinished book</b> — from ${esc(o ? o.name : 'Hexagram ' + b.originNum)} to the Creative, ${Math.min(b.revealed || 0, b.path.length - 1)} of ${b.path.length - 1} steps read${Object.keys(b.notes || {}).length ? ', with your notes' : ''}.<br><br><button class="btn primary" id="resume-btn" type="button">Resume it ▸</button> <button class="btn" id="discard-btn" type="button">Start a new one</button></div>`;
+      }
+    }
   }
 
   // ── book mode helpers ─────────────────────────────────────────────────
-  function pathSignature() {
-    return (state.path || []).map(s => s.binary).join('>');
-  }
-  function loadNotes() {
+  function saveBook() {
+    if (state.mode !== 'book' || !state.path) return;
     try {
-      const all = JSON.parse(localStorage.getItem(NOTES_KEY) || '{}');
-      state.notes = all[pathSignature()] || {};
-    } catch (_) { state.notes = {}; }
+      localStorage.setItem(BOOK_KEY, JSON.stringify({
+        originNum: state.originNum, path: state.path, revealed: state.revealed, notes: state.notes,
+        style: state.style, budget: state.budget, saved: new Date().toISOString(),
+      }));
+    } catch (_) { /* private mode etc. — the book still lives in memory for this run */ }
   }
-  function persistNotes() {
+  function loadSavedBook() {
     try {
-      const all = JSON.parse(localStorage.getItem(NOTES_KEY) || '{}');
-      all[pathSignature()] = state.notes;
-      localStorage.setItem(NOTES_KEY, JSON.stringify(all));
-    } catch (_) { /* private mode etc. — notes still live in memory for this run */ }
+      const b = JSON.parse(localStorage.getItem(BOOK_KEY) || 'null');
+      return b && Array.isArray(b.path) && b.path.length ? b : null;
+    } catch (_) { return null; }
+  }
+  function clearSavedBook() { try { localStorage.removeItem(BOOK_KEY); } catch (_) {} }
+  function resumeBook() {
+    const b = loadSavedBook();
+    if (!b) return;
+    state.originNum = b.originNum; $('#origin-pick').value = String(b.originNum);
+    state.destinyNum = 1; $('#destiny-pick').value = '1';
+    state.path = b.path; state.revealed = Math.min(b.revealed || 0, b.path.length - 1); state.notes = b.notes || {};
+    state.started = true;
+    $('#statusbar').hidden = false; $('#next-btn').hidden = true; $('#auto-btn').hidden = true; $('#undo-btn').hidden = true;
+    renderBook(state.revealed + 1, false);
+    if (state.revealed >= state.path.length - 1) markComplete();
+  }
+  function castOriginNotOne() {
+    let n = 1, tries = 0;
+    while (n === 1 && tries++ < 12) n = hexData.byBinary[E.castBinary(state.method)];
+    if (n === 1) n = 2;
+    state.originNum = n; $('#origin-pick').value = String(n);
   }
   function paras(text) {
     return String(text || '').split(/\n\s*\n/).map(p => `<p>${esc(p)}</p>`).join('');
@@ -343,19 +375,6 @@
   function frameHTML(item, kicker) {
     if (!item) return '';
     return `<div class="framecard"><div class="kicker">${esc(kicker)}</div><h2>${esc(item.name)}</h2>${paras(item.sections && item.sections.Text)}</div>`;
-  }
-  function bookBlockHTML(n, indexInStack) {
-    const it = book && book.byNumber[n];
-    const learn = it && it.sections && it.sections.Learn || '';
-    const story = it && it.sections && it.sections.Story || '';
-    const blank = !(it && it.metadata && it.metadata.story_written);
-    const note = state.notes[indexInStack] || '';
-    return `<div class="bookblock">
-      ${learn ? `<p class="bklabel">Learn</p><p class="bktext">${esc(learn)}</p>` : ''}
-      <p class="bklabel">Story</p><p class="bktext${blank ? ' blank' : ''}">${esc(story || 'No story yet.')}</p>
-      <p class="bklabel">Your transition</p>
-      <textarea class="bknote" data-note="${indexInStack}" placeholder="What were you carrying when this line changed? What did the text make you think of? Nothing, if nothing came.">${esc(note)}</textarea>
-    </div>`;
   }
 
   function currentDistance() {
@@ -395,7 +414,11 @@
   function begin() {
     stopAuto();
     const origin = hexData.byNumber[state.originNum].binary;
-    if (state.mode === 'book') state.destinyNum = 1;
+    if (state.mode === 'book') {
+      state.destinyNum = 1;
+      if (state.originNum === 1) { castOriginNotOne(); populateBudgets(); }
+    }
+    const origin2 = hexData.byNumber[state.originNum].binary;
     const destiny = hexData.byNumber[state.destinyNum].binary;
     state.started = true;
     $('#statusbar').hidden = false;
@@ -408,11 +431,17 @@
     } else {
       const d = E.hamming(origin, destiny);
       state.path = E.buildPath(origin, destiny, state.budget, state.style);
-      if (state.mode === 'book') loadNotes();
+      if (state.mode === 'book') { state.notes = {}; }
       if (state.mode === 'cast') {
         state.revealed = state.path.length - 1;
         renderPath(state.path.length);
         markComplete();
+      } else if (state.mode === 'book') {
+        state.revealed = 0;
+        $('#next-btn').hidden = true;
+        $('#auto-btn').hidden = true;
+        saveBook();
+        renderBook(1, false);
       } else {
         state.revealed = 0;
         $('#next-btn').hidden = false;
@@ -421,6 +450,65 @@
         if (state.path.length === 1) markComplete();
       }
     }
+  }
+
+  // ── book mode renderer: intro → cards (each with its exit line, then the reader's box) → nav/end ──
+  function exitHTML(i) {
+    const next = state.path[i + 1];
+    if (!next) return '';
+    const hex = hexData.byNumber[hexData.byBinary[state.path[i].binary]];
+    const lineLabel = 'Line ' + (next.flippedIdx + 1);
+    const text = (hex.sections && hex.sections[lineLabel]) || '—';
+    return `<div class="bookexit"><p class="cline">What changes here — ${lineLabel}</p><p class="cbody">${esc(text)}</p></div>`;
+  }
+  function renderBook(count, scroll) {
+    let html = frameHTML(book && book.intro, 'The Recursive I Ching · a book you cast · beginning');
+    for (let i = 0; i < count; i++) html += bookCardHTML(state.path[i], i);
+    if (count < state.path.length) {
+      html += `<div class="booknav"><button class="btn primary" id="book-next" type="button">Next hexagram ▸</button><span class="muted">Step ${count - 1} of ${state.path.length - 1} · the destiny is the Creative</span></div>`;
+    } else {
+      html += frameHTML(book && book.end, 'The Recursive I Ching · a book you cast · end');
+    }
+    $('#stack').innerHTML = html;
+    $('#status-txt').innerHTML = `Your book · step <b>${count - 1}</b> of <b>${state.path.length - 1}</b>`;
+    if (scroll) {
+      const el = document.querySelector(`.hexcard[data-stack-index="${count - 1}"]`);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+  function bookCardHTML(step, i) {
+    const n = hexData.byBinary[step.binary];
+    const hex = hexData.byNumber[n];
+    const lineRows = [5, 4, 3, 2, 1, 0].map(k => {
+      const justFlipped = i > 0 && k === step.flippedIdx;
+      return `<div class="lrow${justFlipped ? ' flipped' : ''}" title="Line ${k + 1}${justFlipped ? ' — just changed' : ''}"><span class="lnum">${k + 1}</span><span class="lbar ${step.binary[k] === '1' ? 'solid' : 'broken'}"></span></div>`;
+    }).join('');
+    const it = book && book.byNumber[n];
+    const learn = it && it.sections && it.sections.Learn || '';
+    const story = it && it.sections && it.sections.Story || '';
+    const blank = !(it && it.metadata && it.metadata.story_written);
+    const note = state.notes[i] || '';
+    const isLast = i === state.path.length - 1;
+    return `<div class="hexcard" data-stack-index="${i}">
+      <div class="hexcard-head">
+        <div class="hexsym">${esc(hex.symbol)}</div>
+        <div>
+          <div class="hexnum">${i === 0 ? 'Where you are' : isLast ? 'Where every path arrives' : 'Step ' + i} · Hexagram ${n}</div>
+          <div class="hexname">${esc(hex.name)}</div>
+          <div class="hexsub">${esc(hex.chinese_name)} · ${esc(hex.pinyin)}</div>
+        </div>
+      </div>
+      <div class="linediagram">${lineRows}</div>
+      <p class="hexjudgment">${esc(hex.sections && hex.sections.Judgment || '')}</p>
+      ${hex.sections && hex.sections.Interpretation ? `<p class="hexinterp">${esc(hex.sections.Interpretation)}</p>` : ''}
+      <div class="bookblock">
+        ${learn ? `<p class="bklabel">Learn</p><p class="bktext">${esc(learn)}</p>` : ''}
+        <p class="bklabel">Story</p><p class="bktext${blank ? ' blank' : ''}">${esc(story || 'No story yet.')}</p>
+        ${exitHTML(i)}
+        <p class="bklabel">Your transition</p>
+        <textarea class="bknote" data-note="${i}" placeholder="${isLast ? 'What did you arrive with?' : 'What were you carrying when this line changed? What did the text make you think of? Nothing, if nothing came.'}">${esc(note)}</textarea>
+      </div>
+    </div>`;
   }
 
   // ── explore mode ──────────────────────────────────────────────────────
@@ -448,13 +536,9 @@
 
   // ── cast / sequential mode ────────────────────────────────────────────
   function renderPath(count) {
-    let html = state.path.slice(0, count).map((step, i) => cardHTML(step, i, false)).join('');
-    if (state.mode === 'book') {
-      html = frameHTML(book && book.intro, 'The Recursive I Ching · a book you cast · beginning') + html;
-      if (count >= state.path.length) html += frameHTML(book && book.end, 'The Recursive I Ching · a book you cast · end');
-    }
+    const html = state.path.slice(0, count).map((step, i) => cardHTML(step, i, false)).join('');
     $('#stack').innerHTML = html;
-    if (state.mode === 'sequential' || state.mode === 'book') {
+    if (state.mode === 'sequential') {
       $('#status-txt').innerHTML = `Step <b>${count - 1}</b> of <b>${state.path.length - 1}</b>`;
       $('#next-btn').disabled = count >= state.path.length;
       if (count >= state.path.length) { $('#next-btn').hidden = true; $('#auto-btn').hidden = true; }
@@ -466,6 +550,12 @@
   function nextStep() {
     if (state.revealed >= state.path.length - 1) return;
     state.revealed++;
+    if (state.mode === 'book') {
+      renderBook(state.revealed + 1, true);
+      saveBook();
+      if (state.revealed >= state.path.length - 1) markComplete();
+      return;
+    }
     renderPath(state.revealed + 1);
     if (state.revealed >= state.path.length - 1) { markComplete(); stopAuto(); }
   }
@@ -513,7 +603,6 @@
       <div class="linediagram">${lineRows}</div>
       <p class="hexjudgment">${esc(hex.sections && hex.sections.Judgment || '')}</p>
       ${hex.sections && hex.sections.Interpretation ? `<p class="hexinterp">${esc(hex.sections.Interpretation)}</p>` : ''}
-      ${state.mode === 'book' ? bookBlockHTML(n, indexInStack) : ''}
     </div>`;
     return out;
   }
@@ -538,10 +627,11 @@
     $('#complete-banner').hidden = false;
     const dNum = state.destinyNum;
     $('#complete-txt').textContent = state.mode === 'book'
-      ? `Your book is complete: ${state.path.length} hexagrams, from ${hexData.byNumber[state.originNum].name} to the Creative. Save it as your own grammar, or download it to print.`
+      ? `Your book is complete: ${state.path.length} hexagrams, from ${hexData.byNumber[state.originNum].name} to the Creative. Download it as a grammar (import it into your recursive.eco library) or as Markdown to print. Saving straight to your account is coming.`
       : `You have reached Hexagram ${dNum} — ${hexData.byNumber[dNum].name}.`;
     $('#md-btn').hidden = state.mode !== 'book';
-    $('#save-btn').textContent = state.mode === 'book' ? '⬇ Save as my grammar' : '⬇ Save this path';
+    $('#save-btn').textContent = state.mode === 'book' ? '⬇ Download my book (JSON grammar)' : '⬇ Save this path';
+    $('#md-btn').textContent = '⬇ Download my book (Markdown, to print)';
   }
 
   // ── save as grammar ───────────────────────────────────────────────────
@@ -688,6 +778,7 @@
       const oBin = E.castBinary(state.method);
       const dBin = state.mode === 'book' ? hexData.byNumber[1].binary : E.castBinary(state.method);
       state.originNum = hexData.byBinary[oBin];
+      if (state.mode === 'book' && state.originNum === 1) { castOriginNotOne(); }
       state.destinyNum = hexData.byBinary[dBin];
       $('#origin-pick').value = String(state.originNum);
       $('#destiny-pick').value = String(state.destinyNum);
@@ -705,7 +796,12 @@
       const ta = e.target.closest('textarea.bknote');
       if (!ta) return;
       state.notes[+ta.dataset.note] = ta.value;
-      persistNotes();
+      saveBook();
+    });
+    $('#stack').addEventListener('click', e => {
+      if (e.target.closest('#book-next')) { nextStep(); return; }
+      if (e.target.closest('#resume-btn')) { resumeBook(); return; }
+      if (e.target.closest('#discard-btn')) { clearSavedBook(); resetRun(); return; }
     });
     $('#stack').addEventListener('click', e => {
       const row = e.target.closest('.lrow.tappable');
