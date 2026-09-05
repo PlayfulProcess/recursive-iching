@@ -290,7 +290,9 @@
     populateSelect('#destiny-pick', 2);
     populateBudgets();
     wireEvents();
-    setMode('explore');
+    // deep link: caster.html?mode=book (or cast / sequential / explore)
+    const wanted = new URLSearchParams(location.search).get('mode');
+    setMode(['explore', 'cast', 'sequential', 'book'].includes(wanted) ? wanted : 'explore');
     updateDistPreview();
   }
 
