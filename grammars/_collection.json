@@ -24,6 +24,7 @@
       "id": "synthesis",
       "name": "Synthesis — cross-lens readings of the 64 hexagrams",
       "deck_slugs": [
+        "the-recursive-iching-book",
         "three-lenses-64"
       ]
     },
@@ -93,6 +94,19 @@
       "provenance": "record",
       "year": -250,
       "year_label": "Ten Wings, Confucian school, late Warring States–early Han, c. 350–100 BCE · English: James Legge 1882, public domain"
+    },
+    {
+      "slug": "the-recursive-iching-book",
+      "name": "The Recursive I Ching — a book you cast",
+      "type": "book",
+      "branch": "synthesis",
+      "is_meta": false,
+      "default_preview": null,
+      "items": 66,
+      "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
+      "blurb": "A book with a fixed beginning and a fixed end, and a middle that does not exist until you cast it. Cast how you are; walk the changing lines toward Hexagram 1, the Creative; learn one hexagram at a ti…",
+      "path": "grammars/the-recursive-iching-book/grammar.json",
+      "provenance": "living"
     },
     {
       "slug": "three-lenses-64",
