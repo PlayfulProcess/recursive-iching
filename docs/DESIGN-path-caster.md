@@ -129,3 +129,20 @@ the design doc); a "the grammar's own content has a stray `[cite: N]` artifact i
 Interpretation text" hygiene issue noticed in `i-ching-summarized` while building this
 (pre-existing, unrelated to the caster, not touched — fixing grammar prose content was
 not part of this task).
+
+
+## Book mode and story frames (added 5 Sep 2026)
+
+A fourth mode, **Cast your Book**, ships in `caster.html`: destiny fixed to Hexagram 1, a fixed
+opening and closing read from `grammars/the-recursive-iching-book/grammar.json`, one hexagram per
+Next (Judgment, Learn, Story, changing line), a textarea for the reader's own transition under each
+step (localStorage per path), and at the end "Save as my grammar" (JSON) / "Download as Markdown".
+
+The author's structural ruling: **ending at the Creative is a property of a story, not of the
+tool.** The frame (origin mode, destiny, steps, opening, closing, which Story grammar) should be an
+explicit object — a *story frame* — and a story frame is literally a recursive.eco *spread*
+(`SpreadContract v1`, max 15 positions). The plan, order of work, and the write-back gap are in
+`docs/PLAN-story-frames.md`. Write-back status: `/api/spreads` on flow is CORS-enabled for the
+`.recursive.eco` family for **GET and DELETE only**; there is no POST, so the static page can list
+and delete a signed-in reader's frames but cannot create one until a ~40-line POST route lands in
+`recursive-eco/apps/flow/src/app/api/spreads/route.ts`. Until then: download → import.
