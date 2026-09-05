@@ -24,6 +24,7 @@
       "id": "synthesis",
       "name": "Synthesis — cross-lens readings of the 64 hexagrams",
       "deck_slugs": [
+        "meta-iching",
         "the-recursive-iching-book",
         "three-lenses-64"
       ]
@@ -66,6 +67,19 @@
       "provenance": "record",
       "year": -1000,
       "year_label": "Zhou I Ching, compiled c. 1046–256 BCE · this English condensation's own translation lineage is undocumented"
+    },
+    {
+      "slug": "meta-iching",
+      "name": "The I Ching — All Lenses (meta)",
+      "type": "iching",
+      "branch": "synthesis",
+      "is_meta": false,
+      "default_preview": null,
+      "items": 438,
+      "cover_image_url": null,
+      "blurb": "Every I Ching grammar in this repo, read together. One composite item per hexagram gathers its item from each lens: the trigrams and the Great Image as scenery, Legge's text, the Human Design reading …",
+      "path": "grammars/meta-iching/grammar.json",
+      "provenance": "living"
     },
     {
       "slug": "repair-iching",
