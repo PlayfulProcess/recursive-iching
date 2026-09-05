@@ -47,3 +47,21 @@ Content lifted from `recursive.eco-schemas`, chrome ported from `recursive-astro
 (`ids.json` is an intentional empty skeleton) and not yet live on a custom domain (`CNAME` points
 at `iching.recursive.eco`, DNS/Pages settings are a separate handoff step). See `CHANGELOG.md` for
 the full build record.
+
+
+## Book mode — a book you cast (September 2026)
+
+The Path Caster has a fourth mode, **Cast your Book**. The destiny is fixed to Hexagram 1, the
+Creative. The reader casts where they are, reads a fixed opening, advances one hexagram at a time —
+what the hexagram is (Learn), its story if one has been written, the changing line that carries them
+on — and writes their own transition under each step. At the end they save the walk as their own
+grammar (JSON, importable into recursive.eco) or download it as Markdown to print.
+
+- The book *is* a grammar: `grammars/the-recursive-iching-book/` — `frame.json` holds the
+  hand-written beginning and end; `stories/NN.md` (01–64) hold the chapters, folded in when present;
+  `scripts/build_book_grammar.py` assembles `grammar.json`. Rebuild after editing either.
+- Check: `python scripts/check_book_mode.py` (Playwright; serves the repo on a throwaway port).
+- Design and the argument for the I Ching as the engine:
+  `book-repo/books/gautama-golden-dawn/outline/COMBINATORIAL-DESIGN.md`.
+- Static site, no backend. Saving *to* a recursive.eco account would need one CORS-enabled write
+  endpoint on flow (the tarot site today only reads `/api/spreads`); until then, download → import.

@@ -1,0 +1,1403 @@
+{
+  "_grammar_commons": {
+    "schema_version": "1.0",
+    "license": "CC BY-SA 4.0 (PlayfulProcess) for the frame, the Learn composition and any stories; the underlying I Ching text is public domain; the condensed English Image lines are from this repo's i-ching-summarized grammar (same licence).",
+    "built_by": "scripts/build_book_grammar.py"
+  },
+  "name": "The Recursive I Ching — a book you cast",
+  "description": "A book with a fixed beginning and a fixed end, and a middle that does not exist until you cast it. Cast how you are; walk the changing lines toward Hexagram 1, the Creative; learn one hexagram at a time; write your own transitions; save it as your own grammar; print it if you like. A casting, not a prediction.",
+  "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
+  "grammar_type": "book",
+  "tags": [
+    "iching",
+    "book",
+    "path-caster",
+    "combinatorial",
+    "cast-your-book"
+  ],
+  "creator_name": "PlayfulProcess",
+  "creator_link": "https://iching.recursive.eco/viewers/caster.html",
+  "items": [
+    {
+      "id": "intro",
+      "name": "Before you cast",
+      "symbol": "☯",
+      "category": "frame",
+      "sort_order": 0,
+      "sections": {
+        "Text": "You are about to read a book that does not exist yet. It has a beginning, which is this page, and it has an end, which is Hexagram 1 — the Creative, six unbroken lines, the one every path in this book arrives at. Between the two there is nothing until you cast.\n\nHere is how it works. You cast six lines — three coins, or the yarrow stalks if you have the patience — and the hexagram that comes up is where you are standing. Not who you are. Where you are, today, in the weather you woke up in. From there the book moves one line at a time. A line changes, and the hexagram becomes another hexagram, and the text the tradition wrote for that exact line — some three thousand years ago, for exactly this change — is the page that carries you across. Then another line. Then another. You will pass through hexagrams you would never have chosen, and that is the point; a book you choose your way through is a book you already knew.\n\nEvery hexagram is a meeting of two things from a list of eight: heaven, earth, thunder, wind, water, fire, mountain, lake. Water over thunder. Mountain over fire. Earth over earth. You will meet water more than once on almost any path, and it will not be the same water — which is how anyone learns anything, by meeting it again from a different side. At each hexagram this book gives you what it knows: the old text, the image, what the two elements are doing to each other. Where the story for that hexagram has been written, you will find it. Where it hasn't, you will find an honest blank, and a place to write what happened to you there.\n\nThat place is the part of this book that matters most. Under every step there is a box that says *your transition*. Write in it. What you were carrying when that line changed. What the text made you think of. Nothing, if nothing came. When you reach the end you can save the whole walk — the hexagrams, the changing lines, your words — as a grammar of your own, and keep it, or print it, or hand it to someone. That copy will be the only one. Nobody else will ever cast this book the way you did.\n\nTwo honesties before you begin. First: one changing line turning one hexagram into another is exactly what the I Ching itself describes. A path of several changes, through hexagrams in between, is this project's own extension — held lightly, as a way of reading, not as scripture. Second: this is a casting, not a prediction. The coins do not know your future. They know how to interrupt you, and an interruption, met honestly, is most of what a book is for.\n\nOthers have made books this way. A Californian novelist consulted this very oracle for every turn of a novel and put the oracle inside the novel doing the same. An Italian laid tarot cards in a grid and read the stories along the rows. An Englishman published a book in a box, first and last chapters marked, the rest to be shuffled. This one is theirs and yours. Cast."
+      },
+      "keywords": [
+        "beginning",
+        "how to cast",
+        "frame"
+      ],
+      "metadata": {
+        "role": "intro"
+      }
+    },
+    {
+      "id": "hex-1",
+      "name": "The Creative",
+      "symbol": "䷀",
+      "category": "hexagram",
+      "sort_order": 1,
+      "sections": {
+        "Learn": "Heaven over Heaven. The movement of heaven is full of power. Thus the superior man makes himself strong and untiring.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 1,
+        "binary": "111111",
+        "trigram_above": "heaven",
+        "trigram_below": "heaven",
+        "chinese_name": "乾",
+        "pinyin": "Qián",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-2",
+      "name": "The Receptive",
+      "symbol": "䷁",
+      "category": "hexagram",
+      "sort_order": 2,
+      "sections": {
+        "Learn": "Earth over Earth. The earth's condition is receptive devotion. Thus the superior man who has breadth of character carries the outer world.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 2,
+        "binary": "000000",
+        "trigram_above": "earth",
+        "trigram_below": "earth",
+        "chinese_name": "坤",
+        "pinyin": "Kūn",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-3",
+      "name": "Difficulty at the Beginning",
+      "symbol": "䷂",
+      "category": "hexagram",
+      "sort_order": 3,
+      "sections": {
+        "Learn": "Water over Thunder. Clouds and thunder: the image of Difficulty at the Beginning. Thus the superior man brings order out of confusion.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 3,
+        "binary": "100010",
+        "trigram_above": "water",
+        "trigram_below": "thunder",
+        "chinese_name": "屯",
+        "pinyin": "Zhūn",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-4",
+      "name": "Youthful Folly",
+      "symbol": "䷃",
+      "category": "hexagram",
+      "sort_order": 4,
+      "sections": {
+        "Learn": "Mountain over Water. A spring wells up at the foot of the mountain: the image of Youth. Thus the superior man fosters his character by thoroughness in all that he does.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 4,
+        "binary": "010001",
+        "trigram_above": "mountain",
+        "trigram_below": "water",
+        "chinese_name": "蒙",
+        "pinyin": "Méng",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-5",
+      "name": "Waiting (Nourishment)",
+      "symbol": "䷄",
+      "category": "hexagram",
+      "sort_order": 5,
+      "sections": {
+        "Learn": "Water over Heaven. Clouds rise up to heaven: the image of Waiting. Thus the superior man eats and drinks, and is of good cheer.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 5,
+        "binary": "111010",
+        "trigram_above": "water",
+        "trigram_below": "heaven",
+        "chinese_name": "需",
+        "pinyin": "Xū",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-6",
+      "name": "Conflict",
+      "symbol": "䷅",
+      "category": "hexagram",
+      "sort_order": 6,
+      "sections": {
+        "Learn": "Heaven over Water. Heaven and water go their separate ways: the image of Conflict. Thus in all his transactions the superior man considers the beginning.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 6,
+        "binary": "010111",
+        "trigram_above": "heaven",
+        "trigram_below": "water",
+        "chinese_name": "訟",
+        "pinyin": "Sòng",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-7",
+      "name": "The Army",
+      "symbol": "䷆",
+      "category": "hexagram",
+      "sort_order": 7,
+      "sections": {
+        "Learn": "Earth over Water. In the middle of the earth is water: the image of the Army. Thus the superior man increases his masses by generosity toward the people.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 7,
+        "binary": "010000",
+        "trigram_above": "earth",
+        "trigram_below": "water",
+        "chinese_name": "師",
+        "pinyin": "Shī",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-8",
+      "name": "Holding Together [Union]",
+      "symbol": "䷇",
+      "category": "hexagram",
+      "sort_order": 8,
+      "sections": {
+        "Learn": "Water over Earth. On the earth is water: the image of Holding Together. Thus the kings of antiquity made the individual states prominent and maintained friendly relations with the feudal lords.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 8,
+        "binary": "000010",
+        "trigram_above": "water",
+        "trigram_below": "earth",
+        "chinese_name": "比",
+        "pinyin": "Bǐ",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-9",
+      "name": "The Taming Power of the Small",
+      "symbol": "䷈",
+      "category": "hexagram",
+      "sort_order": 9,
+      "sections": {
+        "Learn": "Wind over Heaven. The wind drives across heaven: the image of the Taming Power of the Small. Thus the superior man refines the outward show of his nature.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 9,
+        "binary": "111011",
+        "trigram_above": "wind",
+        "trigram_below": "heaven",
+        "chinese_name": "小畜",
+        "pinyin": "Xiǎo Xù",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-10",
+      "name": "Treading [Conduct]",
+      "symbol": "䷉",
+      "category": "hexagram",
+      "sort_order": 10,
+      "sections": {
+        "Learn": "Heaven over Lake. Heaven above, the lake below: the image of Treading. Thus the superior man discriminates between high and low, and thereby fortifies the thinking of the people.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 10,
+        "binary": "110111",
+        "trigram_above": "heaven",
+        "trigram_below": "lake",
+        "chinese_name": "履",
+        "pinyin": "Lǚ",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-11",
+      "name": "Peace",
+      "symbol": "䷊",
+      "category": "hexagram",
+      "sort_order": 11,
+      "sections": {
+        "Learn": "Earth over Heaven. Heaven and earth unite: the image of Peace. Thus the ruler divides and completes the course of heaven and earth.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 11,
+        "binary": "111000",
+        "trigram_above": "earth",
+        "trigram_below": "heaven",
+        "chinese_name": "泰",
+        "pinyin": "Tài",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-12",
+      "name": "Standstill [Stagnation]",
+      "symbol": "䷋",
+      "category": "hexagram",
+      "sort_order": 12,
+      "sections": {
+        "Learn": "Heaven over Earth. Heaven and earth do not unite: the image of Standstill. Thus the superior man falls back upon his inner worth in order to escape the difficulties.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 12,
+        "binary": "000111",
+        "trigram_above": "heaven",
+        "trigram_below": "earth",
+        "chinese_name": "否",
+        "pinyin": "Pǐ",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-13",
+      "name": "Fellowship with Men",
+      "symbol": "䷌",
+      "category": "hexagram",
+      "sort_order": 13,
+      "sections": {
+        "Learn": "Heaven over Fire. Heaven together with fire: the image of Fellowship with Men. Thus the superior man organizes the clans and makes distinctions between things.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 13,
+        "binary": "101111",
+        "trigram_above": "heaven",
+        "trigram_below": "fire",
+        "chinese_name": "同人",
+        "pinyin": "Tóng Rén",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-14",
+      "name": "Possession in Great Measure",
+      "symbol": "䷍",
+      "category": "hexagram",
+      "sort_order": 14,
+      "sections": {
+        "Learn": "Fire over Heaven. Fire in heaven above: the image of Possession in Great Measure. Thus the superior man curbs evil and furthers good, and thereby obeys the benevolent will of heaven.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 14,
+        "binary": "111101",
+        "trigram_above": "fire",
+        "trigram_below": "heaven",
+        "chinese_name": "大有",
+        "pinyin": "Dà Yǒu",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-15",
+      "name": "Modesty",
+      "symbol": "䷎",
+      "category": "hexagram",
+      "sort_order": 15,
+      "sections": {
+        "Learn": "Earth over Mountain. Within the earth, a mountain: the image of Modesty. Thus the superior man reduces that which is too much and augments that which is too little.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 15,
+        "binary": "001000",
+        "trigram_above": "earth",
+        "trigram_below": "mountain",
+        "chinese_name": "謙",
+        "pinyin": "Qiān",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-16",
+      "name": "Enthusiasm",
+      "symbol": "䷏",
+      "category": "hexagram",
+      "sort_order": 16,
+      "sections": {
+        "Learn": "Thunder over Earth. Thunder comes resounding out of the earth: the image of Enthusiasm. Thus the ancient kings made music in order to honor merit.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 16,
+        "binary": "000100",
+        "trigram_above": "thunder",
+        "trigram_below": "earth",
+        "chinese_name": "豫",
+        "pinyin": "Yù",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-17",
+      "name": "Following",
+      "symbol": "䷐",
+      "category": "hexagram",
+      "sort_order": 17,
+      "sections": {
+        "Learn": "Lake over Thunder. Thunder in the middle of the lake: the image of Following. Thus the superior man at nightfall goes indoors for rest and recuperation.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 17,
+        "binary": "100110",
+        "trigram_above": "lake",
+        "trigram_below": "thunder",
+        "chinese_name": "隨",
+        "pinyin": "Suí",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-18",
+      "name": "Work on what has been spoiled [Decay]",
+      "symbol": "䷑",
+      "category": "hexagram",
+      "sort_order": 18,
+      "sections": {
+        "Learn": "Mountain over Wind. The wind blows low on the mountain: the image of Decay. Thus the superior man stirs up the people and strengthens their spirit.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 18,
+        "binary": "011001",
+        "trigram_above": "mountain",
+        "trigram_below": "wind",
+        "chinese_name": "蠱",
+        "pinyin": "Gǔ",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-19",
+      "name": "Approach",
+      "symbol": "䷒",
+      "category": "hexagram",
+      "sort_order": 19,
+      "sections": {
+        "Learn": "Earth over Lake. The shore above the lake: the image of Approach. Thus the superior man is inexhaustible in his will to teach, and without limits in his tolerance and protection of the people.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 19,
+        "binary": "110000",
+        "trigram_above": "earth",
+        "trigram_below": "lake",
+        "chinese_name": "臨",
+        "pinyin": "Lín",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-20",
+      "name": "Contemplation [View]",
+      "symbol": "䷓",
+      "category": "hexagram",
+      "sort_order": 20,
+      "sections": {
+        "Learn": "Wind over Earth. The wind blows over the earth: the image of Contemplation. Thus the kings of old visited the regions of the world, contemplated the people, and gave them instruction.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 20,
+        "binary": "000011",
+        "trigram_above": "wind",
+        "trigram_below": "earth",
+        "chinese_name": "觀",
+        "pinyin": "Guān",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-21",
+      "name": "Biting Through",
+      "symbol": "䷔",
+      "category": "hexagram",
+      "sort_order": 21,
+      "sections": {
+        "Learn": "Fire over Thunder. Thunder and lightning: the image of Biting Through. Thus the kings of former times made firm the laws through clearly defined penalties.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 21,
+        "binary": "100101",
+        "trigram_above": "fire",
+        "trigram_below": "thunder",
+        "chinese_name": "噬嗑",
+        "pinyin": "Shì Kè",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-22",
+      "name": "Grace",
+      "symbol": "䷕",
+      "category": "hexagram",
+      "sort_order": 22,
+      "sections": {
+        "Learn": "Mountain over Fire. Fire at the foot of the mountain: the image of Grace. Thus the superior man throws light upon current affairs, but he does not venture to decide issues of law in this way.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 22,
+        "binary": "101001",
+        "trigram_above": "mountain",
+        "trigram_below": "fire",
+        "chinese_name": "賁",
+        "pinyin": "Bì",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-23",
+      "name": "Splitting Apart",
+      "symbol": "䷖",
+      "category": "hexagram",
+      "sort_order": 23,
+      "sections": {
+        "Learn": "Mountain over Earth. The mountain rests on the earth: the image of Splitting Apart. Thus those above can ensure their position only by giving generously to those below.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 23,
+        "binary": "000001",
+        "trigram_above": "mountain",
+        "trigram_below": "earth",
+        "chinese_name": "剝",
+        "pinyin": "Bō",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-24",
+      "name": "Return (The Turning Point)",
+      "symbol": "䷗",
+      "category": "hexagram",
+      "sort_order": 24,
+      "sections": {
+        "Learn": "Earth over Thunder. Thunder within the earth: the image of the Turning Point. Thus the kings of antiquity closed the passes at the time of solstice.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 24,
+        "binary": "100000",
+        "trigram_above": "earth",
+        "trigram_below": "thunder",
+        "chinese_name": "復",
+        "pinyin": "Fù",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-25",
+      "name": "Innocence (The Unexpected)",
+      "symbol": "䷘",
+      "category": "hexagram",
+      "sort_order": 25,
+      "sections": {
+        "Learn": "Heaven over Thunder. Under heaven thunder rolls: all things attain the natural state of innocence. Thus the kings of old, rich in virtue, fostered all beings in harmony with the seasons.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 25,
+        "binary": "100111",
+        "trigram_above": "heaven",
+        "trigram_below": "thunder",
+        "chinese_name": "無妄",
+        "pinyin": "Wú Wàng",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-26",
+      "name": "The Taming Power of the Great",
+      "symbol": "䷙",
+      "category": "hexagram",
+      "sort_order": 26,
+      "sections": {
+        "Learn": "Mountain over Heaven. Heaven within the mountain: the image of the Taming Power of the Great. Thus the superior man acquaints himself with many sayings of antiquity and many deeds of the past.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 26,
+        "binary": "111001",
+        "trigram_above": "mountain",
+        "trigram_below": "heaven",
+        "chinese_name": "大畜",
+        "pinyin": "Dà Xù",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-27",
+      "name": "The Corners of the Mouth (Providing Nourishment)",
+      "symbol": "䷚",
+      "category": "hexagram",
+      "sort_order": 27,
+      "sections": {
+        "Learn": "Mountain over Thunder. At the foot of the mountain, thunder: the image of Providing Nourishment. Thus the superior man is careful of his words and temperate in eating and drinking.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 27,
+        "binary": "100001",
+        "trigram_above": "mountain",
+        "trigram_below": "thunder",
+        "chinese_name": "頤",
+        "pinyin": "Yí",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-28",
+      "name": "Preponderance of the Great",
+      "symbol": "䷛",
+      "category": "hexagram",
+      "sort_order": 28,
+      "sections": {
+        "Learn": "Lake over Wind. The lake rises above the trees: the image of Preponderance of the Great. Thus the superior man, when he stands alone, is unconcerned, and if he has to renounce the world, he is undaunted.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 28,
+        "binary": "011110",
+        "trigram_above": "lake",
+        "trigram_below": "wind",
+        "chinese_name": "大過",
+        "pinyin": "Dà Guò",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-29",
+      "name": "The Abysmal (Water)",
+      "symbol": "䷜",
+      "category": "hexagram",
+      "sort_order": 29,
+      "sections": {
+        "Learn": "Water over Water. Water flows on uninterruptedly and reaches its goal: the image of the Abysmal repeated. Thus the superior man walks in lasting virtue and goes about the business of teaching.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 29,
+        "binary": "010010",
+        "trigram_above": "water",
+        "trigram_below": "water",
+        "chinese_name": "坎",
+        "pinyin": "Kǎn",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-30",
+      "name": "The Clinging, Fire",
+      "symbol": "䷝",
+      "category": "hexagram",
+      "sort_order": 30,
+      "sections": {
+        "Learn": "Fire over Fire. That which is bright rises twice: the image of Fire. Thus the great man, by perpetuating this brightness, illumines the four quarters of the world.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 30,
+        "binary": "101101",
+        "trigram_above": "fire",
+        "trigram_below": "fire",
+        "chinese_name": "離",
+        "pinyin": "Lí",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-31",
+      "name": "Influence (Wooing)",
+      "symbol": "䷞",
+      "category": "hexagram",
+      "sort_order": 31,
+      "sections": {
+        "Learn": "Lake over Mountain. A lake on the mountain: the image of Influence. Thus the superior man encourages people to approach him by his readiness to receive them.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 31,
+        "binary": "001110",
+        "trigram_above": "lake",
+        "trigram_below": "mountain",
+        "chinese_name": "咸",
+        "pinyin": "Xián",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-32",
+      "name": "Duration",
+      "symbol": "䷟",
+      "category": "hexagram",
+      "sort_order": 32,
+      "sections": {
+        "Learn": "Thunder over Wind. Thunder and wind: the image of Duration. Thus the superior man stands firm and does not change his direction.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 32,
+        "binary": "011100",
+        "trigram_above": "thunder",
+        "trigram_below": "wind",
+        "chinese_name": "恆",
+        "pinyin": "Héng",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-33",
+      "name": "Retreat",
+      "symbol": "䷠",
+      "category": "hexagram",
+      "sort_order": 33,
+      "sections": {
+        "Learn": "Heaven over Mountain. Mountain under heaven: the image of Retreat. Thus the superior man keeps the inferior man at a distance, not angrily but with reserve.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 33,
+        "binary": "001111",
+        "trigram_above": "heaven",
+        "trigram_below": "mountain",
+        "chinese_name": "遯",
+        "pinyin": "Dùn",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-34",
+      "name": "The Power of the Great",
+      "symbol": "䷡",
+      "category": "hexagram",
+      "sort_order": 34,
+      "sections": {
+        "Learn": "Thunder over Heaven. Thunder in heaven above: the image of the Power of the Great. Thus the superior man does not tread upon paths that do not accord with established order.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 34,
+        "binary": "111100",
+        "trigram_above": "thunder",
+        "trigram_below": "heaven",
+        "chinese_name": "大壯",
+        "pinyin": "Dà Zhuàng",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-35",
+      "name": "Progress",
+      "symbol": "䷢",
+      "category": "hexagram",
+      "sort_order": 35,
+      "sections": {
+        "Learn": "Fire over Earth. The sun rises over the earth: the image of Progress. Thus the superior man himself brightens his bright virtue.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 35,
+        "binary": "000101",
+        "trigram_above": "fire",
+        "trigram_below": "earth",
+        "chinese_name": "晉",
+        "pinyin": "Jìn",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-36",
+      "name": "Darkening of the Light",
+      "symbol": "䷣",
+      "category": "hexagram",
+      "sort_order": 36,
+      "sections": {
+        "Learn": "Earth over Fire. The sun has sunk under the earth: the image of Darkening of the Light. Thus the superior man lives with the great multitude; he veils his light, yet still shines.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 36,
+        "binary": "101000",
+        "trigram_above": "earth",
+        "trigram_below": "fire",
+        "chinese_name": "明夷",
+        "pinyin": "Míng Yí",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-37",
+      "name": "The Family [The Clan]",
+      "symbol": "䷤",
+      "category": "hexagram",
+      "sort_order": 37,
+      "sections": {
+        "Learn": "Wind over Fire. Wind comes forth from fire: the image of the Family. Thus the superior man has substance in his words and duration in his way of life.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 37,
+        "binary": "101011",
+        "trigram_above": "wind",
+        "trigram_below": "fire",
+        "chinese_name": "家人",
+        "pinyin": "Jiā Rén",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-38",
+      "name": "Opposition",
+      "symbol": "䷥",
+      "category": "hexagram",
+      "sort_order": 38,
+      "sections": {
+        "Learn": "Fire over Lake. Above, fire; below, the lake: the image of Opposition. Thus amid all objects of the world the superior man retains his individuality.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 38,
+        "binary": "110101",
+        "trigram_above": "fire",
+        "trigram_below": "lake",
+        "chinese_name": "睽",
+        "pinyin": "Kuí",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-39",
+      "name": "Obstruction",
+      "symbol": "䷦",
+      "category": "hexagram",
+      "sort_order": 39,
+      "sections": {
+        "Learn": "Water over Mountain. Water on the mountain: the image of Obstruction. Thus the superior man turns his attention to himself and molds his character.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 39,
+        "binary": "001010",
+        "trigram_above": "water",
+        "trigram_below": "mountain",
+        "chinese_name": "蹇",
+        "pinyin": "Jiǎn",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-40",
+      "name": "Deliverance",
+      "symbol": "䷧",
+      "category": "hexagram",
+      "sort_order": 40,
+      "sections": {
+        "Learn": "Thunder over Water. Thunder and rain set in: the image of Deliverance. Thus the superior man pardons mistakes and forgives misdeeds.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 40,
+        "binary": "010100",
+        "trigram_above": "thunder",
+        "trigram_below": "water",
+        "chinese_name": "解",
+        "pinyin": "Xiè",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-41",
+      "name": "Decrease",
+      "symbol": "䷨",
+      "category": "hexagram",
+      "sort_order": 41,
+      "sections": {
+        "Learn": "Mountain over Lake. At the foot of the mountain, the lake: the image of Decrease. Thus the superior man curbs his anger and restrains his instincts.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 41,
+        "binary": "110001",
+        "trigram_above": "mountain",
+        "trigram_below": "lake",
+        "chinese_name": "損",
+        "pinyin": "Sǔn",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-42",
+      "name": "Increase",
+      "symbol": "䷩",
+      "category": "hexagram",
+      "sort_order": 42,
+      "sections": {
+        "Learn": "Wind over Thunder. Wind and thunder: the image of Increase. Thus the superior man: if he sees good, he imitates it; if he has faults, he furthers himself of them.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 42,
+        "binary": "100011",
+        "trigram_above": "wind",
+        "trigram_below": "thunder",
+        "chinese_name": "益",
+        "pinyin": "Yì",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-43",
+      "name": "Break-through (Resoluteness)",
+      "symbol": "䷪",
+      "category": "hexagram",
+      "sort_order": 43,
+      "sections": {
+        "Learn": "Lake over Heaven. The lake has risen up to heaven: the image of Break-through. Thus the superior man dispenses riches downward and refrains from resting on his virtue.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 43,
+        "binary": "111110",
+        "trigram_above": "lake",
+        "trigram_below": "heaven",
+        "chinese_name": "夬",
+        "pinyin": "Guài",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-44",
+      "name": "Coming to Meet",
+      "symbol": "䷫",
+      "category": "hexagram",
+      "sort_order": 44,
+      "sections": {
+        "Learn": "Heaven over Wind. Under heaven, the wind: the image of Coming to Meet. Thus does the prince act when disseminating his commands and proclaiming them to the four quarters of heaven.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 44,
+        "binary": "011111",
+        "trigram_above": "heaven",
+        "trigram_below": "wind",
+        "chinese_name": "姤",
+        "pinyin": "Gòu",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-45",
+      "name": "Gathering Together [Massing]",
+      "symbol": "䷬",
+      "category": "hexagram",
+      "sort_order": 45,
+      "sections": {
+        "Learn": "Lake over Earth. Over the earth, the lake: the image of Gathering Together. Thus the superior man renews his weapons in order to meet the unforeseen.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 45,
+        "binary": "000110",
+        "trigram_above": "lake",
+        "trigram_below": "earth",
+        "chinese_name": "萃",
+        "pinyin": "Cuì",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-46",
+      "name": "Pushing Upward",
+      "symbol": "䷭",
+      "category": "hexagram",
+      "sort_order": 46,
+      "sections": {
+        "Learn": "Earth over Wind. Within the earth, wood grows: the image of Pushing Upward. Thus the superior man in his devotion accumulates small things in order to achieve something high and great.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 46,
+        "binary": "011000",
+        "trigram_above": "earth",
+        "trigram_below": "wind",
+        "chinese_name": "升",
+        "pinyin": "Shēng",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-47",
+      "name": "Oppression (Exhaustion)",
+      "symbol": "䷮",
+      "category": "hexagram",
+      "sort_order": 47,
+      "sections": {
+        "Learn": "Lake over Water. There is no water in the lake: the image of Exhaustion. Thus the superior man stakes his life on following his will.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 47,
+        "binary": "010110",
+        "trigram_above": "lake",
+        "trigram_below": "water",
+        "chinese_name": "困",
+        "pinyin": "Kùn",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-48",
+      "name": "The Well",
+      "symbol": "䷯",
+      "category": "hexagram",
+      "sort_order": 48,
+      "sections": {
+        "Learn": "Water over Wind. Water over wood: the image of the Well. Thus the superior man encourages the people at their work, and exhorts them to help one another.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 48,
+        "binary": "011010",
+        "trigram_above": "water",
+        "trigram_below": "wind",
+        "chinese_name": "井",
+        "pinyin": "Jǐng",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-49",
+      "name": "Revolution (Molting)",
+      "symbol": "䷰",
+      "category": "hexagram",
+      "sort_order": 49,
+      "sections": {
+        "Learn": "Lake over Fire. Fire in the lake: the image of Revolution. Thus the superior man sets the calendar in order and makes the seasons clear.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 49,
+        "binary": "101110",
+        "trigram_above": "lake",
+        "trigram_below": "fire",
+        "chinese_name": "革",
+        "pinyin": "Gé",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-50",
+      "name": "The Caldron",
+      "symbol": "䷱",
+      "category": "hexagram",
+      "sort_order": 50,
+      "sections": {
+        "Learn": "Fire over Wind. Fire over wood: the image of the Caldron. Thus the superior man consolidates his fate by making his position correct.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 50,
+        "binary": "011101",
+        "trigram_above": "fire",
+        "trigram_below": "wind",
+        "chinese_name": "鼎",
+        "pinyin": "Dǐng",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-51",
+      "name": "The Arousing (Shock, Thunder)",
+      "symbol": "䷲",
+      "category": "hexagram",
+      "sort_order": 51,
+      "sections": {
+        "Learn": "Thunder over Thunder. Thunder repeated: the image of Shock. Thus in fear and trembling the superior man sets his life in order and examines himself.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 51,
+        "binary": "100100",
+        "trigram_above": "thunder",
+        "trigram_below": "thunder",
+        "chinese_name": "震",
+        "pinyin": "Zhèn",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-52",
+      "name": "Keeping Still, Mountain",
+      "symbol": "䷳",
+      "category": "hexagram",
+      "sort_order": 52,
+      "sections": {
+        "Learn": "Mountain over Mountain. Mountains standing close together: the image of Keeping Still. Thus the superior man does not let his thoughts go beyond his situation.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 52,
+        "binary": "001001",
+        "trigram_above": "mountain",
+        "trigram_below": "mountain",
+        "chinese_name": "艮",
+        "pinyin": "Gèn",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-53",
+      "name": "Development (Gradual Progress)",
+      "symbol": "䷴",
+      "category": "hexagram",
+      "sort_order": 53,
+      "sections": {
+        "Learn": "Wind over Mountain. On the mountain, a tree: the image of Development. Thus the superior man abides in dignity and virtue, in order to improve the customs.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 53,
+        "binary": "001011",
+        "trigram_above": "wind",
+        "trigram_below": "mountain",
+        "chinese_name": "漸",
+        "pinyin": "Jiàn",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-54",
+      "name": "The Marrying Maiden",
+      "symbol": "䷵",
+      "category": "hexagram",
+      "sort_order": 54,
+      "sections": {
+        "Learn": "Thunder over Lake. Thunder over the lake: the image of the Marrying Maiden. Thus the superior man understands the transitory in the light of the eternity of the end.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 54,
+        "binary": "110100",
+        "trigram_above": "thunder",
+        "trigram_below": "lake",
+        "chinese_name": "歸妹",
+        "pinyin": "Guī Mèi",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-55",
+      "name": "Abundance",
+      "symbol": "䷶",
+      "category": "hexagram",
+      "sort_order": 55,
+      "sections": {
+        "Learn": "Thunder over Fire. Both thunder and lightning come: the image of Abundance. Thus the superior man decides lawsuits and carries out punishments.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 55,
+        "binary": "101100",
+        "trigram_above": "thunder",
+        "trigram_below": "fire",
+        "chinese_name": "豐",
+        "pinyin": "Fēng",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-56",
+      "name": "The Wanderer",
+      "symbol": "䷷",
+      "category": "hexagram",
+      "sort_order": 56,
+      "sections": {
+        "Learn": "Fire over Mountain. Fire on the mountain: the image of the Wanderer. Thus the superior man is clear-minded and cautious in imposing penalties, and protracts no lawsuit.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 56,
+        "binary": "001101",
+        "trigram_above": "fire",
+        "trigram_below": "mountain",
+        "chinese_name": "旅",
+        "pinyin": "Lǚ",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-57",
+      "name": "The Gentle (The Penetrating, Wind)",
+      "symbol": "䷸",
+      "category": "hexagram",
+      "sort_order": 57,
+      "sections": {
+        "Learn": "Wind over Wind. Winds following one upon another: the image of the Gently Penetrating. Thus the superior man spreads his commands abroad and carries out his undertakings.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 57,
+        "binary": "011011",
+        "trigram_above": "wind",
+        "trigram_below": "wind",
+        "chinese_name": "巽",
+        "pinyin": "Xùn",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-58",
+      "name": "The Joyous, Lake",
+      "symbol": "䷹",
+      "category": "hexagram",
+      "sort_order": 58,
+      "sections": {
+        "Learn": "Lake over Lake. Lakes resting one on the other: the image of the Joyous. Thus the superior man joins with his friends for discussion and practice.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 58,
+        "binary": "110110",
+        "trigram_above": "lake",
+        "trigram_below": "lake",
+        "chinese_name": "兌",
+        "pinyin": "Duì",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-59",
+      "name": "Dispersion [Dissolution]",
+      "symbol": "䷺",
+      "category": "hexagram",
+      "sort_order": 59,
+      "sections": {
+        "Learn": "Wind over Water. The wind drives over the water: the image of Dispersion. Thus the kings of old offered sacrifices to the Lord and built temples.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 59,
+        "binary": "010011",
+        "trigram_above": "wind",
+        "trigram_below": "water",
+        "chinese_name": "渙",
+        "pinyin": "Huàn",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-60",
+      "name": "Limitation",
+      "symbol": "䷻",
+      "category": "hexagram",
+      "sort_order": 60,
+      "sections": {
+        "Learn": "Water over Lake. Water over lake: the image of Limitation. Thus the superior man creates number and measure, and examines the nature of virtue and correct conduct.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 60,
+        "binary": "110010",
+        "trigram_above": "water",
+        "trigram_below": "lake",
+        "chinese_name": "節",
+        "pinyin": "Jié",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-61",
+      "name": "Inner Truth",
+      "symbol": "䷼",
+      "category": "hexagram",
+      "sort_order": 61,
+      "sections": {
+        "Learn": "Wind over Lake. Wind over lake: the image of Inner Truth. Thus the superior man discusses lawsuits in order to delay executions.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 61,
+        "binary": "110011",
+        "trigram_above": "wind",
+        "trigram_below": "lake",
+        "chinese_name": "中孚",
+        "pinyin": "Zhōng Fú",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-62",
+      "name": "Preponderance of the Small",
+      "symbol": "䷽",
+      "category": "hexagram",
+      "sort_order": 62,
+      "sections": {
+        "Learn": "Thunder over Mountain. Thunder on the mountain: the image of Preponderance of the Small. Thus in his conduct the superior man gives preponderance to reverence.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 62,
+        "binary": "001100",
+        "trigram_above": "thunder",
+        "trigram_below": "mountain",
+        "chinese_name": "小過",
+        "pinyin": "Xiǎo Guò",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-63",
+      "name": "After Completion",
+      "symbol": "䷾",
+      "category": "hexagram",
+      "sort_order": 63,
+      "sections": {
+        "Learn": "Water over Fire. Water over fire: the image of the condition After Completion. Thus the superior man takes thought of misfortune and arms himself against it in advance.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 63,
+        "binary": "101010",
+        "trigram_above": "water",
+        "trigram_below": "fire",
+        "chinese_name": "既濟",
+        "pinyin": "Jì Jì",
+        "story_written": false
+      }
+    },
+    {
+      "id": "hex-64",
+      "name": "Before Completion",
+      "symbol": "䷿",
+      "category": "hexagram",
+      "sort_order": 64,
+      "sections": {
+        "Learn": "Fire over Water. Fire over water: the image of the condition Before Completion. Thus the superior man is careful in the differentiation of things, so that each finds its place.",
+        "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
+      },
+      "keywords": [],
+      "metadata": {
+        "number": 64,
+        "binary": "010101",
+        "trigram_above": "fire",
+        "trigram_below": "water",
+        "chinese_name": "未濟",
+        "pinyin": "Wèi Jì",
+        "story_written": false
+      }
+    },
+    {
+      "id": "end",
+      "name": "Hexagram 1 — the Creative",
+      "symbol": "䷀",
+      "category": "frame",
+      "sort_order": 65,
+      "sections": {
+        "Text": "Six unbroken lines. You have arrived at the one hexagram that is made of nothing but yang — heaven over heaven, the Creative, the thing that makes. Every path in this book ends here, and it is worth asking why, because it is not the answer you might expect.\n\nIt is not because heaven is the goal. In the received order of the I Ching this hexagram is not the end of the book; it is the *beginning* — the first page, the first thing named, before earth, before anything has happened. The book you have just cast runs the other way. You started wherever the coins put you, in the middle of things, in some weather, and walked backward through the changes to the place where the changes come from. You did not climb to the top. You walked back to the source.\n\nAnd here is what the source turns out to be. Everything you passed through on the way — the water, the thunder, the mountain that would not move, the lake that showed you your face — was made of this and one other thing, the Receptive, six broken lines, the earth that takes what heaven gives and makes it into something. Two ingredients. Sixty-four meetings. Your whole path was those two, in different proportions, meeting each other again and again and calling it weather. There was never anything in the book but the Creative and the Receptive taking turns. There was never anything in you but the same.\n\nThe tradition has a word for the moment when the one who was walking notices that the walking and the ground and the walker were never separate. It is not a mystical word; it is closer to what happens when you recognise a face you had been looking at for some time without knowing you knew it. The thing that cast the coins is the thing the coins were describing. You were the weather. That is the recognition, and this book cannot give it to you; it can only walk you back to the place where it is most likely to happen and leave you there, at the first page, with six unbroken lines and nothing yet made.\n\nSo this is not an ending. The received book ends on Hexagram 64, *Before Completion* — the oldest book of changes closes on *not yet*. This one ends on Hexagram 1, which is where that one begins. Go back and cast again if you like; it will be a different book. Or don't. Take what you wrote in the boxes, save it, print it, give it to someone who is standing where you were standing when you started. That is what the Creative does with what it makes. It does not keep it."
+      },
+      "keywords": [
+        "end",
+        "the Creative",
+        "recognition"
+      ],
+      "metadata": {
+        "role": "end",
+        "number": 1
+      }
+    }
+  ]
+}

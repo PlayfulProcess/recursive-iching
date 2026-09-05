@@ -51,6 +51,21 @@
   body.mode-cast [data-modes~="cast"],
   body.mode-sequential [data-modes~="sequential"],
   body.mode-explore [data-modes~="explore"]{display:flex}
+  body.mode-book [data-modes~="book"]{display:flex}
+
+  /* Book mode: the frame pages, the per-step reading, and the reader's own transition */
+  .framecard{background:var(--panel);border:1px solid var(--accent);border-radius:14px;padding:20px 20px 16px;margin:0 0 6px;box-shadow:var(--shadow-card)}
+  .framecard .kicker{margin-bottom:6px}
+  .framecard h2{font-family:"Fraunces",Georgia,serif;font-size:21px;margin:0 0 10px;color:var(--ink)}
+  .framecard p{font-size:14.5px;color:var(--ink);margin:0 0 .9em;line-height:1.6}
+  .framecard p:last-child{margin-bottom:0}
+  .bookblock{margin-top:12px;border-top:1px dashed var(--line);padding-top:10px}
+  .bklabel{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:700;margin:8px 0 3px}
+  .bktext{font-size:13.5px;color:var(--ink);margin:0}
+  .bktext.blank{color:var(--muted);font-style:italic}
+  .bknote{width:100%;min-height:74px;font-family:inherit;font-size:13.5px;line-height:1.5;color:var(--ink);background:var(--surface);
+    border:1px solid var(--line);border-radius:8px;padding:8px 10px;resize:vertical;margin-top:4px}
+  .bknote:focus{outline:none;border-color:var(--accent)}
 
   /* status / progress bar */
   .statusbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:2px 0 14px;font-size:13.5px;color:var(--ink-soft)}
@@ -134,6 +149,7 @@
     <button class="modepill on" data-mode="explore" type="button">Explore</button>
     <button class="modepill" data-mode="cast" type="button">Cast the Path</button>
     <button class="modepill" data-mode="sequential" type="button">Sequential Caster</button>
+    <button class="modepill" data-mode="book" type="button">Cast your Book</button>
   </div>
   <p class="mode-hint" id="mode-hint"></p>
 
@@ -142,7 +158,7 @@
       <label class="sfield">Origin
         <select id="origin-pick"></select>
       </label>
-      <label class="sfield">Destiny
+      <label class="sfield" data-modes="explore cast sequential">Destiny
         <select id="destiny-pick"></select>
       </label>
       <button class="btn" id="cast-both-btn" type="button" title="Cast both hexagrams at random, using the chosen method below">Cast both ▸</button>
@@ -154,13 +170,13 @@
           <option value="yarrow">Yarrow stalks</option>
         </select>
       </label>
-      <label class="sfield" data-modes="cast sequential">Style
+      <label class="sfield" data-modes="cast sequential book">Style
         <select id="style-pick">
           <option value="direct">Direct (shortest routes)</option>
           <option value="wandering">Wandering (may detour)</option>
         </select>
       </label>
-      <label class="sfield" data-modes="cast sequential">Steps
+      <label class="sfield" data-modes="cast sequential book">Steps
         <select id="budget-pick"></select>
       </label>
     </div>
@@ -183,6 +199,7 @@
     <b>Arrived.</b>
     <p id="complete-txt"></p>
     <button class="btn primary" id="save-btn" type="button">⬇ Save this path</button>
+    <button class="btn" id="md-btn" hidden type="button">⬇ Download as Markdown</button>
   </div>
 </div>
 
@@ -197,6 +214,8 @@
 
   // ── state ───────────────────────────────────────────────────────────
   let hexData = { byNumber: {}, byBinary: {} };
+  let book = null;            // grammars/the-recursive-iching-book/grammar.json: { intro, end, byNumber }
+  const NOTES_KEY = 'iching-book-notes-v1';
   let state = {
     mode: 'explore',
     method: 'coin',
@@ -209,15 +228,25 @@
     path: null,            // [{binary, flippedIdx}] — cast/sequential
     revealed: 0,            // sequential: how many of `path` are shown (0 = just origin)
     autoTimer: null,
+    notes: {},              // book: the reader's own transition per step index
   };
 
   // ── boot: load the verified binary table + the two content grammars ──
   async function boot() {
-    const [table, summarized, lenses] = await Promise.all([
+    const [table, summarized, lenses, bookG] = await Promise.all([
       fetch(PFX + 'scripts/hexagram-binary.json').then(r => r.json()),
       fetch(PFX + 'grammars/i-ching-summarized/grammar.json').then(r => r.json()),
       fetch(PFX + 'grammars/three-lenses-64/grammar.json').then(r => r.json()).catch(() => null),
+      fetch(PFX + 'grammars/the-recursive-iching-book/grammar.json').then(r => r.json()).catch(() => null),
     ]);
+    if (bookG && bookG.items) {
+      book = { intro: null, end: null, byNumber: {}, name: bookG.name, description: bookG.description };
+      for (const it of bookG.items) {
+        if (it.id === 'intro') book.intro = it;
+        else if (it.id === 'end') book.end = it;
+        else if (it.metadata && it.metadata.number) book.byNumber[it.metadata.number] = it;
+      }
+    }
 
     const lensByNum = {};
     if (lenses && lenses.items) {
@@ -274,9 +303,59 @@
       explore: 'Pick or cast an origin and destiny hexagram, then press Begin. Tap any line on the current hexagram to flip it — the stack grows one hexagram per tap, in any direction (a detour is allowed). Undo pops the last flip. Reach the destiny and the path is complete.',
       cast: 'Pick or cast an origin and destiny, choose a step budget and a style, then Begin — the whole path casts at once. The final step is always deterministic, so the destiny always lands.',
       sequential: 'Same casting as Cast the Path, but intermediates are revealed one at a time — press Next, or let it auto-advance slowly. The final step is always deterministic.',
+      book: 'A book you cast. Cast where you are (or pick it) — the destiny is fixed: Hexagram 1, the Creative. Press Begin to read the opening, then Next for each hexagram on your way. Learn it, read its story if one exists, and write your own transition under each step. At the end, save the whole walk as your own grammar, or download it as Markdown to print.',
     }[m];
+    if (m === 'book') {
+      state.destinyNum = 1;
+      $('#destiny-pick').value = '1';
+      if (state.style === 'direct') { state.style = 'wandering'; $('#style-pick').value = 'wandering'; }
+      populateBudgets();
+      $('#cast-both-btn').textContent = 'Cast where you are ▸';
+      $('#cast-both-btn').title = 'Cast your origin hexagram with the chosen method; the destiny stays Hexagram 1';
+    } else {
+      $('#cast-both-btn').textContent = 'Cast both ▸';
+      $('#cast-both-btn').title = 'Cast both hexagrams at random, using the chosen method below';
+    }
     resetRun();
     updateDistPreview();
+  }
+
+  // ── book mode helpers ─────────────────────────────────────────────────
+  function pathSignature() {
+    return (state.path || []).map(s => s.binary).join('>');
+  }
+  function loadNotes() {
+    try {
+      const all = JSON.parse(localStorage.getItem(NOTES_KEY) || '{}');
+      state.notes = all[pathSignature()] || {};
+    } catch (_) { state.notes = {}; }
+  }
+  function persistNotes() {
+    try {
+      const all = JSON.parse(localStorage.getItem(NOTES_KEY) || '{}');
+      all[pathSignature()] = state.notes;
+      localStorage.setItem(NOTES_KEY, JSON.stringify(all));
+    } catch (_) { /* private mode etc. — notes still live in memory for this run */ }
+  }
+  function paras(text) {
+    return String(text || '').split(/\n\s*\n/).map(p => `<p>${esc(p)}</p>`).join('');
+  }
+  function frameHTML(item, kicker) {
+    if (!item) return '';
+    return `<div class="framecard"><div class="kicker">${esc(kicker)}</div><h2>${esc(item.name)}</h2>${paras(item.sections && item.sections.Text)}</div>`;
+  }
+  function bookBlockHTML(n, indexInStack) {
+    const it = book && book.byNumber[n];
+    const learn = it && it.sections && it.sections.Learn || '';
+    const story = it && it.sections && it.sections.Story || '';
+    const blank = !(it && it.metadata && it.metadata.story_written);
+    const note = state.notes[indexInStack] || '';
+    return `<div class="bookblock">
+      ${learn ? `<p class="bklabel">Learn</p><p class="bktext">${esc(learn)}</p>` : ''}
+      <p class="bklabel">Story</p><p class="bktext${blank ? ' blank' : ''}">${esc(story || 'No story yet.')}</p>
+      <p class="bklabel">Your transition</p>
+      <textarea class="bknote" data-note="${indexInStack}" placeholder="What were you carrying when this line changed? What did the text make you think of? Nothing, if nothing came.">${esc(note)}</textarea>
+    </div>`;
   }
 
   function currentDistance() {
@@ -316,6 +395,7 @@
   function begin() {
     stopAuto();
     const origin = hexData.byNumber[state.originNum].binary;
+    if (state.mode === 'book') state.destinyNum = 1;
     const destiny = hexData.byNumber[state.destinyNum].binary;
     state.started = true;
     $('#statusbar').hidden = false;
@@ -328,6 +408,7 @@
     } else {
       const d = E.hamming(origin, destiny);
       state.path = E.buildPath(origin, destiny, state.budget, state.style);
+      if (state.mode === 'book') loadNotes();
       if (state.mode === 'cast') {
         state.revealed = state.path.length - 1;
         renderPath(state.path.length);
@@ -367,9 +448,13 @@
 
   // ── cast / sequential mode ────────────────────────────────────────────
   function renderPath(count) {
-    const html = state.path.slice(0, count).map((step, i) => cardHTML(step, i, false)).join('');
+    let html = state.path.slice(0, count).map((step, i) => cardHTML(step, i, false)).join('');
+    if (state.mode === 'book') {
+      html = frameHTML(book && book.intro, 'The Recursive I Ching · a book you cast · beginning') + html;
+      if (count >= state.path.length) html += frameHTML(book && book.end, 'The Recursive I Ching · a book you cast · end');
+    }
     $('#stack').innerHTML = html;
-    if (state.mode === 'sequential') {
+    if (state.mode === 'sequential' || state.mode === 'book') {
       $('#status-txt').innerHTML = `Step <b>${count - 1}</b> of <b>${state.path.length - 1}</b>`;
       $('#next-btn').disabled = count >= state.path.length;
       if (count >= state.path.length) { $('#next-btn').hidden = true; $('#auto-btn').hidden = true; }
@@ -428,6 +513,7 @@
       <div class="linediagram">${lineRows}</div>
       <p class="hexjudgment">${esc(hex.sections && hex.sections.Judgment || '')}</p>
       ${hex.sections && hex.sections.Interpretation ? `<p class="hexinterp">${esc(hex.sections.Interpretation)}</p>` : ''}
+      ${state.mode === 'book' ? bookBlockHTML(n, indexInStack) : ''}
     </div>`;
     return out;
   }
@@ -451,14 +537,90 @@
   function markComplete() {
     $('#complete-banner').hidden = false;
     const dNum = state.destinyNum;
-    $('#complete-txt').textContent = `You have reached Hexagram ${dNum} — ${hexData.byNumber[dNum].name}.`;
+    $('#complete-txt').textContent = state.mode === 'book'
+      ? `Your book is complete: ${state.path.length} hexagrams, from ${hexData.byNumber[state.originNum].name} to the Creative. Save it as your own grammar, or download it to print.`
+      : `You have reached Hexagram ${dNum} — ${hexData.byNumber[dNum].name}.`;
+    $('#md-btn').hidden = state.mode !== 'book';
+    $('#save-btn').textContent = state.mode === 'book' ? '⬇ Save as my grammar' : '⬇ Save this path';
   }
 
   // ── save as grammar ───────────────────────────────────────────────────
   function activeSteps() {
     if (state.mode === 'explore') return state.exploreStack;
-    if (state.mode === 'sequential') return state.path.slice(0, state.revealed + 1);
+    if (state.mode === 'sequential' || state.mode === 'book') return state.path.slice(0, state.revealed + 1);
     return state.path;
+  }
+  function stepRecord(s, i, steps) {
+    const n = hexData.byBinary[s.binary];
+    const hex = hexData.byNumber[n];
+    const changing = s.flippedIdx === null ? null : {
+      line: s.flippedIdx + 1,
+      from_hexagram: hexData.byBinary[steps[i - 1].binary],
+      text: (hexData.byNumber[hexData.byBinary[steps[i - 1].binary]].sections || {})['Line ' + (s.flippedIdx + 1)] || '',
+    };
+    const bk = book && book.byNumber[n];
+    return { n, hex, changing,
+             learn: bk && bk.sections && bk.sections.Learn || '',
+             story: bk && bk.sections && bk.sections.Story || '',
+             storyWritten: !!(bk && bk.metadata && bk.metadata.story_written),
+             note: state.notes[i] || '' };
+  }
+  function buildBookGrammar() {
+    const steps = activeSteps();
+    const items = [];
+    if (book && book.intro) items.push({ ...book.intro, sort_order: 0 });
+    steps.forEach((s, i) => {
+      const r = stepRecord(s, i, steps);
+      items.push({
+        id: `step-${i}`,
+        name: `${i === 0 ? 'Where I was' : 'Step ' + i}: Hexagram ${r.n} — ${r.hex.name}`,
+        symbol: r.hex.symbol, level: 1, category: 'step', keywords: [],
+        metadata: { step: i, hexagram_number: r.n, binary: s.binary, changing_line: r.changing },
+        sections: {
+          Judgment: (r.hex.sections && r.hex.sections.Judgment) || '',
+          Learn: r.learn,
+          Story: r.storyWritten ? r.story : '',
+          'Changing line': r.changing ? `Line ${r.changing.line} of Hexagram ${r.changing.from_hexagram}: ${r.changing.text}` : '— where I was; nothing had changed yet —',
+          'My transition': r.note,
+        },
+        questions: [], sort_order: i + 1,
+      });
+    });
+    if (book && book.end) items.push({ ...book.end, sort_order: steps.length + 1 });
+    return {
+      name: `My I Ching book — from ${hexData.byNumber[state.originNum].name} to the Creative`,
+      description: `Cast with The Recursive I Ching Book mode (${new Date().toISOString().slice(0, 10)}). Fixed beginning and end by PlayfulProcess (CC BY-SA 4.0); the path and the transitions are the reader's own. A casting, not a prediction.`,
+      cover_image_url: null,
+      tags: ['iching', 'my-book', 'path-caster'],
+      grammar_type: 'book',
+      items, creator_name: '', creator_link: '', is_published: false,
+    };
+  }
+  function buildBookMarkdown() {
+    const steps = activeSteps();
+    const L = [];
+    L.push(`# My I Ching book — from ${hexData.byNumber[state.originNum].name} to the Creative`, '');
+    L.push(`*Cast ${new Date().toISOString().slice(0, 10)} with The Recursive I Ching (iching.recursive.eco). A casting, not a prediction.*`, '');
+    if (book && book.intro) { L.push(`## ${book.intro.name}`, '', book.intro.sections.Text, ''); }
+    steps.forEach((s, i) => {
+      const r = stepRecord(s, i, steps);
+      L.push(`## ${i === 0 ? 'Where I was' : 'Step ' + i} · ${r.hex.symbol} Hexagram ${r.n} — ${r.hex.name}`, '');
+      if (r.changing) L.push(`*Line ${r.changing.line} of Hexagram ${r.changing.from_hexagram} changed:* ${r.changing.text}`, '');
+      if (r.hex.sections && r.hex.sections.Judgment) L.push(`**The Judgment.** ${r.hex.sections.Judgment}`, '');
+      if (r.learn) L.push(`**Learn.** ${r.learn}`, '');
+      if (r.storyWritten && r.story) L.push(`**Story.** ${r.story}`, '');
+      L.push(`**My transition.** ${r.note || '_—_'}`, '');
+    });
+    if (book && book.end) { L.push(`## ${book.end.name}`, '', book.end.sections.Text, ''); }
+    return L.join('\n');
+  }
+  function downloadText(text, filename, type) {
+    const blob = new Blob([text], { type });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = filename;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
   }
   function buildSequenceGrammar() {
     const steps = activeSteps();
@@ -498,6 +660,10 @@
     };
   }
   function saveAsGrammar() {
+    if (state.mode === 'book') {
+      downloadText(JSON.stringify(buildBookGrammar(), null, 2), `my-iching-book-${state.originNum}-to-1.json`, 'application/json');
+      return;
+    }
     const grammar = buildSequenceGrammar();
     const blob = new Blob([JSON.stringify(grammar, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
@@ -520,7 +686,7 @@
     $('#budget-pick').onchange = e => { state.budget = +e.target.value; };
     $('#cast-both-btn').onclick = () => {
       const oBin = E.castBinary(state.method);
-      const dBin = E.castBinary(state.method);
+      const dBin = state.mode === 'book' ? hexData.byNumber[1].binary : E.castBinary(state.method);
       state.originNum = hexData.byBinary[oBin];
       state.destinyNum = hexData.byBinary[dBin];
       $('#origin-pick').value = String(state.originNum);
@@ -534,6 +700,13 @@
     $('#next-btn').onclick = nextStep;
     $('#auto-btn').onclick = toggleAuto;
     $('#save-btn').onclick = saveAsGrammar;
+    $('#md-btn').onclick = () => downloadText(buildBookMarkdown(), `my-iching-book-${state.originNum}-to-1.md`, 'text/markdown');
+    $('#stack').addEventListener('input', e => {
+      const ta = e.target.closest('textarea.bknote');
+      if (!ta) return;
+      state.notes[+ta.dataset.note] = ta.value;
+      persistNotes();
+    });
     $('#stack').addEventListener('click', e => {
       const row = e.target.closest('.lrow.tappable');
       if (!row || state.mode !== 'explore') return;

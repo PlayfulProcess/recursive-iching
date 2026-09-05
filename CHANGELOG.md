@@ -301,3 +301,16 @@ ambiguous or wrong. Full account in `docs/PLAYBOOK-FIELD-REPORT.md`.
 - **No `research/` dossiers, no `caster`/coin-cast instrument** — out of scope for this
   session; the brief asked for the ported mechanisms + lifted content + one course, not
   new research writing or a new site-specific instrument.
+
+
+## 2026-09-05 — Book mode: a book you cast
+
+- `viewers/caster.html`: fourth mode **Cast your Book**. Destiny fixed to Hexagram 1 (the Creative);
+  the reader casts where they are, reads the fixed opening, advances one hexagram at a time (Learn +
+  Story + the changing line), writes their own transition under each step (kept in localStorage per
+  path), and at the end saves the walk as their own grammar (JSON) or downloads it as Markdown to
+  print. No backend; nothing else in the page changed.
+- `grammars/the-recursive-iching-book/`: the book as a grammar — `frame.json` (hand-written
+  beginning and end), `stories/NN.md` (one chapter per hexagram, folded in when present),
+  `grammar.json` built by `scripts/build_book_grammar.py`.
+- Design: `book-repo/books/gautama-golden-dawn/outline/COMBINATORIAL-DESIGN.md`.
