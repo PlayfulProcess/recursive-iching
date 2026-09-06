@@ -80,7 +80,11 @@
   body.mode-book .wrap > .mode-hint, body.mode-book .wrap > .settings, body.mode-book .wrap > .statusbar,
   body.mode-book .wrap > .complete-banner{grid-column:1 / -1}
   #bookindex{display:none}
-  body.mode-book #bookindex[data-live]{display:block;position:sticky;top:14px;align-self:start;max-height:calc(100vh - 28px);overflow-y:auto}
+  body.mode-book #bookindex[data-live]{display:block;position:sticky;top:76px;align-self:start;max-height:calc(100vh - 90px);overflow-y:auto}
+  .lensrow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:8px}
+  .lenschip{font-size:11.5px;padding:3px 9px;border-radius:999px;border:1px solid var(--line);background:var(--panel2);color:var(--ink-soft)}
+  .bklens{margin-top:10px}
+  .bklens .bklabel{margin-top:10px}
   .toc-kicker{font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin:4px 0 10px}
   .toc{display:flex;flex-direction:column;gap:2px}
   .toc a,.toc span.toc-wait{display:block;padding:7px 10px;border-radius:8px;text-decoration:none;color:var(--ink-soft);font-size:13px;border-left:2px solid transparent}
@@ -209,6 +213,15 @@
       <label class="sfield" data-modes="cast sequential book">Steps
         <select id="budget-pick"></select>
       </label>
+      <label class="sfield" data-modes="book">Each step reveals
+        <select id="reveal-pick">
+          <option value="hex">the hexagram, then the line that changed</option>
+          <option value="line">the changing line first, then where it leads</option>
+        </select>
+      </label>
+      <label class="sfield" data-modes="book">Lenses
+        <button class="btn" id="lens-pick" type="button" title="Choose which I Ching grammars read each step">All lenses ▾</button>
+      </label>
     </div>
     <div class="srow">
       <button class="btn primary" id="begin-btn" type="button">Begin</button>
@@ -235,6 +248,7 @@
 </div>
 
 <script src="../assistant.js" defer></script>
+<script src="deck-picker.js"></script>
 <script src="caster-engine.js"></script>
 <script>
 (() => {
@@ -246,6 +260,19 @@
   // ── state ───────────────────────────────────────────────────────────
   let hexData = { byNumber: {}, byBinary: {} };
   let book = null;            // grammars/the-recursive-iching-book/grammar.json: { intro, end, byNumber }
+  let meta = null;            // grammars/meta-iching/grammar.json: { byNumber (composites), byId (source items) }
+  let collection = null;      // grammars/_collection.json — the one index of I Ching grammars
+  // which grammar sections a lens contributes to a step (fallback: the item's first section)
+  const LENS_SECTIONS = {
+    'i-ching-summarized': ['Image'],
+    'zhouyi-core': ['Judgment'],
+    'ten-wings': ['Great Image (Daxiang)'],
+    'iching-hd-meta-categories': ['Interpretation'],
+    'three-lenses-64': [],
+    'repair-iching': ['Repair Reading'],
+    'the-recursive-iching-book': ['Learn', 'Story'],
+    'i-ching-chinese-original': ['Judgment', '卦辭'],
+  };
   const BOOK_KEY = 'iching-book-current-v1';
   let state = {
     mode: 'explore',
@@ -260,16 +287,30 @@
     revealed: 0,            // sequential: how many of `path` are shown (0 = just origin)
     autoTimer: null,
     notes: {},              // book: the reader's own transition per step index
+    reveal: 'hex',          // book: 'hex' = hexagram first, its exit line shown when the next is cast; 'line' = line first
+    pendingLine: false,     // book, reveal=line: the exit line is shown, the next hexagram not yet
+    closed: false,          // book: the reader closed the book early
+    lenses: null,           // book: Set of grammar slugs feeding each step (null = all)
   };
 
   // ── boot: load the verified binary table + the two content grammars ──
   async function boot() {
-    const [table, summarized, lenses, bookG] = await Promise.all([
+    const [table, summarized, lenses, bookG, metaG, coll] = await Promise.all([
       fetch(PFX + 'scripts/hexagram-binary.json').then(r => r.json()),
       fetch(PFX + 'grammars/i-ching-summarized/grammar.json').then(r => r.json()),
       fetch(PFX + 'grammars/three-lenses-64/grammar.json').then(r => r.json()).catch(() => null),
       fetch(PFX + 'grammars/the-recursive-iching-book/grammar.json').then(r => r.json()).catch(() => null),
+      fetch(PFX + 'grammars/meta-iching/grammar.json').then(r => r.json()).catch(() => null),
+      fetch(PFX + 'grammars/_collection.json').then(r => r.json()).catch(() => null),
     ]);
+    if (metaG && metaG.items) {
+      meta = { byNumber: {}, byId: {} };
+      for (const it of metaG.items) {
+        meta.byId[it.id] = it;
+        if (it.level === 2 && it.metadata && it.metadata.number) meta.byNumber[it.metadata.number] = it;
+      }
+    }
+    collection = coll || null;
     if (bookG && bookG.items) {
       book = { intro: null, end: null, byNumber: {}, name: bookG.name, description: bookG.description };
       for (const it of bookG.items) {
@@ -361,6 +402,42 @@
     }
   }
 
+  // ── lenses (the grammar list is the collection index; the picker is the shared component) ──
+  function lensSlugs() {
+    const all = (collection && collection.grammars || []).map(g => g.slug).filter(sl => sl !== 'meta-iching' && sl !== 'tree-of-tarot');
+    return state.lenses ? all.filter(sl => state.lenses.has(sl)) : all;
+  }
+  function lensName(slug) {
+    const g = (collection && collection.grammars || []).find(x => x.slug === slug);
+    return g ? g.name : slug;
+  }
+  function lensBlocksHTML(n) {
+    if (!meta) return '';
+    const comp = meta.byNumber[n];
+    if (!comp) return '';
+    const bySlug = {};
+    for (const cid of comp.composite_of || []) { const it = meta.byId[cid]; if (it) bySlug[cid.split('::')[0]] = it; }
+    let out = '';
+    for (const slug of lensSlugs()) {
+      if (slug === 'the-recursive-iching-book') continue;   // the book is the spine of the card already
+      const it = bySlug[slug];
+      if (!it) continue;
+      const secs = it.sections || {};
+      const want = LENS_SECTIONS[slug] || [];
+      let parts = want.map(k => secs[k]).filter(Boolean);
+      if (!parts.length && !want.length) { const first = Object.values(secs)[0]; if (first) parts = [first]; }
+      if (!parts.length && slug === 'three-lenses-64') parts = [`${it.name}${(it.keywords || []).length ? ' — ' + it.keywords.join(', ') : ''}`];
+      if (!parts.length) continue;
+      const blank = slug === 'the-recursive-iching-book' && !(it.metadata && it.metadata.story_written);
+      out += `<p class="bklabel">${esc(lensName(slug))}</p>` + parts.map(t => `<p class="bktext${blank && /not been written/.test(t) ? ' blank' : ''}">${esc(t)}</p>`).join('');
+    }
+    return out ? `<div class="bklens">${out}</div>` : '';
+  }
+  function updateLensButton() {
+    const all = lensSlugs().length, total = (collection && collection.grammars || []).filter(g => g.slug !== 'meta-iching' && g.slug !== 'tree-of-tarot').length;
+    $('#lens-pick').textContent = (!state.lenses || all === total) ? 'All lenses ▾' : `${all} of ${total} lenses ▾`;
+  }
+
   // ── book mode helpers ─────────────────────────────────────────────────
   function saveBook() {
     if (state.mode !== 'book' || !state.path) return;
@@ -368,6 +445,8 @@
       localStorage.setItem(BOOK_KEY, JSON.stringify({
         originNum: state.originNum, path: state.path, revealed: state.revealed, notes: state.notes,
         style: state.style, budget: state.budget, saved: new Date().toISOString(),
+        reveal: state.reveal, pendingLine: state.pendingLine, closed: !!state.closed,
+        lenses: state.lenses ? [...state.lenses] : null,
       }));
     } catch (_) { /* private mode etc. — the book still lives in memory for this run */ }
   }
@@ -384,10 +463,24 @@
     state.originNum = b.originNum; $('#origin-pick').value = String(b.originNum);
     state.destinyNum = 1; $('#destiny-pick').value = '1';
     state.path = b.path; state.revealed = Math.min(b.revealed || 0, b.path.length - 1); state.notes = b.notes || {};
+    state.reveal = b.reveal || 'hex'; state.pendingLine = !!b.pendingLine; state.closed = !!b.closed;
+    state.lenses = Array.isArray(b.lenses) ? new Set(b.lenses) : null;
+    $('#reveal-pick').value = state.reveal; updateLensButton();
     state.started = true;
     $('#statusbar').hidden = false; $('#next-btn').hidden = true; $('#auto-btn').hidden = true; $('#undo-btn').hidden = true;
     renderBook(state.revealed + 1, false);
     if (state.revealed >= state.path.length - 1) markComplete();
+  }
+  function closeBookHere() {
+    if (state.mode !== 'book' || !state.path) return;
+    const kept = state.path.slice(0, state.revealed + 1);
+    const last = kept[kept.length - 1];
+    if (hexData.byBinary[last.binary] !== 1) kept.push({ binary: hexData.byNumber[1].binary, flippedIdx: null, closed: true });
+    state.path = kept; state.closed = true; state.pendingLine = false;
+    state.revealed = state.path.length - 1;
+    renderBook(state.path.length, true);
+    saveBook();
+    markComplete();
   }
   function castOriginNotOne() {
     let n = 1, tries = 0;
@@ -458,7 +551,7 @@
     } else {
       const d = E.hamming(origin, destiny);
       state.path = E.buildPath(origin, destiny, state.budget, state.style);
-      if (state.mode === 'book') { state.notes = {}; }
+      if (state.mode === 'book') { state.notes = {}; state.pendingLine = false; state.closed = false; }
       if (state.mode === 'cast') {
         state.revealed = state.path.length - 1;
         renderPath(state.path.length);
@@ -483,6 +576,11 @@
   function exitHTML(i) {
     const next = state.path[i + 1];
     if (!next) return '';
+    if (next.closed) return `<div class="bookexit"><p class="cline">You closed the book here</p><p class="cbody">Every path in this book arrives at the Creative. Yours arrives now, from where you stopped.</p></div>`;
+    const revealedCount = state.revealed + 1;
+    const nextIsShown = i + 1 < revealedCount;
+    const linePending = (i === revealedCount - 1) && state.pendingLine;
+    if (!nextIsShown && !linePending) return '';
     const hex = hexData.byNumber[hexData.byBinary[state.path[i].binary]];
     const lineLabel = 'Line ' + (next.flippedIdx + 1);
     const text = (hex.sections && hex.sections[lineLabel]) || '—';
@@ -493,7 +591,10 @@
     let html = '<div id="book-intro">' + frameHTML(book && book.intro, 'The Recursive I Ching · a book you cast · beginning') + '</div>';
     for (let i = 0; i < count; i++) html += bookCardHTML(state.path[i], i);
     if (count < total) {
-      html += `<div class="booknav"><button class="btn primary" id="book-next" type="button">Next hexagram ▸</button><span class="muted">Step ${count - 1} of ${total - 1} · ${total - count} to go before the Creative</span></div>`;
+      const nextLabel = (state.reveal === 'line' && !state.pendingLine) ? 'Cast the changing line ▸' : (state.reveal === 'line' ? 'See where it leads ▸' : 'Cast the next hexagram ▸');
+      html += `<div class="booknav"><button class="btn primary" id="book-next" type="button">${nextLabel}</button>` +
+              `<button class="btn" id="book-close" type="button" title="Stop here. Every path arrives at the Creative; yours arrives now.">Close the book here</button>` +
+              `<span class="muted">Step ${count - 1} of ${total - 1} · ${total - count} to go</span></div>`;
     }
     // the end is always on the page: the reader can see where every path arrives
     html += '<div id="book-end">' + frameHTML(book && book.end, count < total ? 'The Recursive I Ching · a book you cast · the end, waiting' : 'The Recursive I Ching · a book you cast · end') + '</div>';
@@ -513,19 +614,18 @@
     for (let i = 0; i < total; i++) {
       const n = hexData.byBinary[state.path[i].binary];
       const name = hexData.byNumber[n].name;
-      const label = i === 0 ? `Where you are · ${esc(name)}` : i === total - 1 ? `${esc(name)}` : `${esc(name)}`;
+      const label = i === 0 ? `Where you are · ${esc(name)}` : `${esc(name)}`;
       const num = i === 0 ? '0.' : `${i}.`;
       if (i < count) toc += row(`#book-card-${i}`, label, num, i === count - 1);
-      else if (i < total - 1) toc += `<span class="toc-wait"><span class="toc-num">${num}</span>not yet cast</span>`;
+      else if (i === count && i < total - 1) toc += `<span class="toc-wait"><span class="toc-num">${num}</span>next · not yet cast${total - 1 - i > 1 ? ` (${total - 1 - i} steps left)` : ''}</span>`;
     }
     toc += '<hr class="toc-sep"><div class="toc-end">where every path arrives</div>';
     toc += row('#book-end', 'Hexagram 1 — the Creative', '䷀', count >= total);
     const inner = `<div class="toc-kicker">Your book · ${count - 1} of ${total - 1} steps</div><nav class="toc">${toc}</nav>`;
     const el = $('#bookindex');
     el.dataset.live = '1';
-    el.innerHTML = window.matchMedia('(max-width: 820px)').matches
-      ? `<details><summary>Index · step ${count - 1} of ${total - 1}</summary>${inner}</details>`
-      : inner;
+    const wasOpen = el.querySelector('details') ? el.querySelector('details').open : false;
+    el.innerHTML = `<details${wasOpen ? ' open' : ''}><summary>Index · step ${count - 1} of ${total - 1}</summary>${inner}</details>`;
   }
   function bookCardHTML(step, i) {
     const n = hexData.byBinary[step.binary];
@@ -544,7 +644,7 @@
       <div class="hexcard-head">
         <div class="hexsym">${esc(hex.symbol)}</div>
         <div>
-          <div class="hexnum">${i === 0 ? 'Where you are' : isLast ? 'Where every path arrives' : 'Step ' + i} · Hexagram ${n}</div>
+          <div class="hexnum">${i === 0 ? 'Where you are' : isLast ? (step.closed ? 'Where you closed it — where every path arrives' : 'Where every path arrives') : 'Step ' + i} · Hexagram ${n}</div>
           <div class="hexname">${esc(hex.name)}</div>
           <div class="hexsub">${esc(hex.chinese_name)} · ${esc(hex.pinyin)}</div>
         </div>
@@ -555,6 +655,7 @@
       <div class="bookblock">
         ${learn ? `<p class="bklabel">Learn</p><p class="bktext">${esc(learn)}</p>` : ''}
         <p class="bklabel">Story</p><p class="bktext${blank ? ' blank' : ''}">${esc(story || 'No story yet.')}</p>
+        ${lensBlocksHTML(n)}
         ${exitHTML(i)}
         <p class="bklabel">Your transition</p>
         <textarea class="bknote" data-note="${i}" placeholder="${isLast ? 'What did you arrive with?' : 'What were you carrying when this line changed? What did the text make you think of? Nothing, if nothing came.'}">${esc(note)}</textarea>
@@ -600,6 +701,13 @@
 
   function nextStep() {
     if (state.revealed >= state.path.length - 1) return;
+    if (state.mode === 'book' && state.reveal === 'line' && !state.pendingLine) {
+      state.pendingLine = true;            // phase 1: show which line changes, not yet where it leads
+      renderBook(state.revealed + 1, false);
+      saveBook();
+      return;
+    }
+    state.pendingLine = false;
     state.revealed++;
     if (state.mode === 'book') {
       renderBook(state.revealed + 1, true);
@@ -825,6 +933,14 @@
     $('#method-pick').onchange = e => { state.method = e.target.value; };
     $('#style-pick').onchange = e => { state.style = e.target.value; populateBudgets(); };
     $('#budget-pick').onchange = e => { state.budget = +e.target.value; };
+    $('#reveal-pick').onchange = e => { state.reveal = e.target.value; state.pendingLine = false; if (state.mode === 'book' && state.path) { renderBook(state.revealed + 1, false); saveBook(); } };
+    $('#lens-pick').onclick = () => {
+      if (!collection || !window.DeckPicker) return;
+      window.DeckPicker.open($('#lens-pick'), {
+        collection, selected: lensSlugs(),
+        onLoad(slugs) { state.lenses = new Set(slugs); updateLensButton(); if (state.mode === 'book' && state.path) { renderBook(state.revealed + 1, false); saveBook(); } },
+      });
+    };
     $('#cast-both-btn').onclick = () => {
       const oBin = E.castBinary(state.method);
       const dBin = state.mode === 'book' ? hexData.byNumber[1].binary : E.castBinary(state.method);
@@ -851,6 +967,7 @@
     });
     $('#stack').addEventListener('click', e => {
       if (e.target.closest('#book-next')) { nextStep(); return; }
+      if (e.target.closest('#book-close')) { closeBookHere(); return; }
       if (e.target.closest('#resume-btn')) { resumeBook(); return; }
       if (e.target.closest('#discard-btn')) { clearSavedBook(); resetRun(); return; }
     });

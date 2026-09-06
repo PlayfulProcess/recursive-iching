@@ -24,6 +24,7 @@
       "id": "synthesis",
       "name": "Synthesis — cross-lens readings of the 64 hexagrams",
       "deck_slugs": [
+        "iching-hd-meta-categories",
         "meta-iching",
         "the-recursive-iching-book",
         "three-lenses-64"
@@ -69,13 +70,26 @@
       "year_label": "Zhou I Ching, compiled c. 1046–256 BCE · this English condensation's own translation lineage is undocumented"
     },
     {
+      "slug": "iching-hd-meta-categories",
+      "name": "I Ching HD Meta-Categories: Three Lenses for Viewing the 64 Hexagrams",
+      "type": "iching",
+      "branch": "synthesis",
+      "is_meta": false,
+      "default_preview": null,
+      "items": 96,
+      "cover_image_url": "https://commons.wikimedia.org/wiki/File:Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg",
+      "blurb": "This interpretation maps the 64 I Ching hexagrams to Human Design 'gates'—a synthesis channeled by Ra Uru Hu in 1987 after an eight-day encounter with 'the Voice' on Ibiza. The system is only about 30…",
+      "path": "grammars/iching-hd-meta-categories/grammar.json",
+      "provenance": "living"
+    },
+    {
       "slug": "meta-iching",
       "name": "The I Ching — All Lenses (meta)",
       "type": "iching",
       "branch": "synthesis",
       "is_meta": false,
       "default_preview": null,
-      "items": 438,
+      "items": 534,
       "cover_image_url": null,
       "blurb": "Every I Ching grammar in this repo, read together. One composite item per hexagram gathers its item from each lens: the trigrams and the Great Image as scenery, Legge's text, the Human Design reading …",
       "path": "grammars/meta-iching/grammar.json",

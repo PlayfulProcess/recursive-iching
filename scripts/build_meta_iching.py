@@ -42,7 +42,7 @@ def num_of(item, slug):
     return None
 
 
-SOURCES = ["i-ching-summarized", "zhouyi-core", "ten-wings", "three-lenses-64", "repair-iching", "the-recursive-iching-book"]
+SOURCES = ["i-ching-summarized", "zhouyi-core", "ten-wings", "iching-hd-meta-categories", "three-lenses-64", "repair-iching", "the-recursive-iching-book"]
 table = json.load(io.open(os.path.join(ROOT, "scripts", "hexagram-binary.json"), encoding="utf-8"))["hexagrams"]
 
 items = []
@@ -83,12 +83,17 @@ for n in range(1, 65):
     src = by_hex[n]
     summ = src.get("i-ching-summarized"); legge = src.get("zhouyi-core"); wing = src.get("ten-wings")
     lens = src.get("three-lenses-64"); repair = src.get("repair-iching"); book = src.get("the-recursive-iching-book")
+    hd = src.get("iching-hd-meta-categories")
     md = (summ or {}).get("metadata") or {}
     above, below = md.get("trigram_above", ""), md.get("trigram_below", "")
     name = (summ or legge or {}).get("name", f"Hexagram {n}")
     scenery = " ".join(x for x in [f"{above.capitalize()} over {below.capitalize()}." if above and below else "", sec(wing, "Great Image (Daxiang)")] if x).strip()
     asks = ""
-    if lens:
+    if hd:
+        asks = sec(hd, "Interpretation") or sec(hd, "Judgment")
+        if hd.get("name"):
+            asks = f"{hd['name']}. {asks}".strip()
+    elif lens:
         kws = ", ".join(lens.get("keywords") or [])
         asks = f"{lens.get('name', '')}" + (f" — {kws}" if kws else "")
     composites.append({
