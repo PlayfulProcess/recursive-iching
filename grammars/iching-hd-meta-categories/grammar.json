@@ -51,7 +51,7 @@
         "trigram_above": "heaven",
         "trigram_below": "heaven"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-01.svg"
     },
     {
       "id": "hex-2",
@@ -83,7 +83,7 @@
         "trigram_above": "earth",
         "trigram_below": "earth"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-02.svg"
     },
     {
       "id": "hex-3",
@@ -115,7 +115,7 @@
         "trigram_above": "water",
         "trigram_below": "thunder"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-03.svg"
     },
     {
       "id": "hex-4",
@@ -147,7 +147,7 @@
         "trigram_above": "mountain",
         "trigram_below": "water"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-04.svg"
     },
     {
       "id": "hex-5",
@@ -179,7 +179,7 @@
         "trigram_above": "water",
         "trigram_below": "heaven"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-05.svg"
     },
     {
       "id": "hex-6",
@@ -211,7 +211,7 @@
         "trigram_above": "heaven",
         "trigram_below": "water"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-06.svg"
     },
     {
       "id": "hex-7",
@@ -243,7 +243,7 @@
         "trigram_above": "earth",
         "trigram_below": "water"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-07.svg"
     },
     {
       "id": "hex-8",
@@ -275,7 +275,7 @@
         "trigram_above": "water",
         "trigram_below": "earth"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-08.svg"
     },
     {
       "id": "hex-9",
@@ -307,7 +307,7 @@
         "trigram_above": "wind",
         "trigram_below": "heaven"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-09.svg"
     },
     {
       "id": "hex-10",
@@ -339,7 +339,7 @@
         "trigram_above": "heaven",
         "trigram_below": "lake"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-10.svg"
     },
     {
       "id": "hex-11",
@@ -371,7 +371,7 @@
         "trigram_above": "earth",
         "trigram_below": "heaven"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-11.svg"
     },
     {
       "id": "hex-12",
@@ -403,7 +403,7 @@
         "trigram_above": "heaven",
         "trigram_below": "earth"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-12.svg"
     },
     {
       "id": "hex-13",
@@ -435,7 +435,7 @@
         "trigram_above": "heaven",
         "trigram_below": "fire"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-13.svg"
     },
     {
       "id": "hex-14",
@@ -467,7 +467,7 @@
         "trigram_above": "fire",
         "trigram_below": "heaven"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-14.svg"
     },
     {
       "id": "hex-15",
@@ -499,7 +499,7 @@
         "trigram_above": "earth",
         "trigram_below": "mountain"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-15.svg"
     },
     {
       "id": "hex-16",
@@ -531,7 +531,7 @@
         "trigram_above": "thunder",
         "trigram_below": "earth"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-16.svg"
     },
     {
       "id": "hex-17",
@@ -563,7 +563,7 @@
         "trigram_above": "lake",
         "trigram_below": "thunder"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-17.svg"
     },
     {
       "id": "hex-18",
@@ -595,7 +595,7 @@
         "trigram_above": "mountain",
         "trigram_below": "wind"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-18.svg"
     },
     {
       "id": "hex-19",
@@ -627,7 +627,7 @@
         "trigram_above": "earth",
         "trigram_below": "lake"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-19.svg"
     },
     {
       "id": "hex-20",
@@ -659,7 +659,7 @@
         "trigram_above": "wind",
         "trigram_below": "earth"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-20.svg"
     },
     {
       "id": "hex-21",
@@ -691,7 +691,7 @@
         "trigram_above": "fire",
         "trigram_below": "thunder"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-21.svg"
     },
     {
       "id": "hex-22",
@@ -723,7 +723,7 @@
         "trigram_above": "mountain",
         "trigram_below": "fire"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-22.svg"
     },
     {
       "id": "hex-23",
@@ -755,7 +755,7 @@
         "trigram_above": "mountain",
         "trigram_below": "earth"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-23.svg"
     },
     {
       "id": "hex-24",
@@ -787,7 +787,7 @@
         "trigram_above": "earth",
         "trigram_below": "thunder"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-24.svg"
     },
     {
       "id": "hex-25",
@@ -819,7 +819,7 @@
         "trigram_above": "heaven",
         "trigram_below": "thunder"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-25.svg"
     },
     {
       "id": "hex-26",
@@ -851,7 +851,7 @@
         "trigram_above": "mountain",
         "trigram_below": "heaven"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-26.svg"
     },
     {
       "id": "hex-27",
@@ -883,7 +883,7 @@
         "trigram_above": "mountain",
         "trigram_below": "thunder"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-27.svg"
     },
     {
       "id": "hex-28",
@@ -915,7 +915,7 @@
         "trigram_above": "lake",
         "trigram_below": "wind"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-28.svg"
     },
     {
       "id": "hex-29",
@@ -947,7 +947,7 @@
         "trigram_above": "water",
         "trigram_below": "water"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-29.svg"
     },
     {
       "id": "hex-30",
@@ -979,7 +979,7 @@
         "trigram_above": "fire",
         "trigram_below": "fire"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-30.svg"
     },
     {
       "id": "hex-31",
@@ -1011,7 +1011,7 @@
         "trigram_above": "lake",
         "trigram_below": "mountain"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-31.svg"
     },
     {
       "id": "hex-32",
@@ -1043,7 +1043,7 @@
         "trigram_above": "thunder",
         "trigram_below": "wind"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-32.svg"
     },
     {
       "id": "hex-33",
@@ -1075,7 +1075,7 @@
         "trigram_above": "heaven",
         "trigram_below": "mountain"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-33.svg"
     },
     {
       "id": "hex-34",
@@ -1107,7 +1107,7 @@
         "trigram_above": "thunder",
         "trigram_below": "heaven"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-34.svg"
     },
     {
       "id": "hex-35",
@@ -1139,7 +1139,7 @@
         "trigram_above": "fire",
         "trigram_below": "earth"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-35.svg"
     },
     {
       "id": "hex-36",
@@ -1171,7 +1171,7 @@
         "trigram_above": "earth",
         "trigram_below": "fire"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-36.svg"
     },
     {
       "id": "hex-37",
@@ -1203,7 +1203,7 @@
         "trigram_above": "wind",
         "trigram_below": "fire"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-37.svg"
     },
     {
       "id": "hex-38",
@@ -1235,7 +1235,7 @@
         "trigram_above": "fire",
         "trigram_below": "lake"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-38.svg"
     },
     {
       "id": "hex-39",
@@ -1267,7 +1267,7 @@
         "trigram_above": "water",
         "trigram_below": "mountain"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-39.svg"
     },
     {
       "id": "hex-40",
@@ -1299,7 +1299,7 @@
         "trigram_above": "thunder",
         "trigram_below": "water"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-40.svg"
     },
     {
       "id": "hex-41",
@@ -1331,7 +1331,7 @@
         "trigram_above": "mountain",
         "trigram_below": "lake"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-41.svg"
     },
     {
       "id": "hex-42",
@@ -1363,7 +1363,7 @@
         "trigram_above": "wind",
         "trigram_below": "thunder"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-42.svg"
     },
     {
       "id": "hex-43",
@@ -1395,7 +1395,7 @@
         "trigram_above": "lake",
         "trigram_below": "heaven"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-43.svg"
     },
     {
       "id": "hex-44",
@@ -1427,7 +1427,7 @@
         "trigram_above": "heaven",
         "trigram_below": "wind"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-44.svg"
     },
     {
       "id": "hex-45",
@@ -1459,7 +1459,7 @@
         "trigram_above": "lake",
         "trigram_below": "earth"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-45.svg"
     },
     {
       "id": "hex-46",
@@ -1491,7 +1491,7 @@
         "trigram_above": "earth",
         "trigram_below": "wind"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-46.svg"
     },
     {
       "id": "hex-47",
@@ -1523,7 +1523,7 @@
         "trigram_above": "lake",
         "trigram_below": "water"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-47.svg"
     },
     {
       "id": "hex-48",
@@ -1555,7 +1555,7 @@
         "trigram_above": "water",
         "trigram_below": "wind"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-48.svg"
     },
     {
       "id": "hex-49",
@@ -1587,7 +1587,7 @@
         "trigram_above": "lake",
         "trigram_below": "fire"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-49.svg"
     },
     {
       "id": "hex-50",
@@ -1619,7 +1619,7 @@
         "trigram_above": "fire",
         "trigram_below": "wind"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-50.svg"
     },
     {
       "id": "hex-51",
@@ -1651,7 +1651,7 @@
         "trigram_above": "thunder",
         "trigram_below": "thunder"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-51.svg"
     },
     {
       "id": "hex-52",
@@ -1683,7 +1683,7 @@
         "trigram_above": "mountain",
         "trigram_below": "mountain"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-52.svg"
     },
     {
       "id": "hex-53",
@@ -1715,7 +1715,7 @@
         "trigram_above": "wind",
         "trigram_below": "mountain"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-53.svg"
     },
     {
       "id": "hex-54",
@@ -1747,7 +1747,7 @@
         "trigram_above": "thunder",
         "trigram_below": "lake"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-54.svg"
     },
     {
       "id": "hex-55",
@@ -1779,7 +1779,7 @@
         "trigram_above": "thunder",
         "trigram_below": "fire"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-55.svg"
     },
     {
       "id": "hex-56",
@@ -1811,7 +1811,7 @@
         "trigram_above": "fire",
         "trigram_below": "mountain"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-56.svg"
     },
     {
       "id": "hex-57",
@@ -1843,7 +1843,7 @@
         "trigram_above": "wind",
         "trigram_below": "wind"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-57.svg"
     },
     {
       "id": "hex-58",
@@ -1875,7 +1875,7 @@
         "trigram_above": "lake",
         "trigram_below": "lake"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-58.svg"
     },
     {
       "id": "hex-59",
@@ -1907,7 +1907,7 @@
         "trigram_above": "wind",
         "trigram_below": "water"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-59.svg"
     },
     {
       "id": "hex-60",
@@ -1939,7 +1939,7 @@
         "trigram_above": "water",
         "trigram_below": "lake"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-60.svg"
     },
     {
       "id": "hex-61",
@@ -1971,7 +1971,7 @@
         "trigram_above": "wind",
         "trigram_below": "lake"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-61.svg"
     },
     {
       "id": "hex-62",
@@ -2003,7 +2003,7 @@
         "trigram_above": "thunder",
         "trigram_below": "mountain"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-62.svg"
     },
     {
       "id": "hex-63",
@@ -2035,7 +2035,7 @@
         "trigram_above": "water",
         "trigram_below": "fire"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-63.svg"
     },
     {
       "id": "hex-64",
@@ -2067,7 +2067,7 @@
         "trigram_above": "fire",
         "trigram_below": "water"
       },
-      "image_url": null
+      "image_url": "https://iching.recursive.eco/img/hd/gate-64.svg"
     },
     {
       "id": "sign-aquarius",
