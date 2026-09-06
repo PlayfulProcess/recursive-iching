@@ -65,3 +65,8 @@ grammar (JSON, importable into recursive.eco) or download it as Markdown to prin
   `book-repo/books/gautama-golden-dawn/outline/COMBINATORIAL-DESIGN.md`.
 - Static site, no backend. Saving *to* a recursive.eco account would need one CORS-enabled write
   endpoint on flow (the tarot site today only reads `/api/spreads`); until then, download → import.
+
+**Provisional (6 Sep 2026):** the 64 bodygraph glyphs in `img/hd/` were drawn by `scripts/build_hd_glyphs.py`
+from the framework tables copied out of the astrology viewer, not by its renderer — the centres and channel
+routing do not match the real drawing. They are placeholders until recursive-astrology exports its renderer
+(`docs/FUTURE-PLANS-2026-09-06.md` there, item 7); then delete the script and consume the exported files.
