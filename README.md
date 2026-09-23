@@ -70,3 +70,11 @@ grammar (JSON, importable into recursive.eco) or download it as Markdown to prin
 from the framework tables copied out of the astrology viewer, not by its renderer — the centres and channel
 routing do not match the real drawing. They are placeholders until recursive-astrology exports its renderer
 (`docs/FUTURE-PLANS-2026-09-06.md` there, item 7); then delete the script and consume the exported files.
+
+## Licensing
+
+| What | License |
+|------|---------|
+| Code — the site pages and scripts at the root (`*.html`, `*.js`, `*.css`, `check.py`), `viewers/`, `scripts/`, `pages/`, and the format spec `GRAMMAR_FORMAT.md` | Apache-2.0 — [`LICENSE`](LICENSE), [`NOTICE`](NOTICE) |
+| Content — `grammars/`, `course/`, `docs/`, `img/` | Each grammar's `_grammar_commons.license` is the authority. PlayfulProcess's own text is CC-BY-SA-4.0 ([`LICENSE-CONTENT.txt`](LICENSE-CONTENT.txt)); the classical I Ching text is public domain; translations and other sources keep their own status |
+| The names "recursive.eco" and "Recursive", and the spiral logo | Not licensed — see [`TRADEMARKS.md`](TRADEMARKS.md) |

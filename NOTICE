@@ -1,0 +1,12 @@
+The Recursive I Ching (recursive-iching)
+Copyright 2026 PlayfulProcess
+
+The code in this repository is licensed under the Apache License, Version 2.0
+(see LICENSE). The content is not: each grammar states its licence in
+_grammar_commons.license. PlayfulProcess's own text is CC-BY-SA-4.0 (see
+LICENSE-CONTENT.txt), the classical I Ching text is public domain, and
+translations and other sources keep their own status. The README "Licensing"
+section says which folders are which.
+
+The names "recursive.eco" and "Recursive" and the recursive.eco spiral logo
+are used as trademarks and are not licensed. See TRADEMARKS.md.
