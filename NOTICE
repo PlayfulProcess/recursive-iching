@@ -10,3 +10,13 @@ section says which folders are which.
 
 The names "recursive.eco" and "Recursive" and the recursive.eco spiral logo
 are used as trademarks and are not licensed. See TRADEMARKS.md.
+
+Third-party names: "Human Design" names a system originated by Ra Uru Hu.
+Jovian Archive Media Pte. Ltd. claims trademarks in it: it holds a US
+registration for JOVIAN ARCHIVE HUMAN DESIGN and describes Rave BodyGraph
+and Rave Mandala as its registered trademarks. This project is not
+affiliated with or endorsed by Jovian Archive. The name is used only to say
+which system the Human Design lens grammars refer to. The gate glyphs in
+img/hd/ are drawn by this project's own code (scripts/build_hd_glyphs.py),
+and the gate readings are the author's own synthesis; no Human Design
+publication is reproduced.
