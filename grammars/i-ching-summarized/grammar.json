@@ -419,7 +419,7 @@
       "keywords": [],
       "metadata": {
         "number": 15,
-        "binary": "000100",
+        "binary": "001000",
         "pinyin": "Qiān",
         "chinese_name": "謙",
         "trigram_above": "earth",
@@ -446,7 +446,7 @@
       "keywords": [],
       "metadata": {
         "number": 16,
-        "binary": "000101",
+        "binary": "000100",
         "pinyin": "Yù",
         "chinese_name": "豫",
         "trigram_above": "thunder",
@@ -1256,7 +1256,7 @@
       "keywords": [],
       "metadata": {
         "number": 46,
-        "binary": "000111",
+        "binary": "011000",
         "pinyin": "Shēng",
         "chinese_name": "升",
         "trigram_above": "earth",
@@ -1715,7 +1715,7 @@
       "keywords": [],
       "metadata": {
         "number": 63,
-        "binary": "010101",
+        "binary": "101010",
         "pinyin": "Jì Jì",
         "chinese_name": "既濟",
         "trigram_above": "water",
@@ -1742,7 +1742,7 @@
       "keywords": [],
       "metadata": {
         "number": 64,
-        "binary": "101010",
+        "binary": "010101",
         "pinyin": "Wèi Jì",
         "chinese_name": "未濟",
         "trigram_above": "fire",
