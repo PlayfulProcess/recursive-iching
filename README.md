@@ -9,6 +9,18 @@ them, and a cross-lens synthesis against Human Design gates, zodiac signs, and c
 **Read a hexagram to know yourself, not to be told your fate.** A hexagram is a mirror, not a
 command — the same creed the sibling sites teach, pointed at a new subject.
 
+## Work in progress
+
+This is a work in progress. I published it mainly so the pages could be served, and it isn't
+finished. Contributors are welcome: open an issue or send a pull request, however small.
+
+The idea behind [recursive.eco](https://recursive.eco) is a hypothesis, not a claim: that we may
+need to learn together how to create the conditions for recursive eco-improvement, rather than
+race toward recursive self-improvement.
+
+If your work appears here and you'd like it featured differently, removed, or given a shelf of
+your own, please write to pp@playfulprocess.com.
+
 ## What's here
 
 ```
