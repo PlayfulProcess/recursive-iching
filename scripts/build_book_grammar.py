@@ -109,8 +109,9 @@ grammar = {
     "_grammar_commons": {
         "schema_version": "1.0",
         "license": ("CC BY-SA 4.0 (PlayfulProcess) for the frame, the Learn composition and any stories; "
-                    "the underlying I Ching text is public domain; the condensed English Image lines are "
-                    "from this repo's i-ching-summarized grammar (same licence)."),
+                    "the underlying I Ching text is public domain; the English Image lines are James Legge's "
+                    "public-domain Great Image (The Yî King, SBE vol. XVI, 1882), taken from this repo's "
+                    "i-ching-summarized grammar."),
         "built_by": "scripts/build_book_grammar.py",
     },
     "name": frame["title"],

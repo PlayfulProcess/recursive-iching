@@ -1,5 +1,32 @@
 # Changelog — The Recursive I Ching
 
+## September 23, 2026 — The 64 Hexagrams now carry Legge, not Wilhelm/Baynes
+
+A third-party audit compared `i-ching-summarized` against the known translations. Its Judgment,
+Image and Line texts were not "Wilhelm/Baynes-adjacent": they were the **Wilhelm/Baynes English
+translation verbatim** ("Hidden dragon. Do not act."; "The Illustrious Ancestor disciplines the
+Devil's Country"), about 800 sentences across all 64 hexagrams. That translation (Princeton
+University Press, Bollingen Series XIX, © 1950, 1967, renewed 1977) is still in copyright in the
+US and in Europe, so it could not sit in this repo under CC-BY-SA.
+
+- **Replaced, not rewritten.** Every Judgment, Image and Line text is now James Legge's
+  public-domain translation (1882/1899), copied verbatim from this repo's `zhouyi-core` (Judgment,
+  Lines) and `ten-wings` (Great Image), which were already cross-verified against three
+  digitizations. A script checked equality for all 64 hexagrams, and none of the old sentences
+  remain. The Interpretation gloss, names, symbols and metadata are unchanged.
+- **Derived grammars rebuilt:** `the-recursive-iching-book` (its Learn lines are the Image),
+  `meta-iching` (it carries a copy of every source item) and `_collection.json`. The book's
+  licence line and the collection label now name Legge.
+- **`viewers/source-text.html`:** layer 4 would now repeat layers 2 and 3, so it shows only the
+  site's own addition, the Interpretation gloss.
+- **Still to decide (not changed here):** `iching-hd-meta-categories` opens many of its Judgment,
+  Image and Line fields with Wilhelm/Baynes sentences or close paraphrases before its own gloss
+  (248 verbatim sentences), and `meta-iching` copies them. That grammar is authored work, so it
+  was left alone. The same Wilhelm/Baynes text is also in `recursive.eco-schemas`
+  (`iching/iching-hexagrams.json` and `schemas/iching/`) and in the recursive.eco copy of this
+  grammar. `repair-iching` quotes six short Wilhelm/Baynes lines with credit, which is quotation,
+  not a copy of the text.
+
 ## July 11, 2026 — `GRAMMAR_FORMAT.md` added (docs consolidation)
 
 This repo was missing `GRAMMAR_FORMAT.md` entirely, even though

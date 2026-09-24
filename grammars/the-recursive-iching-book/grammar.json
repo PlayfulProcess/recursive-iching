@@ -1,7 +1,7 @@
 {
   "_grammar_commons": {
     "schema_version": "1.0",
-    "license": "CC BY-SA 4.0 (PlayfulProcess) for the frame, the Learn composition and any stories; the underlying I Ching text is public domain; the condensed English Image lines are from this repo's i-ching-summarized grammar (same licence).",
+    "license": "CC BY-SA 4.0 (PlayfulProcess) for the frame, the Learn composition and any stories; the underlying I Ching text is public domain; the English Image lines are James Legge's public-domain Great Image (The Yî King, SBE vol. XVI, 1882), taken from this repo's i-ching-summarized grammar.",
     "built_by": "scripts/build_book_grammar.py"
   },
   "name": "The Recursive I Ching — a book you cast",
@@ -43,7 +43,7 @@
       "category": "hexagram",
       "sort_order": 1,
       "sections": {
-        "Learn": "Heaven over Heaven. The movement of heaven is full of power. Thus the superior man makes himself strong and untiring.",
+        "Learn": "Heaven over Heaven. Heaven, in its motion, (gives the idea of) strength. The superior man, in accordance with this, nerves himself to ceaseless activity.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -64,7 +64,7 @@
       "category": "hexagram",
       "sort_order": 2,
       "sections": {
-        "Learn": "Earth over Earth. The earth's condition is receptive devotion. Thus the superior man who has breadth of character carries the outer world.",
+        "Learn": "Earth over Earth. The (capacity and sustaining) power of the earth is what is denoted by Khwăn. The superior man, in accordance with this, with his large virtue supports (men and) things.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -85,7 +85,7 @@
       "category": "hexagram",
       "sort_order": 3,
       "sections": {
-        "Learn": "Water over Thunder. Clouds and thunder: the image of Difficulty at the Beginning. Thus the superior man brings order out of confusion.",
+        "Learn": "Water over Thunder. (The trigram representing) clouds and (that representing) thunder form Kun. The superior man, in accordance with this, (adjusts his measures of government) as in sorting the threads of the warp and woof.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -106,7 +106,7 @@
       "category": "hexagram",
       "sort_order": 4,
       "sections": {
-        "Learn": "Mountain over Water. A spring wells up at the foot of the mountain: the image of Youth. Thus the superior man fosters his character by thoroughness in all that he does.",
+        "Learn": "Mountain over Water. (The trigram representing) a mountain, and beneath it that for a spring issuing forth form Măng. The superior man, in accordance with this, strives to be resolute in his conduct and nourishes his virtue.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -127,7 +127,7 @@
       "category": "hexagram",
       "sort_order": 5,
       "sections": {
-        "Learn": "Water over Heaven. Clouds rise up to heaven: the image of Waiting. Thus the superior man eats and drinks, and is of good cheer.",
+        "Learn": "Water over Heaven. (The trigram for) clouds ascending over that for the sky forms Hsü. The superior man, in accordance with this, eats and drinks, feasts and enjoys himself (as if there were nothing else to employ him).",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -148,7 +148,7 @@
       "category": "hexagram",
       "sort_order": 6,
       "sections": {
-        "Learn": "Heaven over Water. Heaven and water go their separate ways: the image of Conflict. Thus in all his transactions the superior man considers the beginning.",
+        "Learn": "Heaven over Water. (The trigram representing) heaven and (that representing) water, moving away from each other, form Sung. The superior man, in accordance with this, in the transaction of affairs takes good counsel about his first steps.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -169,7 +169,7 @@
       "category": "hexagram",
       "sort_order": 7,
       "sections": {
-        "Learn": "Earth over Water. In the middle of the earth is water: the image of the Army. Thus the superior man increases his masses by generosity toward the people.",
+        "Learn": "Earth over Water. (The trigram representing) the earth and in the midst of it that representing water, form Sze. The superior man, in accordance with this, nourishes and educates the people, and collects (from among them) the multitudes (of the hosts).",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -190,7 +190,7 @@
       "category": "hexagram",
       "sort_order": 8,
       "sections": {
-        "Learn": "Water over Earth. On the earth is water: the image of Holding Together. Thus the kings of antiquity made the individual states prominent and maintained friendly relations with the feudal lords.",
+        "Learn": "Water over Earth. (The trigram representing) the earth, and over it (that representing) water, form Pî. The ancient kings, in accordance with this, established the various states and maintained an affectionate relation to their princes.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -211,7 +211,7 @@
       "category": "hexagram",
       "sort_order": 9,
       "sections": {
-        "Learn": "Wind over Heaven. The wind drives across heaven: the image of the Taming Power of the Small. Thus the superior man refines the outward show of his nature.",
+        "Learn": "Wind over Heaven. (The trigram representing) the sky, and that representing wind moving above it, form Hsiâo Khû The superior man, in accordance with this, adorns the outward manifestation of his virtue.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -232,7 +232,7 @@
       "category": "hexagram",
       "sort_order": 10,
       "sections": {
-        "Learn": "Heaven over Lake. Heaven above, the lake below: the image of Treading. Thus the superior man discriminates between high and low, and thereby fortifies the thinking of the people.",
+        "Learn": "Heaven over Lake. (The trigram representing) the sky above, and below it (that representing the waters of) a marsh, form Lî. The superior man, in accordance with this, discriminates between high and low, and gives settlement to the aims of the people.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -253,7 +253,7 @@
       "category": "hexagram",
       "sort_order": 11,
       "sections": {
-        "Learn": "Earth over Heaven. Heaven and earth unite: the image of Peace. Thus the ruler divides and completes the course of heaven and earth.",
+        "Learn": "Earth over Heaven. (The trigrams for) heaven and earth in communication together form Thâi. The (sage) sovereign, in harmony with this, fashions and completes (his regulations) after the courses of heaven and earth, and assists the application of the adaptations furnished by them,—in order to benefit the people.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -274,7 +274,7 @@
       "category": "hexagram",
       "sort_order": 12,
       "sections": {
-        "Learn": "Heaven over Earth. Heaven and earth do not unite: the image of Standstill. Thus the superior man falls back upon his inner worth in order to escape the difficulties.",
+        "Learn": "Heaven over Earth. (The trigrams of) heaven and earth, not in intercommunication, form Phî. The superior man, in accordance with this, restrains (the manifestation of) his virtue, and avoids the calamities (that threaten him). There is no opportunity of conferring on him the glory of emolument.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -295,7 +295,7 @@
       "category": "hexagram",
       "sort_order": 13,
       "sections": {
-        "Learn": "Heaven over Fire. Heaven together with fire: the image of Fellowship with Men. Thus the superior man organizes the clans and makes distinctions between things.",
+        "Learn": "Heaven over Fire. (The trigrams for) heaven and fire form Thung Zăn. The superior man, in accordance with this, distinguishes things according to their kinds and classes.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -316,7 +316,7 @@
       "category": "hexagram",
       "sort_order": 14,
       "sections": {
-        "Learn": "Fire over Heaven. Fire in heaven above: the image of Possession in Great Measure. Thus the superior man curbs evil and furthers good, and thereby obeys the benevolent will of heaven.",
+        "Learn": "Fire over Heaven. (The trigram for) heaven and (that of) fire above it form Tâ Yû The superior man, in accordance with this, represses what is evil and gives distinction to what is good, in sympathy with the excellent Heaven-conferred (nature).",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -337,7 +337,7 @@
       "category": "hexagram",
       "sort_order": 15,
       "sections": {
-        "Learn": "Earth over Mountain. Within the earth, a mountain: the image of Modesty. Thus the superior man reduces that which is too much and augments that which is too little.",
+        "Learn": "Earth over Mountain. (The trigram for) the earth and (that of) a mountain in the midst of it form Khien. The superior man, in accordance with this, diminishes what is excessive (in himself), and increases where there is any defect, bringing about an equality, according to the nature of the case, in his treatment (of himself and others).",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -358,7 +358,7 @@
       "category": "hexagram",
       "sort_order": 16,
       "sections": {
-        "Learn": "Thunder over Earth. Thunder comes resounding out of the earth: the image of Enthusiasm. Thus the ancient kings made music in order to honor merit.",
+        "Learn": "Thunder over Earth. (The trigrams for) the earth and thunder issuing from it with its crashing noise form Yü. The ancient kings, in accordance with this, composed their music and did honour to virtue, presenting it especially and most grandly to God, when they associated with Him (at the service) their highest ancestor and their father.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -379,7 +379,7 @@
       "category": "hexagram",
       "sort_order": 17,
       "sections": {
-        "Learn": "Lake over Thunder. Thunder in the middle of the lake: the image of Following. Thus the superior man at nightfall goes indoors for rest and recuperation.",
+        "Learn": "Lake over Thunder. (The trigram for the waters of) a marsh and (that for) thunder (hidden) in the midst of it form Sui. The superior man in accordance with this, when it is getting towards dark, enters (his house) and rests.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -400,7 +400,7 @@
       "category": "hexagram",
       "sort_order": 18,
       "sections": {
-        "Learn": "Mountain over Wind. The wind blows low on the mountain: the image of Decay. Thus the superior man stirs up the people and strengthens their spirit.",
+        "Learn": "Mountain over Wind. (The trigram for) a mountain, and below it that for wind, form Kû. The superior man, in accordance with this, (addresses himself to) help the people and nourish his own virtue.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -421,7 +421,7 @@
       "category": "hexagram",
       "sort_order": 19,
       "sections": {
-        "Learn": "Earth over Lake. The shore above the lake: the image of Approach. Thus the superior man is inexhaustible in his will to teach, and without limits in his tolerance and protection of the people.",
+        "Learn": "Earth over Lake. (The trigram for) the waters of a marsh and that for the earth above it form Lin. The superior man, in accordance with this, has his purposes of instruction that are inexhaustible, and nourishes and supports the people without limit.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -442,7 +442,7 @@
       "category": "hexagram",
       "sort_order": 20,
       "sections": {
-        "Learn": "Wind over Earth. The wind blows over the earth: the image of Contemplation. Thus the kings of old visited the regions of the world, contemplated the people, and gave them instruction.",
+        "Learn": "Wind over Earth. (The trigram representing) the earth, and that for wind moving above it, form Kwan. The ancient kings, in accordance with this, examined the (different) regions (of the kingdom), to see the (ways of the) people, and set forth their instructions.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -463,7 +463,7 @@
       "category": "hexagram",
       "sort_order": 21,
       "sections": {
-        "Learn": "Fire over Thunder. Thunder and lightning: the image of Biting Through. Thus the kings of former times made firm the laws through clearly defined penalties.",
+        "Learn": "Fire over Thunder. (The trigrams representing) thunder and lightning form Shih Ho. The ancient kings, in accordance with this, framed their penalties with intelligence, and promulgated their laws.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -484,7 +484,7 @@
       "category": "hexagram",
       "sort_order": 22,
       "sections": {
-        "Learn": "Mountain over Fire. Fire at the foot of the mountain: the image of Grace. Thus the superior man throws light upon current affairs, but he does not venture to decide issues of law in this way.",
+        "Learn": "Mountain over Fire. (The trigram representing) a mountain and that for fire under it form Pî. The superior man, in accordance with this, throws a brilliancy around his various processes of government, but does not dare (in a similar way) to decide cases of criminal litigation.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -505,7 +505,7 @@
       "category": "hexagram",
       "sort_order": 23,
       "sections": {
-        "Learn": "Mountain over Earth. The mountain rests on the earth: the image of Splitting Apart. Thus those above can ensure their position only by giving generously to those below.",
+        "Learn": "Mountain over Earth. (The trigrams representing) the earth, and (above it) that for a mountain, which adheres to the earth, form Po. Superiors, in accordance with this, seek to strengthen those below them, to secure the peace and stability of their own position.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -526,7 +526,7 @@
       "category": "hexagram",
       "sort_order": 24,
       "sections": {
-        "Learn": "Earth over Thunder. Thunder within the earth: the image of the Turning Point. Thus the kings of antiquity closed the passes at the time of solstice.",
+        "Learn": "Earth over Thunder. (The trigram representing) the earth and that for thunder in the midst of it form Fû. The ancient kings, in accordance with this, on the day. of the (winter) solstice, shut the gates of the passes (from one state to another), so that the travelling merchants could not (then) pursue their journeys, nor the princes go on with the inspection of their states.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -547,7 +547,7 @@
       "category": "hexagram",
       "sort_order": 25,
       "sections": {
-        "Learn": "Heaven over Thunder. Under heaven thunder rolls: all things attain the natural state of innocence. Thus the kings of old, rich in virtue, fostered all beings in harmony with the seasons.",
+        "Learn": "Heaven over Thunder. The thunder rolls all under the sky, and to (every)thing there is given (its nature), free from all insincerity. The ancient kings, in accordance with this, (made their regulations) in complete accordance with the seasons, thereby nourishing all things.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -568,7 +568,7 @@
       "category": "hexagram",
       "sort_order": 26,
       "sections": {
-        "Learn": "Mountain over Heaven. Heaven within the mountain: the image of the Taming Power of the Great. Thus the superior man acquaints himself with many sayings of antiquity and many deeds of the past.",
+        "Learn": "Mountain over Heaven. (The trigram representing) a mountain, and in the midst of it that (representing) heaven, form Tâ Khû. The superior man, in accordance with this, stores largely in his memory the words and deeds of former men, to subserve the accumulation of his virtue.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -589,7 +589,7 @@
       "category": "hexagram",
       "sort_order": 27,
       "sections": {
-        "Learn": "Mountain over Thunder. At the foot of the mountain, thunder: the image of Providing Nourishment. Thus the superior man is careful of his words and temperate in eating and drinking.",
+        "Learn": "Mountain over Thunder. (The trigram representing) a mountain and under it that for thunder form Î. The superior man, in accordance with this, (enjoins) watchfulness over our words, and the temperate regulation of our eating and drinking.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -610,7 +610,7 @@
       "category": "hexagram",
       "sort_order": 28,
       "sections": {
-        "Learn": "Lake over Wind. The lake rises above the trees: the image of Preponderance of the Great. Thus the superior man, when he stands alone, is unconcerned, and if he has to renounce the world, he is undaunted.",
+        "Learn": "Lake over Wind. (The trigram representing) trees hidden beneath that for the waters of a marsh forms Tâ Kwo. The superior man, in accordance with this, stands up alone and has no fear, and keeps retired from the world without regret.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -631,7 +631,7 @@
       "category": "hexagram",
       "sort_order": 29,
       "sections": {
-        "Learn": "Water over Water. Water flows on uninterruptedly and reaches its goal: the image of the Abysmal repeated. Thus the superior man walks in lasting virtue and goes about the business of teaching.",
+        "Learn": "Water over Water. (The representation of) water flowing on continuously forms the repeated Khan. The superior man, in accordance with this, maintains constantly the virtue (of his heart) and (the integrity of) his conduct, and practises the business of instruction.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -652,7 +652,7 @@
       "category": "hexagram",
       "sort_order": 30,
       "sections": {
-        "Learn": "Fire over Fire. That which is bright rises twice: the image of Fire. Thus the great man, by perpetuating this brightness, illumines the four quarters of the world.",
+        "Learn": "Fire over Fire. (The trigram for) brightness, repeated, forms Lî. The great man, in accordance with this, cultivates more and more his brilliant (virtue), and diffuses its brightness over the four quarters (of the land).",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -673,7 +673,7 @@
       "category": "hexagram",
       "sort_order": 31,
       "sections": {
-        "Learn": "Lake over Mountain. A lake on the mountain: the image of Influence. Thus the superior man encourages people to approach him by his readiness to receive them.",
+        "Learn": "Lake over Mountain. (The trigram representing) a mountain and above it that for (the waters of) a marsh form Hsien. The superior man, in accordance with this, keeps his mind free from pre-occupation, and open to receive (the influences of) others.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -694,7 +694,7 @@
       "category": "hexagram",
       "sort_order": 32,
       "sections": {
-        "Learn": "Thunder over Wind. Thunder and wind: the image of Duration. Thus the superior man stands firm and does not change his direction.",
+        "Learn": "Thunder over Wind. (The trigram representing) thunder and that for wind form Hăng. The superior man, in accordance with this, stands firm, and does not change his method (of operation).",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -715,7 +715,7 @@
       "category": "hexagram",
       "sort_order": 33,
       "sections": {
-        "Learn": "Heaven over Mountain. Mountain under heaven: the image of Retreat. Thus the superior man keeps the inferior man at a distance, not angrily but with reserve.",
+        "Learn": "Heaven over Mountain. (The trigram representing) the sky and below it that for a mountain form Thun. The superior man, in accordance with this, keeps small men at a distance, not by showing that he hates them, but by his own. dignified gravity.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -736,7 +736,7 @@
       "category": "hexagram",
       "sort_order": 34,
       "sections": {
-        "Learn": "Thunder over Heaven. Thunder in heaven above: the image of the Power of the Great. Thus the superior man does not tread upon paths that do not accord with established order.",
+        "Learn": "Thunder over Heaven. (The trigram representing) heaven and above it that for thunder form Tâ Kwang. The superior man, in accordance with this, does not take a step which is not according to propriety.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -757,7 +757,7 @@
       "category": "hexagram",
       "sort_order": 35,
       "sections": {
-        "Learn": "Fire over Earth. The sun rises over the earth: the image of Progress. Thus the superior man himself brightens his bright virtue.",
+        "Learn": "Fire over Earth. (The trigram representing) the earth and that for the bright (sun) coming forth above it form Žin. The superior man, according to this, gives himself to make more brilliant his bright virtue.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -778,7 +778,7 @@
       "category": "hexagram",
       "sort_order": 36,
       "sections": {
-        "Learn": "Earth over Fire. The sun has sunk under the earth: the image of Darkening of the Light. Thus the superior man lives with the great multitude; he veils his light, yet still shines.",
+        "Learn": "Earth over Fire. (The trigram representing) the earth and that for the bright (sun) entering within it form Ming Î. The superior man, in accordance with this, conducts his management of men;—he shows his intelligence by keeping it obscured.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -799,7 +799,7 @@
       "category": "hexagram",
       "sort_order": 37,
       "sections": {
-        "Learn": "Wind over Fire. Wind comes forth from fire: the image of the Family. Thus the superior man has substance in his words and duration in his way of life.",
+        "Learn": "Wind over Fire. (The trigram representing) fire, and that for wind coming forth from it, form Kiâ Zăn. The superior man, in accordance with this, orders his words according to (the truth of) things, and his conduct so that it is uniformly consistent.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -820,7 +820,7 @@
       "category": "hexagram",
       "sort_order": 38,
       "sections": {
-        "Learn": "Fire over Lake. Above, fire; below, the lake: the image of Opposition. Thus amid all objects of the world the superior man retains his individuality.",
+        "Learn": "Fire over Lake. (The trigram representing) fire above, and that for (the waters of) a marsh below, form Khwei. The superior man, in accordance with this, where there is a general agreement, yet admits diversity.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -841,7 +841,7 @@
       "category": "hexagram",
       "sort_order": 39,
       "sections": {
-        "Learn": "Water over Mountain. Water on the mountain: the image of Obstruction. Thus the superior man turns his attention to himself and molds his character.",
+        "Learn": "Water over Mountain. (The trigram representing) a mountain, and above it that for water, form Kien. The superior man, in accordance with this, turns round (and examines) himself, and cultivates his virtue.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -862,7 +862,7 @@
       "category": "hexagram",
       "sort_order": 40,
       "sections": {
-        "Learn": "Thunder over Water. Thunder and rain set in: the image of Deliverance. Thus the superior man pardons mistakes and forgives misdeeds.",
+        "Learn": "Thunder over Water. (The trigram representing) thunder and that for rain, with these phenomena in a state of manifestation, form Kieh. The superior man, in accordance with this, forgives errors, and deals gently with crimes.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -883,7 +883,7 @@
       "category": "hexagram",
       "sort_order": 41,
       "sections": {
-        "Learn": "Mountain over Lake. At the foot of the mountain, the lake: the image of Decrease. Thus the superior man curbs his anger and restrains his instincts.",
+        "Learn": "Mountain over Lake. (The trigram representing) a mountain and beneath it that for the waters of a marsh form Sun. The superior man, in accordance with this, restrains his wrath and represses his desires.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -904,7 +904,7 @@
       "category": "hexagram",
       "sort_order": 42,
       "sections": {
-        "Learn": "Wind over Thunder. Wind and thunder: the image of Increase. Thus the superior man: if he sees good, he imitates it; if he has faults, he furthers himself of them.",
+        "Learn": "Wind over Thunder. (The trigram representing) wind and that for thunder form Yî. The superior man, in accordance with this, when he sees what is good, moves towards it; and when he sees his errors, he turns from them.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -925,7 +925,7 @@
       "category": "hexagram",
       "sort_order": 43,
       "sections": {
-        "Learn": "Lake over Heaven. The lake has risen up to heaven: the image of Break-through. Thus the superior man dispenses riches downward and refrains from resting on his virtue.",
+        "Learn": "Lake over Heaven. (The trigram representing) heaven and that for the waters of a marsh mounting above it form Kwâi. The superior man, in accordance with this, bestows emolument on those below him, and dislikes allowing his gifts to accumulate (undispensed).",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -946,7 +946,7 @@
       "category": "hexagram",
       "sort_order": 44,
       "sections": {
-        "Learn": "Heaven over Wind. Under heaven, the wind: the image of Coming to Meet. Thus does the prince act when disseminating his commands and proclaiming them to the four quarters of heaven.",
+        "Learn": "Heaven over Wind. (The trigram representing) wind and that for the sky above it form Kâu. The sovereign, in accordance with this, delivers his charges, and promulgates his announcements throughout the four quarters (of the kingdom).",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -967,7 +967,7 @@
       "category": "hexagram",
       "sort_order": 45,
       "sections": {
-        "Learn": "Lake over Earth. Over the earth, the lake: the image of Gathering Together. Thus the superior man renews his weapons in order to meet the unforeseen.",
+        "Learn": "Lake over Earth. (The trigram representing the) earth and that for the waters of a marsh raised above it form Žhui. The superior man, in accordance with this, has his weapons of war put in good repair, to be prepared against unforeseen contingencies.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -988,7 +988,7 @@
       "category": "hexagram",
       "sort_order": 46,
       "sections": {
-        "Learn": "Earth over Wind. Within the earth, wood grows: the image of Pushing Upward. Thus the superior man in his devotion accumulates small things in order to achieve something high and great.",
+        "Learn": "Earth over Wind. (The trigram representing) wood and that for the earth with the wood growing in the midst of it form Shăng. The superior man, in accordance with this, pays careful attention to his virtue, and accumulates the small developments of it till it is high and great.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1009,7 +1009,7 @@
       "category": "hexagram",
       "sort_order": 47,
       "sections": {
-        "Learn": "Lake over Water. There is no water in the lake: the image of Exhaustion. Thus the superior man stakes his life on following his will.",
+        "Learn": "Lake over Water. (The trigram representing) a marsh, and (below it that for a defile, which has drained the other dry so that there is) no water in it, form Khwăn. The superior man, in accordance with this, will sacrifice his life in order to carry out his purpose.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1030,7 +1030,7 @@
       "category": "hexagram",
       "sort_order": 48,
       "sections": {
-        "Learn": "Water over Wind. Water over wood: the image of the Well. Thus the superior man encourages the people at their work, and exhorts them to help one another.",
+        "Learn": "Water over Wind. (The trigram representing) wood and above it that for water form Žing. The superior man, in accordance with this, comforts the people, and. stimulates them to mutual helpfulness.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1051,7 +1051,7 @@
       "category": "hexagram",
       "sort_order": 49,
       "sections": {
-        "Learn": "Lake over Fire. Fire in the lake: the image of Revolution. Thus the superior man sets the calendar in order and makes the seasons clear.",
+        "Learn": "Lake over Fire. (The trigram representing the waters of) a marsh and that for fire in the midst of them form Ko. The superior man, in accordance with this, regulates his (astronomical) calculations, and makes clear the seasons and times.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1072,7 +1072,7 @@
       "category": "hexagram",
       "sort_order": 50,
       "sections": {
-        "Learn": "Fire over Wind. Fire over wood: the image of the Caldron. Thus the superior man consolidates his fate by making his position correct.",
+        "Learn": "Fire over Wind. (The trigram representing) wood and above it that for fire form Ting. The superior man, in accordance with this, keeps his every position correct, and maintains secure the appointment (of Heaven).",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1093,7 +1093,7 @@
       "category": "hexagram",
       "sort_order": 51,
       "sections": {
-        "Learn": "Thunder over Thunder. Thunder repeated: the image of Shock. Thus in fear and trembling the superior man sets his life in order and examines himself.",
+        "Learn": "Thunder over Thunder. (The trigram representing) thunder, being repeated, forms Kăn. The superior man, in accordance with this, is fearful and apprehensive, cultivates (his virtue), and examines (his faults).",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1114,7 +1114,7 @@
       "category": "hexagram",
       "sort_order": 52,
       "sections": {
-        "Learn": "Mountain over Mountain. Mountains standing close together: the image of Keeping Still. Thus the superior man does not let his thoughts go beyond his situation.",
+        "Learn": "Mountain over Mountain. (Two trigrams representing) a mountain, one over the other, form Kăn. The superior man, in accordance with this, does not go in his thoughts beyond the (duties of the) position in which he is.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1135,7 +1135,7 @@
       "category": "hexagram",
       "sort_order": 53,
       "sections": {
-        "Learn": "Wind over Mountain. On the mountain, a tree: the image of Development. Thus the superior man abides in dignity and virtue, in order to improve the customs.",
+        "Learn": "Wind over Mountain. (The trigram representing) a mountain and above it that for a tree form Kien. The superior man, in accordance with this, attains to and maintains his extraordinary virtue, and makes the manners of the people good.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1156,7 +1156,7 @@
       "category": "hexagram",
       "sort_order": 54,
       "sections": {
-        "Learn": "Thunder over Lake. Thunder over the lake: the image of the Marrying Maiden. Thus the superior man understands the transitory in the light of the eternity of the end.",
+        "Learn": "Thunder over Lake. (The trigram representing the waters of) a marsh and over it that for thunder form Kwei Mei. The superior man, in accordance with this, having regard to the far-distant end, knows the mischief (that may be done at the beginning).",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1177,7 +1177,7 @@
       "category": "hexagram",
       "sort_order": 55,
       "sections": {
-        "Learn": "Thunder over Fire. Both thunder and lightning come: the image of Abundance. Thus the superior man decides lawsuits and carries out punishments.",
+        "Learn": "Thunder over Fire. (The trigrams representing) thunder and lightning combine to form Făng. The superior man, in accordance with this, decides cases of litigation, and apportions punishments with exactness.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1198,7 +1198,7 @@
       "category": "hexagram",
       "sort_order": 56,
       "sections": {
-        "Learn": "Fire over Mountain. Fire on the mountain: the image of the Wanderer. Thus the superior man is clear-minded and cautious in imposing penalties, and protracts no lawsuit.",
+        "Learn": "Fire over Mountain. (The trigram representing) a mountain and above it that for fire form Lü. The superior man, in accordance with this, exerts his wisdom and caution in the use of punishments and not allowing litigations to continue.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1219,7 +1219,7 @@
       "category": "hexagram",
       "sort_order": 57,
       "sections": {
-        "Learn": "Wind over Wind. Winds following one upon another: the image of the Gently Penetrating. Thus the superior man spreads his commands abroad and carries out his undertakings.",
+        "Learn": "Wind over Wind. (Two trigrams representing) wind, following each other, form Sun. The superior man, in accordance with this, reiterates his orders, and secures the practice of his affairs.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1240,7 +1240,7 @@
       "category": "hexagram",
       "sort_order": 58,
       "sections": {
-        "Learn": "Lake over Lake. Lakes resting one on the other: the image of the Joyous. Thus the superior man joins with his friends for discussion and practice.",
+        "Learn": "Lake over Lake. (Two symbols representing) the waters of a marsh, one over the other, form Tui. The superior man, in accordance with this, (encourages) the conversation of friends and (the stimulus of) their (common) practice.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1261,7 +1261,7 @@
       "category": "hexagram",
       "sort_order": 59,
       "sections": {
-        "Learn": "Wind over Water. The wind drives over the water: the image of Dispersion. Thus the kings of old offered sacrifices to the Lord and built temples.",
+        "Learn": "Wind over Water. (The trigram representing) water and that for wind moving above the water form Hwân. The ancient kings, in accordance with this, presented offerings to God and established the ancestral temple.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1282,7 +1282,7 @@
       "category": "hexagram",
       "sort_order": 60,
       "sections": {
-        "Learn": "Water over Lake. Water over lake: the image of Limitation. Thus the superior man creates number and measure, and examines the nature of virtue and correct conduct.",
+        "Learn": "Water over Lake. (The trigram representing) a lake, and above it that for water, form Kieh. The superior man, in accordance with this, constructs his (methods of) numbering and measurement, and discusses (points of) virtue and conduct.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1303,7 +1303,7 @@
       "category": "hexagram",
       "sort_order": 61,
       "sections": {
-        "Learn": "Wind over Lake. Wind over lake: the image of Inner Truth. Thus the superior man discusses lawsuits in order to delay executions.",
+        "Learn": "Wind over Lake. (The trigram representing the waters of) a marsh and that for wind above it form Kung Fû. The superior man, in accordance with this, deliberates about cases of litigation and delays (the infliction of) death.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1324,7 +1324,7 @@
       "category": "hexagram",
       "sort_order": 62,
       "sections": {
-        "Learn": "Thunder over Mountain. Thunder on the mountain: the image of Preponderance of the Small. Thus in his conduct the superior man gives preponderance to reverence.",
+        "Learn": "Thunder over Mountain. (The trigram representing) a hill and that for thunder above it form Hsiâo Kwo. The superior man, in accordance with this, in his conduct exceeds in humility, in mourning exceeds in sorrow, and in his expenditure exceeds in economy.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1345,7 +1345,7 @@
       "category": "hexagram",
       "sort_order": 63,
       "sections": {
-        "Learn": "Water over Fire. Water over fire: the image of the condition After Completion. Thus the superior man takes thought of misfortune and arms himself against it in advance.",
+        "Learn": "Water over Fire. (The trigram representing) fire and that for water above it form Kî Žî. The superior man, in accordance with this, thinks of evil (that may come), and beforehand guards against it.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],
@@ -1366,7 +1366,7 @@
       "category": "hexagram",
       "sort_order": 64,
       "sections": {
-        "Learn": "Fire over Water. Fire over water: the image of the condition Before Completion. Thus the superior man is careful in the differentiation of things, so that each finds its place.",
+        "Learn": "Fire over Water. (The trigram representing) water and that for fire above it form Wei Žî. The superior man, in accordance with this, carefully discriminates among (the qualities of) things, and the (different) positions they (naturally) occupy.",
         "Story": "This hexagram's story has not been written yet. The book is being written one casting at a time. If a story came to you here, write it in your transition below and save the grammar - that is how this book gets written."
       },
       "keywords": [],

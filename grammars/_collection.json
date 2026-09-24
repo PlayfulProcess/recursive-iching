@@ -63,11 +63,11 @@
       "default_preview": null,
       "items": 64,
       "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
-      "blurb": "The Judgment, Image, and all six line texts for each of the 64 hexagrams, in condensed English, with a short interpretation gloss per hexagram. This is the flagship reading text of The Recursive I Chi…",
+      "blurb": "The Judgment, Image, and all six line texts for each of the 64 hexagrams, in James Legge's public-domain English translation (1882), with a short interpretation gloss per hexagram. This is the flagshi…",
       "path": "grammars/i-ching-summarized/grammar.json",
       "provenance": "record",
       "year": -1000,
-      "year_label": "Zhou I Ching, compiled c. 1046–256 BCE · this English condensation's own translation lineage is undocumented"
+      "year_label": "Zhou I Ching, compiled c. 1046–256 BCE · English: James Legge 1882, public domain"
     },
     {
       "slug": "iching-hd-meta-categories",

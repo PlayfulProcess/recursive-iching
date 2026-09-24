@@ -53,7 +53,7 @@ BRANCH_OF = {
 YEARS = {
     "i-ching-summarized": (
         -1000,
-        "Zhou I Ching, compiled c. 1046–256 BCE · this English condensation's own translation lineage is undocumented",
+        "Zhou I Ching, compiled c. 1046–256 BCE · English: James Legge 1882, public domain",
         "record",
     ),
     "i-ching-chinese-original": (

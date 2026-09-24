@@ -96,7 +96,7 @@
     is the ≈3,000-year-old Zhouyi/Yijing text itself — no modern translator, no added copyright layer. The short
     English hexagram <em>name</em> under each is an <b>AI-generated one-line gloss</b> (Claude Code), a title, not a
     scholarly translation of the full passage — do not mistake it for Wilhelm, Legge, or any human translation.
-    The other layers below (this site's English reading, the cross-lens gate/sign/chakra reading) are separate,
+    The other layers below (this site's interpretation gloss, the cross-lens gate/sign/chakra reading) are separate,
     later, clearly-marked works — never confused with the source above them. The two <b>Legge layers</b>
     (Zhouyi core; Ten Wings Great Image) are James Legge's <b>public-domain translation</b> (1882), stacked in
     stratigraphic order: the Western Zhou divination core first, the Confucian commentary — added centuries
@@ -238,11 +238,13 @@
       </div>`;
     }
 
-    // Layer 4 — this site's English condensation
-    if (s) {
+    // Layer 4 — this site's own reading. The 64 Hexagrams grammar now carries Legge's
+    // Judgment, Image and Lines verbatim (the same text as layers 2 and 3), so only its
+    // own addition, the Interpretation gloss, is shown here.
+    if (s && s.sections && s.sections.Interpretation) {
       html += `<div class="layer">
-        <div class="lyt">This site's English reading <span class="src">· i-ching-summarized, translation lineage unverified</span></div>
-        ${sectionsHTML(s.sections, '')}
+        <div class="lyt">This site's reading <span class="src">· a one-line interpretation gloss (AI-assisted, CC-BY-SA-4.0)</span></div>
+        ${sectionsHTML({ Interpretation: s.sections.Interpretation }, '')}
       </div>`;
     }
 

@@ -9,7 +9,7 @@ lens (three-lenses-64) is the ACTION the hexagram asks of a person; the book cha
 Legge is the TEXT; the repair grammar is the WOUND. A cast (a path through hexagrams) is saved as a
 spread-like entry, and its story is what emerges from the composites it passes through.
 
-Sources (all in grammars/): i-ching-summarized (Judgment/Image/lines, condensed), zhouyi-core (Legge
+Sources (all in grammars/): i-ching-summarized (Legge Judgment/Image/lines + a gloss), zhouyi-core (Legge
 Judgment + lines, PD), ten-wings (Legge Great Image, PD), three-lenses-64 (HD-flavoured names +
 keywords; sections are empty today — the gate ACTION text is the gap to fill), repair-iching (14
 hexagrams), the-recursive-iching-book (Learn/Story).
