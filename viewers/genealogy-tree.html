@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../theme.css?v=3">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Tree of the Changes — a genealogy of the books · Recursive I Ching</title>
+<style>
+  :root{
+       
+     
+         
+  }
+  @media (prefers-color-scheme: light){
+    :root{       }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);color-scheme:light;
+    font-family:Inter,system-ui,-apple-system,sans-serif}
+  header.site{display:flex;align-items:center;gap:14px;padding:12px 18px;border-bottom:1px solid var(--line);
+    flex-wrap:wrap;background:linear-gradient(180deg,#f1ece1,transparent)}
+  header.site h1{font-size:16px;margin:0;font-weight:700;letter-spacing:.3px}
+  header.site h1 .gold{color:var(--accent)}
+  header.site nav{display:flex;gap:14px;flex-wrap:wrap}
+  header.site nav a{color:#a99fc6;text-decoration:none;font-size:13px}
+  header.site nav a:hover{color:var(--accent)}
+  .wrap{display:flex;height:calc(100vh - 52px);min-height:0}
+  #stage{flex:1;position:relative;overflow:hidden}
+  svg{width:100%;height:100%;display:block;cursor:grab}
+  svg:active{cursor:grabbing}
+  .tree-link{fill:none;stroke:var(--line);stroke-width:1.1px;opacity:.7}
+  .derive-link{fill:none;stroke-width:1.4px;opacity:.55;stroke-dasharray:3 3}
+  .node circle{cursor:pointer;stroke:var(--bg);stroke-width:1.2px}
+  .node text{cursor:pointer;font-size:11px;fill:var(--ink);paint-order:stroke;
+    stroke:var(--bg);stroke-width:3px;stroke-linejoin:round}
+  .node.branch text{font-size:12.5px;font-weight:700}
+  .node.root text{font-size:13px;font-weight:800;fill:var(--accent)}
+  .node:hover circle{stroke:var(--accent);stroke-width:2px}
+  .dim{opacity:.12;transition:opacity .2s}
+  .hot{opacity:1 !important}
+  /* detail panel */
+  aside#detail{width:340px;max-width:84vw;background:var(--panel);border-left:1px solid var(--line);
+    padding:18px;overflow:auto;display:none;position:relative}
+  aside#detail.open{display:block}
+  aside#detail img{width:100%;max-height:260px;object-fit:contain;background:#f4f1ea;border-radius:8px;margin-bottom:12px}
+  aside#detail h2{margin:.2em 0 .1em;font-size:18px}
+  aside#detail .when{color:var(--accent);font-size:13px;margin-bottom:10px}
+  aside#detail .sec{margin:12px 0;font-size:13.5px;line-height:1.55;color:var(--ink)}
+  aside#detail .sec h4{margin:0 0 4px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  aside#detail .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+  aside#detail .chip{font-size:11px;padding:3px 9px;border-radius:999px;background:var(--line);color:var(--ink)}
+  aside#detail .opencards{display:inline-block;margin-top:10px;padding:8px 14px;border:1px solid var(--accent);
+    border-radius:999px;color:var(--accent);text-decoration:none;font-size:13px;font-weight:600}
+  /* Top-right X close — dark chip + white glyph, matching viewers/cards.html's
+     .modal-close (builder, Jul 7 2026: plain floated × disappeared on light panels). */
+  aside#detail .modal-close{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;
+    background:rgba(45,34,15,0.65);border:1px solid rgba(255,255,255,0.35);color:#fff;font-size:1.1rem;
+    cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10;transition:background .2s}
+  aside#detail .modal-close:hover{background:rgba(255,255,255,0.2)}
+  /* Prev/next deck paging — sticky footer bar, same pattern as cards.html. */
+  .modal-nav-footer{position:sticky;bottom:0;display:flex;align-items:center;justify-content:space-between;
+    gap:1rem;margin:1.25rem -18px -18px;padding:0.7rem 18px;background:var(--panel);border-top:1px solid var(--line)}
+  .modal-nav-btn{flex-shrink:0;width:40px;height:40px;border-radius:50%;background:rgba(156,59,42,.1);
+    border:1px solid var(--line);color:var(--ink);font-size:1.2rem;cursor:pointer;display:flex;
+    align-items:center;justify-content:center;transition:background .15s,opacity .15s}
+  .modal-nav-btn:hover:not(:disabled){background:rgba(156,59,42,.35);border-color:var(--accent)}
+  .modal-nav-btn:disabled{opacity:.3;cursor:default}
+  .modal-counter{font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--muted);white-space:nowrap}
+  /* legend + controls */
+  .legend{position:absolute;left:14px;bottom:14px;background:color-mix(in srgb,var(--panel) 88%,transparent);
+    color:var(--ink);border:1px solid var(--line);
+    border-radius:10px;padding:10px 12px;font-size:12px;backdrop-filter:blur(4px)}
+  .legend .row{display:flex;align-items:center;gap:7px;margin:3px 0;cursor:pointer}
+  .legend .row.off{opacity:.35}
+  .legend .sw{width:11px;height:11px;border-radius:3px}
+  .legend .ttl{font-weight:700;margin-bottom:6px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;font-size:10px}
+  .controls{position:absolute;right:14px;top:14px;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+  .controls button{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;
+    padding:6px 11px;font-size:12px;cursor:pointer}
+  .controls button:hover{border-color:var(--accent);color:var(--accent)}
+  .controls label{display:inline-flex;align-items:center;gap:6px;background:var(--panel);border:1px solid var(--line);
+    border-radius:8px;padding:6px 11px;font-size:12px;color:var(--ink);cursor:pointer}
+  .hint{position:absolute;left:50%;top:14px;transform:translateX(-50%);font-size:11.5px;color:var(--muted);
+    background:color-mix(in srgb,var(--panel) 80%,transparent);border:1px solid var(--line);
+    padding:5px 12px;border-radius:999px;pointer-events:none}
+  #err{padding:40px;text-align:center;color:#e07a5f}
+  /* embed mode: drop site chrome so the book figure is just the viz */
+  body.embed header.site, body.embed site-header, body.embed view-switcher, body.embed .hint{display:none}
+  body.embed .wrap{height:600px}
+  /* in the (light) book, force the embed light regardless of the reader's OS theme */
+  body.embed{       }
+  .cite{font-size:.85em;color:var(--muted)}
+  .cite a{color:inherit}
+</style>
+</head>
+<body>
+<script src="../site-header.js?v=47"></script>
+<script src="../view-switcher.js?v=12"></script>
+<site-header active="genealogy"></site-header>
+<div class="wrap">
+  <div id="stage">
+    <div class="hint">Drag to pan · scroll to zoom · click a book for detail · hover to trace descent</div>
+    <div class="controls">
+      <label><input type="checkbox" id="toggle-derive" checked> Descent arcs</label>
+      <button id="btn-reset">Reset view</button>
+    </div>
+    <svg id="svg"></svg>
+    <div class="legend" id="legend"><div class="ttl">Branches — click to filter</div></div>
+    <div id="err" style="display:none"></div>
+  </div>
+  <aside id="detail"></aside>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script>
+const BRANCH_COLORS = {'branch-roots':'#b08d57','branch-zhou':'#9c3b2a','branch-canon':'#c96d3b','branch-numbers':'#6d8ec9','branch-meanings':'#5b8a72','branch-dao':'#8a6bb0','branch-west':'#b0566e','branch-modern':'#4a7a8c'};
+const RAW_COLORS = {'branch-roots':'#b08d57','branch-zhou':'#9c3b2a','branch-canon':'#c96d3b','branch-numbers':'#6d8ec9','branch-meanings':'#5b8a72','branch-dao':'#8a6bb0','branch-west':'#b0566e','branch-modern':'#4a7a8c'};
+const PALETTE = ['#c9a24b','#e07a5f','#81b29a','#6d8ec9','#9b6dc9','#c96d9b','#9c3b2a','#6b6457','#4db6ac','#e57373'];
+let hubField = 'branch'; // discoverable field that drives hub/node color
+let hubColorOf = {}; // value → color
+// The node -> library grammar link lives in the data (metadata.grammar_slug), not in a map here.
+const slugOf=id=>((itemMap&&itemMap[id]&&itemMap[id].metadata)||{}).grammar_slug||null;
+
+const params = new URLSearchParams(location.search);
+const SRC = params.get('src') || '../grammars/tree-of-the-iching/grammar.json';
+const EMBED = params.get('embed');
+if(EMBED) document.body.classList.add('embed');
+function postHeight(){ if(!EMBED) return; try{ parent.postMessage({type:'ichingEmbedHeight',h:Math.ceil(document.body.scrollHeight)},'*'); }catch(e){} }
+if(EMBED){ window.addEventListener('load',()=>setTimeout(postHeight,90)); window.addEventListener('resize',postHeight); }
+
+// The CSS assumes a 52px <site-header>, but the real custom element renders
+// taller (and can wrap to more lines on narrow phones) — a fixed calc(100vh -
+// 52px) then makes .wrap taller than the actual remaining space, pushing the
+// bottom of the detail panel (incl. the prev/next footer) below the viewport.
+// Measure the real header height instead of guessing.
+function fitWrap(){
+  if(EMBED) return; // embed mode sizes .wrap explicitly (see body.embed .wrap)
+  const sh=document.querySelector('site-header');
+  const h=(sh&&sh.offsetHeight)||52;
+  document.querySelector('.wrap').style.height='calc(100vh - '+h+'px)';
+}
+fitWrap();
+window.addEventListener('resize',fitWrap);
+window.addEventListener('orientationchange',()=>setTimeout(fitWrap,200));
+
+let G, itemMap, hidden = new Set();
+
+(async function init(){
+  try{
+    const res = await fetch(SRC);
+    if(!res.ok) throw new Error('Could not load '+SRC+' ('+res.status+')');
+    G = await res.json();
+  }catch(e){ document.getElementById('err').style.display='block';
+    document.getElementById('err').textContent = e.message; return; }
+
+  const items = G.items || [];
+  (G.bibliography||[]).forEach(b=>{ BIB[b.key]=b; });
+  itemMap = Object.fromEntries(items.map(i=>[i.id,i]));
+
+  // Find root (level 3) and build nested hierarchy via composite_of
+  const root = items.find(i=>(i.level||1)===3) || items.find(i=>!items.some(p=>(p.composite_of||[]).includes(i.id)));
+  function build(node){
+    const kids = (node.composite_of||[]).map(id=>itemMap[id]).filter(Boolean);
+    return { id:node.id, data:node, children: kids.map(build) };
+  }
+  const nested = build(root);
+
+  // Color hubs by branch (the only field with >1 value across the decks; the old picker was a no-op).
+  hubField = 'branch';
+  rebuildHubColors();
+
+  buildLegend();
+  draw(nested);
+  window.addEventListener('resize', ()=>draw(nested));
+  document.getElementById('toggle-derive').addEventListener('change', ()=>draw(nested));
+  document.getElementById('btn-reset').addEventListener('click', ()=>{ hidden.clear(); buildLegend(); draw(nested); });
+  document.addEventListener('keydown', (e)=>{
+    if(!document.getElementById('detail').classList.contains('open')) return;
+    if(e.key==='Escape'){ document.getElementById('detail').classList.remove('open'); }
+    if(e.key==='ArrowLeft') navigateDeck(-1);
+    if(e.key==='ArrowRight') navigateDeck(1);
+  });
+})();
+
+function yearOf(it){
+  const md = it.metadata||{};
+  if(typeof md.year==='number') return md.year;
+  const m = (md.when||'').match(/\b(1[2-9]\d{2}|20\d{2})\b/);
+  return m ? +m[1] : null;
+}
+let BIB={};
+function cite(html){ return html.replace(/\[@([^\]]+)\]/g,(m,keys)=>'<span class="cite">['+keys.split(';').map(k=>{k=k.trim().replace(/^@/,''); const b=BIB[k]; if(!b) return esc(k); const label=esc((b.author||k).replace(/\s*\(.*\)/,'')+(b.year?' '+b.year:'')); return b.url?`<a href="${esc(b.url)}" target="_blank" rel="noopener">${label}</a>`:label;}).join('; ')+']</span>'); }
+function branchOf(it){ return (it.metadata||{}).branch || (it.id.startsWith('branch-')?it.id:null); }
+function hubValueOf(it){
+  if(hubField==='branch') return branchOf(it);
+  return (it.metadata||{})[hubField] || null;
+}
+function rebuildHubColors(){
+  hubColorOf = {};
+  if(hubField==='branch'){ Object.assign(hubColorOf, RAW_COLORS); return; }
+  const vals=[...new Set((G?.items||[]).filter(i=>i.id.startsWith('book-')).map(i=>(i.metadata||{})[hubField]).filter(Boolean))];
+  vals.forEach((v,i)=>{ hubColorOf[v]=PALETTE[i%PALETTE.length]; });
+}
+
+function draw(nested){
+  const stage = document.getElementById('stage');
+  const W = stage.clientWidth, H = stage.clientHeight;
+  const radius = Math.max(160, Math.min(W,H)/2 - 90);
+  const svg = d3.select('#svg').attr('viewBox',[-W/2,-H/2,W,H]);
+  svg.selectAll('*').remove();
+  const g = svg.append('g');
+
+  // zoom/pan
+  const zoom = d3.zoom().scaleExtent([0.4,4]).on('zoom',ev=>g.attr('transform',ev.transform));
+  svg.call(zoom);
+  draw._reset = ()=>svg.transition().duration(400).call(zoom.transform, d3.zoomIdentity);
+
+  const hierarchy = d3.hierarchy(nested, d=>{
+    // hide children whose hub-field value is filtered off
+    return (d.children||[]).filter(c=>{
+      const v = hubValueOf(c.data);
+      return !(v && hidden.has(v));
+    });
+  });
+  const cluster = d3.cluster().size([2*Math.PI, radius]).separation((a,b)=>(a.parent===b.parent?1:2)/a.depth);
+  cluster(hierarchy);
+
+  const nodes = hierarchy.descendants();
+  const nodeById = {};
+  nodes.forEach(n=>nodeById[n.data.id]=n);
+
+  // ── taxonomic tree links (root→branch→deck) ──
+  g.append('g').selectAll('path').data(hierarchy.links()).join('path')
+    .attr('class','tree-link')
+    .attr('d', d3.linkRadial().angle(d=>d.x).radius(d=>d.y));
+
+  // ── descent arcs (derives_from) drawn deck→deck through the centre ──
+  if(document.getElementById('toggle-derive').checked){
+    const derive=[];
+    nodes.forEach(n=>{
+      const df = (n.data.data.metadata||{}).derives_from || [];
+      df.forEach(srcId=>{ if(nodeById[srcId]) derive.push({s:nodeById[srcId],t:n}); });
+    });
+    g.append('g').selectAll('path').data(derive).join('path')
+      .attr('class','derive-link')
+      .attr('stroke', d=>hubColorOf[hubValueOf(d.t.data.data)]||'#888')
+      .attr('d', d=>{
+        const [sx,sy]=radial(d.s.x,d.s.y), [tx,ty]=radial(d.t.x,d.t.y);
+        return `M${sx},${sy}Q0,0 ${tx},${ty}`;
+      });
+  }
+
+  // ── nodes ──
+  const node = g.append('g').selectAll('g').data(nodes).join('g')
+    .attr('class',d=>'node '+(d.depth===0?'root':d.depth===1?'branch':'deck'))
+    .attr('transform',d=>`translate(${radial(d.x,d.y)})`);
+
+  node.append('circle')
+    .attr('r',d=>d.depth===0?9:d.depth===1?7:5)
+    .attr('fill',d=>{
+      if(d.depth===0) return '#9c3b2a';
+      const v=hubValueOf(d.data.data); return hubColorOf[v]||'#6b6457';
+    });
+
+  node.append('text')
+    .attr('dy','0.31em')
+    .attr('x',d=> d.x < Math.PI ? 11 : -11)
+    .attr('text-anchor',d=> d.x < Math.PI ? 'start':'end')
+    .text(d=> d.data.data.name.replace(/\s+[—–-]\s+.*/,'').slice(0,30));
+
+  node.on('click',(ev,d)=>{ ev.stopPropagation(); showDetail(d.data.data); })
+      .on('mouseenter',(ev,d)=>traceDescent(d,nodeById,node,g))
+      .on('mouseleave',()=>{ node.classed('dim',false).classed('hot',false);
+        g.selectAll('.tree-link,.derive-link').classed('dim',false); });
+
+  svg.on('click',()=>document.getElementById('detail').classList.remove('open'));
+
+  function radial(a,r){ return [Math.cos(a-Math.PI/2)*r, Math.sin(a-Math.PI/2)*r]; }
+}
+
+function traceDescent(d,nodeById,node,g){
+  // highlight the chosen node, its taxonomic ancestors, and its derives_from chain
+  // in BOTH directions — ancestors it descends from AND descendants that descend from it.
+  const keep=new Set();
+  let n=d; while(n){ keep.add(n.data.id); n=n.parent; }
+  // upstream: things this deck derives from
+  const up=[d.data.id];
+  while(up.length){ const id=up.pop();
+    const df=((itemMap[id]||{}).metadata||{}).derives_from||[];
+    df.forEach(s=>{ if(!keep.has(s)){ keep.add(s); up.push(s);} }); }
+  // downstream: things that derive from this deck (reverse derives_from edges)
+  const down=[d.data.id];
+  while(down.length){ const id=down.pop();
+    (G.items||[]).forEach(it=>{ if(((it.metadata||{}).derives_from||[]).includes(id) && !keep.has(it.id)){ keep.add(it.id); down.push(it.id);} }); }
+  node.classed('dim',x=>!keep.has(x.data.id)).classed('hot',x=>keep.has(x.data.id));
+  g.selectAll('.tree-link').classed('dim',true);
+  g.selectAll('.derive-link').classed('dim',l=>!(keep.has(l.s.data.id)&&keep.has(l.t.data.id)));
+}
+
+function mdToHtml(s){
+  if(!s) return '';
+  const e=x=>x.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const inl=t=>e(t)
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>')
+    .replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')
+    .replace(/`([^`]+)`/g,'<code>$1</code>')
+    .replace(/(^|[^*])\*([^*\n]+)\*/g,'$1<em>$2</em>');
+  let html='',inList=false,inQ=false,m;
+  const cL=()=>{if(inList){html+='</ul>';inList=false;}};
+  const cQ=()=>{if(inQ){html+='</blockquote>';inQ=false;}};
+  for(const raw of String(s).split(/\r?\n/)){
+    const line=raw.trim();
+    if(!line){cL();cQ();continue;}
+    if(m=line.match(/^(#{1,6})\s+(.*)$/)){cL();cQ();html+=`<div style="font-weight:700;font-size:1.03em;margin:.6em 0 .2em;">${inl(m[2])}</div>`;continue;}
+    if(m=line.match(/^>\s?(.*)$/)){cL();if(!inQ){html+='<blockquote style="border-left:3px solid currentColor;opacity:.8;margin:.5em 0;padding:.1em 0 .1em .7em;">';inQ=true;}html+=inl(m[1])+' ';continue;}
+    if(m=line.match(/^[-*+]\s+(.*)$/)){cQ();if(!inList){html+='<ul style="margin:.3em 0;padding-left:1.1em;">';inList=true;}html+=`<li>${inl(m[1])}</li>`;continue;}
+    cL();cQ();html+=`<p style="margin:.4em 0;">${cite(inl(line))}</p>`;
+  }
+  cL();cQ();return html;
+}
+
+// Deck-to-deck paging order = chronological, filtered by the same branch
+// visibility as the tree itself (hidden legend rows). Only leaf decks page —
+// clicking a branch/root node still opens detail but has no prev/next.
+function deckOrderList(){
+  return (G.items||[]).filter(i=>i.id.startsWith('book-') && !hidden.has(branchOf(i)))
+    .sort((a,b)=>(yearOf(a)||0)-(yearOf(b)||0));
+}
+function navigateDeck(direction){
+  const list=deckOrderList();
+  const el=document.getElementById('detail');
+  const curId=el.dataset.deckId;
+  const idx=list.findIndex(i=>i.id===curId);
+  if(idx===-1) return;
+  const newIdx=Math.max(0,Math.min(list.length-1,idx+direction));
+  if(newIdx!==idx) showDetail(list[newIdx]);
+}
+function showDetail(it){
+  const el=document.getElementById('detail');
+  el.dataset.deckId=it.id;
+  const b=branchOf(it);
+  const when=(it.metadata||{}).when||'';
+  const secs=it.sections||{};
+  const slug = slugOf(it.id);
+  let html = `<span class="modal-close" onclick="document.getElementById('detail').classList.remove('open')" title="Close" aria-label="Close">&times;</span>`;
+  if(it.image_url) html+=`<img src="${esc(it.image_url)}" alt="${esc(it.name)}" loading="lazy">`;
+  html+=`<h2>${esc(it.name)}</h2>`;
+  if(when) html+=`<div class="when">${esc(when)}</div>`;
+  if(b && it.id!==b) html+=`<div class="chips"><span class="chip" style="background:${RAW_COLORS[b]}33;color:${RAW_COLORS[b]}">${esc((itemMap[b]||{}).name||b)}</span></div>`;
+  const df=(it.metadata||{}).derives_from||[];
+  if(df.length) html+=`<div class="sec"><h4>Derives from</h4>${df.map(id=>esc((itemMap[id]||{}).name||id)).join(' · ')}</div>`;
+  for(const [k,v] of Object.entries(secs)){
+    if(!v) continue;
+    html+=`<div class="sec"><h4>${esc(k)}</h4>${mdToHtml(String(v))}</div>`;
+  }
+  if(slug) html+=`<a class="opencards" href="cards.html?src=${encodeURIComponent('../grammars/'+slug+'/grammar.json')}">Open this book in the library →</a>`;
+  else html+=`<div class="sec" style="color:#6b6457">This book is not in the library yet: the node holds its history only.</div>`;
+  if(it.id.startsWith('book-')){
+    const list=deckOrderList(); const idx=list.findIndex(i=>i.id===it.id), total=list.length;
+    if(total>1 && idx!==-1){
+      html+=`<div class="modal-nav-footer">
+        <button class="modal-nav-btn" onclick="navigateDeck(-1)" ${idx<=0?'disabled':''} title="Previous book (←)" aria-label="Previous book">&#8592;</button>
+        <span class="modal-counter">${idx+1} of ${total}</span>
+        <button class="modal-nav-btn" onclick="navigateDeck(1)" ${idx>=total-1?'disabled':''} title="Next book (→)" aria-label="Next book">&#8594;</button>
+      </div>`;
+    }
+  }
+  el.innerHTML=html; el.classList.add('open');
+}
+
+const BRANCH_LABELS={'branch-roots':'Before the book','branch-zhou':'The Zhou oracle','branch-canon':'Commentary and canon','branch-numbers':'Images and numbers','branch-meanings':'Meanings and principles','branch-dao':'Daoist readings','branch-west':'Into other languages','branch-modern':'Doubt and excavation'};
+function buildLegend(){
+  // Build legend from dynamic hubColorOf values
+  const lg=document.getElementById('legend');
+  lg.querySelectorAll('.row').forEach(r=>r.remove());
+  Object.entries(hubColorOf).forEach(([v,col])=>{
+    const row=document.createElement('div');
+    row.className='row'+(hidden.has(v)?' off':'');
+    const label=hubField==='branch'?(BRANCH_LABELS[v]||v):v;
+    row.innerHTML=`<span class="sw" style="background:${col}"></span><span>${esc(label)}</span>`;
+    row.onclick=()=>{ hidden.has(v)?hidden.delete(v):hidden.add(v); buildLegend();
+      document.getElementById('toggle-derive').dispatchEvent(new Event('change')); };
+    lg.appendChild(row);
+  });
+}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+</script>
+
+<script src="../site-footer.js?v=2"></script>
+<site-footer base="../"></site-footer>
+</body>
+</html>

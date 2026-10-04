@@ -72,3 +72,13 @@ folder left unmapped becomes public; a folder stamped `_generated: true` is skip
 - `check.py` passes again; it had 26 failures on main:
   - 25 came from the meta builder not prefixing copied groups' `composite_of`;
   - 1 came from `grammar_type: "book"`, now `custom`.
+
+### Oct 4 2026, later: the history answers most of the decisions
+
+See [`DECIDE-books-and-grammars.md`](DECIDE-books-and-grammars.md). The proposal is **one book per
+node**:
+- one grammar per historical book (Zhouyi, Ten Wings, Han canon, Legge, Human Design);
+- languages as sections inside it, so the two Chinese-only app grammars (`0f8f4088`, `a172fed6`)
+  fold into `zhouyi-core` and `ten-wings`;
+- `three-lenses-64` retires;
+- the new `tree-of-the-iching` is imported as the history grammar.

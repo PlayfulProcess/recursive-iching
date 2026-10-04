@@ -49,7 +49,8 @@
     ['source',   'Source Text', PFX + 'viewers/source-text.html'],
   ];
   const COLLECTION_VIEWS = [
-    ['timeline',  'Timeline',     PFX + 'viewers/timeline.html'],
+    ['timeline',  'Timeline of the books',  PFX + 'viewers/timeline.html'],
+    ['genealogy', 'Genealogy of the books', PFX + 'viewers/genealogy-tree.html'],
     ['all',       'All grammars', PFX + 'index.html#all-grammars'],
   ];
   // Site-specific instrument (playbook §3: additions beside the ported set, never
@@ -60,6 +61,8 @@
   ];
   // Courses — read via pages/course-viewer.html?course=…
   const COURSES = [
+    ['books-of-the-changes', 'The Books of the Changes — a history, one book per chapter', PFX + 'pages/course-viewer.html?course=books-of-the-changes'],
+    ['translations', 'How the Translators Changed the Text', PFX + 'pages/course-viewer.html?course=translations'],
     ['three-lenses', 'Three Lenses — a reading of the 64 hexagrams', PFX + 'pages/course-viewer.html?course=three-lenses'],
   ];
   const TOOLS = [
@@ -74,6 +77,7 @@
     if (f.startsWith('tree-viewer')) return 'tree';
     if (f.startsWith('source-text')) return 'source';
     if (f.startsWith('timeline')) return 'timeline';
+    if (f.startsWith('genealogy')) return 'genealogy';
     if (f.startsWith('caster')) return 'caster';
     if (f.startsWith('course-viewer') || f.startsWith('course')) return 'course';
     if (f === 'index.html' || f === '') return 'home';
