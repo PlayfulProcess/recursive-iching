@@ -7,7 +7,7 @@
   "name": "The Recursive I Ching — a book you cast",
   "description": "A book with a fixed beginning and a fixed end, and a middle that does not exist until you cast it. Cast how you are; walk the changing lines toward Hexagram 1, the Creative; learn one hexagram at a time; write your own transitions; save it as your own grammar; print it if you like. A casting, not a prediction.",
   "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
-  "grammar_type": "book",
+  "grammar_type": "custom",
   "tags": [
     "iching",
     "book",

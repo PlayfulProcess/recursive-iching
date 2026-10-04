@@ -59,6 +59,7 @@
       },
       "keywords": ["conflict", "perpetual-problems", "mediation", "gottman", "heaven-water"],
       "metadata": {
+        "number": 6,
         "hexagram_number": 6,
         "trigram_above": "☰ Qián (Heaven)",
         "trigram_below": "☵ Kǎn (Water)",
@@ -80,6 +81,7 @@
       },
       "keywords": ["abyss", "water", "attachment", "bowlby", "sincerity", "danger", "depth"],
       "metadata": {
+        "number": 29,
         "hexagram_number": 29,
         "trigram_above": "☵ Kǎn (Water)",
         "trigram_below": "☵ Kǎn (Water)",
@@ -101,6 +103,7 @@
       },
       "keywords": ["joy", "lake", "connection", "eft", "vulnerability", "sue-johnson", "resonance"],
       "metadata": {
+        "number": 58,
         "hexagram_number": 58,
         "trigram_above": "☱ Duì (Lake)",
         "trigram_below": "☱ Duì (Lake)",
@@ -122,6 +125,7 @@
       },
       "keywords": ["return", "amends", "solstice", "turning-point", "teshuvah", "aa", "recovery"],
       "metadata": {
+        "number": 24,
         "hexagram_number": 24,
         "trigram_above": "☷ Kūn (Earth)",
         "trigram_below": "☳ Zhèn (Thunder)",
@@ -143,6 +147,7 @@
       },
       "keywords": ["completion", "balance", "impermanence", "dbt", "linehan", "radical-acceptance", "fire-water"],
       "metadata": {
+        "number": 63,
         "hexagram_number": 63,
         "trigram_above": "☵ Kǎn (Water)",
         "trigram_below": "☲ Lí (Fire)",
@@ -164,6 +169,7 @@
       },
       "keywords": ["caldron", "transformation", "cooking", "culture", "vessel", "nourishment", "commons"],
       "metadata": {
+        "number": 50,
         "hexagram_number": 50,
         "trigram_above": "☲ Lí (Fire)",
         "trigram_below": "☴ Xùn (Wind/Wood)",
@@ -185,6 +191,7 @@
       },
       "keywords": ["oppression", "exhaustion", "extraction", "andreotti", "colonialism", "comfortable-bondage", "drained"],
       "metadata": {
+        "number": 47,
         "hexagram_number": 47,
         "trigram_above": "☱ Duì (Lake)",
         "trigram_below": "☵ Kǎn (Water)",
@@ -206,6 +213,7 @@
       },
       "keywords": ["revolution", "molting", "fire", "transformation", "controlled-burning", "aboriginal", "deep-time"],
       "metadata": {
+        "number": 49,
         "hexagram_number": 49,
         "trigram_above": "☱ Duì (Lake)",
         "trigram_below": "☲ Lí (Fire)",
@@ -227,6 +235,7 @@
       },
       "keywords": ["gradual-progress", "patience", "vocation", "wild-goose", "palmer", "listening", "mountain-tree"],
       "metadata": {
+        "number": 53,
         "hexagram_number": 53,
         "trigram_above": "☴ Xùn (Wind/Wood)",
         "trigram_below": "☶ Gèn (Mountain)",
@@ -248,6 +257,7 @@
       },
       "keywords": ["peace", "communion", "heaven-earth", "re-pairing", "spring", "threshold", "meeting"],
       "metadata": {
+        "number": 11,
         "hexagram_number": 11,
         "trigram_above": "☷ Kūn (Earth)",
         "trigram_below": "☰ Qián (Heaven)",
@@ -269,6 +279,7 @@
       },
       "keywords": ["contemplation", "seeing", "being-seen", "oracle", "tower", "mutual", "tarot", "symbolic"],
       "metadata": {
+        "number": 20,
         "hexagram_number": 20,
         "trigram_above": "☴ Xùn (Wind)",
         "trigram_below": "☷ Kūn (Earth)",
@@ -290,6 +301,7 @@
       },
       "keywords": ["before-completion", "incompleteness", "process", "beginning", "ending", "fox", "change", "recursive"],
       "metadata": {
+        "number": 64,
         "hexagram_number": 64,
         "trigram_above": "☲ Lí (Fire)",
         "trigram_below": "☵ Kǎn (Water)",

@@ -1,5 +1,44 @@
 # Changelog — The Recursive I Ching
 
+## October 4, 2026 — Ready to connect (mostly), and a prototype: reading as dialogue
+
+**Connecting to recursive.eco** (`docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md`, new "Findings" section):
+- Each folder was compared with the app's grammars over the MCP (read-only) and a mapping
+  proposed. Six decisions are left for PlayfulProcess; `ids.json` stays empty until she makes them.
+- `ten-wings` does **not** match the private `a172fed6`: that one is a Chinese-only companion of
+  `0f8f4088`, and mapping them would duplicate every item.
+- The stale `recursive-starter` repo name is gone from the builder, the collection, the header,
+  the footer, the home page, the tree viewer and the README. Header cache is now `?v=47`, footer
+  `?v=2`.
+- Every hexagram item carries `metadata.number`. 76 were missing it: 12 in `repair-iching`,
+  64 in `three-lenses-64`.
+- `viewers/cards.html` is now recursive-tarot's current viewer (Sep 26), with only paths, accent
+  (`#9c3b2a`), branding and default grammar changed. `viewers/item-shape.js` (ported unchanged
+  from recursive-eco c164d95) decides I Ching / tarot / plain from the data.
+  `viewers/reference-resolve.js` is copied from tarot.
+  - Checked headless at 1280 and 375 px on all nine grammars: they render with no errors, and
+    the hexagram detail opens.
+  - `three-lenses-64` now shows the plain theme, because its items carry no binary or trigrams.
+- `check.py` passes again (it had 26 failures on main):
+  - `build_meta_iching.py` now prefixes a copied group's `composite_of`;
+  - `build_book_grammar.py` writes `grammar_type: "custom"` (`book` isn't a platform type).
+
+**Reading as dialogue (prototype):** `docs/DESIGN-reading-as-dialogue.md` and
+`viewers/dialogue.html`. Not in the menu yet.
+- A real cast (coins in the page, or your own six numbers) is followed by passages offered in
+  rings: the whole figure, the two trigrams, the moving lines, where it may be turning.
+- You mark "This speaks to me" or "Not this", and the choices are the reading.
+- It is kept in the browser, or downloaded as a selection of pointers (grammar, item, section).
+- `caster-engine.js` gains `castLineNumber` / `castLines` (6–9); `castLineValue` and its odds are
+  unchanged.
+- Checked:
+  - 160,000-draw counts match the coin (1/8, 3/8, 3/8, 1/8) and yarrow (1/16, 5/16, 7/16, 3/16)
+    odds;
+  - `determinism-check.js` passes;
+  - a typed cast 8 7 9 8 6 7 gives 18 → 59 with lines 3 and 5 moving, which is correct;
+  - headless at 1280 and 375 px.
+- `docs/FOR-THE-PLATFORM.md` (new) lists what recursive.eco would need to make this a feature.
+
 ## September 23, 2026 — The 64 Hexagrams now carry Legge, not Wilhelm/Baynes
 
 A third-party audit compared `i-ching-summarized` against the known translations. Its Judgment,

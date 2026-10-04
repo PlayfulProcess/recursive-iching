@@ -1,7 +1,7 @@
 {
-  "repo": "PlayfulProcess/recursive-starter",
+  "repo": "PlayfulProcess/recursive-iching",
   "branch": "main",
-  "github_url": "https://github.com/PlayfulProcess/recursive-starter",
+  "github_url": "https://github.com/PlayfulProcess/recursive-iching",
   "collection": "iching",
   "name": "The Recursive I Ching",
   "version": "1.0.0",
@@ -126,7 +126,7 @@
     {
       "slug": "the-recursive-iching-book",
       "name": "The Recursive I Ching — a book you cast",
-      "type": "book",
+      "type": "custom",
       "branch": "synthesis",
       "is_meta": false,
       "default_preview": null,

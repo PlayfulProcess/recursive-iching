@@ -24,7 +24,7 @@ your own, please write to pp@playfulprocess.com.
 ## What's here
 
 ```
-recursive-starter/
+recursive-iching/
 ├── index.html                     the gallery homepage — every grammar, every view
 ├── theme.css                      the single source of colour (light only, cinnabar accent)
 ├── site-header.js / site-footer.js / view-switcher.js / icons.js / assistant.js

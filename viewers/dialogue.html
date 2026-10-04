@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading as Dialogue (prototype) · The Recursive I Ching</title>
+<link rel="stylesheet" href="../theme.css?v=3">
+<style>
+  /* Layout only: every colour comes from theme.css (the one source). Design: docs/DESIGN-reading-as-dialogue.md */
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);color-scheme:light;
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55}
+  .wrap{max-width:680px;margin:0 auto;padding:22px 16px 90px}
+  .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
+  h1{font-family:"Fraunces",Georgia,serif;font-size:26px;margin:6px 0 8px}
+  h2{font-family:"Fraunces",Georgia,serif;font-size:19px;margin:28px 0 8px}
+  h3{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin:22px 0 8px}
+  .lede{color:var(--muted);font-size:14.5px}
+  .honesty{margin:16px 0;padding:14px 16px;border:1px solid var(--line);border-radius:12px;
+    background:var(--chip);font-size:13px;color:var(--ink-soft)}
+  .honesty b{color:var(--ink)}
+  textarea,input{font:inherit;width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;
+    background:var(--panel);color:var(--ink)}
+  textarea{min-height:64px;resize:vertical}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+  button{font:inherit;font-size:14px;font-weight:600;padding:9px 16px;border-radius:999px;cursor:pointer;
+    border:1px solid var(--line);background:var(--panel);color:var(--ink-soft)}
+  button:hover{border-color:var(--accent);color:var(--ink)}
+  button.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .count{font-size:12px;color:var(--muted)}
+  .own{display:none;margin-top:8px}
+  .own.on{display:block}
+  .own .six{display:grid;grid-template-columns:repeat(6,1fr);gap:6px}
+  .own .six input{text-align:center;padding:8px 4px}
+  .hint{font-size:12px;color:var(--muted)}
+  .cast{display:none;margin-top:18px;padding:16px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+  .cast.on{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+  .lines{display:flex;flex-direction:column-reverse;gap:6px;width:84px;flex:none}
+  .ln{height:9px;display:flex;gap:10px;position:relative}
+  .ln span{flex:1;background:var(--ink);border-radius:2px}
+  .ln.moving span{background:var(--accent)}
+  .ln b{position:absolute;right:-22px;top:-5px;font-size:11px;color:var(--accent);font-weight:600}
+  .castname{font-family:"Fraunces",Georgia,serif;font-size:20px}
+  .castsub{font-size:13px;color:var(--muted)}
+  .offer{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0;background:var(--panel)}
+  .offer.chosen{border-color:var(--accent);box-shadow:inset 3px 0 0 var(--accent)}
+  .offer.aside{opacity:.55}
+  .src{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+  .offer p{margin:6px 0 10px;font-size:15px}
+  .offer .row{margin:4px 0 0}
+  .offer button{font-size:13px;padding:6px 12px}
+  .offer button.on{background:var(--chip);border-color:var(--accent);color:var(--accent)}
+  .offer .note{display:none;margin-top:8px}
+  .offer.chosen .note{display:block}
+  .ai{font-size:11px;color:var(--muted);font-style:italic}
+  details.fold{margin:8px 0}
+  details.fold summary{cursor:pointer;font-size:13px;color:var(--ink-soft)}
+  .reading{margin-top:10px;padding:14px 16px;border:1px dashed var(--line);border-radius:12px}
+  .reading ol{margin:6px 0 0;padding-left:20px}
+  .reading li{margin:6px 0}
+  .reading .empty{color:var(--muted);font-size:14px}
+  .kept{font-size:13px}
+  .kept li{margin:4px 0}
+  #steps{display:none}
+  #steps.on{display:block}
+</style>
+</head>
+<body>
+<script src="../site-header.js?v=47"></script>
+<site-header active="caster"></site-header>
+
+<main class="wrap" id="main">
+  <div class="kicker">A prototype · Oct 2026</div>
+  <h1>Reading as dialogue</h1>
+  <p class="lede">The coins fall. Then a few passages tied to what fell are offered, from the text and
+    its layers. You say which ones speak to you. What you choose is the reading.</p>
+
+  <div class="honesty">
+    <b>Read to know yourself, not to be told your fate.</b> Nothing here predicts. The page offers
+    passages from the published text and names where each one comes from; it writes no meaning of its
+    own and never tells you what to do. The cast is three coins in your browser, or your own throw.
+    Nothing leaves this page unless you download it.
+  </div>
+
+  <h2>1 · Your question <span class="count">(optional)</span></h2>
+  <textarea id="question" placeholder="What are you sitting with?"></textarea>
+
+  <h2>2 · The cast</h2>
+  <div class="row">
+    <button class="primary" id="castBtn" type="button">Cast the coins</button>
+    <button id="ownBtn" type="button">I cast my own</button>
+    <span class="count" id="castCount"></span>
+  </div>
+  <div class="own" id="own">
+    <div class="hint">Six numbers from your own coins, bottom line first: 6 old yin · 7 young yang ·
+      8 young yin · 9 old yang.</div>
+    <div class="six" id="ownSix"></div>
+    <div class="row"><button id="ownGo" type="button">Use my cast</button><span class="hint" id="ownErr"></span></div>
+  </div>
+  <div class="cast" id="cast" aria-live="polite"></div>
+
+  <div id="steps">
+    <h2>3 · What is offered</h2>
+    <p class="lede">Mark what speaks to you, and what doesn't. Leaving a passage unmarked is an answer too.</p>
+    <div id="offers"></div>
+
+    <h2>4 · Your reading</h2>
+    <div class="reading" id="reading"></div>
+    <h3>In your own words</h3>
+    <textarea id="ownWords" placeholder="What do the passages you chose say together, to you?"></textarea>
+    <div class="row">
+      <button class="primary" id="keepBtn" type="button">Keep this reading</button>
+      <button id="dlBtn" type="button">Download as a selection (.json)</button>
+      <span class="count" id="keptMsg"></span>
+    </div>
+    <h3>Kept in this browser</h3>
+    <ul class="kept" id="kept"></ul>
+  </div>
+</main>
+
+<script src="../site-footer.js?v=2"></script>
+<site-footer base="../"></site-footer>
+
+<script src="caster-engine.js"></script>
+<script>
+(function () {
+  'use strict';
+  const PFX = '../';
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const KEEP = 'ichingDialogue:v1', COUNT = 'ichingDialogueCasts';
+  const TRI = { '111': 'heaven', '000': 'earth', '100': 'thunder', '010': 'water', '001': 'mountain', '011': 'wind', '101': 'fire', '110': 'lake' }; // bottom-to-top bits
+
+  let data = null;            // { bin, summ, lens, book }
+  let state = null;           // the current reading
+
+  function store(kind) { try { return kind === 's' ? window.sessionStorage : window.localStorage; } catch (_) { return null; } }
+  function getKept() { try { return JSON.parse((store('l') || {}).getItem && store('l').getItem(KEEP) || '[]'); } catch (_) { return []; } }
+
+  async function load() {
+    if (data) return data;
+    const get = p => fetch(PFX + p).then(r => r.ok ? r.json() : null).catch(() => null);
+    const [bin, summ, lens, book] = await Promise.all([
+      get('scripts/hexagram-binary.json'), get('grammars/i-ching-summarized/grammar.json'),
+      get('grammars/three-lenses-64/grammar.json'), get('grammars/the-recursive-iching-book/grammar.json')]);
+    const byNum = g => { const m = {}; (g && g.items || []).forEach(it => { const n = (it.metadata || {}).number; if (n) m[n] = it; }); return m; };
+    const numByBin = {};
+    Object.entries(bin.hexagrams).forEach(([n, h]) => { numByBin[h.binary] = +n; });
+    const tri = {};
+    (lens && lens.items || []).forEach(it => { if (/^trigram-/.test(it.id)) tri[it.id.slice(8)] = it; });
+    data = { bin: bin.hexagrams, numByBin, summ: byNum(summ), book: byNum(book), tri };
+    return data;
+  }
+
+  function bump() {
+    const s = store('s'); let n = 1;
+    try { n = (+s.getItem(COUNT) || 0) + 1; s.setItem(COUNT, n); } catch (_) {}
+    $('castCount').textContent = n > 1 ? `${n} casts this session` : '';
+  }
+
+  async function run(lines, method) {
+    const d = await load();
+    const primaryBin = lines.map(v => v % 2 ? '1' : '0').join('');
+    const moving = lines.map((v, i) => (v === 6 || v === 9) ? i + 1 : 0).filter(Boolean);
+    const relatingBin = lines.map(v => v === 6 ? '1' : v === 9 ? '0' : (v % 2 ? '1' : '0')).join('');
+    const primary = d.numByBin[primaryBin], relating = moving.length ? d.numByBin[relatingBin] : null;
+    state = { method, lines, primary, relating, moving, offers: [], marks: {}, notes: {}, order: [] };
+    bump();
+    renderCast(d);
+    buildOffers(d, primaryBin);
+    renderOffers();
+    renderReading();
+    $('steps').classList.add('on');
+  }
+
+  function renderCast(d) {
+    const h = d.bin[state.primary], r = state.relating ? d.bin[state.relating] : null;
+    const lines = state.lines.map((v, i) => `<div class="ln${(v === 6 || v === 9) ? ' moving' : ''}" title="Line ${i + 1}: ${v}">` +
+      (v % 2 ? '<span></span>' : '<span></span><span></span>') + ((v === 6 || v === 9) ? `<b>${v}</b>` : '') + '</div>').join('');
+    $('cast').innerHTML = `<div class="lines" aria-hidden="true">${lines}</div>
+      <div><div class="castname">${esc(h.symbol)} ${state.primary} · ${esc(h.name)}</div>
+      <div class="castsub">${esc(h.chinese_name)} (${esc(h.pinyin)}) · lines ${state.lines.join(' ')} (bottom first)</div>
+      <div class="castsub">${state.moving.length ? `Moving: line ${state.moving.join(', ')} · turning toward ${esc(r.symbol)} ${state.relating} · ${esc(r.name)}`
+        : 'No line moves: tradition reads the Judgment alone.'}</div></div>`;
+    $('cast').classList.add('on');
+  }
+
+  function offer(group, grammar, item, section, text, extra) {
+    if (!item || !text) return;
+    state.offers.push(Object.assign({ key: `${grammar}|${item.id}|${section}`, group, grammar, item_id: item.id, section, text }, extra || {}));
+  }
+
+  function buildOffers(d, primaryBin) {
+    const it = d.summ[state.primary], s = (it && it.sections) || {};
+    offer('The whole figure', 'i-ching-summarized', it, 'Judgment', s.Judgment, { label: 'Judgment · Legge (1882), public domain' });
+    offer('The whole figure', 'i-ching-summarized', it, 'Image', s.Image, { label: 'Image · Legge (1882), public domain' });
+    offer('The whole figure', 'i-ching-summarized', it, 'Interpretation', s.Interpretation, { label: 'A modern gloss', ai: true });
+    const b = d.book[state.primary];
+    if (b && (b.metadata || {}).story_written && (b.sections || {}).Story) offer('The whole figure', 'the-recursive-iching-book', b, 'Story', b.sections.Story, { label: 'Story · The Recursive I Ching' });
+    const lo = d.tri[TRI[primaryBin.slice(0, 3)]], up = d.tri[TRI[primaryBin.slice(3)]];
+    if (lo && up) {
+      const kw = t => (t.keywords || []).join(', ');
+      offer('The two trigrams meeting', 'three-lenses-64', lo, 'below', `${lo.name} below: ${kw(lo)}.`, { label: 'Lower trigram · keywords' });
+      offer('The two trigrams meeting', 'three-lenses-64', up, 'above', `${up.name} above: ${kw(up)}.`, { label: 'Upper trigram · keywords' });
+    }
+    const line = (k, moving) => offer(moving ? 'The moving lines' : 'The still lines', 'i-ching-summarized', it, `Line ${k}`, s[`Line ${k}`],
+      { label: `Line ${k} (${state.lines[k - 1]})${moving ? ', moving' : ''} · Legge (1882)` });
+    state.moving.forEach(k => line(k, true));
+    if (state.relating) {
+      const r = d.summ[state.relating];
+      offer('Where it may be turning', 'i-ching-summarized', r, 'Judgment', r && r.sections.Judgment,
+        { label: `Judgment of ${state.relating} · ${r ? r.name : ''} · Legge (1882)` });
+    }
+    // The lines that did not move come last, folded away.
+    for (let k = 1; k <= 6; k++) if (!state.moving.includes(k)) line(k, false);
+  }
+
+  function offerHTML(o) {
+    const m = state.marks[o.key];
+    return `<div class="offer${m === 'yes' ? ' chosen' : m === 'no' ? ' aside' : ''}" data-key="${esc(o.key)}">
+      <div class="src">${esc(o.label)}</div>
+      ${o.ai ? '<div class="ai">Written with AI, from the Gutenberg text; not verified.</div>' : ''}
+      <p>${esc(o.text)}</p>
+      <div class="row">
+        <button type="button" data-mark="yes" class="${m === 'yes' ? 'on' : ''}" aria-pressed="${m === 'yes'}">This speaks to me</button>
+        <button type="button" data-mark="no" class="${m === 'no' ? 'on' : ''}" aria-pressed="${m === 'no'}">Not this</button>
+      </div>
+      <div class="note"><textarea data-note placeholder="What it touches (optional)">${esc(state.notes[o.key] || '')}</textarea></div>
+    </div>`;
+  }
+
+  function renderOffers() {
+    const groups = [];
+    state.offers.forEach(o => { let g = groups.find(x => x.name === o.group); if (!g) groups.push(g = { name: o.group, list: [] }); g.list.push(o); });
+    $('offers').innerHTML = groups.map(g => {
+      const body = g.list.map(offerHTML).join('');
+      if (g.name === 'The still lines') {
+        const why = state.moving.length ? 'The lines that did not move' : 'No line moved. The six lines, if you want to look';
+        return `<details class="fold"><summary>${why}</summary>${body}</details>`;
+      }
+      return `<h3>${esc(g.name)}</h3>${body}`;
+    }).join('');
+  }
+
+  function renderReading() {
+    const chosen = state.order.map(k => state.offers.find(o => o.key === k)).filter(Boolean);
+    const aside = state.offers.filter(o => state.marks[o.key] === 'no');
+    $('reading').innerHTML = chosen.length
+      ? `<ol>${chosen.map(o => `<li><span class="src">${esc(o.label)}</span><br>${esc(o.text)}` +
+          (state.notes[o.key] ? `<br><i>${esc(state.notes[o.key])}</i>` : '') + '</li>').join('')}</ol>` +
+        (aside.length ? `<p class="count">${aside.length} set aside.</p>` : '')
+      : '<p class="empty">Nothing chosen yet. The reading is what you choose.</p>';
+  }
+
+  $('offers').addEventListener('click', e => {
+    const btn = e.target.closest('button[data-mark]'); if (!btn || !state) return;
+    const key = btn.closest('.offer').dataset.key, mark = btn.dataset.mark;
+    state.marks[key] = state.marks[key] === mark ? undefined : mark;
+    state.order = state.order.filter(k => k !== key);
+    if (state.marks[key] === 'yes') state.order.push(key);
+    const card = btn.closest('.offer');
+    const o = state.offers.find(x => x.key === key);
+    card.outerHTML = offerHTML(o);
+    renderReading();
+  });
+  $('offers').addEventListener('input', e => {
+    if (!e.target.matches('textarea[data-note]') || !state) return;
+    state.notes[e.target.closest('.offer').dataset.key] = e.target.value;
+    renderReading();
+  });
+
+  function record() {
+    const pick = o => ({ grammar: o.grammar, item_id: o.item_id, section: o.section });
+    return {
+      kind: 'reading-selection',
+      made_at: new Date().toISOString(),
+      question: $('question').value.trim() || null,
+      cast: { method: state.method, lines: state.lines, primary: state.primary, relating: state.relating, moving: state.moving },
+      chosen: state.order.map(k => state.offers.find(o => o.key === k)).filter(Boolean)
+        .map(o => Object.assign(pick(o), state.notes[o.key] ? { note: state.notes[o.key] } : {})),
+      set_aside: state.offers.filter(o => state.marks[o.key] === 'no').map(pick),
+      offered: state.offers.length,
+      in_her_words: $('ownWords').value.trim() || null,
+    };
+  }
+
+  function renderKept() {
+    const list = getKept();
+    $('kept').innerHTML = list.length ? list.slice().reverse().map(r =>
+      `<li>${esc(r.made_at.slice(0, 10))} · ${r.cast.primary}${r.cast.relating ? ' → ' + r.cast.relating : ''} · ${r.chosen.length} chosen` +
+      (r.question ? ` · “${esc(r.question.slice(0, 60))}”` : '') + '</li>').join('') : '<li class="count">None yet.</li>';
+  }
+
+  $('keepBtn').addEventListener('click', () => {
+    if (!state) return;
+    const list = getKept(); list.push(record());
+    try { store('l').setItem(KEEP, JSON.stringify(list)); $('keptMsg').textContent = 'Kept in this browser.'; }
+    catch (_) { $('keptMsg').textContent = 'This browser would not keep it; use Download.'; }
+    renderKept();
+  });
+  $('dlBtn').addEventListener('click', () => {
+    if (!state) return;
+    const blob = new Blob([JSON.stringify(record(), null, 2) + '\n'], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = `reading-${state.primary}${state.relating ? '-' + state.relating : ''}.selection.json`;
+    a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
+
+  $('castBtn').addEventListener('click', () => run(CasterEngine.castLines('coins'), 'coins'));
+  $('ownBtn').addEventListener('click', () => $('own').classList.toggle('on'));
+  $('ownSix').innerHTML = [1, 2, 3, 4, 5, 6].map(k => `<input inputmode="numeric" maxlength="1" aria-label="Line ${k}" placeholder="${k}">`).join('');
+  $('ownGo').addEventListener('click', () => {
+    const vals = [...$('ownSix').querySelectorAll('input')].map(i => parseInt(i.value, 10));
+    if (vals.some(v => ![6, 7, 8, 9].includes(v))) { $('ownErr').textContent = 'Each line is 6, 7, 8 or 9.'; return; }
+    $('ownErr').textContent = '';
+    run(vals, 'own');
+  });
+  renderKept();
+})();
+</script>
+</body>
+</html>

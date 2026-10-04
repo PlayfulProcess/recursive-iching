@@ -64,6 +64,10 @@ for slug in SOURCES:
         copy.setdefault("metadata", {})
         copy["metadata"] = dict(copy["metadata"] or {})
         copy["metadata"]["source_grammar"] = slug
+        # A copied group points at its siblings by their own ids; give those the same prefix
+        # (otherwise repair-iching's two groups pointed at ids that don't exist in the meta).
+        if copy.get("composite_of"):
+            copy["composite_of"] = [f"{slug}::{c}" for c in copy["composite_of"]]
         items.append(copy)
         if n and 1 <= n <= 64 and not str(it.get("id", "")).startswith(("sign-", "chakra-", "trigram-", "l3-", "intro", "end")):
             by_hex[n][slug] = copy

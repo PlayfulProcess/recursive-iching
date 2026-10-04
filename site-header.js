@@ -63,7 +63,7 @@
     ['three-lenses', 'Three Lenses — a reading of the 64 hexagrams', PFX + 'pages/course-viewer.html?course=three-lenses'],
   ];
   const TOOLS = [
-    ['github', 'GitHub ↗', 'https://github.com/PlayfulProcess/recursive-starter', 't-github', true],
+    ['github', 'GitHub ↗', 'https://github.com/PlayfulProcess/recursive-iching', 't-github', true],
   ];
 
   function autoActive() {

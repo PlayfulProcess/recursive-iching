@@ -26,7 +26,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 GRAMMARS_DIR = os.path.join(ROOT, "grammars")
 OUT = os.path.join(GRAMMARS_DIR, "_collection.json")
 
-REPO = "PlayfulProcess/recursive-starter"
+REPO = "PlayfulProcess/recursive-iching"
 BRANCH = "main"
 
 BRANCHES = [
