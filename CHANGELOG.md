@@ -1,5 +1,33 @@
 # Changelog — The Recursive I Ching
 
+## October 5, 2026 — The Tree of the Changes: the ◇ claims checked, low-confidence books first
+
+The handover's first Desktop job. Sources a Desktop session could reach: the scan of the 1834 Latin
+edition, a Stanford catalogue record, and English, Chinese and German Wikipedia, each cited by revision.
+Smith (2008) and Shaughnessy (2014) were not opened; what only they could settle stays ◇.
+
+- **Counts (claims in the sections):** ◇ 57 → 45; ✔ 48 → 78; ◆ 3 → 9; ○ 0 → 3. Guicang, Jing Fang and
+  the excavated-texts translations are no longer `low`.
+- **Corrections:**
+  - the Tsinghua Shifa was published in January 2014 (volume 4), not 2013;
+  - Wilhelm finished his translation in Beijing, and translated from the Kangxi-era *Zhouyi zhezhong*;
+  - the Jing Fang node had said Wikipedia "gives no dates"; its lead gives 78–37 BC.
+- **Now contested (◆), with both sources:**
+  - Jing Fang's dates (77 or 78 BCE);
+  - whether the eight palaces are his (one study credits another school);
+  - Wilhelm's year (1924 in German Wikipedia and the Diederichs title, 1923 in English Wikipedia);
+  - the end year of the *Gushi bian* (1941 or 1944);
+  - Shaughnessy's Mawangdui translation (1996 or 1997).
+- **Régis:** the 1834 preface names the other hands: Joseph de Mailla (word for word, against the
+  Manchu) and Pierre du Tartre (the historical explanation).
+- **Still ◇:**
+  - the years of Hu Wei's book (1706) and of the *Zhezhong* (1715), and whether Legge used it;
+  - the Shifa's numbers;
+  - McClatchie's keys and Legge's response;
+  - whether Dick plotted by casting;
+  - how Rutt and Redmond translate *zhen*.
+
+
 ## October 4, 2026 (later) — The Tree of the Changes: a history in books, a timeline, a genealogy, two courses
 
 PlayfulProcess asked for the I Ching's history, the way tarot has a genealogy and a timeline,

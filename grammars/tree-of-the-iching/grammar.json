@@ -46,7 +46,7 @@
       "title": "I Ching",
       "year": 2026,
       "url": "https://en.wikipedia.org/wiki/I_Ching?oldid=1376299998",
-      "note": "read Oct 4 2026 (lead and history sections)"
+      "note": "read Oct 4 2026 (lead and history); translations and references read Oct 5 2026"
     },
     {
       "key": "wp_iching_de",
@@ -54,7 +54,7 @@
       "title": "I Ging",
       "year": 2026,
       "url": "https://de.wikipedia.org/wiki/I_Ging?oldid=269265795",
-      "note": "read Oct 4 2026 (structure, transmission)"
+      "note": "read Oct 4 2026 (structure, transmission); the history of translations read Oct 5 2026"
     },
     {
       "key": "wp_mawangdui",
@@ -78,7 +78,7 @@
       "title": "Tsinghua Bamboo Slips",
       "year": 2026,
       "url": "https://en.wikipedia.org/wiki/Tsinghua_Bamboo_Slips?oldid=1377213501",
-      "note": "lead only"
+      "note": "the whole article, read Oct 5 2026"
     },
     {
       "key": "wp_jingfang",
@@ -86,7 +86,7 @@
       "title": "Jing Fang",
       "year": 2026,
       "url": "https://en.wikipedia.org/wiki/Jing_Fang?oldid=1366108447",
-      "note": "lead only; gives no dates"
+      "note": "lead read Oct 4; on Oct 5 the lead gives 78–37 BC"
     },
     {
       "key": "wp_taixuan",
@@ -126,7 +126,7 @@
       "title": "Liu Yiming",
       "year": 2026,
       "url": "https://en.wikipedia.org/wiki/Liu_Yiming?oldid=1378171998",
-      "note": "lead only"
+      "note": "the whole article, read Oct 5 2026"
     },
     {
       "key": "wp_bouvet",
@@ -182,7 +182,7 @@
       "title": "Edward L. Shaughnessy",
       "year": 2026,
       "url": "https://en.wikipedia.org/wiki/Edward_L._Shaughnessy?oldid=1378376834",
-      "note": "lead only"
+      "note": "the whole article with its bibliography, read Oct 5 2026"
     },
     {
       "key": "legge1882",
@@ -211,14 +211,14 @@
       "author": "Edward L. Shaughnessy (tr.)",
       "title": "I Ching: The Classic of Changes (the Mawangdui text)",
       "year": 1996,
-      "note": "not opened; cited from memory"
+      "note": "not opened; title confirmed in wp_shaughnessy (1997) and wp_iching (1996)"
     },
     {
       "key": "shaughnessy2014",
       "author": "Edward L. Shaughnessy",
       "title": "Unearthing the Changes",
       "year": 2014,
-      "note": "not opened; cited from memory"
+      "note": "not opened; title confirmed in wp_shaughnessy"
     },
     {
       "key": "rutt1996",
@@ -239,7 +239,7 @@
       "author": "Thomas Cleary (tr.)",
       "title": "The Taoist I Ching (Liu Yiming's commentary)",
       "year": 1986,
-      "note": "not opened; cited from memory"
+      "note": "not opened; title confirmed in wp_liuyiming"
     },
     {
       "key": "smith2008",
@@ -253,7 +253,127 @@
       "author": "Geoffrey Redmond (tr.)",
       "title": "The I Ching (Book of Changes): A Critical Translation of the Ancient Text",
       "year": 2017,
-      "note": "not opened; cited from memory"
+      "note": "not opened; title confirmed in wp_iching"
+    },
+    {
+      "key": "regis1834",
+      "author": "Jean-Baptiste Régis and other Jesuits (tr.); Julius Mohl (ed.)",
+      "title": "Y-King, antiquissimus Sinarum liber, vol. 1",
+      "year": 1834,
+      "url": "https://archive.org/details/ykingantiquissi00mohlgoog",
+      "note": "public domain scan; title page and preface read Oct 5 2026 (OCR)"
+    },
+    {
+      "key": "stanford_mcclatchie",
+      "author": "Stanford Libraries (SearchWorks)",
+      "title": "Catalogue record: McClatchie, A translation of the Confucian Yih king (1876; reprint 1973)",
+      "year": 2026,
+      "url": "https://searchworks.stanford.edu/view/2384972",
+      "note": "read Oct 5 2026"
+    },
+    {
+      "key": "mcclatchie_chapter",
+      "author": "Springer (book chapter)",
+      "title": "Thomas McClatchie's Mythological Interpretation of the Yijing",
+      "year": 2021,
+      "url": "https://link.springer.com/chapter/10.1007/978-981-33-6228-4_7",
+      "note": "title only; the chapter was not opened (paywall)"
+    },
+    {
+      "key": "wp_cms_china",
+      "author": "Wikipedia",
+      "title": "Church Missionary Society in China",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Church_Missionary_Society_in_China?oldid=1361430874",
+      "note": "read Oct 5 2026 (the Shanghai mission)"
+    },
+    {
+      "key": "zh_jingfang",
+      "author": "Wikipedia (zh)",
+      "title": "京房 (魏郡太守)",
+      "year": 2026,
+      "url": "https://zh.wikipedia.org/wiki/%E4%BA%AC%E6%88%BF_(%E9%AD%8F%E9%83%A1%E5%A4%AA%E5%AE%88)?oldid=88868057",
+      "note": "the whole article, read Oct 5 2026"
+    },
+    {
+      "key": "wp_shuanggudui",
+      "author": "Wikipedia",
+      "title": "Shuanggudui",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Shuanggudui?oldid=1364980323",
+      "note": "the whole article, read Oct 5 2026"
+    },
+    {
+      "key": "wp_gujiegang",
+      "author": "Wikipedia",
+      "title": "Gu Jiegang",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Gu_Jiegang?oldid=1378086856",
+      "note": "read Oct 5 2026 (the Gushi bian)"
+    },
+    {
+      "key": "zh_gushibian",
+      "author": "Wikipedia (zh)",
+      "title": "古史辨派",
+      "year": 2026,
+      "url": "https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%8F%B2%E8%BE%A8%E6%B4%BE?oldid=94392333",
+      "note": "read Oct 5 2026 (the seven volumes and their contributors)"
+    },
+    {
+      "key": "wp_music_of_changes",
+      "author": "Wikipedia",
+      "title": "Music of Changes",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Music_of_Changes?oldid=1344153566",
+      "note": "read Oct 5 2026"
+    },
+    {
+      "key": "wp_high_castle",
+      "author": "Wikipedia",
+      "title": "The Man in the High Castle",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/The_Man_in_the_High_Castle?oldid=1377105022",
+      "note": "read Oct 5 2026; says the I Ching inspired the book and features in it, not that Dick plotted by casting it"
+    },
+    {
+      "key": "zh_wangjiatai",
+      "author": "Wikipedia (zh)",
+      "title": "王家台秦墓竹简",
+      "year": 2026,
+      "url": "https://zh.wikipedia.org/wiki/%E7%8E%8B%E5%AE%B6%E5%8F%B0%E7%A7%A6%E5%A2%93%E7%AB%B9%E7%AE%80?oldid=88995746",
+      "note": "the whole article, read Oct 5 2026; also zh 归藏 oldid=90484056"
+    },
+    {
+      "key": "zh_huwei",
+      "author": "Wikipedia (zh)",
+      "title": "胡渭",
+      "year": 2026,
+      "url": "https://zh.wikipedia.org/wiki/%E8%83%A1%E6%B8%AD?oldid=90234282",
+      "note": "the whole article, read Oct 5 2026; gives no year for the Yitu mingbian"
+    },
+    {
+      "key": "zh_tsinghua",
+      "author": "Wikipedia (zh)",
+      "title": "清華簡",
+      "year": 2026,
+      "url": "https://zh.wikipedia.org/wiki/%E6%B8%85%E8%8F%AF%E7%B0%A1?oldid=94372563",
+      "note": "read Oct 5 2026 (the volumes and their dates)"
+    },
+    {
+      "key": "wp_li_guangdi",
+      "author": "Wikipedia",
+      "title": "Li Guangdi",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Li_Guangdi?oldid=1378184158",
+      "note": "the whole article, read Oct 5 2026; gives no year for the Zhouyi zhezhong"
+    },
+    {
+      "key": "de_wilhelm",
+      "author": "Wikipedia (de)",
+      "title": "Richard Wilhelm",
+      "year": 2026,
+      "url": "https://de.wikipedia.org/wiki/Richard_Wilhelm?oldid=271010131",
+      "note": "read Oct 5 2026 (Peking years; the I Ging and its base text)"
     }
   ],
   "items": [
@@ -360,7 +480,7 @@
       "sections": {
         "What it is": "A divination manual among the Tsinghua bamboo slips, a large looted Warring States collection donated to Tsinghua University in 2008 [@wp_tsinghua]. It writes casts as numbers, not lines ◇.",
         "What it changed in the text": "It shows a living practice of reading number-figures alongside, and apart from, the Zhouyi's text ◇.",
-        "The record": "The collection, its 2008 acquisition and its looted origin ✔ [@wp_tsinghua]. The Shifa's content, its 2013 publication and the c. 305 BCE date ◇ [@shaughnessy2014]."
+        "The record": "The collection, its 2008 acquisition and its looted origin ✔ [@wp_tsinghua]. The Shifa was published in January 2014, in volume 4 of the Tsinghua series, not in 2013 ✔ [@zh_tsinghua]. The c. 305 BCE date is the collection's single radiocarbon date (305 ± 30 BCE) ✔ [@wp_tsinghua]. The Shifa's content ◇ [@shaughnessy2014]."
       },
       "sort_order": 3
     },
@@ -438,12 +558,12 @@
           "book-numbers-on-bone"
         ],
         "kind": "manuscript",
-        "confidence": "low"
+        "confidence": "medium"
       },
       "sections": {
         "What it is": "One of the two other 'Changes' the Rites of Zhou names beside the Zhouyi (the other is the Lianshan). Long lost; a copy on bamboo turned up in 1993. It pairs the hexagrams with stories, such as Chang'e fleeing to the moon after a divination [@wp_guicang].",
         "What it changed in the text": "A different way of attaching words to the same 64 figures: a story per figure, where the Zhouyi has terse judgments and line statements. It shows the Zhouyi's text was one choice among several.",
-        "The record": "Named in the Rites of Zhou ✔ [@wp_iching]; rediscovered 1993 ✔ [@wp_guicang] (Wikipedia says 'a rural bog'; the find is usually given as tomb 15 at Wangjiatai, Hubei ◇ [@shaughnessy2014]). The tomb's date (late Warring States or Qin) is ◇. Whether the excavated text is the Guicang the Rites of Zhou meant is ◆ argued."
+        "The record": "Named in the Rites of Zhou ✔ [@wp_iching]; rediscovered 1993 ✔ [@wp_guicang] (Wikipedia says 'a rural bog'; the find was Qin tomb 15 at Wangjiatai, Jiangling, Hubei, in March 1993: 394 of its 813 slips ✔ [@zh_wangjiatai]). The Guicang copy is thought to date from the end of the Warring States ✔ [@zh_wangjiatai]. Whether the excavated text is the Guicang the Rites of Zhou meant is ◆ argued."
       },
       "sort_order": 6
     },
@@ -495,8 +615,8 @@
       },
       "sections": {
         "What it is": "Fragments of the Zhouyi on bamboo from an early Han tomb, found in 1977 [@wp_iching_de].",
-        "What it changed in the text": "The fragments add prognostications (about weather, illness, travel and the like) after the line statements ◇: a working copy, closer to a diviner's notebook than a classic.",
-        "The record": "Found 1977 at Shuanggudui ✔ [@wp_iching_de]. The added prognostications and the tomb date (c. 165 BCE) ◇ [@shaughnessy2014]."
+        "What it changed in the text": "Nearly two thirds of the fragments are formulaic divination statements found neither in the received text nor in the Mawangdui copy ✔ [@wp_shuanggudui]: a working copy, closer to a diviner's notebook than a classic. Which matters they cover (weather, illness, travel) ◇.",
+        "The record": "Found 1977 at Shuanggudui ✔ [@wp_iching_de]. The tomb is Xiahou Zao's, sealed in 165 BCE; the Changes survives in 752 fragments, 3,119 characters ✔ [@wp_shuanggudui]."
       },
       "sort_order": 8
     },
@@ -549,12 +669,12 @@
           "book-han-canon"
         ],
         "kind": "commentary",
-        "confidence": "low"
+        "confidence": "medium"
       },
       "sections": {
         "What it is": "Jing Fang, also a music theorist and astronomer [@wp_jingfang], read the hexagrams against the calendar, the musical pitches and the stems and branches: the 'images and numbers' school.",
-        "What it changed in the text": "He rearranged the 64 into eight 'palaces' and tied each line to times and elements ◇. His books are lost; fragments survive in the Tang anthology Zhou yi jijie [@wp_iching].",
-        "The record": "The New Text school's image-and-number work, lost but for fragments in Zhou yi jijie ✔ [@wp_iching]. His dates (77–37 BCE) and the eight palaces ◇ [@smith2008]."
+        "What it changed in the text": "The eight 'palaces' of the 64, with each line tied to times and elements, are traditionally his ◆: one study argues they came from another school (Xun Shuang, Yu Fan, Gan Bao) and were credited to him through the Jingshi yizhuan [@zh_jingfang]. His books are lost; fragments survive in the Tang anthology Zhou yi jijie [@wp_iching].",
+        "The record": "The New Text school's image-and-number work, lost but for fragments in Zhou yi jijie ✔ [@wp_iching]. His dates: 77–37 BCE [@zh_jingfang], 78–37 BCE [@wp_jingfang] ◆. The eight palaces ◆ (above)."
       },
       "sort_order": 10
     },
@@ -763,9 +883,9 @@
         "confidence": "low"
       },
       "sections": {
-        "What it is": "An evidential-scholarship study tracing the Song diagrams to Daoist sources rather than to Fu Xi ◇.",
-        "What it changed in the text": "The first big doubt from inside the tradition: the diagrams at the front of the classic were late additions, not ancient revelation ◇. Qing scholars more generally turned to the old language of the text [@wp_iching].",
-        "The record": "The Qing turn to pre-classical grammar ✔ [@wp_iching] (truncated in what was read). Hu Wei, the title Yitu mingbian and 1706 ◇ [@smith2008]."
+        "What it is": "Hu Wei (1633–1714), classicist and geographer, wrote the Yitu mingbian, 'Clarifying the Diagrams of the Changes' ✔ [@zh_huwei]: an evidential-scholarship study tracing the Song diagrams to Daoist sources rather than to Fu Xi ◇.",
+        "What it changed in the text": "The first big doubt from inside the tradition: the diagrams at the front of the classic were late additions, not ancient revelation ◇. The Qing classicist Pi Xirui praised it for refuting the River Chart and the Luo Writing ○ [@zh_huwei]. Qing scholars more generally turned to the old language of the text [@wp_iching].",
+        "The record": "The Qing turn to pre-classical grammar ✔ [@wp_iching] (truncated in what was read). Hu Wei, his dates and the title ✔ [@zh_huwei]; the year 1706 ◇ [@smith2008]."
       },
       "sort_order": 18
     },
@@ -790,9 +910,9 @@
         "confidence": "low"
       },
       "sections": {
-        "What it is": "An imperial compendium, the Zhouyi zhezhong, that arranges the Song commentaries (Cheng Yi and Zhu Xi foremost) with many others ◇. The Kangxi Emperor was especially fond of the book and ordered new interpretations [@wp_iching].",
-        "What it changed in the text": "The edition the first European translators were likely reading from ◇: the Song reading, now with an emperor's seal.",
-        "The record": "Kangxi's interest ✔ [@wp_iching]. The compendium's title, date and its use by Legge and Wilhelm ◇ [@smith2008]."
+        "What it is": "An imperial compendium, the Zhouyi zhezhong ('Balanced Annotations'), compiled by Li Guangdi, which set the original text apart from its commentaries ✔ [@wp_li_guangdi] and arranges the Song commentaries (Cheng Yi and Zhu Xi foremost) with many others ◇. The Kangxi Emperor was especially fond of the book and ordered new interpretations [@wp_iching].",
+        "What it changed in the text": "The edition Wilhelm translated from ✔ [@de_wilhelm]: the Song reading, now with an emperor's seal. Whether Legge used it too ◇.",
+        "The record": "Kangxi's interest ✔ [@wp_iching]. Title and compiler ✔ [@wp_li_guangdi]; Wilhelm's use ✔ [@de_wilhelm]; the year 1715 and Legge's use ◇ [@smith2008]."
       },
       "sort_order": 19
     },
@@ -817,8 +937,8 @@
       },
       "sections": {
         "What it is": "A master of Daoist inner alchemy [@wp_liuyiming] who read every hexagram as a stage of inner work ◇.",
-        "What it changed in the text": "The same lines, a different body: the book as a manual of cultivation rather than of government or fortune ◇. It reached English through [@cleary1986] ◇.",
-        "The record": "Liu Yiming, his dates and his Longmen lineage ✔ [@wp_liuyiming]. The commentary's title (Zhouyi chanzhen) and date ◇."
+        "What it changed in the text": "The same lines, a different body: the book as a manual of cultivation rather than of government or fortune ◇. His Zhouyi chanzhen, 'Uncovering the True in the Book of Changes', reached English as Thomas Cleary's The Taoist I Ching (1986) ✔ [@wp_liuyiming; @cleary1986].",
+        "The record": "Liu Yiming, his dates and his Longmen lineage ✔ [@wp_liuyiming]. The commentary's title and its English translation ✔ [@wp_liuyiming]; its date ◇."
       },
       "sort_order": 20
     },
@@ -843,8 +963,8 @@
       },
       "sections": {
         "What it is": "The first translation into a Western language, by the Jesuit Jean-Baptiste Régis, who also mapped China for the Kangxi Emperor. It waited a century to be printed [@wp_regis].",
-        "What it changed in the text": "Latin, with long prolegomena on Chinese ideas of God and spirits that Legge later praised [@wp_regis]. The translation was a joint Jesuit work, and the other hands are ◇.",
-        "The record": "First Westerner to translate it; Mohl's Stuttgart edition of 1834 ✔ [@wp_regis] (from the 1913 Catholic Encyclopedia, which quotes Legge)."
+        "What it changed in the text": "Latin, with long prolegomena on Chinese ideas of God and spirits that Legge later praised [@wp_regis]. The translation was a joint Jesuit work: the 1834 preface says Joseph de Mailla rendered the Chinese word for word into Latin, checking it against the Manchu version, and Pierre du Tartre explained the text from history ✔ [@regis1834].",
+        "The record": "First Westerner to translate it; Mohl's Stuttgart edition of 1834 ✔ [@wp_regis] (from the 1913 Catholic Encyclopedia, which quotes Legge). The title page: 'ex latina interpretatione P. Regis aliorumque ex Soc. Jesu P.P.', edited by Julius Mohl, Stuttgart and Tübingen, Cotta, 1834 ✔ [@regis1834]."
       },
       "sort_order": 21
     },
@@ -858,7 +978,7 @@
         "west"
       ],
       "metadata": {
-        "when": "Shanghai, 1876 ◇",
+        "when": "Shanghai, 1876",
         "year": 1876,
         "branch": "branch-west",
         "derives_from": [
@@ -868,9 +988,9 @@
         "confidence": "low"
       },
       "sections": {
-        "What it is": "The first English translation, by the Anglican missionary Thomas McClatchie ◇.",
-        "What it changed in the text": "It read the book through comparative mythology, with phallic and astral keys, an approach Legge rejected ◇. It's a good example of a translation telling you more about its century than about the Zhou.",
-        "The record": "All ◇: to check on the title page (public domain) and in [@smith2008]."
+        "What it is": "An English translation six years before Legge's, usually called the first ○ [@wp_iching], by Thomas McClatchie, a Church Missionary Society (Anglican) missionary in Shanghai from 1845 ✔ [@wp_cms_china].",
+        "What it changed in the text": "It read the book through comparative mythology ○ [@mcclatchie_chapter], with phallic and astral keys, an approach Legge rejected ◇. It's a good example of a translation telling you more about its century than about the Zhou.",
+        "The record": "A Translation of the Confucian Yih King, or the 'Classic of Change', Shanghai, American Presbyterian Mission Press, 1876; xiii, xvii, 455 pages, Chinese and English on facing pages ✔ [@stanford_mcclatchie]. His keys and Legge's response ◇ [@smith2008]."
       },
       "sort_order": 22
     },
@@ -916,7 +1036,7 @@
         "west"
       ],
       "metadata": {
-        "when": "Jena, 1924 ◇; made in Qingdao with the scholar Lao Naixuan ◇",
+        "when": "Jena, 1924; made with the scholar Lao Naixuan, finished in Beijing",
         "year": 1924,
         "branch": "branch-west",
         "derives_from": [
@@ -928,8 +1048,8 @@
       },
       "sections": {
         "What it is": "Richard Wilhelm, missionary and sinologist, lived 25 years in China. His German I Ching is still counted among the finest translations [@wp_wilhelm].",
-        "What it changed in the text": "He wove the Wings back into each hexagram and wrote his own explanations, in the Song 'meanings and principles' line he learned from his teacher ◇. The result reads as wisdom literature: the voice most Western readers think of as 'the I Ching'.",
-        "The record": "Wilhelm's life and the translation's standing ✔; Jung was a friend ✔ [@wp_wilhelm]. Year, publisher, the collaboration with Lao Naixuan ◇."
+        "What it changed in the text": "He translated from the Kangxi-era Zhouyi zhezhong ✔ [@de_wilhelm], wove the Wings back into each hexagram and wrote his own explanations, in the Song 'meanings and principles' line he learned from his teacher ◇. The result reads as wisdom literature: the voice most Western readers think of as 'the I Ching'.",
+        "The record": "Wilhelm's life and the translation's standing ✔; Jung was a friend ✔ [@wp_wilhelm]. Jena, Eugen Diederichs, 1924 ✔ [@wp_iching_de]; English Wikipedia gives 1923 ◆ [@wp_iching]. Made over nearly ten years with his teacher Lao Naixuan and finished in Beijing ✔ [@de_wilhelm]."
       },
       "sort_order": 24
     },
@@ -953,9 +1073,9 @@
         "confidence": "low"
       },
       "sections": {
-        "What it is": "The 'Doubting Antiquity' scholars [@wp_doubting] read the classics as historical documents. In the third volume of their debates, Gu Jiegang, Li Jingchi and others treated the Zhouyi as a Western Zhou divination text, apart from the Wings ◇.",
+        "What it is": "The 'Doubting Antiquity' scholars [@wp_doubting] read the classics as historical documents. Their Gushi bian, 'Debates on Ancient History', ran to seven volumes from 1926 ✔ [@wp_gujiegang]. Its third volume mainly collects Li Jingchi's and Yu Yongliang's discussions ✔ [@zh_gushibian], which treated the Zhouyi as a Western Zhou divination text, apart from the Wings ◇.",
         "What it changed in the text": "The layers are pulled apart. The sages are taken out of the authorship, and the oracle is read for what it may have meant to its first users, not to Confucius ◇.",
-        "The record": "The school and its method ✔ [@wp_doubting]. The volume, year and contributors ◇ [@smith2008]."
+        "The record": "The school and its method ✔ [@wp_doubting]. Seven volumes, 1926 to 1941 [@zh_gushibian] or to 1944 [@wp_gujiegang] ◆; volume 3's main contributors ✔ [@zh_gushibian]; its year (1931) and its focus on the Zhouyi ◇ [@smith2008]."
       },
       "sort_order": 25
     },
@@ -995,7 +1115,7 @@
         "west"
       ],
       "metadata": {
-        "when": "John Cage, Music of Changes, 1951 ◇; Philip K. Dick, The Man in the High Castle, 1962 ◇",
+        "when": "John Cage, Music of Changes, 1951; Philip K. Dick, The Man in the High Castle, 1962",
         "year": 1962,
         "branch": "branch-west",
         "derives_from": [
@@ -1005,9 +1125,9 @@
         "confidence": "low"
       },
       "sections": {
-        "What it is": "A composer cast the I Ching to make music, and a novelist cast it to plot a book ◇.",
+        "What it is": "A composer cast the I Ching to make music ✔ [@wp_music_of_changes], and a novelist put it inside his story ✔ [@wp_high_castle]; that Dick cast it to plot the book ◇.",
         "What it changed in the text": "The book stops being read and becomes a machine for chance: the line texts matter less than the act of casting.",
-        "The record": "All ◇: well known, not checked this session."
+        "The record": "Music of Changes (1951), composed by applying I Ching decisions to charts of sounds, durations and dynamics ✔ [@wp_music_of_changes]. The Man in the High Castle (1962), with the I Ching in its story and among Dick's inspirations ✔ [@wp_high_castle]."
       },
       "sort_order": 27
     },
@@ -1089,7 +1209,7 @@
       "sections": {
         "What it is": "Translations of the Zhouyi alone, without the Wings, trying to read it as a Western Zhou document [@rutt1996; @redmond2017].",
         "What it changed in the text": "They take the Wings back out, the reverse of Wilhelm's move, and translate words like zhen as 'divining' instead of 'firm and correct' ◇.",
-        "The record": "Titles from memory ◇; Rutt's title is cited in this library's Zhouyi Core."
+        "The record": "Titles ✔ [@wp_iching]: Rutt, The Book of Changes (Zhouyi): A Bronze Age Document (Curzon, 1996); Redmond, The I Ching (Book of Changes): A Critical Translation of the Ancient Text (Bloomsbury, 2017)."
       },
       "sort_order": 30
     },
@@ -1114,12 +1234,12 @@
           "book-shaughnessy-1983"
         ],
         "kind": "translation",
-        "confidence": "low"
+        "confidence": "medium"
       },
       "sections": {
         "What it is": "English translations of the tomb and market manuscripts: the Mawangdui silk text, then the Shanghai Museum, Wangjiatai and Fuyang texts [@shaughnessy1996; @shaughnessy2014].",
         "What it changed in the text": "For the first time in two thousand years, readers can see versions of the book that the Han canon did not fix.",
-        "The record": "Both titles ◇: not opened."
+        "The record": "Titles ✔ [@wp_shaughnessy]: I Ching: The Classic of Changes (Ballantine; 1997 there, 1996 in [@wp_iching] ◆) and Unearthing the Changes: Recently Discovered Manuscripts of the Yi Jing (I Ching) and Related Texts (Columbia University Press, 2014). The books were not opened."
       },
       "sort_order": 31
     },
