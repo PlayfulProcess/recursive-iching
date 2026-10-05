@@ -1,5 +1,18 @@
 # Changelog — The Recursive I Ching
 
+## Merged October 5, 2026 — what is new, and what was not thoroughly verified
+
+PlayfulProcess merged the cloud session's work (Oct 1–4) and the Desktop check of Oct 5. New, and
+not thoroughly verified:
+
+- **The Tree of the Changes** (`grammars/tree-of-the-iching`): 33 books written with AI. 45 claims
+  are still ◇ (from memory, unchecked) and 9 are ◆ (sources disagree). The marks on each claim say
+  which is which; the timeline and the genealogy show the same marks.
+- **The two history courses** are written with AI from that grammar, so they carry the same doubts.
+- **The genealogy's edges** are the page's own simplification, not a historian's.
+- **`viewers/dialogue.html`** is an unlisted prototype, not tested with readers.
+- **`docs/DECIDE-books-and-grammars.md`** lists decisions that are still open.
+
 ## October 5, 2026 — The Tree of the Changes: the ◇ claims checked, low-confidence books first
 
 The handover's first Desktop job. Sources a Desktop session could reach: the scan of the 1834 Latin
