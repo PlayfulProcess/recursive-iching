@@ -117,7 +117,7 @@ grammar = {
     "name": frame["title"],
     "description": frame["description"],
     "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
-    "grammar_type": "book",
+    "grammar_type": "custom",  # "book" is not a platform grammar_type; Book mode reads the items, not the type
     "tags": ["iching", "book", "path-caster", "combinatorial", "cast-your-book"],
     "creator_name": "PlayfulProcess",
     "creator_link": "https://iching.recursive.eco/viewers/caster.html",

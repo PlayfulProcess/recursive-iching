@@ -1,7 +1,7 @@
 {
-  "repo": "PlayfulProcess/recursive-starter",
+  "repo": "PlayfulProcess/recursive-iching",
   "branch": "main",
-  "github_url": "https://github.com/PlayfulProcess/recursive-starter",
+  "github_url": "https://github.com/PlayfulProcess/recursive-iching",
   "collection": "iching",
   "name": "The Recursive I Ching",
   "version": "1.0.0",
@@ -35,6 +35,13 @@
       "name": "Readings — thematic contemplative practices, not interpretation sets",
       "deck_slugs": [
         "repair-iching"
+      ]
+    },
+    {
+      "id": "history",
+      "name": "History — the books of the Changes, one book per node",
+      "deck_slugs": [
+        "tree-of-the-iching"
       ]
     }
   ],
@@ -126,7 +133,7 @@
     {
       "slug": "the-recursive-iching-book",
       "name": "The Recursive I Ching — a book you cast",
-      "type": "book",
+      "type": "custom",
       "branch": "synthesis",
       "is_meta": false,
       "default_preview": null,
@@ -147,6 +154,19 @@
       "cover_image_url": "https://commons.wikimedia.org/wiki/File:Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg",
       "blurb": "This interpretation maps the 64 I Ching hexagrams to Human Design 'gates'—a synthesis channeled by Ra Uru Hu in 1987 after an eight-day encounter with 'the Voice' on Ibiza. The system is only about 30…",
       "path": "grammars/three-lenses-64/grammar.json",
+      "provenance": "living"
+    },
+    {
+      "slug": "tree-of-the-iching",
+      "name": "The Tree of the Changes — the books of the I Ching",
+      "type": "custom",
+      "branch": "history",
+      "is_meta": false,
+      "default_preview": null,
+      "items": 42,
+      "cover_image_url": null,
+      "blurb": "The history of the I Ching as a family tree of books, one book per node: from numbers on bone, through the Zhouyi, the Ten Wings and the Han canon, the commentators who read it for numbers or for mean…",
+      "path": "grammars/tree-of-the-iching/grammar.json",
       "provenance": "living"
     },
     {

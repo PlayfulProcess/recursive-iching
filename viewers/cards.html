@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cards — Recursive I Ching</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- ── Static-mode shim (recursive-starter drift, no backend) — see tree-viewer.html ── -->
+    <!-- This page used to pull https://cdn.tailwindcss.com, which prints a
+         "should not be used in production" warning on every load. It used
+         exactly ONE Tailwind utility, so the CDN is gone and the utility is
+         inlined. Keep it that way: if you need more utilities, write the CSS. -->
+    <style>.hidden { display: none !important; }</style>
+    <!-- ── Static-mode shim (recursive-tarot copy, ported Oct 4 2026, no backend) — see tree-viewer.html ── -->
     <script>
     (function () {
         function stubQuery() {
@@ -19,14 +23,13 @@
         window.RecursiveAuth = { init() { return stubClient; }, getClient() { return stubClient; } };
 
         // Header comes from the shared ../site-header.js (loaded below).
-        class RTFooter extends HTMLElement {
-            connectedCallback() {
-                this.innerHTML = `<footer style="padding:18px;border-top:1px solid rgba(0,0,0,.1);color:#6b6457;font-size:12px;text-align:center;">
-                    Public-domain source texts &amp; original research · <a href="https://github.com/PlayfulProcess/recursive-starter" target="_blank" rel="noopener" style="color:#7a2d20;">recursive-starter</a> · companion to <a href="https://recursive.eco" target="_blank" rel="noopener" style="color:#7a2d20;">recursive.eco</a>
-                </footer>`;
-            }
-        }
-        if (!customElements.get('site-footer')) customElements.define('site-footer', RTFooter);
+        // Footer used to be a hand-rolled RTFooter stub here — retired Aug 11 2026 in
+        // favour of the real shared ../site-footer.js (loaded just above the
+        // <site-footer> tag near the end of this file), so this page gets the same
+        // newsletter/links footer AND the sitewide Oracle Ribbon every other page has
+        // carried since Aug 10 2026. Don't redefine `site-footer` here — the shared
+        // script's own `customElements.get('site-footer')` guard would then treat this
+        // stub as "already defined" and skip itself, silently keeping the old stub.
 
         window.ViewModeDropdown = {
             init(container) {
@@ -38,7 +41,7 @@
         };
     })();
     </script>
-    <script src="../site-header.js?v=46"></script>
+    <script src="../site-header.js?v=47"></script>
     <script src="../view-switcher.js?v=12"></script>
     <style>
         /* Unified Grammar Theme - adapts based on grammar type */
@@ -702,21 +705,6 @@
             transition: all 0.2s;
         }
 
-        .source-popup-actions .sync-action {
-            background: #9c3b2a;
-            border: none;
-            color: white;
-        }
-
-        .source-popup-actions .sync-action:hover {
-            background: #7a2d20;
-        }
-
-        .source-popup-actions .sync-action:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-        }
-
         .source-popup-actions .view-action {
             background: transparent;
             border: 1px solid var(--grammar-accent);
@@ -807,36 +795,6 @@
             opacity: 0.8;
         }
 
-        /* Type toggle */
-        .type-toggle {
-            display: flex;
-            justify-content: center;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .type-btn {
-            padding: 0.5rem 1rem;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            background: transparent;
-            color: var(--grammar-text-muted);
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .type-btn:hover {
-            border-color: var(--grammar-accent);
-            color: var(--grammar-accent);
-        }
-
-        .type-btn.active {
-            background: var(--grammar-accent);
-            border-color: var(--grammar-accent);
-            color: var(--grammar-bg-dark);
-        }
-
         /* Controls row */
         .controls-row {
             display: flex;
@@ -898,7 +856,7 @@
             border-radius: 9999px;
             border: 1px solid var(--grammar-accent, #9c3b2a);
             background: rgba(156,59,42,.1);
-            color: #7a2d20;
+            color: #8a6414;
             cursor: pointer;
             font-weight: 600;
             color-scheme: light;
@@ -1495,6 +1453,42 @@
             font-style: italic;
         }
 
+        /* Resolved source-card content (meta-grammar reference resolution, reference-resolve.js)
+           — additive panel rendered after the card's own content, set off with the same plum
+           accent already used for "later" attributed commentary (.later-section). */
+        .ref-resolve-panel {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px dashed rgba(196, 167, 255, .4);
+        }
+
+        .ref-resolve-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #6d4ab6;
+            margin-bottom: 0.75rem;
+        }
+
+        .ref-resolve-status {
+            font-size: 0.8rem;
+            color: var(--grammar-text-muted);
+        }
+
+        .ref-resolve-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #6d4ab6;
+            text-decoration: underline;
+        }
+
+        .keyword-tag.ref-tag {
+            background: rgba(109, 74, 182, 0.15);
+            color: #6d4ab6;
+        }
+
         /* Large screen: side-by-side modal layout */
         @media (min-width: 768px) {
             .modal-content {
@@ -1527,9 +1521,23 @@
             }
 
             /* Body padding is 2rem on desktop — match the footer's edge-to-edge
-               negative margins to it. */
+               negative margins to it.
+
+               `bottom` must match that negative margin, or the bar eats the last
+               line of the card (builder, Jul 30 2026: "the last lines are
+               unreadable beneath it"). Here .modal-body is the scroll container and
+               it has 2rem of padding, so a sticky `bottom: 0` parks the bar 2rem
+               ABOVE the container's bottom edge — while `margin-bottom: -2rem`
+               takes those same 2rem out of the scrollable height. The two cancel
+               each other exactly wrong: at full scroll the text still runs ~8px
+               under the bar and can never be scrolled clear. `bottom: -2rem` parks
+               it flush with the border-box bottom instead, which restores the full
+               1.5rem of clearance. On phones .modal-content is the scroller and has
+               no padding, so the base `bottom: 0` is already correct there and the
+               sticky element is clamped by .modal-body anyway. */
             .modal-nav-footer {
                 margin: 1.5rem -2rem -2rem;
+                bottom: -2rem;
                 padding: 0.75rem 2rem;
             }
 
@@ -2028,10 +2036,10 @@
         .lens-chip:hover { background: rgba(255,255,255,.12); }
         .lens-chip.off { opacity: .38; text-decoration: line-through; }
         .lens-chip .lens-cov { font-size: 11.5px; opacity: .7; }
-        .lens-chip.attributed { border-color: rgba(212,150,90,.5); }
+        .lens-chip.attributed { border-color: rgba(196,167,255,.5); }
         .lens-chip .lens-later {
             font-size: 11px; text-transform: uppercase; letter-spacing: .03em;
-            color: #b8902f; border: 1px solid rgba(212,150,90,.4);
+            color: #b8902f; border: 1px solid rgba(196,167,255,.4);
             border-radius: 4px; padding: 1px 3px;
         }
         .lens-master {
@@ -2060,7 +2068,7 @@
             font-size: 11px; opacity: .4; font-style: italic; }
         /* later-commentary sections in card detail: a quiet divider marks where the
            deck's own voice ends and dated later interpretations begin. */
-        .content-section.later-section { border-top: 1px dashed rgba(212,150,90,.28); padding-top: 14px; margin-top: 6px; }
+        .content-section.later-section { border-top: 1px dashed rgba(196,167,255,.28); padding-top: 14px; margin-top: 6px; }
         .content-section.later-section + .content-section.later-section { border-top: 0; padding-top: 0; margin-top: 0; }
         .content-section.later-section .section-title .lens-later { vertical-align: middle; margin-left: 6px; }
     </style>
@@ -2075,11 +2083,11 @@
 </head>
 <body>
     <!-- Shared grammar loading component (local copy) -->
+    <script src="reference-resolve.js?v=2"></script>
     <script src="grammar-loader.js"></script>
+    <script src="item-shape.js?v=1"></script>
     <script src="dimension-engine.js?v=1"></script>
     <script src="deck-picker.js?v=2"></script>
-    <script src="eco-links.js?v=2"></script>
-    <script>window.RecursiveEcoLinks && RecursiveEcoLinks.ready();</script>
 
     <!-- Site Header -->
     <site-header active="cards"></site-header>
@@ -2101,7 +2109,12 @@
         <div id="grammar-content" class="hidden">
             <!-- Header -->
             <div class="grammar-header">
-                <select id="deck-switcher" onchange="switchDeck(this.value)" title="Switch deck — or back to All Decks" style="display:none">
+                <!-- Hidden data source (not a user control — no onchange) for the title
+                     dropdown below: populateDeckSwitcher() fills its <option>s from
+                     _collection.json, and toggleTitleMenu() reads sel.options to build
+                     the "Open cards" deck list. Keep it; only its old switchDeck()
+                     onchange handler (a real, redundant control) was dead. -->
+                <select id="deck-switcher" title="Deck list (data source for the title dropdown)" style="display:none">
                     <option value="">Loading decks…</option>
                 </select>
                 <div class="title-dd-wrap" style="position:relative;margin-bottom:10px">
@@ -2118,7 +2131,7 @@
                 <div class="header-actions-row">
                     <span id="header-actions" class="header-actions">
                         <span id="view-mode-container"></span>
-                        <a id="reading-btn" class="reading-btn" href="#" title="Get a reading with this grammar in Flow">Get a Reading</a>
+                        <a id="reading-btn" class="reading-btn" href="#" title="Draw cards from this deck and reflect on them in recursive.eco">Draw &amp; reflect</a>
                         <button id="copy-btn" class="reading-btn" onclick="openEditOnEco()" title="Edit this grammar in the recursive.eco editor" aria-label="Edit this grammar in the recursive.eco editor" style="display:inline-flex;align-items:center;gap:5px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>Edit</button>
                         <button id="print-btn" class="edit-btn" onclick="navigateToPrint()" title="Print cards, booklet, memory game, or storyboard" style="display:inline-flex;align-items:center;gap:4px;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>Print</button>
                         <button id="github-btn" class="github-btn" onclick="openSourcePopup()" title="View GitHub source">
@@ -2130,12 +2143,6 @@
                         <button id="report-btn" class="report-btn" onclick="openReportModal()" title="Report issue with this grammar"><rt-icon name="flag"></rt-icon> Report</button>
                     </span>
                 </div>
-            </div>
-
-            <!-- Type Toggle (hidden by default, shown if switching enabled) -->
-            <div id="type-toggle" class="type-toggle hidden">
-                <button class="type-btn" data-type="tarot">Tarot</button>
-                <button class="type-btn" data-type="iching">I Ching</button>
             </div>
 
             <!-- Controls -->
@@ -2268,8 +2275,12 @@
         </div>
     </div>
 
-    <!-- Site Footer -->
-    <site-footer></site-footer>
+    <!-- Site Footer: the shared component (site-footer.js) — newsletter + links +
+         the sitewide Oracle Ribbon (site-footer.js's own connectedCallback loads
+         viewers/oracle-ribbon.js and calls show()). base="../" because this page
+         lives one level down from the repo root, same as pages/about.html. -->
+    <script src="../site-footer.js?v=2"></script>
+    <site-footer base="../"></site-footer>
 
     <script>
         // Initialize Supabase via shared auth module
@@ -2278,7 +2289,7 @@
         // State
         let grammarType = 'iching';
         let grammarData = null;
-        let ecoIds = null; // tarot/_eco_ids.json — repo deck slug -> recursive.eco deck UUID
+        let ecoIds = null; // ../ids.json — repo grammar slug -> recursive.eco deck UUID
         // Resolve the recursive.eco deck UUID for the deck currently shown, so "Get a Reading" /
         // copy / edit open Flow with THIS deck. Static (?src=) views carry no id param, so map the
         // slug from the src path via _eco_ids.json (fetched + cached on first use).
@@ -2292,13 +2303,34 @@
             if (!ecoIds) { try { ecoIds = await (await fetch('../ids.json')).json(); } catch (_) { ecoIds = { ids: {} }; } }
             return (ecoIds.ids || {})[slug] || null;
         }
+        // The inverse, for ?id=. This site has no backend (see the stub client at the
+        // top of the file), so an ?id= can only be served from the repo: either it IS
+        // a deck slug, or it is a recursive.eco deck UUID that _eco_ids.json maps back
+        // to one. Returns a src path, or null when neither resolves — the caller then
+        // shows a message naming the ?src= form instead of failing into Supabase.
+        async function resolveStaticSrcForId(id) {
+            if (!id) return null;
+            if (!ecoIds) { try { ecoIds = await (await fetch('../ids.json')).json(); } catch (_) { ecoIds = { ids: {} }; } }
+            const ids = ecoIds.ids || {};
+            let slug = null;
+            if (Object.prototype.hasOwnProperty.call(ids, id)) slug = id;                 // a slug
+            else slug = Object.keys(ids).find(k => ids[k] === id) || null;                 // a UUID
+            if (!slug && /^[a-z0-9][a-z0-9-]*$/.test(id)) slug = id;                       // an unlisted slug
+            if (!slug) return null;
+            const path = `../grammars/${slug}/grammar.json`;
+            try {
+                const head = await fetch(path, { method: 'HEAD' });
+                if (!head.ok) return null;
+            } catch (_) { return null; }
+            return path;
+        }
         let grammarSource = null; // 'user_documents' or 'tools'
         let grammarToolId = null; // Tool ID if from tools table
         let githubSourceUrl = null; // GitHub source URL for sync feature
         let isCommunityGrammar = false; // True if grammar is from community folder (tarot/, iching/, etc.)
 
         // Community folder detection
-        const COMMUNITY_FOLDERS = ['tarot', 'iching', 'sequences', 'astrology', 'custom', 'classics', 'grammars'];
+        const COMMUNITY_FOLDERS = ['tarot', 'iching', 'sequences', 'astrology', 'custom', 'classics'];
         function checkIsCommunityUrl(url) {
             if (!url) return false;
             const pathMatch = url.match(/raw\.githubusercontent\.com\/[^/]+\/[^/]+\/[^/]+\/([^/]+)\//);
@@ -2340,7 +2372,6 @@
         const grammarTitle = document.getElementById('grammar-title');
         const grammarDescription = document.getElementById('grammar-description');
         const filteredCountEl = document.getElementById('filtered-count');
-        const typeToggle = document.getElementById('type-toggle');
         const searchInput = document.getElementById('search-input');
         const filterPills = document.getElementById('filter-pills');
         const itemGrid = document.getElementById('item-grid');
@@ -2487,12 +2518,37 @@
                     return;
                 }
 
-                // Static mode src wins; else GitHub; else Supabase.
-                const data = srcUrl ? await loadGrammarFromSrc(srcUrl)
-                    : githubPath ? await loadGrammarFromGitHub(githubPath)
-                    : await loadGrammarData(grammarType, id);
+                // ?id= used to fall straight through to the Supabase path, which on
+                // THIS site is the no-op stub declared at the top of the file — so it
+                // could only ever fail, twice into console.error and then into "not
+                // accessible". Resolve ?id= against the repo instead, which is what
+                // the caller actually wants: a deck slug is the folder name, and an
+                // app UUID maps back to its slug through ids.json.
+                let resolvedSrc = srcUrl;
+                if (!resolvedSrc && !githubPath && id) {
+                    resolvedSrc = await resolveStaticSrcForId(id);
+                    if (!resolvedSrc) {
+                        showError('No deck matches ?id=' + id + '. This site is static, so ?id= only '
+                            + 'works for a deck slug or a known recursive.eco deck UUID — otherwise use '
+                            + '?src=../grammars/<deck-slug>/grammar.json (the form every link on this site uses), '
+                            + 'or ?github=path/to/grammar.json.');
+                        return;
+                    }
+                }
+
+                // Static mode src wins; else GitHub.
+                const data = resolvedSrc ? await loadGrammarFromSrc(resolvedSrc)
+                    : await loadGrammarFromGitHub(githubPath);
                 if (data) {
                     grammarData = data;
+                    // The data decides the shape (item-shape.js, ported from recursive.eco):
+                    // hexagram items -> 'iching', tarot cards -> 'tarot', anything else -> plain.
+                    // A ?type= naming a known shape still overrides.
+                    if (window.ItemShape) {
+                        const shape = ItemShape.resolveShape(params.get('type'), data);
+                        grammarType = shape === 'plain' ? 'custom' : shape;
+                        document.body.className = `theme-${grammarType}` + (isSelectionMode ? ' selection-mode' : '');
+                    }
                     items = normalizeItems(grammarType, data);
                     filteredItems = [...items];
 
@@ -3383,9 +3439,7 @@
                             || items.some(it => typeof it.number === 'number' && it.number >= 1 && it.number <= 64 && (it.binary || it.king_wen || it.trigram_above));
                         const looksLikeAstro = typeStr.includes('astro') || typeStr.includes('birthchart') || typeStr.includes('birth_chart')
                             || (grammarData && Array.isArray(grammarData.birth_charts) && grammarData.birth_charts.length > 0);
-                        url = looksLikeIching ? `${flowBaseUrl}/?bookId=${id}`
-                            : looksLikeAstro ? `${flowBaseUrl}/?astroGrammarId=${id}`
-                            : `${flowBaseUrl}/play?id=${id}`;
+                        url = `${flowBaseUrl}/g/${id}?view=reading`;
                     }
                     window.open(url, '_blank', 'noopener');
                 });
@@ -3405,17 +3459,6 @@
                 hasTree: hasComposites,
             });
 
-            // Delegated right-click context menu (works on dynamic cards + images)
-            if (window.NodeContextMenu && itemGrid) {
-                NodeContextMenu.delegateOn(itemGrid, {
-                    getItemById: (itemId) => items.find(i => i.id === itemId),
-                    grammarType: grammarType,
-                    grammarId: id || null,
-                    githubPath: githubParamForToggle || null,
-                    hasTree: hasComposites,
-                });
-            }
-
             // (Explore More + Read-as-a-course header buttons removed Jun 25 2026 — the
             //  course view is reached via the eye view-switcher / the contribute page.)
 
@@ -3427,30 +3470,6 @@
                 } else {
                     githubBtn.classList.remove('visible');
                 }
-            }
-        }
-
-        // Sync from GitHub source (header button - kept for backwards compatibility)
-        async function syncFromSource() {
-            const syncBtn = document.getElementById('sync-btn');
-            if (!syncBtn) return;
-
-            const originalText = syncBtn.textContent;
-            try {
-                syncBtn.disabled = true;
-                syncBtn.classList.add('syncing');
-                syncBtn.textContent = 'Syncing...';
-
-                await syncFromSourceInner();
-                alert('Grammar synced successfully from GitHub!');
-
-            } catch (error) {
-                console.error('Sync error:', error);
-                alert('Sync failed: ' + error.message);
-            } finally {
-                syncBtn.disabled = false;
-                syncBtn.classList.remove('syncing');
-                syncBtn.textContent = originalText;
             }
         }
 
@@ -3721,9 +3740,6 @@
             }
         }
 
-        // Deck switcher — toggle between decks (and "All Decks" = the meta) without
-        // leaving the cards view. Reads the repo's _collection.json.
-        function switchDeck(val) { if (val) window.location.href = 'cards.html?src=' + encodeURIComponent(val); }
         // CV-TITLEDROP: clicking the title opens the deck list (built from the hidden deck-switcher).
         function toggleTitleMenu(ev){
             if(ev){ ev.preventDefault(); ev.stopPropagation(); }
@@ -3749,8 +3765,8 @@
                 list = (c.grammars || c.collection || c.decks || []).map(d => ({ slug: d.slug, name: d.name || d.slug, common_name: d.common_name, meta: !!d.is_meta, year: d.year })).filter(d => d.slug);
             } catch (e) { sel.style.display = 'none'; return; }
             // ensure the fat meta is always offered, even if not listed in _collection
-            if (!list.some(d => d.slug === 'all-decks-many-lenses')) list.unshift({ slug: 'all-decks-many-lenses', name: 'All Decks (the meta)', meta: true });
-            const metaItem = list.find(d => d.slug === 'all-decks-many-lenses') || list.find(d => d.meta) || { slug: 'all-decks-many-lenses', name: 'All Decks (the meta)' };
+            if (!list.some(d => d.slug === 'meta-iching')) list.unshift({ slug: 'meta-iching', name: 'All Lenses (the meta)', meta: true });
+            const metaItem = list.find(d => d.slug === 'meta-iching') || list.find(d => d.meta) || { slug: 'meta-iching', name: 'All Lenses (the meta)' };
             const decks = list.filter(d => d.slug !== metaItem.slug).sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999) || (a.name || '').localeCompare(b.name || ''));
             const srcFor = s => '../grammars/' + s + '/grammar.json';
             // Prefer the curated common_name (consistent short name, same string the timeline/index use);
@@ -3759,53 +3775,6 @@
             sel.innerHTML = opt(metaItem.slug, '✦ All Decks (the meta)') + decks.map(d => opt(d.slug, d.common_name || d.name)).join('');
         }
 
-        // In-place dimension menu — NO redirect. Just changes how this dimension is
-        // shown within the cards view (filter the grid / expand in the sidebar / clear).
-        function showLensMenu(item, anchor) {
-            document.querySelectorAll('.lens-menu-pop').forEach(m => m.remove());
-            const opts = [
-                ['<rt-icon name="grid"></rt-icon> Filter the grid to this', 'filter'],
-                ['☰ Expand in sidebar', 'sidebar'],
-                ['<rt-icon name="x"></rt-icon> Show all (clear filter)', 'clear'],
-                ['—', 'sep'],
-                ['↧ View as Timeline', 'timeline'],
-                ['⛢ View as Tree', 'tree'],
-            ];
-            // No genealogy.html ships in this repo (no deck-lineage content for a
-            // 3-grammar I Ching collection — see docs/PLAYBOOK-FIELD-REPORT.md), so
-            // that nav option is dropped rather than left pointing at a 404.
-            const NAV = { timeline: 'timeline.html', tree: 'tree-viewer.html' };
-            const menu = document.createElement('div');
-            menu.className = 'lens-menu-pop';
-            menu.style.cssText = 'position:fixed;z-index:9999;background:#f4f1ea;border:1px solid #d8d2c6;border-radius:9px;padding:6px;box-shadow:0 8px 24px rgba(0,0,0,.55);min-width:190px;';
-            const r = anchor.getBoundingClientRect();
-            menu.style.left = Math.min(r.left, window.innerWidth - 210) + 'px';
-            menu.style.top = (r.bottom + 4) + 'px';
-            opts.forEach(([label, mode]) => {
-                if (mode === 'sep') { const hr = document.createElement('div'); hr.style.cssText = 'height:1px;background:#d8d2c6;margin:5px 4px;'; menu.appendChild(hr); return; }
-                const a = document.createElement('div');
-                a.textContent = label;
-                a.style.cssText = 'padding:7px 11px;border-radius:6px;cursor:pointer;color:#4a4439;font-size:13px;';
-                a.onmouseenter = () => a.style.background = '#241d3a';
-                a.onmouseleave = () => a.style.background = '';
-                a.onclick = (ev) => {
-                    ev.stopPropagation(); menu.remove();
-                    if (NAV[mode]) {
-                        const src = new URLSearchParams(window.location.search).get('src') || '';
-                        const q = src ? ('?src=' + encodeURIComponent(src)) : '';
-                        window.location.href = NAV[mode] + (mode === 'genealogy' ? '' : q);
-                        return;
-                    }
-                    if (mode === 'clear') { filterByHierarchy(null, null); }
-                    else if (mode === 'sidebar') { expandedSections.add(item.id); }
-                    else { expandedSections.add(item.id); filterByHierarchy(`l${item.level || 4}`, item.id); }
-                    buildHierarchySidebar();
-                };
-                menu.appendChild(a);
-            });
-            document.body.appendChild(menu);
-            setTimeout(() => document.addEventListener('click', function close() { menu.remove(); document.removeEventListener('click', close); }), 0);
-        }
 
         function buildSidebarNode(item, depth) {
             const children = items.filter(child =>
@@ -4379,7 +4348,7 @@
 
             // Title
             let subtitle = '';
-            if (grammarType === 'iching' && item.chinese_name) {
+            if ((grammarType === 'iching' || (window.ItemShape && ItemShape.isHexagramItem(item))) && item.chinese_name) {
                 subtitle = `${item.chinese_name}${item.pinyin ? ` (${item.pinyin})` : ''}`;
             } else if (item.number !== undefined) {
                 subtitle = `#${item.number}`;
@@ -4397,7 +4366,7 @@
             //  single, readable set now.)
 
             // Trigram info for I Ching
-            if (grammarType === 'iching' && (item.trigram_above || item.trigram_below)) {
+            if ((grammarType === 'iching' || (window.ItemShape && ItemShape.isHexagramItem(item))) && (item.trigram_above || item.trigram_below)) {
                 const upper = TRIGRAMS[item.trigram_above?.toLowerCase()] || {};
                 const lower = TRIGRAMS[item.trigram_below?.toLowerCase()] || {};
                 bodyHtml += `
@@ -4417,26 +4386,29 @@
                 `;
             }
 
-            // ── Open in source deck (static deep-link) ──
-            // Meta cards carry metadata.source_deck (the deck's repo slug) +
-            // metadata.source_item_id (the card's id within that deck). When we're
-            // not already viewing that deck, offer a link that loads the individual
-            // deck's grammar opened on this exact card — pure static, no backend.
-            {
-                const md = item.metadata || {};
-                const srcDeck = md.source_deck;
-                const srcItem = md.source_item_id;
-                const curSrc = new URLSearchParams(window.location.search).get('src') || '';
-                if (srcDeck && srcItem && !curSrc.includes('/' + srcDeck + '/')) {
-                    const deckLabel = md.deck || srcDeck;
-                    const deckUrl = '?src=' + encodeURIComponent('../grammars/' + srcDeck + '/grammar.json')
-                        + '&item=' + encodeURIComponent(srcItem);
-                    bodyHtml += `
-                        <a href="${deckUrl}"
-                           style="display:inline-flex;align-items:center;gap:0.4rem;margin:0.25rem 0 0.85rem;padding:0.45rem 0.9rem;border:1px solid var(--grammar-accent);border-radius:9999px;color:var(--grammar-accent);text-decoration:none;font-size:0.85rem;font-weight:600;">
-                            Open in ${escapeHtml(deckLabel)} deck &rarr;
-                        </a>`;
-                }
+            // ── Meta-grammar source resolution (repo-local) ──
+            // Meta cards carry metadata.source_deck (the deck's repo slug) + metadata.source_item_id
+            // (the card's id within that deck's own grammar.json) — the repo-native counterpart of
+            // the private app's ref_document_id/ref_item_id pointer (see reference-resolve.js
+            // header comment). Detection is purely data-driven, never a grammar-type check. When
+            // we're not already viewing that deck, offer both a deep-link pill AND (below, after
+            // this card's own content) an additive "From <deck>" panel with the resolved source
+            // card's keywords/sections, fetched from the repo — no backend needed.
+            const srcMeta = item.metadata || {};
+            const srcDeck = srcMeta.source_deck;
+            const srcItem = srcMeta.source_item_id;
+            const curSrc = new URLSearchParams(window.location.search).get('src') || '';
+            const showSourceRef = !!(srcDeck && srcItem) && !curSrc.includes('/' + srcDeck + '/');
+            const sourceDeckLabel = srcMeta.deck || srcDeck;
+            const sourceDeckUrl = showSourceRef
+                ? '?src=' + encodeURIComponent('../grammars/' + srcDeck + '/grammar.json') + '&item=' + encodeURIComponent(srcItem)
+                : '';
+            if (showSourceRef) {
+                bodyHtml += `
+                    <a href="${sourceDeckUrl}"
+                       style="display:inline-flex;align-items:center;gap:0.4rem;margin:0.25rem 0 0.85rem;padding:0.45rem 0.9rem;border:1px solid var(--grammar-accent);border-radius:9999px;color:var(--grammar-accent);text-decoration:none;font-size:0.85rem;font-weight:600;">
+                        Open in ${escapeHtml(sourceDeckLabel)} deck &rarr;
+                    </a>`;
             }
 
             // Action buttons (minimal, at top)
@@ -4461,37 +4433,12 @@
             // "View as" eye dropdown retired Jun 29 2026 — its links pointed at
             // recursive.eco app routes (/pages/grammar-viewer.html, /view/…,
             // flow.recursive.eco) that don't exist on the static site, so it never
-            // worked here. Left empty so the modal's action row simply omits it.
-            const viewModeOptions = [];
-
+            // worked here. The dead scaffold that built it (an always-empty
+            // viewModeOptions array feeding an unreachable <details> block) was
+            // removed Aug 2026 — the modal's action row simply omits it now.
             const hasActions = true;   // always show the action row — "Open in recursive.eco" lives here
             if (hasActions) {
-                // Build a unique id for the details element so multiple
-                // modals don't share state.
-                const viewMenuId = `view-menu-${escapeHtml(item.id)}-${Math.random().toString(36).slice(2, 8)}`;
                 bodyHtml += `<div class="modal-actions" style="display: flex; gap: 0.5rem; margin: 1rem 0; flex-wrap: wrap; position: relative;">`;
-                if (viewModeOptions.length > 0) {
-                    // <details> gives us a no-JS dropdown. The summary
-                    // is the eye-icon button; the listed <a>s are the
-                    // viewer options.
-                    bodyHtml += `
-                        <details class="view-mode-picker" id="${viewMenuId}" style="position: relative;">
-                            <summary
-                                title="Pick a view mode"
-                                aria-label="Pick a view mode"
-                                style="display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.35rem 0.6rem; font-size: 0.75rem; background: rgba(59, 130, 246, 0.3); border: 1px solid rgba(59, 130, 246, 0.5); border-radius: 4px; color: #93c5fd; cursor: pointer; list-style: none; transition: all 0.2s;"
-                                onmouseover="this.style.background='rgba(59, 130, 246, 0.5)'" onmouseout="this.style.background='rgba(59, 130, 246, 0.3)'">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-                                <span>View as</span>
-                            </summary>
-                            <div style="position: absolute; top: calc(100% + 4px); left: 0; min-width: 160px; background: #1f2937; border: 1px solid #6b6457; border-radius: 6px; padding: 4px 0; box-shadow: 0 8px 24px rgba(0,0,0,0.4); z-index: 50;">
-                                ${viewModeOptions
-                                    .filter(([, url]) => !!url)
-                                    .map(([label, url]) => `<a href="${url}" target="_blank" rel="noopener noreferrer" style="display: block; padding: 6px 12px; font-size: 0.75rem; color: #4a4439; text-decoration: none; transition: background 0.15s;" onmouseover="this.style.background='#4a4439';this.style.color='#fff'" onmouseout="this.style.background='transparent';this.style.color='#4a4439'">${label}</a>`)
-                                    .join('')}
-                            </div>
-                        </details>`;
-                }
                 if (currentUser) {
                     // Copy button → duplicate icon only, with tooltip.
                     // Author direction May 9 2026: shrink the action
@@ -4500,21 +4447,42 @@
                     bodyHtml += `
                         <button onclick="closeModal(); openForkModal('${escapeHtml(item.id)}')"
                            class="modal-action-btn"
-                           title="Copy this card to your drafts on recursive.eco, then edit or fork it"
-                           aria-label="Copy this card to your drafts on recursive.eco, then edit or fork it"
+                           title="Make your OWN copy on recursive.eco — a separate grammar you own outright. To change this deck itself, use Edit."
+                           aria-label="Make your own copy of this deck on recursive.eco"
                            style="display: inline-flex; align-items: center; justify-content: center; padding: 0.35rem 0.55rem; background: rgba(147,51,234,0.10); border: 1px solid rgba(147,51,234,0.42); border-radius: 6px; color: #7c3aed; cursor: pointer; transition: all 0.2s;"
                            onmouseover="this.style.background='rgba(147,51,234,0.20)'" onmouseout="this.style.background='rgba(147,51,234,0.10)'">
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                         </button>`;
                 }
-                // "Open in recursive.eco" sits right beside the copy icon — both purple.
+                // Two named destinations rather than one ambiguous "Open in
+                // recursive.eco" (builder, Aug 18 2026: casting lives in the Journal,
+                // editing in Create). Shown as two labelled buttons rather than one
+                // button opening a chooser: with exactly two options the popup costs
+                // a click and adds a pattern this repo doesn't otherwise have —
+                // "consolidate, don't multiply" (CLAUDE.md). Same purple treatment.
+                const ecoBtnStyle = 'display:inline-flex; align-items:center; gap:5px; padding:0.35rem 0.7rem; background:rgba(147,51,234,0.10); border:1px solid rgba(147,51,234,0.42); border-radius:6px; color:#7c3aed; font-size:0.8rem; font-weight:600; text-decoration:none; cursor:pointer; transition:all 0.2s;';
                 bodyHtml += `
                     <a href="#" onclick="openItemDeckOnEco();return false;"
-                       title="Open this deck on recursive.eco — loaded in the oracle, ready to cast"
-                       style="display:inline-flex; align-items:center; gap:5px; padding:0.35rem 0.7rem; background:rgba(147,51,234,0.10); border:1px solid rgba(147,51,234,0.42); border-radius:6px; color:#7c3aed; font-size:0.8rem; font-weight:600; text-decoration:none; cursor:pointer; transition:all 0.2s;"
+                       title="Open this deck in the Journal on recursive.eco — loaded in the oracle, ready to draw"
+                       style="${ecoBtnStyle}"
                        onmouseover="this.style.background='rgba(147,51,234,0.20)'" onmouseout="this.style.background='rgba(147,51,234,0.10)'">
-                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg> Open in recursive.eco ↗
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg> Cast in recursive.eco ↗
                     </a>`;
+                // No Edit button on a _generated aggregator (the meta grammar, people-of-tarot):
+                // its items are pointer stubs, not real editable documents, and the underlying
+                // source deck may not even be published to recursive.eco yet (resolveItemDeckId
+                // returns null), which sent Edit to a bare Create page that redirects to Library —
+                // a dead end reported by the builder Aug 22 2026. Read the card here; edit it on
+                // its own deck's page (the "Open in <deck>" pill above takes you there).
+                if (!grammarData?._generated) {
+                    bodyHtml += `
+                    <a href="#" onclick="editItemDeckOnEco();return false;"
+                       title="Open this deck in the Create editor on recursive.eco. If it isn't yours, your changes are proposed to the owner for review."
+                       style="${ecoBtnStyle}"
+                       onmouseover="this.style.background='rgba(147,51,234,0.20)'" onmouseout="this.style.background='rgba(147,51,234,0.10)'">
+                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg> Edit in recursive.eco ↗
+                    </a>`;
+                }
                 bodyHtml += `</div>`;
             }
 
@@ -4623,6 +4591,18 @@
                 `;
             });
 
+            // Resolved SOURCE card content — additive, rendered after this card's own content
+            // (never replacing it: a meta card's "Origin" blurb above and the source deck's full
+            // interpretation below both render). Starts as a loading placeholder; patched in place
+            // once resolveAndRenderSourceRef fetches the source deck's grammar.json, below.
+            if (showSourceRef) {
+                bodyHtml += `
+                    <div id="ref-resolve-panel" class="ref-resolve-panel">
+                        <p class="ref-resolve-status">Loading from ${escapeHtml(sourceDeckLabel)}&hellip;</p>
+                    </div>
+                `;
+            }
+
             // L2 Components Section - show component items for emergence/L2 items
             if (item.composite_of && item.composite_of.length > 0 && window._grammarItemMap) {
                 const componentItems = item.composite_of
@@ -4696,6 +4676,41 @@
             const mc = modalBackdrop.querySelector('.modal-content');
             if (mc) mc.scrollTop = 0;
             modalBackdrop.classList.add('open');
+
+            if (showSourceRef) {
+                resolveAndRenderSourceRef(item, srcDeck, srcItem, sourceDeckLabel, sourceDeckUrl);
+            }
+        }
+
+        // Fetches the source deck's grammar.json (via reference-resolve.js, cached per deck for
+        // the page's lifetime) and patches #ref-resolve-panel with its keywords + sections. Guards
+        // against the modal having moved on to a different card while the fetch was in flight.
+        async function resolveAndRenderSourceRef(forItem, srcDeck, srcItem, deckLabel, deckUrl) {
+            const result = await RefResolve.resolveSourceItem(srcDeck, srcItem, deckLabel);
+            if (selectedItem !== forItem) return;
+            const panel = document.getElementById('ref-resolve-panel');
+            if (!panel) return;
+
+            if (result.status === 'error') {
+                panel.innerHTML = `
+                    <p class="ref-resolve-status">From ${escapeHtml(result.deckLabel || deckLabel)} &mdash; couldn't load details,
+                        <a class="ref-resolve-link" href="${deckUrl}">view source deck &rarr;</a>
+                    </p>`;
+                return;
+            }
+
+            // Framed, bounded, collapsed-by-default embed (RefResolve.renderEmbed) — never the
+            // host's own .content-section/.section-title markup, which is what made one
+            // grammar's content read as if it belonged to the other (a person's biography
+            // appended to a card, a card's Scene/Symbol appended to a biography).
+            panel.innerHTML = RefResolve.renderEmbed({
+                hostItem: forItem,
+                sourceItem: result.item,
+                deckLabel: result.deckLabel,
+                href: deckUrl,
+                hostIsAggregator: RefResolve.isAggregatorGrammar(grammarData),
+                md: mdToHtml,
+            });
         }
 
         function closeModal() {
@@ -4777,71 +4792,6 @@
             document.getElementById('source-popup').classList.remove('open');
         }
 
-        // Sync from the popup - wraps syncFromSource and updates popup
-        async function syncFromPopup() {
-            const syncBtn = document.querySelector('.source-popup-actions .sync-action');
-            if (!syncBtn) return;
-
-            const originalText = syncBtn.textContent;
-            syncBtn.disabled = true;
-            syncBtn.textContent = 'Syncing...';
-
-            try {
-                await syncFromSourceInner();
-                // Update the popup info with new sync date
-                const infoDiv = document.getElementById('source-popup-info');
-                if (infoDiv && lastSyncedAt) {
-                    // Re-render info with updated date
-                    openSourcePopup();
-                }
-                alert('Grammar synced successfully from GitHub!');
-            } catch (error) {
-                alert('Sync failed: ' + error.message);
-            } finally {
-                syncBtn.disabled = false;
-                syncBtn.textContent = originalText;
-            }
-        }
-
-        // Inner sync function (shared logic)
-        async function syncFromSourceInner() {
-            if (!grammarToolId || !githubSourceUrl) {
-                throw new Error('This grammar does not have a GitHub source configured.');
-            }
-
-            const altarsApiUrl = getAltarsApiBaseUrl();
-            const response = await fetch(`${altarsApiUrl}/api/community/tools/${grammarToolId}/sync`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
-
-            const result = await response.json();
-
-            if (!response.ok) {
-                throw new Error(result.error || 'Sync failed');
-            }
-
-            // Update last synced timestamp
-            lastSyncedAt = result.synced_at;
-
-            // Reload the grammar data to show updated content
-            const params = new URLSearchParams(window.location.search);
-            const id = params.get('id') || params.get('deckId') || params.get('bookId');
-            const data = await loadGrammarData(grammarType, id);
-
-            if (data) {
-                grammarData = data;
-                items = normalizeItems(grammarType, data);
-                filteredItems = [...items];
-                renderHeader();
-                renderItems();
-            }
-
-            return result;
-        }
-
         // Update Edit/Copy buttons visibility based on auth state and community status
         function updateEditCopyButtons() {
             const editBtn = document.getElementById('edit-btn');
@@ -4860,10 +4810,20 @@
             if (copyBtn) {
                 // Purple "Edit" button (pen) beside Get a Reading — opens the recursive.eco
                 // editor (Create page) at this grammar's UUID. (Jun 25 2026.)
-                const penIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
-                copyBtn.innerHTML = penIcon + 'Edit';
-                copyBtn.title = 'Edit this grammar in the recursive.eco editor';
-                copyBtn.setAttribute('aria-label', 'Edit this grammar in the recursive.eco editor');
+                // Hidden on a _generated aggregator (meta grammar, people-of-tarot): it has no
+                // UUID of its own to edit, so openEditOnEco() silently fell back to a bare,
+                // context-free Create page — the same dead end fixed on the per-card button
+                // (Aug 22 2026), just one level up at the page header. Found in the builder's
+                // first-time-visitor audit.
+                if (grammarData?._generated) {
+                    copyBtn.style.display = 'none';
+                } else {
+                    copyBtn.style.display = '';
+                    const penIcon = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
+                    copyBtn.innerHTML = penIcon + 'Edit';
+                    copyBtn.title = 'Edit this grammar in the recursive.eco editor';
+                    copyBtn.setAttribute('aria-label', 'Edit this grammar in the recursive.eco editor');
+                }
             }
         }
 
@@ -4911,17 +4871,16 @@
                     || items.some(it => typeof it.number === 'number' && it.number >= 1 && it.number <= 64 && (it.binary || it.king_wen || it.trigram_above));
                 const looksLikeAstro = typeStr.includes('astro') || typeStr.includes('birthchart') || typeStr.includes('birth_chart')
                     || (grammarData && Array.isArray(grammarData.birth_charts) && grammarData.birth_charts.length > 0);
-                url = looksLikeIching ? `${flowBaseUrl}/?bookId=${id}`
-                    : looksLikeAstro ? `${flowBaseUrl}/?astroGrammarId=${id}`
-                    : `${flowBaseUrl}/?deckId=${id}`;
+                url = `${flowBaseUrl}/g/${id}?view=reading`;
             }
             window.open(url, '_blank', 'noopener');
         }
 
-        // One link: open THIS card's deck on recursive.eco's Play page — grammar loaded
-        // in the oracle sidebar, ready to cast (flow.recursive.eco/play?id=<uuid>).
-        async function openItemDeckOnEco() {
-            const flowBaseUrl = getFlowBaseUrl();
+        // Resolve the UUID of the deck the OPEN CARD belongs to. Slug-aware, so it
+        // is correct in the multi-deck / meta view where the open card's deck is
+        // NOT the page's deck — the single-deck resolver alone would return the
+        // wrong grammar there. Shared by both item-detail actions below.
+        async function resolveItemDeckId() {
             let id = null;
             const slug = selectedItem && selectedItem._deckSlug;   // the open card's deck (multi-deck view)
             if (slug) {
@@ -4929,7 +4888,31 @@
                 id = (ecoIds.ids || {})[slug] || null;
             }
             if (!id) id = await resolveDeckFlowId();   // single-deck fallback (?src=/?id=)
-            const url = id ? `${flowBaseUrl}/play?id=${id}` : `${flowBaseUrl}/play`;
+            return id;
+        }
+
+        // The item detail offers TWO deliberate jumps to the app, per the builder's
+        // Aug 18 2026 ruling: casting belongs in the Journal, editing in Create.
+        // (Reading a card that references another grammar stays in THIS viewer —
+        // that's the cross-link pill, a different thing entirely.)
+        //
+        // Cast — the deck loaded in the oracle, ready to draw.
+        async function openItemDeckOnEco() {
+            const flowBaseUrl = getFlowBaseUrl();
+            const id = await resolveItemDeckId();
+            const url = id ? `${flowBaseUrl}/g/${id}?view=reading` : `${flowBaseUrl}/play`;
+            window.open(url, '_blank', 'noopener');
+        }
+
+        // Edit — the ORIGINAL grammar in the Create editor, deliberately NOT a fork.
+        // Ownership is not asked here because the app already resolves it at save
+        // time: an owner's save writes through, a non-owner's becomes a pending edit
+        // for the owner to review. Asking twice could only produce disagreement.
+        // (The separate Copy icon is the explicit "give me my own copy" action.)
+        async function editItemDeckOnEco() {
+            const offerBaseUrl = getOfferBaseUrl();
+            const id = await resolveItemDeckId();
+            const url = id ? `${offerBaseUrl}/dashboard/unified/new?id=${id}&type=${grammarType}` : offerBaseUrl;
             window.open(url, '_blank', 'noopener');
         }
 
@@ -5033,32 +5016,16 @@
         }
 
         // ============================================================
-        // SIGN-IN MODAL FUNCTIONS (using shared signin-modal.js)
+        // SIGN-IN — this static site has no accounts of its own; recursive.eco
+        // (flow.recursive.eco) is the app that owns sign-in. window.SigninModal
+        // was never defined anywhere in this repo, so the old modal branch here
+        // was always dead code falling through to a "not available" alert.
+        // Send the visitor to the real app instead of faking a local sign-in.
         // ============================================================
 
         function openSigninModal() {
-            // Use the shared SigninModal component
-            if (window.SigninModal) {
-                SigninModal.open({
-                    title: 'Sign In',
-                    description: 'Sign in to copy or edit this grammar.',
-                    onSuccess: (user) => {
-                        currentUser = user;
-                        updateEditCopyButtons();
-
-                        // If there was a pending action, proceed with it
-                        if (pendingForkCardId !== undefined) {
-                            proceedToFork(pendingForkCardId);
-                            pendingForkCardId = undefined;
-                        } else if (pendingEditCardId !== undefined) {
-                            editCommunityGrammar(pendingEditCardId);
-                            pendingEditCardId = undefined;
-                        }
-                    }
-                });
-            } else {
-                console.warn('SigninModal not loaded');
-                alert('Sign in functionality not available. Please refresh the page.');
+            if (confirm('Sign in happens on flow.recursive.eco. Continue there now?')) {
+                window.open('https://flow.recursive.eco/', '_blank', 'noopener');
             }
         }
 
@@ -5085,9 +5052,9 @@
 ${reason}
 
 ---
-*Reported via astro.recursive.eco*`
+*Reported via iching.recursive.eco*`
             );
-            const url = `https://github.com/PlayfulProcess/recursive-starter/issues/new?labels=accuracy&title=${title}&body=${body}`;
+            const url = `https://github.com/PlayfulProcess/recursive-iching/issues/new?labels=accuracy&title=${title}&body=${body}`;
             window.open(url, '_blank', 'noopener');
             closeReportModal();
         }
@@ -5195,14 +5162,20 @@ ${reason}
                 return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(filename)}`;
             }
 
-            // Ensure Special:FilePath URLs have proper encoding (handles parentheses, etc.)
-            const filePathMatch = url.match(/^(https?:\/\/[^\/]+\/wiki\/Special:FilePath\/)(.+)$/);
+            // Ensure Special:FilePath URLs have proper encoding (handles parentheses, etc.).
+            // Only the FILENAME is encoded — the query string is split off first and re-appended
+            // verbatim. Encoding the whole tail turned `?width=900` into `%3Fwidth%3D900`, which
+            // Commons reads as part of the filename, so every sized rendition 404'd (caught
+            // Aug 8 2026, when the 36-Tattvas public-domain plates went in: the full-size
+            // originals are 3000px museum scans, so a width cap is not optional).
+            const filePathMatch = url.match(/^(https?:\/\/[^\/]+\/wiki\/Special:FilePath\/)([^?#]+)(\?[^#]*)?(#.*)?$/);
             if (filePathMatch) {
                 const baseUrl = filePathMatch[1];
                 const filename = filePathMatch[2];
+                const query = filePathMatch[3] || '';
                 try {
                     const decodedFilename = decodeURIComponent(filename);
-                    return baseUrl + encodeURIComponent(decodedFilename);
+                    return baseUrl + encodeURIComponent(decodedFilename) + query;
                 } catch (e) {
                     // If decoding fails, use the original URL
                 }
@@ -5314,15 +5287,25 @@ ${reason}
             // (inline styles) so it looks right in any themed viewer.
             if (!s) return '';
             const esc = x => x.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-            const inline = t => esc(t)
+            // Bare http(s) URLs → anchors. Runs FIRST, on escaped plain text, and only after a
+            // space or line start, so a markdown link's "(target)" is untouched and nothing gets
+            // linked twice. Trailing sentence punctuation stays outside the href.
+            const linkifyBare = t => t.replace(/(^|\s)(https?:\/\/[^\s<>"']+)/g, (m, pre, url) => {
+                const tl = url.match(/[).,;:!?]+$/); const tail = tl ? tl[0] : '';
+                if (tail) url = url.slice(0, -tail.length);
+                return `${pre}<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>${tail}`;
+            });
+            const inline = t => linkifyBare(esc(t))
                 .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" style="max-width:100%;height:auto;margin:8px 0;border-radius:8px;">')
-                .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+                // A markdown target may already be wrapped by linkifyBare — unwrap, then anchor.
+                .replace(/\[([^\]]+)\]\(\s*(?:<a href="([^"]+)"[^>]*>[^<]*<\/a>|([^)\s]+))\s*\)/g,
+                    (m, text, wrapped, plain) => `<a href="${wrapped || plain || ''}" target="_blank" rel="noopener noreferrer">${text}</a>`)
                 .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
                 .replace(/`([^`]+)`/g, '<code>$1</code>')
                 // Research-source paths (e.g. `research/cards/foo.md`) become GitHub links —
                 // every "Research note" points at its dossier on GitHub, app-wide.
                 .replace(/<code>(research\/[^<\s]+?\.md)<\/code>/g,
-                    '<a href="https://github.com/PlayfulProcess/recursive-starter/blob/main/$1" target="_blank" rel="noopener noreferrer" title="View research source on GitHub">$1 ↗</a>')
+                    '<a href="https://github.com/PlayfulProcess/recursive-iching/blob/main/$1" target="_blank" rel="noopener noreferrer" title="View research source on GitHub">$1 ↗</a>')
                 .replace(/(^|[^*])\*([^*\n]+)\*/g, '$1<em>$2</em>');
             const lines = String(s).split(/\r?\n/);
             let html = '', inList = false, inQuote = false, m;
@@ -5808,56 +5791,13 @@ ${reason}
     </script>
 
     <!-- Sign-in Modal HTML removed - using shared signin-modal.js component which injects its own HTML -->
-    <!-- Library Assistant (iframe from flow app) -->
-    <style>
-        .assistant-toggle {
-            position: fixed; bottom: 1.5rem; right: 1.5rem; z-index: 40;
-            background: linear-gradient(135deg,#8e4a74,#5f2a4c); color: white; border: none; border-radius: 9999px;
-            width: 56px; height: 56px; cursor: pointer; box-shadow: 0 4px 12px rgba(156,59,42,0.4);
-            display: flex; align-items: center; justify-content: center; transition: all 0.2s;
-        }
-        .assistant-toggle:hover { background: linear-gradient(135deg,#a05986,#4e2340); transform: scale(1.05); }
-        .assistant-frame-container {
-            position: fixed; bottom: 5.5rem; right: 1.5rem; z-index: 40;
-            width: 384px; max-width: calc(100vw - 2rem); height: 500px; max-height: 70vh;
-            border-radius: 0.75rem; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            border: 1px solid #4a4439; display: none;
-        }
-        .assistant-frame-container.open { display: block; }
-        .assistant-frame-container iframe { width: 100%; height: 100%; border: none; }
-    </style>
-    <button class="assistant-toggle" id="assistant-toggle" title="Ask the AI" aria-label="Ask the AI" onclick="toggleAssistant()" style="display:none;">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 4l1.4 5.1L18.5 11l-5.1 1.5L12 17l-1.4-4.5L5.5 11l5.1-1.9z"/>
-        </svg>
-    </button>
-    <div class="assistant-frame-container" id="assistant-frame">
-    </div>
-    <script>
-        async function toggleAssistant() {
-            const frame = document.getElementById('assistant-frame');
-            const isOpen = frame.classList.toggle('open');
-            if (!isOpen || frame.querySelector('iframe')) return;
-            // Logged-out users get a clear sign-in prompt instead of a confused anonymous iframe
-            let user = null;
-            try { user = await window.recursiveAuth?.getUser?.(); } catch (e) {}
-            if (!user) {
-                frame.innerHTML = `<div style="height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#faf8f3;color:#4a4439;font-family:-apple-system,'Segoe UI',sans-serif;font-size:14px;text-align:center;padding:24px">
-                    <div style="font-size:28px"><rt-icon name="message"></rt-icon></div>
-                    <div>The Library Assistant needs a free<br><b>recursive.eco</b> account.</div>
-                    <a href="${getFlowBaseUrl()}/?signin=1" target="_blank" rel="noopener" style="background:#9c3b2a;color:#fff;text-decoration:none;padding:8px 18px;border-radius:8px;font-weight:600">Sign in ↗</a>
-                    <small style="color:#7c7596">Sign in, then reopen this bubble.</small></div>`;
-                return;
-            }
-            frame.innerHTML = '';
-            // Lazy-load iframe on first open
-            const grammarId = new URLSearchParams(window.location.search).get('id') || '';
-            const context = document.title.includes('Study') ? 'study' : document.title.includes('Tree') ? 'tree' : 'cards';
-            const iframe = document.createElement('iframe');
-            iframe.src = `${getFlowBaseUrl()}/assistant?grammar_id=${grammarId}&context=${context}`;
-            frame.appendChild(iframe);
-        }
-    </script>
+    <!-- AI assistant: the ONE shared recursive.eco shell (assistant.js) — same
+         star FAB + tabbed sidebar as index.html/deck.html. The hand-rolled plum
+         sparkle-toggle + bare /assistant iframe that used to live here was
+         retired Jul 15 2026: it opened as a second, dead-end sparkle shell next
+         to the real launcher. assistant.js picks up ?id= as the grammar to
+         ground on, and its top-window guard keeps it out of embeds. -->
+    <script src="../assistant.js" defer></script>
 
 </body>
 </html>

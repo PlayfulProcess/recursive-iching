@@ -1,5 +1,130 @@
 # Changelog — The Recursive I Ching
 
+## Merged October 5, 2026 — what is new, and what was not thoroughly verified
+
+PlayfulProcess merged the cloud session's work (Oct 1–4) and the Desktop check of Oct 5. New, and
+not thoroughly verified:
+
+- **The Tree of the Changes** (`grammars/tree-of-the-iching`): 33 books written with AI. 45 claims
+  are still ◇ (from memory, unchecked) and 9 are ◆ (sources disagree). The marks on each claim say
+  which is which; the timeline and the genealogy show the same marks.
+- **The two history courses** are written with AI from that grammar, so they carry the same doubts.
+- **The genealogy's edges** are the page's own simplification, not a historian's.
+- **`viewers/dialogue.html`** is an unlisted prototype, not tested with readers.
+- **`docs/DECIDE-books-and-grammars.md`** lists decisions that are still open.
+
+## October 5, 2026 — The Tree of the Changes: the ◇ claims checked, low-confidence books first
+
+The handover's first Desktop job. Sources a Desktop session could reach: the scan of the 1834 Latin
+edition, a Stanford catalogue record, and English, Chinese and German Wikipedia, each cited by revision.
+Smith (2008) and Shaughnessy (2014) were not opened; what only they could settle stays ◇.
+
+- **Counts (claims in the sections):** ◇ 57 → 45; ✔ 48 → 78; ◆ 3 → 9; ○ 0 → 3. Guicang, Jing Fang and
+  the excavated-texts translations are no longer `low`.
+- **Corrections:**
+  - the Tsinghua Shifa was published in January 2014 (volume 4), not 2013;
+  - Wilhelm finished his translation in Beijing, and translated from the Kangxi-era *Zhouyi zhezhong*;
+  - the Jing Fang node had said Wikipedia "gives no dates"; its lead gives 78–37 BC.
+- **Now contested (◆), with both sources:**
+  - Jing Fang's dates (77 or 78 BCE);
+  - whether the eight palaces are his (one study credits another school);
+  - Wilhelm's year (1924 in German Wikipedia and the Diederichs title, 1923 in English Wikipedia);
+  - the end year of the *Gushi bian* (1941 or 1944);
+  - Shaughnessy's Mawangdui translation (1996 or 1997).
+- **Régis:** the 1834 preface names the other hands: Joseph de Mailla (word for word, against the
+  Manchu) and Pierre du Tartre (the historical explanation).
+- **Still ◇:**
+  - the years of Hu Wei's book (1706) and of the *Zhezhong* (1715), and whether Legge used it;
+  - the Shifa's numbers;
+  - McClatchie's keys and Legge's response;
+  - whether Dick plotted by casting;
+  - how Rutt and Redmond translate *zhen*.
+
+
+## October 4, 2026 (later) — The Tree of the Changes: a history in books, a timeline, a genealogy, two courses
+
+PlayfulProcess asked for the I Ching's history, the way tarot has a genealogy and a timeline,
+"one book per node", with courses on the books and the translations.
+
+- **`grammars/tree-of-the-iching`** (new) has 33 books, 8 branches and a root, in the shape of
+  tarot's `tree-of-tarot`.
+  - It runs from numbers on bone, through the Zhouyi, the Ten Wings and the Han canon, the
+    commentators (images and numbers, meanings and principles, Daoist), and the tombs, to Régis,
+    Legge, Wilhelm and Baynes.
+  - Every node says what it is, **what it changed in the text**, and where each claim comes from
+    (`[@key]` into a root `bibliography`, with a `marks` legend: ✔ ○ ◆ ◇).
+  - Checked against Wikipedia (18 articles, cited by revision), the repo's own records and Legge's
+    text. **57 claims are still ◇ (from memory)** and are listed for the next pass.
+  - Nodes held in the library link to their grammar (`metadata.grammar_slug`).
+- **`viewers/timeline.html`** is now recursive-tarot's current timeline (it had been the old copy
+  that plotted grammars). It reads the tree.
+  - Changed for this repo: BCE years from `metadata.year`, and a scale of 0.75 px per year, since
+    the span is 3,000 years.
+  - Lanes run in historical order, and each label stays inside its lane.
+  - On a phone the rail scrolls sideways inside its box; the page never does.
+  - Citations render as links.
+- **`viewers/genealogy-tree.html`** (new) is tarot's radial genealogy over the same tree. Its
+  menu entry is "Genealogy of the books".
+- **Two courses**, read live from the tree through `pages/course-viewer.html`:
+  - *The Books of the Changes*: all 33 books, oldest first, with an introduction on the four
+    changes;
+  - *How the Translators Changed the Text*: the translation and reception nodes, with an
+    introduction on the three choices every translation makes, and the word zhen.
+- **The course viewer** gained:
+  - `chapterWhere` (filter chapters by metadata);
+  - `[@key]` citations and paragraphs;
+  - a `when` pill;
+  - an intro on chapter 1;
+  - an "Open this book in the library" link.
+
+  Its chapter links now keep `?course=`; before, every link fell back to the default course.
+- `build_collection.py` has a "History" branch for the tree.
+- **`docs/DECIDE-books-and-grammars.md`** (new): the history applied to the open decisions
+  (one book per node, languages as sections), which nodes could become books here (public domain),
+  and what's left to check.
+- Checked headless at 1280 and 375 px: the timeline, the genealogy, both courses and the home page
+  load with no errors and no sideways page scroll. Detail panels open, citations link. `check.py`
+  passes (10 grammars).
+
+## October 4, 2026 — Ready to connect (mostly), and a prototype: reading as dialogue
+
+**Connecting to recursive.eco** (`docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md`, new "Findings" section):
+- Each folder was compared with the app's grammars over the MCP (read-only) and a mapping
+  proposed. Six decisions are left for PlayfulProcess; `ids.json` stays empty until she makes them.
+- `ten-wings` does **not** match the private `a172fed6`: that one is a Chinese-only companion of
+  `0f8f4088`, and mapping them would duplicate every item.
+- The stale `recursive-starter` repo name is gone from the builder, the collection, the header,
+  the footer, the home page, the tree viewer and the README. Header cache is now `?v=47`, footer
+  `?v=2`.
+- Every hexagram item carries `metadata.number`. 76 were missing it: 12 in `repair-iching`,
+  64 in `three-lenses-64`.
+- `viewers/cards.html` is now recursive-tarot's current viewer (Sep 26), with only paths, accent
+  (`#9c3b2a`), branding and default grammar changed. `viewers/item-shape.js` (ported unchanged
+  from recursive-eco c164d95) decides I Ching / tarot / plain from the data.
+  `viewers/reference-resolve.js` is copied from tarot.
+  - Checked headless at 1280 and 375 px on all nine grammars: they render with no errors, and
+    the hexagram detail opens.
+  - `three-lenses-64` now shows the plain theme, because its items carry no binary or trigrams.
+- `check.py` passes again (it had 26 failures on main):
+  - `build_meta_iching.py` now prefixes a copied group's `composite_of`;
+  - `build_book_grammar.py` writes `grammar_type: "custom"` (`book` isn't a platform type).
+
+**Reading as dialogue (prototype):** `docs/DESIGN-reading-as-dialogue.md` and
+`viewers/dialogue.html`. Not in the menu yet.
+- A real cast (coins in the page, or your own six numbers) is followed by passages offered in
+  rings: the whole figure, the two trigrams, the moving lines, where it may be turning.
+- You mark "This speaks to me" or "Not this", and the choices are the reading.
+- It is kept in the browser, or downloaded as a selection of pointers (grammar, item, section).
+- `caster-engine.js` gains `castLineNumber` / `castLines` (6–9); `castLineValue` and its odds are
+  unchanged.
+- Checked:
+  - 160,000-draw counts match the coin (1/8, 3/8, 3/8, 1/8) and yarrow (1/16, 5/16, 7/16, 3/16)
+    odds;
+  - `determinism-check.js` passes;
+  - a typed cast 8 7 9 8 6 7 gives 18 → 59 with lines 3 and 5 moving, which is correct;
+  - headless at 1280 and 375 px.
+- `docs/FOR-THE-PLATFORM.md` (new) lists what recursive.eco would need to make this a feature.
+
 ## September 23, 2026 — The 64 Hexagrams now carry Legge, not Wilhelm/Baynes
 
 A third-party audit compared `i-ching-summarized` against the known translations. Its Judgment,

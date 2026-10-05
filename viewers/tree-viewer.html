@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tree View — Recursive I Ching</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- ── Static-mode shim (recursive-starter drift, no backend) ──
+    <!-- ── Static-mode shim (recursive-starter copy, no backend) ──
          The recursive.eco viewer expects Supabase + the app shell. Here we run
          self-contained on GitHub Pages: stub the auth/Supabase client (no remote
          reads), and register lightweight site-header / site-footer / ViewModeDropdown
@@ -27,7 +27,7 @@
         class RTFooter extends HTMLElement {
             connectedCallback() {
                 this.innerHTML = `<footer style="padding:18px;border-top:1px solid var(--line);color:#6b6457;font-size:12px;text-align:center;">
-                    Public-domain source texts &amp; original research · <a href="https://github.com/PlayfulProcess/recursive-starter" target="_blank" rel="noopener" style="color:#9c3b2a;">recursive-starter</a> · companion to <a href="https://recursive.eco" target="_blank" rel="noopener" style="color:#9c3b2a;">recursive.eco</a>
+                    Public-domain source texts &amp; original research · <a href="https://github.com/PlayfulProcess/recursive-iching" target="_blank" rel="noopener" style="color:#9c3b2a;">recursive-iching</a> · companion to <a href="https://recursive.eco" target="_blank" rel="noopener" style="color:#9c3b2a;">recursive.eco</a>
                 </footer>`;
             }
         }
@@ -42,7 +42,7 @@
         };
     })();
     </script>
-    <script src="../site-header.js?v=46"></script>
+    <script src="../site-header.js?v=47"></script>
     <script src="../view-switcher.js?v=12"></script>
     <style>
         :root {

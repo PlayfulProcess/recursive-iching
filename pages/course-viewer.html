@@ -60,10 +60,13 @@
   a{color:var(--accent)}
   #loading, #err{color:var(--muted);font-size:14px}
   #err{color:#a3402d}
+  .cite{font-size:.85em;color:var(--muted)}
+  .cite a{color:inherit}
+  .sec.intro{border-left:3px solid var(--accent);padding-left:14px}
 </style>
 </head>
 <body>
-<script src="../site-header.js?v=46"></script>
+<script src="../site-header.js?v=47"></script>
 <site-header active="course"></site-header>
 <div class="wrap">
   <aside>
@@ -118,11 +121,17 @@ const mdLite = s => esc(s).replace(/\*(.+?)\*/g, '<em>$1</em>').replace(/`(.+?)`
 // grammar, no viewer edit.
 const COURSES = {
   'three-lenses': { manifest: '../course/three-lenses.manifest.json' },
+  'books-of-the-changes': { manifest: '../course/books-of-the-changes.manifest.json' },
+  'translations': { manifest: '../course/translations.manifest.json' },
 };
 async function main(){
   let manifest, grammar, ids;
-  const courseSlug = new URLSearchParams(location.search).get('course') || 'three-lenses';
-  const course = COURSES[courseSlug] || COURSES['three-lenses'];
+  const courseParam = new URLSearchParams(location.search).get('course');
+  const courseSlug = COURSES[courseParam] ? courseParam : 'three-lenses';
+  const course = COURSES[courseSlug];
+  // Every in-course link keeps ?course= (before Oct 4 2026 the TOC dropped it, which only
+  // worked because there was one course).
+  const chapterHref = id => 'course-viewer.html?course=' + encodeURIComponent(courseSlug) + '&chapter=' + encodeURIComponent(id);
   try {
     manifest = await fetch(course.manifest).then(r => { if(!r.ok) throw new Error('manifest '+r.status); return r.json(); });
     // The manifest names its source grammar; fall back to the three-lenses grammar for the default course.
@@ -143,7 +152,13 @@ async function main(){
 
   document.title = manifest.title + ' — The Recursive I Ching';
 
-  const chapterItems = grammar.items.filter(it => it.id.startsWith(manifest.chapterIdPrefix));
+  // Optional manifest.chapterWhere: { metadataKey: [allowed values] } narrows the chapters
+  // (the translations course is the tree's translation nodes only). Chapters follow sort_order.
+  const where = manifest.chapterWhere || {};
+  const passes = it => Object.entries(where).every(([k, vals]) => vals.includes((it.metadata || {})[k]));
+  const chapterItems = grammar.items.filter(it => it.id.startsWith(manifest.chapterIdPrefix) && passes(it))
+    .sort((a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0));
+  const BIB = Object.fromEntries((grammar.bibliography || []).map(b => [b.key, b]));
   const appendixItems = grammar.items.filter(it => it.id.startsWith(manifest.appendixIdPrefix));
   const allItems = chapterItems.concat(appendixItems);
   const byId = Object.fromEntries(allItems.map(it => [it.id, it]));
@@ -163,7 +178,7 @@ async function main(){
   const toc = $('#toc');
   chapterItems.forEach((it, i) => {
     const a = document.createElement('a');
-    a.href = 'course-viewer.html?chapter=' + encodeURIComponent(it.id);
+    a.href = chapterHref(it.id);
     a.className = it.id === current.id ? 'active' : '';
     a.innerHTML = `<span class="toc-num">${i + 1}.</span> ${it.name}`;
     toc.appendChild(a);
@@ -174,7 +189,7 @@ async function main(){
     label.textContent = manifest.appendixTitle || 'Patterns across eras'; toc.appendChild(label);
     appendixItems.forEach(it => {
       const a = document.createElement('a');
-      a.href = 'course-viewer.html?chapter=' + encodeURIComponent(it.id);
+      a.href = chapterHref(it.id);
       a.className = it.id === current.id ? 'active' : '';
       a.textContent = it.name;
       toc.appendChild(a);
@@ -190,6 +205,7 @@ async function main(){
 
   const metaRow = $('#meta-row');
   metaRow.innerHTML = '';
+  if (meta.when) metaRow.innerHTML += `<span class="pill">${esc(meta.when)}</span>`;
   if (meta.era) metaRow.innerHTML += `<span class="pill">${esc(meta.era)}</span>`;
   if (meta.region) metaRow.innerHTML += `<span class="pill">${esc(meta.region)}</span>`;
   if (meta.stance) metaRow.innerHTML += `<span class="pill">${esc(meta.stance.replace(/-/g,' '))}</span>`;
@@ -199,7 +215,18 @@ async function main(){
   const sections = current.sections || {};
   const orderedKeys = order.filter(k => sections[k]).concat(Object.keys(sections).filter(k => !order.includes(k)));
   const content = $('#content');
-  content.innerHTML = orderedKeys.map(k => `<div class="sec"><h2>${esc(k)}</h2><p>${mdLite(sections[k])}</p></div>`).join('');
+  // [@key] citations become links to the grammar's bibliography; blank lines become paragraphs.
+  const cite = h => h.replace(/\[@([^\]]+)\]/g, (m, keys) => '<span class="cite">[' + keys.split(';').map(k => {
+    k = k.trim().replace(/^@/, ''); const b = BIB[k]; if (!b) return esc(k);
+    const label = esc((b.author || k).replace(/\s*\(.*\)/, '') + (b.year ? ' ' + b.year : ''));
+    return b.url ? `<a href="${esc(b.url)}" target="_blank" rel="noopener">${label}</a>` : label;
+  }).join('; ') + ']</span>');
+  const links = h => h.replace(/\[([^\]@][^\]]*)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>');
+  const para = t => String(t).split(/\n{2,}/).map(p => `<p>${cite(links(mdLite(p)))}</p>`).join('');
+  const first = !isAppendix && chapterItems[0] && current.id === chapterItems[0].id;
+  content.innerHTML = (first && manifest.intro ? `<div class="sec intro">${para(manifest.intro)}</div>` : '')
+    + orderedKeys.map(k => `<div class="sec"><h2>${esc(k)}</h2>${para(sections[k])}</div>`).join('')
+    + (meta.grammar_slug ? `<p><a class="eco-chip" href="../viewers/cards.html?src=${encodeURIComponent('../grammars/' + meta.grammar_slug + '/grammar.json')}">Open this book in the library →</a></p>` : '');
 
   // —— companion links (primary-source grammars, from ids.json) ——
   const companionSlugs = (manifest.companions || {})[current.id] || [];
@@ -238,13 +265,13 @@ async function main(){
   navrow.innerHTML = '';
   if (prev) {
     const a = document.createElement('a');
-    a.className = 'navbtn prev'; a.href = 'course-viewer.html?chapter=' + encodeURIComponent(prev.id);
+    a.className = 'navbtn prev'; a.href = chapterHref(prev.id);
     a.innerHTML = `<span class="dir">← Previous</span><span class="ttl">${esc(prev.name)}</span>`;
     navrow.appendChild(a);
   }
   if (next) {
     const a = document.createElement('a');
-    a.className = 'navbtn next'; a.href = 'course-viewer.html?chapter=' + encodeURIComponent(next.id);
+    a.className = 'navbtn next'; a.href = chapterHref(next.id);
     a.innerHTML = `<span class="dir">Next →</span><span class="ttl">${esc(next.name)}</span>`;
     navrow.appendChild(a);
   }
@@ -255,7 +282,7 @@ async function main(){
 main();
 </script>
 
-<script src="../site-footer.js?v=1"></script>
+<script src="../site-footer.js?v=2"></script>
 <script src="../assistant.js" defer></script>
 <site-footer base="../"></site-footer>
 </body>

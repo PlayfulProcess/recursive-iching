@@ -49,7 +49,7 @@
         '<div class="links"><a href="https://recursive.eco" target="_blank" rel="noopener">recursive.eco ↗</a> · '+
         '<a href="'+base+'index.html#all-grammars">All grammars</a> · '+
         '<a href="'+base+'pages/course-viewer.html?course=three-lenses">Course</a> · '+
-        '<a href="https://github.com/PlayfulProcess/recursive-starter" target="_blank" rel="noopener">the repo</a></div>'+
+        '<a href="https://github.com/PlayfulProcess/recursive-iching" target="_blank" rel="noopener">the repo</a></div>'+
         '</div>';
       var f=this.querySelector('#ric-news'), msg=this.querySelector('#ric-msg');
       f.addEventListener('submit', async function(e){

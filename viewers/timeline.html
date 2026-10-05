@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="../theme.css?v=3">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Recursive I Ching Timeline</title>
+<title>The Changes Through Time — a timeline of the books · Recursive I Ching</title>
 <style>
   :root{
           
@@ -21,7 +21,7 @@
   .toolbar button,.toolbar label{background:var(--panel);color:var(--ink);border:1px solid var(--line);
     border-radius:8px;padding:6px 11px;font-size:12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
   .toolbar button:hover{border-color:var(--accent);color:var(--accent)}
-  #scroll{flex:1;overflow-y:auto;overflow-x:hidden;position:relative}
+  #scroll{flex:1;overflow-y:auto;overflow-x:auto;position:relative}
   svg{display:block;width:100%}
   .axis path,.axis line{stroke:var(--line)}
   .axis text{fill:var(--muted);font-size:11px}
@@ -70,18 +70,20 @@
   body.embed #scroll{overflow:visible;flex:none}
   /* in the (light) book, force the embed light regardless of the reader's OS theme */
   body.embed{        }
+  .cite{font-size:.85em;color:var(--muted)}
+  .cite a{color:inherit}
 </style>
 </head>
 <body>
-<script src="../site-header.js?v=46"></script>
+<script src="../site-header.js?v=47"></script>
 <script src="../view-switcher.js?v=12"></script>
 <site-header active="timeline"></site-header>
 <div class="wrap">
   <div id="stage">
     <div class="toolbar">
-      <div class="title">Timeline <span class="sub">— the grammars in this collection, by branch</span></div>
-      <view-switcher active="timeline"></view-switcher>
+      <div class="title">The Changes Through Time <span class="sub">— one book per node, descent on the rail</span></div>
       <button id="flip">↑ Oldest first</button>
+      <label class="lbl-descent"><input type="checkbox" id="toggle-derive" checked> Descent</label>
     </div>
     <div id="scroll"><svg id="svg"></svg><div id="err" style="display:none"></div></div>
     <div class="legend" id="legend"></div>
@@ -92,17 +94,17 @@
 <script src="dimension-engine.js?v=1"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script>
-// Branch colours mirror grammars/_collection.json's four curated branches (see
-// scripts/build_collection.py) — NOT a genealogy: unlike tarot's decks, these
-// grammars don't descend from one another, so there is no derives_from rail here.
-const BRANCH_RAW={'primary-sources':'#9c3b2a','synthesis':'#3f7a5c','readings':'#6d8ec9'};
-const BRANCH_LABEL={'primary-sources':'Primary sources','synthesis':'Synthesis','readings':'Readings'};
-const PALETTE=['#9c3b2a','#3f7a5c','#b5651d','#6d8ec9','#9b6dc9','#c96d9b','#6b6457','#4db6ac','#e57373'];
+const BRANCH_RAW={'branch-roots':'#b08d57','branch-zhou':'#9c3b2a','branch-canon':'#c96d3b','branch-numbers':'#6d8ec9','branch-meanings':'#5b8a72','branch-dao':'#8a6bb0','branch-west':'#b0566e','branch-modern':'#4a7a8c'};
+const BRANCH_LABEL={'branch-roots':'Before the book','branch-zhou':'Zhou oracle','branch-canon':'Wings & canon','branch-numbers':'Numbers','branch-meanings':'Meanings','branch-dao':'Daoist','branch-west':'Translations','branch-modern':'Excavations'};
+const PALETTE=['#c9a24b','#e07a5f','#81b29a','#6d8ec9','#9b6dc9','#c96d9b','#9c3b2a','#6b6457','#4db6ac','#e57373'];
+// The node -> library grammar link lives in the data (metadata.grammar_slug), not in a map here.
+const slugOf=id=>((itemMap&&itemMap[id]&&itemMap[id].metadata)||{}).grammar_slug||null;
 
 const params=new URLSearchParams(location.search);
+const SRC=params.get('src')||'../grammars/tree-of-the-iching/grammar.json';
 const EMBED=params.get('embed');
 if(EMBED) document.body.classList.add('embed');
-function postHeight(){ if(!EMBED) return; try{ parent.postMessage({type:'icEmbedHeight',h:Math.ceil(document.body.scrollHeight)},'*'); }catch(e){} }
+function postHeight(){ if(!EMBED) return; try{ parent.postMessage({type:'ichingEmbedHeight',h:Math.ceil(document.body.scrollHeight)},'*'); }catch(e){} }
 if(EMBED) window.addEventListener('load',()=>setTimeout(postHeight,90));
 
 // The CSS assumes a 52px <site-header>, but the real custom element renders
@@ -119,9 +121,16 @@ function fitWrap(){
 fitWrap();
 window.addEventListener('resize',fitWrap);
 window.addEventListener('orientationchange',()=>setTimeout(fitWrap,200));
-let itemMap={}, decks=[], hidden=new Set(), oldestFirst=true, laneField='branch';
+let itemMap, decks, hidden=new Set(), oldestFirst=true, laneField='branch';
 let currentPlaced=[]; // display order (chronological, current direction+filters) for prev/next paging
 let laneValues=[], colorOf={};   // set by buildLaneFromField()
+
+function fmtYear(y){ y=Math.round(+y); return y<0 ? (-y)+' BCE' : (y<1000 ? y+' CE' : String(y)); }
+let BIB={};
+function cite(html){ return html.replace(/\[@([^\]]+)\]/g,(m,keys)=>'<span class="cite">['+keys.split(';').map(k=>{k=k.trim().replace(/^@/,''); const b=BIB[k]; if(!b) return esc(k); const label=esc((b.author||k).replace(/\s*\(.*\)/,'')+(b.year?' '+b.year:'')); return b.url?`<a href="${esc(b.url)}" target="_blank" rel="noopener">${label}</a>`:label;}).join('; ')+']</span>'); }
+function parseYear(when){ if(!when) return null;
+  let m=String(when).match(/\b(1[2-9]\d{2}|20\d{2})\b/); if(m) return +m[1];
+  m=String(when).match(/(\d{1,2})\s*(?:st|nd|rd|th)?\s*c\b/i); if(m) return (+m[1]-1)*100+50; return null; }
 
 // Extract a field value from a deck for the current laneField
 function laneOf(d){
@@ -131,7 +140,8 @@ function laneOf(d){
 
 // Build laneValues + colorOf from current decks + laneField
 function buildLaneFromField(){
-  const vals=[...new Set(decks.map(laneOf).filter(v=>v&&v!=='—'))].sort(DimensionEngine.smartCmp);
+  const ORDER=Object.keys(BRANCH_RAW);   // branches in the order the history runs, not alphabetical
+  const vals=[...new Set(decks.map(laneOf).filter(v=>v&&v!=='—'))].sort((x,y)=>laneField==='branch'?ORDER.indexOf(x)-ORDER.indexOf(y):DimensionEngine.smartCmp(x,y));
   laneValues=vals.length?vals:['—'];
   colorOf={};
   laneValues.forEach((v,i)=>{ colorOf[v]=laneField==='branch'?(BRANCH_RAW[v]||PALETTE[i%PALETTE.length]):PALETTE[i%PALETTE.length]; });
@@ -140,24 +150,25 @@ function buildLaneFromField(){
 
 (async function init(){
   try{
-    const SRC='../grammars/_collection.json';
     const r=await fetch(SRC); if(!r.ok) throw new Error('Could not load '+SRC+' ('+r.status+')');
-    const col=await r.json(); const grammars=col.grammars||[];
-    // Only the grammars with a genuine historical anchor date (set in
-    // scripts/build_collection.py's YEARS table) plot here — same honesty rule
-    // tarot used for its "Contemporary decks" (undated) grouping: an undated
-    // synthesis/casting/reading is real content, just not a timeline node.
-    decks=grammars.filter(g=>g.year!=null).map(g=>({
-      id:g.slug,name:g.name,when:g.year_label||'',year:g.year,
-      branch:g.branch,derives:[],image:g.cover_image_url,
-      sections:{'Overview':g.blurb||''}
-    }));
-    itemMap=Object.fromEntries(decks.map(d=>[d.id,d]));
-    // Lane by branch — the only field with more than one value here.
+    const g=await r.json(); const items=g.items||[];
+    (g.bibliography||[]).forEach(b=>{ BIB[b.key]=b; });
+    itemMap=Object.fromEntries(items.map(i=>[i.id,i]));
+    decks=items.filter(i=>i.id.startsWith('book-')).map(i=>{
+      const md=i.metadata||{};
+      const d={id:i.id,name:i.name,when:md.when||'',year:(typeof md.year==='number'?md.year:parseYear(md.when)),
+               branch:md.branch,derives:md.derives_from||[],image:i.image_url,sections:i.sections||{}};
+      // copy all metadata fields onto deck record for lane discovery
+      Object.entries(md).forEach(([k,v])=>{ if(typeof v==='string'&&v.length<60) d[k]=v; });
+      return d;
+    }).filter(d=>d.year!=null);
+
+    // Lane by branch — the only deck field with more than one value, so the old picker was a no-op.
     laneField='branch';
   }catch(e){ document.getElementById('err').style.display='block'; document.getElementById('err').textContent=e.message; return; }
   buildLaneFromField(); buildLegend(); draw();
   window.addEventListener('resize',draw);
+  document.getElementById('toggle-derive').addEventListener('change',draw);
   document.getElementById('flip').addEventListener('click',()=>{ oldestFirst=!oldestFirst;
     document.getElementById('flip').textContent=oldestFirst?'↑ Oldest first':'↓ Newest first'; draw(); });
   document.addEventListener('keydown',(e)=>{
@@ -172,12 +183,14 @@ function visible(){ return decks.filter(d=>!hidden.has(laneOf(d))); }
 
 function draw(){
   const scroll=document.getElementById('scroll');
-  const W=Math.max(560, scroll.clientWidth||900);
+  // Eight lanes need about 92px each: on a phone the rail scrolls sideways inside #scroll
+  // instead of shrinking until the lane names overlap (the page itself never scrolls sideways).
+  const W=Math.max(scroll.clientWidth||900, 56+110+laneValues.length*92);
   const data=visible();
   if(!data.length){ d3.select('#svg').selectAll('*').remove(); return; }
   const years=d3.extent(data,d=>d.year);
   const span=Math.max(1, years[1]-years[0]);
-  const PXY=1.9;                                   // px per year → real gaps are visible
+  const PXY=0.75;                                  // px per year → real gaps are visible (3,000 years here, so less than tarot's 1.9)
   const padTop=42, padBot=40, axisW=56;
   const innerH=Math.max(360, span*PXY);
   const H=padTop+innerH+padBot;
@@ -187,19 +200,19 @@ function draw(){
   const laneW=(W-axisW-rightGutter)/Math.max(1,lanes.length);
   const laneX=v=>axisW + lanes.indexOf(v)*laneW + laneW*0.18;
 
-  const svg=d3.select('#svg').attr('viewBox',[0,0,W,H]).attr('height',H); svg.selectAll('*').remove();
+  const svg=d3.select('#svg').attr('viewBox',[0,0,W,H]).attr('height',H).attr('width',W).style('width',W+'px').attr('preserveAspectRatio','xMinYMin meet'); svg.selectAll('*').remove();
 
   // year gridlines + axis (proportional → blank space = real time gaps)
   const nTicks=Math.min(14, Math.max(4, Math.round(span/45)));
   svg.append('g').selectAll('line').data(y.ticks(nTicks)).join('line').attr('class','gridline')
     .attr('x1',axisW).attr('x2',W-8).attr('y1',d=>y(d)).attr('y2',d=>y(d));
   svg.append('g').attr('class','axis').attr('transform',`translate(${axisW},0)`)
-    .call(d3.axisLeft(y).tickFormat(d3.format('d')).ticks(nTicks));
+    .call(d3.axisLeft(y).tickFormat(fmtYear).ticks(nTicks));
   // lane headers (discovered field values)
   svg.append('g').selectAll('text').data(lanes).join('text')
     .attr('x',v=>laneX(v)).attr('y',20).attr('fill',v=>colorOf[v]||'#6b6457')
     .style('font-size','11px').style('font-weight','700')
-    .text(v=>(laneField==='branch'?(BRANCH_LABEL[v]||v):v).replace(/\s*\(.*\)/,'').slice(0,14));
+    .text(v=>(laneField==='branch'?(BRANCH_LABEL[v]||v):v).replace(/\s*\(.*\)/,'').slice(0,15));
   svg.append('g').selectAll('rect').data(lanes).join('rect')   // faint lane tint
     .attr('x',v=>axisW+lanes.indexOf(v)*laneW).attr('y',padTop-8).attr('width',laneW-2).attr('height',innerH+16)
     .attr('fill',v=>colorOf[v]||'#6b6457').attr('opacity',0.04);
@@ -215,17 +228,24 @@ function draw(){
   currentPlaced=placed;
   const byId=Object.fromEntries(placed.map(p=>[p.id,p]));
 
-  // No descent rail: unlike tarot's decks, these grammars don't derive from one
-  // another (see the BRANCH_RAW comment above) — byId is kept for a possible
-  // future use but no edges are drawn.
-  void byId;
+  if(document.getElementById('toggle-derive').checked){
+    const edges=[]; placed.forEach(p=>p.derives.forEach(s=>{ if(byId[s]) edges.push({s:byId[s],t:p}); }));
+    svg.append('g').selectAll('path').data(edges).join('path').attr('class','rail')
+      .attr('stroke',e=>colorOf[e.t.lv]||'#888')
+      .attr('d',e=>`M${e.s.px},${e.s.py}C${e.s.px},${(e.s.py+e.t.py)/2} ${e.t.px},${(e.s.py+e.t.py)/2} ${e.t.px},${e.t.py}`);
+  }
 
   const g=svg.append('g').selectAll('g.rowg').data(placed).join('g').attr('class','rowg')
     .attr('transform',d=>`translate(${d.px},${d.py})`);
   g.append('circle').attr('class','node').attr('r',6).attr('fill',d=>colorOf[d.lv]||'#6b6457');
   const dn=g.append('text').attr('class','dname').attr('x',10).attr('dy','0.32em');
-  dn.append('tspan').text(d=>d.name.replace(/\s+[—–-]\s+.*/,'').replace(/\s*\([^)]*\)/g,'').trim().slice(0,30));
-  dn.append('tspan').attr('class','dyear').attr('dx','7').text(d=>d.year);
+  // A label stays inside its own lane: with eight lanes and several books around 300 BCE,
+  // full names ran into the next lane. The year goes when it doesn't fit (the axis shows it).
+  const showYear=laneW>=200, maxCh=Math.max(8,Math.floor((laneW-(showYear?70:16))/6.6));
+  const short=n=>{ n=n.replace(/\s+[—–-]\s+.*/,'').replace(/\s*\([^)]*\)/g,'').trim(); return n.length>maxCh?n.slice(0,maxCh-1).trim()+'…':n; };
+  dn.append('tspan').text(d=>short(d.name));
+  dn.append('title').text(d=>d.name+' · '+fmtYear(d.year));
+  if(showYear) dn.append('tspan').attr('class','dyear').attr('dx','7').text(d=>fmtYear(d.year));
   g.on('click',(ev,d)=>{ev.stopPropagation();showDetail(d);})
    .on('mouseenter',(ev,d)=>trace(d.id,g))
    .on('mouseleave',()=>{g.classed('dim',false).classed('hot',false);svg.selectAll('.rail').classed('dim',false);});
@@ -241,7 +261,7 @@ function trace(id,g){
   d3.selectAll('.rail').classed('dim',true);
 }
 
-function mdToHtml(s){ if(!s) return ''; return String(s).split(/\n{2,}/).map(p=>`<p style="margin:.4em 0">${p.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')}</p>`).join(''); }
+function mdToHtml(s){ if(!s) return ''; return String(s).split(/\n{2,}/).map(p=>`<p style="margin:.4em 0">${cite(p.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>'))}</p>`).join(''); }
 function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 function navigateDeck(direction){
   if(!currentPlaced.length) return;
@@ -252,21 +272,22 @@ function navigateDeck(direction){
   if(newIndex!==currentIndex) showDetail(currentPlaced[newIndex]);
 }
 function showDetail(d){
-  const el=document.getElementById('detail'); const slug=d.id;
+  const el=document.getElementById('detail'); const slug=slugOf(d.id);
   el.dataset.deckId=d.id;
   let html=`<span class="modal-close" onclick="document.getElementById('detail').classList.remove('open')" title="Close" aria-label="Close">&times;</span>`;
   if(d.image) html+=`<img src="${esc(d.image)}" alt="${esc(d.name)}" loading="lazy">`;
-  html+=`<h2>${esc(d.name)}</h2><div class="when">${esc(d.when)} · ${d.year}</div>`;
+  html+=`<h2>${esc(d.name)}</h2><div class="when">${esc(d.when)} · ${fmtYear(d.year)}</div>`;
   for(const [k,v] of Object.entries(d.sections)){ if(v) html+=`<div class="sec"><h4>${esc(k)}</h4>${mdToHtml(String(v))}</div>`; }
-  if(slug) html+=`<a class="opencards" href="cards.html?src=${encodeURIComponent('../grammars/'+slug+'/grammar.json')}">Open ${esc(d.name.replace(/\s+[—–-].*/,''))} cards →</a>`;
+  if(slug) html+=`<a class="opencards" href="cards.html?src=${encodeURIComponent('../grammars/'+slug+'/grammar.json')}">Open this book in the library →</a>`;
+  else html+=`<div class="sec" style="color:#6b6457">This book is not in the library yet: the node holds its history only.</div>`;
   // Prev/next footer — page decks in the same chronological order the timeline
   // rail draws them, so ← / → steps the same direction the eye reads it.
   const idx=currentPlaced.findIndex(p=>p.id===d.id), total=currentPlaced.length;
   if(total>1 && idx!==-1){
     html+=`<div class="modal-nav-footer">
-      <button class="modal-nav-btn" onclick="navigateDeck(-1)" ${idx<=0?'disabled':''} title="Previous deck (←)" aria-label="Previous deck">&#8592;</button>
+      <button class="modal-nav-btn" onclick="navigateDeck(-1)" ${idx<=0?'disabled':''} title="Previous book (←)" aria-label="Previous book">&#8592;</button>
       <span class="modal-counter">${idx+1} of ${total}</span>
-      <button class="modal-nav-btn" onclick="navigateDeck(1)" ${idx>=total-1?'disabled':''} title="Next deck (→)" aria-label="Next deck">&#8594;</button>
+      <button class="modal-nav-btn" onclick="navigateDeck(1)" ${idx>=total-1?'disabled':''} title="Next book (→)" aria-label="Next book">&#8594;</button>
     </div>`;
   }
   el.innerHTML=html; el.classList.add('open');
@@ -280,7 +301,7 @@ function buildLegend(){
 }
 </script>
 
-<script src="../site-footer.js"></script>
+<script src="../site-footer.js?v=2"></script>
 <site-footer base="../"></site-footer>
 </body>
 </html>

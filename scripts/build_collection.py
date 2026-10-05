@@ -26,13 +26,14 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 GRAMMARS_DIR = os.path.join(ROOT, "grammars")
 OUT = os.path.join(GRAMMARS_DIR, "_collection.json")
 
-REPO = "PlayfulProcess/recursive-starter"
+REPO = "PlayfulProcess/recursive-iching"
 BRANCH = "main"
 
 BRANCHES = [
     ("primary-sources", "Primary Sources — the classical text itself, in translation"),
     ("synthesis",        "Synthesis — cross-lens readings of the 64 hexagrams"),
     ("readings",         "Readings — thematic contemplative practices, not interpretation sets"),
+    ("history",          "History — the books of the Changes, one book per node"),
 ]
 
 # slug -> branch id. Curated by hand (mirrors tarot's DECKS dict / astro's BRANCH_OF)
@@ -45,6 +46,7 @@ BRANCH_OF = {
     "ten-wings":              "primary-sources",
     "three-lenses-64":        "synthesis",
     "repair-iching":          "readings",
+    "tree-of-the-iching":     "history",
 }
 
 # slug -> (sortable year, display label, provenance). Only the classical text itself

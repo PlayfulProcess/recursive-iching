@@ -35,21 +35,34 @@
   //    line overall; they differ in the classical 6/7/8/9 distribution, which
   //    is what makes the toggle an honest nod to two real historical methods
   //    rather than a cosmetic label on the same coin flip. ──────────────────
-  function castLineValue(method) {
+  // castLineNumber returns the classical line number itself: 6 old yin, 7 young yang,
+  // 8 young yin, 9 old yang. 6 and 9 are the changing lines. (Split out Oct 4 2026 for
+  // viewers/dialogue.html, which needs the changing lines; castLineValue keeps its old
+  // answer and its old distribution.)
+  function castLineNumber(method) {
     if (method === 'yarrow') {
       // Classical yarrow-stalk probabilities (Wilhelm/Baynes appendix):
       // 6 (old yin) = 1/16, 7 (young yang) = 5/16, 8 (young yin) = 7/16, 9 (old yang) = 3/16.
       const r = Math.random();
-      if (r < 1 / 16) return '0';               // 6, old yin
-      if (r < 1 / 16 + 5 / 16) return '1';       // 7, young yang
-      if (r < 1 / 16 + 5 / 16 + 7 / 16) return '0'; // 8, young yin
-      return '1';                                 // 9, old yang
+      if (r < 1 / 16) return 6;
+      if (r < 1 / 16 + 5 / 16) return 7;
+      if (r < 1 / 16 + 5 / 16 + 7 / 16) return 8;
+      return 9;
     }
-    // Three-coin method: each coin heads(3)/tails(2) at 50/50; sum of three
-    // coins is 6-9; even sums (6, 8) = yin, odd sums (7, 9) = yang.
+    // Three-coin method: each coin heads(3)/tails(2) at 50/50; the sum of three coins is
+    // 6-9; even sums (6, 8) = yin, odd sums (7, 9) = yang.
     let sum = 0;
     for (let i = 0; i < 3; i++) sum += Math.random() < 0.5 ? 3 : 2;
-    return (sum % 2 === 0) ? '0' : '1';
+    return sum;
+  }
+  function castLineValue(method) {
+    return castLineNumber(method) % 2 === 0 ? '0' : '1';
+  }
+  // Six lines, bottom to top, as numbers: [line1 .. line6].
+  function castLines(method) {
+    const out = [];
+    for (let i = 0; i < 6; i++) out.push(castLineNumber(method));
+    return out;
   }
   function castBinary(method) {
     let bits = '';
@@ -128,7 +141,7 @@
     return path;
   }
 
-  const CasterEngine = { hamming, diffIndices, flipBit, castLineValue, castBinary, validBudgets, buildPath };
+  const CasterEngine = { hamming, diffIndices, flipBit, castLineNumber, castLineValue, castLines, castBinary, validBudgets, buildPath };
 
   if (typeof module !== 'undefined' && module.exports) module.exports = CasterEngine;
   else root.CasterEngine = CasterEngine;
