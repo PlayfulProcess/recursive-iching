@@ -1,5 +1,8 @@
 # Before connecting this repo to recursive.eco (open since Oct 4 2026)
 
+**Oct 6 2026: decided.** See [Decisions, Oct 6 2026](#decisions-oct-6-2026) at the end; the
+sections above it are the record of how the questions were found.
+
 The platform wants the **I Ching collection** (`recursive.eco/library/channels/iching`, slug `iching`) to come from this repo, the way Astrology already comes from recursive-astrology. A read-only dry run on Oct 4 found what has to be settled first. Nothing has been changed on the platform.
 
 ## What exists today
@@ -82,3 +85,132 @@ node**:
   fold into `zhouyi-core` and `ten-wings`;
 - `three-lenses-64` retires;
 - the new `tree-of-the-iching` is imported as the history grammar.
+
+## Decisions, Oct 6 2026
+
+PlayfulProcess, Oct 6: "For I Ching, do what you think is best." These are the decisions taken on
+that word. The app grammars were read over the recursive.eco MCP; nothing in the app was deleted,
+renamed or edited.
+
+### 1. `zhouyi-core` is `6efa4fc7` (Zhouyi, Legge translation)
+
+| | `6efa4fc7` Zhouyi (Legge) | `0f8f4088` 周易 (original text) | `476b17da` Chinese Original |
+|---|---|---|---|
+| Items | 64 | 64 | 64 |
+| English | Legge 1882 (public domain), Judgment + lines + "Use of Nine/Six" | **none** (slots left empty) | none (the "brief translation" is only the item names) |
+| Chinese | traditional, in a "Chinese Original (Reference)" section | simplified, Judgment + lines | traditional, Judgment + lines + the Xiang Image |
+| Provenance | sacred-texts.com (Legge, SBE vol. XVI) | cites `[@open-iching]`, a key with **no bibliography entry**, so the transcription's source and licence are unstated | Project Gutenberg #25501 (public domain) |
+| Completeness | **5 line statements missing**: hex 6 line 5, 8 line 3, 12 line 3, 41 line 2, 52 line 5 | complete; at least one typo seen (hex 1 line 2: 再 for 在) | complete |
+| State | Published, carries the collection's card | Link, no card | Published, has a card |
+
+**Why `6efa4fc7`:** the folder's text is Legge's Judgment and lines, the same public-domain text,
+and that grammar is the one the collection already shows. The repo copy is complete, so the first
+import also fills the five missing lines.
+
+**What had to change so the import pairs the items:** the importer matches items by `id`, then by
+`name`. The repo used `hex-N` and the app `hexagram-N`, and 31 of the 64 repo names differ from the
+app's ("Holding Together [Union]" vs "Holding Together"). Matched that way, 31 items would have
+arrived as new items next to the 31 old ones. `zhouyi-core`'s ids are now `hexagram-N`, like the
+app's, so all 64 pair by id. The repo's viewers find these items by `metadata.number`, so nothing
+else changed; the meta grammar was rebuilt.
+
+**What the first import will do to `6efa4fc7`** (repo wins on shared fields, app-only fields stay):
+- its name becomes "Zhouyi Core — the Oldest Layer" and its description the repo's;
+- the "Chinese Original (Reference)" section stays (the repo doesn't carry it);
+- hexagrams 1 and 2 will show Legge's "use of nine/six" text twice, as the app's "Use of Nine" /
+  "Use of Six" and the repo's "All Lines". Delete one label after the import.
+
+**`476b17da` is a companion, not a duplicate.** It is the Han canon node (the received Chinese with
+the Wings' Image) and maps to `i-ching-chinese-original` (same ids, same names, same text).
+
+**`0f8f4088` is a duplicate.** What it holds is already in the library, from a source with a known
+licence: the same Judgment and lines in traditional characters, in `6efa4fc7`'s reference section
+and in `476b17da`. The Oct 4 proposal to "fold its Chinese into `zhouyi-core`" turns out to be done
+already. It is not mapped and not deleted.
+
+### 2. The three folders with no app grammar
+
+`list_grammars` holds no grammar for any of them (searched: ching, 周易, zhouyi, lens, hexagram,
+recursive, wing).
+
+- **`meta-iching`**: built by `scripts/build_meta_iching.py` from the other folders. **It should
+  become a grammar later**, as tarot's All Decks is, but only after `three-lenses-64` is retired:
+  today 94 of its 534 items are copies of that duplicate, and 66 are the book's blank chapters. The
+  builder now stamps `_generated: true`, which the importer skips.
+- **`the-recursive-iching-book`**: built by `scripts/build_book_grammar.py`; 0 of 64 stories are
+  written. **It should become a grammar (private) once stories exist.** The builder now stamps
+  `_generated: true`. Book mode on this site keeps working from the file.
+- **`three-lenses-64`**: its grammar does exist. It is `ad36491a`, which `iching-hd-meta-categories`
+  already maps to (same ids; every item's text differs, the app's being newer). **Remove the
+  folder** once its four readers move to `iching-hd-meta-categories`:
+  `course/three-lenses.manifest.json`, `viewers/caster.html`, `viewers/lenses.html`,
+  `scripts/build_meta_iching.py`. Until then it carries `_source_of_truth: "repo"`, so the
+  importer doesn't create a second public copy.
+
+### 3. Ten Wings `a172fed6` stays private
+
+- **Not Legge.** It is Chinese only: Tuan, Great Image, Small Images and Sequence per hexagram,
+  with the English slots empty.
+- **Licence unstated.** The ancient text is public domain, but the transcription cites
+  `[@open-iching]` with no bibliography entry, so its digital source and licence can't be checked
+  from the grammar.
+- **Gaps.** Hexagram 32 has no Tuan, no Judgment and no Sequence; hexagram 12 has no Sequence.
+  (Hexagrams 1 and 2 have none, which is right: the Sequence begins at 3.)
+
+The repo's `ten-wings` folder is a different book: Legge's English Great Image plus eight essays on
+the wings. Ids and names differ from `a172fed6`, so the folder stays **unmapped and is created as a
+new grammar** on the first import (public, like the collection). Publishing `a172fed6` later needs
+its source named and hexagrams 12 and 32 filled.
+
+### 4. `_collection.json`'s `"repo"`
+
+It already reads `PlayfulProcess/recursive-iching`, from `scripts/build_collection.py` (fixed Oct
+4). Today's rebuild left it unchanged.
+
+### 5. King Wen numbers
+
+Every hexagram item in every grammar now carries `"number": N` at the top level as well as
+`metadata.number`. The platform viewer's relating-hexagram lookup reads `item.number`
+(`grammar-viewer.html` tries `hexagram_number`, then `number`, then a `hex-N` id, then the
+position), so `metadata.number` alone was not enough: that was finding V-1.
+
+- Sources: stamped in the seven hand-made grammars (`zhouyi-core`, `i-ching-chinese-original`,
+  `i-ching-summarized`, `iching-hd-meta-categories`, `repair-iching`, `ten-wings`,
+  `three-lenses-64`).
+- Generators: `build_meta_iching.py` and `build_book_grammar.py` now write it.
+- `check.py` fails any hexagram item whose top-level `number` is missing or disagrees with
+  `metadata.number`. Frame items (`metadata.role`) are exempt.
+
+The live app grammars get the number when the import runs; until then V-1 stays visible on
+recursive.eco. A one-line platform fix would cover every grammar, not only this repo's: read
+`metadata.number` in that same chain.
+
+### 6. `ids.json`
+
+| Folder | App grammar | Note |
+|---|---|---|
+| `zhouyi-core` | `6efa4fc7` | Published |
+| `i-ching-chinese-original` | `476b17da` | Published |
+| `i-ching-summarized` | `b5161d12` | Published; renamed "The 64 Hexagrams" on import |
+| `iching-hd-meta-categories` | `ad36491a` | Published |
+| `repair-iching` | `b7a59594` | Link. The app's items have no `metadata.number`; the import adds it |
+| `ten-wings`, `tree-of-the-iching` | none | created new on import |
+| `meta-iching`, `the-recursive-iching-book` | none | skipped (`_generated`) |
+| `three-lenses-64` | none | skipped (`_source_of_truth: "repo"`) |
+
+### Duplicates and leftovers, for PlayfulProcess (nothing deleted)
+
+- `0f8f4088` 周易 (original text): duplicate of `6efa4fc7`'s Chinese section and of `476b17da`.
+  Link visibility, no card.
+- `three-lenses-64` (repo folder): duplicate of `ad36491a`.
+- `a172fed6` 十翼 (Chinese, private) is not a duplicate. Its Great and Small Images overlap
+  `476b17da`'s Image section, but its Tuan and Sequence exist nowhere else in the library.
+- Two I Ching grammars in the app have no folder here: `57b60ca6` 易經 · Emergent Structure (74
+  items) and `5a09240d` 易經 · Leibniz Binary Tree of Change (458 items). Left as they are.
+
+### Viewer copies
+
+Item 7 (refresh `viewers/cards.html`) is closed without a refresh. Under the Oct 5 architecture
+(recursive-eco `docs/future_plan/DESIGN-shells-and-shared-previews-2026-10.md`), a partner repo
+keeps a shell and its grammars, and recursive.eco owns every preview. This repo's copied viewers
+go when step P3 replaces them with framed previews. See `CLAUDE.md`.

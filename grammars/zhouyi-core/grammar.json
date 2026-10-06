@@ -25,7 +25,8 @@
  "is_published": true,
  "items": [
   {
-   "id": "hex-1",
+   "id": "hexagram-1",
+   "number": 1,
    "name": "The Creative",
    "symbol": "䷀",
    "category": "heaven",
@@ -52,7 +53,8 @@
    }
   },
   {
-   "id": "hex-2",
+   "id": "hexagram-2",
+   "number": 2,
    "name": "The Receptive",
    "symbol": "䷁",
    "category": "earth",
@@ -79,7 +81,8 @@
    }
   },
   {
-   "id": "hex-3",
+   "id": "hexagram-3",
+   "number": 3,
    "name": "Difficulty at the Beginning",
    "symbol": "䷂",
    "category": "water",
@@ -105,7 +108,8 @@
    }
   },
   {
-   "id": "hex-4",
+   "id": "hexagram-4",
+   "number": 4,
    "name": "Youthful Folly",
    "symbol": "䷃",
    "category": "mountain",
@@ -131,7 +135,8 @@
    }
   },
   {
-   "id": "hex-5",
+   "id": "hexagram-5",
+   "number": 5,
    "name": "Waiting (Nourishment)",
    "symbol": "䷄",
    "category": "water",
@@ -157,7 +162,8 @@
    }
   },
   {
-   "id": "hex-6",
+   "id": "hexagram-6",
+   "number": 6,
    "name": "Conflict",
    "symbol": "䷅",
    "category": "heaven",
@@ -183,7 +189,8 @@
    }
   },
   {
-   "id": "hex-7",
+   "id": "hexagram-7",
+   "number": 7,
    "name": "The Army",
    "symbol": "䷆",
    "category": "earth",
@@ -209,7 +216,8 @@
    }
   },
   {
-   "id": "hex-8",
+   "id": "hexagram-8",
+   "number": 8,
    "name": "Holding Together [Union]",
    "symbol": "䷇",
    "category": "water",
@@ -235,7 +243,8 @@
    }
   },
   {
-   "id": "hex-9",
+   "id": "hexagram-9",
+   "number": 9,
    "name": "The Taming Power of the Small",
    "symbol": "䷈",
    "category": "wind",
@@ -261,7 +270,8 @@
    }
   },
   {
-   "id": "hex-10",
+   "id": "hexagram-10",
+   "number": 10,
    "name": "Treading [Conduct]",
    "symbol": "䷉",
    "category": "heaven",
@@ -287,7 +297,8 @@
    }
   },
   {
-   "id": "hex-11",
+   "id": "hexagram-11",
+   "number": 11,
    "name": "Peace",
    "symbol": "䷊",
    "category": "earth",
@@ -313,7 +324,8 @@
    }
   },
   {
-   "id": "hex-12",
+   "id": "hexagram-12",
+   "number": 12,
    "name": "Standstill [Stagnation]",
    "symbol": "䷋",
    "category": "heaven",
@@ -339,7 +351,8 @@
    }
   },
   {
-   "id": "hex-13",
+   "id": "hexagram-13",
+   "number": 13,
    "name": "Fellowship with Men",
    "symbol": "䷌",
    "category": "heaven",
@@ -365,7 +378,8 @@
    }
   },
   {
-   "id": "hex-14",
+   "id": "hexagram-14",
+   "number": 14,
    "name": "Possession in Great Measure",
    "symbol": "䷍",
    "category": "fire",
@@ -391,7 +405,8 @@
    }
   },
   {
-   "id": "hex-15",
+   "id": "hexagram-15",
+   "number": 15,
    "name": "Modesty",
    "symbol": "䷎",
    "category": "earth",
@@ -417,7 +432,8 @@
    }
   },
   {
-   "id": "hex-16",
+   "id": "hexagram-16",
+   "number": 16,
    "name": "Enthusiasm",
    "symbol": "䷏",
    "category": "thunder",
@@ -443,7 +459,8 @@
    }
   },
   {
-   "id": "hex-17",
+   "id": "hexagram-17",
+   "number": 17,
    "name": "Following",
    "symbol": "䷐",
    "category": "lake",
@@ -469,7 +486,8 @@
    }
   },
   {
-   "id": "hex-18",
+   "id": "hexagram-18",
+   "number": 18,
    "name": "Work on what has been spoiled [Decay]",
    "symbol": "䷑",
    "category": "mountain",
@@ -495,7 +513,8 @@
    }
   },
   {
-   "id": "hex-19",
+   "id": "hexagram-19",
+   "number": 19,
    "name": "Approach",
    "symbol": "䷒",
    "category": "earth",
@@ -521,7 +540,8 @@
    }
   },
   {
-   "id": "hex-20",
+   "id": "hexagram-20",
+   "number": 20,
    "name": "Contemplation [View]",
    "symbol": "䷓",
    "category": "wind",
@@ -547,7 +567,8 @@
    }
   },
   {
-   "id": "hex-21",
+   "id": "hexagram-21",
+   "number": 21,
    "name": "Biting Through",
    "symbol": "䷔",
    "category": "fire",
@@ -573,7 +594,8 @@
    }
   },
   {
-   "id": "hex-22",
+   "id": "hexagram-22",
+   "number": 22,
    "name": "Grace",
    "symbol": "䷕",
    "category": "mountain",
@@ -599,7 +621,8 @@
    }
   },
   {
-   "id": "hex-23",
+   "id": "hexagram-23",
+   "number": 23,
    "name": "Splitting Apart",
    "symbol": "䷖",
    "category": "mountain",
@@ -625,7 +648,8 @@
    }
   },
   {
-   "id": "hex-24",
+   "id": "hexagram-24",
+   "number": 24,
    "name": "Return (The Turning Point)",
    "symbol": "䷗",
    "category": "earth",
@@ -651,7 +675,8 @@
    }
   },
   {
-   "id": "hex-25",
+   "id": "hexagram-25",
+   "number": 25,
    "name": "Innocence (The Unexpected)",
    "symbol": "䷘",
    "category": "heaven",
@@ -677,7 +702,8 @@
    }
   },
   {
-   "id": "hex-26",
+   "id": "hexagram-26",
+   "number": 26,
    "name": "The Taming Power of the Great",
    "symbol": "䷙",
    "category": "mountain",
@@ -703,7 +729,8 @@
    }
   },
   {
-   "id": "hex-27",
+   "id": "hexagram-27",
+   "number": 27,
    "name": "The Corners of the Mouth (Providing Nourishment)",
    "symbol": "䷚",
    "category": "mountain",
@@ -729,7 +756,8 @@
    }
   },
   {
-   "id": "hex-28",
+   "id": "hexagram-28",
+   "number": 28,
    "name": "Preponderance of the Great",
    "symbol": "䷛",
    "category": "lake",
@@ -755,7 +783,8 @@
    }
   },
   {
-   "id": "hex-29",
+   "id": "hexagram-29",
+   "number": 29,
    "name": "The Abysmal (Water)",
    "symbol": "䷜",
    "category": "water",
@@ -781,7 +810,8 @@
    }
   },
   {
-   "id": "hex-30",
+   "id": "hexagram-30",
+   "number": 30,
    "name": "The Clinging, Fire",
    "symbol": "䷝",
    "category": "fire",
@@ -807,7 +837,8 @@
    }
   },
   {
-   "id": "hex-31",
+   "id": "hexagram-31",
+   "number": 31,
    "name": "Influence (Wooing)",
    "symbol": "䷞",
    "category": "lake",
@@ -833,7 +864,8 @@
    }
   },
   {
-   "id": "hex-32",
+   "id": "hexagram-32",
+   "number": 32,
    "name": "Duration",
    "symbol": "䷟",
    "category": "thunder",
@@ -859,7 +891,8 @@
    }
   },
   {
-   "id": "hex-33",
+   "id": "hexagram-33",
+   "number": 33,
    "name": "Retreat",
    "symbol": "䷠",
    "category": "heaven",
@@ -885,7 +918,8 @@
    }
   },
   {
-   "id": "hex-34",
+   "id": "hexagram-34",
+   "number": 34,
    "name": "The Power of the Great",
    "symbol": "䷡",
    "category": "thunder",
@@ -911,7 +945,8 @@
    }
   },
   {
-   "id": "hex-35",
+   "id": "hexagram-35",
+   "number": 35,
    "name": "Progress",
    "symbol": "䷢",
    "category": "fire",
@@ -937,7 +972,8 @@
    }
   },
   {
-   "id": "hex-36",
+   "id": "hexagram-36",
+   "number": 36,
    "name": "Darkening of the Light",
    "symbol": "䷣",
    "category": "earth",
@@ -963,7 +999,8 @@
    }
   },
   {
-   "id": "hex-37",
+   "id": "hexagram-37",
+   "number": 37,
    "name": "The Family [The Clan]",
    "symbol": "䷤",
    "category": "wind",
@@ -989,7 +1026,8 @@
    }
   },
   {
-   "id": "hex-38",
+   "id": "hexagram-38",
+   "number": 38,
    "name": "Opposition",
    "symbol": "䷥",
    "category": "fire",
@@ -1015,7 +1053,8 @@
    }
   },
   {
-   "id": "hex-39",
+   "id": "hexagram-39",
+   "number": 39,
    "name": "Obstruction",
    "symbol": "䷦",
    "category": "water",
@@ -1041,7 +1080,8 @@
    }
   },
   {
-   "id": "hex-40",
+   "id": "hexagram-40",
+   "number": 40,
    "name": "Deliverance",
    "symbol": "䷧",
    "category": "thunder",
@@ -1067,7 +1107,8 @@
    }
   },
   {
-   "id": "hex-41",
+   "id": "hexagram-41",
+   "number": 41,
    "name": "Decrease",
    "symbol": "䷨",
    "category": "mountain",
@@ -1093,7 +1134,8 @@
    }
   },
   {
-   "id": "hex-42",
+   "id": "hexagram-42",
+   "number": 42,
    "name": "Increase",
    "symbol": "䷩",
    "category": "wind",
@@ -1119,7 +1161,8 @@
    }
   },
   {
-   "id": "hex-43",
+   "id": "hexagram-43",
+   "number": 43,
    "name": "Break-through (Resoluteness)",
    "symbol": "䷪",
    "category": "lake",
@@ -1145,7 +1188,8 @@
    }
   },
   {
-   "id": "hex-44",
+   "id": "hexagram-44",
+   "number": 44,
    "name": "Coming to Meet",
    "symbol": "䷫",
    "category": "heaven",
@@ -1171,7 +1215,8 @@
    }
   },
   {
-   "id": "hex-45",
+   "id": "hexagram-45",
+   "number": 45,
    "name": "Gathering Together [Massing]",
    "symbol": "䷬",
    "category": "lake",
@@ -1197,7 +1242,8 @@
    }
   },
   {
-   "id": "hex-46",
+   "id": "hexagram-46",
+   "number": 46,
    "name": "Pushing Upward",
    "symbol": "䷭",
    "category": "earth",
@@ -1223,7 +1269,8 @@
    }
   },
   {
-   "id": "hex-47",
+   "id": "hexagram-47",
+   "number": 47,
    "name": "Oppression (Exhaustion)",
    "symbol": "䷮",
    "category": "lake",
@@ -1249,7 +1296,8 @@
    }
   },
   {
-   "id": "hex-48",
+   "id": "hexagram-48",
+   "number": 48,
    "name": "The Well",
    "symbol": "䷯",
    "category": "water",
@@ -1275,7 +1323,8 @@
    }
   },
   {
-   "id": "hex-49",
+   "id": "hexagram-49",
+   "number": 49,
    "name": "Revolution (Molting)",
    "symbol": "䷰",
    "category": "lake",
@@ -1301,7 +1350,8 @@
    }
   },
   {
-   "id": "hex-50",
+   "id": "hexagram-50",
+   "number": 50,
    "name": "The Caldron",
    "symbol": "䷱",
    "category": "fire",
@@ -1327,7 +1377,8 @@
    }
   },
   {
-   "id": "hex-51",
+   "id": "hexagram-51",
+   "number": 51,
    "name": "The Arousing (Shock, Thunder)",
    "symbol": "䷲",
    "category": "thunder",
@@ -1353,7 +1404,8 @@
    }
   },
   {
-   "id": "hex-52",
+   "id": "hexagram-52",
+   "number": 52,
    "name": "Keeping Still, Mountain",
    "symbol": "䷳",
    "category": "mountain",
@@ -1379,7 +1431,8 @@
    }
   },
   {
-   "id": "hex-53",
+   "id": "hexagram-53",
+   "number": 53,
    "name": "Development (Gradual Progress)",
    "symbol": "䷴",
    "category": "wind",
@@ -1405,7 +1458,8 @@
    }
   },
   {
-   "id": "hex-54",
+   "id": "hexagram-54",
+   "number": 54,
    "name": "The Marrying Maiden",
    "symbol": "䷵",
    "category": "thunder",
@@ -1431,7 +1485,8 @@
    }
   },
   {
-   "id": "hex-55",
+   "id": "hexagram-55",
+   "number": 55,
    "name": "Abundance",
    "symbol": "䷶",
    "category": "thunder",
@@ -1457,7 +1512,8 @@
    }
   },
   {
-   "id": "hex-56",
+   "id": "hexagram-56",
+   "number": 56,
    "name": "The Wanderer",
    "symbol": "䷷",
    "category": "fire",
@@ -1483,7 +1539,8 @@
    }
   },
   {
-   "id": "hex-57",
+   "id": "hexagram-57",
+   "number": 57,
    "name": "The Gentle (The Penetrating, Wind)",
    "symbol": "䷸",
    "category": "wind",
@@ -1509,7 +1566,8 @@
    }
   },
   {
-   "id": "hex-58",
+   "id": "hexagram-58",
+   "number": 58,
    "name": "The Joyous, Lake",
    "symbol": "䷹",
    "category": "lake",
@@ -1535,7 +1593,8 @@
    }
   },
   {
-   "id": "hex-59",
+   "id": "hexagram-59",
+   "number": 59,
    "name": "Dispersion [Dissolution]",
    "symbol": "䷺",
    "category": "wind",
@@ -1561,7 +1620,8 @@
    }
   },
   {
-   "id": "hex-60",
+   "id": "hexagram-60",
+   "number": 60,
    "name": "Limitation",
    "symbol": "䷻",
    "category": "water",
@@ -1587,7 +1647,8 @@
    }
   },
   {
-   "id": "hex-61",
+   "id": "hexagram-61",
+   "number": 61,
    "name": "Inner Truth",
    "symbol": "䷼",
    "category": "wind",
@@ -1613,7 +1674,8 @@
    }
   },
   {
-   "id": "hex-62",
+   "id": "hexagram-62",
+   "number": 62,
    "name": "Preponderance of the Small",
    "symbol": "䷽",
    "category": "thunder",
@@ -1639,7 +1701,8 @@
    }
   },
   {
-   "id": "hex-63",
+   "id": "hexagram-63",
+   "number": 63,
    "name": "After Completion",
    "symbol": "䷾",
    "category": "water",
@@ -1665,7 +1728,8 @@
    }
   },
   {
-   "id": "hex-64",
+   "id": "hexagram-64",
+   "number": 64,
    "name": "Before Completion",
    "symbol": "䷿",
    "category": "fire",

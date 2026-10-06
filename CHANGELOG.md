@@ -1,5 +1,30 @@
 # Changelog — The Recursive I Ching
 
+## October 6, 2026 — ready to connect: the open decisions taken
+
+PlayfulProcess: "For I Ching, do what you think is best." Decisions and reasons are in
+`docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md`, "Decisions, Oct 6 2026".
+
+- **`ids.json` filled:** `zhouyi-core` → `6efa4fc7` (Legge), `i-ching-chinese-original` →
+  `476b17da`, `i-ching-summarized` → `b5161d12`, `iching-hd-meta-categories` → `ad36491a`,
+  `repair-iching` → `b7a59594`. `ten-wings` and `tree-of-the-iching` are created new on import.
+- **Skipped by the importer:** `meta-iching` and `the-recursive-iching-book` now carry
+  `_generated: true` (from their builders); `three-lenses-64` carries `_source_of_truth: "repo"`
+  until it is retired.
+- **`zhouyi-core` ids are now `hexagram-N`**, the app's, so the import pairs all 64 items instead of
+  duplicating 31 whose names differ.
+- **King Wen numbers:** every hexagram item carries `"number"` at the top level too (finding V-1);
+  `check.py` enforces it.
+- **The spiral, not the moon** (her word, Oct 6): the header's mark is now recursive.eco's spiral
+  (`img/recursive-logo.svg`, copied from recursive-eco `apps/landing/recursive-logo.svg`) and links
+  to https://recursive.eco/; the name beside it still links to this site's home. The home page's
+  "One branch of a larger tree" mark changed the same way.
+- **`CLAUDE.md` added:** this repo keeps no viewer copies (Oct 5 architecture), plus the build order.
+- **Not changed in the app:** nothing. Ten Wings `a172fed6` stays private (Chinese only, its
+  transcription source unnamed, hexagrams 12 and 32 incomplete).
+- **Not verified:** `scripts/check_book_mode.py` (Playwright isn't installed on this machine). The
+  Source Text viewer and the Path Caster were opened locally and load without errors.
+
 ## Merged October 5, 2026 — what is new, and what was not thoroughly verified
 
 PlayfulProcess merged the cloud session's work (Oct 1–4) and the Desktop check of Oct 5. New, and

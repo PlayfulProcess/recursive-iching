@@ -1,4 +1,6 @@
 {
+  "_source_of_truth": "repo",
+  "_retire_note": "Oct 6 2026: an older copy of iching-hd-meta-categories (recursive.eco ad36491a; same ids, older text). Kept in the repo only until its four readers move to iching-hd-meta-categories (course/three-lenses.manifest.json, viewers/caster.html, viewers/lenses.html, scripts/build_meta_iching.py), then removed. `_source_of_truth: repo` keeps recursive.eco from importing it as a second public copy. See docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md.",
   "name": "Three Lenses for Viewing the 64 Hexagrams",
   "description": "This interpretation maps the 64 I Ching hexagrams to Human Design 'gates'—a synthesis channeled by Ra Uru Hu in 1987 after an eight-day encounter with 'the Voice' on Ibiza. The system is only about 30 years old, which means we're still discovering what it actually describes, if anything beyond symbolic vocabulary. Ra claimed the Voice transmitted a complete system mapping I Ching hexagrams around an astrological wheel in specific relationships to planetary positions. Whether this represents genuine cosmic blueprints, a playful reconfiguration of ancient symbolic systems, or simply altered consciousness creating coherent pattern, remains genuinely open. What's documented: many people find the 'types' (Manifestor, Generator, Projector, Reflector, Manifesting Generator) and gate activations offer useful language for recognizing their patterns. The identity game is always dangerous, especially when systems are lifted from their traditional contexts and sold as objective truth. Over-identification with any typology can become a cage. That said, personally discovering I was supposedly a 'Projector' rather than trying to operate like a 'Generator' released me from exhausting patterns—it gave me permission to develop recursive.eco intimately rather than forcing myself into productivity modes that never fit. That release alone makes the system worth studying, even if it's 'just' a useful fiction. Whether it serves you is yours to discover. The gates maintain exact I Ching numbering (Gate 1 = Hexagram 1, etc.) and are arranged around the Rave Mandala wheel in Fu Xi sequence. Each gate occupies approximately 5.625 degrees, with some gates spanning two zodiac signs. Use this as contemplative material for self-reflection and pattern recognition, not as fixed identity or limitation. Hold it lightly. Fork it freely.",
   "cover_image_url": "https://commons.wikimedia.org/wiki/File:Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg",
@@ -7,6 +9,7 @@
   "items": [
     {
       "id": "hex-1",
+      "number": 1,
       "name": "Creative Power",
       "level": 1,
       "category": "custom",
@@ -26,6 +29,7 @@
     },
     {
       "id": "hex-2",
+      "number": 2,
       "name": "Receptive Flow",
       "level": 1,
       "category": "custom",
@@ -45,6 +49,7 @@
     },
     {
       "id": "hex-3",
+      "number": 3,
       "name": "Difficulty at the Beginning",
       "level": 1,
       "category": "custom",
@@ -64,6 +69,7 @@
     },
     {
       "id": "hex-4",
+      "number": 4,
       "name": "Youthful Folly",
       "level": 1,
       "category": "custom",
@@ -83,6 +89,7 @@
     },
     {
       "id": "hex-5",
+      "number": 5,
       "name": "Waiting",
       "level": 1,
       "category": "custom",
@@ -102,6 +109,7 @@
     },
     {
       "id": "hex-6",
+      "number": 6,
       "name": "Conflict",
       "level": 1,
       "category": "custom",
@@ -121,6 +129,7 @@
     },
     {
       "id": "hex-7",
+      "number": 7,
       "name": "The Army",
       "level": 1,
       "category": "custom",
@@ -140,6 +149,7 @@
     },
     {
       "id": "hex-8",
+      "number": 8,
       "name": "Holding Together",
       "level": 1,
       "category": "custom",
@@ -159,6 +169,7 @@
     },
     {
       "id": "hex-9",
+      "number": 9,
       "name": "Taming Power of the Small",
       "level": 1,
       "category": "custom",
@@ -178,6 +189,7 @@
     },
     {
       "id": "hex-10",
+      "number": 10,
       "name": "Treading",
       "level": 1,
       "category": "custom",
@@ -197,6 +209,7 @@
     },
     {
       "id": "hex-11",
+      "number": 11,
       "name": "Peace",
       "level": 1,
       "category": "custom",
@@ -216,6 +229,7 @@
     },
     {
       "id": "hex-12",
+      "number": 12,
       "name": "Standstill",
       "level": 1,
       "category": "custom",
@@ -235,6 +249,7 @@
     },
     {
       "id": "hex-13",
+      "number": 13,
       "name": "Fellowship",
       "level": 1,
       "category": "custom",
@@ -254,6 +269,7 @@
     },
     {
       "id": "hex-14",
+      "number": 14,
       "name": "Possession in Great Measure",
       "level": 1,
       "category": "custom",
@@ -273,6 +289,7 @@
     },
     {
       "id": "hex-15",
+      "number": 15,
       "name": "Modesty",
       "level": 1,
       "category": "custom",
@@ -292,6 +309,7 @@
     },
     {
       "id": "hex-16",
+      "number": 16,
       "name": "Enthusiasm",
       "level": 1,
       "category": "custom",
@@ -311,6 +329,7 @@
     },
     {
       "id": "hex-17",
+      "number": 17,
       "name": "Following",
       "level": 1,
       "category": "custom",
@@ -330,6 +349,7 @@
     },
     {
       "id": "hex-18",
+      "number": 18,
       "name": "Work on the Decayed",
       "level": 1,
       "category": "custom",
@@ -349,6 +369,7 @@
     },
     {
       "id": "hex-19",
+      "number": 19,
       "name": "Approach",
       "level": 1,
       "category": "custom",
@@ -368,6 +389,7 @@
     },
     {
       "id": "hex-20",
+      "number": 20,
       "name": "Contemplation",
       "level": 1,
       "category": "custom",
@@ -387,6 +409,7 @@
     },
     {
       "id": "hex-21",
+      "number": 21,
       "name": "Biting Through",
       "level": 1,
       "category": "custom",
@@ -406,6 +429,7 @@
     },
     {
       "id": "hex-22",
+      "number": 22,
       "name": "Grace",
       "level": 1,
       "category": "custom",
@@ -425,6 +449,7 @@
     },
     {
       "id": "hex-23",
+      "number": 23,
       "name": "Splitting Apart",
       "level": 1,
       "category": "custom",
@@ -444,6 +469,7 @@
     },
     {
       "id": "hex-24",
+      "number": 24,
       "name": "Return",
       "level": 1,
       "category": "custom",
@@ -463,6 +489,7 @@
     },
     {
       "id": "hex-25",
+      "number": 25,
       "name": "Innocence",
       "level": 1,
       "category": "custom",
@@ -482,6 +509,7 @@
     },
     {
       "id": "hex-26",
+      "number": 26,
       "name": "Taming Power of the Great",
       "level": 1,
       "category": "custom",
@@ -501,6 +529,7 @@
     },
     {
       "id": "hex-27",
+      "number": 27,
       "name": "Nourishment",
       "level": 1,
       "category": "custom",
@@ -520,6 +549,7 @@
     },
     {
       "id": "hex-28",
+      "number": 28,
       "name": "Preponderance of the Great",
       "level": 1,
       "category": "custom",
@@ -539,6 +569,7 @@
     },
     {
       "id": "hex-29",
+      "number": 29,
       "name": "The Abysmal Water",
       "level": 1,
       "category": "custom",
@@ -558,6 +589,7 @@
     },
     {
       "id": "hex-30",
+      "number": 30,
       "name": "The Clinging Fire",
       "level": 1,
       "category": "custom",
@@ -577,6 +609,7 @@
     },
     {
       "id": "hex-31",
+      "number": 31,
       "name": "Influence",
       "level": 1,
       "category": "custom",
@@ -596,6 +629,7 @@
     },
     {
       "id": "hex-32",
+      "number": 32,
       "name": "Duration",
       "level": 1,
       "category": "custom",
@@ -615,6 +649,7 @@
     },
     {
       "id": "hex-33",
+      "number": 33,
       "name": "Retreat",
       "level": 1,
       "category": "custom",
@@ -634,6 +669,7 @@
     },
     {
       "id": "hex-34",
+      "number": 34,
       "name": "Power of the Great",
       "level": 1,
       "category": "custom",
@@ -653,6 +689,7 @@
     },
     {
       "id": "hex-35",
+      "number": 35,
       "name": "Progress",
       "level": 1,
       "category": "custom",
@@ -672,6 +709,7 @@
     },
     {
       "id": "hex-36",
+      "number": 36,
       "name": "Darkening of the Light",
       "level": 1,
       "category": "custom",
@@ -691,6 +729,7 @@
     },
     {
       "id": "hex-37",
+      "number": 37,
       "name": "The Family",
       "level": 1,
       "category": "custom",
@@ -710,6 +749,7 @@
     },
     {
       "id": "hex-38",
+      "number": 38,
       "name": "Opposition",
       "level": 1,
       "category": "custom",
@@ -729,6 +769,7 @@
     },
     {
       "id": "hex-39",
+      "number": 39,
       "name": "Obstruction",
       "level": 1,
       "category": "custom",
@@ -748,6 +789,7 @@
     },
     {
       "id": "hex-40",
+      "number": 40,
       "name": "Deliverance",
       "level": 1,
       "category": "custom",
@@ -767,6 +809,7 @@
     },
     {
       "id": "hex-41",
+      "number": 41,
       "name": "Decrease",
       "level": 1,
       "category": "custom",
@@ -786,6 +829,7 @@
     },
     {
       "id": "hex-42",
+      "number": 42,
       "name": "Increase",
       "level": 1,
       "category": "custom",
@@ -805,6 +849,7 @@
     },
     {
       "id": "hex-43",
+      "number": 43,
       "name": "Breakthrough",
       "level": 1,
       "category": "custom",
@@ -824,6 +869,7 @@
     },
     {
       "id": "hex-44",
+      "number": 44,
       "name": "Coming to Meet",
       "level": 1,
       "category": "custom",
@@ -843,6 +889,7 @@
     },
     {
       "id": "hex-45",
+      "number": 45,
       "name": "Gathering Together",
       "level": 1,
       "category": "custom",
@@ -862,6 +909,7 @@
     },
     {
       "id": "hex-46",
+      "number": 46,
       "name": "Pushing Upward",
       "level": 1,
       "category": "custom",
@@ -881,6 +929,7 @@
     },
     {
       "id": "hex-47",
+      "number": 47,
       "name": "Oppression",
       "level": 1,
       "category": "custom",
@@ -900,6 +949,7 @@
     },
     {
       "id": "hex-48",
+      "number": 48,
       "name": "The Well",
       "level": 1,
       "category": "custom",
@@ -919,6 +969,7 @@
     },
     {
       "id": "hex-49",
+      "number": 49,
       "name": "Revolution",
       "level": 1,
       "category": "custom",
@@ -938,6 +989,7 @@
     },
     {
       "id": "hex-50",
+      "number": 50,
       "name": "The Cauldron",
       "level": 1,
       "category": "custom",
@@ -957,6 +1009,7 @@
     },
     {
       "id": "hex-51",
+      "number": 51,
       "name": "The Arousing",
       "level": 1,
       "category": "custom",
@@ -976,6 +1029,7 @@
     },
     {
       "id": "hex-52",
+      "number": 52,
       "name": "Keeping Still",
       "level": 1,
       "category": "custom",
@@ -995,6 +1049,7 @@
     },
     {
       "id": "hex-53",
+      "number": 53,
       "name": "Development",
       "level": 1,
       "category": "custom",
@@ -1014,6 +1069,7 @@
     },
     {
       "id": "hex-54",
+      "number": 54,
       "name": "The Marrying Maiden",
       "level": 1,
       "category": "custom",
@@ -1033,6 +1089,7 @@
     },
     {
       "id": "hex-55",
+      "number": 55,
       "name": "Abundance",
       "level": 1,
       "category": "custom",
@@ -1052,6 +1109,7 @@
     },
     {
       "id": "hex-56",
+      "number": 56,
       "name": "The Wanderer",
       "level": 1,
       "category": "custom",
@@ -1071,6 +1129,7 @@
     },
     {
       "id": "hex-57",
+      "number": 57,
       "name": "The Gentle",
       "level": 1,
       "category": "custom",
@@ -1090,6 +1149,7 @@
     },
     {
       "id": "hex-58",
+      "number": 58,
       "name": "The Joyous",
       "level": 1,
       "category": "custom",
@@ -1109,6 +1169,7 @@
     },
     {
       "id": "hex-59",
+      "number": 59,
       "name": "Dispersion",
       "level": 1,
       "category": "custom",
@@ -1128,6 +1189,7 @@
     },
     {
       "id": "hex-60",
+      "number": 60,
       "name": "Limitation",
       "level": 1,
       "category": "custom",
@@ -1147,6 +1209,7 @@
     },
     {
       "id": "hex-61",
+      "number": 61,
       "name": "Inner Truth",
       "level": 1,
       "category": "custom",
@@ -1166,6 +1229,7 @@
     },
     {
       "id": "hex-62",
+      "number": 62,
       "name": "Preponderance of the Small",
       "level": 1,
       "category": "custom",
@@ -1185,6 +1249,7 @@
     },
     {
       "id": "hex-63",
+      "number": 63,
       "name": "After Completion",
       "level": 1,
       "category": "custom",
@@ -1204,6 +1269,7 @@
     },
     {
       "id": "hex-64",
+      "number": 64,
       "name": "Before Completion",
       "level": 1,
       "category": "custom",
