@@ -20,3 +20,38 @@ which system the Human Design lens grammars refer to. The gate glyphs in
 img/hd/ are drawn by this project's own code (scripts/build_hd_glyphs.py),
 and the gate readings are the author's own synthesis; no Human Design
 publication is reproduced.
+
+Paintings in img/zen/ (public domain). Five works, each reduced for the web
+from the Wikimedia Commons file named below, whose page carries the licence
+template quoted here. Nothing is cropped. img/zen/credits.json holds the same
+record and the home page lists it.
+
+- img/zen/tohaku-pine-trees-right.jpg
+  Hasegawa Tōhaku (1539–1610), "Pine Trees (Shōrin-zu byōbu), right-hand screen", late 16th century.
+  Tokyo National Museum.
+  Public domain: {{PD-Art|PD-old-auto-expired|deathyear=1610}}
+  https://commons.wikimedia.org/wiki/File:Hasegawa_Tohaku_-_Pine_Trees_(Sh%C5%8Drin-zu_by%C5%8Dbu)_-_right_hand_screen.jpg
+- img/zen/hakuin-daruma.jpg
+  Hakuin Ekaku (1686–1769), "Portrait of Daruma", between 1734 and 1766 (as dated on Commons).
+  The Metropolitan Museum of Art, New York (2015.500.9.3).
+  Public domain: {{Licensed-PD-Art|PD-old-auto-expired|Cc-zero|deathyear=1769}}
+  https://commons.wikimedia.org/wiki/File:Hakuin_Ekaku_-_Portrait_of_Daruma_-_2015.500.9.3_-_Metropolitan_Museum_of_Art.jpg
+- img/zen/sengai-circle-triangle-square.jpg
+  Sengai Gibon (1750–1837), "Circle, Triangle, Square (○△□)", early 19th century (Commons: before 1819).
+  Idemitsu Museum of Arts, Tokyo (the Commons page does not name it).
+  Public domain: {{PD-Japan}} (the artist died in 1837)
+  https://commons.wikimedia.org/wiki/File:Sengai_3.jpg
+- img/zen/muqi-six-persimmons.jpg
+  Mu Qi (13th century), "Six Persimmons", 13th century.
+  Daitoku-ji, Kyoto.
+  Public domain: {{PD-Art|PD-old-100}}
+  https://commons.wikimedia.org/wiki/File:%E5%85%AD%E6%9F%BF%E5%9B%BE.jpg
+- img/zen/sesshu-haboku-1495.jpg
+  Sesshū Tōyō (1420–1506), "Splashed-ink landscape (Haboku sansui), with the inscriptions above it", 1495.
+  Tokyo National Museum.
+  Public domain: {{PD-Art|PD-old-auto-expired|deathyear=1506}}
+  https://commons.wikimedia.org/wiki/File:Sesshu_-_Haboku-Sansui_-_complete.jpg
+
+The site's two drawn marks, img/recursive-logo-seal.svg (recursive.eco's spiral,
+path unchanged, recoloured as a seal) and img/enso.svg, are made by
+scripts/build_zen_marks.py. The spiral stays a trademark (see TRADEMARKS.md).

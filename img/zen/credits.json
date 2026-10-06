@@ -1,0 +1,75 @@
+{
+  "_note": "The public-domain paintings in img/zen/, one record each. Pages read this file for captions and the home page's list of paintings; NOTICE repeats it. Every file was reduced for the web from the Wikimedia Commons file named in `commons`, whose page carries the licence template quoted in `licence`. Nothing is cropped: each image shows the whole work as Commons has it, inscriptions included.",
+  "works": [
+    {
+      "id": "tohaku-pine-trees",
+      "file": "img/zen/tohaku-pine-trees-right.jpg",
+      "width": 1600,
+      "height": 749,
+      "title": "Pine Trees (Shōrin-zu byōbu), right-hand screen",
+      "artist": "Hasegawa Tōhaku (1539–1610)",
+      "date": "late 16th century",
+      "collection": "Tokyo National Museum",
+      "commons": "https://commons.wikimedia.org/wiki/File:Hasegawa_Tohaku_-_Pine_Trees_(Sh%C5%8Drin-zu_by%C5%8Dbu)_-_right_hand_screen.jpg",
+      "licence": "Public domain: {{PD-Art|PD-old-auto-expired|deathyear=1610}}",
+      "used_on": "home page, opening",
+      "alt": "Hasegawa Tōhaku's Pine Trees, the right-hand screen: pines in ink across six panels, some dark and near, most half lost in mist."
+    },
+    {
+      "id": "hakuin-daruma",
+      "file": "img/zen/hakuin-daruma.jpg",
+      "width": 720,
+      "height": 1299,
+      "title": "Portrait of Daruma",
+      "artist": "Hakuin Ekaku (1686–1769)",
+      "date": "between 1734 and 1766 (as dated on Commons)",
+      "collection": "The Metropolitan Museum of Art, New York (2015.500.9.3)",
+      "commons": "https://commons.wikimedia.org/wiki/File:Hakuin_Ekaku_-_Portrait_of_Daruma_-_2015.500.9.3_-_Metropolitan_Museum_of_Art.jpg",
+      "licence": "Public domain: {{Licensed-PD-Art|PD-old-auto-expired|Cc-zero|deathyear=1769}}",
+      "used_on": "home page, \"A mirror, never a command\"",
+      "alt": "Hakuin Ekaku's Daruma: Bodhidharma's face in a few washes of grey ink, eyes wide open, under a line of calligraphy, mounted as a hanging scroll."
+    },
+    {
+      "id": "sengai-circle-triangle-square",
+      "file": "img/zen/sengai-circle-triangle-square.jpg",
+      "width": 1000,
+      "height": 593,
+      "title": "Circle, Triangle, Square (○△□)",
+      "artist": "Sengai Gibon (1750–1837)",
+      "date": "early 19th century (Commons: before 1819)",
+      "collection": "Idemitsu Museum of Arts, Tokyo (the Commons page does not name it)",
+      "commons": "https://commons.wikimedia.org/wiki/File:Sengai_3.jpg",
+      "licence": "Public domain: {{PD-Japan}} (the artist died in 1837)",
+      "used_on": "course: Three Lenses",
+      "alt": "Sengai Gibon's Circle, Triangle, Square: a square, a triangle and a circle in black ink, overlapping, with a column of calligraphy and a red seal at the left."
+    },
+    {
+      "id": "muqi-six-persimmons",
+      "file": "img/zen/muqi-six-persimmons.jpg",
+      "width": 491,
+      "height": 600,
+      "title": "Six Persimmons",
+      "artist": "Mu Qi (13th century)",
+      "date": "13th century",
+      "collection": "Daitoku-ji, Kyoto",
+      "commons": "https://commons.wikimedia.org/wiki/File:%E5%85%AD%E6%9F%BF%E5%9B%BE.jpg",
+      "licence": "Public domain: {{PD-Art|PD-old-100}}",
+      "used_on": "course: How the Translators Changed the Text",
+      "alt": "Mu Qi's Six Persimmons: six persimmons on an empty ground, each in a different ink, from a pale outline to solid black."
+    },
+    {
+      "id": "sesshu-haboku",
+      "file": "img/zen/sesshu-haboku-1495.jpg",
+      "width": 380,
+      "height": 1690,
+      "title": "Splashed-ink landscape (Haboku sansui), with the inscriptions above it",
+      "artist": "Sesshū Tōyō (1420–1506)",
+      "date": "1495",
+      "collection": "Tokyo National Museum",
+      "commons": "https://commons.wikimedia.org/wiki/File:Sesshu_-_Haboku-Sansui_-_complete.jpg",
+      "licence": "Public domain: {{PD-Art|PD-old-auto-expired|deathyear=1506}}",
+      "used_on": "course: The Books of the Changes",
+      "alt": "Sesshū's splashed-ink landscape: a small landscape of mist, rocks and a roof at the foot of a tall scroll, under long columns of handwritten inscriptions."
+    }
+  ]
+}

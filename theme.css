@@ -1,62 +1,73 @@
 /* ───────────────────────────────────────────────────────────────────────────
    The Recursive I Ching — ONE shared design-token theme, ported from
    recursive-astrology/theme.css (itself ported from recursive-tarot/theme.css —
-   same paper/ink structure) with the accent retoned from astro's sky/indigo
-   blue to a restrained cinnabar red for this repo (Jul 2026 port). DEFINE
-   COLOURS HERE ONLY. Every page and viewer links this file; none should
-   redeclare these tokens locally. Light-only: backgrounds are always light,
-   text always dark enough to read on them. Token NAMES are unified here
-   (older pages used --panel/--muted/--accent for what other stylesheets call
-   --surface/--mut/--gold — both names resolve to the same value below, so
-   legacy markup keeps working). Change a colour once here and it propagates
-   everywhere. `--gold` keeps its name for backward-compat with markup that
-   references it, but its VALUE is the cinnabar accent, not gold or blue.
-   Fonts are injected by site-header.js; the families are tokenised here too.
+   same paper/ink structure) with the accent retoned to cinnabar for this repo
+   (Jul 2026 port). DEFINE COLOURS HERE ONLY. Every page and viewer links this
+   file; none should redeclare these tokens locally. Light-only: backgrounds are
+   always light, text always dark enough to read on them. Token NAMES are
+   unified here (older pages used --panel/--muted/--accent for what other
+   stylesheets call --surface/--mut/--gold — both names resolve to the same
+   value below, so legacy markup keeps working). Change a colour once here and
+   it propagates everywhere. `--gold` keeps its name for backward-compat with
+   markup that references it, but its VALUE is the cinnabar accent.
+
+   The zen look (Oct 6 2026): rice paper, sumi ink, one seal-red accent, hairline
+   rules, a lot of empty space. Surfaces are paper tones, never pure white; the
+   ink is warm black; the seal red is the only colour that speaks. Fonts are
+   injected by site-header.js; the families are tokenised here too.
    ─────────────────────────────────────────────────────────────────────────── */
 :root{
-  /* —— surfaces (always light) —— */
-  --bg:#f4f1ea;            /* page background (warm paper) */
-  --surface:#ffffff;       /* cards / panels */
-  --panel:#ffffff;         /* legacy alias of --surface */
-  --panel2:#faf8f3;        /* slightly recessed panel */
-  --card:#ffffff;
-  --paper:#faf8f3;
-  --chip:#eaf0f7;          /* soft blue chip fill */
-  --thumb-bg:#faf8f3;      /* neutral mat behind contained card art (never crop) */
-  --stage:#faf8f3;         /* video/sequence stage — light (was #000) */
-  --felt:#eef0f7;          /* game table — light (was dark green/navy) */
-  --grammar-bg-light:#ffffff;
-  --grammar-bg-dark:#f4f1ea;   /* "dark" grammar bg is just the page bg now */
-  --tree-bg:#f4f1ea;
-  --tree-bg-light:#ffffff;
+  color-scheme:light;
 
-  /* —— ink (always dark enough for the light surfaces above) —— */
-  --ink:#221f1a;           /* primary text */
-  --ink-soft:#4a4439;      /* secondary text */
-  --ink-strong:#221f1a;    /* legacy alias — NEVER white */
-  --mut:#6b6457;           /* muted */
-  --muted:#6b6457;         /* legacy alias of --mut */
-  --faint:#8a8273;         /* faintest readable */
-  --fg:#221f1a;            /* legacy alias */
-  --text:#221f1a;          /* legacy alias */
-  --grammar-text:#221f1a;
-  --grammar-text-muted:#6b6457;
-  --tree-text:#221f1a;
-  --tree-text-muted:#6b6457;
+  /* —— surfaces: rice paper (always light) —— */
+  --bg:#f3efe6;            /* page ground: rice paper */
+  --surface:#faf8f2;       /* a lighter sheet laid on the paper (cards, panels) */
+  --panel:#faf8f2;         /* legacy alias of --surface */
+  --panel2:#f6f3ec;        /* slightly recessed sheet */
+  --card:#faf8f2;
+  --paper:#f6f3ec;
+  --chip:#ece6d9;          /* pale paper chip fill */
+  --chip-hover:#e6dfcf;    /* chip / menu row under the pointer */
+  --thumb-bg:#f6f3ec;      /* neutral mat behind contained art (never crop) */
+  --mat:#fbfaf6;           /* the mat a painting sits on */
+  --stage:#f6f3ec;         /* video/sequence stage — light (was #000) */
+  --felt:#ece9e0;          /* game table — light */
+  --grammar-bg-light:#faf8f2;
+  --grammar-bg-dark:#f3efe6;   /* "dark" grammar bg is just the page bg now */
+  --tree-bg:#f3efe6;
+  --tree-bg-light:#faf8f2;
 
-  /* —— hairlines —— */
-  --line:#d8d2c6;
-  --line-soft:#cfc8ba;
-  --chipline:#cfc8ba;
-  --tree-line:rgba(60,45,20,.12);
+  /* —— sumi ink (always dark enough for the paper above) —— */
+  --sumi:#1c1a17;          /* warm black ink */
+  --ink:#1c1a17;           /* primary text */
+  --ink-soft:#46413a;      /* secondary text */
+  --ink-strong:#1c1a17;    /* legacy alias — NEVER white */
+  --mut:#655f55;           /* muted */
+  --muted:#655f55;         /* legacy alias of --mut */
+  --faint:#857e71;         /* faintest readable */
+  --fg:#1c1a17;            /* legacy alias */
+  --text:#1c1a17;          /* legacy alias */
+  --grammar-text:#1c1a17;
+  --grammar-text-muted:#655f55;
+  --tree-text:#1c1a17;
+  --tree-text-muted:#655f55;
+  --on-seal:#fbfaf6;       /* text on a seal-red fill */
 
-  /* —— the one UI accent: restrained sky/indigo blue (accent only, never a fill) ——
-     Replaces tarot's gold for this repo (Jul 2026 port). Purple stays reserved
-     for recursive.eco wayfinding links/buttons below — never used as chrome. */
-  --gold:#9c3b2a;
+  /* —— hairlines and ink wash —— */
+  --line:#dbd4c6;
+  --line-soft:#cfc7b7;
+  --chipline:#cfc7b7;
+  --tree-line:rgba(28,26,23,.12);
+  --wash:rgba(28,26,23,.22);   /* the darkest point of a faint ink-wash rule */
+
+  /* —— the one accent: seal red (cinnabar), accent only, never a large fill ——
+     Purple stays reserved for recursive.eco wayfinding links/buttons below. */
+  --seal:#9c3b2a;
+  --seal-deep:#7a2d20;     /* seal red under the pointer */
+  --gold:#9c3b2a;          /* legacy name, cinnabar value */
   --accent:#9c3b2a;        /* legacy alias of --gold */
   --accent2:#9c3b2a;
-  --violet:#9c3b2a;        /* legacy alias — folded into the blue accent */
+  --violet:#9c3b2a;        /* legacy alias — folded into the accent */
   --grammar-accent:#9c3b2a;
   --grammar-accent-dark:#7a2d20;
   --tree-accent:#9c3b2a;
@@ -69,29 +80,64 @@
   --good:#3f7a5c; --win:#3f7a5c; --us:#3f7a5c;
   --bad:#c0473b; --lose:#c0473b; --later:#b5651d;
 
-  /* —— shadows —— */
-  --shadow-card:0 14px 30px -20px rgba(60,45,20,.55);
-  --shadow-lift:0 26px 46px -22px rgba(60,45,20,.6);
+  /* —— recursive.eco wayfinding (the platform's purple) —— */
+  --eco:#9333ea;
+  --eco-deep:#7c2fd0;
+  --eco-line:#c9a8f0;
+  --eco-tint:#faf5ff;
 
-  /* —— type families (webfont injected by site-header.js) —— */
-  --serif-display:"Fraunces",Georgia,"Times New Roman",serif;
+  /* —— shadows: barely there; paper lies flat —— */
+  --shadow-card:0 10px 24px -22px rgba(40,32,20,.45);
+  --shadow-lift:0 18px 34px -26px rgba(40,32,20,.5);
+  --shadow-menu:0 16px 40px -20px rgba(40,32,20,.35);
+
+  /* —— type families (webfonts injected by site-header.js) ——
+     Display: Shippori Mincho, a brush-born Mincho, for titles only.
+     Body: Fraunces at text sizes, for reading. */
+  --serif-display:"Shippori Mincho","Fraunces",Georgia,"Times New Roman",serif;
   --serif-body:"Fraunces",Georgia,serif;
   --sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 
+/* The page is paper, never transparent: a transparent page lets a dark-mode
+   browser (and the assistant launcher's theme guess) paint dark behind things. */
+html{background:var(--bg);color:var(--ink)}
+body{background:var(--bg);color:var(--ink)}
+::selection{background:rgba(156,59,42,.16);color:inherit}
+
 /* recursive.eco redirects render in the platform purple, app-wide (wayfinding to the parent) */
-a[href^="https://recursive.eco"],a[href^="http://recursive.eco"],a[href^="https://flow.recursive.eco"],a[href^="https://kids.recursive.eco"]{color:#9333ea}
+a[href^="https://recursive.eco"],a[href^="http://recursive.eco"],a[href^="https://flow.recursive.eco"],a[href^="https://kids.recursive.eco"]{color:var(--eco)}
 
 /* recursive.eco redirect BUTTONS render purple too (wayfinding) — !important beats local button CSS */
-a.solid[href*="//recursive.eco"],a.solid[href*="//flow.recursive.eco"],a.btn.primary[href*="//recursive.eco"],a.btn.primary[href*="//flow.recursive.eco"]{background:#9333ea!important;border-color:#9333ea!important;color:#fff!important}
-a.solid[href*="//recursive.eco"]:hover,a.solid[href*="//flow.recursive.eco"]:hover{background:#7c2fd0!important}
-a.line[href*="//recursive.eco"],a.line[href*="//flow.recursive.eco"]{color:#9333ea!important;border-color:#c9a8f0!important}
-a.line[href*="//recursive.eco"]:hover,a.line[href*="//flow.recursive.eco"]:hover{border-color:#9333ea!important;color:#9333ea!important}
+a.solid[href*="//recursive.eco"],a.solid[href*="//flow.recursive.eco"],a.btn.primary[href*="//recursive.eco"],a.btn.primary[href*="//flow.recursive.eco"]{background:var(--eco)!important;border-color:var(--eco)!important;color:#fff!important}
+a.solid[href*="//recursive.eco"]:hover,a.solid[href*="//flow.recursive.eco"]:hover{background:var(--eco-deep)!important}
+a.line[href*="//recursive.eco"],a.line[href*="//flow.recursive.eco"]{color:var(--eco)!important;border-color:var(--eco-line)!important}
+a.line[href*="//recursive.eco"]:hover,a.line[href*="//flow.recursive.eco"]:hover{border-color:var(--eco)!important;color:var(--eco)!important}
 
 /* Canonical recursive.eco action chip — platform purple, carries its own action icon
    (pencil = Edit, play = Play). ONE affordance across the cards viewer + the Caster. */
 .eco-chip{display:inline-flex;align-items:center;gap:6px;font-family:var(--sans);font-size:12.5px;font-weight:600;
-  text-decoration:none;color:#9333ea;padding:6px 12px;border-radius:8px;border:1px solid #c9a8f0;background:#fff;
+  text-decoration:none;color:var(--eco);padding:6px 12px;border-radius:6px;border:1px solid var(--eco-line);background:var(--mat);
   transition:border-color .15s,background .15s}
-.eco-chip:hover{border-color:#9333ea;background:#faf5ff}
+.eco-chip:hover{border-color:var(--eco);background:var(--eco-tint)}
 .eco-chip svg{width:15px;height:15px;flex-shrink:0}
+
+/* ── Zen pieces, shared by every page ─────────────────────────────────────── */
+
+/* A hairline that fades into ink wash at its centre and out to nothing at its ends. */
+.ink-rule{display:block;height:1px;border:0;margin:56px auto;max-width:560px;
+  background:linear-gradient(90deg,transparent,var(--line) 18%,var(--wash) 50%,var(--line) 82%,transparent)}
+
+/* An ensō, drawn once (img/enso.svg, built by scripts/build_zen_marks.py), coloured by the theme. */
+.enso{display:block;width:44px;height:44px;margin:0 auto;background:var(--sumi);opacity:.82;
+  -webkit-mask:url(img/enso.svg) center/contain no-repeat;mask:url(img/enso.svg) center/contain no-repeat}
+.enso.sm{width:28px;height:28px}
+
+/* A painting: contained on a mat, never cropped or covered; the caption names it. */
+.zen-art{margin:0}
+.zen-art .mat{display:inline-block;background:var(--mat);border:1px solid var(--line);padding:10px;line-height:0}
+.zen-art img{display:block;max-width:100%;height:auto;object-fit:contain}
+.zen-art figcaption{font-family:var(--sans);font-size:11.5px;line-height:1.55;letter-spacing:.02em;color:var(--mut);margin-top:10px}
+.zen-art figcaption cite{font-style:italic;color:var(--ink-soft)}
+.zen-art figcaption a{color:inherit;text-decoration:underline;text-decoration-color:var(--line-soft);text-underline-offset:2px}
+.zen-art figcaption a:hover{color:var(--seal);text-decoration-color:currentColor}

@@ -1,5 +1,45 @@
 # Changelog — The Recursive I Ching
 
+## October 6, 2026 (later) — a zen look: the seal-red spiral, ink and paper, public-domain zen art
+
+PlayfulProcess: "Maybe the recursive logo in i ching can have the iching colors? also, can we make
+the whole theme of the iching a bit more like zen art? maybe even render PD zen art?" And: "I hate
+how the assistant is rendering in a black square."
+
+- **The spiral as a seal:** `img/recursive-logo-seal.svg` is recursive.eco's spiral, its path
+  unchanged, cut out of a seal-red block like the lines of a hanko. It is the header mark (30 px)
+  and the home page's "One branch of a larger tree" mark (44 px), and still links to
+  https://recursive.eco/. `scripts/build_zen_marks.py` builds it from `img/recursive-logo.svg`,
+  and also draws `img/enso.svg`; edit the script, not the SVGs.
+- **Ink and paper (`theme.css`):**
+  - rice-paper ground `#f3efe6`, paper-toned sheets instead of white, warm sumi ink `#1c1a17`;
+  - seal red `#9c3b2a` is still the one accent, now also named `--seal`;
+  - hairline rules, flatter shadows, smaller corners;
+  - `.ink-rule` (a hairline that darkens to an ink wash at its centre), `.enso` (a drawn ensō,
+    coloured by the theme) and `.zen-art` (a painting on a mat, contained, captioned).
+  - Titles are set in Shippori Mincho; reading text stays in Fraunces. Light-only, as before.
+  - The header and footer take their colours from the tokens instead of their own hex values.
+- **Public-domain zen art** (`img/zen/`, five works, all on Wikimedia Commons; sources and licence
+  templates in `NOTICE`, `img/zen/credits.json`, and "The paintings" at the foot of the home page):
+  - home page: Hasegawa Tōhaku's *Pine Trees* (right-hand screen) opens it, and Hakuin's *Portrait
+    of Daruma* hangs beside "A mirror, never a command";
+  - courses, on the first chapter: Sengai's *Circle, Triangle, Square* for Three Lenses, Mu Qi's
+    *Six Persimmons* for the translations, Sesshū's 1495 splashed-ink landscape, with all the
+    inscriptions above it, for the Books of the Changes.
+  - Every image is the whole work as Commons has it, inscriptions and seals included, reduced to
+    at most 1600 px wide and 190 KB.
+- **The black square:** the assistant launcher guesses a page's theme; this site's page background
+  was transparent, so on a dark-mode computer it guessed "dark" and drew a dark box behind the
+  button. `assistant.js` now passes `theme: 'light'`, and `theme.css` paints `html` and `body` with
+  the paper.
+- **`recursive-eco.json` has a `shell` block** (name, home, colours, font) in the same look, for
+  recursive.eco's framed previews. No logo and no menu yet.
+- **Not changed:** the viewers under `viewers/` (they take the new tokens, untouched otherwise) and
+  every grammar.
+- **Not verified:** Sengai's file on Commons carries `{{PD-Japan}}`, not PD-Art, and names no
+  collection; "Idemitsu Museum of Arts" in its caption was not checked against the museum. The home
+  page's Hokusai thumbnail (a Commons link from before this change) returns 404 and still does.
+
 ## October 6, 2026 — ready to connect: the open decisions taken
 
 PlayfulProcess: "For I Ching, do what you think is best." Decisions and reasons are in

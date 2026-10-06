@@ -22,11 +22,11 @@
   .ric p a{color:var(--gold);text-decoration:none}.ric p a:hover{text-decoration:underline}
   .ric form{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:18px auto 6px;max-width:420px}
   .ric input{flex:1;min-width:200px;font-family:var(--sans);font-size:14px;padding:10px 14px;
-    border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+    border:1px solid var(--line);border-radius:3px;background:var(--surface);color:var(--ink)}
   .ric input::placeholder{color:var(--faint)}
   .ric button{font-family:var(--sans);font-weight:600;font-size:14px;padding:10px 20px;border:0;
-    border-radius:8px;background:var(--gold);color:#fff;cursor:pointer}
-  .ric button:hover{background:#7a2d20}.ric button:disabled{opacity:.6;cursor:default}
+    border-radius:3px;background:var(--gold);color:var(--on-seal);cursor:pointer}
+  .ric button:hover{background:var(--seal-deep)}.ric button:disabled{opacity:.6;cursor:default}
   .ric .msg{font-family:var(--sans);font-size:13px;margin-top:8px;min-height:1em}
   .ric .links{font-family:var(--sans);font-size:12.5px;color:var(--mut);margin-top:20px}
   .ric .links a{color:var(--gold);text-decoration:none;margin:0 7px}.ric .links a:hover{text-decoration:underline}
@@ -55,16 +55,16 @@
       f.addEventListener('submit', async function(e){
         e.preventDefault();
         var email=(f.querySelector('#ric-email').value||'').trim();
-        if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){msg.style.color='#c0473b';msg.textContent='Please enter a valid email.';return;}
+        if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){msg.style.color='var(--bad)';msg.textContent='Please enter a valid email.';return;}
         var btn=f.querySelector('button'); btn.disabled=true; btn.textContent='Signing up…'; msg.textContent='';
         try{
           var r=await fetch(SUPA+'/rest/v1/newsletter_subscribers',{method:'POST',
             headers:{'apikey':ANON,'Authorization':'Bearer '+ANON,'Content-Type':'application/json','Prefer':'return=minimal'},
             body:JSON.stringify({email:email,subscribed_from:'recursive-iching',subscribed:true})});
-          if(r.ok){msg.style.color='#3f7a5c';msg.textContent='✓ Welcome to the recursive public!';f.querySelector('#ric-email').value='';}
-          else if(r.status===409){msg.style.color='#3f7a5c';msg.textContent='✓ You\'re already signed up!';}
+          if(r.ok){msg.style.color='var(--good)';msg.textContent='✓ Welcome to the recursive public!';f.querySelector('#ric-email').value='';}
+          else if(r.status===409){msg.style.color='var(--good)';msg.textContent='✓ You\'re already signed up!';}
           else{throw new Error('status '+r.status);}
-        }catch(err){msg.style.color='#c0473b';msg.innerHTML='Something went wrong — or sign up at <a href="https://recursive.eco" target="_blank" rel="noopener" style="color:var(--gold)">recursive.eco</a>.';}
+        }catch(err){msg.style.color='var(--bad)';msg.innerHTML='Something went wrong — or sign up at <a href="https://recursive.eco" target="_blank" rel="noopener" style="color:var(--gold)">recursive.eco</a>.';}
         finally{btn.disabled=false; btn.textContent='Sign up';}
       });
     }
