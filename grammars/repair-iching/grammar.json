@@ -47,6 +47,7 @@
   "items": [
     {
       "id": "hex06-conflict",
+      "number": 6,
       "name": "Hexagram 6 · 訟 Sòng · Conflict",
       "sort_order": 1,
       "category": "repair-hexagram",
@@ -69,6 +70,7 @@
     },
     {
       "id": "hex29-the-abysmal",
+      "number": 29,
       "name": "Hexagram 29 · 坎 Kǎn · The Abysmal (Water)",
       "sort_order": 2,
       "category": "repair-hexagram",
@@ -91,6 +93,7 @@
     },
     {
       "id": "hex58-the-joyous",
+      "number": 58,
       "name": "Hexagram 58 · 兌 Duì · The Joyous (Lake)",
       "sort_order": 3,
       "category": "repair-hexagram",
@@ -113,6 +116,7 @@
     },
     {
       "id": "hex24-return",
+      "number": 24,
       "name": "Hexagram 24 · 復 Fù · Return (The Turning Point)",
       "sort_order": 4,
       "category": "repair-hexagram",
@@ -135,6 +139,7 @@
     },
     {
       "id": "hex63-after-completion",
+      "number": 63,
       "name": "Hexagram 63 · 既濟 Jì Jì · After Completion",
       "sort_order": 5,
       "category": "repair-hexagram",
@@ -157,6 +162,7 @@
     },
     {
       "id": "hex50-the-caldron",
+      "number": 50,
       "name": "Hexagram 50 · 鼎 Dǐng · The Caldron",
       "sort_order": 6,
       "category": "repair-hexagram",
@@ -179,6 +185,7 @@
     },
     {
       "id": "hex47-oppression",
+      "number": 47,
       "name": "Hexagram 47 · 困 Kùn · Oppression (Exhaustion)",
       "sort_order": 7,
       "category": "repair-hexagram",
@@ -201,6 +208,7 @@
     },
     {
       "id": "hex49-revolution",
+      "number": 49,
       "name": "Hexagram 49 · 革 Gé · Revolution (Molting)",
       "sort_order": 8,
       "category": "repair-hexagram",
@@ -223,6 +231,7 @@
     },
     {
       "id": "hex53-gradual-progress",
+      "number": 53,
       "name": "Hexagram 53 · 漸 Jiàn · Gradual Progress",
       "sort_order": 9,
       "category": "repair-hexagram",
@@ -245,6 +254,7 @@
     },
     {
       "id": "hex11-peace",
+      "number": 11,
       "name": "Hexagram 11 · 泰 Tài · Peace",
       "sort_order": 10,
       "category": "repair-hexagram",
@@ -267,6 +277,7 @@
     },
     {
       "id": "hex20-contemplation",
+      "number": 20,
       "name": "Hexagram 20 · 觀 Guān · Contemplation (View)",
       "sort_order": 11,
       "category": "repair-hexagram",
@@ -289,6 +300,7 @@
     },
     {
       "id": "hex64-before-completion",
+      "number": 64,
       "name": "Hexagram 64 · 未濟 Wèi Jì · Before Completion",
       "sort_order": 12,
       "category": "repair-hexagram",

@@ -102,6 +102,7 @@ for n in range(1, 65):
         asks = f"{lens.get('name', '')}" + (f" — {kws}" if kws else "")
     composites.append({
         "id": f"hex-{n}",
+        "number": n,   # King Wen 1-64 at the top level: the viewers' relating-hexagram lookup reads item.number (finding V-1)
         "name": f"{n} · {name}",
         "symbol": (summ or {}).get("symbol") or table[str(n)].get("symbol", ""),
         "level": 2,
@@ -125,6 +126,9 @@ for n in range(1, 65):
     })
 
 grammar = {
+    # Built from the other grammars: recursive.eco's importer skips a `_generated` file, so this
+    # never auto-imports as a new public grammar (decision, Oct 6 2026; docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md).
+    "_generated": True,
     "_grammar_commons": {
         "schema_version": "1.0",
         "license": "CC BY-SA 4.0 for the composition and the repo's own texts; Legge (1882/1899) is public domain; see each source grammar for its own notice.",

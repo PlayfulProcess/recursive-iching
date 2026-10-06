@@ -39,7 +39,7 @@ recursive-iching/
 │                                  the Three Lenses reading, chapters read live from three-lenses-64
 ├── scripts/build_collection.py    rebuild grammars/_collection.json after adding/editing a grammar
 ├── recursive-eco.json             channel manifest (how recursive.eco imports this repo)
-├── ids.json                       slug -> recursive.eco grammar UUID (skeleton — nothing published yet)
+├── ids.json                       slug -> recursive.eco grammar UUID (filled Oct 6 2026; not imported yet)
 └── GRAMMAR_FORMAT.md              grammar-JSON format reference — mirrored copy; canonical version is
                                     recursive.eco-schemas/GRAMMAR_FORMAT.md
 ```
@@ -55,8 +55,8 @@ edits it needs for the next site.
 ## Status
 
 Content lifted from `recursive.eco-schemas`, chrome ported from `recursive-astrology`/
-`recursive-tarot`, verified locally with Playwright. **Not yet published to recursive.eco**
-(`ids.json` is an intentional empty skeleton) and not yet live on a custom domain (`CNAME` points
+`recursive-tarot`, verified locally with Playwright. **Not yet imported into recursive.eco**
+(`ids.json` maps each folder since Oct 6 2026; see `docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md`) and not yet live on a custom domain (`CNAME` points
 at `iching.recursive.eco`, DNS/Pages settings are a separate handoff step). See `CHANGELOG.md` for
 the full build record.
 

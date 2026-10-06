@@ -23,6 +23,7 @@
   "items": [
     {
       "id": "hex-1",
+      "number": 1,
       "name": "Creative Power",
       "symbol": "䷀",
       "category": "hexagram",
@@ -55,6 +56,7 @@
     },
     {
       "id": "hex-2",
+      "number": 2,
       "name": "Receptive Flow",
       "symbol": "䷁",
       "category": "hexagram",
@@ -87,6 +89,7 @@
     },
     {
       "id": "hex-3",
+      "number": 3,
       "name": "Difficulty at the Beginning",
       "symbol": "䷂",
       "category": "hexagram",
@@ -119,6 +122,7 @@
     },
     {
       "id": "hex-4",
+      "number": 4,
       "name": "Youthful Folly",
       "symbol": "䷃",
       "category": "hexagram",
@@ -151,6 +155,7 @@
     },
     {
       "id": "hex-5",
+      "number": 5,
       "name": "Waiting",
       "symbol": "䷄",
       "category": "hexagram",
@@ -183,6 +188,7 @@
     },
     {
       "id": "hex-6",
+      "number": 6,
       "name": "Conflict",
       "symbol": "䷅",
       "category": "hexagram",
@@ -215,6 +221,7 @@
     },
     {
       "id": "hex-7",
+      "number": 7,
       "name": "The Army",
       "symbol": "䷆",
       "category": "hexagram",
@@ -247,6 +254,7 @@
     },
     {
       "id": "hex-8",
+      "number": 8,
       "name": "Holding Together",
       "symbol": "䷇",
       "category": "hexagram",
@@ -279,6 +287,7 @@
     },
     {
       "id": "hex-9",
+      "number": 9,
       "name": "Taming Power of the Small",
       "symbol": "䷈",
       "category": "hexagram",
@@ -311,6 +320,7 @@
     },
     {
       "id": "hex-10",
+      "number": 10,
       "name": "Treading",
       "symbol": "䷉",
       "category": "hexagram",
@@ -343,6 +353,7 @@
     },
     {
       "id": "hex-11",
+      "number": 11,
       "name": "Peace",
       "symbol": "䷊",
       "category": "hexagram",
@@ -375,6 +386,7 @@
     },
     {
       "id": "hex-12",
+      "number": 12,
       "name": "Standstill",
       "symbol": "䷋",
       "category": "hexagram",
@@ -407,6 +419,7 @@
     },
     {
       "id": "hex-13",
+      "number": 13,
       "name": "Fellowship",
       "symbol": "䷌",
       "category": "hexagram",
@@ -439,6 +452,7 @@
     },
     {
       "id": "hex-14",
+      "number": 14,
       "name": "Possession in Great Measure",
       "symbol": "䷍",
       "category": "hexagram",
@@ -471,6 +485,7 @@
     },
     {
       "id": "hex-15",
+      "number": 15,
       "name": "Modesty",
       "symbol": "䷎",
       "category": "hexagram",
@@ -503,6 +518,7 @@
     },
     {
       "id": "hex-16",
+      "number": 16,
       "name": "Enthusiasm",
       "symbol": "䷏",
       "category": "hexagram",
@@ -535,6 +551,7 @@
     },
     {
       "id": "hex-17",
+      "number": 17,
       "name": "Following",
       "symbol": "䷐",
       "category": "hexagram",
@@ -567,6 +584,7 @@
     },
     {
       "id": "hex-18",
+      "number": 18,
       "name": "Work on the Decayed",
       "symbol": "䷑",
       "category": "hexagram",
@@ -599,6 +617,7 @@
     },
     {
       "id": "hex-19",
+      "number": 19,
       "name": "Approach",
       "symbol": "䷒",
       "category": "hexagram",
@@ -631,6 +650,7 @@
     },
     {
       "id": "hex-20",
+      "number": 20,
       "name": "Contemplation",
       "symbol": "䷓",
       "category": "hexagram",
@@ -663,6 +683,7 @@
     },
     {
       "id": "hex-21",
+      "number": 21,
       "name": "Biting Through",
       "symbol": "䷔",
       "category": "hexagram",
@@ -695,6 +716,7 @@
     },
     {
       "id": "hex-22",
+      "number": 22,
       "name": "Grace",
       "symbol": "䷕",
       "category": "hexagram",
@@ -727,6 +749,7 @@
     },
     {
       "id": "hex-23",
+      "number": 23,
       "name": "Splitting Apart",
       "symbol": "䷖",
       "category": "hexagram",
@@ -759,6 +782,7 @@
     },
     {
       "id": "hex-24",
+      "number": 24,
       "name": "Return",
       "symbol": "䷗",
       "category": "hexagram",
@@ -791,6 +815,7 @@
     },
     {
       "id": "hex-25",
+      "number": 25,
       "name": "Innocence",
       "symbol": "䷘",
       "category": "hexagram",
@@ -823,6 +848,7 @@
     },
     {
       "id": "hex-26",
+      "number": 26,
       "name": "Taming Power of the Great",
       "symbol": "䷙",
       "category": "hexagram",
@@ -855,6 +881,7 @@
     },
     {
       "id": "hex-27",
+      "number": 27,
       "name": "Nourishment",
       "symbol": "䷚",
       "category": "hexagram",
@@ -887,6 +914,7 @@
     },
     {
       "id": "hex-28",
+      "number": 28,
       "name": "Preponderance of the Great",
       "symbol": "䷛",
       "category": "hexagram",
@@ -919,6 +947,7 @@
     },
     {
       "id": "hex-29",
+      "number": 29,
       "name": "The Abysmal Water",
       "symbol": "䷜",
       "category": "hexagram",
@@ -951,6 +980,7 @@
     },
     {
       "id": "hex-30",
+      "number": 30,
       "name": "The Clinging Fire",
       "symbol": "䷝",
       "category": "hexagram",
@@ -983,6 +1013,7 @@
     },
     {
       "id": "hex-31",
+      "number": 31,
       "name": "Influence",
       "symbol": "䷞",
       "category": "hexagram",
@@ -1015,6 +1046,7 @@
     },
     {
       "id": "hex-32",
+      "number": 32,
       "name": "Duration",
       "symbol": "䷟",
       "category": "hexagram",
@@ -1047,6 +1079,7 @@
     },
     {
       "id": "hex-33",
+      "number": 33,
       "name": "Retreat",
       "symbol": "䷠",
       "category": "hexagram",
@@ -1079,6 +1112,7 @@
     },
     {
       "id": "hex-34",
+      "number": 34,
       "name": "Power of the Great",
       "symbol": "䷡",
       "category": "hexagram",
@@ -1111,6 +1145,7 @@
     },
     {
       "id": "hex-35",
+      "number": 35,
       "name": "Progress",
       "symbol": "䷢",
       "category": "hexagram",
@@ -1143,6 +1178,7 @@
     },
     {
       "id": "hex-36",
+      "number": 36,
       "name": "Darkening of the Light",
       "symbol": "䷣",
       "category": "hexagram",
@@ -1175,6 +1211,7 @@
     },
     {
       "id": "hex-37",
+      "number": 37,
       "name": "The Family",
       "symbol": "䷤",
       "category": "hexagram",
@@ -1207,6 +1244,7 @@
     },
     {
       "id": "hex-38",
+      "number": 38,
       "name": "Opposition",
       "symbol": "䷥",
       "category": "hexagram",
@@ -1239,6 +1277,7 @@
     },
     {
       "id": "hex-39",
+      "number": 39,
       "name": "Obstruction",
       "symbol": "䷦",
       "category": "hexagram",
@@ -1271,6 +1310,7 @@
     },
     {
       "id": "hex-40",
+      "number": 40,
       "name": "Deliverance",
       "symbol": "䷧",
       "category": "hexagram",
@@ -1303,6 +1343,7 @@
     },
     {
       "id": "hex-41",
+      "number": 41,
       "name": "Decrease",
       "symbol": "䷨",
       "category": "hexagram",
@@ -1335,6 +1376,7 @@
     },
     {
       "id": "hex-42",
+      "number": 42,
       "name": "Increase",
       "symbol": "䷩",
       "category": "hexagram",
@@ -1367,6 +1409,7 @@
     },
     {
       "id": "hex-43",
+      "number": 43,
       "name": "Breakthrough",
       "symbol": "䷪",
       "category": "hexagram",
@@ -1399,6 +1442,7 @@
     },
     {
       "id": "hex-44",
+      "number": 44,
       "name": "Coming to Meet",
       "symbol": "䷫",
       "category": "hexagram",
@@ -1431,6 +1475,7 @@
     },
     {
       "id": "hex-45",
+      "number": 45,
       "name": "Gathering Together",
       "symbol": "䷬",
       "category": "hexagram",
@@ -1463,6 +1508,7 @@
     },
     {
       "id": "hex-46",
+      "number": 46,
       "name": "Pushing Upward",
       "symbol": "䷭",
       "category": "hexagram",
@@ -1495,6 +1541,7 @@
     },
     {
       "id": "hex-47",
+      "number": 47,
       "name": "Oppression",
       "symbol": "䷮",
       "category": "hexagram",
@@ -1527,6 +1574,7 @@
     },
     {
       "id": "hex-48",
+      "number": 48,
       "name": "The Well",
       "symbol": "䷯",
       "category": "hexagram",
@@ -1559,6 +1607,7 @@
     },
     {
       "id": "hex-49",
+      "number": 49,
       "name": "Revolution",
       "symbol": "䷰",
       "category": "hexagram",
@@ -1591,6 +1640,7 @@
     },
     {
       "id": "hex-50",
+      "number": 50,
       "name": "The Cauldron",
       "symbol": "䷱",
       "category": "hexagram",
@@ -1623,6 +1673,7 @@
     },
     {
       "id": "hex-51",
+      "number": 51,
       "name": "The Arousing",
       "symbol": "䷲",
       "category": "hexagram",
@@ -1655,6 +1706,7 @@
     },
     {
       "id": "hex-52",
+      "number": 52,
       "name": "Keeping Still",
       "symbol": "䷳",
       "category": "hexagram",
@@ -1687,6 +1739,7 @@
     },
     {
       "id": "hex-53",
+      "number": 53,
       "name": "Development",
       "symbol": "䷴",
       "category": "hexagram",
@@ -1719,6 +1772,7 @@
     },
     {
       "id": "hex-54",
+      "number": 54,
       "name": "The Marrying Maiden",
       "symbol": "䷵",
       "category": "hexagram",
@@ -1751,6 +1805,7 @@
     },
     {
       "id": "hex-55",
+      "number": 55,
       "name": "Abundance",
       "symbol": "䷶",
       "category": "hexagram",
@@ -1783,6 +1838,7 @@
     },
     {
       "id": "hex-56",
+      "number": 56,
       "name": "The Wanderer",
       "symbol": "䷷",
       "category": "hexagram",
@@ -1815,6 +1871,7 @@
     },
     {
       "id": "hex-57",
+      "number": 57,
       "name": "The Gentle",
       "symbol": "䷸",
       "category": "hexagram",
@@ -1847,6 +1904,7 @@
     },
     {
       "id": "hex-58",
+      "number": 58,
       "name": "The Joyous",
       "symbol": "䷹",
       "category": "hexagram",
@@ -1879,6 +1937,7 @@
     },
     {
       "id": "hex-59",
+      "number": 59,
       "name": "Dispersion",
       "symbol": "䷺",
       "category": "hexagram",
@@ -1911,6 +1970,7 @@
     },
     {
       "id": "hex-60",
+      "number": 60,
       "name": "Limitation",
       "symbol": "䷻",
       "category": "hexagram",
@@ -1943,6 +2003,7 @@
     },
     {
       "id": "hex-61",
+      "number": 61,
       "name": "Inner Truth",
       "symbol": "䷼",
       "category": "hexagram",
@@ -1975,6 +2036,7 @@
     },
     {
       "id": "hex-62",
+      "number": 62,
       "name": "Preponderance of the Small",
       "symbol": "䷽",
       "category": "hexagram",
@@ -2007,6 +2069,7 @@
     },
     {
       "id": "hex-63",
+      "number": 63,
       "name": "After Completion",
       "symbol": "䷾",
       "category": "hexagram",
@@ -2039,6 +2102,7 @@
     },
     {
       "id": "hex-64",
+      "number": 64,
       "name": "Before Completion",
       "symbol": "䷿",
       "category": "hexagram",

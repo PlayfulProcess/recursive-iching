@@ -172,12 +172,9 @@
         </style>
         <div class="bar">
           <span class="brand">
-            <a class="brand-logo" href="https://recursive.eco" target="_blank" rel="noopener" title="Part of recursive.eco — the parent project" aria-label="recursive.eco — the parent project">
+            <a class="brand-logo" href="https://recursive.eco/" target="_blank" rel="noopener" title="recursive.eco — home" aria-label="recursive.eco — home">
               <span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;background:#fff;border-radius:50%;flex-shrink:0">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9c3b2a" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M17 4a7 7 0 1 0 3 11 5.6 5.6 0 0 1-3-11z" />
-                  <path d="M8.5 4.5l.6 1.7 1.7.6-1.7.6-.6 1.7-.6-1.7-1.7-.6 1.7-.6z" />
-                </svg>
+                <img src="${PFX}img/recursive-logo.svg" width="26" height="26" alt="" aria-hidden="true">
               </span>
             </a>
             <a class="brand-name" href="${PFX}index.html" title="The Recursive I Ching — home">

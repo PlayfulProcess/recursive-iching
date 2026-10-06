@@ -1,5 +1,9 @@
 # What the history says about the decisions (Oct 4 2026)
 
+**Oct 6 2026:** the library decisions below were taken in `BEFORE-CONNECTING-TO-RECURSIVE-ECO.md`
+("Decisions, Oct 6 2026"). Where they differ: `0f8f4088`'s Chinese is already inside `6efa4fc7`,
+so nothing is folded; `a172fed6` stays private; the meta and the book wait.
+
 *For PlayfulProcess. The Before-Connecting findings left six decisions open. The history of the
 books (`grammars/tree-of-the-iching`, the timeline, the genealogy and the two new courses) turns
 out to answer most of them, with one principle: **one book per node.** Each node of the tree is

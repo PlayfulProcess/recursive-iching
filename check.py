@@ -53,6 +53,12 @@ def check(path: Path) -> list[str]:
         meta = it.get("metadata") or {}
         if "video_id" in meta:
             errs.append(f"{path}: item {it.get('id')} uses metadata.video_id — rename to youtube_video_id")
+        # A hexagram carries its King Wen number at the TOP level too: the recursive.eco viewer's
+        # relating-hexagram lookup reads item.number and otherwise falls back to the position
+        # (finding V-1, Oct 2026). Frame items (metadata.role) are not hexagrams.
+        n = meta.get("number")
+        if isinstance(n, int) and 1 <= n <= 64 and "role" not in meta and it.get("number") != n:
+            errs.append(f"{path}: hexagram item {it.get('id')} has metadata.number {n} but top-level number {it.get('number')!r} — add \"number\": {n}")
     return errs
 
 

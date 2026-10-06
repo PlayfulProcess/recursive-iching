@@ -77,6 +77,7 @@ for n in range(1, 65):
     learn = (meeting + image).strip()
     items.append({
         "id": "hex-%d" % n,
+        "number": n,  # King Wen 1-64 at the top level: the viewers' relating-hexagram lookup reads item.number (finding V-1)
         "name": s.get("name") or entry.get("name") or ("Hexagram %d" % n),
         "symbol": s.get("symbol") or entry.get("symbol") or "",
         "category": "hexagram",
@@ -106,6 +107,9 @@ items.append({
 })
 
 grammar = {
+    # Built by this script: recursive.eco's importer skips a `_generated` file, so the book stays out
+    # of the app until its stories exist (decision, Oct 6 2026; docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md).
+    "_generated": True,
     "_grammar_commons": {
         "schema_version": "1.0",
         "license": ("CC BY-SA 4.0 (PlayfulProcess) for the frame, the Learn composition and any stories; "

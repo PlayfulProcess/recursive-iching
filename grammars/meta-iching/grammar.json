@@ -1,4 +1,5 @@
 {
+  "_generated": true,
   "_grammar_commons": {
     "schema_version": "1.0",
     "license": "CC BY-SA 4.0 for the composition and the repo's own texts; Legge (1882/1899) is public domain; see each source grammar for its own notice.",
@@ -19,6 +20,7 @@
   "items": [
     {
       "id": "hex-1",
+      "number": 1,
       "name": "1 · The Creative",
       "symbol": "䷀",
       "level": 2,
@@ -27,7 +29,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-1",
-        "zhouyi-core::hex-1",
+        "zhouyi-core::hexagram-1",
         "ten-wings::hex-1",
         "iching-hd-meta-categories::hex-1",
         "three-lenses-64::hex-1",
@@ -64,6 +66,7 @@
     },
     {
       "id": "hex-2",
+      "number": 2,
       "name": "2 · The Receptive",
       "symbol": "䷁",
       "level": 2,
@@ -72,7 +75,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-2",
-        "zhouyi-core::hex-2",
+        "zhouyi-core::hexagram-2",
         "ten-wings::hex-2",
         "iching-hd-meta-categories::hex-2",
         "three-lenses-64::hex-2",
@@ -109,6 +112,7 @@
     },
     {
       "id": "hex-3",
+      "number": 3,
       "name": "3 · Difficulty at the Beginning",
       "symbol": "䷂",
       "level": 2,
@@ -117,7 +121,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-3",
-        "zhouyi-core::hex-3",
+        "zhouyi-core::hexagram-3",
         "ten-wings::hex-3",
         "iching-hd-meta-categories::hex-3",
         "three-lenses-64::hex-3",
@@ -154,6 +158,7 @@
     },
     {
       "id": "hex-4",
+      "number": 4,
       "name": "4 · Youthful Folly",
       "symbol": "䷃",
       "level": 2,
@@ -162,7 +167,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-4",
-        "zhouyi-core::hex-4",
+        "zhouyi-core::hexagram-4",
         "ten-wings::hex-4",
         "iching-hd-meta-categories::hex-4",
         "three-lenses-64::hex-4",
@@ -199,6 +204,7 @@
     },
     {
       "id": "hex-5",
+      "number": 5,
       "name": "5 · Waiting (Nourishment)",
       "symbol": "䷄",
       "level": 2,
@@ -207,7 +213,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-5",
-        "zhouyi-core::hex-5",
+        "zhouyi-core::hexagram-5",
         "ten-wings::hex-5",
         "iching-hd-meta-categories::hex-5",
         "three-lenses-64::hex-5",
@@ -244,6 +250,7 @@
     },
     {
       "id": "hex-6",
+      "number": 6,
       "name": "6 · Conflict",
       "symbol": "䷅",
       "level": 2,
@@ -252,7 +259,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-6",
-        "zhouyi-core::hex-6",
+        "zhouyi-core::hexagram-6",
         "ten-wings::hex-6",
         "iching-hd-meta-categories::hex-6",
         "three-lenses-64::hex-6",
@@ -291,6 +298,7 @@
     },
     {
       "id": "hex-7",
+      "number": 7,
       "name": "7 · The Army",
       "symbol": "䷆",
       "level": 2,
@@ -299,7 +307,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-7",
-        "zhouyi-core::hex-7",
+        "zhouyi-core::hexagram-7",
         "ten-wings::hex-7",
         "iching-hd-meta-categories::hex-7",
         "three-lenses-64::hex-7",
@@ -336,6 +344,7 @@
     },
     {
       "id": "hex-8",
+      "number": 8,
       "name": "8 · Holding Together [Union]",
       "symbol": "䷇",
       "level": 2,
@@ -344,7 +353,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-8",
-        "zhouyi-core::hex-8",
+        "zhouyi-core::hexagram-8",
         "ten-wings::hex-8",
         "iching-hd-meta-categories::hex-8",
         "three-lenses-64::hex-8",
@@ -381,6 +390,7 @@
     },
     {
       "id": "hex-9",
+      "number": 9,
       "name": "9 · The Taming Power of the Small",
       "symbol": "䷈",
       "level": 2,
@@ -389,7 +399,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-9",
-        "zhouyi-core::hex-9",
+        "zhouyi-core::hexagram-9",
         "ten-wings::hex-9",
         "iching-hd-meta-categories::hex-9",
         "three-lenses-64::hex-9",
@@ -426,6 +436,7 @@
     },
     {
       "id": "hex-10",
+      "number": 10,
       "name": "10 · Treading [Conduct]",
       "symbol": "䷉",
       "level": 2,
@@ -434,7 +445,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-10",
-        "zhouyi-core::hex-10",
+        "zhouyi-core::hexagram-10",
         "ten-wings::hex-10",
         "iching-hd-meta-categories::hex-10",
         "three-lenses-64::hex-10",
@@ -471,6 +482,7 @@
     },
     {
       "id": "hex-11",
+      "number": 11,
       "name": "11 · Peace",
       "symbol": "䷊",
       "level": 2,
@@ -479,7 +491,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-11",
-        "zhouyi-core::hex-11",
+        "zhouyi-core::hexagram-11",
         "ten-wings::hex-11",
         "iching-hd-meta-categories::hex-11",
         "three-lenses-64::hex-11",
@@ -518,6 +530,7 @@
     },
     {
       "id": "hex-12",
+      "number": 12,
       "name": "12 · Standstill [Stagnation]",
       "symbol": "䷋",
       "level": 2,
@@ -526,7 +539,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-12",
-        "zhouyi-core::hex-12",
+        "zhouyi-core::hexagram-12",
         "ten-wings::hex-12",
         "iching-hd-meta-categories::hex-12",
         "three-lenses-64::hex-12",
@@ -563,6 +576,7 @@
     },
     {
       "id": "hex-13",
+      "number": 13,
       "name": "13 · Fellowship with Men",
       "symbol": "䷌",
       "level": 2,
@@ -571,7 +585,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-13",
-        "zhouyi-core::hex-13",
+        "zhouyi-core::hexagram-13",
         "ten-wings::hex-13",
         "iching-hd-meta-categories::hex-13",
         "three-lenses-64::hex-13",
@@ -608,6 +622,7 @@
     },
     {
       "id": "hex-14",
+      "number": 14,
       "name": "14 · Possession in Great Measure",
       "symbol": "䷍",
       "level": 2,
@@ -616,7 +631,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-14",
-        "zhouyi-core::hex-14",
+        "zhouyi-core::hexagram-14",
         "ten-wings::hex-14",
         "iching-hd-meta-categories::hex-14",
         "three-lenses-64::hex-14",
@@ -653,6 +668,7 @@
     },
     {
       "id": "hex-15",
+      "number": 15,
       "name": "15 · Modesty",
       "symbol": "䷎",
       "level": 2,
@@ -661,7 +677,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-15",
-        "zhouyi-core::hex-15",
+        "zhouyi-core::hexagram-15",
         "ten-wings::hex-15",
         "iching-hd-meta-categories::hex-15",
         "three-lenses-64::hex-15",
@@ -698,6 +714,7 @@
     },
     {
       "id": "hex-16",
+      "number": 16,
       "name": "16 · Enthusiasm",
       "symbol": "䷏",
       "level": 2,
@@ -706,7 +723,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-16",
-        "zhouyi-core::hex-16",
+        "zhouyi-core::hexagram-16",
         "ten-wings::hex-16",
         "iching-hd-meta-categories::hex-16",
         "three-lenses-64::hex-16",
@@ -743,6 +760,7 @@
     },
     {
       "id": "hex-17",
+      "number": 17,
       "name": "17 · Following",
       "symbol": "䷐",
       "level": 2,
@@ -751,7 +769,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-17",
-        "zhouyi-core::hex-17",
+        "zhouyi-core::hexagram-17",
         "ten-wings::hex-17",
         "iching-hd-meta-categories::hex-17",
         "three-lenses-64::hex-17",
@@ -788,6 +806,7 @@
     },
     {
       "id": "hex-18",
+      "number": 18,
       "name": "18 · Work on what has been spoiled [Decay]",
       "symbol": "䷑",
       "level": 2,
@@ -796,7 +815,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-18",
-        "zhouyi-core::hex-18",
+        "zhouyi-core::hexagram-18",
         "ten-wings::hex-18",
         "iching-hd-meta-categories::hex-18",
         "three-lenses-64::hex-18",
@@ -833,6 +852,7 @@
     },
     {
       "id": "hex-19",
+      "number": 19,
       "name": "19 · Approach",
       "symbol": "䷒",
       "level": 2,
@@ -841,7 +861,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-19",
-        "zhouyi-core::hex-19",
+        "zhouyi-core::hexagram-19",
         "ten-wings::hex-19",
         "iching-hd-meta-categories::hex-19",
         "three-lenses-64::hex-19",
@@ -878,6 +898,7 @@
     },
     {
       "id": "hex-20",
+      "number": 20,
       "name": "20 · Contemplation [View]",
       "symbol": "䷓",
       "level": 2,
@@ -886,7 +907,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-20",
-        "zhouyi-core::hex-20",
+        "zhouyi-core::hexagram-20",
         "ten-wings::hex-20",
         "iching-hd-meta-categories::hex-20",
         "three-lenses-64::hex-20",
@@ -925,6 +946,7 @@
     },
     {
       "id": "hex-21",
+      "number": 21,
       "name": "21 · Biting Through",
       "symbol": "䷔",
       "level": 2,
@@ -933,7 +955,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-21",
-        "zhouyi-core::hex-21",
+        "zhouyi-core::hexagram-21",
         "ten-wings::hex-21",
         "iching-hd-meta-categories::hex-21",
         "three-lenses-64::hex-21",
@@ -970,6 +992,7 @@
     },
     {
       "id": "hex-22",
+      "number": 22,
       "name": "22 · Grace",
       "symbol": "䷕",
       "level": 2,
@@ -978,7 +1001,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-22",
-        "zhouyi-core::hex-22",
+        "zhouyi-core::hexagram-22",
         "ten-wings::hex-22",
         "iching-hd-meta-categories::hex-22",
         "three-lenses-64::hex-22",
@@ -1015,6 +1038,7 @@
     },
     {
       "id": "hex-23",
+      "number": 23,
       "name": "23 · Splitting Apart",
       "symbol": "䷖",
       "level": 2,
@@ -1023,7 +1047,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-23",
-        "zhouyi-core::hex-23",
+        "zhouyi-core::hexagram-23",
         "ten-wings::hex-23",
         "iching-hd-meta-categories::hex-23",
         "three-lenses-64::hex-23",
@@ -1060,6 +1084,7 @@
     },
     {
       "id": "hex-24",
+      "number": 24,
       "name": "24 · Return (The Turning Point)",
       "symbol": "䷗",
       "level": 2,
@@ -1068,7 +1093,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-24",
-        "zhouyi-core::hex-24",
+        "zhouyi-core::hexagram-24",
         "ten-wings::hex-24",
         "iching-hd-meta-categories::hex-24",
         "three-lenses-64::hex-24",
@@ -1107,6 +1132,7 @@
     },
     {
       "id": "hex-25",
+      "number": 25,
       "name": "25 · Innocence (The Unexpected)",
       "symbol": "䷘",
       "level": 2,
@@ -1115,7 +1141,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-25",
-        "zhouyi-core::hex-25",
+        "zhouyi-core::hexagram-25",
         "ten-wings::hex-25",
         "iching-hd-meta-categories::hex-25",
         "three-lenses-64::hex-25",
@@ -1152,6 +1178,7 @@
     },
     {
       "id": "hex-26",
+      "number": 26,
       "name": "26 · The Taming Power of the Great",
       "symbol": "䷙",
       "level": 2,
@@ -1160,7 +1187,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-26",
-        "zhouyi-core::hex-26",
+        "zhouyi-core::hexagram-26",
         "ten-wings::hex-26",
         "iching-hd-meta-categories::hex-26",
         "three-lenses-64::hex-26",
@@ -1197,6 +1224,7 @@
     },
     {
       "id": "hex-27",
+      "number": 27,
       "name": "27 · The Corners of the Mouth (Providing Nourishment)",
       "symbol": "䷚",
       "level": 2,
@@ -1205,7 +1233,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-27",
-        "zhouyi-core::hex-27",
+        "zhouyi-core::hexagram-27",
         "ten-wings::hex-27",
         "iching-hd-meta-categories::hex-27",
         "three-lenses-64::hex-27",
@@ -1242,6 +1270,7 @@
     },
     {
       "id": "hex-28",
+      "number": 28,
       "name": "28 · Preponderance of the Great",
       "symbol": "䷛",
       "level": 2,
@@ -1250,7 +1279,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-28",
-        "zhouyi-core::hex-28",
+        "zhouyi-core::hexagram-28",
         "ten-wings::hex-28",
         "iching-hd-meta-categories::hex-28",
         "three-lenses-64::hex-28",
@@ -1287,6 +1316,7 @@
     },
     {
       "id": "hex-29",
+      "number": 29,
       "name": "29 · The Abysmal (Water)",
       "symbol": "䷜",
       "level": 2,
@@ -1295,7 +1325,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-29",
-        "zhouyi-core::hex-29",
+        "zhouyi-core::hexagram-29",
         "ten-wings::hex-29",
         "iching-hd-meta-categories::hex-29",
         "three-lenses-64::hex-29",
@@ -1334,6 +1364,7 @@
     },
     {
       "id": "hex-30",
+      "number": 30,
       "name": "30 · The Clinging, Fire",
       "symbol": "䷝",
       "level": 2,
@@ -1342,7 +1373,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-30",
-        "zhouyi-core::hex-30",
+        "zhouyi-core::hexagram-30",
         "ten-wings::hex-30",
         "iching-hd-meta-categories::hex-30",
         "three-lenses-64::hex-30",
@@ -1379,6 +1410,7 @@
     },
     {
       "id": "hex-31",
+      "number": 31,
       "name": "31 · Influence (Wooing)",
       "symbol": "䷞",
       "level": 2,
@@ -1387,7 +1419,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-31",
-        "zhouyi-core::hex-31",
+        "zhouyi-core::hexagram-31",
         "ten-wings::hex-31",
         "iching-hd-meta-categories::hex-31",
         "three-lenses-64::hex-31",
@@ -1424,6 +1456,7 @@
     },
     {
       "id": "hex-32",
+      "number": 32,
       "name": "32 · Duration",
       "symbol": "䷟",
       "level": 2,
@@ -1432,7 +1465,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-32",
-        "zhouyi-core::hex-32",
+        "zhouyi-core::hexagram-32",
         "ten-wings::hex-32",
         "iching-hd-meta-categories::hex-32",
         "three-lenses-64::hex-32",
@@ -1469,6 +1502,7 @@
     },
     {
       "id": "hex-33",
+      "number": 33,
       "name": "33 · Retreat",
       "symbol": "䷠",
       "level": 2,
@@ -1477,7 +1511,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-33",
-        "zhouyi-core::hex-33",
+        "zhouyi-core::hexagram-33",
         "ten-wings::hex-33",
         "iching-hd-meta-categories::hex-33",
         "three-lenses-64::hex-33",
@@ -1514,6 +1548,7 @@
     },
     {
       "id": "hex-34",
+      "number": 34,
       "name": "34 · The Power of the Great",
       "symbol": "䷡",
       "level": 2,
@@ -1522,7 +1557,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-34",
-        "zhouyi-core::hex-34",
+        "zhouyi-core::hexagram-34",
         "ten-wings::hex-34",
         "iching-hd-meta-categories::hex-34",
         "three-lenses-64::hex-34",
@@ -1559,6 +1594,7 @@
     },
     {
       "id": "hex-35",
+      "number": 35,
       "name": "35 · Progress",
       "symbol": "䷢",
       "level": 2,
@@ -1567,7 +1603,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-35",
-        "zhouyi-core::hex-35",
+        "zhouyi-core::hexagram-35",
         "ten-wings::hex-35",
         "iching-hd-meta-categories::hex-35",
         "three-lenses-64::hex-35",
@@ -1604,6 +1640,7 @@
     },
     {
       "id": "hex-36",
+      "number": 36,
       "name": "36 · Darkening of the Light",
       "symbol": "䷣",
       "level": 2,
@@ -1612,7 +1649,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-36",
-        "zhouyi-core::hex-36",
+        "zhouyi-core::hexagram-36",
         "ten-wings::hex-36",
         "iching-hd-meta-categories::hex-36",
         "three-lenses-64::hex-36",
@@ -1649,6 +1686,7 @@
     },
     {
       "id": "hex-37",
+      "number": 37,
       "name": "37 · The Family [The Clan]",
       "symbol": "䷤",
       "level": 2,
@@ -1657,7 +1695,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-37",
-        "zhouyi-core::hex-37",
+        "zhouyi-core::hexagram-37",
         "ten-wings::hex-37",
         "iching-hd-meta-categories::hex-37",
         "three-lenses-64::hex-37",
@@ -1694,6 +1732,7 @@
     },
     {
       "id": "hex-38",
+      "number": 38,
       "name": "38 · Opposition",
       "symbol": "䷥",
       "level": 2,
@@ -1702,7 +1741,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-38",
-        "zhouyi-core::hex-38",
+        "zhouyi-core::hexagram-38",
         "ten-wings::hex-38",
         "iching-hd-meta-categories::hex-38",
         "three-lenses-64::hex-38",
@@ -1739,6 +1778,7 @@
     },
     {
       "id": "hex-39",
+      "number": 39,
       "name": "39 · Obstruction",
       "symbol": "䷦",
       "level": 2,
@@ -1747,7 +1787,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-39",
-        "zhouyi-core::hex-39",
+        "zhouyi-core::hexagram-39",
         "ten-wings::hex-39",
         "iching-hd-meta-categories::hex-39",
         "three-lenses-64::hex-39",
@@ -1784,6 +1824,7 @@
     },
     {
       "id": "hex-40",
+      "number": 40,
       "name": "40 · Deliverance",
       "symbol": "䷧",
       "level": 2,
@@ -1792,7 +1833,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-40",
-        "zhouyi-core::hex-40",
+        "zhouyi-core::hexagram-40",
         "ten-wings::hex-40",
         "iching-hd-meta-categories::hex-40",
         "three-lenses-64::hex-40",
@@ -1829,6 +1870,7 @@
     },
     {
       "id": "hex-41",
+      "number": 41,
       "name": "41 · Decrease",
       "symbol": "䷨",
       "level": 2,
@@ -1837,7 +1879,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-41",
-        "zhouyi-core::hex-41",
+        "zhouyi-core::hexagram-41",
         "ten-wings::hex-41",
         "iching-hd-meta-categories::hex-41",
         "three-lenses-64::hex-41",
@@ -1874,6 +1916,7 @@
     },
     {
       "id": "hex-42",
+      "number": 42,
       "name": "42 · Increase",
       "symbol": "䷩",
       "level": 2,
@@ -1882,7 +1925,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-42",
-        "zhouyi-core::hex-42",
+        "zhouyi-core::hexagram-42",
         "ten-wings::hex-42",
         "iching-hd-meta-categories::hex-42",
         "three-lenses-64::hex-42",
@@ -1919,6 +1962,7 @@
     },
     {
       "id": "hex-43",
+      "number": 43,
       "name": "43 · Break-through (Resoluteness)",
       "symbol": "䷪",
       "level": 2,
@@ -1927,7 +1971,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-43",
-        "zhouyi-core::hex-43",
+        "zhouyi-core::hexagram-43",
         "ten-wings::hex-43",
         "iching-hd-meta-categories::hex-43",
         "three-lenses-64::hex-43",
@@ -1964,6 +2008,7 @@
     },
     {
       "id": "hex-44",
+      "number": 44,
       "name": "44 · Coming to Meet",
       "symbol": "䷫",
       "level": 2,
@@ -1972,7 +2017,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-44",
-        "zhouyi-core::hex-44",
+        "zhouyi-core::hexagram-44",
         "ten-wings::hex-44",
         "iching-hd-meta-categories::hex-44",
         "three-lenses-64::hex-44",
@@ -2009,6 +2054,7 @@
     },
     {
       "id": "hex-45",
+      "number": 45,
       "name": "45 · Gathering Together [Massing]",
       "symbol": "䷬",
       "level": 2,
@@ -2017,7 +2063,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-45",
-        "zhouyi-core::hex-45",
+        "zhouyi-core::hexagram-45",
         "ten-wings::hex-45",
         "iching-hd-meta-categories::hex-45",
         "three-lenses-64::hex-45",
@@ -2054,6 +2100,7 @@
     },
     {
       "id": "hex-46",
+      "number": 46,
       "name": "46 · Pushing Upward",
       "symbol": "䷭",
       "level": 2,
@@ -2062,7 +2109,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-46",
-        "zhouyi-core::hex-46",
+        "zhouyi-core::hexagram-46",
         "ten-wings::hex-46",
         "iching-hd-meta-categories::hex-46",
         "three-lenses-64::hex-46",
@@ -2099,6 +2146,7 @@
     },
     {
       "id": "hex-47",
+      "number": 47,
       "name": "47 · Oppression (Exhaustion)",
       "symbol": "䷮",
       "level": 2,
@@ -2107,7 +2155,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-47",
-        "zhouyi-core::hex-47",
+        "zhouyi-core::hexagram-47",
         "ten-wings::hex-47",
         "iching-hd-meta-categories::hex-47",
         "three-lenses-64::hex-47",
@@ -2146,6 +2194,7 @@
     },
     {
       "id": "hex-48",
+      "number": 48,
       "name": "48 · The Well",
       "symbol": "䷯",
       "level": 2,
@@ -2154,7 +2203,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-48",
-        "zhouyi-core::hex-48",
+        "zhouyi-core::hexagram-48",
         "ten-wings::hex-48",
         "iching-hd-meta-categories::hex-48",
         "three-lenses-64::hex-48",
@@ -2191,6 +2240,7 @@
     },
     {
       "id": "hex-49",
+      "number": 49,
       "name": "49 · Revolution (Molting)",
       "symbol": "䷰",
       "level": 2,
@@ -2199,7 +2249,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-49",
-        "zhouyi-core::hex-49",
+        "zhouyi-core::hexagram-49",
         "ten-wings::hex-49",
         "iching-hd-meta-categories::hex-49",
         "three-lenses-64::hex-49",
@@ -2238,6 +2288,7 @@
     },
     {
       "id": "hex-50",
+      "number": 50,
       "name": "50 · The Caldron",
       "symbol": "䷱",
       "level": 2,
@@ -2246,7 +2297,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-50",
-        "zhouyi-core::hex-50",
+        "zhouyi-core::hexagram-50",
         "ten-wings::hex-50",
         "iching-hd-meta-categories::hex-50",
         "three-lenses-64::hex-50",
@@ -2285,6 +2336,7 @@
     },
     {
       "id": "hex-51",
+      "number": 51,
       "name": "51 · The Arousing (Shock, Thunder)",
       "symbol": "䷲",
       "level": 2,
@@ -2293,7 +2345,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-51",
-        "zhouyi-core::hex-51",
+        "zhouyi-core::hexagram-51",
         "ten-wings::hex-51",
         "iching-hd-meta-categories::hex-51",
         "three-lenses-64::hex-51",
@@ -2330,6 +2382,7 @@
     },
     {
       "id": "hex-52",
+      "number": 52,
       "name": "52 · Keeping Still, Mountain",
       "symbol": "䷳",
       "level": 2,
@@ -2338,7 +2391,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-52",
-        "zhouyi-core::hex-52",
+        "zhouyi-core::hexagram-52",
         "ten-wings::hex-52",
         "iching-hd-meta-categories::hex-52",
         "three-lenses-64::hex-52",
@@ -2375,6 +2428,7 @@
     },
     {
       "id": "hex-53",
+      "number": 53,
       "name": "53 · Development (Gradual Progress)",
       "symbol": "䷴",
       "level": 2,
@@ -2383,7 +2437,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-53",
-        "zhouyi-core::hex-53",
+        "zhouyi-core::hexagram-53",
         "ten-wings::hex-53",
         "iching-hd-meta-categories::hex-53",
         "three-lenses-64::hex-53",
@@ -2422,6 +2476,7 @@
     },
     {
       "id": "hex-54",
+      "number": 54,
       "name": "54 · The Marrying Maiden",
       "symbol": "䷵",
       "level": 2,
@@ -2430,7 +2485,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-54",
-        "zhouyi-core::hex-54",
+        "zhouyi-core::hexagram-54",
         "ten-wings::hex-54",
         "iching-hd-meta-categories::hex-54",
         "three-lenses-64::hex-54",
@@ -2467,6 +2522,7 @@
     },
     {
       "id": "hex-55",
+      "number": 55,
       "name": "55 · Abundance",
       "symbol": "䷶",
       "level": 2,
@@ -2475,7 +2531,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-55",
-        "zhouyi-core::hex-55",
+        "zhouyi-core::hexagram-55",
         "ten-wings::hex-55",
         "iching-hd-meta-categories::hex-55",
         "three-lenses-64::hex-55",
@@ -2512,6 +2568,7 @@
     },
     {
       "id": "hex-56",
+      "number": 56,
       "name": "56 · The Wanderer",
       "symbol": "䷷",
       "level": 2,
@@ -2520,7 +2577,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-56",
-        "zhouyi-core::hex-56",
+        "zhouyi-core::hexagram-56",
         "ten-wings::hex-56",
         "iching-hd-meta-categories::hex-56",
         "three-lenses-64::hex-56",
@@ -2557,6 +2614,7 @@
     },
     {
       "id": "hex-57",
+      "number": 57,
       "name": "57 · The Gentle (The Penetrating, Wind)",
       "symbol": "䷸",
       "level": 2,
@@ -2565,7 +2623,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-57",
-        "zhouyi-core::hex-57",
+        "zhouyi-core::hexagram-57",
         "ten-wings::hex-57",
         "iching-hd-meta-categories::hex-57",
         "three-lenses-64::hex-57",
@@ -2602,6 +2660,7 @@
     },
     {
       "id": "hex-58",
+      "number": 58,
       "name": "58 · The Joyous, Lake",
       "symbol": "䷹",
       "level": 2,
@@ -2610,7 +2669,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-58",
-        "zhouyi-core::hex-58",
+        "zhouyi-core::hexagram-58",
         "ten-wings::hex-58",
         "iching-hd-meta-categories::hex-58",
         "three-lenses-64::hex-58",
@@ -2649,6 +2708,7 @@
     },
     {
       "id": "hex-59",
+      "number": 59,
       "name": "59 · Dispersion [Dissolution]",
       "symbol": "䷺",
       "level": 2,
@@ -2657,7 +2717,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-59",
-        "zhouyi-core::hex-59",
+        "zhouyi-core::hexagram-59",
         "ten-wings::hex-59",
         "iching-hd-meta-categories::hex-59",
         "three-lenses-64::hex-59",
@@ -2694,6 +2754,7 @@
     },
     {
       "id": "hex-60",
+      "number": 60,
       "name": "60 · Limitation",
       "symbol": "䷻",
       "level": 2,
@@ -2702,7 +2763,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-60",
-        "zhouyi-core::hex-60",
+        "zhouyi-core::hexagram-60",
         "ten-wings::hex-60",
         "iching-hd-meta-categories::hex-60",
         "three-lenses-64::hex-60",
@@ -2739,6 +2800,7 @@
     },
     {
       "id": "hex-61",
+      "number": 61,
       "name": "61 · Inner Truth",
       "symbol": "䷼",
       "level": 2,
@@ -2747,7 +2809,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-61",
-        "zhouyi-core::hex-61",
+        "zhouyi-core::hexagram-61",
         "ten-wings::hex-61",
         "iching-hd-meta-categories::hex-61",
         "three-lenses-64::hex-61",
@@ -2784,6 +2846,7 @@
     },
     {
       "id": "hex-62",
+      "number": 62,
       "name": "62 · Preponderance of the Small",
       "symbol": "䷽",
       "level": 2,
@@ -2792,7 +2855,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-62",
-        "zhouyi-core::hex-62",
+        "zhouyi-core::hexagram-62",
         "ten-wings::hex-62",
         "iching-hd-meta-categories::hex-62",
         "three-lenses-64::hex-62",
@@ -2829,6 +2892,7 @@
     },
     {
       "id": "hex-63",
+      "number": 63,
       "name": "63 · After Completion",
       "symbol": "䷾",
       "level": 2,
@@ -2837,7 +2901,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-63",
-        "zhouyi-core::hex-63",
+        "zhouyi-core::hexagram-63",
         "ten-wings::hex-63",
         "iching-hd-meta-categories::hex-63",
         "three-lenses-64::hex-63",
@@ -2876,6 +2940,7 @@
     },
     {
       "id": "hex-64",
+      "number": 64,
       "name": "64 · Before Completion",
       "symbol": "䷿",
       "level": 2,
@@ -2884,7 +2949,7 @@
       "emergence_kind": "all-lenses",
       "composite_of": [
         "i-ching-summarized::hexagram-64",
-        "zhouyi-core::hex-64",
+        "zhouyi-core::hexagram-64",
         "ten-wings::hex-64",
         "iching-hd-meta-categories::hex-64",
         "three-lenses-64::hex-64",
@@ -2923,6 +2988,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-1",
+      "number": 1,
       "name": "The Creative",
       "symbol": "䷀",
       "category": "i-ching-summarized",
@@ -2952,6 +3018,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-2",
+      "number": 2,
       "name": "The Receptive",
       "symbol": "䷁",
       "category": "i-ching-summarized",
@@ -2981,6 +3048,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-3",
+      "number": 3,
       "name": "Difficulty at the Beginning",
       "symbol": "䷂",
       "category": "i-ching-summarized",
@@ -3010,6 +3078,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-4",
+      "number": 4,
       "name": "Youthful Folly",
       "symbol": "䷃",
       "category": "i-ching-summarized",
@@ -3039,6 +3108,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-5",
+      "number": 5,
       "name": "Waiting (Nourishment)",
       "symbol": "䷄",
       "category": "i-ching-summarized",
@@ -3068,6 +3138,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-6",
+      "number": 6,
       "name": "Conflict",
       "symbol": "䷅",
       "category": "i-ching-summarized",
@@ -3097,6 +3168,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-7",
+      "number": 7,
       "name": "The Army",
       "symbol": "䷆",
       "category": "i-ching-summarized",
@@ -3126,6 +3198,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-8",
+      "number": 8,
       "name": "Holding Together [Union]",
       "symbol": "䷇",
       "category": "i-ching-summarized",
@@ -3155,6 +3228,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-9",
+      "number": 9,
       "name": "The Taming Power of the Small",
       "symbol": "䷈",
       "category": "i-ching-summarized",
@@ -3184,6 +3258,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-10",
+      "number": 10,
       "name": "Treading [Conduct]",
       "symbol": "䷉",
       "category": "i-ching-summarized",
@@ -3213,6 +3288,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-11",
+      "number": 11,
       "name": "Peace",
       "symbol": "䷊",
       "category": "i-ching-summarized",
@@ -3242,6 +3318,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-12",
+      "number": 12,
       "name": "Standstill [Stagnation]",
       "symbol": "䷋",
       "category": "i-ching-summarized",
@@ -3271,6 +3348,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-13",
+      "number": 13,
       "name": "Fellowship with Men",
       "symbol": "䷌",
       "category": "i-ching-summarized",
@@ -3300,6 +3378,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-14",
+      "number": 14,
       "name": "Possession in Great Measure",
       "symbol": "䷍",
       "category": "i-ching-summarized",
@@ -3329,6 +3408,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-15",
+      "number": 15,
       "name": "Modesty",
       "symbol": "䷎",
       "category": "i-ching-summarized",
@@ -3358,6 +3438,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-16",
+      "number": 16,
       "name": "Enthusiasm",
       "symbol": "䷏",
       "category": "i-ching-summarized",
@@ -3387,6 +3468,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-17",
+      "number": 17,
       "name": "Following",
       "symbol": "䷐",
       "category": "i-ching-summarized",
@@ -3416,6 +3498,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-18",
+      "number": 18,
       "name": "Work on what has been spoiled [Decay]",
       "symbol": "䷑",
       "category": "i-ching-summarized",
@@ -3445,6 +3528,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-19",
+      "number": 19,
       "name": "Approach",
       "symbol": "䷒",
       "category": "i-ching-summarized",
@@ -3474,6 +3558,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-20",
+      "number": 20,
       "name": "Contemplation [View]",
       "symbol": "䷓",
       "category": "i-ching-summarized",
@@ -3503,6 +3588,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-21",
+      "number": 21,
       "name": "Biting Through",
       "symbol": "䷔",
       "category": "i-ching-summarized",
@@ -3532,6 +3618,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-22",
+      "number": 22,
       "name": "Grace",
       "symbol": "䷕",
       "category": "i-ching-summarized",
@@ -3561,6 +3648,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-23",
+      "number": 23,
       "name": "Splitting Apart",
       "symbol": "䷖",
       "category": "i-ching-summarized",
@@ -3590,6 +3678,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-24",
+      "number": 24,
       "name": "Return (The Turning Point)",
       "symbol": "䷗",
       "category": "i-ching-summarized",
@@ -3619,6 +3708,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-25",
+      "number": 25,
       "name": "Innocence (The Unexpected)",
       "symbol": "䷘",
       "category": "i-ching-summarized",
@@ -3648,6 +3738,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-26",
+      "number": 26,
       "name": "The Taming Power of the Great",
       "symbol": "䷙",
       "category": "i-ching-summarized",
@@ -3677,6 +3768,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-27",
+      "number": 27,
       "name": "The Corners of the Mouth (Providing Nourishment)",
       "symbol": "䷚",
       "category": "i-ching-summarized",
@@ -3706,6 +3798,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-28",
+      "number": 28,
       "name": "Preponderance of the Great",
       "symbol": "䷛",
       "category": "i-ching-summarized",
@@ -3735,6 +3828,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-29",
+      "number": 29,
       "name": "The Abysmal (Water)",
       "symbol": "䷜",
       "category": "i-ching-summarized",
@@ -3764,6 +3858,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-30",
+      "number": 30,
       "name": "The Clinging, Fire",
       "symbol": "䷝",
       "category": "i-ching-summarized",
@@ -3793,6 +3888,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-31",
+      "number": 31,
       "name": "Influence (Wooing)",
       "symbol": "䷞",
       "category": "i-ching-summarized",
@@ -3822,6 +3918,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-32",
+      "number": 32,
       "name": "Duration",
       "symbol": "䷟",
       "category": "i-ching-summarized",
@@ -3851,6 +3948,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-33",
+      "number": 33,
       "name": "Retreat",
       "symbol": "䷠",
       "category": "i-ching-summarized",
@@ -3880,6 +3978,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-34",
+      "number": 34,
       "name": "The Power of the Great",
       "symbol": "䷡",
       "category": "i-ching-summarized",
@@ -3909,6 +4008,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-35",
+      "number": 35,
       "name": "Progress",
       "symbol": "䷢",
       "category": "i-ching-summarized",
@@ -3938,6 +4038,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-36",
+      "number": 36,
       "name": "Darkening of the Light",
       "symbol": "䷣",
       "category": "i-ching-summarized",
@@ -3967,6 +4068,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-37",
+      "number": 37,
       "name": "The Family [The Clan]",
       "symbol": "䷤",
       "category": "i-ching-summarized",
@@ -3996,6 +4098,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-38",
+      "number": 38,
       "name": "Opposition",
       "symbol": "䷥",
       "category": "i-ching-summarized",
@@ -4025,6 +4128,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-39",
+      "number": 39,
       "name": "Obstruction",
       "symbol": "䷦",
       "category": "i-ching-summarized",
@@ -4054,6 +4158,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-40",
+      "number": 40,
       "name": "Deliverance",
       "symbol": "䷧",
       "category": "i-ching-summarized",
@@ -4083,6 +4188,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-41",
+      "number": 41,
       "name": "Decrease",
       "symbol": "䷨",
       "category": "i-ching-summarized",
@@ -4112,6 +4218,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-42",
+      "number": 42,
       "name": "Increase",
       "symbol": "䷩",
       "category": "i-ching-summarized",
@@ -4141,6 +4248,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-43",
+      "number": 43,
       "name": "Break-through (Resoluteness)",
       "symbol": "䷪",
       "category": "i-ching-summarized",
@@ -4170,6 +4278,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-44",
+      "number": 44,
       "name": "Coming to Meet",
       "symbol": "䷫",
       "category": "i-ching-summarized",
@@ -4199,6 +4308,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-45",
+      "number": 45,
       "name": "Gathering Together [Massing]",
       "symbol": "䷬",
       "category": "i-ching-summarized",
@@ -4228,6 +4338,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-46",
+      "number": 46,
       "name": "Pushing Upward",
       "symbol": "䷭",
       "category": "i-ching-summarized",
@@ -4257,6 +4368,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-47",
+      "number": 47,
       "name": "Oppression (Exhaustion)",
       "symbol": "䷮",
       "category": "i-ching-summarized",
@@ -4286,6 +4398,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-48",
+      "number": 48,
       "name": "The Well",
       "symbol": "䷯",
       "category": "i-ching-summarized",
@@ -4315,6 +4428,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-49",
+      "number": 49,
       "name": "Revolution (Molting)",
       "symbol": "䷰",
       "category": "i-ching-summarized",
@@ -4344,6 +4458,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-50",
+      "number": 50,
       "name": "The Caldron",
       "symbol": "䷱",
       "category": "i-ching-summarized",
@@ -4373,6 +4488,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-51",
+      "number": 51,
       "name": "The Arousing (Shock, Thunder)",
       "symbol": "䷲",
       "category": "i-ching-summarized",
@@ -4402,6 +4518,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-52",
+      "number": 52,
       "name": "Keeping Still, Mountain",
       "symbol": "䷳",
       "category": "i-ching-summarized",
@@ -4431,6 +4548,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-53",
+      "number": 53,
       "name": "Development (Gradual Progress)",
       "symbol": "䷴",
       "category": "i-ching-summarized",
@@ -4460,6 +4578,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-54",
+      "number": 54,
       "name": "The Marrying Maiden",
       "symbol": "䷵",
       "category": "i-ching-summarized",
@@ -4489,6 +4608,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-55",
+      "number": 55,
       "name": "Abundance",
       "symbol": "䷶",
       "category": "i-ching-summarized",
@@ -4518,6 +4638,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-56",
+      "number": 56,
       "name": "The Wanderer",
       "symbol": "䷷",
       "category": "i-ching-summarized",
@@ -4547,6 +4668,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-57",
+      "number": 57,
       "name": "The Gentle (The Penetrating, Wind)",
       "symbol": "䷸",
       "category": "i-ching-summarized",
@@ -4576,6 +4698,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-58",
+      "number": 58,
       "name": "The Joyous, Lake",
       "symbol": "䷹",
       "category": "i-ching-summarized",
@@ -4605,6 +4728,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-59",
+      "number": 59,
       "name": "Dispersion [Dissolution]",
       "symbol": "䷺",
       "category": "i-ching-summarized",
@@ -4634,6 +4758,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-60",
+      "number": 60,
       "name": "Limitation",
       "symbol": "䷻",
       "category": "i-ching-summarized",
@@ -4663,6 +4788,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-61",
+      "number": 61,
       "name": "Inner Truth",
       "symbol": "䷼",
       "category": "i-ching-summarized",
@@ -4692,6 +4818,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-62",
+      "number": 62,
       "name": "Preponderance of the Small",
       "symbol": "䷽",
       "category": "i-ching-summarized",
@@ -4721,6 +4848,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-63",
+      "number": 63,
       "name": "After Completion",
       "symbol": "䷾",
       "category": "i-ching-summarized",
@@ -4750,6 +4878,7 @@
     },
     {
       "id": "i-ching-summarized::hexagram-64",
+      "number": 64,
       "name": "Before Completion",
       "symbol": "䷿",
       "category": "i-ching-summarized",
@@ -4778,7 +4907,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-1",
+      "id": "zhouyi-core::hexagram-1",
+      "number": 1,
       "name": "The Creative",
       "symbol": "䷀",
       "category": "zhouyi-core",
@@ -4807,7 +4937,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-2",
+      "id": "zhouyi-core::hexagram-2",
+      "number": 2,
       "name": "The Receptive",
       "symbol": "䷁",
       "category": "zhouyi-core",
@@ -4836,7 +4967,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-3",
+      "id": "zhouyi-core::hexagram-3",
+      "number": 3,
       "name": "Difficulty at the Beginning",
       "symbol": "䷂",
       "category": "zhouyi-core",
@@ -4864,7 +4996,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-4",
+      "id": "zhouyi-core::hexagram-4",
+      "number": 4,
       "name": "Youthful Folly",
       "symbol": "䷃",
       "category": "zhouyi-core",
@@ -4892,7 +5025,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-5",
+      "id": "zhouyi-core::hexagram-5",
+      "number": 5,
       "name": "Waiting (Nourishment)",
       "symbol": "䷄",
       "category": "zhouyi-core",
@@ -4920,7 +5054,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-6",
+      "id": "zhouyi-core::hexagram-6",
+      "number": 6,
       "name": "Conflict",
       "symbol": "䷅",
       "category": "zhouyi-core",
@@ -4948,7 +5083,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-7",
+      "id": "zhouyi-core::hexagram-7",
+      "number": 7,
       "name": "The Army",
       "symbol": "䷆",
       "category": "zhouyi-core",
@@ -4976,7 +5112,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-8",
+      "id": "zhouyi-core::hexagram-8",
+      "number": 8,
       "name": "Holding Together [Union]",
       "symbol": "䷇",
       "category": "zhouyi-core",
@@ -5004,7 +5141,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-9",
+      "id": "zhouyi-core::hexagram-9",
+      "number": 9,
       "name": "The Taming Power of the Small",
       "symbol": "䷈",
       "category": "zhouyi-core",
@@ -5032,7 +5170,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-10",
+      "id": "zhouyi-core::hexagram-10",
+      "number": 10,
       "name": "Treading [Conduct]",
       "symbol": "䷉",
       "category": "zhouyi-core",
@@ -5060,7 +5199,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-11",
+      "id": "zhouyi-core::hexagram-11",
+      "number": 11,
       "name": "Peace",
       "symbol": "䷊",
       "category": "zhouyi-core",
@@ -5088,7 +5228,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-12",
+      "id": "zhouyi-core::hexagram-12",
+      "number": 12,
       "name": "Standstill [Stagnation]",
       "symbol": "䷋",
       "category": "zhouyi-core",
@@ -5116,7 +5257,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-13",
+      "id": "zhouyi-core::hexagram-13",
+      "number": 13,
       "name": "Fellowship with Men",
       "symbol": "䷌",
       "category": "zhouyi-core",
@@ -5144,7 +5286,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-14",
+      "id": "zhouyi-core::hexagram-14",
+      "number": 14,
       "name": "Possession in Great Measure",
       "symbol": "䷍",
       "category": "zhouyi-core",
@@ -5172,7 +5315,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-15",
+      "id": "zhouyi-core::hexagram-15",
+      "number": 15,
       "name": "Modesty",
       "symbol": "䷎",
       "category": "zhouyi-core",
@@ -5200,7 +5344,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-16",
+      "id": "zhouyi-core::hexagram-16",
+      "number": 16,
       "name": "Enthusiasm",
       "symbol": "䷏",
       "category": "zhouyi-core",
@@ -5228,7 +5373,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-17",
+      "id": "zhouyi-core::hexagram-17",
+      "number": 17,
       "name": "Following",
       "symbol": "䷐",
       "category": "zhouyi-core",
@@ -5256,7 +5402,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-18",
+      "id": "zhouyi-core::hexagram-18",
+      "number": 18,
       "name": "Work on what has been spoiled [Decay]",
       "symbol": "䷑",
       "category": "zhouyi-core",
@@ -5284,7 +5431,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-19",
+      "id": "zhouyi-core::hexagram-19",
+      "number": 19,
       "name": "Approach",
       "symbol": "䷒",
       "category": "zhouyi-core",
@@ -5312,7 +5460,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-20",
+      "id": "zhouyi-core::hexagram-20",
+      "number": 20,
       "name": "Contemplation [View]",
       "symbol": "䷓",
       "category": "zhouyi-core",
@@ -5340,7 +5489,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-21",
+      "id": "zhouyi-core::hexagram-21",
+      "number": 21,
       "name": "Biting Through",
       "symbol": "䷔",
       "category": "zhouyi-core",
@@ -5368,7 +5518,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-22",
+      "id": "zhouyi-core::hexagram-22",
+      "number": 22,
       "name": "Grace",
       "symbol": "䷕",
       "category": "zhouyi-core",
@@ -5396,7 +5547,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-23",
+      "id": "zhouyi-core::hexagram-23",
+      "number": 23,
       "name": "Splitting Apart",
       "symbol": "䷖",
       "category": "zhouyi-core",
@@ -5424,7 +5576,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-24",
+      "id": "zhouyi-core::hexagram-24",
+      "number": 24,
       "name": "Return (The Turning Point)",
       "symbol": "䷗",
       "category": "zhouyi-core",
@@ -5452,7 +5605,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-25",
+      "id": "zhouyi-core::hexagram-25",
+      "number": 25,
       "name": "Innocence (The Unexpected)",
       "symbol": "䷘",
       "category": "zhouyi-core",
@@ -5480,7 +5634,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-26",
+      "id": "zhouyi-core::hexagram-26",
+      "number": 26,
       "name": "The Taming Power of the Great",
       "symbol": "䷙",
       "category": "zhouyi-core",
@@ -5508,7 +5663,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-27",
+      "id": "zhouyi-core::hexagram-27",
+      "number": 27,
       "name": "The Corners of the Mouth (Providing Nourishment)",
       "symbol": "䷚",
       "category": "zhouyi-core",
@@ -5536,7 +5692,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-28",
+      "id": "zhouyi-core::hexagram-28",
+      "number": 28,
       "name": "Preponderance of the Great",
       "symbol": "䷛",
       "category": "zhouyi-core",
@@ -5564,7 +5721,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-29",
+      "id": "zhouyi-core::hexagram-29",
+      "number": 29,
       "name": "The Abysmal (Water)",
       "symbol": "䷜",
       "category": "zhouyi-core",
@@ -5592,7 +5750,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-30",
+      "id": "zhouyi-core::hexagram-30",
+      "number": 30,
       "name": "The Clinging, Fire",
       "symbol": "䷝",
       "category": "zhouyi-core",
@@ -5620,7 +5779,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-31",
+      "id": "zhouyi-core::hexagram-31",
+      "number": 31,
       "name": "Influence (Wooing)",
       "symbol": "䷞",
       "category": "zhouyi-core",
@@ -5648,7 +5808,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-32",
+      "id": "zhouyi-core::hexagram-32",
+      "number": 32,
       "name": "Duration",
       "symbol": "䷟",
       "category": "zhouyi-core",
@@ -5676,7 +5837,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-33",
+      "id": "zhouyi-core::hexagram-33",
+      "number": 33,
       "name": "Retreat",
       "symbol": "䷠",
       "category": "zhouyi-core",
@@ -5704,7 +5866,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-34",
+      "id": "zhouyi-core::hexagram-34",
+      "number": 34,
       "name": "The Power of the Great",
       "symbol": "䷡",
       "category": "zhouyi-core",
@@ -5732,7 +5895,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-35",
+      "id": "zhouyi-core::hexagram-35",
+      "number": 35,
       "name": "Progress",
       "symbol": "䷢",
       "category": "zhouyi-core",
@@ -5760,7 +5924,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-36",
+      "id": "zhouyi-core::hexagram-36",
+      "number": 36,
       "name": "Darkening of the Light",
       "symbol": "䷣",
       "category": "zhouyi-core",
@@ -5788,7 +5953,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-37",
+      "id": "zhouyi-core::hexagram-37",
+      "number": 37,
       "name": "The Family [The Clan]",
       "symbol": "䷤",
       "category": "zhouyi-core",
@@ -5816,7 +5982,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-38",
+      "id": "zhouyi-core::hexagram-38",
+      "number": 38,
       "name": "Opposition",
       "symbol": "䷥",
       "category": "zhouyi-core",
@@ -5844,7 +6011,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-39",
+      "id": "zhouyi-core::hexagram-39",
+      "number": 39,
       "name": "Obstruction",
       "symbol": "䷦",
       "category": "zhouyi-core",
@@ -5872,7 +6040,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-40",
+      "id": "zhouyi-core::hexagram-40",
+      "number": 40,
       "name": "Deliverance",
       "symbol": "䷧",
       "category": "zhouyi-core",
@@ -5900,7 +6069,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-41",
+      "id": "zhouyi-core::hexagram-41",
+      "number": 41,
       "name": "Decrease",
       "symbol": "䷨",
       "category": "zhouyi-core",
@@ -5928,7 +6098,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-42",
+      "id": "zhouyi-core::hexagram-42",
+      "number": 42,
       "name": "Increase",
       "symbol": "䷩",
       "category": "zhouyi-core",
@@ -5956,7 +6127,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-43",
+      "id": "zhouyi-core::hexagram-43",
+      "number": 43,
       "name": "Break-through (Resoluteness)",
       "symbol": "䷪",
       "category": "zhouyi-core",
@@ -5984,7 +6156,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-44",
+      "id": "zhouyi-core::hexagram-44",
+      "number": 44,
       "name": "Coming to Meet",
       "symbol": "䷫",
       "category": "zhouyi-core",
@@ -6012,7 +6185,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-45",
+      "id": "zhouyi-core::hexagram-45",
+      "number": 45,
       "name": "Gathering Together [Massing]",
       "symbol": "䷬",
       "category": "zhouyi-core",
@@ -6040,7 +6214,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-46",
+      "id": "zhouyi-core::hexagram-46",
+      "number": 46,
       "name": "Pushing Upward",
       "symbol": "䷭",
       "category": "zhouyi-core",
@@ -6068,7 +6243,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-47",
+      "id": "zhouyi-core::hexagram-47",
+      "number": 47,
       "name": "Oppression (Exhaustion)",
       "symbol": "䷮",
       "category": "zhouyi-core",
@@ -6096,7 +6272,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-48",
+      "id": "zhouyi-core::hexagram-48",
+      "number": 48,
       "name": "The Well",
       "symbol": "䷯",
       "category": "zhouyi-core",
@@ -6124,7 +6301,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-49",
+      "id": "zhouyi-core::hexagram-49",
+      "number": 49,
       "name": "Revolution (Molting)",
       "symbol": "䷰",
       "category": "zhouyi-core",
@@ -6152,7 +6330,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-50",
+      "id": "zhouyi-core::hexagram-50",
+      "number": 50,
       "name": "The Caldron",
       "symbol": "䷱",
       "category": "zhouyi-core",
@@ -6180,7 +6359,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-51",
+      "id": "zhouyi-core::hexagram-51",
+      "number": 51,
       "name": "The Arousing (Shock, Thunder)",
       "symbol": "䷲",
       "category": "zhouyi-core",
@@ -6208,7 +6388,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-52",
+      "id": "zhouyi-core::hexagram-52",
+      "number": 52,
       "name": "Keeping Still, Mountain",
       "symbol": "䷳",
       "category": "zhouyi-core",
@@ -6236,7 +6417,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-53",
+      "id": "zhouyi-core::hexagram-53",
+      "number": 53,
       "name": "Development (Gradual Progress)",
       "symbol": "䷴",
       "category": "zhouyi-core",
@@ -6264,7 +6446,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-54",
+      "id": "zhouyi-core::hexagram-54",
+      "number": 54,
       "name": "The Marrying Maiden",
       "symbol": "䷵",
       "category": "zhouyi-core",
@@ -6292,7 +6475,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-55",
+      "id": "zhouyi-core::hexagram-55",
+      "number": 55,
       "name": "Abundance",
       "symbol": "䷶",
       "category": "zhouyi-core",
@@ -6320,7 +6504,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-56",
+      "id": "zhouyi-core::hexagram-56",
+      "number": 56,
       "name": "The Wanderer",
       "symbol": "䷷",
       "category": "zhouyi-core",
@@ -6348,7 +6533,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-57",
+      "id": "zhouyi-core::hexagram-57",
+      "number": 57,
       "name": "The Gentle (The Penetrating, Wind)",
       "symbol": "䷸",
       "category": "zhouyi-core",
@@ -6376,7 +6562,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-58",
+      "id": "zhouyi-core::hexagram-58",
+      "number": 58,
       "name": "The Joyous, Lake",
       "symbol": "䷹",
       "category": "zhouyi-core",
@@ -6404,7 +6591,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-59",
+      "id": "zhouyi-core::hexagram-59",
+      "number": 59,
       "name": "Dispersion [Dissolution]",
       "symbol": "䷺",
       "category": "zhouyi-core",
@@ -6432,7 +6620,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-60",
+      "id": "zhouyi-core::hexagram-60",
+      "number": 60,
       "name": "Limitation",
       "symbol": "䷻",
       "category": "zhouyi-core",
@@ -6460,7 +6649,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-61",
+      "id": "zhouyi-core::hexagram-61",
+      "number": 61,
       "name": "Inner Truth",
       "symbol": "䷼",
       "category": "zhouyi-core",
@@ -6488,7 +6678,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-62",
+      "id": "zhouyi-core::hexagram-62",
+      "number": 62,
       "name": "Preponderance of the Small",
       "symbol": "䷽",
       "category": "zhouyi-core",
@@ -6516,7 +6707,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-63",
+      "id": "zhouyi-core::hexagram-63",
+      "number": 63,
       "name": "After Completion",
       "symbol": "䷾",
       "category": "zhouyi-core",
@@ -6544,7 +6736,8 @@
       "level": 1
     },
     {
-      "id": "zhouyi-core::hex-64",
+      "id": "zhouyi-core::hexagram-64",
+      "number": 64,
       "name": "Before Completion",
       "symbol": "䷿",
       "category": "zhouyi-core",
@@ -6573,6 +6766,7 @@
     },
     {
       "id": "ten-wings::hex-1",
+      "number": 1,
       "name": "The Creative",
       "symbol": "䷀",
       "category": "ten-wings",
@@ -6595,6 +6789,7 @@
     },
     {
       "id": "ten-wings::hex-2",
+      "number": 2,
       "name": "The Receptive",
       "symbol": "䷁",
       "category": "ten-wings",
@@ -6617,6 +6812,7 @@
     },
     {
       "id": "ten-wings::hex-3",
+      "number": 3,
       "name": "Difficulty at the Beginning",
       "symbol": "䷂",
       "category": "ten-wings",
@@ -6639,6 +6835,7 @@
     },
     {
       "id": "ten-wings::hex-4",
+      "number": 4,
       "name": "Youthful Folly",
       "symbol": "䷃",
       "category": "ten-wings",
@@ -6661,6 +6858,7 @@
     },
     {
       "id": "ten-wings::hex-5",
+      "number": 5,
       "name": "Waiting (Nourishment)",
       "symbol": "䷄",
       "category": "ten-wings",
@@ -6683,6 +6881,7 @@
     },
     {
       "id": "ten-wings::hex-6",
+      "number": 6,
       "name": "Conflict",
       "symbol": "䷅",
       "category": "ten-wings",
@@ -6705,6 +6904,7 @@
     },
     {
       "id": "ten-wings::hex-7",
+      "number": 7,
       "name": "The Army",
       "symbol": "䷆",
       "category": "ten-wings",
@@ -6727,6 +6927,7 @@
     },
     {
       "id": "ten-wings::hex-8",
+      "number": 8,
       "name": "Holding Together [Union]",
       "symbol": "䷇",
       "category": "ten-wings",
@@ -6749,6 +6950,7 @@
     },
     {
       "id": "ten-wings::hex-9",
+      "number": 9,
       "name": "The Taming Power of the Small",
       "symbol": "䷈",
       "category": "ten-wings",
@@ -6771,6 +6973,7 @@
     },
     {
       "id": "ten-wings::hex-10",
+      "number": 10,
       "name": "Treading [Conduct]",
       "symbol": "䷉",
       "category": "ten-wings",
@@ -6793,6 +6996,7 @@
     },
     {
       "id": "ten-wings::hex-11",
+      "number": 11,
       "name": "Peace",
       "symbol": "䷊",
       "category": "ten-wings",
@@ -6815,6 +7019,7 @@
     },
     {
       "id": "ten-wings::hex-12",
+      "number": 12,
       "name": "Standstill [Stagnation]",
       "symbol": "䷋",
       "category": "ten-wings",
@@ -6837,6 +7042,7 @@
     },
     {
       "id": "ten-wings::hex-13",
+      "number": 13,
       "name": "Fellowship with Men",
       "symbol": "䷌",
       "category": "ten-wings",
@@ -6859,6 +7065,7 @@
     },
     {
       "id": "ten-wings::hex-14",
+      "number": 14,
       "name": "Possession in Great Measure",
       "symbol": "䷍",
       "category": "ten-wings",
@@ -6881,6 +7088,7 @@
     },
     {
       "id": "ten-wings::hex-15",
+      "number": 15,
       "name": "Modesty",
       "symbol": "䷎",
       "category": "ten-wings",
@@ -6903,6 +7111,7 @@
     },
     {
       "id": "ten-wings::hex-16",
+      "number": 16,
       "name": "Enthusiasm",
       "symbol": "䷏",
       "category": "ten-wings",
@@ -6925,6 +7134,7 @@
     },
     {
       "id": "ten-wings::hex-17",
+      "number": 17,
       "name": "Following",
       "symbol": "䷐",
       "category": "ten-wings",
@@ -6947,6 +7157,7 @@
     },
     {
       "id": "ten-wings::hex-18",
+      "number": 18,
       "name": "Work on what has been spoiled [Decay]",
       "symbol": "䷑",
       "category": "ten-wings",
@@ -6969,6 +7180,7 @@
     },
     {
       "id": "ten-wings::hex-19",
+      "number": 19,
       "name": "Approach",
       "symbol": "䷒",
       "category": "ten-wings",
@@ -6991,6 +7203,7 @@
     },
     {
       "id": "ten-wings::hex-20",
+      "number": 20,
       "name": "Contemplation [View]",
       "symbol": "䷓",
       "category": "ten-wings",
@@ -7013,6 +7226,7 @@
     },
     {
       "id": "ten-wings::hex-21",
+      "number": 21,
       "name": "Biting Through",
       "symbol": "䷔",
       "category": "ten-wings",
@@ -7035,6 +7249,7 @@
     },
     {
       "id": "ten-wings::hex-22",
+      "number": 22,
       "name": "Grace",
       "symbol": "䷕",
       "category": "ten-wings",
@@ -7057,6 +7272,7 @@
     },
     {
       "id": "ten-wings::hex-23",
+      "number": 23,
       "name": "Splitting Apart",
       "symbol": "䷖",
       "category": "ten-wings",
@@ -7079,6 +7295,7 @@
     },
     {
       "id": "ten-wings::hex-24",
+      "number": 24,
       "name": "Return (The Turning Point)",
       "symbol": "䷗",
       "category": "ten-wings",
@@ -7101,6 +7318,7 @@
     },
     {
       "id": "ten-wings::hex-25",
+      "number": 25,
       "name": "Innocence (The Unexpected)",
       "symbol": "䷘",
       "category": "ten-wings",
@@ -7123,6 +7341,7 @@
     },
     {
       "id": "ten-wings::hex-26",
+      "number": 26,
       "name": "The Taming Power of the Great",
       "symbol": "䷙",
       "category": "ten-wings",
@@ -7145,6 +7364,7 @@
     },
     {
       "id": "ten-wings::hex-27",
+      "number": 27,
       "name": "The Corners of the Mouth (Providing Nourishment)",
       "symbol": "䷚",
       "category": "ten-wings",
@@ -7167,6 +7387,7 @@
     },
     {
       "id": "ten-wings::hex-28",
+      "number": 28,
       "name": "Preponderance of the Great",
       "symbol": "䷛",
       "category": "ten-wings",
@@ -7189,6 +7410,7 @@
     },
     {
       "id": "ten-wings::hex-29",
+      "number": 29,
       "name": "The Abysmal (Water)",
       "symbol": "䷜",
       "category": "ten-wings",
@@ -7211,6 +7433,7 @@
     },
     {
       "id": "ten-wings::hex-30",
+      "number": 30,
       "name": "The Clinging, Fire",
       "symbol": "䷝",
       "category": "ten-wings",
@@ -7233,6 +7456,7 @@
     },
     {
       "id": "ten-wings::hex-31",
+      "number": 31,
       "name": "Influence (Wooing)",
       "symbol": "䷞",
       "category": "ten-wings",
@@ -7255,6 +7479,7 @@
     },
     {
       "id": "ten-wings::hex-32",
+      "number": 32,
       "name": "Duration",
       "symbol": "䷟",
       "category": "ten-wings",
@@ -7277,6 +7502,7 @@
     },
     {
       "id": "ten-wings::hex-33",
+      "number": 33,
       "name": "Retreat",
       "symbol": "䷠",
       "category": "ten-wings",
@@ -7299,6 +7525,7 @@
     },
     {
       "id": "ten-wings::hex-34",
+      "number": 34,
       "name": "The Power of the Great",
       "symbol": "䷡",
       "category": "ten-wings",
@@ -7321,6 +7548,7 @@
     },
     {
       "id": "ten-wings::hex-35",
+      "number": 35,
       "name": "Progress",
       "symbol": "䷢",
       "category": "ten-wings",
@@ -7343,6 +7571,7 @@
     },
     {
       "id": "ten-wings::hex-36",
+      "number": 36,
       "name": "Darkening of the Light",
       "symbol": "䷣",
       "category": "ten-wings",
@@ -7365,6 +7594,7 @@
     },
     {
       "id": "ten-wings::hex-37",
+      "number": 37,
       "name": "The Family [The Clan]",
       "symbol": "䷤",
       "category": "ten-wings",
@@ -7387,6 +7617,7 @@
     },
     {
       "id": "ten-wings::hex-38",
+      "number": 38,
       "name": "Opposition",
       "symbol": "䷥",
       "category": "ten-wings",
@@ -7409,6 +7640,7 @@
     },
     {
       "id": "ten-wings::hex-39",
+      "number": 39,
       "name": "Obstruction",
       "symbol": "䷦",
       "category": "ten-wings",
@@ -7431,6 +7663,7 @@
     },
     {
       "id": "ten-wings::hex-40",
+      "number": 40,
       "name": "Deliverance",
       "symbol": "䷧",
       "category": "ten-wings",
@@ -7453,6 +7686,7 @@
     },
     {
       "id": "ten-wings::hex-41",
+      "number": 41,
       "name": "Decrease",
       "symbol": "䷨",
       "category": "ten-wings",
@@ -7475,6 +7709,7 @@
     },
     {
       "id": "ten-wings::hex-42",
+      "number": 42,
       "name": "Increase",
       "symbol": "䷩",
       "category": "ten-wings",
@@ -7497,6 +7732,7 @@
     },
     {
       "id": "ten-wings::hex-43",
+      "number": 43,
       "name": "Break-through (Resoluteness)",
       "symbol": "䷪",
       "category": "ten-wings",
@@ -7519,6 +7755,7 @@
     },
     {
       "id": "ten-wings::hex-44",
+      "number": 44,
       "name": "Coming to Meet",
       "symbol": "䷫",
       "category": "ten-wings",
@@ -7541,6 +7778,7 @@
     },
     {
       "id": "ten-wings::hex-45",
+      "number": 45,
       "name": "Gathering Together [Massing]",
       "symbol": "䷬",
       "category": "ten-wings",
@@ -7563,6 +7801,7 @@
     },
     {
       "id": "ten-wings::hex-46",
+      "number": 46,
       "name": "Pushing Upward",
       "symbol": "䷭",
       "category": "ten-wings",
@@ -7585,6 +7824,7 @@
     },
     {
       "id": "ten-wings::hex-47",
+      "number": 47,
       "name": "Oppression (Exhaustion)",
       "symbol": "䷮",
       "category": "ten-wings",
@@ -7607,6 +7847,7 @@
     },
     {
       "id": "ten-wings::hex-48",
+      "number": 48,
       "name": "The Well",
       "symbol": "䷯",
       "category": "ten-wings",
@@ -7629,6 +7870,7 @@
     },
     {
       "id": "ten-wings::hex-49",
+      "number": 49,
       "name": "Revolution (Molting)",
       "symbol": "䷰",
       "category": "ten-wings",
@@ -7651,6 +7893,7 @@
     },
     {
       "id": "ten-wings::hex-50",
+      "number": 50,
       "name": "The Caldron",
       "symbol": "䷱",
       "category": "ten-wings",
@@ -7673,6 +7916,7 @@
     },
     {
       "id": "ten-wings::hex-51",
+      "number": 51,
       "name": "The Arousing (Shock, Thunder)",
       "symbol": "䷲",
       "category": "ten-wings",
@@ -7695,6 +7939,7 @@
     },
     {
       "id": "ten-wings::hex-52",
+      "number": 52,
       "name": "Keeping Still, Mountain",
       "symbol": "䷳",
       "category": "ten-wings",
@@ -7717,6 +7962,7 @@
     },
     {
       "id": "ten-wings::hex-53",
+      "number": 53,
       "name": "Development (Gradual Progress)",
       "symbol": "䷴",
       "category": "ten-wings",
@@ -7739,6 +7985,7 @@
     },
     {
       "id": "ten-wings::hex-54",
+      "number": 54,
       "name": "The Marrying Maiden",
       "symbol": "䷵",
       "category": "ten-wings",
@@ -7761,6 +8008,7 @@
     },
     {
       "id": "ten-wings::hex-55",
+      "number": 55,
       "name": "Abundance",
       "symbol": "䷶",
       "category": "ten-wings",
@@ -7783,6 +8031,7 @@
     },
     {
       "id": "ten-wings::hex-56",
+      "number": 56,
       "name": "The Wanderer",
       "symbol": "䷷",
       "category": "ten-wings",
@@ -7805,6 +8054,7 @@
     },
     {
       "id": "ten-wings::hex-57",
+      "number": 57,
       "name": "The Gentle (The Penetrating, Wind)",
       "symbol": "䷸",
       "category": "ten-wings",
@@ -7827,6 +8077,7 @@
     },
     {
       "id": "ten-wings::hex-58",
+      "number": 58,
       "name": "The Joyous, Lake",
       "symbol": "䷹",
       "category": "ten-wings",
@@ -7849,6 +8100,7 @@
     },
     {
       "id": "ten-wings::hex-59",
+      "number": 59,
       "name": "Dispersion [Dissolution]",
       "symbol": "䷺",
       "category": "ten-wings",
@@ -7871,6 +8123,7 @@
     },
     {
       "id": "ten-wings::hex-60",
+      "number": 60,
       "name": "Limitation",
       "symbol": "䷻",
       "category": "ten-wings",
@@ -7893,6 +8146,7 @@
     },
     {
       "id": "ten-wings::hex-61",
+      "number": 61,
       "name": "Inner Truth",
       "symbol": "䷼",
       "category": "ten-wings",
@@ -7915,6 +8169,7 @@
     },
     {
       "id": "ten-wings::hex-62",
+      "number": 62,
       "name": "Preponderance of the Small",
       "symbol": "䷽",
       "category": "ten-wings",
@@ -7937,6 +8192,7 @@
     },
     {
       "id": "ten-wings::hex-63",
+      "number": 63,
       "name": "After Completion",
       "symbol": "䷾",
       "category": "ten-wings",
@@ -7959,6 +8215,7 @@
     },
     {
       "id": "ten-wings::hex-64",
+      "number": 64,
       "name": "Before Completion",
       "symbol": "䷿",
       "category": "ten-wings",
@@ -8163,6 +8420,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-1",
+      "number": 1,
       "name": "Creative Power",
       "symbol": "䷀",
       "category": "iching-hd-meta-categories",
@@ -8197,6 +8455,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-2",
+      "number": 2,
       "name": "Receptive Flow",
       "symbol": "䷁",
       "category": "iching-hd-meta-categories",
@@ -8231,6 +8490,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-3",
+      "number": 3,
       "name": "Difficulty at the Beginning",
       "symbol": "䷂",
       "category": "iching-hd-meta-categories",
@@ -8265,6 +8525,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-4",
+      "number": 4,
       "name": "Youthful Folly",
       "symbol": "䷃",
       "category": "iching-hd-meta-categories",
@@ -8299,6 +8560,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-5",
+      "number": 5,
       "name": "Waiting",
       "symbol": "䷄",
       "category": "iching-hd-meta-categories",
@@ -8333,6 +8595,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-6",
+      "number": 6,
       "name": "Conflict",
       "symbol": "䷅",
       "category": "iching-hd-meta-categories",
@@ -8367,6 +8630,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-7",
+      "number": 7,
       "name": "The Army",
       "symbol": "䷆",
       "category": "iching-hd-meta-categories",
@@ -8401,6 +8665,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-8",
+      "number": 8,
       "name": "Holding Together",
       "symbol": "䷇",
       "category": "iching-hd-meta-categories",
@@ -8435,6 +8700,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-9",
+      "number": 9,
       "name": "Taming Power of the Small",
       "symbol": "䷈",
       "category": "iching-hd-meta-categories",
@@ -8469,6 +8735,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-10",
+      "number": 10,
       "name": "Treading",
       "symbol": "䷉",
       "category": "iching-hd-meta-categories",
@@ -8503,6 +8770,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-11",
+      "number": 11,
       "name": "Peace",
       "symbol": "䷊",
       "category": "iching-hd-meta-categories",
@@ -8537,6 +8805,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-12",
+      "number": 12,
       "name": "Standstill",
       "symbol": "䷋",
       "category": "iching-hd-meta-categories",
@@ -8571,6 +8840,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-13",
+      "number": 13,
       "name": "Fellowship",
       "symbol": "䷌",
       "category": "iching-hd-meta-categories",
@@ -8605,6 +8875,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-14",
+      "number": 14,
       "name": "Possession in Great Measure",
       "symbol": "䷍",
       "category": "iching-hd-meta-categories",
@@ -8639,6 +8910,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-15",
+      "number": 15,
       "name": "Modesty",
       "symbol": "䷎",
       "category": "iching-hd-meta-categories",
@@ -8673,6 +8945,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-16",
+      "number": 16,
       "name": "Enthusiasm",
       "symbol": "䷏",
       "category": "iching-hd-meta-categories",
@@ -8707,6 +8980,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-17",
+      "number": 17,
       "name": "Following",
       "symbol": "䷐",
       "category": "iching-hd-meta-categories",
@@ -8741,6 +9015,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-18",
+      "number": 18,
       "name": "Work on the Decayed",
       "symbol": "䷑",
       "category": "iching-hd-meta-categories",
@@ -8775,6 +9050,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-19",
+      "number": 19,
       "name": "Approach",
       "symbol": "䷒",
       "category": "iching-hd-meta-categories",
@@ -8809,6 +9085,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-20",
+      "number": 20,
       "name": "Contemplation",
       "symbol": "䷓",
       "category": "iching-hd-meta-categories",
@@ -8843,6 +9120,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-21",
+      "number": 21,
       "name": "Biting Through",
       "symbol": "䷔",
       "category": "iching-hd-meta-categories",
@@ -8877,6 +9155,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-22",
+      "number": 22,
       "name": "Grace",
       "symbol": "䷕",
       "category": "iching-hd-meta-categories",
@@ -8911,6 +9190,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-23",
+      "number": 23,
       "name": "Splitting Apart",
       "symbol": "䷖",
       "category": "iching-hd-meta-categories",
@@ -8945,6 +9225,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-24",
+      "number": 24,
       "name": "Return",
       "symbol": "䷗",
       "category": "iching-hd-meta-categories",
@@ -8979,6 +9260,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-25",
+      "number": 25,
       "name": "Innocence",
       "symbol": "䷘",
       "category": "iching-hd-meta-categories",
@@ -9013,6 +9295,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-26",
+      "number": 26,
       "name": "Taming Power of the Great",
       "symbol": "䷙",
       "category": "iching-hd-meta-categories",
@@ -9047,6 +9330,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-27",
+      "number": 27,
       "name": "Nourishment",
       "symbol": "䷚",
       "category": "iching-hd-meta-categories",
@@ -9081,6 +9365,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-28",
+      "number": 28,
       "name": "Preponderance of the Great",
       "symbol": "䷛",
       "category": "iching-hd-meta-categories",
@@ -9115,6 +9400,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-29",
+      "number": 29,
       "name": "The Abysmal Water",
       "symbol": "䷜",
       "category": "iching-hd-meta-categories",
@@ -9149,6 +9435,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-30",
+      "number": 30,
       "name": "The Clinging Fire",
       "symbol": "䷝",
       "category": "iching-hd-meta-categories",
@@ -9183,6 +9470,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-31",
+      "number": 31,
       "name": "Influence",
       "symbol": "䷞",
       "category": "iching-hd-meta-categories",
@@ -9217,6 +9505,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-32",
+      "number": 32,
       "name": "Duration",
       "symbol": "䷟",
       "category": "iching-hd-meta-categories",
@@ -9251,6 +9540,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-33",
+      "number": 33,
       "name": "Retreat",
       "symbol": "䷠",
       "category": "iching-hd-meta-categories",
@@ -9285,6 +9575,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-34",
+      "number": 34,
       "name": "Power of the Great",
       "symbol": "䷡",
       "category": "iching-hd-meta-categories",
@@ -9319,6 +9610,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-35",
+      "number": 35,
       "name": "Progress",
       "symbol": "䷢",
       "category": "iching-hd-meta-categories",
@@ -9353,6 +9645,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-36",
+      "number": 36,
       "name": "Darkening of the Light",
       "symbol": "䷣",
       "category": "iching-hd-meta-categories",
@@ -9387,6 +9680,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-37",
+      "number": 37,
       "name": "The Family",
       "symbol": "䷤",
       "category": "iching-hd-meta-categories",
@@ -9421,6 +9715,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-38",
+      "number": 38,
       "name": "Opposition",
       "symbol": "䷥",
       "category": "iching-hd-meta-categories",
@@ -9455,6 +9750,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-39",
+      "number": 39,
       "name": "Obstruction",
       "symbol": "䷦",
       "category": "iching-hd-meta-categories",
@@ -9489,6 +9785,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-40",
+      "number": 40,
       "name": "Deliverance",
       "symbol": "䷧",
       "category": "iching-hd-meta-categories",
@@ -9523,6 +9820,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-41",
+      "number": 41,
       "name": "Decrease",
       "symbol": "䷨",
       "category": "iching-hd-meta-categories",
@@ -9557,6 +9855,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-42",
+      "number": 42,
       "name": "Increase",
       "symbol": "䷩",
       "category": "iching-hd-meta-categories",
@@ -9591,6 +9890,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-43",
+      "number": 43,
       "name": "Breakthrough",
       "symbol": "䷪",
       "category": "iching-hd-meta-categories",
@@ -9625,6 +9925,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-44",
+      "number": 44,
       "name": "Coming to Meet",
       "symbol": "䷫",
       "category": "iching-hd-meta-categories",
@@ -9659,6 +9960,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-45",
+      "number": 45,
       "name": "Gathering Together",
       "symbol": "䷬",
       "category": "iching-hd-meta-categories",
@@ -9693,6 +9995,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-46",
+      "number": 46,
       "name": "Pushing Upward",
       "symbol": "䷭",
       "category": "iching-hd-meta-categories",
@@ -9727,6 +10030,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-47",
+      "number": 47,
       "name": "Oppression",
       "symbol": "䷮",
       "category": "iching-hd-meta-categories",
@@ -9761,6 +10065,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-48",
+      "number": 48,
       "name": "The Well",
       "symbol": "䷯",
       "category": "iching-hd-meta-categories",
@@ -9795,6 +10100,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-49",
+      "number": 49,
       "name": "Revolution",
       "symbol": "䷰",
       "category": "iching-hd-meta-categories",
@@ -9829,6 +10135,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-50",
+      "number": 50,
       "name": "The Cauldron",
       "symbol": "䷱",
       "category": "iching-hd-meta-categories",
@@ -9863,6 +10170,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-51",
+      "number": 51,
       "name": "The Arousing",
       "symbol": "䷲",
       "category": "iching-hd-meta-categories",
@@ -9897,6 +10205,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-52",
+      "number": 52,
       "name": "Keeping Still",
       "symbol": "䷳",
       "category": "iching-hd-meta-categories",
@@ -9931,6 +10240,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-53",
+      "number": 53,
       "name": "Development",
       "symbol": "䷴",
       "category": "iching-hd-meta-categories",
@@ -9965,6 +10275,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-54",
+      "number": 54,
       "name": "The Marrying Maiden",
       "symbol": "䷵",
       "category": "iching-hd-meta-categories",
@@ -9999,6 +10310,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-55",
+      "number": 55,
       "name": "Abundance",
       "symbol": "䷶",
       "category": "iching-hd-meta-categories",
@@ -10033,6 +10345,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-56",
+      "number": 56,
       "name": "The Wanderer",
       "symbol": "䷷",
       "category": "iching-hd-meta-categories",
@@ -10067,6 +10380,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-57",
+      "number": 57,
       "name": "The Gentle",
       "symbol": "䷸",
       "category": "iching-hd-meta-categories",
@@ -10101,6 +10415,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-58",
+      "number": 58,
       "name": "The Joyous",
       "symbol": "䷹",
       "category": "iching-hd-meta-categories",
@@ -10135,6 +10450,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-59",
+      "number": 59,
       "name": "Dispersion",
       "symbol": "䷺",
       "category": "iching-hd-meta-categories",
@@ -10169,6 +10485,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-60",
+      "number": 60,
       "name": "Limitation",
       "symbol": "䷻",
       "category": "iching-hd-meta-categories",
@@ -10203,6 +10520,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-61",
+      "number": 61,
       "name": "Inner Truth",
       "symbol": "䷼",
       "category": "iching-hd-meta-categories",
@@ -10237,6 +10555,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-62",
+      "number": 62,
       "name": "Preponderance of the Small",
       "symbol": "䷽",
       "category": "iching-hd-meta-categories",
@@ -10271,6 +10590,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-63",
+      "number": 63,
       "name": "After Completion",
       "symbol": "䷾",
       "category": "iching-hd-meta-categories",
@@ -10305,6 +10625,7 @@
     },
     {
       "id": "iching-hd-meta-categories::hex-64",
+      "number": 64,
       "name": "Before Completion",
       "symbol": "䷿",
       "category": "iching-hd-meta-categories",
@@ -11318,6 +11639,7 @@
     },
     {
       "id": "three-lenses-64::hex-1",
+      "number": 1,
       "name": "Creative Power",
       "level": 1,
       "category": "three-lenses-64",
@@ -11338,6 +11660,7 @@
     },
     {
       "id": "three-lenses-64::hex-2",
+      "number": 2,
       "name": "Receptive Flow",
       "level": 1,
       "category": "three-lenses-64",
@@ -11358,6 +11681,7 @@
     },
     {
       "id": "three-lenses-64::hex-3",
+      "number": 3,
       "name": "Difficulty at the Beginning",
       "level": 1,
       "category": "three-lenses-64",
@@ -11378,6 +11702,7 @@
     },
     {
       "id": "three-lenses-64::hex-4",
+      "number": 4,
       "name": "Youthful Folly",
       "level": 1,
       "category": "three-lenses-64",
@@ -11398,6 +11723,7 @@
     },
     {
       "id": "three-lenses-64::hex-5",
+      "number": 5,
       "name": "Waiting",
       "level": 1,
       "category": "three-lenses-64",
@@ -11418,6 +11744,7 @@
     },
     {
       "id": "three-lenses-64::hex-6",
+      "number": 6,
       "name": "Conflict",
       "level": 1,
       "category": "three-lenses-64",
@@ -11438,6 +11765,7 @@
     },
     {
       "id": "three-lenses-64::hex-7",
+      "number": 7,
       "name": "The Army",
       "level": 1,
       "category": "three-lenses-64",
@@ -11458,6 +11786,7 @@
     },
     {
       "id": "three-lenses-64::hex-8",
+      "number": 8,
       "name": "Holding Together",
       "level": 1,
       "category": "three-lenses-64",
@@ -11478,6 +11807,7 @@
     },
     {
       "id": "three-lenses-64::hex-9",
+      "number": 9,
       "name": "Taming Power of the Small",
       "level": 1,
       "category": "three-lenses-64",
@@ -11498,6 +11828,7 @@
     },
     {
       "id": "three-lenses-64::hex-10",
+      "number": 10,
       "name": "Treading",
       "level": 1,
       "category": "three-lenses-64",
@@ -11518,6 +11849,7 @@
     },
     {
       "id": "three-lenses-64::hex-11",
+      "number": 11,
       "name": "Peace",
       "level": 1,
       "category": "three-lenses-64",
@@ -11538,6 +11870,7 @@
     },
     {
       "id": "three-lenses-64::hex-12",
+      "number": 12,
       "name": "Standstill",
       "level": 1,
       "category": "three-lenses-64",
@@ -11558,6 +11891,7 @@
     },
     {
       "id": "three-lenses-64::hex-13",
+      "number": 13,
       "name": "Fellowship",
       "level": 1,
       "category": "three-lenses-64",
@@ -11578,6 +11912,7 @@
     },
     {
       "id": "three-lenses-64::hex-14",
+      "number": 14,
       "name": "Possession in Great Measure",
       "level": 1,
       "category": "three-lenses-64",
@@ -11598,6 +11933,7 @@
     },
     {
       "id": "three-lenses-64::hex-15",
+      "number": 15,
       "name": "Modesty",
       "level": 1,
       "category": "three-lenses-64",
@@ -11618,6 +11954,7 @@
     },
     {
       "id": "three-lenses-64::hex-16",
+      "number": 16,
       "name": "Enthusiasm",
       "level": 1,
       "category": "three-lenses-64",
@@ -11638,6 +11975,7 @@
     },
     {
       "id": "three-lenses-64::hex-17",
+      "number": 17,
       "name": "Following",
       "level": 1,
       "category": "three-lenses-64",
@@ -11658,6 +11996,7 @@
     },
     {
       "id": "three-lenses-64::hex-18",
+      "number": 18,
       "name": "Work on the Decayed",
       "level": 1,
       "category": "three-lenses-64",
@@ -11678,6 +12017,7 @@
     },
     {
       "id": "three-lenses-64::hex-19",
+      "number": 19,
       "name": "Approach",
       "level": 1,
       "category": "three-lenses-64",
@@ -11698,6 +12038,7 @@
     },
     {
       "id": "three-lenses-64::hex-20",
+      "number": 20,
       "name": "Contemplation",
       "level": 1,
       "category": "three-lenses-64",
@@ -11718,6 +12059,7 @@
     },
     {
       "id": "three-lenses-64::hex-21",
+      "number": 21,
       "name": "Biting Through",
       "level": 1,
       "category": "three-lenses-64",
@@ -11738,6 +12080,7 @@
     },
     {
       "id": "three-lenses-64::hex-22",
+      "number": 22,
       "name": "Grace",
       "level": 1,
       "category": "three-lenses-64",
@@ -11758,6 +12101,7 @@
     },
     {
       "id": "three-lenses-64::hex-23",
+      "number": 23,
       "name": "Splitting Apart",
       "level": 1,
       "category": "three-lenses-64",
@@ -11778,6 +12122,7 @@
     },
     {
       "id": "three-lenses-64::hex-24",
+      "number": 24,
       "name": "Return",
       "level": 1,
       "category": "three-lenses-64",
@@ -11798,6 +12143,7 @@
     },
     {
       "id": "three-lenses-64::hex-25",
+      "number": 25,
       "name": "Innocence",
       "level": 1,
       "category": "three-lenses-64",
@@ -11818,6 +12164,7 @@
     },
     {
       "id": "three-lenses-64::hex-26",
+      "number": 26,
       "name": "Taming Power of the Great",
       "level": 1,
       "category": "three-lenses-64",
@@ -11838,6 +12185,7 @@
     },
     {
       "id": "three-lenses-64::hex-27",
+      "number": 27,
       "name": "Nourishment",
       "level": 1,
       "category": "three-lenses-64",
@@ -11858,6 +12206,7 @@
     },
     {
       "id": "three-lenses-64::hex-28",
+      "number": 28,
       "name": "Preponderance of the Great",
       "level": 1,
       "category": "three-lenses-64",
@@ -11878,6 +12227,7 @@
     },
     {
       "id": "three-lenses-64::hex-29",
+      "number": 29,
       "name": "The Abysmal Water",
       "level": 1,
       "category": "three-lenses-64",
@@ -11898,6 +12248,7 @@
     },
     {
       "id": "three-lenses-64::hex-30",
+      "number": 30,
       "name": "The Clinging Fire",
       "level": 1,
       "category": "three-lenses-64",
@@ -11918,6 +12269,7 @@
     },
     {
       "id": "three-lenses-64::hex-31",
+      "number": 31,
       "name": "Influence",
       "level": 1,
       "category": "three-lenses-64",
@@ -11938,6 +12290,7 @@
     },
     {
       "id": "three-lenses-64::hex-32",
+      "number": 32,
       "name": "Duration",
       "level": 1,
       "category": "three-lenses-64",
@@ -11958,6 +12311,7 @@
     },
     {
       "id": "three-lenses-64::hex-33",
+      "number": 33,
       "name": "Retreat",
       "level": 1,
       "category": "three-lenses-64",
@@ -11978,6 +12332,7 @@
     },
     {
       "id": "three-lenses-64::hex-34",
+      "number": 34,
       "name": "Power of the Great",
       "level": 1,
       "category": "three-lenses-64",
@@ -11998,6 +12353,7 @@
     },
     {
       "id": "three-lenses-64::hex-35",
+      "number": 35,
       "name": "Progress",
       "level": 1,
       "category": "three-lenses-64",
@@ -12018,6 +12374,7 @@
     },
     {
       "id": "three-lenses-64::hex-36",
+      "number": 36,
       "name": "Darkening of the Light",
       "level": 1,
       "category": "three-lenses-64",
@@ -12038,6 +12395,7 @@
     },
     {
       "id": "three-lenses-64::hex-37",
+      "number": 37,
       "name": "The Family",
       "level": 1,
       "category": "three-lenses-64",
@@ -12058,6 +12416,7 @@
     },
     {
       "id": "three-lenses-64::hex-38",
+      "number": 38,
       "name": "Opposition",
       "level": 1,
       "category": "three-lenses-64",
@@ -12078,6 +12437,7 @@
     },
     {
       "id": "three-lenses-64::hex-39",
+      "number": 39,
       "name": "Obstruction",
       "level": 1,
       "category": "three-lenses-64",
@@ -12098,6 +12458,7 @@
     },
     {
       "id": "three-lenses-64::hex-40",
+      "number": 40,
       "name": "Deliverance",
       "level": 1,
       "category": "three-lenses-64",
@@ -12118,6 +12479,7 @@
     },
     {
       "id": "three-lenses-64::hex-41",
+      "number": 41,
       "name": "Decrease",
       "level": 1,
       "category": "three-lenses-64",
@@ -12138,6 +12500,7 @@
     },
     {
       "id": "three-lenses-64::hex-42",
+      "number": 42,
       "name": "Increase",
       "level": 1,
       "category": "three-lenses-64",
@@ -12158,6 +12521,7 @@
     },
     {
       "id": "three-lenses-64::hex-43",
+      "number": 43,
       "name": "Breakthrough",
       "level": 1,
       "category": "three-lenses-64",
@@ -12178,6 +12542,7 @@
     },
     {
       "id": "three-lenses-64::hex-44",
+      "number": 44,
       "name": "Coming to Meet",
       "level": 1,
       "category": "three-lenses-64",
@@ -12198,6 +12563,7 @@
     },
     {
       "id": "three-lenses-64::hex-45",
+      "number": 45,
       "name": "Gathering Together",
       "level": 1,
       "category": "three-lenses-64",
@@ -12218,6 +12584,7 @@
     },
     {
       "id": "three-lenses-64::hex-46",
+      "number": 46,
       "name": "Pushing Upward",
       "level": 1,
       "category": "three-lenses-64",
@@ -12238,6 +12605,7 @@
     },
     {
       "id": "three-lenses-64::hex-47",
+      "number": 47,
       "name": "Oppression",
       "level": 1,
       "category": "three-lenses-64",
@@ -12258,6 +12626,7 @@
     },
     {
       "id": "three-lenses-64::hex-48",
+      "number": 48,
       "name": "The Well",
       "level": 1,
       "category": "three-lenses-64",
@@ -12278,6 +12647,7 @@
     },
     {
       "id": "three-lenses-64::hex-49",
+      "number": 49,
       "name": "Revolution",
       "level": 1,
       "category": "three-lenses-64",
@@ -12298,6 +12668,7 @@
     },
     {
       "id": "three-lenses-64::hex-50",
+      "number": 50,
       "name": "The Cauldron",
       "level": 1,
       "category": "three-lenses-64",
@@ -12318,6 +12689,7 @@
     },
     {
       "id": "three-lenses-64::hex-51",
+      "number": 51,
       "name": "The Arousing",
       "level": 1,
       "category": "three-lenses-64",
@@ -12338,6 +12710,7 @@
     },
     {
       "id": "three-lenses-64::hex-52",
+      "number": 52,
       "name": "Keeping Still",
       "level": 1,
       "category": "three-lenses-64",
@@ -12358,6 +12731,7 @@
     },
     {
       "id": "three-lenses-64::hex-53",
+      "number": 53,
       "name": "Development",
       "level": 1,
       "category": "three-lenses-64",
@@ -12378,6 +12752,7 @@
     },
     {
       "id": "three-lenses-64::hex-54",
+      "number": 54,
       "name": "The Marrying Maiden",
       "level": 1,
       "category": "three-lenses-64",
@@ -12398,6 +12773,7 @@
     },
     {
       "id": "three-lenses-64::hex-55",
+      "number": 55,
       "name": "Abundance",
       "level": 1,
       "category": "three-lenses-64",
@@ -12418,6 +12794,7 @@
     },
     {
       "id": "three-lenses-64::hex-56",
+      "number": 56,
       "name": "The Wanderer",
       "level": 1,
       "category": "three-lenses-64",
@@ -12438,6 +12815,7 @@
     },
     {
       "id": "three-lenses-64::hex-57",
+      "number": 57,
       "name": "The Gentle",
       "level": 1,
       "category": "three-lenses-64",
@@ -12458,6 +12836,7 @@
     },
     {
       "id": "three-lenses-64::hex-58",
+      "number": 58,
       "name": "The Joyous",
       "level": 1,
       "category": "three-lenses-64",
@@ -12478,6 +12857,7 @@
     },
     {
       "id": "three-lenses-64::hex-59",
+      "number": 59,
       "name": "Dispersion",
       "level": 1,
       "category": "three-lenses-64",
@@ -12498,6 +12878,7 @@
     },
     {
       "id": "three-lenses-64::hex-60",
+      "number": 60,
       "name": "Limitation",
       "level": 1,
       "category": "three-lenses-64",
@@ -12518,6 +12899,7 @@
     },
     {
       "id": "three-lenses-64::hex-61",
+      "number": 61,
       "name": "Inner Truth",
       "level": 1,
       "category": "three-lenses-64",
@@ -12538,6 +12920,7 @@
     },
     {
       "id": "three-lenses-64::hex-62",
+      "number": 62,
       "name": "Preponderance of the Small",
       "level": 1,
       "category": "three-lenses-64",
@@ -12558,6 +12941,7 @@
     },
     {
       "id": "three-lenses-64::hex-63",
+      "number": 63,
       "name": "After Completion",
       "level": 1,
       "category": "three-lenses-64",
@@ -12578,6 +12962,7 @@
     },
     {
       "id": "three-lenses-64::hex-64",
+      "number": 64,
       "name": "Before Completion",
       "level": 1,
       "category": "three-lenses-64",
@@ -13291,6 +13676,7 @@
     },
     {
       "id": "repair-iching::hex06-conflict",
+      "number": 6,
       "name": "Hexagram 6 · 訟 Sòng · Conflict",
       "sort_order": 1,
       "category": "repair-iching",
@@ -13320,6 +13706,7 @@
     },
     {
       "id": "repair-iching::hex29-the-abysmal",
+      "number": 29,
       "name": "Hexagram 29 · 坎 Kǎn · The Abysmal (Water)",
       "sort_order": 2,
       "category": "repair-iching",
@@ -13351,6 +13738,7 @@
     },
     {
       "id": "repair-iching::hex58-the-joyous",
+      "number": 58,
       "name": "Hexagram 58 · 兌 Duì · The Joyous (Lake)",
       "sort_order": 3,
       "category": "repair-iching",
@@ -13382,6 +13770,7 @@
     },
     {
       "id": "repair-iching::hex24-return",
+      "number": 24,
       "name": "Hexagram 24 · 復 Fù · Return (The Turning Point)",
       "sort_order": 4,
       "category": "repair-iching",
@@ -13413,6 +13802,7 @@
     },
     {
       "id": "repair-iching::hex63-after-completion",
+      "number": 63,
       "name": "Hexagram 63 · 既濟 Jì Jì · After Completion",
       "sort_order": 5,
       "category": "repair-iching",
@@ -13444,6 +13834,7 @@
     },
     {
       "id": "repair-iching::hex50-the-caldron",
+      "number": 50,
       "name": "Hexagram 50 · 鼎 Dǐng · The Caldron",
       "sort_order": 6,
       "category": "repair-iching",
@@ -13475,6 +13866,7 @@
     },
     {
       "id": "repair-iching::hex47-oppression",
+      "number": 47,
       "name": "Hexagram 47 · 困 Kùn · Oppression (Exhaustion)",
       "sort_order": 7,
       "category": "repair-iching",
@@ -13506,6 +13898,7 @@
     },
     {
       "id": "repair-iching::hex49-revolution",
+      "number": 49,
       "name": "Hexagram 49 · 革 Gé · Revolution (Molting)",
       "sort_order": 8,
       "category": "repair-iching",
@@ -13537,6 +13930,7 @@
     },
     {
       "id": "repair-iching::hex53-gradual-progress",
+      "number": 53,
       "name": "Hexagram 53 · 漸 Jiàn · Gradual Progress",
       "sort_order": 9,
       "category": "repair-iching",
@@ -13568,6 +13962,7 @@
     },
     {
       "id": "repair-iching::hex11-peace",
+      "number": 11,
       "name": "Hexagram 11 · 泰 Tài · Peace",
       "sort_order": 10,
       "category": "repair-iching",
@@ -13599,6 +13994,7 @@
     },
     {
       "id": "repair-iching::hex20-contemplation",
+      "number": 20,
       "name": "Hexagram 20 · 觀 Guān · Contemplation (View)",
       "sort_order": 11,
       "category": "repair-iching",
@@ -13631,6 +14027,7 @@
     },
     {
       "id": "repair-iching::hex64-before-completion",
+      "number": 64,
       "name": "Hexagram 64 · 未濟 Wèi Jì · Before Completion",
       "sort_order": 12,
       "category": "repair-iching",
@@ -13772,6 +14169,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-1",
+      "number": 1,
       "name": "The Creative",
       "symbol": "䷀",
       "category": "the-recursive-iching-book",
@@ -13795,6 +14193,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-2",
+      "number": 2,
       "name": "The Receptive",
       "symbol": "䷁",
       "category": "the-recursive-iching-book",
@@ -13818,6 +14217,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-3",
+      "number": 3,
       "name": "Difficulty at the Beginning",
       "symbol": "䷂",
       "category": "the-recursive-iching-book",
@@ -13841,6 +14241,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-4",
+      "number": 4,
       "name": "Youthful Folly",
       "symbol": "䷃",
       "category": "the-recursive-iching-book",
@@ -13864,6 +14265,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-5",
+      "number": 5,
       "name": "Waiting (Nourishment)",
       "symbol": "䷄",
       "category": "the-recursive-iching-book",
@@ -13887,6 +14289,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-6",
+      "number": 6,
       "name": "Conflict",
       "symbol": "䷅",
       "category": "the-recursive-iching-book",
@@ -13910,6 +14313,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-7",
+      "number": 7,
       "name": "The Army",
       "symbol": "䷆",
       "category": "the-recursive-iching-book",
@@ -13933,6 +14337,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-8",
+      "number": 8,
       "name": "Holding Together [Union]",
       "symbol": "䷇",
       "category": "the-recursive-iching-book",
@@ -13956,6 +14361,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-9",
+      "number": 9,
       "name": "The Taming Power of the Small",
       "symbol": "䷈",
       "category": "the-recursive-iching-book",
@@ -13979,6 +14385,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-10",
+      "number": 10,
       "name": "Treading [Conduct]",
       "symbol": "䷉",
       "category": "the-recursive-iching-book",
@@ -14002,6 +14409,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-11",
+      "number": 11,
       "name": "Peace",
       "symbol": "䷊",
       "category": "the-recursive-iching-book",
@@ -14025,6 +14433,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-12",
+      "number": 12,
       "name": "Standstill [Stagnation]",
       "symbol": "䷋",
       "category": "the-recursive-iching-book",
@@ -14048,6 +14457,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-13",
+      "number": 13,
       "name": "Fellowship with Men",
       "symbol": "䷌",
       "category": "the-recursive-iching-book",
@@ -14071,6 +14481,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-14",
+      "number": 14,
       "name": "Possession in Great Measure",
       "symbol": "䷍",
       "category": "the-recursive-iching-book",
@@ -14094,6 +14505,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-15",
+      "number": 15,
       "name": "Modesty",
       "symbol": "䷎",
       "category": "the-recursive-iching-book",
@@ -14117,6 +14529,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-16",
+      "number": 16,
       "name": "Enthusiasm",
       "symbol": "䷏",
       "category": "the-recursive-iching-book",
@@ -14140,6 +14553,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-17",
+      "number": 17,
       "name": "Following",
       "symbol": "䷐",
       "category": "the-recursive-iching-book",
@@ -14163,6 +14577,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-18",
+      "number": 18,
       "name": "Work on what has been spoiled [Decay]",
       "symbol": "䷑",
       "category": "the-recursive-iching-book",
@@ -14186,6 +14601,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-19",
+      "number": 19,
       "name": "Approach",
       "symbol": "䷒",
       "category": "the-recursive-iching-book",
@@ -14209,6 +14625,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-20",
+      "number": 20,
       "name": "Contemplation [View]",
       "symbol": "䷓",
       "category": "the-recursive-iching-book",
@@ -14232,6 +14649,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-21",
+      "number": 21,
       "name": "Biting Through",
       "symbol": "䷔",
       "category": "the-recursive-iching-book",
@@ -14255,6 +14673,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-22",
+      "number": 22,
       "name": "Grace",
       "symbol": "䷕",
       "category": "the-recursive-iching-book",
@@ -14278,6 +14697,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-23",
+      "number": 23,
       "name": "Splitting Apart",
       "symbol": "䷖",
       "category": "the-recursive-iching-book",
@@ -14301,6 +14721,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-24",
+      "number": 24,
       "name": "Return (The Turning Point)",
       "symbol": "䷗",
       "category": "the-recursive-iching-book",
@@ -14324,6 +14745,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-25",
+      "number": 25,
       "name": "Innocence (The Unexpected)",
       "symbol": "䷘",
       "category": "the-recursive-iching-book",
@@ -14347,6 +14769,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-26",
+      "number": 26,
       "name": "The Taming Power of the Great",
       "symbol": "䷙",
       "category": "the-recursive-iching-book",
@@ -14370,6 +14793,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-27",
+      "number": 27,
       "name": "The Corners of the Mouth (Providing Nourishment)",
       "symbol": "䷚",
       "category": "the-recursive-iching-book",
@@ -14393,6 +14817,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-28",
+      "number": 28,
       "name": "Preponderance of the Great",
       "symbol": "䷛",
       "category": "the-recursive-iching-book",
@@ -14416,6 +14841,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-29",
+      "number": 29,
       "name": "The Abysmal (Water)",
       "symbol": "䷜",
       "category": "the-recursive-iching-book",
@@ -14439,6 +14865,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-30",
+      "number": 30,
       "name": "The Clinging, Fire",
       "symbol": "䷝",
       "category": "the-recursive-iching-book",
@@ -14462,6 +14889,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-31",
+      "number": 31,
       "name": "Influence (Wooing)",
       "symbol": "䷞",
       "category": "the-recursive-iching-book",
@@ -14485,6 +14913,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-32",
+      "number": 32,
       "name": "Duration",
       "symbol": "䷟",
       "category": "the-recursive-iching-book",
@@ -14508,6 +14937,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-33",
+      "number": 33,
       "name": "Retreat",
       "symbol": "䷠",
       "category": "the-recursive-iching-book",
@@ -14531,6 +14961,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-34",
+      "number": 34,
       "name": "The Power of the Great",
       "symbol": "䷡",
       "category": "the-recursive-iching-book",
@@ -14554,6 +14985,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-35",
+      "number": 35,
       "name": "Progress",
       "symbol": "䷢",
       "category": "the-recursive-iching-book",
@@ -14577,6 +15009,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-36",
+      "number": 36,
       "name": "Darkening of the Light",
       "symbol": "䷣",
       "category": "the-recursive-iching-book",
@@ -14600,6 +15033,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-37",
+      "number": 37,
       "name": "The Family [The Clan]",
       "symbol": "䷤",
       "category": "the-recursive-iching-book",
@@ -14623,6 +15057,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-38",
+      "number": 38,
       "name": "Opposition",
       "symbol": "䷥",
       "category": "the-recursive-iching-book",
@@ -14646,6 +15081,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-39",
+      "number": 39,
       "name": "Obstruction",
       "symbol": "䷦",
       "category": "the-recursive-iching-book",
@@ -14669,6 +15105,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-40",
+      "number": 40,
       "name": "Deliverance",
       "symbol": "䷧",
       "category": "the-recursive-iching-book",
@@ -14692,6 +15129,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-41",
+      "number": 41,
       "name": "Decrease",
       "symbol": "䷨",
       "category": "the-recursive-iching-book",
@@ -14715,6 +15153,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-42",
+      "number": 42,
       "name": "Increase",
       "symbol": "䷩",
       "category": "the-recursive-iching-book",
@@ -14738,6 +15177,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-43",
+      "number": 43,
       "name": "Break-through (Resoluteness)",
       "symbol": "䷪",
       "category": "the-recursive-iching-book",
@@ -14761,6 +15201,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-44",
+      "number": 44,
       "name": "Coming to Meet",
       "symbol": "䷫",
       "category": "the-recursive-iching-book",
@@ -14784,6 +15225,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-45",
+      "number": 45,
       "name": "Gathering Together [Massing]",
       "symbol": "䷬",
       "category": "the-recursive-iching-book",
@@ -14807,6 +15249,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-46",
+      "number": 46,
       "name": "Pushing Upward",
       "symbol": "䷭",
       "category": "the-recursive-iching-book",
@@ -14830,6 +15273,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-47",
+      "number": 47,
       "name": "Oppression (Exhaustion)",
       "symbol": "䷮",
       "category": "the-recursive-iching-book",
@@ -14853,6 +15297,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-48",
+      "number": 48,
       "name": "The Well",
       "symbol": "䷯",
       "category": "the-recursive-iching-book",
@@ -14876,6 +15321,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-49",
+      "number": 49,
       "name": "Revolution (Molting)",
       "symbol": "䷰",
       "category": "the-recursive-iching-book",
@@ -14899,6 +15345,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-50",
+      "number": 50,
       "name": "The Caldron",
       "symbol": "䷱",
       "category": "the-recursive-iching-book",
@@ -14922,6 +15369,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-51",
+      "number": 51,
       "name": "The Arousing (Shock, Thunder)",
       "symbol": "䷲",
       "category": "the-recursive-iching-book",
@@ -14945,6 +15393,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-52",
+      "number": 52,
       "name": "Keeping Still, Mountain",
       "symbol": "䷳",
       "category": "the-recursive-iching-book",
@@ -14968,6 +15417,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-53",
+      "number": 53,
       "name": "Development (Gradual Progress)",
       "symbol": "䷴",
       "category": "the-recursive-iching-book",
@@ -14991,6 +15441,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-54",
+      "number": 54,
       "name": "The Marrying Maiden",
       "symbol": "䷵",
       "category": "the-recursive-iching-book",
@@ -15014,6 +15465,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-55",
+      "number": 55,
       "name": "Abundance",
       "symbol": "䷶",
       "category": "the-recursive-iching-book",
@@ -15037,6 +15489,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-56",
+      "number": 56,
       "name": "The Wanderer",
       "symbol": "䷷",
       "category": "the-recursive-iching-book",
@@ -15060,6 +15513,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-57",
+      "number": 57,
       "name": "The Gentle (The Penetrating, Wind)",
       "symbol": "䷸",
       "category": "the-recursive-iching-book",
@@ -15083,6 +15537,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-58",
+      "number": 58,
       "name": "The Joyous, Lake",
       "symbol": "䷹",
       "category": "the-recursive-iching-book",
@@ -15106,6 +15561,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-59",
+      "number": 59,
       "name": "Dispersion [Dissolution]",
       "symbol": "䷺",
       "category": "the-recursive-iching-book",
@@ -15129,6 +15585,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-60",
+      "number": 60,
       "name": "Limitation",
       "symbol": "䷻",
       "category": "the-recursive-iching-book",
@@ -15152,6 +15609,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-61",
+      "number": 61,
       "name": "Inner Truth",
       "symbol": "䷼",
       "category": "the-recursive-iching-book",
@@ -15175,6 +15633,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-62",
+      "number": 62,
       "name": "Preponderance of the Small",
       "symbol": "䷽",
       "category": "the-recursive-iching-book",
@@ -15198,6 +15657,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-63",
+      "number": 63,
       "name": "After Completion",
       "symbol": "䷾",
       "category": "the-recursive-iching-book",
@@ -15221,6 +15681,7 @@
     },
     {
       "id": "the-recursive-iching-book::hex-64",
+      "number": 64,
       "name": "Before Completion",
       "symbol": "䷿",
       "category": "the-recursive-iching-book",

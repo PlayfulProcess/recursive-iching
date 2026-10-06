@@ -27,6 +27,7 @@
  "items": [
   {
    "id": "hex-1",
+   "number": 1,
    "name": "The Creative",
    "symbol": "䷀",
    "category": "great-image",
@@ -47,6 +48,7 @@
   },
   {
    "id": "hex-2",
+   "number": 2,
    "name": "The Receptive",
    "symbol": "䷁",
    "category": "great-image",
@@ -67,6 +69,7 @@
   },
   {
    "id": "hex-3",
+   "number": 3,
    "name": "Difficulty at the Beginning",
    "symbol": "䷂",
    "category": "great-image",
@@ -87,6 +90,7 @@
   },
   {
    "id": "hex-4",
+   "number": 4,
    "name": "Youthful Folly",
    "symbol": "䷃",
    "category": "great-image",
@@ -107,6 +111,7 @@
   },
   {
    "id": "hex-5",
+   "number": 5,
    "name": "Waiting (Nourishment)",
    "symbol": "䷄",
    "category": "great-image",
@@ -127,6 +132,7 @@
   },
   {
    "id": "hex-6",
+   "number": 6,
    "name": "Conflict",
    "symbol": "䷅",
    "category": "great-image",
@@ -147,6 +153,7 @@
   },
   {
    "id": "hex-7",
+   "number": 7,
    "name": "The Army",
    "symbol": "䷆",
    "category": "great-image",
@@ -167,6 +174,7 @@
   },
   {
    "id": "hex-8",
+   "number": 8,
    "name": "Holding Together [Union]",
    "symbol": "䷇",
    "category": "great-image",
@@ -187,6 +195,7 @@
   },
   {
    "id": "hex-9",
+   "number": 9,
    "name": "The Taming Power of the Small",
    "symbol": "䷈",
    "category": "great-image",
@@ -207,6 +216,7 @@
   },
   {
    "id": "hex-10",
+   "number": 10,
    "name": "Treading [Conduct]",
    "symbol": "䷉",
    "category": "great-image",
@@ -227,6 +237,7 @@
   },
   {
    "id": "hex-11",
+   "number": 11,
    "name": "Peace",
    "symbol": "䷊",
    "category": "great-image",
@@ -247,6 +258,7 @@
   },
   {
    "id": "hex-12",
+   "number": 12,
    "name": "Standstill [Stagnation]",
    "symbol": "䷋",
    "category": "great-image",
@@ -267,6 +279,7 @@
   },
   {
    "id": "hex-13",
+   "number": 13,
    "name": "Fellowship with Men",
    "symbol": "䷌",
    "category": "great-image",
@@ -287,6 +300,7 @@
   },
   {
    "id": "hex-14",
+   "number": 14,
    "name": "Possession in Great Measure",
    "symbol": "䷍",
    "category": "great-image",
@@ -307,6 +321,7 @@
   },
   {
    "id": "hex-15",
+   "number": 15,
    "name": "Modesty",
    "symbol": "䷎",
    "category": "great-image",
@@ -327,6 +342,7 @@
   },
   {
    "id": "hex-16",
+   "number": 16,
    "name": "Enthusiasm",
    "symbol": "䷏",
    "category": "great-image",
@@ -347,6 +363,7 @@
   },
   {
    "id": "hex-17",
+   "number": 17,
    "name": "Following",
    "symbol": "䷐",
    "category": "great-image",
@@ -367,6 +384,7 @@
   },
   {
    "id": "hex-18",
+   "number": 18,
    "name": "Work on what has been spoiled [Decay]",
    "symbol": "䷑",
    "category": "great-image",
@@ -387,6 +405,7 @@
   },
   {
    "id": "hex-19",
+   "number": 19,
    "name": "Approach",
    "symbol": "䷒",
    "category": "great-image",
@@ -407,6 +426,7 @@
   },
   {
    "id": "hex-20",
+   "number": 20,
    "name": "Contemplation [View]",
    "symbol": "䷓",
    "category": "great-image",
@@ -427,6 +447,7 @@
   },
   {
    "id": "hex-21",
+   "number": 21,
    "name": "Biting Through",
    "symbol": "䷔",
    "category": "great-image",
@@ -447,6 +468,7 @@
   },
   {
    "id": "hex-22",
+   "number": 22,
    "name": "Grace",
    "symbol": "䷕",
    "category": "great-image",
@@ -467,6 +489,7 @@
   },
   {
    "id": "hex-23",
+   "number": 23,
    "name": "Splitting Apart",
    "symbol": "䷖",
    "category": "great-image",
@@ -487,6 +510,7 @@
   },
   {
    "id": "hex-24",
+   "number": 24,
    "name": "Return (The Turning Point)",
    "symbol": "䷗",
    "category": "great-image",
@@ -507,6 +531,7 @@
   },
   {
    "id": "hex-25",
+   "number": 25,
    "name": "Innocence (The Unexpected)",
    "symbol": "䷘",
    "category": "great-image",
@@ -527,6 +552,7 @@
   },
   {
    "id": "hex-26",
+   "number": 26,
    "name": "The Taming Power of the Great",
    "symbol": "䷙",
    "category": "great-image",
@@ -547,6 +573,7 @@
   },
   {
    "id": "hex-27",
+   "number": 27,
    "name": "The Corners of the Mouth (Providing Nourishment)",
    "symbol": "䷚",
    "category": "great-image",
@@ -567,6 +594,7 @@
   },
   {
    "id": "hex-28",
+   "number": 28,
    "name": "Preponderance of the Great",
    "symbol": "䷛",
    "category": "great-image",
@@ -587,6 +615,7 @@
   },
   {
    "id": "hex-29",
+   "number": 29,
    "name": "The Abysmal (Water)",
    "symbol": "䷜",
    "category": "great-image",
@@ -607,6 +636,7 @@
   },
   {
    "id": "hex-30",
+   "number": 30,
    "name": "The Clinging, Fire",
    "symbol": "䷝",
    "category": "great-image",
@@ -627,6 +657,7 @@
   },
   {
    "id": "hex-31",
+   "number": 31,
    "name": "Influence (Wooing)",
    "symbol": "䷞",
    "category": "great-image",
@@ -647,6 +678,7 @@
   },
   {
    "id": "hex-32",
+   "number": 32,
    "name": "Duration",
    "symbol": "䷟",
    "category": "great-image",
@@ -667,6 +699,7 @@
   },
   {
    "id": "hex-33",
+   "number": 33,
    "name": "Retreat",
    "symbol": "䷠",
    "category": "great-image",
@@ -687,6 +720,7 @@
   },
   {
    "id": "hex-34",
+   "number": 34,
    "name": "The Power of the Great",
    "symbol": "䷡",
    "category": "great-image",
@@ -707,6 +741,7 @@
   },
   {
    "id": "hex-35",
+   "number": 35,
    "name": "Progress",
    "symbol": "䷢",
    "category": "great-image",
@@ -727,6 +762,7 @@
   },
   {
    "id": "hex-36",
+   "number": 36,
    "name": "Darkening of the Light",
    "symbol": "䷣",
    "category": "great-image",
@@ -747,6 +783,7 @@
   },
   {
    "id": "hex-37",
+   "number": 37,
    "name": "The Family [The Clan]",
    "symbol": "䷤",
    "category": "great-image",
@@ -767,6 +804,7 @@
   },
   {
    "id": "hex-38",
+   "number": 38,
    "name": "Opposition",
    "symbol": "䷥",
    "category": "great-image",
@@ -787,6 +825,7 @@
   },
   {
    "id": "hex-39",
+   "number": 39,
    "name": "Obstruction",
    "symbol": "䷦",
    "category": "great-image",
@@ -807,6 +846,7 @@
   },
   {
    "id": "hex-40",
+   "number": 40,
    "name": "Deliverance",
    "symbol": "䷧",
    "category": "great-image",
@@ -827,6 +867,7 @@
   },
   {
    "id": "hex-41",
+   "number": 41,
    "name": "Decrease",
    "symbol": "䷨",
    "category": "great-image",
@@ -847,6 +888,7 @@
   },
   {
    "id": "hex-42",
+   "number": 42,
    "name": "Increase",
    "symbol": "䷩",
    "category": "great-image",
@@ -867,6 +909,7 @@
   },
   {
    "id": "hex-43",
+   "number": 43,
    "name": "Break-through (Resoluteness)",
    "symbol": "䷪",
    "category": "great-image",
@@ -887,6 +930,7 @@
   },
   {
    "id": "hex-44",
+   "number": 44,
    "name": "Coming to Meet",
    "symbol": "䷫",
    "category": "great-image",
@@ -907,6 +951,7 @@
   },
   {
    "id": "hex-45",
+   "number": 45,
    "name": "Gathering Together [Massing]",
    "symbol": "䷬",
    "category": "great-image",
@@ -927,6 +972,7 @@
   },
   {
    "id": "hex-46",
+   "number": 46,
    "name": "Pushing Upward",
    "symbol": "䷭",
    "category": "great-image",
@@ -947,6 +993,7 @@
   },
   {
    "id": "hex-47",
+   "number": 47,
    "name": "Oppression (Exhaustion)",
    "symbol": "䷮",
    "category": "great-image",
@@ -967,6 +1014,7 @@
   },
   {
    "id": "hex-48",
+   "number": 48,
    "name": "The Well",
    "symbol": "䷯",
    "category": "great-image",
@@ -987,6 +1035,7 @@
   },
   {
    "id": "hex-49",
+   "number": 49,
    "name": "Revolution (Molting)",
    "symbol": "䷰",
    "category": "great-image",
@@ -1007,6 +1056,7 @@
   },
   {
    "id": "hex-50",
+   "number": 50,
    "name": "The Caldron",
    "symbol": "䷱",
    "category": "great-image",
@@ -1027,6 +1077,7 @@
   },
   {
    "id": "hex-51",
+   "number": 51,
    "name": "The Arousing (Shock, Thunder)",
    "symbol": "䷲",
    "category": "great-image",
@@ -1047,6 +1098,7 @@
   },
   {
    "id": "hex-52",
+   "number": 52,
    "name": "Keeping Still, Mountain",
    "symbol": "䷳",
    "category": "great-image",
@@ -1067,6 +1119,7 @@
   },
   {
    "id": "hex-53",
+   "number": 53,
    "name": "Development (Gradual Progress)",
    "symbol": "䷴",
    "category": "great-image",
@@ -1087,6 +1140,7 @@
   },
   {
    "id": "hex-54",
+   "number": 54,
    "name": "The Marrying Maiden",
    "symbol": "䷵",
    "category": "great-image",
@@ -1107,6 +1161,7 @@
   },
   {
    "id": "hex-55",
+   "number": 55,
    "name": "Abundance",
    "symbol": "䷶",
    "category": "great-image",
@@ -1127,6 +1182,7 @@
   },
   {
    "id": "hex-56",
+   "number": 56,
    "name": "The Wanderer",
    "symbol": "䷷",
    "category": "great-image",
@@ -1147,6 +1203,7 @@
   },
   {
    "id": "hex-57",
+   "number": 57,
    "name": "The Gentle (The Penetrating, Wind)",
    "symbol": "䷸",
    "category": "great-image",
@@ -1167,6 +1224,7 @@
   },
   {
    "id": "hex-58",
+   "number": 58,
    "name": "The Joyous, Lake",
    "symbol": "䷹",
    "category": "great-image",
@@ -1187,6 +1245,7 @@
   },
   {
    "id": "hex-59",
+   "number": 59,
    "name": "Dispersion [Dissolution]",
    "symbol": "䷺",
    "category": "great-image",
@@ -1207,6 +1266,7 @@
   },
   {
    "id": "hex-60",
+   "number": 60,
    "name": "Limitation",
    "symbol": "䷻",
    "category": "great-image",
@@ -1227,6 +1287,7 @@
   },
   {
    "id": "hex-61",
+   "number": 61,
    "name": "Inner Truth",
    "symbol": "䷼",
    "category": "great-image",
@@ -1247,6 +1308,7 @@
   },
   {
    "id": "hex-62",
+   "number": 62,
    "name": "Preponderance of the Small",
    "symbol": "䷽",
    "category": "great-image",
@@ -1267,6 +1329,7 @@
   },
   {
    "id": "hex-63",
+   "number": 63,
    "name": "After Completion",
    "symbol": "䷾",
    "category": "great-image",
@@ -1287,6 +1350,7 @@
   },
   {
    "id": "hex-64",
+   "number": 64,
    "name": "Before Completion",
    "symbol": "䷿",
    "category": "great-image",

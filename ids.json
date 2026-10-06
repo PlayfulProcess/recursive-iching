@@ -1,7 +1,20 @@
 {
   "_note": "Slug -> recursive.eco grammar UUID (the deckId) for the I Ching channel. Used by recursive.eco to bind repo grammars to their live rows and to build per-grammar links (Cast / View / Edit — see viewers/eco-links.js). Mirrors recursive-astrology/ids.json and recursive-tarot/tarot/_eco_ids.json. Keep this updated when new grammars are created or published.",
   "_preview_links": "Every grammar renders with no extra hosting: swap <id> for the UUID from `ids` once published. This channel's grammar_type param is 'iching'. Play = https://flow.recursive.eco/play?id=<id> | Edit = https://flow.recursive.eco/create/dashboard/unified/new?id=<id> | Cards = https://recursive.eco/pages/grammar-viewer.html?type=iching&id=<id>",
-  "_status": "SKELETON — no grammar in this repo has been imported into recursive.eco yet. `ids` is empty and `_public_now` is empty on purpose: publishing (import each grammar.json into recursive.eco, set is_public=true, add it to the `iching` channel, then record its UUID here) is a separate step from building this site — see docs/PLAYBOOK-FIELD-REPORT.md and the playbook's step 4 (\"The eco binding\"). Until this file is filled in, every recursive.eco-hosted link (Cast/View/Edit, the course's companion links, the assistant's grammar context) will be present in the markup but non-functional for a logged-out visitor.",
-  "ids": {},
-  "_public_now": []
+  "_status": "FILLED Oct 6 2026 (PlayfulProcess: \"For I Ching, do what you think is best\"). Each mapped folder syncs into the recursive.eco grammar named here; the reasons are in docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md, 'Decisions, Oct 6'. Not mapped on purpose: ten-wings and tree-of-the-iching have no app grammar yet and become NEW grammars on the first import; meta-iching and the-recursive-iching-book carry `_generated: true` and three-lenses-64 carries `_source_of_truth: \"repo\"`, so the importer skips all three. Nothing has been imported yet.",
+  "ids": {
+    "zhouyi-core": "6efa4fc7-14a1-41d2-b99c-a9bfb7e9aae9",
+    "i-ching-chinese-original": "476b17da-e6dd-4c10-925a-fad9992ea12c",
+    "i-ching-summarized": "b5161d12-4e93-47ba-850b-b0f50d1133c6",
+    "iching-hd-meta-categories": "ad36491a-b504-4b7f-87aa-7337cc1bd0e3",
+    "repair-iching": "b7a59594-1822-4770-8600-155514f323e0"
+  },
+  "_public_now": [
+    "zhouyi-core",
+    "i-ching-chinese-original",
+    "i-ching-summarized",
+    "iching-hd-meta-categories",
+    "repair-iching"
+  ],
+  "_public_now_note": "Public in the app on Oct 6 2026: zhouyi-core, i-ching-chinese-original, i-ching-summarized and iching-hd-meta-categories are Published (listed); repair-iching is Link."
 }
