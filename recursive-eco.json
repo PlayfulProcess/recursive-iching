@@ -15,6 +15,13 @@
       "body_md": "The classical text in full, a contemplative reading practice built from it, and a cross-lens synthesis against Human Design gates, zodiac signs, and chakras. Built in the open and bound to its GitHub repo — fork it, correct it, or read with it.\n\nA hexagram is a mirror, not a fate: read to reflect, never to obey."
     }
   },
+  "shell": {
+    "_note": "The partner header and footer recursive.eco draws around its previews of this collection (recursive-eco apps/landing/docs/grammar-format.md, \"A partner's header and footer\"). Colours and font match theme.css's zen look (Oct 6 2026): rice paper, sumi ink, seal red, Shippori Mincho. No logo: a logo must be an image uploaded to recursive.eco, and recursive.eco's own spiral leads every header anyway.",
+    "name": "The Recursive I Ching",
+    "home": "https://iching.recursive.eco/",
+    "colors": { "background": "#f3efe6", "text": "#1c1a17", "accent": "#9c3b2a" },
+    "font": "Shippori Mincho"
+  },
   "grammars": {
     "paths": ["grammars/*/grammar.json"],
     "exclude": [],

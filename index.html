@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="theme.css?v=3">
+<link rel="stylesheet" href="theme.css?v=4">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Recursive I Ching — The 64 Hexagrams, Read as a Mirror, Not a Fate</title>
@@ -11,76 +11,69 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://iching.recursive.eco/">
 <style>
-  /* ── Editorial homepage (structure ported from recursive-tarot/index.html) ── */
-  main.wrap{max-width:1120px;margin:0 auto;padding:0 18px 80px}
+  /* ── Editorial homepage (structure ported from recursive-tarot/index.html), in the zen look:
+     paper, ink, one seal red, a lot of empty space. Colours are theme.css tokens only. ── */
+  body{margin:0}
+  main.wrap{max-width:1120px;margin:0 auto;padding:0 18px 96px}
+  h1,h2,h3{font-family:var(--serif-display);font-weight:600;letter-spacing:.02em;color:var(--ink)}
 
-  /* hero — plate left, text right (same pattern as tarot's hero) */
-  .herowrap{display:flex;gap:clamp(28px,5vw,56px);align-items:center;max-width:1060px;margin:18px auto 0;padding:8px}
-  .herowrap .plate{margin:0;flex:0 0 auto;text-align:center}
-  .herowrap .htext{flex:1 1 auto;min-width:0;text-align:left}
-  .plate .mat{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:3px;
-    padding:13px;box-shadow:0 34px 64px -34px rgba(20,30,45,.4)}
-  .plate .mat img{display:block;height:clamp(280px,48vh,460px);width:auto;border:1px solid var(--line);background:var(--panel2)}
-  .plate .cap{font-family:Inter,system-ui,sans-serif;font-size:11px;letter-spacing:.08em;color:var(--muted);
-    text-transform:uppercase;margin-top:13px}
-  .htext h1{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(30px,4.6vw,50px);
-    line-height:1.06;letter-spacing:.2px;margin:0;color:var(--ink)}
-  .htext h1 .accent{color:var(--accent)}
-  .htext .subtitle{font-family:"Fraunces",Georgia,serif;font-style:italic;color:var(--ink-soft,var(--muted));
-    font-size:clamp(15px,2.1vw,19px);line-height:1.5;margin:14px 0 0;max-width:44ch}
-  .cta-row{display:flex;gap:12px;justify-content:flex-start;flex-wrap:wrap;margin:22px 0 4px}
-  .btn{font-family:Inter,system-ui,sans-serif;text-decoration:none;font-weight:600;font-size:14px;
-    padding:11px 22px;border-radius:8px;transition:background .15s,transform .15s,border-color .15s,color .15s}
-  .btn.primary{background:var(--accent);color:#fff}
-  .btn.primary:hover{background:#7a2d20;transform:translateY(-1px)}
-  .btn.ghost{color:var(--muted);border:1px solid var(--line)}
-  .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
-  .lede{font-family:"Fraunces",Georgia,serif;font-size:16.5px;line-height:1.62;color:var(--muted);
-    max-width:58ch;margin:20px 0 0;text-align:left}
+  /* hero — a painting, then the words under it, with room to breathe */
+  .hero{max-width:1000px;margin:40px auto 0}
+  .hero-art{text-align:center}
+  .hero-art img{max-height:min(54vh,470px);width:auto}
+  .hero-art figcaption{max-width:640px;margin:12px auto 0}
+  .htext{max-width:640px;margin:52px auto 0}
+  .htext h1{font-size:clamp(32px,5vw,54px);line-height:1.1;margin:0}
+  .htext h1 .accent{color:var(--seal)}
+  .htext .subtitle{font-family:var(--serif-body);font-style:italic;color:var(--ink-soft);
+    font-size:clamp(16px,2.1vw,19px);line-height:1.55;margin:18px 0 0;max-width:46ch}
+  .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin:30px 0 4px}
+  .btn{font-family:var(--sans);text-decoration:none;font-weight:600;font-size:14px;
+    padding:11px 22px;border-radius:3px;transition:background .15s,border-color .15s,color .15s}
+  .btn.primary{background:var(--seal);color:var(--on-seal)}
+  .btn.primary:hover{background:var(--seal-deep)}
+  .btn.ghost{color:var(--mut);border:1px solid var(--line)}
+  .btn.ghost:hover{border-color:var(--seal);color:var(--seal)}
+  .lede{font-family:var(--serif-body);font-size:16.5px;line-height:1.7;color:var(--mut);max-width:60ch;margin:24px 0 0}
   .lede strong{color:var(--ink)}
-  @media(max-width:780px){
-    .herowrap{flex-direction:column;text-align:center}
-    .herowrap .htext{text-align:center}
-    .htext .subtitle,.lede{margin-left:auto;margin-right:auto;text-align:center}
-    .cta-row{justify-content:center}
-  }
 
   /* three ways in */
-  .ways{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:44px 0 0}
-  .way{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
-    overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .15s,border-color .15s,box-shadow .15s}
-  .way:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 18px 36px -26px rgba(20,30,45,.4)}
+  .ways{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin:0}
+  .way{display:block;background:var(--surface);border:1px solid var(--line);border-radius:4px;
+    overflow:hidden;text-decoration:none;color:var(--ink);transition:border-color .2s,box-shadow .2s}
+  .way:hover{border-color:var(--seal);box-shadow:var(--shadow-lift)}
   .way .top{aspect-ratio:4/3;background:var(--panel2) center/contain no-repeat;border-bottom:1px solid var(--line)}
-  .way .bd{padding:16px 18px 18px}
-  .way .lbl{font-family:Inter,system-ui,sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:7px}
-  .way h3{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:20px;margin:0 0 6px;color:var(--ink)}
-  .way p{font-family:"Fraunces",Georgia,serif;font-size:14.5px;line-height:1.55;color:var(--muted);margin:0}
+  .way .bd{padding:18px 20px 20px}
+  .way .lbl{font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--seal);margin-bottom:8px}
+  .way h3{font-size:20px;margin:0 0 6px}
+  .way p{font-family:var(--serif-body);font-size:14.5px;line-height:1.6;color:var(--mut);margin:0}
 
   /* the arch: omen -> command -> mirror (adaptive / maladaptive) */
-  .arch{margin:54px auto 0;max-width:1000px}
-  .arch h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:26px;color:var(--ink);margin:0 0 .25em;text-align:center}
-  .arch .sub{font-family:Inter,system-ui,sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);text-align:center;margin:0 0 22px}
-  .atag{display:inline-block;font-family:Inter,system-ui,sans-serif;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin:0 0 4px}
-  .atag.ok{background:rgba(63,122,92,.12);color:#3f7a5c}
-  .atag.bad{background:rgba(181,81,47,.1);color:#b5512f}
-  .arch .archnote{font-family:"Fraunces",Georgia,serif;font-size:14.5px;line-height:1.6;color:var(--muted);text-align:center;max-width:62ch;margin:22px auto 0}
-  .arch .archnote a{color:var(--accent)}
+  .arch{margin:0 auto;max-width:1000px}
+  .arch .enso{margin-bottom:22px}
+  .arch h2{font-size:27px;margin:0 0 .3em;text-align:center}
+  .arch .sub{font-family:var(--sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--seal);text-align:center;margin:0 0 26px}
+  .atag{display:inline-block;font-family:var(--sans);font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin:0 0 4px;border:1px solid currentColor}
+  .atag.ok{color:var(--good)}
+  .atag.bad{color:var(--bad)}
+  .arch .archnote{font-family:var(--serif-body);font-size:14.5px;line-height:1.65;color:var(--mut);text-align:center;max-width:62ch;margin:26px auto 0}
+  .arch .archnote a{color:var(--seal)}
   .archtl{margin-top:26px}
-  .track{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+  .track{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start}
   .stop{display:grid;grid-template-rows:auto auto 1fr;text-align:center}
-  .stop .ayr{font-family:Inter,system-ui,sans-serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap;margin-bottom:9px}
+  .stop .ayr{font-family:var(--sans);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);white-space:nowrap;margin-bottom:9px}
   .stop .rail{position:relative;height:14px;margin-bottom:14px}
-  .stop .adot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:14px;height:14px;border-radius:50%;border:3px solid var(--bg);z-index:1}
-  .adot.ok{background:#3f7a5c}.adot.bad{background:#b5512f}
-  .stop .rail::before{content:'';position:absolute;top:50%;left:-50%;right:-50%;height:2px;background:var(--line);transform:translateY(-50%);z-index:0}
+  .stop .adot{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:12px;height:12px;border-radius:50%;border:3px solid var(--bg);z-index:1}
+  .adot.ok{background:var(--good)}.adot.bad{background:var(--bad)}
+  .stop .rail::before{content:'';position:absolute;top:50%;left:-50%;right:-50%;height:1px;background:var(--line);transform:translateY(-50%);z-index:0}
   .stop:first-child .rail::before{left:50%}
   .stop:last-child .rail::before{right:50%}
-  .node{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px 20px;text-align:center;text-decoration:none;color:inherit;transition:transform .15s,border-color .15s,box-shadow .15s}
-  .node:hover{transform:translateY(-5px);border-color:var(--accent);box-shadow:0 18px 38px -26px rgba(20,30,45,.4)}
-  .node.now{border-color:var(--accent);box-shadow:0 14px 30px -24px rgba(20,30,45,.3)}
-  .node .athumb{display:block;width:78px;height:100px;object-fit:contain;background:var(--panel2);border:1px solid var(--line);border-radius:4px;margin:0 auto 12px}
-  .node .an{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:18px;color:var(--ink);margin:0 0 8px}
-  .node .ag{font-family:"Fraunces",Georgia,serif;font-size:13px;line-height:1.5;color:var(--muted);margin:8px 0 0}
+  .node{display:block;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:18px 18px 22px;text-align:center;text-decoration:none;color:inherit;transition:border-color .2s,box-shadow .2s}
+  .node:hover{border-color:var(--seal);box-shadow:var(--shadow-lift)}
+  .node.now{border-color:var(--seal)}
+  .node .athumb{display:block;width:78px;height:100px;object-fit:contain;background:var(--panel2);border:1px solid var(--line);border-radius:2px;margin:0 auto 12px}
+  .node .an{font-family:var(--serif-display);font-weight:600;font-size:18px;color:var(--ink);margin:0 0 8px}
+  .node .ag{font-family:var(--serif-body);font-size:13px;line-height:1.55;color:var(--mut);margin:8px 0 0}
   @media(max-width:680px){
     .track{grid-template-columns:1fr;gap:0}
     .stop{grid-template-columns:auto 1fr;grid-template-rows:auto 1fr;
@@ -91,78 +84,98 @@
     .stop .node{grid-area:node;text-align:left}
     .stop .node .athumb{margin:0 0 12px}
     .stop .adot{top:7px;left:7px;transform:translate(-50%,-50%)}
-    .stop .rail::before{top:7px;bottom:-31px;left:7px;right:auto;width:2px;height:auto;transform:translateX(-50%)}
+    .stop .rail::before{top:7px;bottom:-31px;left:7px;right:auto;width:1px;height:auto;transform:translateX(-50%)}
     .stop:last-child .rail::before{display:none}
   }
 
-  /* editorial prose sections */
-  section.story{margin:40px auto 0;max-width:680px}
-  section.story h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:26px;color:var(--ink);margin:0 0 .35em;text-align:center}
-  section.story .sub{font-family:Inter,system-ui,sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);text-align:center;margin:0 0 18px}
-  section.story p{font-family:"Fraunces",Georgia,serif;font-size:16px;line-height:1.7;color:var(--muted);margin:0 0 1em}
+  /* editorial prose beside a hanging scroll: one painting, one text */
+  section.story{margin:0 auto;max-width:880px;display:grid;grid-template-columns:200px minmax(0,1fr);gap:56px;align-items:start}
+  section.story .scroll{text-align:center}
+  section.story .scroll .mat{padding:8px}
+  section.story h2{font-size:27px;margin:0 0 .4em}
+  section.story .sub{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--seal);margin:4px 0 14px}
+  section.story p{font-family:var(--serif-body);font-size:16px;line-height:1.75;color:var(--mut);margin:0 0 1em}
   section.story p strong{color:var(--ink)}
-  section.story a{color:var(--accent)}
+  section.story a{color:var(--seal)}
+  @media(max-width:720px){
+    section.story{grid-template-columns:1fr;gap:28px}
+    section.story .scroll{max-width:200px;margin:0 auto}
+  }
 
   /* ── gallery: every view + every grammar ── */
-  .gallery{margin:56px auto 0;max-width:1120px}
-  .gallery h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:26px;color:var(--ink);margin:0 0 .25em;text-align:center}
-  .gallery .sub{font-family:Inter,system-ui,sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);text-align:center;margin:0 0 22px}
-  .gallery .glabel{display:flex;align-items:center;gap:12px;font-family:Inter,system-ui,sans-serif;font-size:11px;
-    letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 14px;text-align:left}
+  .gallery{margin:0 auto;max-width:1120px}
+  .gallery h2{font-size:27px;margin:0 0 .3em;text-align:center}
+  .gallery .sub{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--seal);text-align:center;margin:0 0 26px}
+  .gallery .glabel{display:flex;align-items:center;gap:12px;font-family:var(--sans);font-size:11px;
+    letter-spacing:.16em;text-transform:uppercase;color:var(--seal);margin:0 0 14px;text-align:left}
   .gallery .glabel::after{content:'';flex:1;height:1px;background:var(--line)}
-  .viewgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;margin:0 0 12px}
-  .vcard{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;
-    overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .15s,border-color .15s,box-shadow .15s}
-  .vcard:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 16px 32px -24px rgba(20,30,45,.4)}
+  .viewgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin:0 0 12px}
+  .vcard{display:block;background:var(--surface);border:1px solid var(--line);border-radius:4px;
+    overflow:hidden;text-decoration:none;color:var(--ink);transition:border-color .2s,box-shadow .2s}
+  .vcard:hover{border-color:var(--seal);box-shadow:var(--shadow-lift)}
   .vcard .vthumb{aspect-ratio:16/10;background:var(--panel2) center/contain no-repeat;border-bottom:1px solid var(--line)}
-  .vcard .vb{padding:13px 15px 15px}
-  .vcard .vt{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:17px;color:var(--ink);margin:0 0 3px}
-  .vcard .vd{font-family:"Fraunces",Georgia,serif;font-size:13.5px;line-height:1.5;color:var(--muted);margin:0}
-  .deckgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+  .vcard .vb{padding:14px 16px 16px}
+  .vcard .vt{font-family:var(--serif-display);font-weight:600;font-size:17px;color:var(--ink);margin:0 0 3px}
+  .vcard .vd{font-family:var(--serif-body);font-size:13.5px;line-height:1.55;color:var(--mut);margin:0}
+  .deckgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
   .dcard{display:block;text-decoration:none;color:var(--ink)}
   .dcard .dthumb{aspect-ratio:3/4;background:var(--panel2) center/contain no-repeat;
-    border:1px solid var(--line);border-radius:4px;transition:transform .15s,box-shadow .15s,border-color .15s}
-  .dcard:hover .dthumb{transform:translateY(-4px);box-shadow:0 16px 30px -22px rgba(20,30,45,.4);border-color:var(--accent)}
-  .dcard .dn{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:13.5px;line-height:1.25;margin:9px 0 1px;color:var(--ink)}
-  .dcard .dy{font-family:Inter,system-ui,sans-serif;font-size:11px;letter-spacing:.05em;color:var(--muted)}
-  .courses-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px}
-  .ccard{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 17px;
-    text-decoration:none;color:var(--ink);transition:transform .15s,border-color .15s,box-shadow .15s}
-  .ccard:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 16px 32px -24px rgba(20,30,45,.4)}
-  .ccard .clbl{font-family:Inter,system-ui,sans-serif;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}
-  .ccard h3{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:17px;margin:0 0 6px;color:var(--ink)}
-  .ccard p{font-family:"Fraunces",Georgia,serif;font-size:13px;line-height:1.5;color:var(--muted);margin:0}
+    border:1px solid var(--line);border-radius:3px;transition:box-shadow .2s,border-color .2s}
+  .dcard:hover .dthumb{box-shadow:var(--shadow-lift);border-color:var(--seal)}
+  .dcard .dn{font-family:var(--serif-body);font-weight:600;font-size:13.5px;line-height:1.3;margin:9px 0 1px;color:var(--ink)}
+  .dcard .dy{font-family:var(--sans);font-size:11px;letter-spacing:.05em;color:var(--mut)}
+  .courses-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+  .ccard{display:block;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:18px 18px;
+    text-decoration:none;color:var(--ink);transition:border-color .2s,box-shadow .2s}
+  .ccard:hover{border-color:var(--seal);box-shadow:var(--shadow-lift)}
+  .ccard .clbl{font-family:var(--sans);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--seal);margin:0 0 6px}
+  .ccard h3{font-size:17px;margin:0 0 6px}
+  .ccard p{font-family:var(--serif-body);font-size:13px;line-height:1.55;color:var(--mut);margin:0}
 
   /* ── recursive.eco "tree" callout (reusable) ── */
-  .ecotree{margin:52px auto 0;max-width:760px;background:var(--panel);border:1px solid var(--line);
-    border-radius:14px;padding:30px 34px;text-align:center}
-  .ecotree h2{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:23px;color:var(--ink);margin:0 0 .4em}
-  .ecotree p{font-family:"Fraunces",Georgia,serif;font-size:15.5px;line-height:1.65;color:var(--muted);margin:0 auto .9em;max-width:62ch}
+  .ecotree{margin:0 auto;max-width:760px;background:var(--surface);border:1px solid var(--line);
+    border-radius:4px;padding:34px 36px;text-align:center}
+  .ecotree .seal{display:block;margin:0 auto 14px}
+  .ecotree h2{font-size:23px;margin:0 0 .45em}
+  .ecotree p{font-family:var(--serif-body);font-size:15.5px;line-height:1.7;color:var(--mut);margin:0 auto .9em;max-width:62ch}
   .ecotree p strong{color:var(--ink)}
-  .ecotree .eco-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
-  .ecotree .eco-cta a{font-family:Inter,system-ui,sans-serif;font-weight:600;font-size:14px;text-decoration:none;
-    padding:11px 22px;border-radius:8px;transition:background .15s,border-color .15s,color .15s,transform .15s;display:inline-block}
+  .ecotree .eco-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+  .ecotree .eco-cta a{font-family:var(--sans);font-weight:600;font-size:14px;text-decoration:none;
+    padding:11px 22px;border-radius:3px;transition:background .15s,border-color .15s,color .15s;display:inline-block}
   /* Base solid/line look; theme.css's global recursive.eco-link rule (a.solid[href*="//flow.recursive.eco"])
      overrides these to platform purple — the wayfinding rule stays the single source for that colour. */
-  .ecotree .eco-cta a.solid{background:var(--accent);color:#fff}
-  .ecotree .eco-cta a.line{color:var(--muted);border:1px solid var(--line)}
-  .ecotree .fine{font-family:Inter,system-ui,sans-serif;font-size:12px;color:var(--muted);margin-top:16px}
-  .ecotree .fine a{color:var(--accent);text-decoration:none}
+  .ecotree .eco-cta a.solid{background:var(--seal);color:var(--on-seal)}
+  .ecotree .eco-cta a.line{color:var(--mut);border:1px solid var(--line)}
+  .ecotree .fine{font-family:var(--sans);font-size:12px;color:var(--mut);margin-top:18px}
+  .ecotree .fine a{color:var(--seal);text-decoration:none}
+
+  /* ── the paintings on this site (listed from img/zen/credits.json) ── */
+  .credits{max-width:760px;margin:0 auto}
+  .credits h2{font-size:21px;text-align:center;margin:0 0 .3em}
+  .credits .sub{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--seal);text-align:center;margin:0 0 20px}
+  .credits ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+  .credits li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
+  .credits li img{width:64px;height:64px;object-fit:contain;background:var(--mat);border:1px solid var(--line)}
+  .credits .w{font-family:var(--serif-body);font-size:14px;line-height:1.45;color:var(--ink)}
+  .credits .w cite{font-style:italic}
+  .credits .m{font-family:var(--sans);font-size:11.5px;line-height:1.5;color:var(--mut);margin-top:2px;overflow-wrap:anywhere}
+  .credits .m a{color:inherit}
+  .credits .fine{font-family:var(--sans);font-size:12px;line-height:1.6;color:var(--mut);text-align:center;margin:18px auto 0;max-width:60ch}
 </style>
 </head>
 <body>
-<script src="site-header.js?v=47"></script>
+<script src="site-header.js?v=48"></script>
 <site-header active="home"></site-header>
 
 <main class="wrap">
 
-  <!-- ── HERO: cover plate left, hero text right (structure ported from recursive-tarot/index.html) ── -->
-  <section class="herowrap">
-    <figure class="plate">
-      <div class="mat">
-        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg?width=800" alt="A classical Chinese edition of the I Ching">
-      </div>
-      <figcaption class="cap">易經 · the Book of Changes</figcaption>
+  <!-- ── HERO: a painting first, then the words, with room around both ── -->
+  <section class="hero">
+    <figure class="zen-art hero-art">
+      <div class="mat"><img src="img/zen/tohaku-pine-trees-right.jpg" width="1600" height="749" fetchpriority="high"
+        alt="Hasegawa Tōhaku's Pine Trees, the right-hand screen: pines in ink across six panels, some dark and near, most half lost in mist."></div>
+      <figcaption>Hasegawa Tōhaku, <cite>Pine Trees</cite> (right-hand screen), late 16th century. Tokyo National Museum.
+        Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Hasegawa_Tohaku_-_Pine_Trees_(Sh%C5%8Drin-zu_by%C5%8Dbu)_-_right_hand_screen.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
     </figure>
     <div class="htext">
       <h1>The <span class="accent">Recursive I Ching</span></h1>
@@ -179,6 +192,8 @@
       </div>
     </div>
   </section>
+
+  <hr class="ink-rule">
 
   <!-- ── THREE WAYS IN ── -->
   <div class="ways">
@@ -208,8 +223,11 @@
     </a>
   </div>
 
+  <hr class="ink-rule">
+
   <!-- ── THE ARCH: how to hold a hexagram ── -->
   <section class="arch">
+    <span class="enso" aria-hidden="true"></span>
     <h2>How to hold a hexagram</h2>
     <p class="sub">One faculty, two stances — across three thousand years · tap a node</p>
     <div class="archtl">
@@ -249,8 +267,17 @@
     <p class="archnote">This library teaches the third stance — and keeps the first two honest, not hidden. The Repair I Ching is built entirely on that stance; the Three Lenses reading holds the tension between them.</p>
   </section>
 
-  <!-- ── SHORT HONEST FRAME ── -->
+  <hr class="ink-rule">
+
+  <!-- ── SHORT HONEST FRAME, beside one hanging scroll ── -->
   <section class="story">
+    <figure class="zen-art scroll">
+      <div class="mat"><img src="img/zen/hakuin-daruma.jpg" width="720" height="1299" loading="lazy"
+        alt="Hakuin Ekaku's Daruma: Bodhidharma's face in a few washes of grey ink, eyes wide open, under a line of calligraphy, mounted as a hanging scroll."></div>
+      <figcaption>Hakuin Ekaku, <cite>Portrait of Daruma</cite>, mid-18th century. The Metropolitan Museum of Art.
+        Public domain, via <a href="https://commons.wikimedia.org/wiki/File:Hakuin_Ekaku_-_Portrait_of_Daruma_-_2015.500.9.3_-_Metropolitan_Museum_of_Art.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>
+    </figure>
+    <div class="story-text">
     <p class="sub">The one intention</p>
     <h2>A mirror, never a command</h2>
     <p>The I Ching's history is layered: a Zhou-dynasty (c. 1046–256 BCE) divination manual of hexagram and
@@ -264,12 +291,15 @@
     unverified claims are marked as such, and a lens grammar's more speculative claims (Human
     Design's 1987 origin, for instance) are named plainly as speculative in the grammar's own description.
     <a href="pages/course-viewer.html?course=three-lenses">Read the Three Lenses reading →</a></p>
+    </div>
   </section>
 
   <!-- ── RECURSIVE.ECO — the tree this grows from ── -->
+  <hr class="ink-rule">
+
   <aside class="ecotree">
     <a href="https://recursive.eco/" target="_blank" rel="noopener" aria-label="recursive.eco — home">
-      <img src="img/recursive-logo.svg" width="40" height="40" alt="" aria-hidden="true" style="display:block;margin:0 auto 10px">
+      <img class="seal" src="img/recursive-logo-seal.svg" width="44" height="44" alt="" aria-hidden="true">
     </a>
     <h2>One branch of a larger tree</h2>
     <p><a href="https://recursive.eco" target="_blank" rel="noopener"><strong>recursive.eco</strong></a> is the
@@ -291,6 +321,8 @@
       or see <a href="https://tarot.recursive.eco" target="_blank" rel="noopener">The Recursive Tarot</a> for this
       library's older sibling — same creed, different domain.</p>
   </aside>
+
+  <hr class="ink-rule">
 
   <!-- ── GALLERY: every view + every grammar ── -->
   <section id="explore" class="gallery">
@@ -363,6 +395,18 @@
     </div>
   </section>
 
+  <hr class="ink-rule">
+
+  <!-- ── THE PAINTINGS: every work on this site, from img/zen/credits.json ── -->
+  <section class="credits" id="paintings">
+    <h2>The paintings</h2>
+    <p class="sub">Public domain · via Wikimedia Commons</p>
+    <ol id="art-credits"></ol>
+    <p class="fine">Each file was made smaller for the web from the Wikimedia Commons file linked beside it, whose page
+      states its licence. Nothing is cropped: inscriptions and seals stay. The list is also in the repo's
+      <a href="https://github.com/PlayfulProcess/recursive-iching/blob/main/NOTICE" target="_blank" rel="noopener">NOTICE</a>.</p>
+  </section>
+
 </main>
 
 <script>
@@ -389,10 +433,22 @@
       });
     }).catch(()=>{ document.getElementById('deckgrid-wrap').innerHTML='<p class="sub">Open the <a href="viewers/cards.html">Cards view</a> to browse all grammars.</p>'; });
   })();
+
+  // The paintings on this site, from the one record of them (img/zen/credits.json).
+  (function(){
+    const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    fetch('img/zen/credits.json').then(r=>r.json()).then(c=>{
+      document.getElementById('art-credits').innerHTML = (c.works||[]).map(w =>
+        '<li><img src="'+esc(w.file)+'" alt="" loading="lazy" width="64" height="64">'
+        + '<div><div class="w"><cite>'+esc(w.title)+'</cite> · '+esc(w.artist)+' · '+esc(w.date)+'</div>'
+        + '<div class="m">'+esc(w.collection)+' · '+esc(w.licence)+' · <a href="'+esc(w.commons)+'" target="_blank" rel="noopener">Commons file page</a></div></div></li>'
+      ).join('');
+    }).catch(()=>{ document.getElementById('paintings').hidden = true; });
+  })();
 </script>
 
-<script src="site-footer.js?v=2"></script>
-<script src="assistant.js" defer></script>
+<script src="site-footer.js?v=3"></script>
+<script src="assistant.js?v=2" defer></script>
 <site-footer></site-footer>
 </body>
 </html>

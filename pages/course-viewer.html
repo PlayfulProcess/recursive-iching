@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Three Lenses — The Recursive I Ching</title>
-<link rel="stylesheet" href="../theme.css">
+<link rel="stylesheet" href="../theme.css?v=4">
 <style>
   /* Layout only — every colour comes from theme.css (the one source). Do not add colour tokens here. */
   html,body{margin:0;background:var(--bg);color:var(--ink);color-scheme:light;
@@ -20,7 +20,7 @@
   .toc-back{display:inline-block;font-size:12.5px;color:var(--accent);text-decoration:none;margin-bottom:14px}
   .toc-back:hover{text-decoration:underline}
   .toc{display:flex;flex-direction:column;gap:2px}
-  .toc a{display:block;padding:7px 10px;border-radius:8px;text-decoration:none;color:var(--ink-soft);
+  .toc a{display:block;padding:7px 10px;border-radius:3px;text-decoration:none;color:var(--ink-soft);
     font-size:13px;border-left:2px solid transparent}
   .toc a:hover{background:var(--chip,#faf3e6);color:var(--ink)}
   .toc a.active{background:var(--chip,#faf3e6);border-left-color:var(--accent);color:var(--ink);font-weight:600}
@@ -31,42 +31,57 @@
   /* —— content —— */
   main{min-width:0}
   .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
-  h1{font-family:"Fraunces",Georgia,serif;font-size:28px;margin:6px 0 6px;color:var(--ink)}
+  h1{font-family:var(--serif-display);font-weight:600;letter-spacing:.02em;font-size:30px;line-height:1.2;margin:8px 0 10px;color:var(--ink)}
   .meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
   .pill{font-size:11.5px;padding:4px 11px;border-radius:999px;background:var(--chip,#faf3e6);
     color:var(--ink-soft);border:1px solid var(--line-soft)}
-  .pill.confidence-low{color:#8a5a1f}
+  .pill.confidence-low{color:var(--later)}
 
   .content .sec{margin:0 0 22px}
   .content .sec h2{font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--accent);
     margin:0 0 6px;font-family:Inter,system-ui,sans-serif;font-weight:700}
-  .content .sec p{margin:0;font-size:15.5px;color:var(--ink)}
+  .content .sec p{margin:0;font-family:var(--serif-body);font-size:16px;line-height:1.7;color:var(--ink)}
 
-  .companions{margin:26px 0;padding:16px 18px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+  .companions{margin:26px 0;padding:16px 18px;border:1px solid var(--line);border-radius:4px;background:var(--panel)}
   .companions h3{margin:0 0 10px;font-size:14px;color:var(--ink)}
   .clinks{display:flex;flex-wrap:wrap;gap:8px}
 
   .navrow{display:flex;justify-content:space-between;gap:12px;margin-top:34px;padding-top:18px;border-top:1px solid var(--line)}
-  .navbtn{flex:1;max-width:46%;padding:12px 14px;border:1px solid var(--line);border-radius:11px;
+  .navbtn{flex:1;max-width:46%;padding:12px 14px;border:1px solid var(--line);border-radius:4px;
     text-decoration:none;color:inherit;background:var(--panel);transition:border-color .15s}
   .navbtn:hover{border-color:var(--accent)}
   .navbtn.next{text-align:right;margin-left:auto}
   .navbtn .dir{font-size:10.5px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);display:block;margin-bottom:3px}
-  .navbtn .ttl{font-family:"Fraunces",Georgia,serif;font-size:14.5px}
+  .navbtn .ttl{font-family:var(--serif-display);font-weight:600;font-size:15px}
 
-  .note{margin-top:34px;padding:16px 18px;border:1px dashed var(--line);border-radius:12px;
+  .note{margin-top:34px;padding:16px 18px;border:1px dashed var(--line);border-radius:4px;
     background:var(--chip,#f7f3ea);font-size:13.5px;color:var(--muted)}
   .note b{color:var(--ink)}
   a{color:var(--accent)}
   #loading, #err{color:var(--muted);font-size:14px}
-  #err{color:#a3402d}
+  #err{color:var(--bad)}
   .cite{font-size:.85em;color:var(--muted)}
   .cite a{color:inherit}
   .sec.intro{border-left:3px solid var(--accent);padding-left:14px}
+
+  /* —— the course's painting, on its first chapter: one public-domain work (img/zen/credits.json) —— */
+  .course-art{display:flex;gap:24px;align-items:flex-end;margin:4px 0 30px;padding:0 0 28px;border-bottom:1px solid var(--line)}
+  .course-art .mat{flex:0 0 auto}
+  .course-art img{max-height:340px;width:auto}
+  .course-art.tall img{max-height:560px}
+  .course-art figcaption{margin:0;max-width:34ch}
+  .course-art.wide{display:block}
+  .course-art.wide img{max-height:none;width:100%;max-width:520px}
+  .course-art.wide figcaption{max-width:60ch}
+  @media (max-width:620px){
+    .course-art{flex-direction:column;align-items:center;text-align:center}
+    .course-art img{max-height:300px}
+    .course-art.tall img{max-height:460px}
+  }
 </style>
 </head>
 <body>
-<script src="../site-header.js?v=47"></script>
+<script src="../site-header.js?v=48"></script>
 <site-header active="course"></site-header>
 <div class="wrap">
   <aside>
@@ -82,6 +97,7 @@
       <div class="kicker" id="cintro">Three Lenses · one chapter</div>
       <h1 id="ctitle"></h1>
       <div class="meta-row" id="meta-row"></div>
+      <figure class="zen-art course-art" id="course-art" hidden></figure>
       <div class="content" id="content"></div>
       <div class="companions" id="companions" hidden>
         <h3>Read the primary source</h3>
@@ -119,11 +135,32 @@ const mdLite = s => esc(s).replace(/\*(.+?)\*/g, '<em>$1</em>').replace(/`(.+?)`
 // ?course=<slug> picks the manifest + source grammar. This repo ships one course so
 // far; the map stays multi-course-shaped so adding a second is one manifest + one
 // grammar, no viewer edit.
+// `art` names one public-domain painting in ../img/zen/credits.json, shown on the course's
+// first chapter (the zen look, Oct 6 2026): Sengai's three shapes for the three lenses, Mu Qi's
+// six persimmons (one fruit, six inks) for the translations, and Sesshu's landscape under the
+// inscriptions written over it for the books and their commentaries.
 const COURSES = {
-  'three-lenses': { manifest: '../course/three-lenses.manifest.json' },
-  'books-of-the-changes': { manifest: '../course/books-of-the-changes.manifest.json' },
-  'translations': { manifest: '../course/translations.manifest.json' },
+  'three-lenses': { manifest: '../course/three-lenses.manifest.json', art: 'sengai-circle-triangle-square' },
+  'books-of-the-changes': { manifest: '../course/books-of-the-changes.manifest.json', art: 'sesshu-haboku' },
+  'translations': { manifest: '../course/translations.manifest.json', art: 'muqi-six-persimmons' },
 };
+// The painting for a course, on its first chapter only. Contained, never cropped; the caption names it.
+async function showCourseArt(id){
+  const fig = $('#course-art');
+  if (!id || !fig) return;
+  try {
+    const credits = await fetch('../img/zen/credits.json').then(r => r.json());
+    const w = (credits.works || []).find(x => x.id === id);
+    if (!w) return;
+    const ratio = w.width / w.height;
+    fig.className = 'zen-art course-art' + (ratio > 1.25 ? ' wide' : ratio < .5 ? ' tall' : '');
+    fig.innerHTML = `<div class="mat"><img src="../${esc(w.file)}" width="${w.width}" height="${w.height}" alt="${esc(w.alt)}"></div>`
+      + `<figcaption>${esc(w.artist.replace(/\s*\(.*\)$/, ''))}, <cite>${esc(w.title)}</cite>, ${esc(w.date.replace(/\s*\(.*\)$/, ''))}. `
+      + `${esc(w.collection.replace(/\s*\(.*\)$/, ''))}. Public domain, via `
+      + `<a href="${esc(w.commons)}" target="_blank" rel="noopener">Wikimedia Commons</a>.</figcaption>`;
+    fig.hidden = false;
+  } catch (e) { /* no painting is fine */ }
+}
 async function main(){
   let manifest, grammar, ids;
   const courseParam = new URLSearchParams(location.search).get('course');
@@ -224,6 +261,7 @@ async function main(){
   const links = h => h.replace(/\[([^\]@][^\]]*)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>');
   const para = t => String(t).split(/\n{2,}/).map(p => `<p>${cite(links(mdLite(p)))}</p>`).join('');
   const first = !isAppendix && chapterItems[0] && current.id === chapterItems[0].id;
+  if (first) showCourseArt(course.art);
   content.innerHTML = (first && manifest.intro ? `<div class="sec intro">${para(manifest.intro)}</div>` : '')
     + orderedKeys.map(k => `<div class="sec"><h2>${esc(k)}</h2>${para(sections[k])}</div>`).join('')
     + (meta.grammar_slug ? `<p><a class="eco-chip" href="../viewers/cards.html?src=${encodeURIComponent('../grammars/' + meta.grammar_slug + '/grammar.json')}">Open this book in the library →</a></p>` : '');
@@ -282,8 +320,8 @@ async function main(){
 main();
 </script>
 
-<script src="../site-footer.js?v=2"></script>
-<script src="../assistant.js" defer></script>
+<script src="../site-footer.js?v=3"></script>
+<script src="../assistant.js?v=2" defer></script>
 <site-footer base="../"></site-footer>
 </body>
 </html>

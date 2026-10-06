@@ -23,6 +23,10 @@
   s.onload = function () {
     if (!window.RecursiveAssistant) return;
     window.RecursiveAssistant.init({
+      // This site is light-only. Without this the launcher guesses the theme from the
+      // page background, and on a dark-mode computer it guessed "dark" and painted an
+      // opaque dark square behind the assistant button (Oct 6 2026). opts.theme wins.
+      theme: 'light',
       buildSrc: function () {
         var params = new URLSearchParams(location.search);
         var grammarId = params.get('grammar_id') || params.get('id') || '';

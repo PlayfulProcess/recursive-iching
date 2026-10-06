@@ -3,7 +3,7 @@
  * isolated via Shadow DOM so each page's own CSS can't override it. Path-aware so
  * links resolve from any nesting depth.
  *
- * Usage:  <script src="<path-to>site-header.js?v=44"></script>
+ * Usage:  <script src="<path-to>site-header.js?v=48"></script>
  *         <site-header active="cards"></site-header>
  * The `active` attribute highlights the matching tab; if omitted it is
  * auto-detected from the filename.
@@ -11,7 +11,10 @@
  * Ported from recursive-astrology/site-header.js, itself ported from
  * recursive-tarot/site-header.js (the family's pattern source — incl. the dropdown
  * hover/gap fix, commit 84934e6) — adapted: cinnabar branding, and this repo's own
- * menus:
+ * menus. Colours are theme.css tokens (custom properties reach into this shadow DOM);
+ * the hex after each is only a fallback. The zen look (Oct 6 2026): paper bar, hairline
+ * rule, Shippori Mincho for the name, and recursive.eco's spiral as a cinnabar seal
+ * (img/recursive-logo-seal.svg, built by scripts/build_zen_marks.py). Menus:
  *   Home | Views (Cards, Explorer, Lenses, Tree, Timeline, All grammars) |
  *   Courses (Three Lenses) | Grammars (every grammar in grammars/*, fetched live
  *   from grammars/_collection.json so the menu never goes stale as grammars are
@@ -88,11 +91,11 @@
     connectedCallback() {
       // Embedded (iframed into some other surface): render no header at all.
       if (new URLSearchParams(location.search).get('embed') === '1') { this.style.display = 'none'; return; }
-      // Museum/Editorial webfonts — same families theme.css tokenises (--serif-display / --sans),
+      // Webfonts — the families theme.css tokenises (--serif-display Shippori Mincho, --serif-body Fraunces, --sans Inter),
       // injected once into the document head so this shadow DOM and the light DOM both render in them.
       if (!document.getElementById('ric-fonts')) {
         const fl = document.createElement('link'); fl.id = 'ric-fonts'; fl.rel = 'stylesheet';
-        fl.href = 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap';
+        fl.href = 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=Shippori+Mincho:wght@500;600;700&display=swap';
         document.head.appendChild(fl);
       }
       const active = this.getAttribute('active') || autoActive();
@@ -106,36 +109,37 @@
       root.innerHTML = `
         <style>
           :host{ display:block; position:sticky; top:0; z-index:50;
-                 background:#fbf9f3; padding:0; margin:0; border:0; font-size:14px;
+                 background:var(--bg,#f3efe6); padding:0; margin:0; border:0; font-size:14px;
                  transition:transform .25s ease; will-change:transform; }
           @media (prefers-reduced-motion: reduce){ :host{ transition:none; } .tab, .dd-menu a, .brand{ transition:none !important; } }
           .bar{
             display:flex; align-items:center; gap:14px; flex-wrap:wrap;
-            padding:13px 20px; background:#fbf9f3;
-            border-bottom:1px solid #d8d2c6;
-            font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+            padding:14px 22px; background:var(--bg,#f3efe6);
+            border-bottom:1px solid var(--line,#dbd4c6);
+            font-family:var(--sans,Inter,system-ui,sans-serif);
           }
-          .brand{ display:flex; flex-direction:row; align-items:center; gap:10px; margin-right:4px; }
+          .brand{ display:flex; flex-direction:row; align-items:center; gap:12px; margin-right:4px; }
           .brand-logo, .brand-name{ display:inline-flex; align-items:center; text-decoration:none; }
-          .brand-logo{ border-radius:50%; }
-          .brand-name .name{ font-family:"Fraunces",Georgia,serif; font-size:21px; font-weight:600; letter-spacing:.4px; color:#221f1a; white-space:nowrap; }
-          .brand-name:hover .name{ color:#000; }
-          .brand-name .name .gold{ color:#9c3b2a; }
+          .brand-logo{ border-radius:3px; }
+          .brand-logo img{ display:block; }
+          .brand-name .name{ font-family:var(--serif-display,Georgia,serif); font-size:21px; font-weight:600; letter-spacing:.02em; color:var(--ink,#1c1a17); white-space:nowrap; }
+          .brand-name:hover .name{ color:var(--sumi,#1c1a17); }
+          .brand-name .name .gold{ color:var(--seal,#9c3b2a); }
           .brand svg{ flex-shrink:0; }
           .spacer{ flex:1 1 auto; }
           nav{ display:flex; gap:4px; flex-wrap:wrap; align-items:center; }
           .cap{ font-size:9.5px; text-transform:uppercase; letter-spacing:.16em;
-                color:#8a8273; margin:0 2px 0 6px; user-select:none; }
-          .sep{ width:1px; height:20px; background:#d8d2c6; margin:0 6px; }
+                color:var(--faint,#857e71); margin:0 2px 0 6px; user-select:none; }
+          .sep{ width:1px; height:20px; background:var(--line,#dbd4c6); margin:0 6px; }
           .tab{
-            color:#6b6457; text-decoration:none; font-size:13px; font-weight:500;
+            color:var(--mut,#655f55); text-decoration:none; font-size:13px; font-weight:500;
             padding:7px 9px; white-space:nowrap; transition:color .15s;
             border:0; border-bottom:1.5px solid transparent; border-radius:0;
           }
-          .tab:hover{ color:#9c3b2a; }
-          .tab.active{ color:#9c3b2a; font-weight:600; border-bottom-color:#9c3b2a; }
-          .t-github{ color:#6b6457; border:0; border-bottom:1.5px solid transparent; border-radius:0; }
-          .t-github:hover{ color:#9c3b2a; background:transparent; }
+          .tab:hover{ color:var(--seal,#9c3b2a); }
+          .tab.active{ color:var(--seal,#9c3b2a); font-weight:600; border-bottom-color:var(--seal,#9c3b2a); }
+          .t-github{ color:var(--mut,#655f55); border:0; border-bottom:1.5px solid transparent; border-radius:0; }
+          .t-github:hover{ color:var(--seal,#9c3b2a); background:transparent; }
           /* dropdown */
           .dd{ position:relative; }
           .dd-btn{ background:none; font-family:inherit; cursor:pointer; }
@@ -143,8 +147,8 @@
             border-right:1.4px solid currentColor; border-bottom:1.4px solid currentColor;
             transform:rotate(45deg) translateY(-2px); opacity:.5; }
           .dd-menu{ position:absolute; top:calc(100% + 8px); right:0; min-width:230px;
-            max-width:min(320px,calc(100vw - 16px)); background:#ffffff; border:1px solid #d8d2c6;
-            border-radius:8px; padding:7px; box-shadow:0 16px 44px -18px rgba(60,45,20,.45); display:none; z-index:60;
+            max-width:min(320px,calc(100vw - 16px)); background:var(--surface,#faf8f2); border:1px solid var(--line,#dbd4c6);
+            border-radius:4px; padding:7px; box-shadow:var(--shadow-menu,0 16px 40px -20px rgba(40,32,20,.35)); display:none; z-index:60;
             overflow-y:auto; }
           /* Invisible bridge across the 8px gap: keeps the menu open while the cursor
              travels from the trigger down to a sub-item (no more disappearing dropdown). */
@@ -155,14 +159,14 @@
              just as much as on phones — a single max-width media query misses that range. */
           .dd:hover .dd-menu, .dd:focus-within .dd-menu, .dd.open .dd-menu{ display:block; }
           .dd.open .dd-btn::after{ transform:rotate(225deg) translateY(2px); opacity:.85; }
-          .dd-menu a{ display:block; color:#4a4439; text-decoration:none; font-size:13px;
-            padding:8px 10px; border-radius:7px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-          .dd-menu a:hover{ background:#f1ece1; color:#221f1a; }
-          .dd-menu a[href*="recursive.eco"]{ color:#9333ea; }
-          .dd-menu a.on{ color:#221f1a; background:#f1ece1; font-weight:600; }
-          .dd-menu a.all{ border-top:1px solid #d8d2c6; margin-top:4px; padding-top:9px; font-weight:600; }
-          .dd-cap{ display:block; font-family:Inter,sans-serif; font-size:9px; text-transform:uppercase; letter-spacing:.16em;
-            color:#8a8273; padding:8px 10px 3px; user-select:none; }
+          .dd-menu a{ display:block; color:var(--ink-soft,#46413a); text-decoration:none; font-size:13px;
+            padding:8px 10px; border-radius:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+          .dd-menu a:hover{ background:var(--chip,#ece6d9); color:var(--ink,#1c1a17); }
+          .dd-menu a[href*="recursive.eco"]{ color:var(--eco,#9333ea); }
+          .dd-menu a.on{ color:var(--ink,#1c1a17); background:var(--chip,#ece6d9); font-weight:600; }
+          .dd-menu a.all{ border-top:1px solid var(--line,#dbd4c6); margin-top:4px; padding-top:9px; font-weight:600; }
+          .dd-cap{ display:block; font-family:var(--sans,Inter,sans-serif); font-size:9px; text-transform:uppercase; letter-spacing:.16em;
+            color:var(--faint,#857e71); padding:8px 10px 3px; user-select:none; }
           .dd-cap:first-child{ padding-top:2px; }
           @media (max-width:680px){
             .brand .sub{ display:none; }
@@ -173,9 +177,7 @@
         <div class="bar">
           <span class="brand">
             <a class="brand-logo" href="https://recursive.eco/" target="_blank" rel="noopener" title="recursive.eco — home" aria-label="recursive.eco — home">
-              <span style="display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;background:#fff;border-radius:50%;flex-shrink:0">
-                <img src="${PFX}img/recursive-logo.svg" width="26" height="26" alt="" aria-hidden="true">
-              </span>
+              <img src="${PFX}img/recursive-logo-seal.svg" width="30" height="30" alt="" aria-hidden="true">
             </a>
             <a class="brand-name" href="${PFX}index.html" title="The Recursive I Ching — home">
               <span class="name">The <span class="gold">Recursive I Ching</span></span>
