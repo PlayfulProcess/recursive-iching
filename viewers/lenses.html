@@ -15,19 +15,25 @@
   body{margin:0;background:var(--bg);color:var(--text);font:14px/1.55 -apple-system,Segoe UI,Roboto,sans-serif}
   header{padding:14px 18px;border-bottom:1px solid var(--line);background:var(--bg)}
   .tabrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
-  #lens-pick{background:var(--panel2);color:var(--text);border:1px solid #cfc8ba;border-radius:8px;padding:7px 11px;font-size:13px;font-weight:600;cursor:pointer}
   h1{font-size:17px;margin:0 0 3px}
   .sub{font-size:12px;color:var(--muted)}
   .tabs{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px;align-items:center}
   .tab{padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:var(--panel);
-    color:var(--text);cursor:pointer;font-size:13px;font-weight:600}
+    color:var(--text);cursor:pointer;font:inherit;font-size:13px;font-weight:600}
+  .tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   .tab.on{background:var(--accent2);border-color:var(--accent2);color:#fff}
+  /* one line saying what the chosen view shows; hovering or focusing another tab previews its line */
+  .tab-hint{font-size:13px;color:var(--text);margin:8px 0 0;min-height:1.55em}
+  .tab-hint b{color:var(--accent);font-weight:600}
+  .tab-hint.preview{color:var(--muted)}
+  .tab-hint.preview b{color:var(--muted)}
   .deckbtn{margin-left:auto;padding:7px 13px;border:1px solid var(--line);border-radius:8px;
     background:var(--panel2);color:var(--text);cursor:pointer;font-size:13px;font-weight:600}
   main{padding:18px;max-width:1340px;margin:0 auto}
   .ctl{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
   select{background:var(--panel2);color:var(--text);border:1px solid #cfc8ba;border-radius:8px;padding:7px 11px;font-size:13px;font-weight:600;cursor:pointer}
   label.lbl{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+  .ctl select{max-width:100%}   /* long item names made the picker wider than a phone */
   .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
   .seg button{background:var(--panel2);color:var(--muted);border:0;padding:6px 11px;font-size:12px;font-weight:600;cursor:pointer}
   .seg button.on{background:var(--accent2);color:#fff}
@@ -128,9 +134,9 @@
   <h1>Lens prototypes <span style="color:var(--muted);font-weight:400">· five ways to see the same data</span></h1>
   <div class="sub" id="status">Loading every grammar from the collection…</div>
   <div class="tabrow">
-    <select id="lens-pick" title="Choose a lens"></select>
-    <div class="tabs" id="tabs"></div>
+    <div class="tabs" id="tabs" role="group" aria-label="View"></div>
   </div>
+  <p class="tab-hint" id="tab-hint" aria-live="polite"></p>
   <button class="deckbtn" id="deckbtn" style="display:none">✦ Grammars ▾</button>
 </header>
 <div id="deckpanel"></div>
@@ -142,6 +148,8 @@ const STOP=new Set(['the','a','an','this','that','these','those','it','its']);
 const lensNorm=s=>String(s).toLowerCase().replace(/['’]s\b/g,'').replace(/[_\-]+/g,' ').replace(/[.:;,]+$/,'').split(/\s+/).filter(w=>w&&!STOP.has(w)).join(' ').trim();
 const lensAttr=t=>{ if(typeof t!=='string')return null; const m=t.trim().match(/^\[([^\]]{3,200})\]/); return m?m[1].trim():null; };
 const attrYear=a=>{ const m=a&&a.match(/\b(1[0-9]{3}|20[0-9]{2})\b/); return m?+m[1]:Infinity; };
+const UNDATED=9999, yearLabel=y=>y>=UNDATED?'undated':(y<0?(-y)+' BCE':String(y));
+const yearOrBlank=y=>y<UNDATED?yearLabel(y):'';   // where an undated grammar shows no year at all
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function md(s){ return esc(s).replace(/\*\*(.+?)\*\*/g,'<b class="md">$1</b>').replace(/\n{2,}/g,'</p><p>').replace(/\n/g,'<br>'); }
 
@@ -257,7 +265,7 @@ function cardOptionsHTML(sel){
 function renderDeckPanel(){
   const p=document.getElementById('deckpanel');
   p.innerHTML=`<div class="pbtns"><button data-a="all">All</button><button data-a="none">None</button><button data-a="primary">Primary sources</button></div>`+
-    DECKS.map(d=>`<label><input type="checkbox" data-slug="${esc(d.slug)}" ${SELECTED.has(d.slug)?'checked':''}> ${esc(d.label)} <span class="yr">${d.year<9999?d.year:''}</span></label>`).join('');
+    DECKS.map(d=>`<label><input type="checkbox" data-slug="${esc(d.slug)}" ${SELECTED.has(d.slug)?'checked':''}> ${esc(d.label)} <span class="yr">${yearOrBlank(d.year)}</span></label>`).join('');
   p.querySelectorAll('input').forEach(cb=>cb.onchange=()=>{ cb.checked?SELECTED.add(cb.dataset.slug):SELECTED.delete(cb.dataset.slug); afterDeckChange(); });
   p.querySelectorAll('.pbtns button').forEach(b=>b.onclick=()=>{
     if(b.dataset.a==='all') SELECTED=new Set(DECKS.map(d=>d.slug));
@@ -275,10 +283,10 @@ function afterDeckChange(){
 function viewMatrix(){
   const decks=activeDecks(); const rows=SECGROUPS.filter(s=>s.count>=2);
   const tot={}; decks.forEach(d=>tot[d.slug]=activeItems().filter(i=>i.deck===d.slug).length);
-  let h=`<div class="ctl"><div><b>Matrix</b> — section coverage across every selected grammar (green native · rust later/attributed). Reveals which commentary belongs where.</div></div>
-   <div class="legend"><span><span class="dot" style="background:var(--native)"></span>native</span><span><span class="dot" style="background:var(--later)"></span>later (dated)</span></div>
+  let h=`<div class="ctl"><div>Each cell counts the items that have that section.</div></div>
+   <div class="legend"><span><span class="dot" style="background:var(--native)"></span>the grammar's own text</span><span><span class="dot" style="background:var(--later)"></span>later, dated commentary</span></div>
    <div style="overflow:auto;margin-top:12px"><table class="matrix"><thead><tr><th>section ↓ &nbsp; grammar →</th>`;
-  decks.forEach(d=>h+=`<th>${esc(d.label).slice(0,16)}<br><span style="font-weight:400">${d.year<9999?d.year:''}</span></th>`);
+  decks.forEach(d=>h+=`<th>${esc(d.label).slice(0,16)}<br><span style="font-weight:400">${yearOrBlank(d.year)}</span></th>`);
   h+=`</tr></thead><tbody>`;
   for(const s of rows){
     h+=`<tr><th><span class="ttl">${esc(s.label)}</span>${s.attributed?`<span class="later-tag">${s.year<Infinity?s.year:'later'}</span>`:''}</th>`;
@@ -297,11 +305,11 @@ let synMode='deck';
 function viewSynopsis(sel){
   const opts=cardOptions(); const card=opts.includes(sel)?sel:opts[0];
   const decksWith=activeDecks().map(d=>activeItems().find(i=>i.deck===d.slug && i.cardKey===card)).filter(Boolean);
-  let h=`<div class="ctl"><label class="lbl">Entity</label><select id="syn-sel">${cardOptionsHTML(card)}</select>
-    <span class="seg"><button data-m="deck" class="${synMode==='deck'?'on':''}">By grammar</button><button data-m="section" class="${synMode==='section'?'on':''}">By section</button></span>
-    <span style="color:var(--muted);font-size:12px">${decksWith.length} grammars have this entity</span></div>`;
+  let h=`<div class="ctl"><label class="lbl" for="syn-sel">Item</label><select id="syn-sel">${cardOptionsHTML(card)}</select>
+    <span class="seg"><button data-m="deck" class="${synMode==='deck'?'on':''}" title="One column per grammar">By grammar</button><button data-m="section" class="${synMode==='section'?'on':''}" title="One row per section (Judgment, Image, each line…), one column per grammar">By section</button></span>
+    <span style="color:var(--muted);font-size:12px">${decksWith.length} grammars have this item</span></div>`;
   h+=synthHTML(card);
-  if(!decksWith.length) return h+'<p style="color:var(--muted)">No grammar in the current selection has this entity.</p>';
+  if(!decksWith.length) return h+'<p style="color:var(--muted)">No grammar in the current selection has this item.</p>';
   const secEntries=it=>Object.entries(it.sections).filter(([k,v])=>typeof v==='string'&&v.trim())
       .map(([k,v],i)=>{const a=lensAttr(v);return{k,v,i,attributed:!!a,attr:a,year:a?attrYear(a):Infinity};})
       .sort((a,b)=>(a.attributed-b.attributed)||(a.attributed?(a.year-b.year):(a.i-b.i)));
@@ -311,7 +319,7 @@ function viewSynopsis(sel){
     const groups=[]; const seen=new Set();
     decksWith.forEach(it=>secEntries(it).forEach(e=>{const key=lensNorm(e.k); if(!seen.has(key)){seen.add(key);groups.push({key,label:e.k,attributed:e.attributed,year:e.year});}}));
     groups.sort((a,b)=>(a.attributed-b.attributed)||(a.attributed?(a.year-b.year):0));
-    h+=`<div style="overflow:auto"><table class="synT"><thead><tr><th>section ↓ grammar →</th>${decksWith.map(it=>`<th>${esc(it.label).slice(0,18)}<br><span style="color:var(--muted);font-weight:400">${it.year<9999?it.year:''}</span></th>`).join('')}</tr></thead><tbody>`;
+    h+=`<div style="overflow:auto"><table class="synT"><thead><tr><th>section ↓ grammar →</th>${decksWith.map(it=>`<th>${esc(it.label).slice(0,18)}<br><span style="color:var(--muted);font-weight:400">${yearOrBlank(it.year)}</span></th>`).join('')}</tr></thead><tbody>`;
     for(const g of groups){
       h+=`<tr><th class="${g.attributed?'later':''}">${esc(g.label)}${g.attributed?` <span style="font-size:9px">·${g.year<Infinity?g.year:'later'}</span>`:''}</th>`;
       for(const it of decksWith){ const s=secOf(it,g.key);
@@ -332,19 +340,18 @@ function viewSynopsis(sel){
       const bv=e.attr?e.v.trim().replace(/^\[[^\]]*\]\s*/,''):e.v;
       body+=`<div class="sec ${e.attributed?'later':''}"><div class="st">${esc(e.k)}</div>${e.attr?`<span class="attr">${esc(e.attr)}</span>`:''}<div class="sb"><p>${md(bv)}</p></div></div>`;
     }
-    h+=`<div class="col"><h3>${esc(it.label)} · ${it.year<9999?it.year:''}</h3>${it.image?`<div class="colimg card-open" data-od="${it.deck}|${esc(it.id)}" title="Open this item in the Cards viewer" style="background-image:url('${esc(it.image)}')"></div>`:''}<div class="secs">${body}</div></div>`;
+    h+=`<div class="col"><h3>${esc(it.label)}${it.year<UNDATED?' · '+yearLabel(it.year):''}</h3>${it.image?`<div class="colimg card-open" data-od="${it.deck}|${esc(it.id)}" title="Open this item in the Cards viewer" style="background-image:url('${esc(it.image)}')"></div>`:''}<div class="secs">${body}</div></div>`;
   }
   return h+`</div>`;
 }
 
 // ── VIEW 3: PROVENANCE RIBBON (with label-collision dodging) ───────────────────
 function viewRibbon(sel){
-  const UNDATED=9999, yearLabel=y=>y>=UNDATED?'undated':(y<0?(-y)+' BCE':String(y));
   const opts=cardOptions(); const card=opts.includes(sel)?sel:(opts.includes('saturn')?'saturn':opts[0]);
   const pts=[];
   for(const d of activeDecks()){
     const it=activeItems().find(i=>i.deck===d.slug && i.cardKey===card); if(!it)continue;
-    pts.push({year:d.year,kind:'native',label:d.label,img:it.image,deck:d.slug,id:it.id,text:`**${d.label}** (${yearLabel(d.year)}) — this entity as treated in this grammar.`});
+    pts.push({year:d.year,kind:'native',label:d.label,img:it.image,deck:d.slug,id:it.id,text:`**${d.label}** (${yearLabel(d.year)}) — this item as treated in this grammar.`});
     for(const [k,v] of Object.entries(it.sections)){
       const a=lensAttr(v); if(!a)continue; const y=attrYear(a); if(y===Infinity)continue;
       if(pts.some(p=>p.kind==='later'&&p.year===y&&p.src===k))continue;
@@ -373,8 +380,8 @@ function viewRibbon(sel){
       <div class="pt" data-i="${i}"></div>
       <div class="lbl" style="top:${labY}px">${esc((p.kind==='later'?p.label:p.label)).slice(0,16)}<div class="yr">${yearLabel(p.year)}</div></div></div>`;
   });
-  let h=`<div class="ctl"><label class="lbl">Entity</label><select id="rib-sel">${cardOptionsHTML(card)}</select>
-    <span style="color:var(--muted);font-size:12px">— one entity's whole record: each grammar's treatment (blue) + each dated commentary (rust). Click a point. Undated grammars sit at the right edge.</span></div>
+  let h=`<div class="ctl"><label class="lbl" for="rib-sel">Item</label><select id="rib-sel">${cardOptionsHTML(card)}</select>
+    <span style="color:var(--muted);font-size:12px">Green: each grammar's own text. Rust: a dated commentary. Click a point to read it; undated grammars sit at the right edge.</span></div>
     ${synthHTML(card)}
     <div class="ribbon" style="height:${ribbonH}px"><div class="axis"></div>${ticks}</div>
     <div id="ribbon-read"><span style="color:var(--muted)">Click a point on the timeline to read that layer.</span></div>`;
@@ -388,10 +395,10 @@ function viewMultiples(sel){
   for(const d of activeDecks()){
     const matches=activeItems().filter(i=>i.deck===d.slug && i.cardKey===card);
     const it=matches.find(m=>m.image)||matches[0]; if(!it)continue;
-    tiles+=`<div class="mtile card-open" data-od="${it.deck}|${esc(it.id)}" title="Open this item in the Cards viewer"><div class="mimg" style="background-image:url('${esc(it.image||'')}')"></div><div class="mcap"><b>${esc(d.label)}</b>${d.year<9999?d.year:''} · ${esc(it.name).slice(0,30)}</div></div>`;
+    tiles+=`<div class="mtile card-open" data-od="${it.deck}|${esc(it.id)}" title="Open this item in the Cards viewer"><div class="mimg" style="background-image:url('${esc(it.image||'')}')"></div><div class="mcap"><b>${esc(d.label)}</b>${d.year<UNDATED?yearLabel(d.year)+' · ':''}${esc(it.name).slice(0,30)}</div></div>`;
   }
-  return `<div class="ctl"><label class="lbl">Entity</label><select id="mul-sel">${cardOptionsHTML(card)}</select>
-    <span style="color:var(--muted);font-size:12px">— the same entity interpreted by every selected tradition.</span></div><div class="multiples">${tiles||'<span style="color:var(--muted)">No images.</span>'}</div>`;
+  return `<div class="ctl"><label class="lbl" for="mul-sel">Item</label><select id="mul-sel">${cardOptionsHTML(card)}</select>
+    <span style="color:var(--muted);font-size:12px">Click a picture to open the item.</span></div><div class="multiples">${tiles||'<span style="color:var(--muted)">No images.</span>'}</div>`;
 }
 
 // ── VIEW 5: READER ────────────────────────────────────────────────────────────
@@ -408,8 +415,8 @@ function viewReader(){
   const native=entries.filter(e=>!e.attributed), later=entries.filter(e=>e.attributed);
   const secHtml=e=>{const bv=e.attr?e.v.trim().replace(/^\[[^\]]*\]\s*/,''):e.v;
     return `<div class="rsec ${e.attributed?'later':''}"><div class="st">${esc(e.k)}</div>${e.attr?`<span class="attr">${esc(e.attr)}</span>`:''}<div><p>${md(bv)}</p></div></div>`;};
-  return `<div class="ctl"><label class="lbl">Grammar</label><select id="rd-deck">${decks.map(d=>`<option value="${d.slug}"${d.slug===readerDeck?' selected':''}>${esc(d.label)}</option>`).join('')}</select>
-    <span style="color:var(--muted);font-size:12px">— one entity per spread; later layers in an expander.</span></div>
+  return `<div class="ctl"><label class="lbl" for="rd-deck">Grammar</label><select id="rd-deck">${decks.map(d=>`<option value="${d.slug}"${d.slug===readerDeck?' selected':''}>${esc(d.label)}</option>`).join('')}</select>
+    <span style="color:var(--muted);font-size:12px">Prev and Next turn the items; later commentary sits in the fold below each one.</span></div>
    <div class="reader">${it.image?`<div class="rimg card-open" data-od="${it.deck}|${esc(it.id)}" title="Open this item in the Cards viewer" style="background-image:url('${esc(it.image)}')"></div>`:''}
      <div class="rbody"><h2>${esc(it.name||'—')}</h2><div class="sub" style="color:var(--muted);margin-bottom:14px">${esc(readerDeck.replace(/-/g,' '))} · ${readerIdx+1} / ${list.length}</div>
        ${native.map(secHtml).join('')}${later.length?`<details open><summary>${later.length} later interpretation${later.length>1?'s':''} ▾</summary>${later.map(secHtml).join('')}</details>`:''}</div>
@@ -417,11 +424,16 @@ function viewReader(){
 }
 
 // ── tabs + plumbing ───────────────────────────────────────────────────────────
-const VIEWS=[['ribbon','Provenance ribbon',s=>viewRibbon(s)],['synopsis','Synopsis',s=>viewSynopsis(s)],
- ['multiples','Small multiples',s=>viewMultiples(s)],['matrix','Matrix',()=>viewMatrix()],['reader','Reader',()=>viewReader()]];
+// [key, plain name, what it shows (the tab's title and the line under the tabs), render]
+const VIEWS=[
+ ['ribbon','Through time','One item on a timeline: each grammar’s version and each dated commentary, oldest to newest.',s=>viewRibbon(s)],
+ ['synopsis','Side by side','One item in every grammar, in columns next to each other.',s=>viewSynopsis(s)],
+ ['multiples','Pictures','One item’s picture in every grammar that has one.',s=>viewMultiples(s)],
+ ['matrix','Which sections where','A table of the sections each grammar has, and how many of its items fill them.',()=>viewMatrix()],
+ ['reader','Read one grammar','One grammar, an item at a time, with its later commentary below.',()=>viewReader()]];
 let cur='ribbon';
 function render(arg){
-  document.getElementById('main').innerHTML=VIEWS.find(v=>v[0]===cur)[2](arg);
+  document.getElementById('main').innerHTML=VIEWS.find(v=>v[0]===cur)[3](arg);
   const on=(id,ev,fn)=>{const e=document.getElementById(id);if(e)e[ev]=fn;};
   on('syn-sel','onchange',e=>render(e.target.value));
   on('mul-sel','onchange',e=>render(e.target.value));
@@ -434,12 +446,19 @@ function render(arg){
   if(cur==='reader'){ on('rd-deck','onchange',e=>{readerDeck=e.target.value;readerIdx=0;render();});
     on('rd-prev','onclick',()=>{readerIdx--;render();}); on('rd-next','onclick',()=>{readerIdx++;render();}); }
 }
+function showTabHint(key){
+  const v=VIEWS.find(x=>x[0]===key); if(!v) return;
+  const h=document.getElementById('tab-hint');
+  h.innerHTML=`<b>${esc(v[1])}:</b> ${esc(v[2])}`; h.classList.toggle('preview',key!==cur);
+}
 function buildTabs(){
-  document.getElementById('tabs').innerHTML=VIEWS.map(v=>`<span class="tab ${v[0]===cur?'on':''}" data-v="${v[0]}">${v[1]}</span>`).join('');
-  document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{cur=t.dataset.v;buildTabs();render();});
-  const pick=document.getElementById('lens-pick');   // dropdown mirrors the tabs (handy on mobile)
-  if(pick){ pick.innerHTML=VIEWS.map(v=>`<option value="${v[0]}"${v[0]===cur?' selected':''}>${v[1]}</option>`).join('');
-    pick.onchange=e=>{cur=e.target.value;buildTabs();render();}; }
+  document.getElementById('tabs').innerHTML=VIEWS.map(v=>`<button type="button" class="tab ${v[0]===cur?'on':''}" data-v="${v[0]}" aria-pressed="${v[0]===cur}" title="${esc(v[2])}">${esc(v[1])}</button>`).join('');
+  document.querySelectorAll('.tab').forEach(t=>{
+    t.onclick=()=>{cur=t.dataset.v;buildTabs();render();document.querySelector(`.tab[data-v="${cur}"]`).focus();};
+    t.onmouseenter=t.onfocus=()=>showTabHint(t.dataset.v);     // read a view's line before choosing it
+    t.onmouseleave=t.onblur=()=>showTabHint(cur);
+  });
+  showTabHint(cur);
 }
 (async function(){
   await load();

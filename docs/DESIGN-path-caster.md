@@ -48,6 +48,10 @@ is a walk on it:
 
 ## The three modes
 
+*Oct 7 2026: on the page the modes are now labelled **Find your own way** (explore), **Cast the
+whole path** (cast), **Cast step by step** (sequential) and **Cast your book** (book); the keys in
+brackets are still the `?mode=` values.*
+
 1. **EXPLORE (play)** — cast (or pick) origin + destiny. The differing lines are highlighted.
    Tap any line on the current hexagram to flip it: the stack grows one hexagram per flip,
    with the changed line marked between each pair (the intermediary). A small counter shows

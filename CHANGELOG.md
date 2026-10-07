@@ -1,5 +1,30 @@
 # Changelog — The Recursive I Ching
 
+## October 7, 2026 (later still) — the caster's four ways say what they do
+
+PlayfulProcess: "I think it is hard for users to understand what the pills mean in the caster of
+paths in I Ching."
+
+- **Path Caster (`viewers/caster.html`): plain names.** Explore → **Find your own way**, Cast the
+  Path → **Cast the whole path**, Sequential Caster → **Cast step by step**, Cast your Book →
+  **Cast your book**. The `?mode=` keys (explore, cast, sequential, book) are unchanged.
+- **One line under the row** says what the chosen way does. It is the pill's own title, so the
+  words live in one place; hovering or focusing another pill previews its line before you choose.
+  The longer how-to now waits in the empty space where the path appears, until Begin.
+- **Field names:** Randomness → **Cast with**, Style → **Route** ("Direct (shortest)" /
+  "Wandering (may detour)"); each field has a one-line title. The honest note is unchanged.
+- **Phone:** in book mode a long option ("the hexagram, then the line that changed") made the page
+  wider than a 375 px screen; the selects now stay inside it.
+- **Lenses (`viewers/lenses.html`), the same problem:** the five views are now **Through time**,
+  **Side by side**, **Pictures**, **Which sections where** and **Read one grammar** (were Provenance
+  ribbon, Synopsis, Small multiples, Matrix, Reader), with titles and the same changing line. The
+  dropdown that repeated the five tabs is gone. "Entity" reads **Item**; the ribbon's legend said
+  "blue" for green points; years read "1000 BCE" in every view, not "-1000"; the item picker no
+  longer widens the page on a phone.
+- **Smaller ones:** the Explorer's Cards / Counts / Sections / Reset buttons have titles; Timeline
+  and Genealogy say **Lines of descent** (were "Descent", "Descent arcs"), with titles.
+- Home page: the Path Caster card names the four ways.
+
 ## October 7, 2026 (later) — no node for the grammar itself; no empty sections or "9999" labels
 
 PlayfulProcess: "I think the Tree of the Changes in the middle of the thing is disconnected and

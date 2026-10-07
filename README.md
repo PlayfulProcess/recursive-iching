@@ -64,7 +64,7 @@ the full build record.
 
 ## Book mode — a book you cast (September 2026)
 
-The Path Caster has a fourth mode, **Cast your Book**. The destiny is fixed to Hexagram 1, the
+The Path Caster has a fourth way, **Cast your book** (`caster.html?mode=book`). The destiny is fixed to Hexagram 1, the
 Creative. The reader casts where they are, reads a fixed opening, advances one hexagram at a time —
 what the hexagram is (Learn), its story if one has been written, the changing line that carries them
 on — and writes their own transition under each step. At the end they save the walk as their own
