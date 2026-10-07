@@ -1,5 +1,75 @@
 # Changelog — The Recursive I Ching
 
+## October 6, 2026 (later) — The Tree of the Changes: the remaining ◇ claims checked
+
+PlayfulProcess, on the claims still marked ◇: "send an agent to check them." One research agent
+per group of nodes opened the sources; a second agent reopened every one, and where the two
+differed its wording is the one used. Opened this time: the primary texts that are online (the
+Hanshu, the Tang and Yuan histories, the Siku editors' notes, the prefaces of Cheng Yi, Zhu Xi, Hu
+Wei, the Kangxi edition and Liu Yiming), Legge's prefaces (scans of 1882 and 1899), Wilhelm's 1924
+preface and introduction, journal articles and catalogue records. Each is in the bibliography with
+what was read.
+
+- **Counts (claims in the sections):** ◇ 45 → 6; ✔ 78 → 197; ○ 3 → 13; ◆ 9 → 18. The `when`
+  fields carry their mark now too (✔ 23, ◆ 4, ○ 1; the six ◇ there are gone). Their citations sit
+  in "The record", because the when pill does not render them.
+- **Bibliography:** 103 new entries and 10 updated; `shaughnessy1996` is now `shaughnessy1997`.
+  Where two agents proposed keys for the same source, one key was kept.
+- **Confidence**, raised only where no ◇ is left: low → medium for the Tsinghua Shifa, Fuyang,
+  Hu Wei, the Kangxi edition, Liu Yiming, the Gushi bian, Cage and Dick, and Rutt and Redmond;
+  medium → high for the Taixuan, Bouvet and Leibniz, Human Design and the excavated texts in
+  English (no ◆ left either).
+- **Corrections:**
+  - Numbers on bone: the dated pieces run c. 1300–700 BCE, not "c. 1100 BCE"; a few carry a word or an omen, so "no text" became "almost no text".
+  - Numbers on bone: the lines did not simply "begin as 6, 7, 8 and 9" (Wikipedia doesn't say so); the bone numerals are mostly 1, 5, 6, 7 and 8, and how the lines came from them is argued (◆).
+  - Numbers on bone: Zhang Zhenglang's reading dates from a lecture of December 1978 (in print 1980); that the groups are the hexagrams' ancestors is the majority view, and it is questioned (◆).
+  - Zuozhuan: the diviners also read the trigrams and argued over meanings; the accounts run 671–487 or 672–485 BCE (◆); the Zuozhuan was complete by c. 300 BCE, the Guoyu put together from the 5th to the late 4th century.
+  - Tsinghua Shifa: volume 4 carries a December 2013 imprint and was launched on 7 January 2014, so the Oct 5 "January 2014, not 2013" is undone.
+  - Tsinghua Shifa: its numerals also work as lines; Shaughnessy 2014 does not study it, so that citation is replaced.
+  - Shanghai: the tomb is "not recorded (probably Hubei or Hunan)", not "unknown"; the symbols are black and red.
+  - Guicang: its composition date is disputed (◆), not "a Zhou-era text"; a Guicang survived in part to the Southern Song; "a story per figure" is dropped, since the copy is fragmentary.
+  - Mawangdui: a transcription was printed in 1984, and 1993 was a fuller but still incomplete publication; "at least 560 characters, about 12 % of the readable text".
+  - Mawangdui: the translation's "first in English" is its own subtitle (○); its year is 1997 in the catalogues, 1996 in the author's own notes (◆).
+  - Fuyang: two thirds of the characters (2,009 of 3,119), not of the fragments; "a diviner's notebook" became Shaughnessy's "divination manual".
+  - Han canon: "the first of the classics" is ◆ (Western Han lists put the Changes fourth); 136 BCE is the traditional date; the Wings were carved on the stones too; the carving did not end the disputes, so "The text is fixed" goes.
+  - Jing Fang: the Jingshi yizhuan survives under his name, so "his books are lost" was too strong; "the New Text school's" is dropped, since he was Western Han.
+  - Taixuan: the 2 BCE first draft is one scholar's dating (○); the text survives in Fan Wang's and Sima Guang's editions.
+  - Wang Bi: Han Kangbo commented on four of the Wings, not all ten; he died at 23, or 24 in He Shao's count.
+  - Kong Yingda: promulgated in 653, and the timeline's year moves from 642 to 653; 642 itself is ◆; "required for an official career" became the mingjing examination of 653 and the Tang and Song examinations.
+  - Shao Yong: "Earlier Heaven" (xiantian), not "Former Heaven"; he is "credited with" the order; the attribution to Fu Xi is ◆; the Daoist pedigree was argued from the Yuan on, not first in the Qing.
+  - Cheng Yi: whether he finished the commentary is ◆ (new).
+  - Zhu Xi: the Benyi is dated 1188 (Adler) or 1177 (◆), and the timeline's year moves from 1185 to 1188; the nine diagrams may be a follower's (◆); the 1313 decree named Cheng and Zhu for the Changes (Wikipedia's 1313 is about the Four Books).
+  - Bouvet and Leibniz: Bouvet made the match; Leibniz's binary dates from the 1670s, so "Shao Yong's order inspired Leibniz" (a citation-needed sentence on Wikipedia) goes; the paper is of April 1703, printed in 1705; Bouvet did study the text.
+  - Hu Wei: not "the first big doubt", since Song, Yuan and early Qing critics came before him; Pi Xirui's praise was qualified.
+  - Kangxi edition: Zhu Xi first, then Cheng Yi, then scholars from the Han to the Ming; Legge used it (✔).
+  - Liu Yiming: the hexagrams run in two strands, each following the one two places before; the date is 1796 or 1798 (◆).
+  - McClatchie: "the first complete English translation", which the cited Wikipedia never said; the "astral" key is dropped (no source names it); the "Yih king" in his title is the cataloguer's.
+  - Legge: by his own account exact and concise, not literal.
+  - Wilhelm: his commentary is excerpted from the Chinese commentators, his own Western parallels marked as his; 1924 ✔ (1923 is his preface's date), so the ◆ goes; Lao Naixuan died in 1921.
+  - Gushi bian: volume 3 is half on the Zhouyi, half on the Shijing; 1926–1941 ✔ (the 1944 cites pages that cover only volumes 1–2).
+  - Cage and Dick: Dick did plot by casting, by his own account, and followed the line texts, so "the line texts matter less" holds for Cage only.
+  - Shaughnessy 1983: "now the usual anchor" had no source; estimates run from the 10th to the 4th century, and the author says his date became more influential than it should have.
+  - Human Design: the hexagram titles and King Wen numbers carry over; the order does not, since the wheel is the binary (Fu Xi) sequence.
+  - Rutt and Redmond: Rutt does translate the Wings, in an appendix.
+  - The excavated texts in English: the Mawangdui book is 1997; the 2014 book does not retranslate Mawangdui; "for the first time in two thousand years" was the jacket's line.
+- **The same corrections elsewhere:**
+  - the Zhouyi node: the late 9th century is Shaughnessy's dating, not "modern scholars'";
+  - the translations course: Legge and Wilhelm name the Kangxi edition in their prefaces (was ◇);
+  - the books course: "a few claims" are still ◇;
+  - Rutt's title is *The Book of Changes (Zhouyi): A Bronze Age Document*, in `ten-wings`, `zhouyi-core` and the rebuilt `meta-iching`.
+- **Renamed nodes** (ids unchanged): the Kangxi edition is "Balanced Annotations" (one English
+  gloss); McClatchie's is "the Confucian 'Classic of Change'"; the excavated texts' Mawangdui
+  book is "(1997)".
+- **Still ◇, and why:**
+  - Shanghai: Wikipedia's "found in 1987, held by the Shanghai Library" cites Shaughnessy 2014 pp. 52–53, not opened (no copy on archive.org);
+  - Han canon: the German article's 171 CE rests on Schilling p. 371, not opened;
+  - Wang Bi: no source dates the commentary; the timeline's 245 is an estimate;
+  - McClatchie: whether he translated from the Kangxi edition (he cites an "Imp. Ed." but prints the Wings like the school editions); his book was not reached;
+  - Wilhelm: whether his commentary follows the Song line he learned from Lao Naixuan; the article that may settle it (Hon, *Monumenta Serica* 2023) was blocked;
+  - Shaughnessy 1983: the dissertation itself, not opened.
+- **Not checked in a browser:** only data changed, not the pages. The builders ran; `check.py` and
+  the determinism check pass.
+
 ## October 6, 2026 (later) — a zen look: the seal-red spiral, ink and paper, public-domain zen art
 
 PlayfulProcess: "Maybe the recursive logo in i ching can have the iching colors? also, can we make
