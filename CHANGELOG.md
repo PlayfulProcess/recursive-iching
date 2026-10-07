@@ -1,5 +1,29 @@
 # Changelog — The Recursive I Ching
 
+## October 7, 2026 (latest) — Cast opens the assistant here; Edit opens the item
+
+PlayfulProcess: "Cast from hexagram should maybe open the assistant? How about if [the] edit button
+in recursive I Ching works as in the preview within recursive.eco?"
+
+- **Cast (a hexagram's detail in Cards):** now **Cast with the assistant**. It opens the
+  recursive.eco assistant beside the page with a request waiting in its chat box, not sent: "Cast
+  the I Ching for me with this book, "Zhouyi Core — the Oldest Layer". I was just reading hexagram
+  22, Grace: tell me how the reading speaks to it." She can change it, then press Send; the
+  assistant casts the coins in its I Ching tab and reads the result. Where the assistant can't load,
+  the same button is a plain link that opens the book in the oracle on recursive.eco, as before
+  (`/g/<id>?view=reading`). A book with no recursive.eco grammar yet isn't named, so the I Ching
+  tab's own book is used.
+- **Edit:** opens recursive.eco's editor **at this item** (`?id=<grammar>&card=<item>`, the address
+  recursive.eco's own preview uses), no longer at the top of the grammar. The multi-deck view's
+  "<book>:" prefix comes off the item id. The button is hidden when the book has no recursive.eco
+  grammar yet, rather than leading to an empty Create page.
+- **Both buttons** are real links now (hover shows where they go) in the theme's one recursive.eco
+  chip, instead of hand-coloured purple.
+- **The assistant knows the book on the page** (`assistant.js`): a viewer opened by its repo path
+  (`?src=../grammars/<slug>/…`) or by a slug (`?id=<slug>`) now hands the embed the recursive.eco id
+  from `ids.json`, as recursive.eco's own previews do. Before, it got only the page title, and a
+  slug in `?id=` reached it as if it were an id.
+
 ## October 7, 2026 (later still) — the caster's four ways say what they do
 
 PlayfulProcess: "I think it is hard for users to understand what the pills mean in the caster of

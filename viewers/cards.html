@@ -4461,19 +4461,25 @@
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                         </button>`;
                 }
-                // Two named destinations rather than one ambiguous "Open in
-                // recursive.eco" (builder, Aug 18 2026: casting lives in the Journal,
-                // editing in Create). Shown as two labelled buttons rather than one
-                // button opening a chooser: with exactly two options the popup costs
-                // a click and adds a pattern this repo doesn't otherwise have —
-                // "consolidate, don't multiply" (CLAUDE.md). Same purple treatment.
-                const ecoBtnStyle = 'display:inline-flex; align-items:center; gap:5px; padding:0.35rem 0.7rem; background:rgba(147,51,234,0.10); border:1px solid rgba(147,51,234,0.42); border-radius:6px; color:#7c3aed; font-size:0.8rem; font-weight:600; text-decoration:none; cursor:pointer; transition:all 0.2s;';
+                // Two named destinations (builder, Aug 18 2026: casting lives in the
+                // Journal, editing in Create), drawn as the theme's one recursive.eco
+                // chip (theme.css .eco-chip). Both are real links, filled in by
+                // paintEcoLinks() below once the deck's recursive.eco id is known.
+                //
+                // Cast (Oct 7 2026, her words: "Cast from hexagram should maybe open
+                // the assistant?"): with the recursive.eco assistant on the page
+                // (assistant.js), a click opens it beside this page with a request
+                // waiting in its chat box, unsent (data-assistant-ask, read by
+                // assistant-launcher.js). Without it, the link opens the deck in the
+                // oracle on recursive.eco, as before.
+                const ecoAssistantHere = document.documentElement.classList.contains('rec-assistant-on');
                 bodyHtml += `
-                    <a href="#" onclick="openItemDeckOnEco();return false;"
-                       title="Open this deck in the Journal on recursive.eco — loaded in the oracle, ready to draw"
-                       style="${ecoBtnStyle}"
-                       onmouseover="this.style.background='rgba(147,51,234,0.20)'" onmouseout="this.style.background='rgba(147,51,234,0.10)'">
-                        <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" stroke="none"><path d="M8 5v14l11-7z"/></svg> Cast in recursive.eco ↗
+                    <a id="eco-cast-link" class="eco-chip" href="${escapeHtml(getFlowBaseUrl())}" target="_blank" rel="noopener"
+                       data-assistant-ask=""
+                       title="${ecoAssistantHere
+                           ? 'Opens the recursive.eco assistant beside this page with a request to cast the I Ching, ready for you to send'
+                           : 'Open this book in the oracle on recursive.eco, ready to cast'}">
+                        <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> ${ecoAssistantHere ? 'Cast with the assistant' : 'Cast in recursive.eco ↗'}
                     </a>`;
                 // No Edit button on a _generated aggregator (the meta grammar, people-of-tarot):
                 // its items are pointer stubs, not real editable documents, and the underlying
@@ -4481,13 +4487,15 @@
                 // returns null), which sent Edit to a bare Create page that redirects to Library —
                 // a dead end reported by the builder Aug 22 2026. Read the card here; edit it on
                 // its own deck's page (the "Open in <deck>" pill above takes you there).
+                // Edit (Oct 7 2026, "works as in the preview within recursive.eco"): opens the
+                // editor at THIS item, the address recursive.eco's own preview uses
+                // (edit-overlay.js: /create/dashboard/unified/new?id=<grammar>&card=<item>).
+                // Hidden when the deck has no recursive.eco grammar yet (ids.json).
                 if (!grammarData?._generated) {
                     bodyHtml += `
-                    <a href="#" onclick="editItemDeckOnEco();return false;"
-                       title="Open this deck in the Create editor on recursive.eco. If it isn't yours, your changes are proposed to the owner for review."
-                       style="${ecoBtnStyle}"
-                       onmouseover="this.style.background='rgba(147,51,234,0.20)'" onmouseout="this.style.background='rgba(147,51,234,0.10)'">
-                        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg> Edit in recursive.eco ↗
+                    <a id="eco-edit-link" class="eco-chip" href="#" target="_blank" rel="noopener" style="display:none"
+                       title="Open this item in the editor on recursive.eco. If the book isn't yours, your changes go to its owner for review.">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg> Edit in recursive.eco ↗
                     </a>`;
                 }
                 bodyHtml += `</div>`;
@@ -4683,6 +4691,8 @@
             const mc = modalBackdrop.querySelector('.modal-content');
             if (mc) mc.scrollTop = 0;
             modalBackdrop.classList.add('open');
+
+            paintEcoLinks(item);
 
             if (showSourceRef) {
                 resolveAndRenderSourceRef(item, srcDeck, srcItem, sourceDeckLabel, sourceDeckUrl);
@@ -4883,13 +4893,14 @@
             window.open(url, '_blank', 'noopener');
         }
 
-        // Resolve the UUID of the deck the OPEN CARD belongs to. Slug-aware, so it
-        // is correct in the multi-deck / meta view where the open card's deck is
-        // NOT the page's deck — the single-deck resolver alone would return the
-        // wrong grammar there. Shared by both item-detail actions below.
-        async function resolveItemDeckId() {
+        // Resolve the UUID of the deck an item belongs to. Slug-aware, so it is
+        // correct in the multi-deck view where the open card's deck is NOT the
+        // page's deck — the single-deck resolver alone would return the wrong
+        // grammar there. Shared by both item-detail actions below.
+        async function resolveItemDeckId(forItem) {
+            const it = forItem || selectedItem;
             let id = null;
-            const slug = selectedItem && selectedItem._deckSlug;   // the open card's deck (multi-deck view)
+            const slug = it && it._deckSlug;   // the card's deck (multi-deck view)
             if (slug) {
                 if (!ecoIds) { try { ecoIds = await (await fetch('../ids.json')).json(); } catch (_) { ecoIds = { ids: {} }; } }
                 id = (ecoIds.ids || {})[slug] || null;
@@ -4901,26 +4912,82 @@
         // The item detail offers TWO deliberate jumps to the app, per the builder's
         // Aug 18 2026 ruling: casting belongs in the Journal, editing in Create.
         // (Reading a card that references another grammar stays in THIS viewer —
-        // that's the cross-link pill, a different thing entirely.)
+        // that's the cross-link pill, a different thing entirely.) Both are real
+        // links (#eco-cast-link, #eco-edit-link), so hovering shows where they go
+        // and a middle-click opens a tab.
         //
-        // Cast — the deck loaded in the oracle, ready to draw.
-        async function openItemDeckOnEco() {
+        // Cast, without the assistant — the deck loaded in the oracle, ready to
+        // draw (/g/<id>?view=reading is the app's resolver; recursive.eco's own
+        // preview links its Ask button there too).
+        function ecoCastUrl(id) {
             const flowBaseUrl = getFlowBaseUrl();
-            const id = await resolveItemDeckId();
-            const url = id ? `${flowBaseUrl}/g/${id}?view=reading` : `${flowBaseUrl}/play`;
-            window.open(url, '_blank', 'noopener');
+            return id ? `${flowBaseUrl}/g/${encodeURIComponent(id)}?view=reading` : flowBaseUrl;
         }
 
-        // Edit — the ORIGINAL grammar in the Create editor, deliberately NOT a fork.
-        // Ownership is not asked here because the app already resolves it at save
-        // time: an owner's save writes through, a non-owner's becomes a pending edit
-        // for the owner to review. Asking twice could only produce disagreement.
-        // (The separate Copy icon is the explicit "give me my own copy" action.)
-        async function editItemDeckOnEco() {
-            const offerBaseUrl = getOfferBaseUrl();
-            const id = await resolveItemDeckId();
-            const url = id ? `${offerBaseUrl}/dashboard/unified/new?id=${id}&type=${grammarType}` : offerBaseUrl;
-            window.open(url, '_blank', 'noopener');
+        // Cast, with the assistant (Oct 7 2026) — what waits in its chat box,
+        // unsent: she reads it, changes it if she likes, and presses Send. The
+        // assistant's cast_oracle does a real three-coin cast and interprets it.
+        // The book is named only when it is a recursive.eco grammar (otherwise
+        // the I Ching tab's own book is used); assistant.js tells the embed which
+        // grammar this page shows, so "this book" resolves to its id. In the
+        // multi-deck view the page shows several books, so the book is named only.
+        function ecoCastAsk(item, onEco) {
+            let book = '';
+            if (onEco && item._deckSlug) {
+                const entry = ((collection && collection.grammars) || []).find(g => g.slug === item._deckSlug);
+                book = String((entry && entry.name) || item._deck || '').split(' — ')[0].trim();
+            } else if (onEco) {
+                book = String((grammarData && grammarData.name) || '').trim();
+            }
+            let text = !book ? 'Cast the I Ching for me.'
+                : item._deckSlug ? `Cast the I Ching for me with "${book}".`
+                : `Cast the I Ching for me with this book, "${book}".`;
+            const n = Number(item.number != null ? item.number : (item.metadata && item.metadata.number));
+            const isHex = window.ItemShape ? ItemShape.isHexagramItem(item) : (n >= 1 && n <= 64);
+            const name = String(item.name || '').trim();
+            if (isHex && n >= 1 && n <= 64) {
+                // Some books name the item "Hexagram 6 · 訟 Sòng · Conflict" already.
+                const said = new RegExp('hexagram\\s*' + n + '\\b', 'i').test(name) ? name : `hexagram ${n}${name ? ', ' + name : ''}`;
+                text += ` I was just reading ${said}: tell me how the reading speaks to it.`;
+            } else if (name) {
+                text += ` I was just reading "${name}": tell me how the reading speaks to it.`;
+            }
+            return text;
+        }
+
+        // Edit — the ORIGINAL grammar in the Create editor, deliberately NOT a fork,
+        // opened at THIS item: the address recursive.eco's own preview uses
+        // (edit-overlay.js, ?id=<grammar>&card=<item>; the editor reads ?card=).
+        // Item ids match the app's (CLAUDE.md), but the multi-deck view prefixes
+        // them with "<slug>:", which comes off here. Ownership is not asked here
+        // because the app already resolves it at save time: an owner's save
+        // writes through, a non-owner's becomes a pending edit for the owner to
+        // review. (The separate Copy icon is the explicit "give me my own copy".)
+        function ecoEditUrl(id, item) {
+            let itemId = String(item.id || '');
+            if (item._deckSlug && itemId.startsWith(item._deckSlug + ':')) itemId = itemId.slice(item._deckSlug.length + 1);
+            return `${getOfferBaseUrl()}/dashboard/unified/new?id=${encodeURIComponent(id)}` + (itemId ? `&card=${encodeURIComponent(itemId)}` : '');
+        }
+
+        // Fill both links for the open item: first without an id (the fallback
+        // cast, Edit hidden), then again once ids.json has answered. Skips the
+        // update if the modal has moved on to another item meanwhile.
+        function paintEcoLinks(item) {
+            const apply = (id) => {
+                if (selectedItem !== item) return;
+                const cast = document.getElementById('eco-cast-link');
+                if (cast) {
+                    cast.href = ecoCastUrl(id);
+                    cast.setAttribute('data-assistant-ask', ecoCastAsk(item, !!id));
+                }
+                const edit = document.getElementById('eco-edit-link');
+                if (edit) {
+                    if (id) { edit.href = ecoEditUrl(id, item); edit.style.display = ''; }
+                    else { edit.href = '#'; edit.style.display = 'none'; }
+                }
+            };
+            apply(null);
+            resolveItemDeckId(item).then(apply, () => {});
         }
 
         // "Edit" header button — open the recursive.eco editor (Create page) at this
