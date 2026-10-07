@@ -82,8 +82,8 @@
   <div id="stage">
     <div class="toolbar">
       <div class="title">The Changes Through Time <span class="sub">— one book per node, descent on the rail</span></div>
-      <button id="flip">↑ Oldest first</button>
-      <label class="lbl-descent"><input type="checkbox" id="toggle-derive" checked> Descent</label>
+      <button id="flip" title="Turn the time axis over: oldest or newest at the top">↑ Oldest first</button>
+      <label class="lbl-descent" title="Draw a line from each book to the books it grew out of"><input type="checkbox" id="toggle-derive" checked> Lines of descent</label>
     </div>
     <div id="scroll"><svg id="svg"></svg><div id="err" style="display:none"></div></div>
     <div class="legend" id="legend"></div>
@@ -91,7 +91,7 @@
   <aside id="detail"></aside>
 </div>
 
-<script src="dimension-engine.js?v=1"></script>
+<script src="dimension-engine.js?v=2"></script>
 <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 <script>
 const BRANCH_RAW={'branch-roots':'#b08d57','branch-zhou':'#9c3b2a','branch-canon':'#c96d3b','branch-numbers':'#6d8ec9','branch-meanings':'#5b8a72','branch-dao':'#8a6bb0','branch-west':'#b0566e','branch-modern':'#4a7a8c'};

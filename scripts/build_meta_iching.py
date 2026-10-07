@@ -111,13 +111,15 @@ for n in range(1, 65):
         "emergence_kind": "all-lenses",
         "composite_of": [v["id"] for v in src.values()],
         "keywords": list((summ or {}).get("keywords") or [])[:6] + list((lens or {}).get("keywords") or [])[:4],
-        "sections": {
+        # A lens with nothing for this hexagram adds no section (52 of the 64 had an empty
+        # "Wound": the Repair I Ching reads twelve hexagrams, not all 64).
+        "sections": {k: v for k, v in {
             "Scenery": scenery,
             "Text": sec(legge, "Judgment") or sec(summ, "Judgment"),
             "What it asks": asks or "(no Human Design reading yet — the gap to fill)",
             "Story": sec(book, "Story"),
             "Wound": sec(repair, "Repair Reading"),
-        },
+        }.items() if v and (not isinstance(v, str) or v.strip())},
         "metadata": {
             "number": n, "binary": table[str(n)]["binary"], "trigram_above": above, "trigram_below": below,
             "lenses_present": sorted(src.keys()),

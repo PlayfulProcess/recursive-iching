@@ -272,17 +272,23 @@ async function main(){
     const clinks = $('#clinks');
     clinks.innerHTML = '';
     companionSlugs.forEach(slug => {
-      const uuid = ids.ids[slug];
+      // Only a grammar visitors can open on recursive.eco (ids.json's _public_now).
+      const uuid = (!Array.isArray(ids._public_now) || ids._public_now.includes(slug)) ? ids.ids[slug] : null;
       const label = slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
       const raw = document.createElement('a');
       raw.className = 'eco-chip'; raw.href = '../grammars/' + slug + '/grammar.json';
       raw.textContent = label + ' — raw JSON';
       clinks.appendChild(raw);
       if (uuid) {
+        // recursive.eco's previews, framed for this collection: ?shell=iching draws the I Ching
+        // header and footer once recursive.eco carries it (docs/PARITY-with-recursive-eco-2026-10-07.md);
+        // until then the page ignores it. Cards opens at this chapter's hexagram (hex-N -> number N).
+        const hexN = (/^hex-(\d+)$/.exec(current.id) || [])[1];
         [['Cards', 'grammar-viewer'], ['Study', 'study-viewer'], ['Tree', 'tree-viewer']].forEach(([lbl, page]) => {
           const a = document.createElement('a');
           a.className = 'eco-chip'; a.target = '_blank'; a.rel = 'noopener';
-          a.href = `https://recursive.eco/pages/${page}.html?type=iching&id=${uuid}`;
+          a.href = `https://recursive.eco/pages/${page}.html?type=iching&id=${uuid}&shell=iching`
+            + (page === 'grammar-viewer' && hexN ? `&hexagram=${hexN}` : '');
           a.textContent = label + ' — ' + lbl;
           clinks.appendChild(a);
         });

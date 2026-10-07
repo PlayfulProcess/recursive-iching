@@ -37,8 +37,13 @@
   .lede{font-family:var(--serif-body);font-size:16.5px;line-height:1.7;color:var(--mut);max-width:60ch;margin:24px 0 0}
   .lede strong{color:var(--ink)}
 
+  /* Card rows wrap and centre: a row with fewer cards than room sits in the middle, never
+     pushed to the left (flex, not a fixed-column grid). */
+  .ways,.viewgrid,.deckgrid,.courses-grid{display:flex;flex-wrap:wrap;justify-content:center}
+
   /* three ways in */
-  .ways{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin:0}
+  .ways{gap:22px;margin:0}
+  .way{flex:1 1 260px;max-width:360px}
   .way{display:block;background:var(--surface);border:1px solid var(--line);border-radius:4px;
     overflow:hidden;text-decoration:none;color:var(--ink);transition:border-color .2s,box-shadow .2s}
   .way:hover{border-color:var(--seal);box-shadow:var(--shadow-lift)}
@@ -109,7 +114,8 @@
   .gallery .glabel{display:flex;align-items:center;gap:12px;font-family:var(--sans);font-size:11px;
     letter-spacing:.16em;text-transform:uppercase;color:var(--seal);margin:0 0 14px;text-align:left}
   .gallery .glabel::after{content:'';flex:1;height:1px;background:var(--line)}
-  .viewgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;margin:0 0 12px}
+  .viewgrid{gap:16px;margin:0 0 12px}
+  .vcard{flex:0 1 200px}
   .vcard{display:block;background:var(--surface);border:1px solid var(--line);border-radius:4px;
     overflow:hidden;text-decoration:none;color:var(--ink);transition:border-color .2s,box-shadow .2s}
   .vcard:hover{border-color:var(--seal);box-shadow:var(--shadow-lift)}
@@ -117,14 +123,22 @@
   .vcard .vb{padding:14px 16px 16px}
   .vcard .vt{font-family:var(--serif-display);font-weight:600;font-size:17px;color:var(--ink);margin:0 0 3px}
   .vcard .vd{font-family:var(--serif-body);font-size:13.5px;line-height:1.55;color:var(--mut);margin:0}
-  .deckgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
+  .deckgrid{gap:16px}
+  .dcard{flex:0 1 160px;min-width:0}
   .dcard{display:block;text-decoration:none;color:var(--ink)}
-  .dcard .dthumb{aspect-ratio:3/4;background:var(--panel2) center/contain no-repeat;
+  .dcard .dthumb{aspect-ratio:3/4;background:var(--panel2);overflow:hidden;
     border:1px solid var(--line);border-radius:3px;transition:box-shadow .2s,border-color .2s}
+  /* contained, never cropped: a painting keeps its inscriptions */
+  .dcard .dthumb img{display:block;width:100%;height:100%;object-fit:contain}
+  /* a photo shot on white takes the paper's tone instead of showing a white band */
+  .dcard .dthumb img:not([src$=".svg"]){mix-blend-mode:multiply}
   .dcard:hover .dthumb{box-shadow:var(--shadow-lift);border-color:var(--seal)}
   .dcard .dn{font-family:var(--serif-body);font-weight:600;font-size:13.5px;line-height:1.3;margin:9px 0 1px;color:var(--ink)}
   .dcard .dy{font-family:var(--sans);font-size:11px;letter-spacing:.05em;color:var(--mut)}
-  .courses-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+  .courses-grid{gap:16px}
+  .ccard{flex:0 1 300px}
+  /* phones: one full-width card per row (the row still centres) */
+  @media(max-width:520px){ .vcard,.ccard{flex:1 1 100%;max-width:400px} }
   .ccard{display:block;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:18px 18px;
     text-decoration:none;color:var(--ink);transition:border-color .2s,box-shadow .2s}
   .ccard:hover{border-color:var(--seal);box-shadow:var(--shadow-lift)}
@@ -214,7 +228,7 @@
       </div>
     </a>
     <a class="way" href="viewers/cards.html?src=../grammars/repair-iching/grammar.json">
-      <div class="top" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Hokusai%2C_Fugaku_sanjurokkei%2C_Kanagawa.jpg?width=800')"></div>
+      <div class="top" style="background-image:url('img/covers/repair-iching.svg')"></div>
       <div class="bd">
         <div class="lbl">Practice · contemplative, not divinatory</div>
         <h3>The Repair I Ching</h3>
@@ -256,7 +270,7 @@
           <span class="ayr">now · ongoing</span>
           <div class="rail"><span class="adot ok"></span></div>
           <a class="node now" href="viewers/cards.html?src=../grammars/repair-iching/grammar.json">
-            <img class="athumb" src="https://commons.wikimedia.org/wiki/Special:FilePath/Hokusai%2C_Fugaku_sanjurokkei%2C_Kanagawa.jpg?width=100" alt="">
+            <img class="athumb" src="img/covers/repair-iching.svg" alt="">
             <div class="an">Mirror, not fate</div>
             <span class="atag ok">Adaptive</span>
             <p class="ag">Read a hexagram to know yourself, not to be told your fate — a contemplative prompt, held loosely, the choice always your own.</p>
@@ -357,7 +371,7 @@
     <div class="viewgrid">
       <a class="vcard" href="viewers/caster.html">
         <div class="vthumb" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg?width=400')"></div>
-        <div class="vb"><div class="vt">The Path Caster</div><div class="vd">Cast an origin and a destiny hexagram, then explore or cast the journey of changing lines between them.</div></div>
+        <div class="vb"><div class="vt">The Path Caster</div><div class="vd">Cast an origin and a destiny hexagram, then walk the changing lines between them: by hand, cast all at once, step by step, or as a book you write in.</div></div>
       </a>
     </div>
 
@@ -412,10 +426,14 @@
 <script>
   // Render the grammar galleries from the open collection manifest (always current).
   (function(){
-    const esc = s => String(s).replace(/</g,'&lt;');
-    const thumb = g => g.cover_image_url
-      ? '<div class="dthumb" style="background-image:url(\''+g.cover_image_url.replace(/'/g,"%27")+'\')"></div>'
-      : '<div class="dthumb" style="display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;text-align:center;padding:6px">'+esc((g.name||g.slug).split(' — ')[0])+'</div>';
+    const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+    // `thumb` is the grammar's cover, or its drawn mark when it has none; if a cover's link
+    // breaks, the card swaps to the mark (both from scripts/build_collection.py).
+    const thumb = g => {
+      const mark = g.mark || ('img/covers/'+g.slug+'.svg');
+      return '<div class="dthumb"><img src="'+esc(g.thumb || g.cover_image_url || mark)+'" data-mark="'+esc(mark)+'"'
+        + ' alt="" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.mark"></div>';
+    };
     const card = g => {
       const name = (g.name||g.slug).split(' — ')[0], year = g.year_label || (g.year||'');
       const href = 'viewers/cards.html?src=../grammars/'+encodeURIComponent(g.slug)+'/grammar.json';

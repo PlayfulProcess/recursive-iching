@@ -1,5 +1,147 @@
 # Changelog — The Recursive I Ching
 
+## October 7, 2026 (review) — two fixes found while checking this round
+
+- **Cards on a phone:** the side list (`#hierarchy-sidebar`) was 10 px wider than a 375 px screen,
+  so the page scrolled sideways and the assistant's button sat past the edge. Its padding now
+  counts inside its width. This was already so before this round.
+- **`scripts/check_book_mode.py` works again.** Since Sep 6 book mode has had its own "Cast the next
+  hexagram" button and hides the shared "Next step" one, so the check stopped at once and timed out
+  waiting for the end. It now presses the book's own button. It passes (origin 21 to Hexagram 1 in
+  3 steps).
+- **Checked:** the recursive.eco changes listed below, by comparing each grammar's version before
+  and after in its saved history. Only the listed fields changed, no item was added or removed,
+  every `number` matches the repo, and visibility is as before (four Published, Repair I Ching
+  Link, Ten Wings Private).
+
+## October 7, 2026 (later yet) — the hexagram previews checked against recursive.eco; corrections carried over
+
+PlayfulProcess: "If no extra features are in the preview of hexagrams there, maybe let's carry it to
+recursive.eco the way we were planning (same header and footer, potentially different css when
+coming from iching)?" The full record, with every version id: `docs/PARITY-with-recursive-eco-2026-10-07.md`.
+
+- **Parity:** a hexagram's preview on recursive.eco does what this site's does, and more. One extra
+  lives here, on one book's grid: the group-by chips. The Path Caster, the genealogy and timeline,
+  the lenses, the explorer, the stacked source text and Cards across all books have no recursive.eco
+  equivalent and stay.
+- **Carried into recursive.eco** (additive or corrective only, each undoable from its version
+  history): King Wen `number` on every hexagram item of the five mapped grammars, so recursive.eco's
+  Cards numbers them right (it gave hexagram 1 the number 0, and `&hexagram=6` opened hexagram 7);
+  the five Zhouyi lines that were glued onto the line before them now stand alone (hexagrams 6, 8,
+  12, 41, 52); the Chinese Original's cover shows a picture again. **Ten Wings** is now a Private
+  grammar there (`e249829d`), mapped in `ids.json`.
+- **Not carried:** the renames, descriptions, tags and categories the full import would bring, and
+  the provisional HD gate pictures. They wait for her.
+- **Links:** the course's companion links (Cards, Study, Tree on recursive.eco) now carry
+  `&shell=iching`, and Cards opens at the chapter's own hexagram. The site's other links stay here:
+  the framed preview (`?shell=`) is on dev.recursive.eco only, and the I Ching collection there has
+  no shell and no links yet, so a visitor would lose this site's header. The doc lists the exact
+  links to switch once those are in place.
+- **Private grammars get no links:** Cards, the assistant and the course offer recursive.eco links
+  only for grammars in `ids.json`'s `_public_now`.
+
+## October 7, 2026 (even later) — Cast opens the assistant here; Edit opens the item
+
+PlayfulProcess: "Cast from hexagram should maybe open the assistant? How about if [the] edit button
+in recursive I Ching works as in the preview within recursive.eco?"
+
+- **Cast (a hexagram's detail in Cards):** now **Cast with the assistant**. It opens the
+  recursive.eco assistant beside the page with a request waiting in its chat box, not sent: "Cast
+  the I Ching for me with this book, "Zhouyi Core — the Oldest Layer". I was just reading hexagram
+  22, Grace: tell me how the reading speaks to it." She can change it, then press Send. Send was
+  not pressed in testing (it spends credits), so whether the assistant then casts with that exact
+  book is not yet checked. Where the assistant can't load,
+  the same button is a plain link that opens the book in the oracle on recursive.eco, as before
+  (`/g/<id>?view=reading`). A book with no recursive.eco grammar yet isn't named, so the I Ching
+  tab's own book is used.
+- **Edit:** opens recursive.eco's editor **at this item** (`?id=<grammar>&card=<item>`, the address
+  recursive.eco's own preview uses), no longer at the top of the grammar. The multi-deck view's
+  "<book>:" prefix comes off the item id. The button is hidden when the book has no recursive.eco
+  grammar yet, rather than leading to an empty Create page.
+- **Both buttons** are real links now (hover shows where they go) in the theme's one recursive.eco
+  chip, instead of hand-coloured purple.
+- **The assistant knows the book on the page** (`assistant.js`): a viewer opened by its repo path
+  (`?src=../grammars/<slug>/…`) or by a slug (`?id=<slug>`) now hands the embed the recursive.eco id
+  from `ids.json`, as recursive.eco's own previews do. Before, it got only the page title, and a
+  slug in `?id=` reached it as if it were an id.
+
+## October 7, 2026 (later still) — the caster's four ways say what they do
+
+PlayfulProcess: "I think it is hard for users to understand what the pills mean in the caster of
+paths in I Ching."
+
+- **Path Caster (`viewers/caster.html`): plain names.** Explore → **Find your own way**, Cast the
+  Path → **Cast the whole path**, Sequential Caster → **Cast step by step**, Cast your Book →
+  **Cast your book**. The `?mode=` keys (explore, cast, sequential, book) are unchanged.
+- **One line under the row** says what the chosen way does. It is the pill's own title, so the
+  words live in one place; hovering or focusing another pill previews its line before you choose.
+  The longer how-to now waits in the empty space where the path appears, until Begin.
+- **Field names:** Randomness → **Cast with**, Style → **Route** ("Direct (shortest)" /
+  "Wandering (may detour)"); each field has a one-line title. The honest note is unchanged.
+- **Phone:** in book mode a long option ("the hexagram, then the line that changed") made the page
+  wider than a 375 px screen; the selects now stay inside it.
+- **Lenses (`viewers/lenses.html`), the same problem:** the five views are now **Through time**,
+  **Side by side**, **Pictures**, **Which sections where** and **Read one grammar** (were Provenance
+  ribbon, Synopsis, Small multiples, Matrix, Reader), with titles and the same changing line. The
+  dropdown that repeated the five tabs is gone. "Entity" reads **Item**; the ribbon's legend said
+  "blue" for green points; years read "1000 BCE" in every view, not "-1000"; the item picker no
+  longer widens the page on a phone.
+- **Smaller ones:** the Explorer's Cards / Counts / Sections / Reset buttons have titles; Timeline
+  and Genealogy say **Lines of descent** (were "Descent", "Descent arcs"), with titles.
+- Home page: the Path Caster card names the four ways.
+
+## October 7, 2026 (later) — no node for the grammar itself; no empty sections or "9999" labels
+
+PlayfulProcess: "I think the Tree of the Changes in the middle of the thing is disconnected and
+irrelevant? Search for other patterns like that to clean up."
+
+- **One rule, in `viewers/dimension-engine.js`: `grammarRootId(items)`.** It finds the item that
+  stands for the grammar itself: the only group nothing contains, which reaches every other item
+  and has groups under it. Here that is "The Tree of the Changes" (over its eight branches) and
+  "The Repair I Ching" (over "Repair as Change" and the twelve hexagrams). No grammar file changed.
+- **Genealogy:** that node and its eight spokes are gone from the middle; the eight branches stand
+  on their own. The grammar's name is now the page heading, with an "About this tree" button that
+  opens the tree's own text in the side panel (open on load at 1440 px and wider) and a "Start
+  with the oldest book" step. Names too long for the ring end on a whole word and "…" instead of
+  mid-word; the full name is in the tooltip. On a phone the hint that ran under the two buttons
+  is hidden.
+- **Tree view:** no "Level 3 (1)" row holding the grammar alone; the counts no longer include it
+  (the Tree of the Changes: 41 items, 2 levels).
+- **Cards sidebar:** starts at the branches instead of one collapsed line named after the grammar.
+- **Explorer "emergence" field:** no longer has a group named after the grammar (9 values became
+  8 for the Tree; the Repair I Ching's two groups held the same twelve hexagrams).
+- **Lenses, provenance ribbon:** undated grammars were placed at year 9999, so 3,000 dated years
+  sat in the left tenth and three labels read "9999"; they now share a zone at the right edge
+  labelled "undated", and years before 0 read "1000 BCE", not "-1000".
+- **The I Ching — All Lenses (meta):** 52 hexagrams had an empty "Wound" section (the Repair I
+  Ching reads twelve); `scripts/build_meta_iching.py` now leaves out a lens with nothing to say.
+- `dimension-engine.js?v=2` in every viewer that loads it.
+
+## October 7, 2026 — every grammar card has a picture; short rows sit in the middle
+
+PlayfulProcess: "Only thing I don't like about the I Ching is things without thumbnails or not
+centralized when there is too few."
+
+- **A drawn mark for every grammar** (`img/covers/<slug>.svg`, by `scripts/build_covers.py`, which
+  `scripts/build_collection.py` now runs): the site's ensō in seal red on paper, with the
+  grammar's first hexagram inside it in ink and its King Wen number on a small seal at the lower
+  right. The I Ching — All Lenses gets the eight trigrams instead; the Tree of the Changes gets
+  one whole line and one broken line. Edit the script, not the SVGs.
+- **`_collection.json` gains `thumb` and `mark`.** `thumb` is the grammar's own cover when it has
+  one, otherwise its mark. Two covers were Commons *file pages* (`/wiki/File:…`, an HTML page, not
+  an image), so HD Meta-Categories and Three Lenses showed an empty card; `thumb` turns those into
+  the image link for the same Leibniz diagram. Commons links get `?width=400`, so a card no longer
+  loads a full-size scan. The grammar files' own `cover_image_url` is unchanged.
+- **Home page, "Every grammar in this repo":** each card shows its `thumb`; if that link ever
+  breaks, the card switches to the grammar's mark. Photos shot on white take the paper's tone.
+  Paintings stay contained, never cropped.
+- **The broken Hokusai:** its Commons link 404ed (no such file), leaving the Repair I Ching card
+  and the "Mirror, not fate" node blank. Both now show the Repair I Ching's mark.
+- **Centred rows:** the three ways in, every row of views, the course card and the grammar rows
+  wrap and centre, so a row with one or two cards sits in the middle at every width. At 375 px
+  nothing scrolls sideways.
+- **Not changed:** the viewers under `viewers/`, and every grammar file.
+
 ## October 6, 2026 (later) — The Tree of the Changes: the remaining ◇ claims checked
 
 PlayfulProcess, on the claims still marked ◇: "send an agent to check them." One research agent

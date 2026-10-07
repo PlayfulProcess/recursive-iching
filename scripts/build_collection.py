@@ -21,6 +21,11 @@ Run from the repo root:  python3 scripts/build_collection.py
 import json
 import os
 import glob
+import re
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import build_covers  # noqa: E402  (draws img/covers/<slug>.svg, the marks `thumb` falls back to)
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 GRAMMARS_DIR = os.path.join(ROOT, "grammars")
@@ -76,12 +81,29 @@ YEARS = {
 }
 
 
+def thumb_of(slug, cover):
+    """The picture a grammar card shows: the grammar's own cover when it has one, else its drawn
+    mark (img/covers/<slug>.svg, by scripts/build_covers.py). A Commons *file page* link
+    (/wiki/File:...) is an HTML page, not an image, so it becomes the Special:FilePath link to the
+    same file; Commons links get a width so a card never loads a full museum scan. The grammar
+    file's own cover_image_url is left as it is."""
+    if not cover:
+        return f"img/covers/{slug}.svg"
+    m = re.match(r"https?://commons\.wikimedia\.org/wiki/File:(.+)$", cover)
+    if m:
+        cover = "https://commons.wikimedia.org/wiki/Special:FilePath/" + m.group(1)
+    if "commons.wikimedia.org/wiki/Special:FilePath/" in cover and "width=" not in cover:
+        cover += ("&" if "?" in cover else "?") + "width=400"
+    return cover
+
+
 def blurb_of(g):
     desc = (g.get("description") or "").strip().split("\n")[0]
     return (desc[:200] + "…") if len(desc) > 200 else desc
 
 
 def main():
+    build_covers.main()
     paths = sorted(glob.glob(os.path.join(GRAMMARS_DIR, "*", "grammar.json")))
     grammars_index = []
     for path in paths:
@@ -101,6 +123,8 @@ def main():
             "default_preview": g.get("default_preview"),
             "items": len(g.get("items", [])),
             "cover_image_url": g.get("cover_image_url"),
+            "thumb": thumb_of(slug, g.get("cover_image_url")),
+            "mark": f"img/covers/{slug}.svg",
             "blurb": blurb_of(g),
             "path": f"grammars/{slug}/grammar.json",
             "provenance": "living",

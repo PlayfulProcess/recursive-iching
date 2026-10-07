@@ -591,6 +591,7 @@
 </head>
 <body>
     <script src="grammar-loader.js"></script>
+    <script src="dimension-engine.js?v=2"></script>
 
     <site-header active="tree"></site-header>
 
@@ -672,6 +673,10 @@
         let grammarId = '';
         let focusPath = [];     // stack of item IDs for drill-down
         let collapsedLevels = new Set(); // level numbers that are collapsed
+        // The item that stands for the grammar itself (e.g. "The Tree of the Changes" over its
+        // eight branches): the page heading already names it, so it is not drawn as a lone
+        // top level of one node (Oct 7 2026; DimensionEngine.grammarRootId).
+        let grammarRoot = null;
 
         // ── Helpers ──
         function escapeHtml(str) {
@@ -813,7 +818,7 @@
         /** Get items to display based on focus state (pill-group items excluded — they're chips) */
         function getVisibleItems() {
             const exclude = getPillExcludeSet();
-            const keep = i => !exclude.has(i.id);
+            const keep = i => !exclude.has(i.id) && i.id !== grammarRoot;
             if (focusPath.length === 0) {
                 return allItems.filter(keep);
             }
@@ -893,6 +898,7 @@
             });
 
             allItems = rawItems;
+            grammarRoot = window.DimensionEngine ? DimensionEngine.grammarRootId(allItems) : null;
 
             // Resolve connected-grammar references (name + link) before render,
             // so the detail modal shows real grammar names instead of ids.
@@ -925,13 +931,14 @@
                 }
             }
 
-            // Stats
-            const levels = [...new Set(allItems.map(i => i.level))].sort();
+            // Stats (the grammar's own root is the grammar, not one more item or level)
+            const shown = allItems.filter(i => i.id !== grammarRoot);
+            const levels = [...new Set(shown.map(i => i.level))].sort();
             const maxLevel = Math.max(...levels);
-            const baseCount = allItems.filter(i => i.level === 1).length;
-            const emergenceCount = allItems.filter(i => i.level > 1).length;
+            const baseCount = shown.filter(i => i.level === 1).length;
+            const emergenceCount = shown.filter(i => i.level > 1).length;
             document.getElementById('tree-stats').innerHTML =
-                `<span>${allItems.length} items</span>` +
+                `<span>${shown.length} items</span>` +
                 `<span>${baseCount} base</span>` +
                 `<span>${emergenceCount} emergences</span>` +
                 `<span>${maxLevel} levels</span>`;

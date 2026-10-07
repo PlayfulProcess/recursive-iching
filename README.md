@@ -38,6 +38,7 @@ recursive-iching/
 ├── course/three-lenses.manifest.json + pages/course-viewer.html
 │                                  the Three Lenses reading, chapters read live from three-lenses-64
 ├── scripts/build_collection.py    rebuild grammars/_collection.json after adding/editing a grammar
+│                                  (it also redraws img/covers/, each grammar's mark, via build_covers.py)
 ├── recursive-eco.json             channel manifest (how recursive.eco imports this repo)
 ├── ids.json                       slug -> recursive.eco grammar UUID (filled Oct 6 2026; not imported yet)
 └── GRAMMAR_FORMAT.md              grammar-JSON format reference — mirrored copy; canonical version is
@@ -63,7 +64,7 @@ the full build record.
 
 ## Book mode — a book you cast (September 2026)
 
-The Path Caster has a fourth mode, **Cast your Book**. The destiny is fixed to Hexagram 1, the
+The Path Caster has a fourth way, **Cast your book** (`caster.html?mode=book`). The destiny is fixed to Hexagram 1, the
 Creative. The reader casts where they are, reads a fixed opening, advances one hexagram at a time —
 what the hexagram is (Learn), its story if one has been written, the changing line that carries them
 on — and writes their own transition under each step. At the end they save the walk as their own

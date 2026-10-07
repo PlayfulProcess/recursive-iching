@@ -194,7 +194,8 @@ recursive.eco. A one-line platform fix would cover every grammar, not only this 
 | `i-ching-summarized` | `b5161d12` | Published; renamed "The 64 Hexagrams" on import |
 | `iching-hd-meta-categories` | `ad36491a` | Published |
 | `repair-iching` | `b7a59594` | Link. The app's items have no `metadata.number`; the import adds it |
-| `ten-wings`, `tree-of-the-iching` | none | created new on import |
+| `ten-wings` | `e249829d` | **Oct 7:** created in the app as **Private** from this repo's `main`, and mapped; not in `_public_now` until she publishes it |
+| `tree-of-the-iching` | none | created new on import (PR #4 open) |
 | `meta-iching`, `the-recursive-iching-book` | none | skipped (`_generated`) |
 | `three-lenses-64` | none | skipped (`_source_of_truth: "repo"`) |
 
@@ -214,3 +215,12 @@ Item 7 (refresh `viewers/cards.html`) is closed without a refresh. Under the Oct
 (recursive-eco `docs/future_plan/DESIGN-shells-and-shared-previews-2026-10.md`), a partner repo
 keeps a shell and its grammars, and recursive.eco owns every preview. This repo's copied viewers
 go when step P3 replaces them with framed previews. See `CLAUDE.md`.
+
+## Oct 7 2026: corrections carried over, the import still to run
+
+See [`PARITY-with-recursive-eco-2026-10-07.md`](PARITY-with-recursive-eco-2026-10-07.md). Without
+running the channel import, the five mapped grammars got only additive or corrective changes, each
+with its version ids: King Wen `number` on every hexagram item (V-1 is fixed in their data), the
+five Zhouyi lines split out of the line before them, and one broken cover. Ten Wings was created as
+a Private grammar and mapped. The renames, rewrites and category changes the import would make are
+listed there, for her decision before it runs.

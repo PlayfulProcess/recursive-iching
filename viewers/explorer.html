@@ -146,9 +146,9 @@
   <div class="title">Emergence Explorer <span class="sub">— drag fields to pivot the items; every grouping is an emergence</span></div>
   <button id="deckbtn" title="Pick one or many grammars">✦ Grammars ▾</button>
   <span class="spacer"></span>
-  <button id="mode-cards" class="active">Cards</button>
-  <button id="mode-counts">∑ Counts</button>
-  <button id="mode-sections">§ Sections</button>
+  <button id="mode-cards" class="active" title="Show each item as a card">Cards</button>
+  <button id="mode-counts" title="Show how many items fall in each group (put a field in Rows or Columns first)">∑ Counts</button>
+  <button id="mode-sections" title="Show one section's text on every item; choose the section in the menu that appears">§ Sections</button>
   <select id="section-pick" title="Which section to render" style="display:none;background:var(--surface);color:var(--ink);border:1px solid #cfc8ba;border-radius:7px;padding:5px 8px;font-size:12px;font-weight:600;cursor:pointer;max-width:200px;"></select>
   <label title="Card size" style="display:inline-flex;align-items:center;gap:5px;font-size:12px;color:#6b6457;">
     <span>⊕</span>
@@ -157,7 +157,7 @@
     <span id="zoom-pct" style="min-width:32px;color:#4a4439;font-size:11px;">100%</span>
   </label>
   <button id="sidebar-btn" title="Toggle sidebar layout">◧</button>
-  <button id="reset">↺ Reset</button>
+  <button id="reset" title="Clear every grouping and filter">↺ Reset</button>
 </div>
 
 <div id="main">
@@ -187,7 +187,7 @@
 <div id="lb" onclick="this.style.display='none'"><img id="lbimg" src="" alt=""><div class="cap" id="lbcap"></div></div>
 <div id="hovprev"><img alt=""></div>
 
-<script src="dimension-engine.js?v=1"></script>
+<script src="dimension-engine.js?v=2"></script>
 <script>
 (() => {
 const $ = s => document.querySelector(s);
@@ -694,9 +694,12 @@ async function boot(){
   if (!sectionField && sectionGroups.length) sectionField = sectionGroups[0].key;
   populateSectionPick();
   for (const r of records) byId[r.__id] = r;
-  // resolve emergence names now that byId is full
-  for (const r of records) if (r.__parents.length)
-    r.emergence = r.__parents.map(p => (byId[p]?.__name || p).split(' — ')[0].slice(0,40));
+  // resolve emergence names now that byId is full (never the grammar's own root: as a group
+  // it would hold the whole grammar; DimensionEngine.grammarRootId)
+  for (const r of records) {
+    const groups = r.__parents.filter(p => !byId[p]?.__grammarRoot);
+    if (groups.length) r.emergence = groups.map(p => (byId[p]?.__name || p).split(' — ')[0].slice(0,40));
+  }
   fields = discoverFields(records);
   fieldParent = inferHierarchy(records, fields);
   let restored = false;

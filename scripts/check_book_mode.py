@@ -37,11 +37,14 @@ try:
         assert pg.locator(".hexcard").count() == 1, "origin card should be alone at start"
         assert pg.locator("textarea.bknote").count() == 1, "transition box missing on origin"
         pg.fill("textarea.bknote", "test transition on the origin")
-        # advance to the end
-        for _ in range(40):
-            if pg.is_hidden("#next-btn") or pg.is_disabled("#next-btn"):
+        # advance to the end. Book mode has its own button under the last card ("Cast the next
+        # hexagram", #book-next, since Sep 6 2026); the shared #next-btn stays hidden there, so
+        # this loop used to stop at once and the check timed out waiting for the end.
+        assert pg.is_hidden("#next-btn"), "book mode should hide the shared Next step button"
+        for _ in range(80):
+            if pg.locator("#book-next").count() == 0:
                 break
-            pg.click("#next-btn")
+            pg.click("#book-next")
         pg.wait_for_selector("#complete-banner:not([hidden])")
         frames = pg.locator(".framecard").count()
         assert frames == 2, f"expected intro+end frames, got {frames}"
