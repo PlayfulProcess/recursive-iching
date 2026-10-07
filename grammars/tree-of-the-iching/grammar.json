@@ -62,7 +62,7 @@
       "title": "Mawangdui Silk Texts",
       "year": 2026,
       "url": "https://en.wikipedia.org/wiki/Mawangdui_Silk_Texts?oldid=1375679063",
-      "note": "lead only"
+      "note": "the whole (short) article read Oct 6 2026 (the lead on Oct 4)"
     },
     {
       "key": "wp_guicang",
@@ -86,7 +86,7 @@
       "title": "Jing Fang",
       "year": 2026,
       "url": "https://en.wikipedia.org/wiki/Jing_Fang?oldid=1366108447",
-      "note": "lead read Oct 4; on Oct 5 the lead gives 78–37 BC"
+      "note": "the whole article read Oct 6 2026 (lead gives 78-37 BC)"
     },
     {
       "key": "wp_taixuan",
@@ -94,7 +94,7 @@
       "title": "Taixuanjing",
       "year": 2026,
       "url": "https://en.wikipedia.org/wiki/Taixuanjing?oldid=1376890778",
-      "note": "lead only"
+      "note": "the whole article read Oct 6 2026, not the lead only"
     },
     {
       "key": "wp_wangbi",
@@ -102,7 +102,7 @@
       "title": "Wang Bi",
       "year": 2026,
       "url": "https://en.wikipedia.org/wiki/Wang_Bi?oldid=1342450800",
-      "note": "lead only"
+      "note": "the whole article read Oct 6 2026, not the lead only"
     },
     {
       "key": "wp_shaoyong",
@@ -110,7 +110,7 @@
       "title": "Shao Yong",
       "year": 2026,
       "url": "https://en.wikipedia.org/wiki/Shao_Yong?oldid=1366123107",
-      "note": "lead only"
+      "note": "the whole article read Oct 6 2026 (its lead gives 1011–1077, its references cite Arrault under 1012–1077)"
     },
     {
       "key": "wp_zhuxi",
@@ -118,7 +118,7 @@
       "title": "Zhu Xi",
       "year": 2026,
       "url": "https://en.wikipedia.org/wiki/Zhu_Xi?oldid=1377078155",
-      "note": "lead only"
+      "note": "lead, infobox and Legacy section read Oct 6 2026 (1313 is given there for his Four Books commentaries)"
     },
     {
       "key": "wp_liuyiming",
@@ -204,14 +204,7 @@
       "author": "Edward L. Shaughnessy",
       "title": "The Composition of the Zhouyi (PhD dissertation, Stanford)",
       "year": 1983,
-      "note": "not opened; cited from memory"
-    },
-    {
-      "key": "shaughnessy1996",
-      "author": "Edward L. Shaughnessy (tr.)",
-      "title": "I Ching: The Classic of Changes (the Mawangdui text)",
-      "year": 1996,
-      "note": "not opened; title confirmed in wp_shaughnessy (1997) and wp_iching (1996)"
+      "note": "not opened; catalogue record read Oct 6 2026 (sw_shaughnessy1983); method and result as summarised by the author in shaughnessy2022"
     },
     {
       "key": "shaughnessy2014",
@@ -223,16 +216,18 @@
     {
       "key": "rutt1996",
       "author": "Richard Rutt",
-      "title": "Zhouyi: A Bronze Age Document (first ed. titled The Book of Changes (Zhouyi))",
+      "title": "The Book of Changes (Zhouyi): A Bronze Age Document (Richmond: Curzon, 1996; paperback RoutledgeCurzon, 2002)",
       "year": 1996,
-      "note": "not opened; the title is cited in this library's zhouyi-core description"
+      "url": "https://api.pageplace.de/preview/DT0400.9781136857478_A23881750/preview-9781136857478_A23881750.pdf",
+      "note": "front matter of the 2002 paperback read Oct 6 2026 (title page: '(c) 1996 & 2002'); the translation itself not opened"
     },
     {
       "key": "lynn1994",
       "author": "Richard John Lynn (tr.)",
       "title": "The Classic of Changes: A New Translation of the I Ching as Interpreted by Wang Bi",
       "year": 1994,
-      "note": "not opened; cited from memory"
+      "url": "https://openlibrary.org/works/OL5351782W",
+      "note": "catalogue record read Oct 6 2026 (Columbia University Press, 1994); the book itself not opened"
     },
     {
       "key": "cleary1986",
@@ -273,11 +268,11 @@
     },
     {
       "key": "mcclatchie_chapter",
-      "author": "Springer (book chapter)",
-      "title": "Thomas McClatchie's Mythological Interpretation of the Yijing",
+      "author": "John Tsz-pang Lai",
+      "title": "Thomas McClatchie's Mythological Interpretation of the Yijing (in W. Ng, ed., The Making of the Global Yijing in the Modern World, Springer, pp. 107-121)",
       "year": 2021,
       "url": "https://link.springer.com/chapter/10.1007/978-981-33-6228-4_7",
-      "note": "title only; the chapter was not opened (paywall)"
+      "note": "abstract read Oct 6 2026; the chapter is paywalled, so ○"
     },
     {
       "key": "wp_cms_china",
@@ -374,6 +369,814 @@
       "year": 2026,
       "url": "https://de.wikipedia.org/wiki/Richard_Wilhelm?oldid=271010131",
       "note": "read Oct 5 2026 (Peking years; the I Ging and its base text)"
+    },
+    {
+      "key": "nielsen1990",
+      "author": "Bent Nielsen",
+      "title": "Notes on the Origins of the Hexagrams of the Book of Change (Studies in Central & East Asian Religions 3)",
+      "year": 1990,
+      "url": "http://www.shin-ibs.edu/documents/SCEAR%203/SCEAR3bNielsen.pdf",
+      "note": "whole text read Oct 6 2026; volume dated Autumn 1990, article starts p. 42 (https://www.shin-ibs.edu/research/archived-publications-and-research-projects/scear/v3/)"
+    },
+    {
+      "key": "breard_cook2020",
+      "author": "Andrea Bréard and Constance A. Cook",
+      "title": "Cracking bones and numbers: solving the enigma of numerical sequences on ancient Chinese artifacts (Archive for History of Exact Sciences 74(4): 313-343)",
+      "year": 2020,
+      "url": "https://doi.org/10.1007/s00407-019-00245-9",
+      "note": "abstract, introduction, section 2 and the passages on the Shifa read Oct 6 2026"
+    },
+    {
+      "key": "ding2018",
+      "author": "Ding Sixin (丁四新)",
+      "title": "数字卦研究的阶段、贡献及其终结 (Zhouyi yanjiu 2018, no. 5)",
+      "year": 2018,
+      "url": "https://www.rujiazg.com/article/17023",
+      "note": "read as reposted on 儒家网 (Aug 2019), Oct 6 2026; the journal original not opened"
+    },
+    {
+      "key": "zhang_lunyi2011",
+      "author": "Fudan University Center for Excavated Documents and Palaeography",
+      "title": "《張政烺論易叢稿》出版 (announcement and contents, Zhonghua Book Co., Jan 2011)",
+      "year": 2011,
+      "url": "https://www.fdgwz.org.cn/Web/Show/1382",
+      "note": "read Oct 6 2026; lists as appendix 1 the report of the first Chinese Palaeography Society symposium, Changchun, 29 Nov to 8 Dec 1978"
+    },
+    {
+      "key": "smith1989",
+      "author": "Kidder Smith, Jr.",
+      "title": "Zhouyi Interpretation from Accounts in the Zuozhuan (Harvard Journal of Asiatic Studies 49(2): 421 ff.)",
+      "year": 1989,
+      "url": "https://doi.org/10.2307/2719259",
+      "note": "opening pages and the discussion of zhi read Oct 6 2026 from a PDF copy (https://www.biroco.com/yijing/Kidder_Smith_Zhouyi_Zuozhuan.pdf); the appendix table is cut off in that copy"
+    },
+    {
+      "key": "uwpress_zuo2016",
+      "author": "Durrant, Li and Schaberg (tr.), University of Washington Press",
+      "title": "Zuo Tradition / Zuozhuan: Commentary on the 'Spring and Autumn Annals' (publisher page)",
+      "year": 2016,
+      "url": "https://uwapress.uw.edu/book/9780295999159/zuo-tradition-zuozhuan/",
+      "note": "publisher description read Oct 6 2026; the translation itself not opened"
+    },
+    {
+      "key": "wp_zuozhuan",
+      "author": "Wikipedia",
+      "title": "Zuo Zhuan",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Zuo_Zhuan?oldid=1375419816",
+      "note": "lead and 'Creation' section read Oct 6 2026"
+    },
+    {
+      "key": "wp_guoyu",
+      "author": "Wikipedia",
+      "title": "Guoyu (book)",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Guoyu_(book)?oldid=1364648223",
+      "note": "lead read Oct 6 2026"
+    },
+    {
+      "key": "tsinghua_ctwx_v4",
+      "author": "Tsinghua University Center for Excavated Texts Research and Preservation",
+      "title": "《清華大學藏戰國竹簡（肆）》出版 (posted 14 Jan 2014, text supplied by the publisher Zhongxi)",
+      "year": 2014,
+      "url": "https://www.ctwx.tsinghua.edu.cn/info/1012/1385.htm",
+      "note": "read Oct 6 2026 (via curl)"
+    },
+    {
+      "key": "li_xueqin2013",
+      "author": "Li Xueqin (interview by Yang Xue, Renmin Zhengxie Bao, 20 May 2013; reposted by Tsinghua News)",
+      "title": "重估中国古代文明的高度——李学勤先生谈清华简的学术意义及对于历史文化再认识的作用",
+      "year": 2013,
+      "url": "https://www.tsinghua.edu.cn/info/1662/58228.htm",
+      "note": "read Oct 6 2026 (via curl)"
+    },
+    {
+      "key": "cup_unearthing",
+      "author": "Columbia University Press",
+      "title": "Unearthing the Changes (publisher page, with the author's note)",
+      "year": 2014,
+      "url": "https://cup.columbia.edu/book/unearthing-the-changes/9780231161848/",
+      "note": "description, contents and author note read Oct 6 2026: the Shanghai Museum Zhouyi, the Wangjiatai Guicang fragments and the Fuyang Zhouyi, from tombs including a third-century BCE one at Wangjiatai; pub date April 2014; gives the title of Shaughnessy's Mawangdui translation. The book itself not opened"
+    },
+    {
+      "key": "hein2019",
+      "author": "Anke Hein",
+      "title": "Concepts of 'Authenticity' and the Chinese Textual Heritage in Light of Excavated Texts (in J. Gentz, ed., China and the World, Ostasien Verlag, pp. 37-63)",
+      "year": 2019,
+      "url": "https://ora.ox.ac.uk/objects/uuid:d6906f6f-c93d-47b0-a01f-5b76f27549b8",
+      "note": "Guicang sections read Oct 6 2026"
+    },
+    {
+      "key": "zhu_yuanqing2002",
+      "author": "Zhu Yuanqing (朱渊清)",
+      "title": "王家台《归藏》与《穆天子传》 (Zhouyi yanjiu 2002, no. 6)",
+      "year": 2002,
+      "url": "https://web.archive.org/web/20230317150630/https://read.cnki.net/web/Journal/Article/ZYJY200206002.html",
+      "note": "abstract only, read Oct 6 2026"
+    },
+    {
+      "key": "zh_guicang",
+      "author": "Wikipedia (zh)",
+      "title": "归藏",
+      "year": 2026,
+      "url": "https://zh.wikipedia.org/wiki/%E5%BD%92%E8%97%8F?oldid=90484056",
+      "note": "whole article read Oct 6 2026"
+    },
+    {
+      "key": "ren_liang2002",
+      "author": "Ren Junhua and Liang Ganxiong (任俊华, 梁敢雄)",
+      "title": "《归藏》、《坤乾》源流考——兼论秦简《归藏》两种摘抄本的由来与命名 (Zhouyi yanjiu 2002, no. 6)",
+      "year": 2002,
+      "url": "https://web.archive.org/web/20230317151233/https://read.cnki.net/web/Journal/Article/ZYJY200206003.html",
+      "note": "abstract only, read Oct 6 2026"
+    },
+    {
+      "key": "gao_xinhua2021",
+      "author": "Gao Xinhua",
+      "title": "秦简《归藏》所含篇目考——兼论《归藏》非汲冢《易繇阴阳卦》 (Peking University ancient-literature center collection, 2021, no. 2)",
+      "year": 2021,
+      "url": "https://ccj.pku.edu.cn/article/info?id=330457463",
+      "note": "abstract only, read Oct 6 2026"
+    },
+    {
+      "key": "shaughnessy2005",
+      "author": "Edward L. Shaughnessy",
+      "title": "A First Reading of the Shanghai Museum Bamboo-Strip Manuscript of the Zhou Yi (Early China 30, pp. 1-24)",
+      "year": 2005,
+      "url": "https://www.cambridge.org/core/journals/early-china/article/abs/first-reading-of-the-shanghai-museum-bamboostrip-manuscript-of-the-zhou-yi/E1FFD4F3760FF82FFFB9BB0095D3206A",
+      "note": "abstract and visible notes 1, 3, 7 and 34 read Oct 6 2026; article text not opened (paywall); DOI 10.1017/S0362502800002169"
+    },
+    {
+      "key": "wp_smbs",
+      "author": "Wikipedia",
+      "title": "Shanghai Museum bamboo slips",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Shanghai_Museum_bamboo_slips?oldid=1362386882",
+      "note": "the whole (short) article, read Oct 6 2026; says nothing specific about the Zhouyi"
+    },
+    {
+      "key": "zh_smbs",
+      "author": "Wikipedia (zh)",
+      "title": "上海博物馆藏战国楚竹书",
+      "year": 2026,
+      "url": "https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%8D%9A%E7%89%A9%E9%A6%86%E8%97%8F%E6%88%98%E5%9B%BD%E6%A5%9A%E7%AB%B9%E4%B9%A6?oldid=86889494",
+      "note": "lead and list of volumes read Oct 6 2026 (purchased from the Hong Kong antiquities market from May 1994; volume 3 holds the Zhouyi)"
+    },
+    {
+      "key": "shaughnessy1994",
+      "author": "Edward L. Shaughnessy",
+      "title": "A First Reading of the Mawangdui Yijing Manuscript (Early China 19, pp. 47-73)",
+      "year": 1994,
+      "url": "https://www.cambridge.org/core/journals/early-china/article/abs/first-reading-of-the-mawangdui-yijing-manuscript/8AF18025AAF4EDD7B0C56DA8A8DC4A8F",
+      "note": "abstract page and visible footnotes read Oct 6 2026; article body not opened (paywall); DOI 10.1017/S0362502800003552"
+    },
+    {
+      "key": "rutt1999",
+      "author": "Richard Rutt",
+      "title": "Opening a New Field for Dragons: Edward L. Shaughnessy's Mawangdui Yijing (review article, The Oracle: Journal of Yijing Studies 2, no. 8, Feb 1999, pp. 38-47)",
+      "year": 1999,
+      "url": "https://www.biroco.com/yijing/mawangdui.htm",
+      "note": "the whole review read Oct 6 2026 on the biroco.com copy"
+    },
+    {
+      "key": "wp_mawangdui_site",
+      "author": "Wikipedia",
+      "title": "Mawangdui",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Mawangdui?oldid=1372232383",
+      "note": "the passages on Tombs 2 and 3 read Oct 6 2026"
+    },
+    {
+      "key": "shaughnessy1997",
+      "author": "Edward L. Shaughnessy (tr.)",
+      "title": "I Ching: The Classic of Changes: The First English Translation of the Newly Discovered Second-Century B.C. Mawangdui Texts (Ballantine, Classics of Ancient China)",
+      "year": 1997,
+      "url": "https://openlibrary.org/books/OL992148M",
+      "note": "catalogue records read Oct 6 2026 (Open Library, LCCN 96030598; Internet Archive ichingclassicofc0000unse; UZH China-West 9988); the book not opened. Replaces shaughnessy1996: English Wikipedia's I Ching references, and Shaughnessy's own 2005 notes (note 34), cite it as 1996"
+    },
+    {
+      "key": "shaughnessy2001",
+      "author": "Edward L. Shaughnessy",
+      "title": "The Fuyang Zhou Yi and the Making of a Divination Manual (Asia Major 3rd series 14.1, pp. 7-18)",
+      "year": 2001,
+      "url": "https://web.archive.org/web/20230328062012/http://www2.ihp.sinica.edu.tw/file/1487MUMvFxy.pdf",
+      "note": "read in full Oct 6 2026 through the archive.org copy of the Academia Sinica PDF"
+    },
+    {
+      "key": "nylan2001",
+      "author": "Michael Nylan",
+      "title": "The Five 'Confucian' Classics (Yale University Press), publisher's excerpt with the Introduction",
+      "year": 2001,
+      "url": "https://web.archive.org/web/20131029205031/http://yalepress.yale.edu/YupBooks/pdf/0300081855.pdf",
+      "note": "front matter and Introduction read Oct 6 2026 via the archive.org copy of the publisher's PDF; the book proper not opened"
+    },
+    {
+      "key": "wp_xiping",
+      "author": "Wikipedia",
+      "title": "Xiping Stone Classics",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Xiping_Stone_Classics?oldid=1345505008",
+      "note": "the whole (short) article, read Oct 6 2026"
+    },
+    {
+      "key": "zh_xiping",
+      "author": "Wikipedia (zh)",
+      "title": "熹平石经",
+      "year": 2026,
+      "url": "https://zh.wikipedia.org/wiki/%E7%86%B9%E5%B9%B3%E7%9F%B3%E7%BB%8F?oldid=94224135",
+      "note": "lead and second paragraph read Oct 6 2026 (begun 175, finished in the 6th year of Guanghe)"
+    },
+    {
+      "key": "de_steinklassiker",
+      "author": "Wikipedia (de)",
+      "title": "Liste der Steinklassiker",
+      "year": 2025,
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Steinklassiker?oldid=258453234",
+      "note": "table row for the Xiping classics read Oct 6 2026 (gives 175)"
+    },
+    {
+      "key": "smith2012",
+      "author": "Richard J. Smith",
+      "title": "The I Ching: A Biography (Princeton University Press, Lives of Great Religious Books)",
+      "year": 2012,
+      "url": "https://press.princeton.edu/books/hardcover/9780691145099/the-i-ching",
+      "note": "not opened; the publisher's page and the Google Books description (https://books.google.com/books?id=ZZDE4UmBKzUC) read Oct 6 2026; p. 183 on McClatchie is cited via Yang 2020, pp. 198-199 on the counterculture via English Wikipedia"
+    },
+    {
+      "key": "wp_fbfc",
+      "author": "Wikipedia",
+      "title": "Four Books and Five Classics",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Four_Books_and_Five_Classics?oldid=1359042473",
+      "note": "the Five Classics section read Oct 6 2026 (order of the classics in Western and Eastern Han lists)"
+    },
+    {
+      "key": "zh_beilin",
+      "author": "Wikipedia (zh)",
+      "title": "西安碑林",
+      "year": 2026,
+      "url": "https://zh.wikipedia.org/w/index.php?oldid=94224389",
+      "note": "the entry on the Xiping Stone Classics fragment read Oct 6 2026"
+    },
+    {
+      "key": "hanshu75",
+      "author": "Ban Gu (Wikisource transcription)",
+      "title": "Hanshu ch. 75, the Jing Fang biography",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7075&oldid=1474037",
+      "note": "zh.wikisource revision 1474037, read Oct 6 2026"
+    },
+    {
+      "key": "hanshu9",
+      "author": "Ban Gu (Wikisource transcription)",
+      "title": "Hanshu ch. 9 (Annals of Emperor Yuan)",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7009&oldid=2315084",
+      "note": "zh.wikisource revision 2315084, read Oct 6 2026"
+    },
+    {
+      "key": "ck_jingshi",
+      "author": "Ulrich Theobald",
+      "title": "Jingshi yizhuan 京氏易傳 (ChinaKnowledge.de)",
+      "year": 2012,
+      "url": "http://www.chinaknowledge.de/Literature/Daoists/jingshiyizhuan.html",
+      "note": "page dated Nov 29 2012; read Oct 6 2026; the site has no revision ids"
+    },
+    {
+      "key": "sep_change",
+      "author": "Tze-Ki Hon",
+      "title": "Chinese Philosophy of Change (Yijing), Stanford Encyclopedia of Philosophy",
+      "year": 2023,
+      "url": "https://plato.stanford.edu/archives/fall2023/entries/chinese-change/",
+      "note": "substantive revision Sep 18 2023 (Fall 2023 archive); read in full Oct 6 2026; says nothing on Yang Xiong"
+    },
+    {
+      "key": "smith2009_paper",
+      "author": "Richard J. Smith",
+      "title": "The Book of Changes as a Mirror of the Mind: The Evolution of the Zhouyi in China and Beyond (paper, Fudan University, April 2009)",
+      "year": 2009,
+      "url": "https://ikgf.uni-erlangen.de/content/articles/Richard_J_Smith_-_Book_of_Changes.pdf",
+      "note": "author's PDF, drawn in part from smith2008; read Oct 6 2026 (the Eight Palace and Yang Xiong passages)"
+    },
+    {
+      "key": "hanshu87",
+      "author": "Ban Gu (Wikisource transcription)",
+      "title": "Hanshu ch. 87 (Yang Xiong biography)",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E6%BC%A2%E6%9B%B8/%E5%8D%B7087&oldid=5978122",
+      "note": "zh.wikisource revision 5978122, read Oct 6 2026"
+    },
+    {
+      "key": "unicode_taixuan",
+      "author": "Richard S. Cook, Michael Everson, Michael Nylan",
+      "title": "Proposal to add monogram, digram and tetragram characters to the UCS (ISO/IEC JTC 1/SC 2/WG 2 L2/02-089)",
+      "year": 2002,
+      "url": "http://linguistics.berkeley.edu/~rscook/pdf/UniProp-Final/02089-n2416.pdf",
+      "note": "expert contribution co-written by the translator of the Taixuanjing; English text read Oct 6 2026 (the Chinese characters came out garbled)"
+    },
+    {
+      "key": "wangbi_lueli",
+      "author": "Wang Bi (Wikisource transcription)",
+      "title": "Zhouyi lüeli 周易略例, chapter 'Mingxiang' 明象",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E7%95%A5%E4%BE%8B/%E6%98%8E%E8%B1%A1&oldid=389845",
+      "note": "zh.wikisource revision 389845, read Oct 6 2026; the lüeli is a separate short work from the Zhouyi zhu commentary"
+    },
+    {
+      "key": "sanguozhi28",
+      "author": "Chen Shou, with Pei Songzhi's notes (Wikisource transcription)",
+      "title": "Sanguozhi ch. 28, the Wang Bi passage",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E4%B8%89%E5%9C%8B%E5%BF%97/%E5%8D%B728&oldid=2386518",
+      "note": "zh.wikisource revision 2386518, read Oct 6 2026"
+    },
+    {
+      "key": "wp_shisanjing",
+      "author": "Wikipedia",
+      "title": "Shisan Jing Zhushu",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Shisan_Jing_Zhushu?oldid=1377873273",
+      "note": "read Oct 6 2026 (the table of commentators and the Wings each covers)"
+    },
+    {
+      "key": "ck_wujingzhengyi",
+      "author": "Ulrich Theobald",
+      "title": "Wujing zhengyi 五經正義 (ChinaKnowledge.de)",
+      "url": "http://www.chinaknowledge.de/Literature/Classics/wujingzhengyi.html",
+      "note": "read Oct 6 2026; gives 651 for publication"
+    },
+    {
+      "key": "tanghuiyao77",
+      "author": "Wang Pu (Wikisource transcription)",
+      "title": "Tang huiyao ch. 77, section 'Lun jingyi' 論經義",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E5%94%90%E6%9C%83%E8%A6%81/%E5%8D%B7077&oldid=1485305",
+      "note": "zh.wikisource revision 1485305, read Oct 6 2026"
+    },
+    {
+      "key": "jiutangshu4",
+      "author": "Liu Xu et al. (Wikisource transcription)",
+      "title": "Jiu Tangshu ch. 4 (Gaozong, first part)",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B74&oldid=2312023",
+      "note": "zh.wikisource revision 2312023, read Oct 6 2026"
+    },
+    {
+      "key": "jiutangshu73",
+      "author": "Liu Xu et al. (Wikisource transcription)",
+      "title": "Jiu Tangshu ch. 73 (lives of Yan Shigu and Kong Yingda)",
+      "url": "https://zh.wikisource.org/w/index.php?title=%E8%88%8A%E5%94%90%E6%9B%B8/%E5%8D%B773&oldid=2164590",
+      "note": "zh.wikisource revision 2164590, read Oct 6 2026"
+    },
+    {
+      "key": "zh_wujing",
+      "author": "Wikipedia (zh)",
+      "title": "五經正義",
+      "year": 2026,
+      "url": "https://zh.wikipedia.org/wiki/%E4%BA%94%E7%B6%93%E6%AD%A3%E7%BE%A9?oldid=86587396",
+      "note": "read Oct 6 2026"
+    },
+    {
+      "key": "ja_wujing",
+      "author": "Wikipedia (ja)",
+      "title": "五経正義",
+      "year": 2026,
+      "url": "https://ja.wikipedia.org/wiki/%E4%BA%94%E7%B5%8C%E6%AD%A3%E7%BE%A9?oldid=87420305",
+      "note": "read Oct 6 2026"
+    },
+    {
+      "key": "wp_kongyingda",
+      "author": "Wikipedia",
+      "title": "Kong Yingda",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Kong_Yingda?oldid=1260208775",
+      "note": "read Oct 6 2026"
+    },
+    {
+      "key": "lc_shaoyong",
+      "author": "Library of Congress",
+      "title": "Name authority record n81008176: Shao, Yong, 1011-1077",
+      "year": 2026,
+      "url": "https://id.loc.gov/authorities/names/n81008176.html",
+      "note": "heading read Oct 6 2026"
+    },
+    {
+      "key": "zh_shaoyong",
+      "author": "Wikipedia (zh)",
+      "title": "邵雍",
+      "year": 2026,
+      "url": "https://zh.wikipedia.org/wiki/%E9%82%B5%E9%9B%8D?oldid=93830370",
+      "note": "the whole article, read Oct 6 2026; gives 21 January 1012 as the birth date and quotes Zhu Zhen and Zhu Xi on the diagrams' lineage"
+    },
+    {
+      "key": "wp_kingwen",
+      "author": "Wikipedia",
+      "title": "King Wen sequence",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/King_Wen_sequence?oldid=1340602649",
+      "note": "the whole article, read Oct 6 2026"
+    },
+    {
+      "key": "benyi_siku",
+      "author": "Zhu Xi (Wu Ge's 1265 print, in the Siku quanshu)",
+      "title": "Yuanben Zhouyi benyi 原本周易本義, with the Siku editors' tiyao",
+      "year": 1265,
+      "url": "https://ctext.org/wiki.pl?if=en&res=697461",
+      "note": "ctext text (OCR), read Oct 6 2026: the tiyao (dated 1781), Wu Ge's preface and the notes under the nine diagrams; ctext's own site sits behind a bot check, so read through its public API"
+    },
+    {
+      "key": "hu_wei_yitu",
+      "author": "Hu Wei",
+      "title": "Yitu mingbian 易圖明辨 (Siku quanshu edition)",
+      "url": "https://ctext.org/wiki.pl?if=en&res=512654",
+      "note": "ctext text (OCR), juan 6, 7, 10 and the front matter read Oct 6 2026; the Song history's life of Shao Yong is quoted in juan 10"
+    },
+    {
+      "key": "siku_yitu_tiyao",
+      "author": "Siku quanshu editors (tiyao); Wan Sitong (preface)",
+      "title": "Tiyao and preface to Hu Wei's Yitu mingbian (Shoushange congshu edition)",
+      "year": 1781,
+      "url": "https://ctext.org/wiki.pl?if=en&res=330900",
+      "note": "ctext text (OCR), read Oct 6 2026; a Qing summary of the dispute over the diagrams"
+    },
+    {
+      "key": "wang_maohong",
+      "author": "Wang Maohong",
+      "title": "Yi benyi jiutu lun 易本義九圖論, in Baitian zazhu, juan 1 (Siku quanshu edition)",
+      "url": "https://ctext.org/wiki.pl?if=en&chapter=363374",
+      "note": "ctext text (OCR), read Oct 6 2026"
+    },
+    {
+      "key": "adler_zhuxi_yi",
+      "author": "Joseph A. Adler",
+      "title": "Zhu Xi's Reading of the Yijing (forthcoming in Tze-ki Hon, ed., Dao Companion to the Book of Changes, Springer)",
+      "url": "https://www2.kenyon.edu/Depts/Religion/Fac/Adler/Writings/Zhu%20Xi%20and%20Yi.pdf",
+      "note": "author's pre-publication text on the Kenyon College site, read Oct 6 2026"
+    },
+    {
+      "key": "cheng_yizhuan",
+      "author": "Cheng Yi",
+      "title": "Zhouyi Chengshi zhuan 周易程氏傳 (Liuan Tu shi Qiuwozhai edition), with the Yi zhuan xu",
+      "url": "https://ctext.org/wiki.pl?if=en&chapter=675913",
+      "note": "ctext text (OCR), read Oct 6 2026; preface dated Yuanfu 2 (1099)"
+    },
+    {
+      "key": "yichuan_siku",
+      "author": "Cheng Yi",
+      "title": "Yichuan Yizhuan 伊川易傳 (Siku quanshu edition), with the Siku editors' tiyao",
+      "url": "https://ctext.org/wiki.pl?if=en&res=924459",
+      "note": "ctext text (OCR), read Oct 6 2026; preface at chapter=204697, tiyao at chapter=467412"
+    },
+    {
+      "key": "cheung2021",
+      "author": "Cheung Hiu Yu",
+      "title": "Consolidation of the Cheng School: Yang Shi and Yin Tun in the Early-Twelfth Century, Asia Major 3rd ser. 34.1: 111–146",
+      "year": 2021,
+      "url": "https://www1.ihp.sinica.edu.tw/storage/publish5L/08_AsMaj,_v34.1,_Cheung.pdf",
+      "note": "journal article; the section on the Yizhuan's transmission read Oct 6 2026"
+    },
+    {
+      "key": "adler_review_harrington",
+      "author": "Joseph A. Adler",
+      "title": "Review of Cheng Yi, The Yi River Commentary on the Book of Changes, tr. L. Michael Harrington (Yale UP, 2019), Dao 18: 631–636",
+      "year": 2019,
+      "url": "https://doi.org/10.1007/s11712-019-09692-1",
+      "note": "read in the author's copy on the Kenyon College site, Oct 6 2026"
+    },
+    {
+      "key": "adler2021_divination",
+      "author": "Joseph A. Adler",
+      "title": "Zhu Xi's Conception of Yijing Divination as Spiritual Practice, ch. 2 in Benjamin Wai-ming Ng, ed., The Making of the Global Yijing in the Modern World (Springer)",
+      "year": 2021,
+      "url": "https://www2.kenyon.edu/Depts/Religion/Fac/Adler/Writings/Zhu%20Xi%27s%20Conception%20of%20Divination.pdf",
+      "note": "author's copy on the Kenyon College site, read Oct 6 2026"
+    },
+    {
+      "key": "yuanshi81",
+      "author": "Song Lian et al.",
+      "title": "Yuan shi 元史, juan 81 (Xuanju zhi 1), Wuying dian edition",
+      "url": "https://ctext.org/wiki.pl?if=en&chapter=7514376",
+      "note": "ctext text, read Oct 6 2026; a second ctext edition (chapter=314915) reads the same"
+    },
+    {
+      "key": "qimeng_preface",
+      "author": "Zhu Xi",
+      "title": "Yixue qimeng yuanxu 易學啟蒙原序, as printed in Hu Fangping, Yixue qimeng tongshi (Siku quanshu edition)",
+      "year": 1186,
+      "url": "https://ctext.org/wiki.pl?if=en&chapter=886999",
+      "note": "ctext text (OCR), read Oct 6 2026; the Siku tiyao at chapter=88168 also dates the preface to Chunxi bingwu"
+    },
+    {
+      "key": "strickland_lewis2022",
+      "author": "Lloyd Strickland and Harry Lewis (eds., trs.)",
+      "title": "Leibniz on Binary: The Invention of Computer Arithmetic (MIT Press); front matter and contents list",
+      "year": 2022,
+      "url": "https://philpapers.org/archive/STRLOB.pdf",
+      "note": "front matter only (contents with the letter and paper dates), read Oct 6 2026"
+    },
+    {
+      "key": "strickland_numsys",
+      "author": "Lloyd Strickland",
+      "title": "Leibniz on Number Systems (chapter in B. Sriraman (ed.), Handbook of the History and Philosophy of Mathematical Practice, Springer); author's PDF",
+      "year": 2024,
+      "url": "https://philpapers.org/archive/STRLON.pdf",
+      "note": "whole chapter read Oct 6 2026 (author's PDF, not the Springer page)"
+    },
+    {
+      "key": "leibniz1703",
+      "author": "G. W. Leibniz; Académie royale des sciences",
+      "title": "Explication de l'arithmétique binaire, in Histoire de l'Académie royale des sciences, année 1703 (Mémoires pp. 85-89; scan of a later second edition)",
+      "year": 1703,
+      "url": "https://archive.org/details/histoiredelacad03laca",
+      "note": "OCR text read Oct 6 2026, with Fontenelle's note in the Histoire; the volume was first printed in 1705"
+    },
+    {
+      "key": "skqs_yitumingbian",
+      "author": "Hu Wei (Wikisource transcription of the Siku quanshu copy)",
+      "title": "易圗明辨 (四庫全書本): Hu Wei's preface (1706) and the Siku editors' note",
+      "year": 2026,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=529545",
+      "note": "preface and editors' note read Oct 6 2026; transcription not yet proofread against the scan"
+    },
+    {
+      "key": "henderson1994",
+      "author": "John B. Henderson",
+      "title": "Chinese Cosmographical Thought: The High Intellectual Tradition (chapter 8 in The History of Cartography, vol. 2, book 2, University of Chicago Press)",
+      "year": 1994,
+      "url": "https://press.uchicago.edu/books/hoc/HOC_V2_B2/HOC_VOLUME2_Book2_chapter8.pdf",
+      "note": "publisher's chapter PDF read Oct 6 2026; a figure caption gives 1706 for the Yi tu mingbian"
+    },
+    {
+      "key": "skqs_zongmu_006",
+      "author": "Ji Yun and others (Wikisource transcription)",
+      "title": "四庫全書總目提要 卷六: entries on the Yitu mingbian, Huang Zongxi's Yixue xiangshu lun, Huang Zongyan's Tushu bianhuo and the Zhouyi zhezhong",
+      "year": 2026,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=1963706",
+      "note": "entries read Oct 6 2026; 18th-century catalogue notes"
+    },
+    {
+      "key": "pi_jingxue_lishi",
+      "author": "Pi Xirui (Wikisource transcription)",
+      "title": "經學歷史",
+      "year": 2026,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=7904884",
+      "note": "the sentence on Hu Wei's Yitu mingbian read Oct 6 2026; late-Qing work"
+    },
+    {
+      "key": "skqs_zhezhong",
+      "author": "Kangxi Emperor (preface); Li Guangdi and others (comp.); Wikisource transcription",
+      "title": "御纂周易折中 (四庫全書本): Kangxi preface, list of cited authors, editors' names, Siku note",
+      "year": 2026,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=738673",
+      "note": "front matter read Oct 6 2026; work dated 1715; transcription not yet proofread against the scan"
+    },
+    {
+      "key": "zhezhong_fanli",
+      "author": "Li Guangdi and others (comp.); Wikisource transcription",
+      "title": "御纂周易折中 凡例 (editorial principles)",
+      "year": 2026,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=528517",
+      "note": "read Oct 6 2026; the work's own statement of how it is arranged"
+    },
+    {
+      "key": "legge1882_scan",
+      "author": "James Legge (tr.); F. Max Müller (ed.)",
+      "title": "The Yî King, Sacred Books of the East vol. 16, first edition (Oxford: Clarendon Press, 1882), archive.org scan",
+      "year": 1882,
+      "url": "https://archive.org/details/wg916",
+      "note": "public domain scan, OCR text; title page 1882, preface dated Oxford 16 March 1882; read Oct 6 2026 (preface pp. xiii-xxi, Introduction ch. 1 on the Khang-hsi edition and its 218 scholars, the notes, and the note at pp. 396-397); the same preface and introduction also read in the BYU scan of vol. 16 (archive.org/details/sacredbooksofchi16conf)"
+    },
+    {
+      "key": "hon2005",
+      "author": "Tze-ki Hon",
+      "title": "Constancy in Change: A Comparison of James Legge's and Richard Wilhelm's Interpretations of the Yijing (Monumenta Serica 53)",
+      "year": 2005,
+      "url": "https://doi.org/10.1179/mon.2005.53.1.010",
+      "note": "read Oct 6 2026 in a PDF copy (biroco.com/yijing/Hon_Legge_Wilhelm.pdf; OCR spacing damaged); the DOI page itself was blocked"
+    },
+    {
+      "key": "liu_chanzhen_text",
+      "author": "Liu Yiming (Wikisource transcription of the text in the Daoshu shi'er zhong)",
+      "title": "周易闡真: Liu's own preface (dated 1798), Yang Fangcan's preface (1800) and the commentary on the 64 hexagrams",
+      "year": 2026,
+      "url": "https://zh.wikisource.org/w/index.php?oldid=1382443",
+      "note": "prefaces and juan 1-4 read Oct 6 2026; transcription not checked against a scan"
+    },
+    {
+      "key": "ol_taoist_iching",
+      "author": "Open Library (catalogue record)",
+      "title": "Zhou yi chan zhen, record for Cleary's The Taoist I Ching (Shambhala, 1986), with the publisher's description",
+      "year": 2026,
+      "url": "https://openlibrary.org/works/OL4628949W",
+      "note": "read Oct 6 2026; the description gives 1796 for the commentary"
+    },
+    {
+      "key": "pregadio2025",
+      "author": "Fabrizio Pregadio",
+      "title": "Dictionary of Taoist Internal Alchemy (Brill, Handbook of Oriental Studies 4/38), sample pages",
+      "year": 2025,
+      "url": "https://fabriziopregadio.com/files/PREGADIO_Dictionary_of_Taoist_Internal_Alchemy_SAMPLE.pdf",
+      "note": "publisher's sample read Oct 6 2026 (sources list, entry ZYCZ)"
+    },
+    {
+      "key": "li2022",
+      "author": "Weirong Li",
+      "title": "Striving for the 'Original' Meaning: A Historical Survey of Yijing's English Translations (in L. Qi and S. Tobias, eds., Encountering China's Past, Springer)",
+      "year": 2022,
+      "url": "https://doi.org/10.1007/978-981-19-0648-0_10",
+      "note": "full chapter read Oct 6 2026 in the copy at philpapers.org/archive/LISFTY.pdf; calls McClatchie's the first complete English translation; says Legge and Wilhelm worked from the 1715 imperial edition"
+    },
+    {
+      "key": "yang2020",
+      "author": "Yang Ping",
+      "title": "The Jesuit Translation and Interpretation of the Yijing (Classic of Changes) in Historical and Cultural Perspective, International Forum of Teaching and Studies 16(2)",
+      "year": 2020,
+      "url": "https://americanscholarspress.us/journals/IFST/pdf/IFOTS-2-2020/IFOTS-v16n2art5.pdf",
+      "note": "full article read Oct 6 2026; summarises McClatchie from Smith 2012 p. 183 (so a second-hand source on his method)"
+    },
+    {
+      "key": "legge1899_scan",
+      "author": "James Legge (tr.); F. Max Müller (ed.)",
+      "title": "The Yi King, SBE 16, second edition (Oxford: Clarendon Press, 1899), in a BYU scan of 'The Sacred Books of China: the texts of Confucianism'",
+      "year": 1899,
+      "url": "https://archive.org/details/sacredbooksofchi12conf",
+      "note": "title page: 'Vol. XVI, Second edition, 1899'; cleaner OCR of the preface than the 1882 scan; read Oct 6 2026 (preface pp. xiii-xxi)"
+    },
+    {
+      "key": "sun2025",
+      "author": "Yiwen Sun, Wenzhen Jin, Dimitra Amarantidou",
+      "title": "From Divination to Virtue and Action: The Confucian Hermeneutic Approach to the Yijing Through Decisive Phrases (Duanci), Religions 16(7): 943",
+      "year": 2025,
+      "url": "https://doi.org/10.3390/rel16070943",
+      "note": "CC BY; read Oct 6 2026; cites McClatchie 1973 p. xiii (phallic worship) and Jung's foreword pp. xxi-xxxix"
+    },
+    {
+      "key": "hathi_mcclatchie",
+      "author": "HathiTrust (catalogue record)",
+      "title": "Catalogue record: McClatchie, A translation of the Confucian I ching, or, the 'classic of change' (Taipei, 1973; reprint of 1876)",
+      "year": 2026,
+      "url": "https://catalog.hathitrust.org/Record/000326273",
+      "note": "read Oct 6 2026 via the catalogue API (the page itself blocks scripts); lists the translator's name as Thomas Russell Hillier McClatchie (d. 1886), apparently a conflation"
+    },
+    {
+      "key": "wilhelm1924_intro",
+      "author": "Richard Wilhelm",
+      "title": "Vorrede zur ersten Ausgabe and Einleitung, in I Ging: Das Buch der Wandlungen (Jena: Eugen Diederichs, 1924)",
+      "year": 1924,
+      "url": "https://schuledesrades.org/public/iging/buch/",
+      "note": "read Oct 6 2026 in the text hosted by Schule des Rades (edition not stated); preface dated Peking, summer 1923; printed title page not seen"
+    },
+    {
+      "key": "hathi_wilhelm1924",
+      "author": "HathiTrust (catalogue record)",
+      "title": "Catalogue record: I Ging; das Buch der Wandlungen, trans. Richard Wilhelm (Jena: E. Diederichs, 1924, 2 vols)",
+      "year": 2026,
+      "url": "https://catalog.hathitrust.org/Record/103049296",
+      "note": "NYPL copies; read Oct 6 2026 via the HathiTrust catalogue API (the page blocks scripts)"
+    },
+    {
+      "key": "wp_lao_naixuan",
+      "author": "Wikipedia",
+      "title": "Lao Naixuan",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Lao_Naixuan?oldid=1357898345",
+      "note": "short article, read Oct 6 2026 (dates, work with Wilhelm)"
+    },
+    {
+      "key": "jung1949",
+      "author": "C. G. Jung",
+      "title": "Foreword, in The I Ching or Book of Changes (Wilhelm/Baynes), Bollingen Series XIX, pp. xxi-xxxix; dated Zurich 1949",
+      "year": 1949,
+      "url": "https://en.wikipedia.org/wiki/Carl_Jung_publications?oldid=1367333835",
+      "note": "page range from en-WP 'Carl Jung publications'; the text was read Oct 6 2026 in unofficial web transcriptions, not the printed book"
+    },
+    {
+      "key": "richter1993",
+      "author": "Ursula Richter",
+      "title": "Historical Scepticism in the New Culture Era: Gu Jiegang and the 'Debate on Ancient History' (Bulletin of the Institute of Modern History, Academia Sinica, no. 23, pp. 355-389)",
+      "year": 1993,
+      "url": "https://www.mh.sinica.edu.tw/MHDocument/PublicationDetail/PublicationDetail_788.pdf",
+      "note": "scanned PDF; pp. 370-373 read Oct 6 2026 as page images: vol. 1 (1926), vol. 2 (1930), vol. 3 (1931), vol. 7 (1941)"
+    },
+    {
+      "key": "nlc_gushibian3",
+      "author": "National Library of China (catalogue record, on Wikimedia Commons)",
+      "title": "Gu shi bian, vol. 3: catalogue record and table of contents (NLC416-02jh004435-14639)",
+      "year": 2023,
+      "url": "https://commons.wikimedia.org/w/index.php?title=File:NLC416-02jh004435-14639_%E5%8F%A4%E5%8F%B2%E8%BE%A8.pdf&oldid=775451736",
+      "note": "the Commons file is a 748-page scan of the volume; what was read, Oct 6 2026, is its description page: the NLC catalogue data (Pushe, 1931, 706 pp.; part 1 on the Zhouyi, 14 papers; part 2 on the Poetry, 50 papers) and the full table of contents"
+    },
+    {
+      "key": "nlc_gushibian1",
+      "author": "National Library of China (catalogue record, on Wikimedia Commons)",
+      "title": "Gu shi bian, vol. 1: catalogue record (NLC416-02jh004433-14625)",
+      "year": 2025,
+      "url": "https://commons.wikimedia.org/w/index.php?title=File:NLC416-02jh004433-14625_%E5%8F%A4%E5%8F%B2%E8%BE%A8.pdf&oldid=1072810012",
+      "note": "description page read Oct 6 2026: Pushe, 民國15 [1926]"
+    },
+    {
+      "key": "nlc_gushibian7",
+      "author": "National Library of China (catalogue record, on Wikimedia Commons)",
+      "title": "Gu shi bian, vol. 7 (three parts, eds. Lu Simian and Tong Shuye): catalogue record (NLC416-07jh009608-79431)",
+      "year": 2023,
+      "url": "https://commons.wikimedia.org/w/index.php?title=File:NLC416-07jh009608-79431_%E5%8F%A4%E5%8F%B2%E8%BE%A8_%E7%AC%AC1%E5%8D%B7.pdf&oldid=772976343",
+      "note": "description page read Oct 6 2026: Kaiming shudian, 民國30 [1941], 3 parts; the records for the other two parts carry the same date"
+    },
+    {
+      "key": "shaughnessy2022",
+      "author": "Edward L. Shaughnessy",
+      "title": "The Origin and Early Development of the Zhou Changes (Leiden: Brill, open access), chapter 1 and Works Cited",
+      "year": 2022,
+      "url": "https://brill.com/display/book/9789004513945/BP000002.xml",
+      "note": "read Oct 6 2026: chapter 1 (dating of the text; Gu Jiegang, Li Jingchi, Kunst; the author's own summary of his 1983 dissertation, with its notes) and the Works Cited at https://brill.com/display/book/9789004513945/back-1.xml"
+    },
+    {
+      "key": "pkd_vertex1974",
+      "author": "Philip K. Dick (interviewed by Arthur Byron Cover)",
+      "title": "Vertex Interview with Philip K. Dick, Vertex vol. 1 no. 6, Feb 1974 (web reprint on philipdick.com)",
+      "year": 1974,
+      "url": "https://philipdick.com/literary-criticism/frank-views-archive/vertex-interview-with-philip-k-dick/",
+      "note": "web reprint read Oct 6 2026; the printed issue was not opened"
+    },
+    {
+      "key": "pkd_sfr1976",
+      "author": "Philip K. Dick (interviewed by Daniel DePerez)",
+      "title": "An Interview With Philip K. Dick, Science Fiction Review no. 19 (web reprint on philipdick.com)",
+      "year": 1976,
+      "url": "https://philipdick.com/literary-criticism/frank-views-archive/interview-with-philip-k-dick-science-fiction-review/",
+      "note": "web reprint read Oct 6 2026; its date line ('conducted Sept 10, 1976' vs the Aug 1976 issue) is inconsistent"
+    },
+    {
+      "key": "sw_shaughnessy1983",
+      "author": "Stanford Libraries (SearchWorks)",
+      "title": "Catalogue record: Shaughnessy, The composition of the Zhouyi (Ph.D. thesis, Stanford, 1983)",
+      "year": 2026,
+      "url": "https://searchworks.stanford.edu/view/1066843",
+      "note": "read Oct 6 2026; the dissertation text itself was not opened"
+    },
+    {
+      "key": "wp_humandesign",
+      "author": "Wikipedia",
+      "title": "Human Design",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Human_Design?oldid=1372852944",
+      "note": "the whole article, read Oct 6 2026; its lead calls the system pseudoscientific and lists astrology, I Ching, Kabbalah, Vedic philosophy and modern physics"
+    },
+    {
+      "key": "jovian_ra",
+      "author": "Jovian Archive",
+      "title": "Ra Uru Hu (About page)",
+      "year": 2026,
+      "url": "https://jovianarchive.com/pages/about-ra-uru-hu",
+      "note": "read Oct 6 2026; the movement's own account of its origin (no revision id exists); cited for 'by its own account', not as independent evidence"
+    },
+    {
+      "key": "ra_rave_iching",
+      "author": "Ra Uru Hu",
+      "title": "The Complete Rave I'Ching (Jovian Archive Corporation, English edition)",
+      "year": 2001,
+      "note": "read in full Oct 6 2026 from a copy hosted by a third party, not linked here: the Jovian Archive holds the rights"
+    },
+    {
+      "key": "wp_hexlist",
+      "author": "Wikipedia",
+      "title": "List of hexagrams of the I Ching",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/List_of_hexagrams_of_the_I_ching?oldid=1344901076",
+      "note": "trigram pair of each hexagram, read Oct 6 2026"
+    },
+    {
+      "key": "cottrell",
+      "author": "Russell Cottrell",
+      "title": "I Ching Translations (44 versions of the text and first lines of hexagrams 3 and 36)",
+      "year": 2026,
+      "url": "https://www.russellcottrell.com/VirtualYarrowStalks/translations.htm",
+      "note": "personal comparison page, read Oct 6 2026; quotes the translations, so indirect"
+    },
+    {
+      "key": "lebovitz2018",
+      "author": "David J. Lebovitz",
+      "title": "Review of Geoffrey Redmond, The I Ching (Book of Changes): A Critical Translation of the Ancient Text, Journal of Chinese Religions 46(2), pp. 215-219",
+      "year": 2018,
+      "url": "https://muse.jhu.edu/pub/1/article/708204",
+      "note": "read in full Oct 6 2026 (Project MUSE page)"
+    },
+    {
+      "key": "rutt_front",
+      "author": "Richard Rutt",
+      "title": "The Book of Changes (Zhouyi): A Bronze Age Document, Durham East-Asia Series No. 1 (RoutledgeCurzon paperback; front matter preview)",
+      "year": 2002,
+      "url": "https://api.pageplace.de/preview/DT0400.9781136857478_A23881750/preview-9781136857478_A23881750.pdf",
+      "note": "title page, contents and preface read Oct 6 2026; reprint of the 1996 Curzon edition"
+    },
+    {
+      "key": "biroco_rutt",
+      "author": "Joel Biroco",
+      "title": "Review of Richard Rutt's Zhouyi (first published in The Oracle: Journal of the I Ching Society, vol. 1 no. 6, 1998)",
+      "year": 1998,
+      "url": "https://www.biroco.com/yijing/ruttzhouyi.htm",
+      "note": "read in full Oct 6 2026"
+    },
+    {
+      "key": "abe_ballantine",
+      "author": "AbeBooks (retailer listing quoting the Ballantine jacket)",
+      "title": "I Ching: The Classic of Changes (ISBN 0345362438), Ballantine Books, 1997",
+      "year": 1997,
+      "url": "https://www.abebooks.co.uk/9780345362438/Ching-Classic-First-English-Translation-0345362438/plp",
+      "note": "read Oct 6 2026; a seller page, so indirect; every copy listed is dated 1997"
     }
   ],
   "items": [
@@ -387,7 +1190,7 @@
         "roots"
       ],
       "metadata": {
-        "when": "Late Shang to early Zhou, c. 1100 BCE",
+        "when": "Late Shang into the Western Zhou; the dated pieces run from about 1300 to 700 BCE, and this item treats the older ones (before about 1000 BCE) ✔",
         "year": -1100,
         "branch": "branch-roots",
         "derives_from": [],
@@ -395,9 +1198,9 @@
         "confidence": "medium"
       },
       "sections": {
-        "What it is": "Groups of numbers, often six of them, inscribed on oracle bones, bronzes and pottery from the late Shang and early Zhou. Scholars read them as the record of casts: the raw material out of which line figures were later drawn.",
-        "What it changed in the text": "No text yet: only numbers. The later broken and solid lines began, in this reading, as shorthand for the numbers 6, 7, 8 and 9 [@wp_iching]. ✔",
-        "The record": "That broken lines stood for 6 and 8 and solid lines for 7 and 9 ✔ [@wp_iching]. That number-groups on bones and bronzes are the ancestors of the hexagrams is the common modern reading; who first proposed it and when (Zhang Zhenglang, late 1970s) ◇ needs checking [@smith2008]. The date here is a range, not a find."
+        "What it is": "Groups of numbers, mostly in sixes and sometimes in threes, cut or written on oracle bones, bronzes, pottery and other objects from the late Shang and the Western Zhou. Scholars read them as the results of casts ✔ [@breard_cook2020] [@nielsen1990]: the raw material out of which line figures were later drawn.",
+        "What it changed in the text": "Almost no text yet: the number-groups are only occasionally followed by a word or a short omen, as on a few oracle bones ✔ [@nielsen1990] [@breard_cook2020]. Scholars who read the number-groups as ancestors of the hexagrams take odd numbers as solid lines and even numbers as broken ones, but they disagree on how the lines came from the numbers: Zhang Zhenglang held that the numerals narrowed over time to one odd and one even sign, and Nielsen suggests the solid line grew from 1 and the broken one from 6, while Ding Sixin argues from the Tsinghua Shifa that the lines come from 7 (written like 1) and 8, set by the stalk method, and calls the narrowing theory wrong ◆ [@nielsen1990] [@ding2018]. On the bones and bronzes the numbers are mostly 1, 5, 6, 7 and 8, with 9 rare; the four values 6, 7, 8 and 9 belong to the later stalk method ✔ [@nielsen1990] [@breard_cook2020].",
+        "The record": "In the hexagrams, broken lines stand for the stalk values 6 and 8 and solid lines for 7 and 9 ✔ [@wp_iching]; the stalk method that yields only 6 to 9 is described from the second or first century BCE ✔ [@breard_cook2020]. That the number-groups on bones and bronzes are ancestors of the hexagrams is the reading most scholars have followed since 1980, but it has been questioned: it assumes early diviners read odd and even numbers as yang and yin, which the early material does not show, and a few scholars have denied that the groups are hexagram-like figures at all ◆ [@breard_cook2020] [@ding2018]. The reading was worked out by Zhang Zhenglang, in a lecture at a palaeography conference in Changchun in early December 1978 and in print in 1980 (Kaogu xuebao 1980, no. 4); Li Xueqin had remarked in 1956 that such numerals recall the 'nine' and 'six' of the Zhouyi ✔ [@nielsen1990] [@ding2018] [@zhang_lunyi2011]. The date here is a range, not a find."
       },
       "sort_order": 0
     },
@@ -426,8 +1229,8 @@
       },
       "sections": {
         "What it is": "The core: 64 figures, each with a name, a short judgment, and six line statements. A diviner's handbook in Early Old Chinese. It says nothing about its own origin [@wp_iching].",
-        "What it changed in the text": "This is the layer every later book changes. Tradition credited it to King Wen and the Duke of Zhou (and the trigrams to Fu Xi); modern scholars date its compilation to the late 9th century BCE by comparing its language with dated bronze inscriptions [@wp_iching].",
-        "The record": "Dating by Shaughnessy to the last quarter of the 9th century BCE ✔ via [@wp_iching], from [@shaughnessy1983] (not opened). Modern estimates range from the 10th to the 4th century BCE ✔ [@wp_iching]. The traditional authorship is 'no longer generally accepted' ✔ [@wp_iching].",
+        "What it changed in the text": "This is the layer every later book changes. Tradition credited it to King Wen and the Duke of Zhou (and the trigrams to Fu Xi); Shaughnessy's influential dating puts its compilation in the late 9th century BCE, from its language set beside the Classic of Poetry and dated bronze inscriptions; other modern estimates run from the 10th to the 4th century BCE [@wp_iching; @shaughnessy2022].",
+        "The record": "Dating by Shaughnessy to the last quarter of the 9th century BCE ✔ [@wp_iching; @shaughnessy2022], from [@shaughnessy1983] (not opened). Modern estimates range from the 10th to the 4th century BCE ✔ [@wp_iching]. The traditional authorship is 'no longer generally accepted' ✔ [@wp_iching].",
         "In this library": "This node has its own book here: open it from the link below, or from the timeline and the genealogy. (Zhouyi Core)"
       },
       "sort_order": 1
@@ -442,7 +1245,7 @@
         "zhou"
       ],
       "metadata": {
-        "when": "Accounts set 671–487 BCE; the histories compiled c. 4th century BCE",
+        "when": "Accounts set about 672–485 BCE (sources differ by a year or two); the Zuozhuan largely complete by about 300 BCE, the Guoyu put together from the 5th to the late 4th century BCE ◆",
         "year": -400,
         "branch": "branch-zhou",
         "derives_from": [
@@ -452,9 +1255,9 @@
         "confidence": "medium"
       },
       "sections": {
-        "What it is": "Two histories that record more than twenty divinations with the Zhouyi for ruling houses. They are the oldest descriptions of the book in use [@wp_iching].",
-        "What it changed in the text": "They show the text read without any commentary: only the figure and its line statements. In all twelve quoted line statements the original hexagram, not a 'changed' one, carries the answer [@wp_iching]: the idea of changing lines turning one hexagram into another is a later reading.",
-        "The record": "Accounts dated 671–487 BCE ✔; no changing lines in them ✔ [@wp_iching]. The compilation date of the two histories (4th century BCE) ◇."
+        "What it is": "Two histories that record more than twenty divinations with the Zhouyi for ruling houses ✔ [@wp_iching]; Kidder Smith counts about two dozen references to the Zhouyi or stalk divination in the Zuozhuan, two-thirds of them efforts to interpret its figures and line statements [@smith1989]. Wikipedia calls them the oldest descriptions of divination with the book ✔ [@wp_iching].",
+        "What it changed in the text": "They show the text read without a fixed commentary: the diviners work from the figure, its trigrams and its line statements, and sometimes argue over the meaning ✔ [@wp_iching] [@smith1989]. In all twelve line statements quoted, the original hexagram supplies the line ✔ [@wp_iching]. Kidder Smith, whose reading Shaughnessy reached independently, takes the word zhi in 'X zhi Y' as 'of', naming one line, and notes that the 'changing into' reading goes back at least to the Western Han; the idea of changing lines turning one hexagram into another is a later reading ✔ [@smith1989]. Smith also counts six cases, sixty percent of his examples, in which the diviner reads the second hexagram as well, and sees in this how the later reading grew [@smith1989].",
+        "The record": "Accounts dated 671–487 BCE for the divinations in one source, and 672–485 BCE for all references to the Zhouyi or stalk divination in Kidder Smith's count ◆ [@wp_iching] [@smith1989]; no changing lines in them, on the reading of Shaughnessy and Kidder Smith ✔ [@wp_iching] [@smith1989]. The Zuozhuan was largely complete by about 300 BCE and is usually placed in the 4th century BCE; the Guoyu was put together from the 5th to the late 4th century BCE ✔ [@uwpress_zuo2016] [@wp_zuozhuan] [@wp_guoyu]."
       },
       "sort_order": 2
     },
@@ -468,19 +1271,19 @@
         "roots"
       ],
       "metadata": {
-        "when": "Warring States bamboo slips, acquired by Tsinghua University in 2008",
+        "when": "Warring States bamboo slips (one radiocarbon date, 305 ± 30 BCE), donated to Tsinghua University in July 2008; the Shifa was published in volume 4, with a December 2013 imprint ✔",
         "year": -305,
         "branch": "branch-roots",
         "derives_from": [
           "book-numbers-on-bone"
         ],
         "kind": "manuscript",
-        "confidence": "low"
+        "confidence": "medium"
       },
       "sections": {
-        "What it is": "A divination manual among the Tsinghua bamboo slips, a large looted Warring States collection donated to Tsinghua University in 2008 [@wp_tsinghua]. It writes casts as numbers, not lines ◇.",
-        "What it changed in the text": "It shows a living practice of reading number-figures alongside, and apart from, the Zhouyi's text ◇.",
-        "The record": "The collection, its 2008 acquisition and its looted origin ✔ [@wp_tsinghua]. The Shifa was published in January 2014, in volume 4 of the Tsinghua series, not in 2013 ✔ [@zh_tsinghua]. The c. 305 BCE date is the collection's single radiocarbon date (305 ± 30 BCE) ✔ [@wp_tsinghua]. The Shifa's content ◇ [@shaughnessy2014]."
+        "What it is": "A divination manual among the Tsinghua bamboo slips, a large looted Warring States collection donated to Tsinghua University in 2008 [@wp_tsinghua]. It writes casts as numerals, in groups of three and in side-by-side pairs of six, with 7 written like 1; it has a section on the 'images' of its numeral lines, so its numbers also work as lines ✔ [@tsinghua_ctwx_v4] [@breard_cook2020] [@ding2018].",
+        "What it changed in the text": "It shows a fourth-century BCE Chu practice of casting and reading number-figures by its own rules: the three-numeral figure is the base unit, and a line's rank in a six-line stack does not matter as it does in the Zhouyi's tradition ✔ [@breard_cook2020]. Its example casts match the numeral records on Chu slips from Tianxingguan, Baoshan and Geling, and paired figures are read by a four-position method, not as an original and a changed hexagram ✔ [@tsinghua_ctwx_v4] [@ding2018]. The same volume's Biegua lists the hexagram names, 64 in all with one of its eight strips lost, in the Mawangdui order ✔ [@tsinghua_ctwx_v4].",
+        "The record": "The collection, its 2008 acquisition and its looted origin ✔ [@wp_tsinghua] [@li_xueqin2013]. The Shifa appeared in volume 4 of the Tsinghua series, with a December 2013 imprint (Zhongxi Book Co., Shanghai); the volume was presented to the public on 7 January 2014 ✔ [@tsinghua_ctwx_v4] [@zh_tsinghua]. The c. 305 BCE date is the collection's single radiocarbon date (305 ± 30 BCE), taken from blank fragments, so it dates the bamboo, not necessarily the text ✔ [@wp_tsinghua] [@zh_tsinghua]. The Shifa's content: 63 strips setting out the principles and method of stalk divination, with many example casts written as numerals, plus diagrams and tables, among them a diagram of trigram positions that resembles but differs from the later 'Later Heaven' arrangement ✔ [@tsinghua_ctwx_v4] [@li_xueqin2013]. Shaughnessy 2014, cited here before, is about the Shanghai, Wangjiatai and Fuyang manuscripts, not a study of the Shifa [@cup_unearthing]."
       },
       "sort_order": 3
     },
@@ -494,7 +1297,7 @@
         "zhou"
       ],
       "metadata": {
-        "when": "Warring States (Chu), c. 300 BCE; bought by the Shanghai Museum in 1994",
+        "when": "Warring States (Chu), c. 300 BCE; bought by the Shanghai Museum in 1994 ✔",
         "year": -300,
         "branch": "branch-zhou",
         "derives_from": [
@@ -504,9 +1307,9 @@
         "confidence": "medium"
       },
       "sections": {
-        "What it is": "The oldest surviving copy of the Zhouyi, on bamboo slips, written around 300 BCE. Bought on the Hong Kong antiquities market, so its tomb is unknown ◇.",
-        "What it changed in the text": "It shows the text already in its current form by 300 BCE, used at all levels of society, but still with small variations [@wp_iching]. It also carries red and black marks whose meaning is argued ◇.",
-        "The record": "Date and form ✔ [@wp_iching]. Wikipedia's hexagram section also mentions an oldest manuscript 'found in 1987 and now held by the Shanghai Library' ◆: it reads like a garbled reference to this one; check [@shaughnessy2014]. Provenance from the market ◇."
+        "What it is": "The oldest surviving copy of the Zhouyi, on bamboo slips, written around 300 BCE. Bought by the Shanghai Museum in 1994 after the strips turned up on the Hong Kong antiquities market, so the tomb they were taken from is not recorded (probably in Hubei or Hunan) ✔ [@wp_smbs; @zh_smbs; @shaughnessy2005].",
+        "What it changed in the text": "It shows the text already in its current form by 300 BCE, used at all levels of society, but still with small variations [@wp_iching]. It also carries a pair of symbols, written after the hexagram name and at the end of the hexagram text, whose meaning is unsettled: Shaughnessy judged none of the explanations offered convincing in 2005 ✔ [@shaughnessy2005]. The symbols are black and red ✔ [@shaughnessy2005].",
+        "The record": "Date and form ✔ [@wp_iching]; Warring States Chu, copied about 300 BCE, bought in 1994 ✔ [@shaughnessy2005; @wp_smbs]. Wikipedia's hexagram section also says the oldest manuscript was 'found in 1987 and now held by the Shanghai Library' ◆ [@wp_iching]. The same article's history section and the museum article date the Shanghai Museum manuscript to 1994 ✔ [@wp_iching; @wp_smbs], as does Shaughnessy's study of it ✔ [@shaughnessy2005]; none of the sources opened here mentions a 1987 find held by the Shanghai Library. The section cites [@shaughnessy2014] pp. 52–53, not opened ◇. It also says that manuscript was 'almost certainly' in the King Wen order, where Shaughnessy 2005 says only that the breaks in the strips may suggest an order more or less like the received one ✔ [@shaughnessy2005]. Provenance from the market ✔ [@wp_smbs; @zh_smbs]."
       },
       "sort_order": 4
     },
@@ -551,7 +1354,7 @@
         "roots"
       ],
       "metadata": {
-        "when": "A Zhou-era text; the copy found was buried in a late Warring States or Qin tomb, excavated 1993",
+        "when": "Composition date disputed (a Shang-era origin has been argued, and so has a Warring States date); the copy found was buried in a third-century BCE Qin tomb, excavated in March 1993 ◆",
         "year": -230,
         "branch": "branch-roots",
         "derives_from": [
@@ -561,9 +1364,9 @@
         "confidence": "medium"
       },
       "sections": {
-        "What it is": "One of the two other 'Changes' the Rites of Zhou names beside the Zhouyi (the other is the Lianshan). Long lost; a copy on bamboo turned up in 1993. It pairs the hexagrams with stories, such as Chang'e fleeing to the moon after a divination [@wp_guicang].",
-        "What it changed in the text": "A different way of attaching words to the same 64 figures: a story per figure, where the Zhouyi has terse judgments and line statements. It shows the Zhouyi's text was one choice among several.",
-        "The record": "Named in the Rites of Zhou ✔ [@wp_iching]; rediscovered 1993 ✔ [@wp_guicang] (Wikipedia says 'a rural bog'; the find was Qin tomb 15 at Wangjiatai, Jiangling, Hubei, in March 1993: 394 of its 813 slips ✔ [@zh_wangjiatai]). The Guicang copy is thought to date from the end of the Warring States ✔ [@zh_wangjiatai]. Whether the excavated text is the Guicang the Rites of Zhou meant is ◆ argued."
+        "What it is": "One of the two other 'Changes' the Rites of Zhou names beside the Zhouyi (the other is the Lianshan), naming their methods rather than a written text. A Guicang listed in the Sui shu survived in part to the Southern Song and was then lost, leaving quotations that Ma Guohan gathered in the Qing; a copy on bamboo turned up in 1993. It pairs hexagrams with stories, such as Chang'e fleeing to the moon after a divination ✔ [@wp_iching] [@zh_guicang] [@hein2019] [@wp_guicang].",
+        "What it changed in the text": "A different way of attaching words to the 64 figures (the Rites of Zhou gives all three Changes eight trigrams and sixty-four hexagrams): stories in place of the Zhouyi's terse judgments and line statements. The copy found is fragmentary, and its stories are sometimes tied to different hexagrams than in later quotations. It shows several divination traditions ran side by side, and that the Zhouyi's text was one choice among them ✔ [@zh_guicang] [@hein2019] [@wp_guicang].",
+        "The record": "Named in the Rites of Zhou, whose own date is debated, as one of three Changes ✔ [@wp_iching] [@hein2019]; rediscovered 1993 ✔ [@wp_guicang] (Wikipedia says 'a rural bog'; the find was Qin tomb 15 at Wangjiatai, Jiangling, Hubei, in March 1993: 394 of its 813 slips, which the excavators read as two copies ✔ [@zh_wangjiatai] [@hein2019]). The Guicang copy is thought to date from the end of the Warring States, judged by script close to Chu slips; the slips have since decayed, so this cannot be retested ✔ [@zh_wangjiatai] [@hein2019]. Whether the excavated text is the Guicang the Rites of Zhou meant is ◆ argued: the excavators gave it the title because it parallels quotations of the Guicang in later books, and many scholars accept that, but what kind of Guicang it is, and whether it goes back to a Shang-era Yi or is a Warring States work, remains under discussion; one 2010 article argues, going by its title, that the Wangjiatai hexagrams are neither the Shang 'Yin Yi' nor the Guicang [@hein2019] [@zhu_yuanqing2002] [@ren_liang2002] [@gao_xinhua2021] [@zh_wangjiatai]."
       },
       "sort_order": 6
     },
@@ -577,7 +1380,7 @@
         "canon"
       ],
       "metadata": {
-        "when": "Han tomb at Mawangdui, Changsha; excavated 1973, published 1993",
+        "when": "Han tomb at Mawangdui, Changsha; excavated 1973; a transcription of the hexagram and line text appeared in 1984, and the manuscript was published in 1993, still incompletely ✔",
         "year": -168,
         "branch": "branch-canon",
         "derives_from": [
@@ -589,8 +1392,8 @@
       },
       "sections": {
         "What it is": "A near-complete Zhouyi on silk with commentaries, found in 1973 in a Han tomb [@wp_mawangdui; @wp_iching_de].",
-        "What it changed in the text": "The hexagrams are in a different order: grouped by upper trigram instead of in the King Wen pairs. About 560 characters (12 % of the text) differ from the received version, and its commentaries are not the Ten Wings as we have them. One of them shows Confucius valuing the book for wisdom first and divination second [@wp_iching_de; @wp_iching].",
-        "The record": "Found 1973 ✔ [@wp_mawangdui]; published 1993, 12 % variant characters, different order ✔ [@wp_iching_de]; the Confucius commentary ✔ [@wp_iching]. Tomb sealed 168 BCE ◇. First English translation: [@shaughnessy1996] ◇."
+        "What it changed in the text": "The hexagrams are in a different order: grouped by upper trigram instead of in the King Wen pairs. At least 560 characters, about 12 % of the readable text, differ from the received version ✔ [@wp_iching_de; @rutt1999], and its commentaries are not the Ten Wings as we have them. One of them shows Confucius valuing the book for wisdom first and divination second [@wp_iching_de; @wp_iching].",
+        "The record": "Found 1973 ✔ [@wp_mawangdui]; published in 1993, though only in part (a transcription of the hexagram and line text had appeared in 1984, photographs in 1992) ✔ [@shaughnessy1994; @rutt1999]; 12 % variant characters, different order ✔ [@wp_iching_de]; the Confucius commentary ✔ [@wp_iching]. Tomb sealed 168 BCE, the silk copied about 175 BCE ✔ [@wp_mawangdui; @wp_mawangdui_site; @shaughnessy1994]. First English translation of the Mawangdui texts: Shaughnessy's, for Ballantine, which calls itself so in its subtitle ○ [@shaughnessy1997; @cup_unearthing; @rutt1999]. Its year is 1997 in the catalogue record and in Rutt's review, 1996 in Shaughnessy's own 2005 notes ◆ [@shaughnessy1997; @rutt1999; @shaughnessy2005]."
       },
       "sort_order": 7
     },
@@ -604,19 +1407,19 @@
         "zhou"
       ],
       "metadata": {
-        "when": "Early Han tomb at Shuanggudui, Fuyang (Anhui); excavated 1977",
+        "when": "Early Han tomb at Shuanggudui, Fuyang (Anhui); excavated 1977 ✔",
         "year": -165,
         "branch": "branch-zhou",
         "derives_from": [
           "book-zhouyi"
         ],
         "kind": "manuscript",
-        "confidence": "low"
+        "confidence": "medium"
       },
       "sections": {
         "What it is": "Fragments of the Zhouyi on bamboo from an early Han tomb, found in 1977 [@wp_iching_de].",
-        "What it changed in the text": "Nearly two thirds of the fragments are formulaic divination statements found neither in the received text nor in the Mawangdui copy ✔ [@wp_shuanggudui]: a working copy, closer to a diviner's notebook than a classic. Which matters they cover (weather, illness, travel) ◇.",
-        "The record": "Found 1977 at Shuanggudui ✔ [@wp_iching_de]. The tomb is Xiahou Zao's, sealed in 165 BCE; the Changes survives in 752 fragments, 3,119 characters ✔ [@wp_shuanggudui]."
+        "What it changed in the text": "Nearly two thirds of the characters (2,009 of 3,119) are formulaic divination statements found neither in the received text nor in the Mawangdui copy ✔ [@wp_shuanggudui; @shaughnessy2001]: a copy used as a divination manual, with at least one divination statement attached to each hexagram and line statement ✔ [@shaughnessy2001]. The matters they cover include illness, marriage, pregnancy and births, crime, imprisonment, flight and military action, serving a lord, taking office, travel, hunting and fishing, and the weather ✔ [@shaughnessy2001].",
+        "The record": "Found 1977 at Shuanggudui ✔ [@wp_iching_de]. The tomb is Xiahou Zao's, second lord of Ruyin, who died in 165 BCE, so it is thought to have been sealed that year; the Changes survives in 752 fragments with 3,119 characters, of which 1,110 are the Zhouyi text itself ✔ [@wp_shuanggudui; @shaughnessy2001]."
       },
       "sort_order": 8
     },
@@ -630,7 +1433,7 @@
         "canon"
       ],
       "metadata": {
-        "when": "136 BCE, Emperor Wu of Han; set in stone in the Xiping Stone Classics (2nd century CE)",
+        "when": "136 BCE, Emperor Wu of Han (the traditional date); carved in stone in the Xiping Stone Classics, 175–183 CE ✔",
         "year": -136,
         "branch": "branch-canon",
         "derives_from": [
@@ -645,9 +1448,9 @@
         "deck": "Chinese Original"
       },
       "sections": {
-        "What it is": "Emperor Wu named the Zhou yi the first of the classics: from then on it is the Yijing, the Classic of Changes, bound to the Ten Wings [@wp_iching].",
-        "What it changed in the text": "The text is fixed. One standard version, with the Wings attached, is carved in stone and becomes the received text for about two thousand years, until the excavated copies came back [@wp_iching]. The variants in the manuscripts above are what this fixing smoothed away.",
-        "The record": "136 BCE and the Five Classics ✔; the Xiping Stone Classics ✔ [@wp_iching]. The German article dates the oldest stone witness to 171 CE ◆ [@wp_iching_de]; the Xiping carving is usually given as 175–183 CE ◇.",
+        "What it is": "In 136 BCE Emperor Wu is said to have raised the Five Classics to official standing, the Zhou yi among them ✔ [@nylan2001; @wp_iching; @smith2012]. Wikipedia adds that he named it 'the first among the classics', but Western Han lists usually put the Changes fourth, and the Changes-first order appears only from the Eastern Han ◆ [@wp_iching; @wp_fbfc; @nylan2001]. From then on it is the Yijing, the Classic of Changes, bound to the Ten Wings ✔ [@wp_iching].",
+        "What it changed in the text": "One standard version, with the Wings, is carved in stone as one of the Xiping Stone Classics and becomes the received text for over two thousand years, until the excavated copies came back ✔ [@wp_iching; @wp_xiping]. A surviving fragment of the stone Changes, now in the Xi'an Beilin, carries the end of the Great Commentary, the Words on the Text and the Discussion of the Trigrams on its back ✔ [@zh_beilin]. The carving did not fix the texts or end the disputes over them ✔ [@nylan2001]. The variants in the manuscripts above are what this standard text smoothed away.",
+        "The record": "136 BCE and the Five Classics ✔; the Xiping Stone Classics ✔ [@wp_iching]. The German article dates the oldest stone witness to a stele at Luoyang of 171 CE ◆ [@wp_iching_de]. Nylan has the emperor order the stone classics in 172 CE, and the English, Chinese and German list articles give 175 for the start of the carving ✔ [@nylan2001; @wp_xiping; @zh_xiping; @de_steinklassiker], so 171 looks like an outlier; its source, Schilling p. 371, was not opened ◇. The Xiping carving ran from 175 to 183 CE ✔ [@wp_xiping; @zh_xiping; @nylan2001].",
         "In this library": "This node has its own book here: open it from the link below, or from the timeline and the genealogy. (Chinese Original)"
       },
       "sort_order": 9
@@ -662,7 +1465,7 @@
         "numbers"
       ],
       "metadata": {
-        "when": "Western Han, 1st century BCE",
+        "when": "Western Han, 1st century BCE (in office from 45 BCE, executed 37 BCE) ✔",
         "year": -45,
         "branch": "branch-numbers",
         "derives_from": [
@@ -672,9 +1475,9 @@
         "confidence": "medium"
       },
       "sections": {
-        "What it is": "Jing Fang, also a music theorist and astronomer [@wp_jingfang], read the hexagrams against the calendar, the musical pitches and the stems and branches: the 'images and numbers' school.",
-        "What it changed in the text": "The eight 'palaces' of the 64, with each line tied to times and elements, are traditionally his ◆: one study argues they came from another school (Xun Shuang, Yu Fan, Gan Bao) and were credited to him through the Jingshi yizhuan [@zh_jingfang]. His books are lost; fragments survive in the Tang anthology Zhou yi jijie [@wp_iching].",
-        "The record": "The New Text school's image-and-number work, lost but for fragments in Zhou yi jijie ✔ [@wp_iching]. His dates: 77–37 BCE [@zh_jingfang], 78–37 BCE [@wp_jingfang] ◆. The eight palaces ◆ (above)."
+        "What it is": "Jing Fang, also a music theorist and astronomer [@wp_jingfang], read the hexagrams against the calendar [@hanshu75], the musical pitches [@zh_jingfang] and the stems and branches ◆ [@ck_jingshi; @smith2009_paper; @zh_jingfang]: the 'images and numbers' school [@wp_iching].",
+        "What it changed in the text": "The eight 'palaces' of the 64, with each line tied to times and elements, are traditionally his [@sep_change; @smith2009_paper] ◆: ChinaKnowledge describes him as extending what his teacher Jiao Yanshou taught on the palaces and on najia, the pairing of hexagrams with the celestial stems [@ck_jingshi], and one study argues they came from another school (Xun Shuang, Yu Fan, Gan Bao) and were credited to him through the Jingshi yizhuan [@zh_jingfang]. Most of his writing is lost. The Jingshi yizhuan survives under his name [@zh_jingfang; @ck_jingshi], and fragments of Han image-and-number commentary survive in the Tang anthology Zhou yi jijie [@wp_iching; @sep_change].",
+        "The record": "Most of the Han image-and-number commentary, Jing Fang's included, is lost; short fragments survive in the Tang anthology Zhou yi jijie ✔ [@wp_iching; @sep_change]. A work called the Jingshi yizhuan survives under his name [@zh_jingfang; @ck_jingshi]. His dates: 77–37 BCE [@zh_jingfang; @sep_change; @ck_jingshi], 78–37 BCE [@wp_jingfang] ◆. The Hanshu gives the year of his execution (Jianzhao 2, 37 BCE) and his age at death, 41, but no birth year [@hanshu75; @hanshu9]. The eight palaces ◆ (above)."
       },
       "sort_order": 10
     },
@@ -688,19 +1491,19 @@
         "numbers"
       ],
       "metadata": {
-        "when": "First draft completed 2 BCE",
+        "when": "First draft completed 2 BCE on the dating of Nylan and co-authors; Yang Xiong was at work on it under Emperor Ai (7–1 BCE) ○",
         "year": -2,
         "branch": "branch-numbers",
         "derives_from": [
           "book-han-canon"
         ],
         "kind": "rival system",
-        "confidence": "medium"
+        "confidence": "high"
       },
       "sections": {
-        "What it is": "A new divination classic written to stand beside the Changes [@wp_taixuan]: 81 figures of four lines with three values each, instead of 64 figures of six lines with two ◇.",
+        "What it is": "A new divination classic written to stand beside the Changes [@wp_taixuan]: 81 figures of four lines with three values each, instead of 64 figures of six lines with two ✔ [@wp_taixuan; @hanshu87].",
         "What it changed in the text": "Not an edit of the Changes but an imitation of it: proof that, by the end of the Western Han, the form of the book could be copied and redesigned.",
-        "The record": "Composed by Yang Xiong, first draft 2 BCE, survives through Fan Wang's Jin-dynasty commentary ✔ [@wp_taixuan]. The 81 tetragrams ◇."
+        "The record": "Composed by Yang Xiong, first draft 2 BCE ○ [@wp_taixuan; @unicode_taixuan]; the text survives in editions with the commentary of Fan Wang (Jin dynasty) and of Sima Guang (Song) ✔ [@wp_taixuan; @unicode_taixuan]. The 81 tetragrams ✔ [@wp_taixuan; @hanshu87; @unicode_taixuan]."
       },
       "sort_order": 11
     },
@@ -714,7 +1517,7 @@
         "meanings"
       ],
       "metadata": {
-        "when": "Wang Bi lived 226–249; Han Kangbo added the Wings' commentary a century later",
+        "when": "Wang Bi lived 226–249; Han Kangbo (332–380 in two sources, c. 335–c. 385 in another) later wrote the commentary on the Xici, Shuogua, Xugua and Zagua ✔",
         "year": 245,
         "branch": "branch-meanings",
         "derives_from": [
@@ -724,9 +1527,9 @@
         "confidence": "medium"
       },
       "sections": {
-        "What it is": "A short, sharp commentary by a philosopher who died at 23 [@wp_wangbi]. It set aside the Han numerology and read the Ten Wings' philosophy straight into the hexagrams [@wp_iching].",
-        "What it changed in the text": "The words now matter more than the numbers: 'meanings and principles' over 'images and numbers'. Once you have the meaning, he argued, you can forget the image ◇. Han Kangbo's additions made it the Zhouyi zhu, the edition later orthodoxy built on [@wp_iching].",
-        "The record": "✔ [@wp_wangbi; @wp_iching]. 'Forget the image once you have the meaning' is a paraphrase of a famous passage, ◇ not checked. English: [@lynn1994] ◇."
+        "What it is": "A short, sharp commentary by a philosopher who died at 23 [@wp_wangbi], or at 24 in He Shao's count [@sanguozhi28]. It set aside the Han numerology [@wangbi_lueli; @sep_change] and read the Ten Wings' philosophy straight into the hexagrams [@wp_iching].",
+        "What it changed in the text": "The words now matter more than the numbers: 'meanings and principles' over 'images and numbers'. Once you have the meaning, he argued, you can forget the image ✔ [@wangbi_lueli; @sep_change]. Han Kangbo's commentary on the Xici, Shuogua, Xugua and Zagua, joined to Wang Bi's on the hexagram and line texts, Tuan, Xiang and Wenyan, makes the Zhouyi zhu, the edition later orthodoxy built on [@wp_shisanjing; @ck_wujingzhengyi; @wp_iching].",
+        "The record": "✔ [@wp_wangbi; @wp_iching]. 'Forget the image once you have the meaning' paraphrases a passage in his Zhouyi lüeli, the chapter 'Mingxiang' ('Clarifying the images'), where words and images are compared to a rabbit snare and a fish trap ✔ [@wangbi_lueli; @sep_change]. English: Richard John Lynn, The Classic of Changes (Columbia University Press, 1994) ✔ [@lynn1994]. The timeline's year for the commentary, 245, is an estimate within his lifetime: no source opened dates it ◇."
       },
       "sort_order": 12
     },
@@ -740,8 +1543,8 @@
         "meanings"
       ],
       "metadata": {
-        "when": "Tang, ordered by Emperor Taizong; completed c. 640s",
-        "year": 642,
+        "when": "Tang; compiled under Emperor Taizong from the late 630s, revised under Emperor Gaozong and promulgated in 653 ✔",
+        "year": 653,
         "branch": "branch-meanings",
         "derives_from": [
           "book-wang-bi"
@@ -750,9 +1553,9 @@
         "confidence": "medium"
       },
       "sections": {
-        "What it is": "The Tang court's official edition: Wang Bi's text and commentary with a further sub-commentary [@wp_iching].",
-        "What it changed in the text": "Orthodoxy by decree. It became the standard edition through the Song, and knowing it was required for an official career [@wp_iching; @wp_iching_de].",
-        "The record": "Ordered by Taizong, based on Wang Bi, standard through the Song ✔ [@wp_iching]; needed for the civil service ✔ [@wp_iching_de]. The year 642 ◇."
+        "What it is": "The Tang court's official edition: the Zhouyi zhu of Wang Bi and Han Kangbo with a further sub-commentary, Kong Yingda leading the editors [@wp_iching; @zh_wujing; @ck_wujingzhengyi; @wp_shisanjing].",
+        "What it changed in the text": "Orthodoxy by decree. It became the standard edition through the Song [@wp_iching]; from 653 the court had the yearly mingjing examination follow it [@jiutangshu4; @tanghuiyao77], and knowledge of Wang Bi's commentary was tested in the civil-service examinations through the Tang and Song [@sep_change; @wp_iching_de].",
+        "The record": "Ordered by Taizong, based on Wang Bi's commentary, standard through the Song ✔ [@wp_iching; @jiutangshu73]; tested in the civil-service examinations ✔ [@wp_iching_de; @sep_change]. The Tang huiyao dates the first compilation (170 juan, called Yizan) to 638 and the presentation of the revised text to 653, the year the Jiu Tangshu has it issued to the realm [@tanghuiyao77; @jiutangshu4]. For 642 the accounts differ ◆: Chinese Wikipedia has the work written up that year [@zh_wujing], while Japanese Wikipedia, following Fukushima (1973), has a second compilation begun then [@ja_wujing]; English Wikipedia gives 637 and five years' work [@wp_kongyingda]."
       },
       "sort_order": 13
     },
@@ -766,7 +1569,7 @@
         "numbers"
       ],
       "metadata": {
-        "when": "Northern Song; Shao Yong lived 1011–1077",
+        "when": "Northern Song; Shao Yong lived 1011–1077 (born late in the Chinese year 1011, on a day that fell in January 1012) ✔",
         "year": 1070,
         "branch": "branch-numbers",
         "derives_from": [
@@ -776,9 +1579,9 @@
         "confidence": "medium"
       },
       "sections": {
-        "What it is": "Shao Yong [@wp_shaoyong] laid out the hexagrams in an order that reads like binary numbers, the 'Former Heaven' (Fu Xi) sequence, with square and circular diagrams ◇.",
+        "What it is": "Shao Yong [@wp_shaoyong] is credited with an order of the hexagrams that reads like binary numbers, called the 'Earlier Heaven' (xiantian, also rendered 'Prior to Heaven') or Fu Xi sequence; the diagram handed down from him sets the 64 hexagrams in a circle with a square inside it ✔ [@wp_iching; @wp_kingwen; @adler_zhuxi_yi; @benyi_siku; @wang_maohong].",
         "What it changed in the text": "Not a change in the words but in the arrangement: an order the Zhouyi never had, attributed back to the legendary Fu Xi. This is the order that reached Leibniz [@wp_iching].",
-        "The record": "The binary-like order and its later influence on Leibniz ✔ [@wp_iching]; he did not intend it mathematically ✔ [@wp_iching]. The diagrams' names and the attribution to Fu Xi ◇. Their Daoist pedigree was argued by Qing scholars (see Hu Wei)."
+        "The record": "Shao Yong lived 1011–1077 ✔ [@lc_shaoyong; @wp_shaoyong]; he was born on the 25th day of the twelfth month of the Chinese year 1011, which fell on 21 January 1012, and some works give 1012–1077 [@zh_shaoyong; @wp_shaoyong]. The binary-like order, which he did not intend mathematically ✔ [@wp_iching]; it reached Leibniz through Bouvet, after Leibniz had worked out binary himself in the 1670s ✔ [@strickland_numsys] (see Bouvet and Leibniz). The diagrams' names and the attribution to Fu Xi ◆: Shao Yong, as Zhu Xi's Qimeng quotes him, calls the Shuogua passage on Heaven and Earth fixing their places Fu Xi's eight trigrams, and the Benyi as printed labels four diagrams 'Fu Xi's' and traces them through Li Zhicai, Mu Xiu and Chen Tuan [@benyi_siku; @hu_wei_yitu]; Qing critics held that they are Shao's own learning, not Fu Xi's [@siku_yitu_tiyao; @wang_maohong]. Their Daoist pedigree was argued first by Yuan and Ming writers and then by Qing scholars, Hu Wei among them ✔ [@siku_yitu_tiyao; @hu_wei_yitu] (see Hu Wei)."
       },
       "sort_order": 14
     },
@@ -792,7 +1595,7 @@
         "meanings"
       ],
       "metadata": {
-        "when": "Northern Song; preface dated 1099 ◇",
+        "when": "Northern Song; preface dated 1099 (Yuanfu 2) ✔",
         "year": 1099,
         "branch": "branch-meanings",
         "derives_from": [
@@ -804,8 +1607,8 @@
       },
       "sections": {
         "What it is": "A Neo-Confucian commentary that reads the book as a guide to moral perfection and to honest government [@wp_iching].",
-        "What it changed in the text": "The figures become lessons for ministers: how to form factions honestly, root out corruption, solve problems in government [@wp_iching]. Divination recedes further.",
-        "The record": "Content ✔ [@wp_iching]. The 1099 preface date ◇."
+        "What it changed in the text": "The figures become lessons for ministers: how to form factions honestly, root out corruption, solve problems in government [@wp_iching]. Divination recedes further: he follows Wang Bi's text, sets each hexagram's Xugua line at its head, comments on the judgments and images in terms of principle rather than Shao Yong's numbers, and writes nothing on the Xici, Shuogua or Zagua ✔ [@yichuan_siku; @adler_zhuxi_yi].",
+        "The record": "Content ✔ [@wp_iching]. The 1099 preface date ✔ [@cheng_yizhuan; @yichuan_siku]. Whether Cheng Yi finished the commentary is ◆: Yang Shi's postscript and a late letter of Cheng Yi's say it was left unfinished and that pupils put the text together after his death in 1107, while Zhu Xi's chronology says he had finished it [@cheung2021; @yichuan_siku]; one recent translation says only that he composed or at least completed it during his first exile [@adler_review_harrington]."
       },
       "sort_order": 15
     },
@@ -819,8 +1622,8 @@
         "meanings"
       ],
       "metadata": {
-        "when": "Southern Song, c. 1180s; Zhu Xi lived 1130–1200",
-        "year": 1185,
+        "when": "Southern Song; Zhu Xi lived 1130–1200; the Benyi dated 1188 in Adler's recent work (after Shu Jingnan), 1177 in the older consensus ◆",
+        "year": 1188,
         "branch": "branch-meanings",
         "derives_from": [
           "book-cheng-yi",
@@ -830,9 +1633,9 @@
         "confidence": "medium"
       },
       "sections": {
-        "What it is": "Zhu Xi [@wp_zhuxi] argued that the book was first of all for divination, and that divination could serve moral self-cultivation. He also reconstructed the yarrow-stalk method [@wp_iching].",
-        "What it changed in the text": "Two lasting changes. First, Shao Yong's diagrams printed at the front of the classic ◇. Second, a reconstructed yarrow method, still the standard way to cast today [@wp_iching]: the 'traditional' method is a 12th-century reconstruction. His readings became exam orthodoxy from 1313 ✔ [@wp_zhuxi] (that line is about his commentaries in general).",
-        "The record": "Synthesis of both Han lines, divination plus self-cultivation, the yarrow reconstruction ✔ [@wp_iching]. Title and dates (Zhouyi benyi; a separate primer on divination, 1186) ◇."
+        "What it is": "Zhu Xi [@wp_zhuxi] argued that the book was first of all for divination, and that divination could serve moral self-cultivation. He also reconstructed the yarrow-stalk method from the Xici's sketch, setting it out in the Yixue qimeng ✔ [@wp_iching; @adler2021_divination].",
+        "What it changed in the text": "Two lasting changes. First, nine diagrams printed at the head of the Benyi, among them four 'Fu Xi' diagrams whose note credits them to Shao Yong ◆: they stand there in the Song print of 1265 [@benyi_siku], but whether Zhu Xi or a follower put them there is disputed [@adler_zhuxi_yi; @wang_maohong]. Second, a reconstructed yarrow method, still the standard way to cast today [@wp_iching]: the 'traditional' method is a 12th-century reconstruction. A Yuan decree of 1313 named the commentaries of Cheng Yi and Zhu Xi as the main ones for the Changes in the classics essay set for Han and southern candidates, with the first examinations set for 1314–15 ✔ [@yuanshi81] (the Wikipedia lead gives 1313 for his Four Books commentaries [@wp_zhuxi]).",
+        "The record": "Synthesis of both Han lines, divination plus self-cultivation, the yarrow reconstruction ✔ [@wp_iching]. Title and the primer's date ✔ (Zhouyi benyi; a separate primer, the Yixue qimeng, on the diagrams, the numbers and yarrow divination, with a preface dated 1186) [@adler2021_divination; @qimeng_preface]. Zhu Xi lived 1130–1200 ✔ [@wp_zhuxi; @adler2021_divination]; the Benyi is dated 1188 in Adler's recent work (after Shu Jingnan), 1177 in the older consensus ◆ [@adler_zhuxi_yi; @adler2021_divination; @wang_maohong]. The Qing Siku editors report that the Song history gives the first draft of the Yixue qimeng to Cai Yuanding ○ [@siku_yitu_tiyao]."
       },
       "sort_order": 16
     },
@@ -846,19 +1649,19 @@
         "west"
       ],
       "metadata": {
-        "when": "Bouvet in Beijing writes to Leibniz; Leibniz publishes on binary arithmetic, 1703 ◇",
+        "when": "Bouvet in Beijing writes to Leibniz in November 1701; Leibniz writes his paper on binary arithmetic in April 1703 and it is printed in 1705 ✔",
         "year": 1703,
         "branch": "branch-west",
         "derives_from": [
           "book-shao-yong"
         ],
         "kind": "correspondence",
-        "confidence": "medium"
+        "confidence": "high"
       },
       "sections": {
-        "What it is": "Joachim Bouvet, a French Jesuit at the Kangxi court and the leading Figurist, studied the I Ching and corresponded with Leibniz [@wp_bouvet]. Leibniz saw his own binary arithmetic in Shao Yong's arrangement [@wp_iching].",
-        "What it changed in the text": "The book enters Europe as a proof for other people's ideas. Bouvet sought in it the truths of Christianity, known in ancient times [@wp_bouvet]. Leibniz found binary numbers in it. Neither was reading the Zhouyi's words.",
-        "The record": "Bouvet, Figurism, the correspondence ✔ [@wp_bouvet]; Shao Yong's order inspired Leibniz ✔ [@wp_iching]. The 1701 letter and the 1703 'Explication de l'arithmétique binaire' ◇."
+        "What it is": "Joachim Bouvet, a French Jesuit at the Kangxi court and the leading Figurist, studied the I Ching and corresponded with Leibniz [@wp_bouvet]. Bouvet, who had learned Leibniz's binary notation, matched it to the arrangement of the hexagrams called Fuxi's (a reordering credited to Shao Yong), and Leibniz took up the match ✔ [@strickland_numsys; @leibniz1703].",
+        "What it changed in the text": "The hexagrams were already in European print: Leibniz had seen the King Wen order in a Latin book about Confucius, Confucius Sinarum philosophus (Intorcetta and others, Paris 1687) ✔ [@strickland_numsys]. His 1703 paper takes Fuxi's figures as confirming his own binary ✔ [@leibniz1703], and has been described as the first European commentary on the I Ching ○ [@wp_iching]. Bouvet sought in it the truths of Christianity, known in ancient times [@wp_bouvet]. Leibniz found binary numbers in it. Leibniz worked from diagrams of the hexagram order, and his paper dismisses the Chinese commentaries as chasing far-fetched meanings ✔ [@leibniz1703; @strickland_numsys]; Bouvet had studied the Yijing for years and suspected it held a number-based metaphysics ✔ [@strickland_numsys].",
+        "The record": "Bouvet, Figurism, the correspondence ✔ [@wp_bouvet]; Bouvet's match of binary to Shao Yong's order, and Leibniz's own binary, which dates from the 1670s ✔ [@strickland_numsys; @strickland_lewis2022]. Bouvet's letter of November 1701 and Leibniz's 'Explication de l'arithmétique binaire', dated 7 April 1703 and printed in the Académie's volume for 1703, which appeared in 1705 ✔ [@strickland_lewis2022; @strickland_numsys; @leibniz1703]."
       },
       "sort_order": 17
     },
@@ -872,7 +1675,7 @@
         "modern"
       ],
       "metadata": {
-        "when": "Qing, 1706 ◇",
+        "when": "Qing, 1706 ✔",
         "year": 1706,
         "branch": "branch-modern",
         "derives_from": [
@@ -880,18 +1683,18 @@
           "book-zhu-xi"
         ],
         "kind": "critical study",
-        "confidence": "low"
+        "confidence": "medium"
       },
       "sections": {
-        "What it is": "Hu Wei (1633–1714), classicist and geographer, wrote the Yitu mingbian, 'Clarifying the Diagrams of the Changes' ✔ [@zh_huwei]: an evidential-scholarship study tracing the Song diagrams to Daoist sources rather than to Fu Xi ◇.",
-        "What it changed in the text": "The first big doubt from inside the tradition: the diagrams at the front of the classic were late additions, not ancient revelation ◇. The Qing classicist Pi Xirui praised it for refuting the River Chart and the Luo Writing ○ [@zh_huwei]. Qing scholars more generally turned to the old language of the text [@wp_iching].",
-        "The record": "The Qing turn to pre-classical grammar ✔ [@wp_iching] (truncated in what was read). Hu Wei, his dates and the title ✔ [@zh_huwei]; the year 1706 ◇ [@smith2008]."
+        "What it is": "Hu Wei (1633–1714), classicist and geographer, wrote the Yitu mingbian, 'Clarifying the Diagrams of the Changes' ✔ [@zh_huwei]: a study that sets old texts against each other to trace the Song diagrams to Chen Tuan and the Daoist arts of cultivation and number-lore, not to Fu Xi ✔ [@skqs_yitumingbian; @skqs_zongmu_006].",
+        "What it changed in the text": "The diagrams at the front of the classic were late additions, not ancient revelation: a doubt Hu Wei did not start (Song critics, the Yuan writer Chen Yingrun, and early Qing writers such as Huang Zongxi, Huang Zongyan and Mao Qiling had raised it), though the Siku editors say he traced it to its sources more fully ✔ [@skqs_zongmu_006; @skqs_yitumingbian]. The Qing classicist Pi Xirui credited it with refuting the River Chart and the Luo Writing, while noting that on the Hongfan it also attacked Han scholars ✔ [@pi_jingxue_lishi; @zh_huwei]. Qing scholars more generally turned to the old language of the text [@wp_iching].",
+        "The record": "The Qing turn to pre-classical grammar ✔ [@wp_iching]. Hu Wei, his dates and the title ✔ [@zh_huwei]; the year 1706, from his own preface and from Henderson's chapter ✔ [@skqs_yitumingbian; @henderson1994]; the Daoist origin of the diagrams and the earlier critics, from the Siku editors' notes ✔ [@skqs_zongmu_006; @skqs_yitumingbian]; Pi Xirui's verdict ✔ [@pi_jingxue_lishi]."
       },
       "sort_order": 18
     },
     {
       "id": "book-zhezhong",
-      "name": "The Kangxi Emperor's Balanced Compendium on the Zhouyi (1715)",
+      "name": "The Kangxi Emperor's Balanced Annotations on the Zhouyi (1715)",
       "category": "book",
       "level": 1,
       "keywords": [
@@ -899,7 +1702,7 @@
         "meanings"
       ],
       "metadata": {
-        "when": "Qing, 1715 ◇",
+        "when": "Qing, 1715 ✔",
         "year": 1715,
         "branch": "branch-meanings",
         "derives_from": [
@@ -907,12 +1710,12 @@
           "book-cheng-yi"
         ],
         "kind": "imperial edition",
-        "confidence": "low"
+        "confidence": "medium"
       },
       "sections": {
-        "What it is": "An imperial compendium, the Zhouyi zhezhong ('Balanced Annotations'), compiled by Li Guangdi, which set the original text apart from its commentaries ✔ [@wp_li_guangdi] and arranges the Song commentaries (Cheng Yi and Zhu Xi foremost) with many others ◇. The Kangxi Emperor was especially fond of the book and ordered new interpretations [@wp_iching].",
-        "What it changed in the text": "The edition Wilhelm translated from ✔ [@de_wilhelm]: the Song reading, now with an emperor's seal. Whether Legge used it too ◇.",
-        "The record": "Kangxi's interest ✔ [@wp_iching]. Title and compiler ✔ [@wp_li_guangdi]; Wilhelm's use ✔ [@de_wilhelm]; the year 1715 and Legge's use ◇ [@smith2008]."
+        "What it is": "An imperial compendium, the Zhouyi zhezhong ('Balanced Annotations'), compiled under Li Guangdi as chief editor, with a staff of proofreaders, section compilers and copyists named in the book ✔ [@skqs_zhezhong; @wp_li_guangdi], which printed the Classic proper and the Ten Wings in separate sections, as the old text had them ✔ [@zhezhong_fanli; @hon2005; @legge1882_scan], and puts Zhu Xi's Original Meaning and Cheng Yi's Commentary first, then comments from other scholars, Han to Ming, then the compilers' own judgments, with the Kangxi Emperor's views among them ✔ [@zhezhong_fanli; @skqs_zhezhong; @legge1882_scan]. The Kangxi Emperor was especially fond of the I Ching and ordered new interpretations [@wp_iching].",
+        "What it changed in the text": "The edition Wilhelm translated from ✔ [@de_wilhelm; @hon2005]: the Song reading, now with an emperor's seal. Legge used it too: his preface records his debt to the imperial edition of 1715, and his notes cite its editors throughout ✔ [@legge1882_scan; @hon2005].",
+        "The record": "Kangxi's interest in the I Ching ✔ [@wp_iching], and his own preface naming Li Guangdi and dated 1715 ✔ [@skqs_zhezhong]. Title ✔ [@wp_li_guangdi]; Li Guangdi as chief editor ✔ [@skqs_zhezhong]; Wilhelm's use ✔ [@de_wilhelm; @hon2005]; the year 1715 ✔ [@skqs_zhezhong; @skqs_zongmu_006; @legge1882_scan]; Legge's use ✔ [@legge1882_scan; @hon2005]."
       },
       "sort_order": 19
     },
@@ -926,19 +1729,19 @@
         "dao"
       ],
       "metadata": {
-        "when": "Qing; Liu Yiming lived 1734–1821",
+        "when": "Qing; Liu Yiming lived 1734–1821; the commentary dates from the late 1790s (1796 or 1798) ◆",
         "year": 1796,
         "branch": "branch-dao",
         "derives_from": [
           "book-zhu-xi"
         ],
         "kind": "commentary",
-        "confidence": "low"
+        "confidence": "medium"
       },
       "sections": {
-        "What it is": "A master of Daoist inner alchemy [@wp_liuyiming] who read every hexagram as a stage of inner work ◇.",
-        "What it changed in the text": "The same lines, a different body: the book as a manual of cultivation rather than of government or fortune ◇. His Zhouyi chanzhen, 'Uncovering the True in the Book of Changes', reached English as Thomas Cleary's The Taoist I Ching (1986) ✔ [@wp_liuyiming; @cleary1986].",
-        "The record": "Liu Yiming, his dates and his Longmen lineage ✔ [@wp_liuyiming]. The commentary's title and its English translation ✔ [@wp_liuyiming]; its date ◇."
+        "What it is": "A master of Daoist inner alchemy [@wp_liuyiming] who read the hexagrams in order as one course of inner cultivation, in two strands, one advancing the yang fire and one circulating the yin tally: Qian opens the first, Kun the second, and each later hexagram follows on from the one two places before it ✔ [@liu_chanzhen_text].",
+        "What it changed in the text": "The same lines, a different body: Liu's own preface says the Yi is not a book of divination but a study of principle, nature and destiny ✔ [@liu_chanzhen_text]; the Zhezhong editors describe Cheng Yi's reading as one about cultivating the self, ordering the household and governing the state ✔ [@zhezhong_fanli]. His Zhouyi chanzhen, 'Uncovering the True in the Book of Changes', reached English as Thomas Cleary's The Taoist I Ching (1986), which leaves out the book's opening chapter of charts ✔ [@wp_liuyiming; @cleary1986; @pregadio2025].",
+        "The record": "Liu Yiming, his dates and his Longmen lineage ✔ [@wp_liuyiming]. The commentary's title and its English translation ✔ [@wp_liuyiming]; its date is given as 1796 in the publisher's description of the English edition and as 1798 in Liu's own preface ◆ [@ol_taoist_iching; @liu_chanzhen_text]."
       },
       "sort_order": 20
     },
@@ -970,7 +1773,7 @@
     },
     {
       "id": "book-mcclatchie",
-      "name": "McClatchie, The Confucian Yih King (1876)",
+      "name": "McClatchie, the Confucian 'Classic of Change' (1876)",
       "category": "book",
       "level": 1,
       "keywords": [
@@ -978,7 +1781,7 @@
         "west"
       ],
       "metadata": {
-        "when": "Shanghai, 1876",
+        "when": "Shanghai, 1876 ✔",
         "year": 1876,
         "branch": "branch-west",
         "derives_from": [
@@ -988,9 +1791,9 @@
         "confidence": "low"
       },
       "sections": {
-        "What it is": "An English translation six years before Legge's, usually called the first ○ [@wp_iching], by Thomas McClatchie, a Church Missionary Society (Anglican) missionary in Shanghai from 1845 ✔ [@wp_cms_china].",
-        "What it changed in the text": "It read the book through comparative mythology ○ [@mcclatchie_chapter], with phallic and astral keys, an approach Legge rejected ◇. It's a good example of a translation telling you more about its century than about the Zhou.",
-        "The record": "A Translation of the Confucian Yih King, or the 'Classic of Change', Shanghai, American Presbyterian Mission Press, 1876; xiii, xvii, 455 pages, Chinese and English on facing pages ✔ [@stanford_mcclatchie]. His keys and Legge's response ◇ [@smith2008]."
+        "What it is": "An English translation six years before Legge's, called the first complete English translation ✔ [@li2022; @yang2020], by Thomas McClatchie, a Church Missionary Society (Anglican) missionary in Shanghai, sent out in 1844 and in China from 1845 ✔ [@wp_cms_china].",
+        "What it changed in the text": "It read the book through comparative mythology ○ [@mcclatchie_chapter], taking Qian and Kun, the first two hexagrams, as the male and female sexual organs ✔ [@legge1882_scan; @sun2025] and tracing the book to Noah's sons and Babel ○ [@yang2020; @smith2012], an approach Legge called unnecessary and its findings unpleasant ✔ [@legge1882_scan]. It's a good example of a translation telling you more about its century than about the Zhou.",
+        "The record": "A Translation of the Confucian [Yih king], or the 'Classic of Change', with Notes and Appendix (the bracketed romanisation is the cataloguer's), Shanghai, American Presbyterian Mission Press, 1876, catalogued from the 1973 Taipei reprint; xiii, xvii, 455 pages, Chinese and English on facing pages ✔ [@stanford_mcclatchie; @hathi_mcclatchie]; HathiTrust counts x preliminary pages, not xiii [@hathi_mcclatchie]. His keys: the first two hexagrams read as sexual organs ✔ [@legge1882_scan], and the book traced to Noah's sons and Babel ○ [@yang2020; @smith2012]. Legge's response, in his preface (p. xvii) and in a note at pp. 396-397 ✔ [@legge1882_scan]. That it derives from the Kangxi edition ◇: McClatchie cites an 'Imp. Ed.' for a comment ○ [@legge1882_scan], but he printed Appendixes I, II and IV under the Text, as the ordinary school editions do, while the 1715 imperial edition keeps them apart ✔ [@legge1899_scan]."
       },
       "sort_order": 22
     },
@@ -1004,7 +1807,7 @@
         "west"
       ],
       "metadata": {
-        "when": "Oxford, 1882 (2nd ed. 1899)",
+        "when": "Oxford, 1882 (2nd ed. 1899) ✔",
         "year": 1882,
         "branch": "branch-west",
         "derives_from": [
@@ -1020,8 +1823,8 @@
       },
       "sections": {
         "What it is": "James Legge, missionary and Oxford's first professor of Chinese, translated it for Max Müller's Sacred Books of the East [@wp_legge; @legge1882].",
-        "What it changed in the text": "Legge printed the Zhouyi and the Wings apart (the Text, then the Appendixes), not woven together. Words he added to make the terse Chinese read as English sit in parentheses: the '(we see its subject as)' you meet on every line here. It's literal, Victorian and moralising, and public domain. That last point is why it is the text of this library [@repo_changelog].",
-        "The record": "Legge, the SBE series 1879–1891 ✔ [@wp_legge]; the text ✔ (it is in this library) [@legge1882]. That he used the Kangxi compendium ◇.",
+        "What it changed in the text": "Legge printed the Zhouyi and the Wings apart (the Text, then the Appendixes), not woven together ✔ [@legge1899_scan]. Words he added to make the terse Chinese read as English sit in parentheses ✔ [@legge1899_scan]: the '(we see its subject as)' you meet on every line here. By his own account he aimed to give the meaning exactly and concisely, holding a literal version to be in vain ✔ [@legge1899_scan]. It reads as Victorian and moralising, and it is public domain; that last point is why it is the text of this library [@repo_changelog].",
+        "The record": "Legge, the SBE series 1879–1891 ✔ [@wp_legge]; the text ✔ (it is in this library) [@legge1882]. That he used the Kangxi compendium ✔ [@legge1899_scan]: his preface thanks the great imperial edition first published in 1715, whose authors he calls the Khang-hsi editors. That he drew on Régis ✔ [@legge1899_scan]: his 1854 draft followed Régis's example in being concise, and his notes quote and argue with Régis's renderings; he also says that draft proved of no service, so the tie is that he consulted Régis, not that he built on him.",
         "In this library": "This node has its own book here: open it from the link below, or from the timeline and the genealogy. (The 64 Hexagrams (Legge))"
       },
       "sort_order": 23
@@ -1036,7 +1839,7 @@
         "west"
       ],
       "metadata": {
-        "when": "Jena, 1924; made with the scholar Lao Naixuan, finished in Beijing",
+        "when": "Jena, 1924; made with the scholar Lao Naixuan, finished in Beijing ✔",
         "year": 1924,
         "branch": "branch-west",
         "derives_from": [
@@ -1048,8 +1851,8 @@
       },
       "sections": {
         "What it is": "Richard Wilhelm, missionary and sinologist, lived 25 years in China. His German I Ching is still counted among the finest translations [@wp_wilhelm].",
-        "What it changed in the text": "He translated from the Kangxi-era Zhouyi zhezhong ✔ [@de_wilhelm], wove the Wings back into each hexagram and wrote his own explanations, in the Song 'meanings and principles' line he learned from his teacher ◇. The result reads as wisdom literature: the voice most Western readers think of as 'the I Ching'.",
-        "The record": "Wilhelm's life and the translation's standing ✔; Jung was a friend ✔ [@wp_wilhelm]. Jena, Eugen Diederichs, 1924 ✔ [@wp_iching_de]; English Wikipedia gives 1923 ◆ [@wp_iching]. Made over nearly ten years with his teacher Lao Naixuan and finished in Beijing ✔ [@de_wilhelm]."
+        "What it changed in the text": "He translated from the Kangxi-era Zhouyi zhezhong ✔ [@de_wilhelm; @wilhelm1924_intro], set most of the Wings under the hexagrams they comment on, and added a commentary excerpted from the main Chinese commentators, with his own Western parallels marked as his ✔ [@wilhelm1924_intro]. That this follows the Song 'meanings and principles' line he learned from his teacher ◇. The result reads as wisdom literature: the voice most Western readers think of as 'the I Ching'.",
+        "The record": "Wilhelm's life and the translation's standing ✔; Jung was a friend ✔ [@wp_wilhelm]. Jena, Eugen Diederichs, 1924, in two volumes ✔ [@wp_iching_de; @hathi_wilhelm1924]. English Wikipedia's Translations section gives 1923, while its own list of translations in that section gives 1924; Wilhelm's preface is dated Peking, summer 1923 ✔ [@wp_iching; @wilhelm1924_intro]. Made over nearly ten years, mostly in Qingdao with his teacher Lao Naixuan (who died in 1921), and finished in Beijing in 1923 ✔ [@wilhelm1924_intro; @de_wilhelm; @wp_lao_naixuan]."
       },
       "sort_order": 24
     },
@@ -1063,19 +1866,19 @@
         "modern"
       ],
       "metadata": {
-        "when": "Republican China, 1931 ◇",
+        "when": "Republican China, 1931 ✔",
         "year": 1931,
         "branch": "branch-modern",
         "derives_from": [
           "book-han-canon"
         ],
         "kind": "critical study",
-        "confidence": "low"
+        "confidence": "medium"
       },
       "sections": {
-        "What it is": "The 'Doubting Antiquity' scholars [@wp_doubting] read the classics as historical documents. Their Gushi bian, 'Debates on Ancient History', ran to seven volumes from 1926 ✔ [@wp_gujiegang]. Its third volume mainly collects Li Jingchi's and Yu Yongliang's discussions ✔ [@zh_gushibian], which treated the Zhouyi as a Western Zhou divination text, apart from the Wings ◇.",
-        "What it changed in the text": "The layers are pulled apart. The sages are taken out of the authorship, and the oracle is read for what it may have meant to its first users, not to Confucius ◇.",
-        "The record": "The school and its method ✔ [@wp_doubting]. Seven volumes, 1926 to 1941 [@zh_gushibian] or to 1944 [@wp_gujiegang] ◆; volume 3's main contributors ✔ [@zh_gushibian]; its year (1931) and its focus on the Zhouyi ◇ [@smith2008]."
+        "What it is": "The 'Doubting Antiquity' scholars [@wp_doubting] read the classics as historical documents. Their Gushi bian, 'Debates on Ancient History', ran to seven volumes from 1926 ✔ [@wp_gujiegang]. Its third volume (1931) has two parts, one on the Yijing and one on the Shijing ✔ [@richter1993] [@nlc_gushibian3]: fourteen papers on the Zhouyi, opening with Gu Jiegang's study of the stories in its line statements and including Yu Yongliang's and Li Jingchi's discussions of its date and its divination terms ✔ [@nlc_gushibian3] [@shaughnessy2022] [@zh_gushibian], and fifty on the Poetry ✔ [@nlc_gushibian3]. Gu Jiegang, Yu Yongliang and Li Jingchi each placed the hexagram and line statements in the early Western Zhou, and the volume reads the book as a diviners' manual rather than a sacred text and takes up the Wings in separate papers ✔ [@richter1993] [@nlc_gushibian3] [@shaughnessy2022].",
+        "What it changed in the text": "The layers are pulled apart: the hexagram and line statements are dated early, and the Wings are examined on their own, in at least two papers whose headings say they are not by Confucius ✔ [@nlc_gushibian3]. The sages come out of the authorship: Gu Jiegang denied King Wen the text and still placed it in the early Western Zhou ✔ [@shaughnessy2022], and the Changes' standing as a scripture from Fuxi is challenged in favour of an origin as a diviners' manual ✔ [@richter1993].",
+        "The record": "The school and its method ✔ [@wp_doubting]. Seven volumes, 1926 to 1941 ✔ [@zh_gushibian] [@richter1993] [@nlc_gushibian1] [@nlc_gushibian7]; the 1944 in the English Wikipedia article on Gu Jiegang cites Richter pp. 370-371, which cover only the first two volumes, and Richter gives 1941 for the last ✔ [@wp_gujiegang] [@richter1993]; volume 3's contributors as the Chinese Wikipedia lists them ✔ [@zh_gushibian], and in its Zhouyi part Gu Jiegang (pp. 1-44), Yu Yongliang (pp. 143-170) and Li Jingchi (pp. 187-251) ✔ [@shaughnessy2022]; volume 3's year (1931) and its two subjects, the Zhouyi and the Poetry ✔ [@richter1993] [@nlc_gushibian3]."
       },
       "sort_order": 25
     },
@@ -1089,7 +1892,7 @@
         "west"
       ],
       "metadata": {
-        "when": "Bollingen Series XIX, 1950",
+        "when": "Bollingen Series XIX, 1950 ✔",
         "year": 1950,
         "branch": "branch-west",
         "derives_from": [
@@ -1100,8 +1903,8 @@
       },
       "sections": {
         "What it is": "Cary F. Baynes, a Jungian, translated Wilhelm's German into English [@wp_baynes], with a foreword by C. G. Jung.",
-        "What it changed in the text": "A translation of a translation. Jung's foreword reframed the casts as synchronicity, and this edition carried the book into the 1960s counterculture. It is still in copyright: in September 2026 this library found Wilhelm/Baynes wording in one of its grammars and replaced it with Legge [@repo_changelog].",
-        "The record": "Baynes translated Wilhelm ✔ [@wp_baynes]; Bollingen XIX, © 1950 ✔ [@repo_changelog]. Jung's foreword: well known, its framing paraphrased here ◇."
+        "What it changed in the text": "A translation of a translation. Jung's foreword reframed the casts as synchronicity ✔ [@jung1949; @wp_iching], and Wilhelm's book, in this English edition, reached the 1960s counterculture ✔ [@wp_iching; @smith2012]. It is still in copyright: in September 2026 this library found Wilhelm/Baynes wording in one of its grammars and replaced it with Legge [@repo_changelog].",
+        "The record": "Baynes translated Wilhelm ✔ [@wp_baynes]; Bollingen XIX, © 1950 ✔ [@repo_changelog]. Jung's foreword (dated Zurich, 1949; pp. xxi-xxxix) ✔ [@jung1949; @sun2025] sets the casts within his idea of synchronicity ✔ [@jung1949; @wp_iching]."
       },
       "sort_order": 26
     },
@@ -1122,11 +1925,11 @@
           "book-baynes"
         ],
         "kind": "reception",
-        "confidence": "low"
+        "confidence": "medium"
       },
       "sections": {
-        "What it is": "A composer cast the I Ching to make music ✔ [@wp_music_of_changes], and a novelist put it inside his story ✔ [@wp_high_castle]; that Dick cast it to plot the book ◇.",
-        "What it changed in the text": "The book stops being read and becomes a machine for chance: the line texts matter less than the act of casting.",
+        "What it is": "A composer cast the I Ching to make music ✔ [@wp_music_of_changes], and a novelist put it inside his story ✔ [@wp_high_castle]; that Dick, by his own account, threw coins whenever a character consulted the oracle and let the hexagram lines steer the book, and said he did this only for that book ✔ [@pkd_vertex1974] [@pkd_sfr1976].",
+        "What it changed in the text": "For Cage the book becomes a source of chance: its 64 hexagrams pick cells in 8-by-8 charts of sounds, durations and dynamics ✔ [@wp_music_of_changes]. For Dick the lines themselves steered the plot: when a character consulted the oracle he threw the coins, wrote down the lines that came, and followed them ✔ [@pkd_vertex1974] [@pkd_sfr1976].",
         "The record": "Music of Changes (1951), composed by applying I Ching decisions to charts of sounds, durations and dynamics ✔ [@wp_music_of_changes]. The Man in the High Castle (1962), with the I Ching in its story and among Dick's inspirations ✔ [@wp_high_castle]."
       },
       "sort_order": 27
@@ -1141,7 +1944,7 @@
         "modern"
       ],
       "metadata": {
-        "when": "Stanford PhD dissertation, 1983 ◇",
+        "when": "Stanford PhD dissertation, 1983 ✔",
         "year": 1983,
         "branch": "branch-modern",
         "derives_from": [
@@ -1152,9 +1955,9 @@
         "confidence": "medium"
       },
       "sections": {
-        "What it is": "The study that dated the Zhouyi's compilation by comparing its language with dated bronze inscriptions [@wp_iching]. Shaughnessy is a historian of the Zhou and of the Changes [@wp_shaughnessy].",
-        "What it changed in the text": "No new words, a new date: the late 9th century BCE. That date is now the usual anchor ✔ [@wp_iching].",
-        "The record": "The dating and the method ✔ via [@wp_iching]; the dissertation itself ◇ [@shaughnessy1983]."
+        "What it is": "A study of the Zhouyi's date that its author later called an attempt at a comprehensive one: rhyme and four-character phrasing set beside the Classic of Poetry, vocabulary set beside dated Western Zhou bronze inscriptions, and a date in the last two decades of the 9th century BCE, early in King Xuan's reign ✔ [@shaughnessy2022] [@wp_iching]. Lu Kanru and Li Jingchi had compared the text with the Poetry before, and Chen Mengjia with bronze inscriptions ✔ [@shaughnessy2022]. Shaughnessy is a historian of the Zhou and of the Changes [@wp_shaughnessy].",
+        "What it changed in the text": "No new words, a new date: the last two decades of the 9th century BCE, early in King Xuan's reign ✔ [@shaughnessy2022]. Modern scholars' dates for the text range from the 10th to the 4th century BCE ✔ [@wp_iching]. Its author later wrote that in Western studies this date became more influential than it should have, quoting Kunst and Rutt on roughly 800 BCE, and that the final editing may have come a century or two later ✔ [@shaughnessy2022].",
+        "The record": "The dating and the method ✔ [@wp_iching] [@shaughnessy2022]; the dissertation's title, department and year ✔ [@sw_shaughnessy1983]; its method and result, as its author summarises them in 2022 ○ [@shaughnessy2022]; the text itself not opened ◇ [@shaughnessy1983]."
       },
       "sort_order": 28
     },
@@ -1168,20 +1971,20 @@
         "west"
       ],
       "metadata": {
-        "when": "Ra Uru Hu, 1987",
+        "when": "Ra Uru Hu, 1987 (his account of the origin; first book 1992) ✔",
         "year": 1987,
         "branch": "branch-west",
         "derives_from": [
           "book-baynes"
         ],
         "kind": "modern lens",
-        "confidence": "medium",
+        "confidence": "high",
         "grammar_slug": "iching-hd-meta-categories"
       },
       "sections": {
-        "What it is": "A modern system that maps the 64 hexagrams to 'gates' on a body chart, alongside astrology, the chakras and the Kabbalah. It isn't a translation, and this library keeps it as a lens.",
-        "What it changed in the text": "The words are replaced by new keywords. What carries over from the Changes is the number 64 and the order of the figures.",
-        "The record": "Origin story and date as given in this library's Human Design grammar ✔ (its own description). Which translation it drew on ◇.",
+        "What it is": "A modern system that places the 64 hexagrams, which it calls 'gates', on a body chart, and combines them by its own account with astrology, the Kabbalah and the chakra system ✔ [@wp_humandesign; @jovian_ra; @ra_rave_iching]. It isn't a translation, and this library keeps it as a lens.",
+        "What it changed in the text": "The Judgment, Image and line sayings are replaced by Human Design's own gate themes, line keynotes and commentary; the hexagram titles stay ✔ [@ra_rave_iching]. What carries over is the set of 64 figures under their King Wen numbers (gate 1 is hexagram 1, The Creative) ✔ [@ra_rave_iching]. The King Wen order does not: Ra's wheel runs the gates round the zodiac in another order (25, 17, 21, 51...), each gate spanning 5°37'30\" ✔ [@ra_rave_iching]; worked out line by line from the trigrams in [@wp_hexlist], that order is the binary (Fu Xi) sequence [@wp_kingwen] laid round a circle (this library's own check).",
+        "The record": "Origin story and date as given in this library's Human Design grammar ✔ (its own description); the 1987 experience and the 1992 first book ✔ [@jovian_ra; @wp_humandesign]. Which translation it drew on: the book names none ✔ [@ra_rave_iching]. Its hexagram titles look like the Wilhelm/Baynes English ones; gates 3 and 36, for instance, carry the titles that [@cottrell] quotes from Wilhelm/Baynes ○.",
         "In this library": "This node has its own book here: open it from the link below, or from the timeline and the genealogy. (I Ching HD Meta-Categories)"
       },
       "sort_order": 29
@@ -1196,7 +1999,7 @@
         "modern"
       ],
       "metadata": {
-        "when": "1996 and 2017",
+        "when": "1996 and 2017 ✔",
         "year": 1996,
         "branch": "branch-modern",
         "derives_from": [
@@ -1204,18 +2007,18 @@
           "book-zhouyi"
         ],
         "kind": "translation",
-        "confidence": "low"
+        "confidence": "medium"
       },
       "sections": {
-        "What it is": "Translations of the Zhouyi alone, without the Wings, trying to read it as a Western Zhou document [@rutt1996; @redmond2017].",
-        "What it changed in the text": "They take the Wings back out, the reverse of Wilhelm's move, and translate words like zhen as 'divining' instead of 'firm and correct' ◇.",
-        "The record": "Titles ✔ [@wp_iching]: Rutt, The Book of Changes (Zhouyi): A Bronze Age Document (Curzon, 1996); Redmond, The I Ching (Book of Changes): A Critical Translation of the Ancient Text (Bloomsbury, 2017)."
+        "What it is": "Translations that read the Zhouyi as a Western Zhou divination text. Redmond translates the Zhouyi alone; Rutt gives it first and puts the Ten Wings in a separate appendix ✔ [@rutt1996; @redmond2017; @lebovitz2018; @biroco_rutt].",
+        "What it changed in the text": "Both set aside the later moral reading of the Wings, the reverse of Wilhelm, whose pages blend the Zhouyi with the Wings and later commentary: Redmond leaves the Wings out, and Rutt translates them apart from the Zhouyi ✔ [@lebovitz2018; @biroco_rutt]. Both translate words like zhen as an act of divining, not as 'correct and firm' (Legge) or 'perseverance' (Wilhelm/Baynes): Rutt has 'augury', Redmond mostly 'divine', though a reviewer finds him inconsistent ○ [@cottrell; @lebovitz2018].",
+        "The record": "Titles ✔ [@wp_iching; @rutt_front; @lebovitz2018]: Rutt, The Book of Changes (Zhouyi): A Bronze Age Document (Curzon, Richmond, 1996; paperback RoutledgeCurzon, 2002); Redmond, The I Ching (Book of Changes): A Critical Translation of the Ancient Text (Bloomsbury Academic, 2017). Both name the Western Zhou readings of Shaughnessy (1983) and Richard Kunst (1985) as a base: Rutt says so in his preface, while a reviewer notes Shaughnessy is missing from Redmond's bibliography ○ [@rutt_front; @lebovitz2018]."
       },
       "sort_order": 30
     },
     {
       "id": "book-excavated-translations",
-      "name": "The excavated texts in English: Mawangdui (1996), Unearthing the Changes (2014)",
+      "name": "The excavated texts in English: Mawangdui (1997), Unearthing the Changes (2014)",
       "category": "book",
       "level": 1,
       "keywords": [
@@ -1223,7 +2026,7 @@
         "modern"
       ],
       "metadata": {
-        "when": "1996 and 2014",
+        "when": "1997 and 2014 ✔",
         "year": 2014,
         "branch": "branch-modern",
         "derives_from": [
@@ -1234,12 +2037,12 @@
           "book-shaughnessy-1983"
         ],
         "kind": "translation",
-        "confidence": "medium"
+        "confidence": "high"
       },
       "sections": {
-        "What it is": "English translations of the tomb and market manuscripts: the Mawangdui silk text, then the Shanghai Museum, Wangjiatai and Fuyang texts [@shaughnessy1996; @shaughnessy2014].",
-        "What it changed in the text": "For the first time in two thousand years, readers can see versions of the book that the Han canon did not fix.",
-        "The record": "Titles ✔ [@wp_shaughnessy]: I Ching: The Classic of Changes (Ballantine; 1997 there, 1996 in [@wp_iching] ◆) and Unearthing the Changes: Recently Discovered Manuscripts of the Yi Jing (I Ching) and Related Texts (Columbia University Press, 2014). The books were not opened."
+        "What it is": "English translations of tomb and market manuscripts. The 1997 book gives the Mawangdui silk text and its commentaries (from a tomb of 168 BCE); the 2014 book gives the Shanghai Museum Zhouyi (bought in 1994), the Fuyang Zhouyi (from a tomb) and the Wangjiatai fragments of the Guicang (from a tomb) ✔ [@shaughnessy1997; @shaughnessy2014; @cup_unearthing; @shaughnessy2005; @wp_smbs; @rutt1999].",
+        "What it changed in the text": "For the first time in English, as the first book's subtitle says, readers can see versions of the book from before the Han canon of 136 BCE fixed it. The Mawangdui text is about 350 years older than any manuscript known before it and arranges the hexagrams in another order ✔ [@rutt1999; @shaughnessy1997]; the Shanghai Museum text, copied about 300 BCE, shows the text was already stable then, with many spelling variants ✔ [@shaughnessy2005]. The first book's jacket calls the find the first new manuscript of the work in two thousand years ○ [@abe_ballantine].",
+        "The record": "Titles ✔ [@wp_shaughnessy; @shaughnessy1997; @cup_unearthing]: I Ching: The Classic of Changes, subtitled The First English Translation of the Newly Discovered Second-Century B.C. Mawangdui Texts (Ballantine, New York, 1997 ✔ [@shaughnessy1997]; the 1996 in [@wp_iching], which Shaughnessy's own 2005 notes also give [@shaughnessy2005], is not borne out by the catalogue records or two reviews) and Unearthing the Changes: Recently Discovered Manuscripts of the Yi Jing (I Ching) and Related Texts (Columbia University Press, April 2014 ✔ [@cup_unearthing]). The books themselves were not opened."
       },
       "sort_order": 31
     },
@@ -1374,7 +2177,7 @@
       "metadata": {},
       "sections": {
         "What it is": "Readers who looked for a moral and philosophical teaching in the words: the line that became imperial orthodoxy.",
-        "Books": "Wang Bi, Commentary on the Zhouyi (3rd century), Kong Yingda, The Correct Meaning of the Zhouyi (7th century), Cheng Yi, Commentary on the Changes (c. 1099), Zhu Xi, The Original Meaning of the Zhouyi (12th century), The Kangxi Emperor's Balanced Compendium on the Zhouyi (1715)"
+        "Books": "Wang Bi, Commentary on the Zhouyi (3rd century), Kong Yingda, The Correct Meaning of the Zhouyi (7th century), Cheng Yi, Commentary on the Changes (c. 1099), Zhu Xi, The Original Meaning of the Zhouyi (12th century), The Kangxi Emperor's Balanced Annotations on the Zhouyi (1715)"
       }
     },
     {
@@ -1417,7 +2220,7 @@
       "metadata": {},
       "sections": {
         "What it is": "Missionaries, philosophers and translators: the Changes in Latin, English, German, and what each translation brought with it.",
-        "Books": "Bouvet's letters and Leibniz's binary (1701–1703), Régis and others, the Latin Y-King (made c. 1730s; printed 1834), McClatchie, The Confucian Yih King (1876), Legge, The Yî King (Sacred Books of the East 16, 1882), Wilhelm, I Ging: Das Buch der Wandlungen (1924), Baynes, The I Ching or Book of Changes (1950), with Jung's foreword, Chance and the counterculture: Cage (1951), Dick (1962), Human Design (1987): the hexagrams as 'gates'"
+        "Books": "Bouvet's letters and Leibniz's binary (1701–1703), Régis and others, the Latin Y-King (made c. 1730s; printed 1834), McClatchie, the Confucian 'Classic of Change' (1876), Legge, The Yî King (Sacred Books of the East 16, 1882), Wilhelm, I Ging: Das Buch der Wandlungen (1924), Baynes, The I Ching or Book of Changes (1950), with Jung's foreword, Chance and the counterculture: Cage (1951), Dick (1962), Human Design (1987): the hexagrams as 'gates'"
       }
     },
     {
@@ -1440,7 +2243,7 @@
       "metadata": {},
       "sections": {
         "What it is": "Twentieth-century scholarship that dated the layers apart, and the tombs that returned older copies.",
-        "Books": "Hu Wei, Clarifying the Diagrams (1706), Gushi bian, vol. 3 (1931): the Zhouyi as a Zhou diviner's book, Shaughnessy, The Composition of the Zhouyi (1983), The bronze-age translations: Rutt (1996), Redmond (2017), The excavated texts in English: Mawangdui (1996), Unearthing the Changes (2014), The Recursive I Ching (2026)"
+        "Books": "Hu Wei, Clarifying the Diagrams (1706), Gushi bian, vol. 3 (1931): the Zhouyi as a Zhou diviner's book, Shaughnessy, The Composition of the Zhouyi (1983), The bronze-age translations: Rutt (1996), Redmond (2017), The excavated texts in English: Mawangdui (1997), Unearthing the Changes (2014), The Recursive I Ching (2026)"
       }
     },
     {

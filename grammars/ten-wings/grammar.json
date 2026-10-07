@@ -5,7 +5,7 @@
   "attribution": [
    "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI, 1882/1899 — public domain",
    "Digitizations cross-verified: sacred-texts.com transcription (via two mirrors) and two independently maintained datasets (accelon/cct, limjiechao/ts-hexagram-generator, both on GitHub)",
-   "Scholarly grounding for the wing summaries: Edward L. Shaughnessy; Richard Rutt, Zhouyi: A Bronze Age Document (1996); Geoffrey Redmond & Tze-ki Hon, Teaching the I Ching (2014)",
+   "Scholarly grounding for the wing summaries: Edward L. Shaughnessy; Richard Rutt, The Book of Changes (Zhouyi): A Bronze Age Document (1996); Geoffrey Redmond & Tze-ki Hon, Teaching the I Ching (2014)",
    "PlayfulProcess (wing summaries, curation, description)"
   ]
  },
@@ -1376,7 +1376,7 @@
    "sort_order": 100,
    "sections": {
     "What it is": "The Shiyi (十翼), the 'Ten Wings', are the classical commentaries bound together with the Zhouyi core to make the book we call the I Ching. They are what turned a Bronze Age divination manual into a work of philosophy: the cosmology of yin and yang, the 'superior man' who reads each hexagram as moral instruction, the whole metaphysical frame that most readers now assume IS the I Ching. This grammar holds that layer apart so you can see it as a layer — an addition, magnificent on its own terms, but not the origin. The ten are: the Tuan Zhuan in two parts (wings 1–2), the Xiang Zhuan in two parts (wings 3–4), the Xici or Great Commentary in two parts (wings 5–6), the Wenyan (wing 7), the Shuogua (wing 8), the Xugua (wing 9), and the Zagua (wing 10).",
-    "Dating & authorship": "Tradition credits all ten to Confucius (551–479 BCE). That attribution has been doubted at least since the Song scholar Ouyang Xiu (1007–1072) ✔, and modern scholarship rejects it: the Wings are composite works by multiple hands in the Confucian school, composed roughly between the late Warring States and the early Han — c. 350–100 BCE, several centuries after the Zhouyi core ✔ (Shaughnessy, 'I ching (Chou I)' in Early Chinese Texts; Rutt, Zhouyi: A Bronze Age Document, 1996; Redmond & Hon, Teaching the I Ching, 2014). The earliest physical witness to any Wing is the Mawangdui silk manuscript, from a tomb sealed 168 BCE, which contains a version of the Xici ✔. None of this makes the Wings lesser — it makes them legible as what they are: the moment a divination text was canonized into philosophy.",
+    "Dating & authorship": "Tradition credits all ten to Confucius (551–479 BCE). That attribution has been doubted at least since the Song scholar Ouyang Xiu (1007–1072) ✔, and modern scholarship rejects it: the Wings are composite works by multiple hands in the Confucian school, composed roughly between the late Warring States and the early Han — c. 350–100 BCE, several centuries after the Zhouyi core ✔ (Shaughnessy, 'I ching (Chou I)' in Early Chinese Texts; Rutt, The Book of Changes (Zhouyi): A Bronze Age Document, 1996; Redmond & Hon, Teaching the I Ching, 2014). The earliest physical witness to any Wing is the Mawangdui silk manuscript, from a tomb sealed 168 BCE, which contains a version of the Xici ✔. None of this makes the Wings lesser — it makes them legible as what they are: the moment a divination text was canonized into philosophy.",
     "Note": "This summary is the site's own synthesis, written for this grammar — not a quotation. Confidence markers: ✔ verified against a named source; ○ real scholarship, paraphrased; ◆ contested or uncertain."
    },
    "keywords": [
@@ -1387,7 +1387,7 @@
    ],
    "metadata": {
     "confidence": "high",
-    "_source": "Synthesis grounded in Shaughnessy (Early Chinese Texts, 1993), Rutt (Zhouyi: A Bronze Age Document, 1996), Redmond & Hon (Teaching the I Ching, 2014); dating and Ouyang Xiu attribution-doubt verified via current reference works, Jul 2026."
+    "_source": "Synthesis grounded in Shaughnessy (Early Chinese Texts, 1993), Rutt (The Book of Changes (Zhouyi): A Bronze Age Document, 1996), Redmond & Hon (Teaching the I Ching, 2014); dating and Ouyang Xiu attribution-doubt verified via current reference works, Jul 2026."
    }
   },
   {
