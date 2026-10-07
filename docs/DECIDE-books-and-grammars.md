@@ -82,20 +82,30 @@ would need to come from a public-domain scan, which the Desktop session can fetc
 
 ## The history's own open work
 
-The tree has 33 books. **57 claims are still marked ◇**: written from memory, not yet checked.
-Checked so far: Wikipedia leads and sections (cited by revision), the repo's own records and
-Legge's text. The next pass, best done in the Desktop session where the sources can be opened:
+The tree has 33 books. **After the check of Oct 6 2026, 6 claims are still marked ◇** (counted
+across the tree's sections: ✔ 197, ○ 13, ◆ 18, ◇ 6; on Oct 5 it was ✔ 78, ○ 3, ◆ 9, ◇ 45). The
+sources opened so far: Wikipedia in four languages (cited by revision), the repo's own records,
+Legge's text and prefaces, and, on Oct 6, the primary texts that are online (the Hanshu, the Tang
+histories, the Siku editors' notes, the prefaces of Cheng Yi, Hu Wei, the Kangxi edition and Liu
+Yiming) and the journal articles that could be opened. What would settle the rest:
 
-- **Open Richard J. Smith, *Fathoming the Cosmos and Ordering the World* (2008)**, the standard
-  history, and check every ◇ against it. Start with the low-confidence nodes: Tsinghua Shifa,
-  Fuyang, Jing Fang, Hu Wei, the Kangxi compendium, Liu Yiming, McClatchie, Gushi bian, and the
-  two modern-translation nodes.
-- **Shaughnessy, *Unearthing the Changes* (2014)**: the Shanghai, Wangjiatai and Fuyang
-  manuscripts.
-- **The title pages** of Régis/Mohl 1834, McClatchie 1876 and Wilhelm 1924: dates, places,
-  collaborators.
-- **Fix Wikipedia's confusing line** about a manuscript "found in 1987, now held by the Shanghai
-  Library" (◆ on the Shanghai node).
+- **Shaughnessy, *Unearthing the Changes* (2014), pp. 52–53**: what English Wikipedia's line about
+  a manuscript "found in 1987, now held by the Shanghai Library" rests on (◆ on the Shanghai node;
+  the line itself is still to fix on Wikipedia).
+- **Schilling, p. 371**: the German article's stone stele of 171 CE (the Han canon).
+- **A date for Wang Bi's commentary**: the timeline's 245 is an estimate within his lifetime.
+- **McClatchie's own book (1876)**: which Chinese text he translated. The genealogy's edge from
+  the Kangxi edition is still ◇: he cites an "Imp. Ed." but prints the Wings as the school
+  editions do.
+- **Hon Tze-ki, "Politics, Leadership, and Wisdom" (*Monumenta Serica*, 2023)**: whether
+  Wilhelm's commentary follows the Song "meanings and principles" line he learned from Lao
+  Naixuan (the page was blocked).
+- **Shaughnessy's dissertation itself** (Stanford, 1983): its method is known only from his own
+  2022 summary.
+- **The title pages of McClatchie 1876 and Wilhelm 1924**: catalogue records stand in for them now.
+
+Richard J. Smith, *Fathoming the Cosmos and Ordering the World* (2008), the standard history, is
+still unopened; no claim in the tree depends on it any more.
 
 When a ◇ is checked, change it to ✔ with its `[@key]` in the grammar. The timeline, genealogy and
 courses update by themselves, because they read the grammar live.
