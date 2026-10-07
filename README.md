@@ -38,6 +38,7 @@ recursive-iching/
 ├── course/three-lenses.manifest.json + pages/course-viewer.html
 │                                  the Three Lenses reading, chapters read live from three-lenses-64
 ├── scripts/build_collection.py    rebuild grammars/_collection.json after adding/editing a grammar
+│                                  (it also redraws img/covers/, each grammar's mark, via build_covers.py)
 ├── recursive-eco.json             channel manifest (how recursive.eco imports this repo)
 ├── ids.json                       slug -> recursive.eco grammar UUID (filled Oct 6 2026; not imported yet)
 └── GRAMMAR_FORMAT.md              grammar-JSON format reference — mirrored copy; canonical version is

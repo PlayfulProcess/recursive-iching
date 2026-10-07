@@ -1,5 +1,30 @@
 # Changelog — The Recursive I Ching
 
+## October 7, 2026 — every grammar card has a picture; short rows sit in the middle
+
+PlayfulProcess: "Only thing I don't like about the I Ching is things without thumbnails or not
+centralized when there is too few."
+
+- **A drawn mark for every grammar** (`img/covers/<slug>.svg`, by `scripts/build_covers.py`, which
+  `scripts/build_collection.py` now runs): the site's ensō in seal red on paper, with the
+  grammar's first hexagram inside it in ink and its King Wen number on a small seal at the lower
+  right. The I Ching — All Lenses gets the eight trigrams instead; the Tree of the Changes gets
+  one whole line and one broken line. Edit the script, not the SVGs.
+- **`_collection.json` gains `thumb` and `mark`.** `thumb` is the grammar's own cover when it has
+  one, otherwise its mark. Two covers were Commons *file pages* (`/wiki/File:…`, an HTML page, not
+  an image), so HD Meta-Categories and Three Lenses showed an empty card; `thumb` turns those into
+  the image link for the same Leibniz diagram. Commons links get `?width=400`, so a card no longer
+  loads a full-size scan. The grammar files' own `cover_image_url` is unchanged.
+- **Home page, "Every grammar in this repo":** each card shows its `thumb`; if that link ever
+  breaks, the card switches to the grammar's mark. Photos shot on white take the paper's tone.
+  Paintings stay contained, never cropped.
+- **The broken Hokusai:** its Commons link 404ed (no such file), leaving the Repair I Ching card
+  and the "Mirror, not fate" node blank. Both now show the Repair I Ching's mark.
+- **Centred rows:** the three ways in, every row of views, the course card and the grammar rows
+  wrap and centre, so a row with one or two cards sits in the middle at every width. At 375 px
+  nothing scrolls sideways.
+- **Not changed:** the viewers under `viewers/`, and every grammar file.
+
 ## October 6, 2026 (later) — a zen look: the seal-red spiral, ink and paper, public-domain zen art
 
 PlayfulProcess: "Maybe the recursive logo in i ching can have the iching colors? also, can we make

@@ -55,3 +55,5 @@ record and the home page lists it.
 The site's two drawn marks, img/recursive-logo-seal.svg (recursive.eco's spiral,
 path unchanged, recoloured as a seal) and img/enso.svg, are made by
 scripts/build_zen_marks.py. The spiral stays a trademark (see TRADEMARKS.md).
+The grammar cover marks in img/covers/ (an ensō with a hexagram or the eight
+trigrams in it) are drawn by this project's own code, scripts/build_covers.py.
