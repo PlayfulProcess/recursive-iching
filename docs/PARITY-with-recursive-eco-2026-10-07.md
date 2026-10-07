@@ -49,6 +49,15 @@ content is the Oct 6 state, unchanged). The version list labels a number-only wr
 change)" because its describer doesn't count a top-level `number`; the database rows were re-read
 and carry it.
 
+**Re-checked in review (Oct 7):** each "before" and "after" below was compared field by field from
+the saved history. The only differences are the ones in the table; no item was added, removed or
+reordered; every `number` equals the repo's for the same item id; the five new Zhouyi lines equal
+the repo's text word for word, and the lines they were cut from lost no words (two lost a stray
+"S.", a misread "5."); Ten Wings' 72 items equal the repo's `main`. Visibility in the database is as before:
+four Published, the Repair I Ching Link, Ten Wings Private. (Zhouyi's saved "after" also shows
+`_recursive_eco_url` and `_recursive_eco_edit_url`: the history adds those two when it saves a
+version, and its May "before" predates them. They are not in the database.)
+
 | Folder → app grammar | Before | After | What changed |
 |---|---|---|---|
 | `zhouyi-core` → `6efa4fc7` Zhouyi (Legge translation), Published | `81e14e2bfdd9472141177d753dc36e652da7341b` | `70ff6f21391bc848072bbead797f36f98589ea69` | `number` 1–64 on all 64 items. **The five missing lines filled:** hex 6 line 5, 8 line 3, 12 line 3, 41 line 2, 52 line 5. Each had been glued onto the line before it in the app ("…good fortune. S. The fifth NINE…", "…(for the other). 2 . The second NINE…"), so the line before now ends where Legge's does and the missing line stands on its own. No words were lost; the repo's text was used for both lines. |

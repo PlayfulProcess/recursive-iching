@@ -1,6 +1,20 @@
 # Changelog — The Recursive I Ching
 
-## October 7, 2026 (latest) — the hexagram previews checked against recursive.eco; corrections carried over
+## October 7, 2026 (review) — two fixes found while checking this round
+
+- **Cards on a phone:** the side list (`#hierarchy-sidebar`) was 10 px wider than a 375 px screen,
+  so the page scrolled sideways and the assistant's button sat past the edge. Its padding now
+  counts inside its width. This was already so before this round.
+- **`scripts/check_book_mode.py` works again.** Since Sep 6 book mode has had its own "Cast the next
+  hexagram" button and hides the shared "Next step" one, so the check stopped at once and timed out
+  waiting for the end. It now presses the book's own button. It passes (origin 21 to Hexagram 1 in
+  3 steps).
+- **Checked:** the recursive.eco changes listed below, by comparing each grammar's version before
+  and after in its saved history. Only the listed fields changed, no item was added or removed,
+  every `number` matches the repo, and visibility is as before (four Published, Repair I Ching
+  Link, Ten Wings Private).
+
+## October 7, 2026 (later yet) — the hexagram previews checked against recursive.eco; corrections carried over
 
 PlayfulProcess: "If no extra features are in the preview of hexagrams there, maybe let's carry it to
 recursive.eco the way we were planning (same header and footer, potentially different css when
@@ -34,8 +48,9 @@ in recursive I Ching works as in the preview within recursive.eco?"
 - **Cast (a hexagram's detail in Cards):** now **Cast with the assistant**. It opens the
   recursive.eco assistant beside the page with a request waiting in its chat box, not sent: "Cast
   the I Ching for me with this book, "Zhouyi Core — the Oldest Layer". I was just reading hexagram
-  22, Grace: tell me how the reading speaks to it." She can change it, then press Send; the
-  assistant casts the coins in its I Ching tab and reads the result. Where the assistant can't load,
+  22, Grace: tell me how the reading speaks to it." She can change it, then press Send. Send was
+  not pressed in testing (it spends credits), so whether the assistant then casts with that exact
+  book is not yet checked. Where the assistant can't load,
   the same button is a plain link that opens the book in the oracle on recursive.eco, as before
   (`/g/<id>?view=reading`). A book with no recursive.eco grammar yet isn't named, so the I Ching
   tab's own book is used.
