@@ -1,5 +1,32 @@
 # Changelog — The Recursive I Ching
 
+## October 7, 2026 (later) — no node for the grammar itself; no empty sections or "9999" labels
+
+PlayfulProcess: "I think the Tree of the Changes in the middle of the thing is disconnected and
+irrelevant? Search for other patterns like that to clean up."
+
+- **One rule, in `viewers/dimension-engine.js`: `grammarRootId(items)`.** It finds the item that
+  stands for the grammar itself: the only group nothing contains, which reaches every other item
+  and has groups under it. Here that is "The Tree of the Changes" (over its eight branches) and
+  "The Repair I Ching" (over "Repair as Change" and the twelve hexagrams). No grammar file changed.
+- **Genealogy:** that node and its eight spokes are gone from the middle; the eight branches stand
+  on their own. The grammar's name is now the page heading, with an "About this tree" button that
+  opens the tree's own text in the side panel (open on load at 1440 px and wider) and a "Start
+  with the oldest book" step. Names too long for the ring end on a whole word and "…" instead of
+  mid-word; the full name is in the tooltip. On a phone the hint that ran under the two buttons
+  is hidden.
+- **Tree view:** no "Level 3 (1)" row holding the grammar alone; the counts no longer include it
+  (the Tree of the Changes: 41 items, 2 levels).
+- **Cards sidebar:** starts at the branches instead of one collapsed line named after the grammar.
+- **Explorer "emergence" field:** no longer has a group named after the grammar (9 values became
+  8 for the Tree; the Repair I Ching's two groups held the same twelve hexagrams).
+- **Lenses, provenance ribbon:** undated grammars were placed at year 9999, so 3,000 dated years
+  sat in the left tenth and three labels read "9999"; they now share a zone at the right edge
+  labelled "undated", and years before 0 read "1000 BCE", not "-1000".
+- **The I Ching — All Lenses (meta):** 52 hexagrams had an empty "Wound" section (the Repair I
+  Ching reads twelve); `scripts/build_meta_iching.py` now leaves out a lens with nothing to say.
+- `dimension-engine.js?v=2` in every viewer that loads it.
+
 ## October 7, 2026 — every grammar card has a picture; short rows sit in the middle
 
 PlayfulProcess: "Only thing I don't like about the I Ching is things without thumbnails or not

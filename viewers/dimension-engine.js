@@ -21,11 +21,43 @@
     return String(a).localeCompare(String(b));
   }
 
+  /* GRAMMAR ROOT: the one item that stands for the grammar itself (Oct 7 2026) —
+     e.g. "The Tree of the Changes" over the eight branches, or "The Repair I Ching"
+     over its twelve hexagrams. It is the only composite nobody contains, it reaches
+     every other item, and at least one of its children is itself a group (so taking
+     it away still leaves a structure to show). Viewers drop it from graphs, trees,
+     sidebars and groupings: the page's own heading already names the grammar, and
+     a lone node in the middle connects nothing. Returns its id, or null. */
+  function grammarRootId(items) {
+    items = items || [];
+    const byId = new Map(items.map(i => [i.id, i]));
+    const contained = new Set();
+    for (const it of items) for (const c of (it.composite_of || [])) contained.add(c);
+    const tops = items.filter(i => (i.composite_of || []).length && !contained.has(i.id));
+    if (tops.length !== 1) return null;
+    const root = tops[0];
+    const kids = root.composite_of.map(id => byId.get(id)).filter(Boolean);
+    if (!kids.some(k => (k.composite_of || []).length)) return null;
+    const seen = new Set([root.id]), stack = [...root.composite_of];
+    while (stack.length) {
+      const id = stack.pop();
+      if (seen.has(id)) continue;
+      seen.add(id);
+      const it = byId.get(id);
+      if (it) stack.push(...(it.composite_of || []));
+    }
+    return items.every(i => seen.has(i.id)) ? root.id : null;
+  }
+
   /* FLATTEN: grammar.items → records, each field a string[] (multi-membership ready).
      Tracks __parents/__children from composite_of for relationship tracing. */
   function flatten(grammar, inherit, prefix, nameOf) {
     const items = grammar.items || [];
     const pid = id => (prefix ? prefix + ':' : '') + id;
+    // The grammar's own root is not an emergence of its own: as a grouping value it
+    // would put every item in one more group named after the grammar.
+    const rootId = grammarRootId(items);
+    const rootPid = rootId ? pid(rootId) : null;
     const memberOf = {};
     for (const it of items)
       for (const cid of (it.composite_of || []))
@@ -59,8 +91,10 @@
         else (r.keyword = r.keyword || []).push(kw);
       }
       if (it.category) r.category = [it.category];
-      if (r.__parents.length)
-        r.emergence = r.__parents.map(p => ((nameOf && nameOf(p)) || p).split(' — ')[0].slice(0, 40));
+      if (r.__id === rootPid) r.__grammarRoot = true;   // callers that rename emergences skip it too
+      const groups = r.__parents.filter(p => p !== rootPid);
+      if (groups.length)
+        r.emergence = groups.map(p => ((nameOf && nameOf(p)) || p).split(' — ')[0].slice(0, 40));
       recs.push(r);
     }
     return recs;
@@ -132,6 +166,6 @@
   }
 
   global.DimensionEngine = {
-    smartCmp, flatten, discoverFields, inferHierarchy, vals, passes, groupBy
+    smartCmp, grammarRootId, flatten, discoverFields, inferHierarchy, vals, passes, groupBy
   };
 })(typeof window !== 'undefined' ? window : globalThis);

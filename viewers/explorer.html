@@ -187,7 +187,7 @@
 <div id="lb" onclick="this.style.display='none'"><img id="lbimg" src="" alt=""><div class="cap" id="lbcap"></div></div>
 <div id="hovprev"><img alt=""></div>
 
-<script src="dimension-engine.js?v=1"></script>
+<script src="dimension-engine.js?v=2"></script>
 <script>
 (() => {
 const $ = s => document.querySelector(s);
@@ -694,9 +694,12 @@ async function boot(){
   if (!sectionField && sectionGroups.length) sectionField = sectionGroups[0].key;
   populateSectionPick();
   for (const r of records) byId[r.__id] = r;
-  // resolve emergence names now that byId is full
-  for (const r of records) if (r.__parents.length)
-    r.emergence = r.__parents.map(p => (byId[p]?.__name || p).split(' — ')[0].slice(0,40));
+  // resolve emergence names now that byId is full (never the grammar's own root: as a group
+  // it would hold the whole grammar; DimensionEngine.grammarRootId)
+  for (const r of records) {
+    const groups = r.__parents.filter(p => !byId[p]?.__grammarRoot);
+    if (groups.length) r.emergence = groups.map(p => (byId[p]?.__name || p).split(' — ')[0].slice(0,40));
+  }
   fields = discoverFields(records);
   fieldParent = inferHierarchy(records, fields);
   let restored = false;

@@ -2086,7 +2086,7 @@
     <script src="reference-resolve.js?v=2"></script>
     <script src="grammar-loader.js"></script>
     <script src="item-shape.js?v=1"></script>
-    <script src="dimension-engine.js?v=1"></script>
+    <script src="dimension-engine.js?v=2"></script>
     <script src="deck-picker.js?v=2"></script>
 
     <!-- Site Header -->
@@ -3701,8 +3701,15 @@
             // Find root items — composite items that are NOT children of any other composite
             const rootItems = compositeItems.filter(item => !hasParent.has(item.id));
             // If no clear roots, use the highest-level items
-            const roots = rootItems.length > 0 ? rootItems :
+            let roots = rootItems.length > 0 ? rootItems :
                 compositeItems.filter(i => i.level === Math.max(...compositeItems.map(c => c.level || 2)));
+            // A lone root that stands for the grammar itself ("The Tree of the Changes") would
+            // fold every group under one line named after the page: start the index one level
+            // down, at its groups (Oct 7 2026; DimensionEngine.grammarRootId).
+            const grammarRoot = window.DimensionEngine ? DimensionEngine.grammarRootId(items) : null;
+            if (grammarRoot && roots.length === 1 && roots[0].id === grammarRoot) {
+                roots = (childrenOf.get(grammarRoot) || []).filter(c => c.composite_of && c.composite_of.length > 0);
+            }
 
             sidebar.classList.remove('hidden');
             hierarchyIndex.innerHTML = '';
@@ -3722,7 +3729,7 @@
             });
 
             // Render orphan composite items (not in the tree above)
-            const rendered = new Set();
+            const rendered = new Set(grammarRoot ? [grammarRoot] : []);
             function collectIds(node) {
                 rendered.add(node.id);
                 (childrenOf.get(node.id) || []).forEach(child => {
