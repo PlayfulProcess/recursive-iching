@@ -32,7 +32,13 @@
     var here = document.currentScript && document.currentScript.src;
     fetch(new URL('ids.json', here || location.href).toString())
       .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (j) { ecoIds = (j && j.ids) || {}; })
+      .then(function (j) {
+        // Only grammars visitors can open on recursive.eco (_public_now); a Private
+        // one stays mapped for the import but is not offered to the embed.
+        var all = (j && j.ids) || {}, pub = j && j._public_now;
+        ecoIds = {};
+        Object.keys(all).forEach(function (k) { if (!Array.isArray(pub) || pub.indexOf(k) !== -1) ecoIds[k] = all[k]; });
+      })
       .catch(function () { ecoIds = {}; });
   } catch (err) { ecoIds = {}; }
   var UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;

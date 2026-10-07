@@ -1,6 +1,32 @@
 # Changelog — The Recursive I Ching
 
-## October 7, 2026 (latest) — Cast opens the assistant here; Edit opens the item
+## October 7, 2026 (latest) — the hexagram previews checked against recursive.eco; corrections carried over
+
+PlayfulProcess: "If no extra features are in the preview of hexagrams there, maybe let's carry it to
+recursive.eco the way we were planning (same header and footer, potentially different css when
+coming from iching)?" The full record, with every version id: `docs/PARITY-with-recursive-eco-2026-10-07.md`.
+
+- **Parity:** a hexagram's preview on recursive.eco does what this site's does, and more. One extra
+  lives here, on one book's grid: the group-by chips. The Path Caster, the genealogy and timeline,
+  the lenses, the explorer, the stacked source text and Cards across all books have no recursive.eco
+  equivalent and stay.
+- **Carried into recursive.eco** (additive or corrective only, each undoable from its version
+  history): King Wen `number` on every hexagram item of the five mapped grammars, so recursive.eco's
+  Cards numbers them right (it gave hexagram 1 the number 0, and `&hexagram=6` opened hexagram 7);
+  the five Zhouyi lines that were glued onto the line before them now stand alone (hexagrams 6, 8,
+  12, 41, 52); the Chinese Original's cover shows a picture again. **Ten Wings** is now a Private
+  grammar there (`e249829d`), mapped in `ids.json`.
+- **Not carried:** the renames, descriptions, tags and categories the full import would bring, and
+  the provisional HD gate pictures. They wait for her.
+- **Links:** the course's companion links (Cards, Study, Tree on recursive.eco) now carry
+  `&shell=iching`, and Cards opens at the chapter's own hexagram. The site's other links stay here:
+  the framed preview (`?shell=`) is on dev.recursive.eco only, and the I Ching collection there has
+  no shell and no links yet, so a visitor would lose this site's header. The doc lists the exact
+  links to switch once those are in place.
+- **Private grammars get no links:** Cards, the assistant and the course offer recursive.eco links
+  only for grammars in `ids.json`'s `_public_now`.
+
+## October 7, 2026 (even later) — Cast opens the assistant here; Edit opens the item
 
 PlayfulProcess: "Cast from hexagram should maybe open the assistant? How about if [the] edit button
 in recursive I Ching works as in the preview within recursive.eco?"

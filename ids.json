@@ -1,13 +1,14 @@
 {
-  "_note": "Slug -> recursive.eco grammar UUID (the deckId) for the I Ching channel. Used by recursive.eco to bind repo grammars to their live rows and to build per-grammar links (Cast / View / Edit — see viewers/eco-links.js). Mirrors recursive-astrology/ids.json and recursive-tarot/tarot/_eco_ids.json. Keep this updated when new grammars are created or published.",
-  "_preview_links": "Every grammar renders with no extra hosting: swap <id> for the UUID from `ids` once published. This channel's grammar_type param is 'iching'. Play = https://flow.recursive.eco/play?id=<id> | Edit = https://flow.recursive.eco/create/dashboard/unified/new?id=<id> | Cards = https://recursive.eco/pages/grammar-viewer.html?type=iching&id=<id>",
-  "_status": "FILLED Oct 6 2026 (PlayfulProcess: \"For I Ching, do what you think is best\"). Each mapped folder syncs into the recursive.eco grammar named here; the reasons are in docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md, 'Decisions, Oct 6'. Not mapped on purpose: ten-wings and tree-of-the-iching have no app grammar yet and become NEW grammars on the first import; meta-iching and the-recursive-iching-book carry `_generated: true` and three-lenses-64 carries `_source_of_truth: \"repo\"`, so the importer skips all three. Nothing has been imported yet.",
+  "_note": "Slug -> recursive.eco grammar UUID (the deckId) for the I Ching channel. Used by recursive.eco to bind repo grammars to their live rows, and by this site (viewers/cards.html, assistant.js, pages/course-viewer.html) to build per-grammar links (Cast / Edit / the assistant / the course's companion previews). The site offers those links only for slugs listed in `_public_now`: a Private grammar is mapped here for the import, but its links would fail for everyone but its owner. Mirrors recursive-astrology/ids.json and recursive-tarot/tarot/_eco_ids.json. Keep this updated when new grammars are created or published.",
+  "_preview_links": "Every grammar renders with no extra hosting: swap <id> for the UUID from `ids` once published. This channel's grammar_type param is 'iching'. Play = https://flow.recursive.eco/play?id=<id> | Edit = https://flow.recursive.eco/create/dashboard/unified/new?id=<id> | Cards = https://recursive.eco/pages/grammar-viewer.html?type=iching&id=<id>&shell=iching (&hexagram=N opens one hexagram). `shell=iching` frames the preview with this collection's header and footer once recursive.eco carries it (Shells P1, on dev only on Oct 7 2026; see docs/PARITY-with-recursive-eco-2026-10-07.md); until then it is ignored.",
+  "_status": "FILLED Oct 6 2026 (PlayfulProcess: \"For I Ching, do what you think is best\"). Each mapped folder syncs into the recursive.eco grammar named here; the reasons are in docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md, 'Decisions, Oct 6'. Oct 7 2026: ten-wings was created in the app as a PRIVATE grammar (e249829d, imported from this repo's main) and is mapped; it is not in `_public_now`. Not mapped on purpose: tree-of-the-iching has no app grammar yet and becomes a NEW grammar on the first import (PR #4 is open on it); meta-iching and the-recursive-iching-book carry `_generated: true` and three-lenses-64 carries `_source_of_truth: \"repo\"`, so the importer skips all three. The channel import itself has not been run; the Oct 7 corrections to the five mapped grammars were made one field at a time (docs/PARITY-with-recursive-eco-2026-10-07.md lists them with their version ids).",
   "ids": {
     "zhouyi-core": "6efa4fc7-14a1-41d2-b99c-a9bfb7e9aae9",
     "i-ching-chinese-original": "476b17da-e6dd-4c10-925a-fad9992ea12c",
     "i-ching-summarized": "b5161d12-4e93-47ba-850b-b0f50d1133c6",
     "iching-hd-meta-categories": "ad36491a-b504-4b7f-87aa-7337cc1bd0e3",
-    "repair-iching": "b7a59594-1822-4770-8600-155514f323e0"
+    "repair-iching": "b7a59594-1822-4770-8600-155514f323e0",
+    "ten-wings": "e249829d-e441-4dc2-a9d8-1ad127a06092"
   },
   "_public_now": [
     "zhouyi-core",
@@ -16,5 +17,5 @@
     "iching-hd-meta-categories",
     "repair-iching"
   ],
-  "_public_now_note": "Public in the app on Oct 6 2026: zhouyi-core, i-ching-chinese-original, i-ching-summarized and iching-hd-meta-categories are Published (listed); repair-iching is Link."
+  "_public_now_note": "Public in the app on Oct 6 2026: zhouyi-core, i-ching-chinese-original, i-ching-summarized and iching-hd-meta-categories are Published (listed); repair-iching is Link. ten-wings is Private (Oct 7 2026); add it here when PlayfulProcess publishes it."
 }

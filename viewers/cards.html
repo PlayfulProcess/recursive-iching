@@ -2301,7 +2301,16 @@
             const slug = m ? m[1] : null;
             if (!slug) return null;
             if (!ecoIds) { try { ecoIds = await (await fetch('../ids.json')).json(); } catch (_) { ecoIds = { ids: {} }; } }
-            return (ecoIds.ids || {})[slug] || null;
+            return ecoIdForSlug(slug);
+        }
+        // A slug's recursive.eco id, but only when visitors can open it there
+        // (ids.json's _public_now). A Private grammar stays mapped for the import
+        // (Ten Wings, Oct 7 2026) without getting Cast / Edit / assistant links
+        // that fail for everyone but its owner.
+        function ecoIdForSlug(slug) {
+            const pub = ecoIds && ecoIds._public_now;
+            if (Array.isArray(pub) && !pub.includes(slug)) return null;
+            return ((ecoIds && ecoIds.ids) || {})[slug] || null;
         }
         // The inverse, for ?id=. This site has no backend (see the stub client at the
         // top of the file), so an ?id= can only be served from the repo: either it IS
@@ -4903,7 +4912,7 @@
             const slug = it && it._deckSlug;   // the card's deck (multi-deck view)
             if (slug) {
                 if (!ecoIds) { try { ecoIds = await (await fetch('../ids.json')).json(); } catch (_) { ecoIds = { ids: {} }; } }
-                id = (ecoIds.ids || {})[slug] || null;
+                id = ecoIdForSlug(slug);
             }
             if (!id) id = await resolveDeckFlowId();   // single-deck fallback (?src=/?id=)
             return id;
