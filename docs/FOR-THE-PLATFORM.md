@@ -34,7 +34,7 @@ and the marks are the reading. What the platform would need to make this a featu
    By default it is private to the person, like the rest of the reading.
 5. **An item's own page** (the navigation redesign) can show, for one hexagram:
    - the same hexagram in every grammar: `grammars/meta-iching` already joins them, one composite
-     per hexagram with `composite_of` pointing at each lens's item, mirroring tarot's All Decks;
+     per hexagram whose `parts` point at each lens's item, mirroring tarot's All Decks;
    - the collections and playlists it appears in;
    - the passages the person themselves chose about it, gathered from their saved readings.
      Only theirs, by default; never public without their word.

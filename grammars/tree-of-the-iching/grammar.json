@@ -1179,12 +1179,11 @@
       "note": "read Oct 6 2026; a seller page, so indirect; every copy listed is dated 1997"
     }
   ],
-  "items": [
+  "nodes": [
     {
       "id": "book-numbers-on-bone",
       "name": "Numbers on bone and bronze (before c. 1000 BCE)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "inscriptions",
         "roots"
@@ -1208,7 +1207,6 @@
       "id": "book-zhouyi",
       "name": "Zhouyi, the Changes of Zhou (c. 825 BCE)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "core text",
         "zhou"
@@ -1224,7 +1222,7 @@
         "confidence": "medium",
         "grammar_slug": "zhouyi-core",
         "source_deck": "zhouyi-core",
-        "source_item_id": "hex-1",
+        "source_node_id": "hex-1",
         "deck": "Zhouyi Core"
       },
       "sections": {
@@ -1239,7 +1237,6 @@
       "id": "book-zuozhuan",
       "name": "Divinations in the Zuozhuan and Guoyu",
       "category": "book",
-      "level": 1,
       "keywords": [
         "historical accounts",
         "zhou"
@@ -1265,7 +1262,6 @@
       "id": "book-tsinghua-shifa",
       "name": "Tsinghua 'Method of Milfoil Divination' (Shifa)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "manuscript",
         "roots"
@@ -1291,7 +1287,6 @@
       "id": "book-shanghai",
       "name": "The Shanghai Museum bamboo Zhouyi (c. 300 BCE)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "manuscript",
         "zhou"
@@ -1317,7 +1312,6 @@
       "id": "book-ten-wings",
       "name": "The Ten Wings (c. 300–100 BCE)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "commentary",
         "canon"
@@ -1333,7 +1327,7 @@
         "confidence": "medium",
         "grammar_slug": "ten-wings",
         "source_deck": "ten-wings",
-        "source_item_id": "hex-1",
+        "source_node_id": "hex-1",
         "deck": "The Ten Wings"
       },
       "sections": {
@@ -1348,7 +1342,6 @@
       "id": "book-guicang",
       "name": "Guicang, the 'Return to the Hidden' (Wangjiatai copy)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "manuscript",
         "roots"
@@ -1374,7 +1367,6 @@
       "id": "book-mawangdui",
       "name": "The Mawangdui silk Yi (buried 168 BCE)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "manuscript",
         "canon"
@@ -1401,7 +1393,6 @@
       "id": "book-fuyang",
       "name": "The Fuyang bamboo Zhouyi (Shuanggudui)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "manuscript",
         "zhou"
@@ -1427,7 +1418,6 @@
       "id": "book-han-canon",
       "name": "The Classic of Changes (Han canon, 136 BCE)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "canonical edition",
         "canon"
@@ -1444,7 +1434,7 @@
         "confidence": "high",
         "grammar_slug": "i-ching-chinese-original",
         "source_deck": "i-ching-chinese-original",
-        "source_item_id": "hexagram-1",
+        "source_node_id": "hexagram-1",
         "deck": "Chinese Original"
       },
       "sections": {
@@ -1459,7 +1449,6 @@
       "id": "book-jing-fang",
       "name": "Jing Fang's Changes (1st century BCE)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "commentary",
         "numbers"
@@ -1485,7 +1474,6 @@
       "id": "book-taixuan",
       "name": "Yang Xiong, the Taixuanjing (2 BCE)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "rival system",
         "numbers"
@@ -1511,7 +1499,6 @@
       "id": "book-wang-bi",
       "name": "Wang Bi, Commentary on the Zhouyi (3rd century)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "commentary",
         "meanings"
@@ -1537,7 +1524,6 @@
       "id": "book-kong-yingda",
       "name": "Kong Yingda, The Correct Meaning of the Zhouyi (7th century)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "imperial edition",
         "meanings"
@@ -1563,7 +1549,6 @@
       "id": "book-shao-yong",
       "name": "Shao Yong's diagrams (11th century)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "diagrams",
         "numbers"
@@ -1589,7 +1574,6 @@
       "id": "book-cheng-yi",
       "name": "Cheng Yi, Commentary on the Changes (c. 1099)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "commentary",
         "meanings"
@@ -1616,7 +1600,6 @@
       "id": "book-zhu-xi",
       "name": "Zhu Xi, The Original Meaning of the Zhouyi (12th century)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "commentary",
         "meanings"
@@ -1643,7 +1626,6 @@
       "id": "book-bouvet-leibniz",
       "name": "Bouvet's letters and Leibniz's binary (1701–1703)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "correspondence",
         "west"
@@ -1669,7 +1651,6 @@
       "id": "book-hu-wei",
       "name": "Hu Wei, Clarifying the Diagrams (1706)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "critical study",
         "modern"
@@ -1696,7 +1677,6 @@
       "id": "book-zhezhong",
       "name": "The Kangxi Emperor's Balanced Annotations on the Zhouyi (1715)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "imperial edition",
         "meanings"
@@ -1723,7 +1703,6 @@
       "id": "book-liu-yiming",
       "name": "Liu Yiming, a Daoist reading of the Zhouyi (late 18th century)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "commentary",
         "dao"
@@ -1749,7 +1728,6 @@
       "id": "book-regis",
       "name": "Régis and others, the Latin Y-King (made c. 1730s; printed 1834)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "translation",
         "west"
@@ -1775,7 +1753,6 @@
       "id": "book-mcclatchie",
       "name": "McClatchie, the Confucian 'Classic of Change' (1876)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "translation",
         "west"
@@ -1801,7 +1778,6 @@
       "id": "book-legge",
       "name": "Legge, The Yî King (Sacred Books of the East 16, 1882)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "translation",
         "west"
@@ -1818,7 +1794,7 @@
         "confidence": "high",
         "grammar_slug": "i-ching-summarized",
         "source_deck": "i-ching-summarized",
-        "source_item_id": "hexagram-1",
+        "source_node_id": "hexagram-1",
         "deck": "The 64 Hexagrams (Legge)"
       },
       "sections": {
@@ -1833,7 +1809,6 @@
       "id": "book-wilhelm",
       "name": "Wilhelm, I Ging: Das Buch der Wandlungen (1924)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "translation",
         "west"
@@ -1860,7 +1835,6 @@
       "id": "book-gushibian",
       "name": "Gushi bian, vol. 3 (1931): the Zhouyi as a Zhou diviner's book",
       "category": "book",
-      "level": 1,
       "keywords": [
         "critical study",
         "modern"
@@ -1886,7 +1860,6 @@
       "id": "book-baynes",
       "name": "Baynes, The I Ching or Book of Changes (1950), with Jung's foreword",
       "category": "book",
-      "level": 1,
       "keywords": [
         "translation",
         "west"
@@ -1912,7 +1885,6 @@
       "id": "book-chance",
       "name": "Chance and the counterculture: Cage (1951), Dick (1962)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "reception",
         "west"
@@ -1938,7 +1910,6 @@
       "id": "book-shaughnessy-1983",
       "name": "Shaughnessy, The Composition of the Zhouyi (1983)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "study",
         "modern"
@@ -1965,7 +1936,6 @@
       "id": "book-human-design",
       "name": "Human Design (1987): the hexagrams as 'gates'",
       "category": "book",
-      "level": 1,
       "keywords": [
         "modern lens",
         "west"
@@ -1993,7 +1963,6 @@
       "id": "book-modern-zhouyi",
       "name": "The bronze-age translations: Rutt (1996), Redmond (2017)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "translation",
         "modern"
@@ -2020,7 +1989,6 @@
       "id": "book-excavated-translations",
       "name": "The excavated texts in English: Mawangdui (1997), Unearthing the Changes (2014)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "translation",
         "modern"
@@ -2050,7 +2018,6 @@
       "id": "book-recursive",
       "name": "The Recursive I Ching (2026)",
       "category": "book",
-      "level": 1,
       "keywords": [
         "library",
         "modern"
@@ -2081,12 +2048,11 @@
       "id": "branch-roots",
       "name": "Before the book",
       "category": "branch",
-      "level": 2,
       "sort_order": 100,
       "keywords": [
         "branch"
       ],
-      "composite_of": [
+      "parts": [
         "book-numbers-on-bone",
         "book-tsinghua-shifa",
         "book-guicang"
@@ -2101,12 +2067,11 @@
       "id": "branch-zhou",
       "name": "The Zhou oracle",
       "category": "branch",
-      "level": 2,
       "sort_order": 101,
       "keywords": [
         "branch"
       ],
-      "composite_of": [
+      "parts": [
         "book-zhouyi",
         "book-zuozhuan",
         "book-shanghai",
@@ -2122,12 +2087,11 @@
       "id": "branch-canon",
       "name": "Commentary and canon",
       "category": "branch",
-      "level": 2,
       "sort_order": 102,
       "keywords": [
         "branch"
       ],
-      "composite_of": [
+      "parts": [
         "book-ten-wings",
         "book-mawangdui",
         "book-han-canon"
@@ -2142,12 +2106,11 @@
       "id": "branch-numbers",
       "name": "Images and numbers",
       "category": "branch",
-      "level": 2,
       "sort_order": 103,
       "keywords": [
         "branch"
       ],
-      "composite_of": [
+      "parts": [
         "book-jing-fang",
         "book-taixuan",
         "book-shao-yong"
@@ -2162,12 +2125,11 @@
       "id": "branch-meanings",
       "name": "Meanings and principles",
       "category": "branch",
-      "level": 2,
       "sort_order": 104,
       "keywords": [
         "branch"
       ],
-      "composite_of": [
+      "parts": [
         "book-wang-bi",
         "book-kong-yingda",
         "book-cheng-yi",
@@ -2184,12 +2146,11 @@
       "id": "branch-dao",
       "name": "Daoist readings",
       "category": "branch",
-      "level": 2,
       "sort_order": 105,
       "keywords": [
         "branch"
       ],
-      "composite_of": [
+      "parts": [
         "book-liu-yiming"
       ],
       "metadata": {},
@@ -2202,12 +2163,11 @@
       "id": "branch-west",
       "name": "Into other languages",
       "category": "branch",
-      "level": 2,
       "sort_order": 106,
       "keywords": [
         "branch"
       ],
-      "composite_of": [
+      "parts": [
         "book-bouvet-leibniz",
         "book-regis",
         "book-mcclatchie",
@@ -2227,12 +2187,11 @@
       "id": "branch-modern",
       "name": "Doubt and excavation",
       "category": "branch",
-      "level": 2,
       "sort_order": 107,
       "keywords": [
         "branch"
       ],
-      "composite_of": [
+      "parts": [
         "book-hu-wei",
         "book-gushibian",
         "book-shaughnessy-1983",
@@ -2250,12 +2209,11 @@
       "id": "root-tree-of-the-iching",
       "name": "The Tree of the Changes",
       "category": "root",
-      "level": 3,
       "sort_order": 200,
       "keywords": [
         "root"
       ],
-      "composite_of": [
+      "parts": [
         "branch-roots",
         "branch-zhou",
         "branch-canon",

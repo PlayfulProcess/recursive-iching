@@ -177,14 +177,26 @@ let rootItem = null, rootIsGrammar = false;
   }catch(e){ document.getElementById('err').style.display='block';
     document.getElementById('err').textContent = e.message; return; }
 
-  const items = G.items || [];
+  const items = G.nodes || [];
   (G.bibliography||[]).forEach(b=>{ BIB[b.key]=b; });
   itemMap = Object.fromEntries(items.map(i=>[i.id,i]));
 
-  // Find root (level 3) and build nested hierarchy via composite_of
-  const root = items.find(i=>(i.level||1)===3) || items.find(i=>!items.some(p=>(p.composite_of||[]).includes(i.id)));
+  // depth from parts: a node with no parts is 1; otherwise 1 + the deepest part. Cycle-safe.
+  function nodeDepth(node, seen){
+    const parts = node && node.parts;
+    if(!parts || !parts.length) return 1;
+    seen = seen || new Set();
+    if(seen.has(node.id)) return 1;
+    seen.add(node.id);
+    let d = 1;
+    for(const id of parts){ const c = itemMap[id]; if(c) d = Math.max(d, 1 + nodeDepth(c, seen)); }
+    seen.delete(node.id);
+    return d;
+  }
+  // Find root (depth 3) and build nested hierarchy via parts
+  const root = items.find(i=>nodeDepth(i)===3) || items.find(i=>!items.some(p=>(p.parts||[]).includes(i.id)));
   function build(node){
-    const kids = (node.composite_of||[]).map(id=>itemMap[id]).filter(Boolean);
+    const kids = (node.parts||[]).map(id=>itemMap[id]).filter(Boolean);
     return { id:node.id, data:node, children: kids.map(build) };
   }
   const nested = build(root);
@@ -229,7 +241,7 @@ function hubValueOf(it){
 function rebuildHubColors(){
   hubColorOf = {};
   if(hubField==='branch'){ Object.assign(hubColorOf, RAW_COLORS); return; }
-  const vals=[...new Set((G?.items||[]).filter(i=>i.id.startsWith('book-')).map(i=>(i.metadata||{})[hubField]).filter(Boolean))];
+  const vals=[...new Set((G?.nodes||[]).filter(i=>i.id.startsWith('book-')).map(i=>(i.metadata||{})[hubField]).filter(Boolean))];
   vals.forEach((v,i)=>{ hubColorOf[v]=PALETTE[i%PALETTE.length]; });
 }
 
@@ -335,7 +347,7 @@ function traceDescent(d,nodeById,node,g){
   // downstream: things that derive from this deck (reverse derives_from edges)
   const down=[d.data.id];
   while(down.length){ const id=down.pop();
-    (G.items||[]).forEach(it=>{ if(((it.metadata||{}).derives_from||[]).includes(id) && !keep.has(it.id)){ keep.add(it.id); down.push(it.id);} }); }
+    (G.nodes||[]).forEach(it=>{ if(((it.metadata||{}).derives_from||[]).includes(id) && !keep.has(it.id)){ keep.add(it.id); down.push(it.id);} }); }
   node.classed('dim',x=>!keep.has(x.data.id)).classed('hot',x=>keep.has(x.data.id));
   g.selectAll('.tree-link').classed('dim',true);
   g.selectAll('.derive-link').classed('dim',l=>!(keep.has(l.s.data.id)&&keep.has(l.t.data.id)));
@@ -367,7 +379,7 @@ function mdToHtml(s){
 // visibility as the tree itself (hidden legend rows). Only leaf decks page —
 // clicking a branch/root node still opens detail but has no prev/next.
 function deckOrderList(){
-  return (G.items||[]).filter(i=>i.id.startsWith('book-') && !hidden.has(branchOf(i)))
+  return (G.nodes||[]).filter(i=>i.id.startsWith('book-') && !hidden.has(branchOf(i)))
     .sort((a,b)=>(yearOf(a)||0)-(yearOf(b)||0));
 }
 function navigateDeck(direction){
@@ -398,8 +410,8 @@ function showAbout(){
   const title=document.getElementById('page-title').textContent||rootItem.name;
   let html=`<span class="modal-close" onclick="document.getElementById('detail').classList.remove('open')" title="Close" aria-label="Close">&times;</span>`;
   html+=`<h2>${esc(title)}</h2>`;
-  const nBooks=(G.items||[]).filter(i=>i.id.startsWith('book-')).length;
-  const nBranches=(rootItem.composite_of||[]).length;
+  const nBooks=(G.nodes||[]).filter(i=>i.id.startsWith('book-')).length;
+  const nBranches=(rootItem.parts||[]).length;
   if(nBooks) html+=`<div class="when">${nBooks} books in ${nBranches} branches</div>`;
   if(G.description) html+=`<div class="sec">${mdToHtml(String(G.description))}</div>`;
   for(const [k,v] of Object.entries(rootItem.sections||{})){

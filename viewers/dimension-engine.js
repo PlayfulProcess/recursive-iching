@@ -32,27 +32,44 @@
     items = items || [];
     const byId = new Map(items.map(i => [i.id, i]));
     const contained = new Set();
-    for (const it of items) for (const c of (it.composite_of || [])) contained.add(c);
-    const tops = items.filter(i => (i.composite_of || []).length && !contained.has(i.id));
+    for (const it of items) for (const c of (it.parts || [])) contained.add(c);
+    const tops = items.filter(i => (i.parts || []).length && !contained.has(i.id));
     if (tops.length !== 1) return null;
     const root = tops[0];
-    const kids = root.composite_of.map(id => byId.get(id)).filter(Boolean);
-    if (!kids.some(k => (k.composite_of || []).length)) return null;
-    const seen = new Set([root.id]), stack = [...root.composite_of];
+    const kids = root.parts.map(id => byId.get(id)).filter(Boolean);
+    if (!kids.some(k => (k.parts || []).length)) return null;
+    const seen = new Set([root.id]), stack = [...root.parts];
     while (stack.length) {
       const id = stack.pop();
       if (seen.has(id)) continue;
       seen.add(id);
       const it = byId.get(id);
-      if (it) stack.push(...(it.composite_of || []));
+      if (it) stack.push(...(it.parts || []));
     }
     return items.every(i => seen.has(i.id)) ? root.id : null;
   }
 
-  /* FLATTEN: grammar.items → records, each field a string[] (multi-membership ready).
-     Tracks __parents/__children from composite_of for relationship tracing. */
+  // depth from parts: a node with no parts is 1; otherwise 1 + the deepest part. Cycle-safe.
+  function nodeDepth(node, byId, seen, memo) {
+    const parts = node && node.parts;
+    if (!parts || !parts.length) return 1;
+    if (memo && memo.has(node.id)) return memo.get(node.id);
+    seen = seen || new Set();
+    if (seen.has(node.id)) return 1;
+    seen.add(node.id);
+    let d = 1;
+    for (const id of parts) { const c = byId.get(id); if (c) d = Math.max(d, 1 + nodeDepth(c, byId, seen, memo)); }
+    seen.delete(node.id);
+    if (memo) memo.set(node.id, d);
+    return d;
+  }
+
+  /* FLATTEN: grammar.nodes → records, each field a string[] (multi-membership ready).
+     Tracks __parents/__children from parts for relationship tracing. */
   function flatten(grammar, inherit, prefix, nameOf) {
-    const items = grammar.items || [];
+    const items = grammar.nodes || [];
+    const byId = new Map(items.map(it => [it.id, it]));
+    const depthMemo = new Map();
     const pid = id => (prefix ? prefix + ':' : '') + id;
     // The grammar's own root is not an emergence of its own: as a grouping value it
     // would put every item in one more group named after the grammar.
@@ -60,15 +77,15 @@
     const rootPid = rootId ? pid(rootId) : null;
     const memberOf = {};
     for (const it of items)
-      for (const cid of (it.composite_of || []))
+      for (const cid of (it.parts || []))
         (memberOf[pid(cid)] = memberOf[pid(cid)] || []).push(pid(it.id));
     const recs = [];
     for (const it of items) {
-      const lvl = it.level || (it.composite_of?.length ? 2 : 1);
+      const lvl = nodeDepth(it, byId, null, depthMemo);
       const r = {
         __name: it.name, __img: it.image_url || it.metadata?.image_url || '',
         __id: pid(it.id),
-        __children: (it.composite_of || []).map(pid),
+        __children: (it.parts || []).map(pid),
         __parents: memberOf[pid(it.id)] || []
       };
       r.level = ['L' + lvl];

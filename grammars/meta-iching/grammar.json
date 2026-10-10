@@ -17,17 +17,16 @@
   ],
   "creator_name": "PlayfulProcess",
   "creator_link": "https://iching.recursive.eco",
-  "items": [
+  "nodes": [
     {
       "id": "hex-1",
       "number": 1,
       "name": "1 · The Creative",
       "symbol": "䷀",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 1,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-1",
         "zhouyi-core::hexagram-1",
         "ten-wings::hex-1",
@@ -68,11 +67,10 @@
       "number": 2,
       "name": "2 · The Receptive",
       "symbol": "䷁",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 2,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-2",
         "zhouyi-core::hexagram-2",
         "ten-wings::hex-2",
@@ -113,11 +111,10 @@
       "number": 3,
       "name": "3 · Difficulty at the Beginning",
       "symbol": "䷂",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 3,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-3",
         "zhouyi-core::hexagram-3",
         "ten-wings::hex-3",
@@ -158,11 +155,10 @@
       "number": 4,
       "name": "4 · Youthful Folly",
       "symbol": "䷃",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 4,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-4",
         "zhouyi-core::hexagram-4",
         "ten-wings::hex-4",
@@ -203,11 +199,10 @@
       "number": 5,
       "name": "5 · Waiting (Nourishment)",
       "symbol": "䷄",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 5,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-5",
         "zhouyi-core::hexagram-5",
         "ten-wings::hex-5",
@@ -248,11 +243,10 @@
       "number": 6,
       "name": "6 · Conflict",
       "symbol": "䷅",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 6,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-6",
         "zhouyi-core::hexagram-6",
         "ten-wings::hex-6",
@@ -296,11 +290,10 @@
       "number": 7,
       "name": "7 · The Army",
       "symbol": "䷆",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 7,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-7",
         "zhouyi-core::hexagram-7",
         "ten-wings::hex-7",
@@ -341,11 +334,10 @@
       "number": 8,
       "name": "8 · Holding Together [Union]",
       "symbol": "䷇",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 8,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-8",
         "zhouyi-core::hexagram-8",
         "ten-wings::hex-8",
@@ -386,11 +378,10 @@
       "number": 9,
       "name": "9 · The Taming Power of the Small",
       "symbol": "䷈",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 9,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-9",
         "zhouyi-core::hexagram-9",
         "ten-wings::hex-9",
@@ -431,11 +422,10 @@
       "number": 10,
       "name": "10 · Treading [Conduct]",
       "symbol": "䷉",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 10,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-10",
         "zhouyi-core::hexagram-10",
         "ten-wings::hex-10",
@@ -476,11 +466,10 @@
       "number": 11,
       "name": "11 · Peace",
       "symbol": "䷊",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 11,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-11",
         "zhouyi-core::hexagram-11",
         "ten-wings::hex-11",
@@ -524,11 +513,10 @@
       "number": 12,
       "name": "12 · Standstill [Stagnation]",
       "symbol": "䷋",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 12,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-12",
         "zhouyi-core::hexagram-12",
         "ten-wings::hex-12",
@@ -569,11 +557,10 @@
       "number": 13,
       "name": "13 · Fellowship with Men",
       "symbol": "䷌",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 13,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-13",
         "zhouyi-core::hexagram-13",
         "ten-wings::hex-13",
@@ -614,11 +601,10 @@
       "number": 14,
       "name": "14 · Possession in Great Measure",
       "symbol": "䷍",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 14,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-14",
         "zhouyi-core::hexagram-14",
         "ten-wings::hex-14",
@@ -659,11 +645,10 @@
       "number": 15,
       "name": "15 · Modesty",
       "symbol": "䷎",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 15,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-15",
         "zhouyi-core::hexagram-15",
         "ten-wings::hex-15",
@@ -704,11 +689,10 @@
       "number": 16,
       "name": "16 · Enthusiasm",
       "symbol": "䷏",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 16,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-16",
         "zhouyi-core::hexagram-16",
         "ten-wings::hex-16",
@@ -749,11 +733,10 @@
       "number": 17,
       "name": "17 · Following",
       "symbol": "䷐",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 17,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-17",
         "zhouyi-core::hexagram-17",
         "ten-wings::hex-17",
@@ -794,11 +777,10 @@
       "number": 18,
       "name": "18 · Work on what has been spoiled [Decay]",
       "symbol": "䷑",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 18,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-18",
         "zhouyi-core::hexagram-18",
         "ten-wings::hex-18",
@@ -839,11 +821,10 @@
       "number": 19,
       "name": "19 · Approach",
       "symbol": "䷒",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 19,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-19",
         "zhouyi-core::hexagram-19",
         "ten-wings::hex-19",
@@ -884,11 +865,10 @@
       "number": 20,
       "name": "20 · Contemplation [View]",
       "symbol": "䷓",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 20,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-20",
         "zhouyi-core::hexagram-20",
         "ten-wings::hex-20",
@@ -932,11 +912,10 @@
       "number": 21,
       "name": "21 · Biting Through",
       "symbol": "䷔",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 21,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-21",
         "zhouyi-core::hexagram-21",
         "ten-wings::hex-21",
@@ -977,11 +956,10 @@
       "number": 22,
       "name": "22 · Grace",
       "symbol": "䷕",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 22,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-22",
         "zhouyi-core::hexagram-22",
         "ten-wings::hex-22",
@@ -1022,11 +1000,10 @@
       "number": 23,
       "name": "23 · Splitting Apart",
       "symbol": "䷖",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 23,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-23",
         "zhouyi-core::hexagram-23",
         "ten-wings::hex-23",
@@ -1067,11 +1044,10 @@
       "number": 24,
       "name": "24 · Return (The Turning Point)",
       "symbol": "䷗",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 24,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-24",
         "zhouyi-core::hexagram-24",
         "ten-wings::hex-24",
@@ -1115,11 +1091,10 @@
       "number": 25,
       "name": "25 · Innocence (The Unexpected)",
       "symbol": "䷘",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 25,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-25",
         "zhouyi-core::hexagram-25",
         "ten-wings::hex-25",
@@ -1160,11 +1135,10 @@
       "number": 26,
       "name": "26 · The Taming Power of the Great",
       "symbol": "䷙",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 26,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-26",
         "zhouyi-core::hexagram-26",
         "ten-wings::hex-26",
@@ -1205,11 +1179,10 @@
       "number": 27,
       "name": "27 · The Corners of the Mouth (Providing Nourishment)",
       "symbol": "䷚",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 27,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-27",
         "zhouyi-core::hexagram-27",
         "ten-wings::hex-27",
@@ -1250,11 +1223,10 @@
       "number": 28,
       "name": "28 · Preponderance of the Great",
       "symbol": "䷛",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 28,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-28",
         "zhouyi-core::hexagram-28",
         "ten-wings::hex-28",
@@ -1295,11 +1267,10 @@
       "number": 29,
       "name": "29 · The Abysmal (Water)",
       "symbol": "䷜",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 29,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-29",
         "zhouyi-core::hexagram-29",
         "ten-wings::hex-29",
@@ -1343,11 +1314,10 @@
       "number": 30,
       "name": "30 · The Clinging, Fire",
       "symbol": "䷝",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 30,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-30",
         "zhouyi-core::hexagram-30",
         "ten-wings::hex-30",
@@ -1388,11 +1358,10 @@
       "number": 31,
       "name": "31 · Influence (Wooing)",
       "symbol": "䷞",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 31,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-31",
         "zhouyi-core::hexagram-31",
         "ten-wings::hex-31",
@@ -1433,11 +1402,10 @@
       "number": 32,
       "name": "32 · Duration",
       "symbol": "䷟",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 32,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-32",
         "zhouyi-core::hexagram-32",
         "ten-wings::hex-32",
@@ -1478,11 +1446,10 @@
       "number": 33,
       "name": "33 · Retreat",
       "symbol": "䷠",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 33,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-33",
         "zhouyi-core::hexagram-33",
         "ten-wings::hex-33",
@@ -1523,11 +1490,10 @@
       "number": 34,
       "name": "34 · The Power of the Great",
       "symbol": "䷡",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 34,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-34",
         "zhouyi-core::hexagram-34",
         "ten-wings::hex-34",
@@ -1568,11 +1534,10 @@
       "number": 35,
       "name": "35 · Progress",
       "symbol": "䷢",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 35,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-35",
         "zhouyi-core::hexagram-35",
         "ten-wings::hex-35",
@@ -1613,11 +1578,10 @@
       "number": 36,
       "name": "36 · Darkening of the Light",
       "symbol": "䷣",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 36,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-36",
         "zhouyi-core::hexagram-36",
         "ten-wings::hex-36",
@@ -1658,11 +1622,10 @@
       "number": 37,
       "name": "37 · The Family [The Clan]",
       "symbol": "䷤",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 37,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-37",
         "zhouyi-core::hexagram-37",
         "ten-wings::hex-37",
@@ -1703,11 +1666,10 @@
       "number": 38,
       "name": "38 · Opposition",
       "symbol": "䷥",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 38,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-38",
         "zhouyi-core::hexagram-38",
         "ten-wings::hex-38",
@@ -1748,11 +1710,10 @@
       "number": 39,
       "name": "39 · Obstruction",
       "symbol": "䷦",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 39,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-39",
         "zhouyi-core::hexagram-39",
         "ten-wings::hex-39",
@@ -1793,11 +1754,10 @@
       "number": 40,
       "name": "40 · Deliverance",
       "symbol": "䷧",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 40,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-40",
         "zhouyi-core::hexagram-40",
         "ten-wings::hex-40",
@@ -1838,11 +1798,10 @@
       "number": 41,
       "name": "41 · Decrease",
       "symbol": "䷨",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 41,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-41",
         "zhouyi-core::hexagram-41",
         "ten-wings::hex-41",
@@ -1883,11 +1842,10 @@
       "number": 42,
       "name": "42 · Increase",
       "symbol": "䷩",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 42,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-42",
         "zhouyi-core::hexagram-42",
         "ten-wings::hex-42",
@@ -1928,11 +1886,10 @@
       "number": 43,
       "name": "43 · Break-through (Resoluteness)",
       "symbol": "䷪",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 43,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-43",
         "zhouyi-core::hexagram-43",
         "ten-wings::hex-43",
@@ -1973,11 +1930,10 @@
       "number": 44,
       "name": "44 · Coming to Meet",
       "symbol": "䷫",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 44,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-44",
         "zhouyi-core::hexagram-44",
         "ten-wings::hex-44",
@@ -2018,11 +1974,10 @@
       "number": 45,
       "name": "45 · Gathering Together [Massing]",
       "symbol": "䷬",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 45,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-45",
         "zhouyi-core::hexagram-45",
         "ten-wings::hex-45",
@@ -2063,11 +2018,10 @@
       "number": 46,
       "name": "46 · Pushing Upward",
       "symbol": "䷭",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 46,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-46",
         "zhouyi-core::hexagram-46",
         "ten-wings::hex-46",
@@ -2108,11 +2062,10 @@
       "number": 47,
       "name": "47 · Oppression (Exhaustion)",
       "symbol": "䷮",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 47,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-47",
         "zhouyi-core::hexagram-47",
         "ten-wings::hex-47",
@@ -2156,11 +2109,10 @@
       "number": 48,
       "name": "48 · The Well",
       "symbol": "䷯",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 48,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-48",
         "zhouyi-core::hexagram-48",
         "ten-wings::hex-48",
@@ -2201,11 +2153,10 @@
       "number": 49,
       "name": "49 · Revolution (Molting)",
       "symbol": "䷰",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 49,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-49",
         "zhouyi-core::hexagram-49",
         "ten-wings::hex-49",
@@ -2249,11 +2200,10 @@
       "number": 50,
       "name": "50 · The Caldron",
       "symbol": "䷱",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 50,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-50",
         "zhouyi-core::hexagram-50",
         "ten-wings::hex-50",
@@ -2297,11 +2247,10 @@
       "number": 51,
       "name": "51 · The Arousing (Shock, Thunder)",
       "symbol": "䷲",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 51,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-51",
         "zhouyi-core::hexagram-51",
         "ten-wings::hex-51",
@@ -2342,11 +2291,10 @@
       "number": 52,
       "name": "52 · Keeping Still, Mountain",
       "symbol": "䷳",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 52,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-52",
         "zhouyi-core::hexagram-52",
         "ten-wings::hex-52",
@@ -2387,11 +2335,10 @@
       "number": 53,
       "name": "53 · Development (Gradual Progress)",
       "symbol": "䷴",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 53,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-53",
         "zhouyi-core::hexagram-53",
         "ten-wings::hex-53",
@@ -2435,11 +2382,10 @@
       "number": 54,
       "name": "54 · The Marrying Maiden",
       "symbol": "䷵",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 54,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-54",
         "zhouyi-core::hexagram-54",
         "ten-wings::hex-54",
@@ -2480,11 +2426,10 @@
       "number": 55,
       "name": "55 · Abundance",
       "symbol": "䷶",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 55,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-55",
         "zhouyi-core::hexagram-55",
         "ten-wings::hex-55",
@@ -2525,11 +2470,10 @@
       "number": 56,
       "name": "56 · The Wanderer",
       "symbol": "䷷",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 56,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-56",
         "zhouyi-core::hexagram-56",
         "ten-wings::hex-56",
@@ -2570,11 +2514,10 @@
       "number": 57,
       "name": "57 · The Gentle (The Penetrating, Wind)",
       "symbol": "䷸",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 57,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-57",
         "zhouyi-core::hexagram-57",
         "ten-wings::hex-57",
@@ -2615,11 +2558,10 @@
       "number": 58,
       "name": "58 · The Joyous, Lake",
       "symbol": "䷹",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 58,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-58",
         "zhouyi-core::hexagram-58",
         "ten-wings::hex-58",
@@ -2663,11 +2605,10 @@
       "number": 59,
       "name": "59 · Dispersion [Dissolution]",
       "symbol": "䷺",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 59,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-59",
         "zhouyi-core::hexagram-59",
         "ten-wings::hex-59",
@@ -2708,11 +2649,10 @@
       "number": 60,
       "name": "60 · Limitation",
       "symbol": "䷻",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 60,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-60",
         "zhouyi-core::hexagram-60",
         "ten-wings::hex-60",
@@ -2753,11 +2693,10 @@
       "number": 61,
       "name": "61 · Inner Truth",
       "symbol": "䷼",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 61,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-61",
         "zhouyi-core::hexagram-61",
         "ten-wings::hex-61",
@@ -2798,11 +2737,10 @@
       "number": 62,
       "name": "62 · Preponderance of the Small",
       "symbol": "䷽",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 62,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-62",
         "zhouyi-core::hexagram-62",
         "ten-wings::hex-62",
@@ -2843,11 +2781,10 @@
       "number": 63,
       "name": "63 · After Completion",
       "symbol": "䷾",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 63,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-63",
         "zhouyi-core::hexagram-63",
         "ten-wings::hex-63",
@@ -2891,11 +2828,10 @@
       "number": 64,
       "name": "64 · Before Completion",
       "symbol": "䷿",
-      "level": 2,
       "category": "hexagram",
       "sort_order": 64,
       "emergence_kind": "all-lenses",
-      "composite_of": [
+      "parts": [
         "i-ching-summarized::hexagram-64",
         "zhouyi-core::hexagram-64",
         "ten-wings::hex-64",
@@ -2961,8 +2897,7 @@
         "trigram_above": "heaven",
         "trigram_below": "heaven",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-2",
@@ -2991,8 +2926,7 @@
         "trigram_above": "earth",
         "trigram_below": "earth",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-3",
@@ -3021,8 +2955,7 @@
         "trigram_above": "water",
         "trigram_below": "thunder",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-4",
@@ -3051,8 +2984,7 @@
         "trigram_above": "mountain",
         "trigram_below": "water",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-5",
@@ -3081,8 +3013,7 @@
         "trigram_above": "water",
         "trigram_below": "heaven",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-6",
@@ -3111,8 +3042,7 @@
         "trigram_above": "heaven",
         "trigram_below": "water",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-7",
@@ -3141,8 +3071,7 @@
         "trigram_above": "earth",
         "trigram_below": "water",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-8",
@@ -3171,8 +3100,7 @@
         "trigram_above": "water",
         "trigram_below": "earth",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-9",
@@ -3201,8 +3129,7 @@
         "trigram_above": "wind",
         "trigram_below": "heaven",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-10",
@@ -3231,8 +3158,7 @@
         "trigram_above": "heaven",
         "trigram_below": "lake",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-11",
@@ -3261,8 +3187,7 @@
         "trigram_above": "earth",
         "trigram_below": "heaven",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-12",
@@ -3291,8 +3216,7 @@
         "trigram_above": "heaven",
         "trigram_below": "earth",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-13",
@@ -3321,8 +3245,7 @@
         "trigram_above": "heaven",
         "trigram_below": "fire",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-14",
@@ -3351,8 +3274,7 @@
         "trigram_above": "fire",
         "trigram_below": "heaven",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-15",
@@ -3381,8 +3303,7 @@
         "trigram_above": "earth",
         "trigram_below": "mountain",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-16",
@@ -3411,8 +3332,7 @@
         "trigram_above": "thunder",
         "trigram_below": "earth",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-17",
@@ -3441,8 +3361,7 @@
         "trigram_above": "lake",
         "trigram_below": "thunder",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-18",
@@ -3471,8 +3390,7 @@
         "trigram_above": "mountain",
         "trigram_below": "wind",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-19",
@@ -3501,8 +3419,7 @@
         "trigram_above": "earth",
         "trigram_below": "lake",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-20",
@@ -3531,8 +3448,7 @@
         "trigram_above": "wind",
         "trigram_below": "earth",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-21",
@@ -3561,8 +3477,7 @@
         "trigram_above": "fire",
         "trigram_below": "thunder",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-22",
@@ -3591,8 +3506,7 @@
         "trigram_above": "mountain",
         "trigram_below": "fire",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-23",
@@ -3621,8 +3535,7 @@
         "trigram_above": "mountain",
         "trigram_below": "earth",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-24",
@@ -3651,8 +3564,7 @@
         "trigram_above": "earth",
         "trigram_below": "thunder",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-25",
@@ -3681,8 +3593,7 @@
         "trigram_above": "heaven",
         "trigram_below": "thunder",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-26",
@@ -3711,8 +3622,7 @@
         "trigram_above": "mountain",
         "trigram_below": "heaven",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-27",
@@ -3741,8 +3651,7 @@
         "trigram_above": "mountain",
         "trigram_below": "thunder",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-28",
@@ -3771,8 +3680,7 @@
         "trigram_above": "lake",
         "trigram_below": "wind",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-29",
@@ -3801,8 +3709,7 @@
         "trigram_above": "water",
         "trigram_below": "water",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-30",
@@ -3831,8 +3738,7 @@
         "trigram_above": "fire",
         "trigram_below": "fire",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-31",
@@ -3861,8 +3767,7 @@
         "trigram_above": "lake",
         "trigram_below": "mountain",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-32",
@@ -3891,8 +3796,7 @@
         "trigram_above": "thunder",
         "trigram_below": "wind",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-33",
@@ -3921,8 +3825,7 @@
         "trigram_above": "heaven",
         "trigram_below": "mountain",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-34",
@@ -3951,8 +3854,7 @@
         "trigram_above": "thunder",
         "trigram_below": "heaven",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-35",
@@ -3981,8 +3883,7 @@
         "trigram_above": "fire",
         "trigram_below": "earth",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-36",
@@ -4011,8 +3912,7 @@
         "trigram_above": "earth",
         "trigram_below": "fire",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-37",
@@ -4041,8 +3941,7 @@
         "trigram_above": "wind",
         "trigram_below": "fire",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-38",
@@ -4071,8 +3970,7 @@
         "trigram_above": "fire",
         "trigram_below": "lake",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-39",
@@ -4101,8 +3999,7 @@
         "trigram_above": "water",
         "trigram_below": "mountain",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-40",
@@ -4131,8 +4028,7 @@
         "trigram_above": "thunder",
         "trigram_below": "water",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-41",
@@ -4161,8 +4057,7 @@
         "trigram_above": "mountain",
         "trigram_below": "lake",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-42",
@@ -4191,8 +4086,7 @@
         "trigram_above": "wind",
         "trigram_below": "thunder",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-43",
@@ -4221,8 +4115,7 @@
         "trigram_above": "lake",
         "trigram_below": "heaven",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-44",
@@ -4251,8 +4144,7 @@
         "trigram_above": "heaven",
         "trigram_below": "wind",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-45",
@@ -4281,8 +4173,7 @@
         "trigram_above": "lake",
         "trigram_below": "earth",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-46",
@@ -4311,8 +4202,7 @@
         "trigram_above": "earth",
         "trigram_below": "wind",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-47",
@@ -4341,8 +4231,7 @@
         "trigram_above": "lake",
         "trigram_below": "water",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-48",
@@ -4371,8 +4260,7 @@
         "trigram_above": "water",
         "trigram_below": "wind",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-49",
@@ -4401,8 +4289,7 @@
         "trigram_above": "lake",
         "trigram_below": "fire",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-50",
@@ -4431,8 +4318,7 @@
         "trigram_above": "fire",
         "trigram_below": "wind",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-51",
@@ -4461,8 +4347,7 @@
         "trigram_above": "thunder",
         "trigram_below": "thunder",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-52",
@@ -4491,8 +4376,7 @@
         "trigram_above": "mountain",
         "trigram_below": "mountain",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-53",
@@ -4521,8 +4405,7 @@
         "trigram_above": "wind",
         "trigram_below": "mountain",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-54",
@@ -4551,8 +4434,7 @@
         "trigram_above": "thunder",
         "trigram_below": "lake",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-55",
@@ -4581,8 +4463,7 @@
         "trigram_above": "thunder",
         "trigram_below": "fire",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-56",
@@ -4611,8 +4492,7 @@
         "trigram_above": "fire",
         "trigram_below": "mountain",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-57",
@@ -4641,8 +4521,7 @@
         "trigram_above": "wind",
         "trigram_below": "wind",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-58",
@@ -4671,8 +4550,7 @@
         "trigram_above": "lake",
         "trigram_below": "lake",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-59",
@@ -4701,8 +4579,7 @@
         "trigram_above": "wind",
         "trigram_below": "water",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-60",
@@ -4731,8 +4608,7 @@
         "trigram_above": "water",
         "trigram_below": "lake",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-61",
@@ -4761,8 +4637,7 @@
         "trigram_above": "wind",
         "trigram_below": "lake",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-62",
@@ -4791,8 +4666,7 @@
         "trigram_above": "thunder",
         "trigram_below": "mountain",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-63",
@@ -4821,8 +4695,7 @@
         "trigram_above": "water",
         "trigram_below": "fire",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "i-ching-summarized::hexagram-64",
@@ -4851,8 +4724,7 @@
         "trigram_above": "fire",
         "trigram_below": "water",
         "source_grammar": "i-ching-summarized"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-1",
@@ -4881,8 +4753,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-2",
@@ -4911,8 +4782,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-3",
@@ -4940,8 +4810,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-4",
@@ -4969,8 +4838,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-5",
@@ -4998,8 +4866,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-6",
@@ -5027,8 +4894,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-7",
@@ -5056,8 +4922,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-8",
@@ -5085,8 +4950,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-9",
@@ -5114,8 +4978,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-10",
@@ -5143,8 +5006,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-11",
@@ -5172,8 +5034,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-12",
@@ -5201,8 +5062,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-13",
@@ -5230,8 +5090,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-14",
@@ -5259,8 +5118,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-15",
@@ -5288,8 +5146,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-16",
@@ -5317,8 +5174,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-17",
@@ -5346,8 +5202,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-18",
@@ -5375,8 +5230,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-19",
@@ -5404,8 +5258,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-20",
@@ -5433,8 +5286,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-21",
@@ -5462,8 +5314,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-22",
@@ -5491,8 +5342,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-23",
@@ -5520,8 +5370,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-24",
@@ -5549,8 +5398,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-25",
@@ -5578,8 +5426,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-26",
@@ -5607,8 +5454,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-27",
@@ -5636,8 +5482,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-28",
@@ -5665,8 +5510,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-29",
@@ -5694,8 +5538,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-30",
@@ -5723,8 +5566,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-31",
@@ -5752,8 +5594,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-32",
@@ -5781,8 +5622,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-33",
@@ -5810,8 +5650,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-34",
@@ -5839,8 +5678,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-35",
@@ -5868,8 +5706,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-36",
@@ -5897,8 +5734,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-37",
@@ -5926,8 +5762,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-38",
@@ -5955,8 +5790,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-39",
@@ -5984,8 +5818,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-40",
@@ -6013,8 +5846,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-41",
@@ -6042,8 +5874,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-42",
@@ -6071,8 +5902,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-43",
@@ -6100,8 +5930,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-44",
@@ -6129,8 +5958,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-45",
@@ -6158,8 +5986,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-46",
@@ -6187,8 +6014,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-47",
@@ -6216,8 +6042,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-48",
@@ -6245,8 +6070,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-49",
@@ -6274,8 +6098,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-50",
@@ -6303,8 +6126,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-51",
@@ -6332,8 +6154,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-52",
@@ -6361,8 +6182,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-53",
@@ -6390,8 +6210,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-54",
@@ -6419,8 +6238,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-55",
@@ -6448,8 +6266,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-56",
@@ -6477,8 +6294,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-57",
@@ -6506,8 +6322,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-58",
@@ -6535,8 +6350,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-59",
@@ -6564,8 +6378,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-60",
@@ -6593,8 +6406,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-61",
@@ -6622,8 +6434,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-62",
@@ -6651,8 +6462,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-63",
@@ -6680,8 +6490,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "zhouyi-core::hexagram-64",
@@ -6709,8 +6518,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Text — public domain. Wording cross-verified across three independent digitizations (sacred-texts.com transcription + two independently maintained datasets).",
         "source_grammar": "zhouyi-core"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-1",
@@ -6732,8 +6540,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-2",
@@ -6755,8 +6562,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-3",
@@ -6778,8 +6584,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-4",
@@ -6801,8 +6606,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-5",
@@ -6824,8 +6628,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-6",
@@ -6847,8 +6650,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-7",
@@ -6870,8 +6672,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-8",
@@ -6893,8 +6694,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-9",
@@ -6916,8 +6716,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-10",
@@ -6939,8 +6738,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-11",
@@ -6962,8 +6760,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-12",
@@ -6985,8 +6782,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-13",
@@ -7008,8 +6804,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-14",
@@ -7031,8 +6826,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-15",
@@ -7054,8 +6848,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-16",
@@ -7077,8 +6870,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-17",
@@ -7100,8 +6892,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-18",
@@ -7123,8 +6914,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-19",
@@ -7146,8 +6936,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-20",
@@ -7169,8 +6958,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-21",
@@ -7192,8 +6980,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-22",
@@ -7215,8 +7002,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-23",
@@ -7238,8 +7024,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-24",
@@ -7261,8 +7046,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-25",
@@ -7284,8 +7068,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-26",
@@ -7307,8 +7090,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-27",
@@ -7330,8 +7112,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-28",
@@ -7353,8 +7134,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-29",
@@ -7376,8 +7156,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-30",
@@ -7399,8 +7178,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-31",
@@ -7422,8 +7200,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-32",
@@ -7445,8 +7222,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-33",
@@ -7468,8 +7244,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-34",
@@ -7491,8 +7266,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-35",
@@ -7514,8 +7288,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-36",
@@ -7537,8 +7310,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-37",
@@ -7560,8 +7332,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-38",
@@ -7583,8 +7354,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-39",
@@ -7606,8 +7376,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-40",
@@ -7629,8 +7398,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-41",
@@ -7652,8 +7420,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-42",
@@ -7675,8 +7442,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-43",
@@ -7698,8 +7464,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-44",
@@ -7721,8 +7486,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-45",
@@ -7744,8 +7508,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-46",
@@ -7767,8 +7530,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-47",
@@ -7790,8 +7552,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-48",
@@ -7813,8 +7574,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-49",
@@ -7836,8 +7596,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-50",
@@ -7859,8 +7618,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-51",
@@ -7882,8 +7640,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-52",
@@ -7905,8 +7662,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-53",
@@ -7928,8 +7684,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-54",
@@ -7951,8 +7706,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-55",
@@ -7974,8 +7728,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-56",
@@ -7997,8 +7750,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-57",
@@ -8020,8 +7772,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-58",
@@ -8043,8 +7794,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-59",
@@ -8066,8 +7816,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-60",
@@ -8089,8 +7838,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-61",
@@ -8112,8 +7860,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-62",
@@ -8135,8 +7882,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-63",
@@ -8158,8 +7904,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::hex-64",
@@ -8181,8 +7926,7 @@
         "confidence": "high",
         "_source": "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899), Appendix II (Great Symbolism) — public domain. Wording cross-verified across three independent digitizations.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::wings-overview",
@@ -8204,8 +7948,7 @@
         "confidence": "high",
         "_source": "Synthesis grounded in Shaughnessy (Early Chinese Texts, 1993), Rutt (The Book of Changes (Zhouyi): A Bronze Age Document, 1996), Redmond & Hon (Teaching the I Ching, 2014); dating and Ouyang Xiu attribution-doubt verified via current reference works, Jul 2026.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::wing-tuan",
@@ -8226,8 +7969,7 @@
         "confidence": "medium",
         "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix I; characterization is paraphrased scholarship (○).",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::wing-xiang",
@@ -8249,8 +7991,7 @@
         "confidence": "medium",
         "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix II; characterization is paraphrased scholarship (○).",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::wing-xici",
@@ -8273,8 +8014,7 @@
         "confidence": "high",
         "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix III; dating per Shaughnessy ('The Writing of the Xici Zhuan and the Making of the Yijing') and the Mawangdui find, verified Jul 2026.",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::wing-wenyan",
@@ -8296,8 +8036,7 @@
         "confidence": "medium",
         "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix IV; characterization is paraphrased scholarship (○).",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::wing-shuogua",
@@ -8319,8 +8058,7 @@
         "confidence": "medium",
         "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix V; characterization is paraphrased scholarship (○).",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::wing-xugua",
@@ -8341,8 +8079,7 @@
         "confidence": "medium",
         "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix VI; characterization is paraphrased scholarship (○).",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "ten-wings::wing-zagua",
@@ -8363,8 +8100,7 @@
         "confidence": "medium",
         "_source": "Quote verified verbatim against the sacred-texts.com transcription of Legge, Appendix VII; characterization is paraphrased scholarship (○).",
         "source_grammar": "ten-wings"
-      },
-      "level": 1
+      }
     },
     {
       "id": "iching-hd-meta-categories::hex-1",
@@ -8398,8 +8134,7 @@
         "trigram_below": "heaven",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-01.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-01.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-2",
@@ -8433,8 +8168,7 @@
         "trigram_below": "earth",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-02.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-02.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-3",
@@ -8468,8 +8202,7 @@
         "trigram_below": "thunder",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-03.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-03.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-4",
@@ -8503,8 +8236,7 @@
         "trigram_below": "water",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-04.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-04.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-5",
@@ -8538,8 +8270,7 @@
         "trigram_below": "heaven",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-05.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-05.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-6",
@@ -8573,8 +8304,7 @@
         "trigram_below": "water",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-06.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-06.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-7",
@@ -8608,8 +8338,7 @@
         "trigram_below": "water",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-07.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-07.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-8",
@@ -8643,8 +8372,7 @@
         "trigram_below": "earth",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-08.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-08.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-9",
@@ -8678,8 +8406,7 @@
         "trigram_below": "heaven",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-09.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-09.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-10",
@@ -8713,8 +8440,7 @@
         "trigram_below": "lake",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-10.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-10.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-11",
@@ -8748,8 +8474,7 @@
         "trigram_below": "heaven",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-11.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-11.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-12",
@@ -8783,8 +8508,7 @@
         "trigram_below": "earth",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-12.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-12.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-13",
@@ -8818,8 +8542,7 @@
         "trigram_below": "fire",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-13.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-13.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-14",
@@ -8853,8 +8576,7 @@
         "trigram_below": "heaven",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-14.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-14.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-15",
@@ -8888,8 +8610,7 @@
         "trigram_below": "mountain",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-15.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-15.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-16",
@@ -8923,8 +8644,7 @@
         "trigram_below": "earth",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-16.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-16.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-17",
@@ -8958,8 +8678,7 @@
         "trigram_below": "thunder",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-17.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-17.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-18",
@@ -8993,8 +8712,7 @@
         "trigram_below": "wind",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-18.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-18.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-19",
@@ -9028,8 +8746,7 @@
         "trigram_below": "lake",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-19.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-19.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-20",
@@ -9063,8 +8780,7 @@
         "trigram_below": "earth",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-20.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-20.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-21",
@@ -9098,8 +8814,7 @@
         "trigram_below": "thunder",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-21.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-21.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-22",
@@ -9133,8 +8848,7 @@
         "trigram_below": "fire",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-22.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-22.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-23",
@@ -9168,8 +8882,7 @@
         "trigram_below": "earth",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-23.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-23.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-24",
@@ -9203,8 +8916,7 @@
         "trigram_below": "thunder",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-24.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-24.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-25",
@@ -9238,8 +8950,7 @@
         "trigram_below": "thunder",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-25.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-25.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-26",
@@ -9273,8 +8984,7 @@
         "trigram_below": "heaven",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-26.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-26.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-27",
@@ -9308,8 +9018,7 @@
         "trigram_below": "thunder",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-27.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-27.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-28",
@@ -9343,8 +9052,7 @@
         "trigram_below": "wind",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-28.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-28.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-29",
@@ -9378,8 +9086,7 @@
         "trigram_below": "water",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-29.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-29.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-30",
@@ -9413,8 +9120,7 @@
         "trigram_below": "fire",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-30.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-30.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-31",
@@ -9448,8 +9154,7 @@
         "trigram_below": "mountain",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-31.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-31.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-32",
@@ -9483,8 +9188,7 @@
         "trigram_below": "wind",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-32.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-32.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-33",
@@ -9518,8 +9222,7 @@
         "trigram_below": "mountain",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-33.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-33.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-34",
@@ -9553,8 +9256,7 @@
         "trigram_below": "heaven",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-34.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-34.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-35",
@@ -9588,8 +9290,7 @@
         "trigram_below": "earth",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-35.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-35.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-36",
@@ -9623,8 +9324,7 @@
         "trigram_below": "fire",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-36.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-36.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-37",
@@ -9658,8 +9358,7 @@
         "trigram_below": "fire",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-37.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-37.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-38",
@@ -9693,8 +9392,7 @@
         "trigram_below": "lake",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-38.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-38.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-39",
@@ -9728,8 +9426,7 @@
         "trigram_below": "mountain",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-39.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-39.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-40",
@@ -9763,8 +9460,7 @@
         "trigram_below": "water",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-40.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-40.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-41",
@@ -9798,8 +9494,7 @@
         "trigram_below": "lake",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-41.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-41.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-42",
@@ -9833,8 +9528,7 @@
         "trigram_below": "thunder",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-42.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-42.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-43",
@@ -9868,8 +9562,7 @@
         "trigram_below": "heaven",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-43.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-43.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-44",
@@ -9903,8 +9596,7 @@
         "trigram_below": "wind",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-44.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-44.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-45",
@@ -9938,8 +9630,7 @@
         "trigram_below": "earth",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-45.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-45.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-46",
@@ -9973,8 +9664,7 @@
         "trigram_below": "wind",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-46.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-46.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-47",
@@ -10008,8 +9698,7 @@
         "trigram_below": "water",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-47.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-47.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-48",
@@ -10043,8 +9732,7 @@
         "trigram_below": "wind",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-48.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-48.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-49",
@@ -10078,8 +9766,7 @@
         "trigram_below": "fire",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-49.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-49.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-50",
@@ -10113,8 +9800,7 @@
         "trigram_below": "wind",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-50.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-50.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-51",
@@ -10148,8 +9834,7 @@
         "trigram_below": "thunder",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-51.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-51.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-52",
@@ -10183,8 +9868,7 @@
         "trigram_below": "mountain",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-52.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-52.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-53",
@@ -10218,8 +9902,7 @@
         "trigram_below": "mountain",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-53.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-53.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-54",
@@ -10253,8 +9936,7 @@
         "trigram_below": "lake",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-54.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-54.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-55",
@@ -10288,8 +9970,7 @@
         "trigram_below": "fire",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-55.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-55.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-56",
@@ -10323,8 +10004,7 @@
         "trigram_below": "mountain",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-56.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-56.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-57",
@@ -10358,8 +10038,7 @@
         "trigram_below": "wind",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-57.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-57.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-58",
@@ -10393,8 +10072,7 @@
         "trigram_below": "lake",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-58.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-58.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-59",
@@ -10428,8 +10106,7 @@
         "trigram_below": "water",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-59.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-59.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-60",
@@ -10463,8 +10140,7 @@
         "trigram_below": "lake",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-60.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-60.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-61",
@@ -10498,8 +10174,7 @@
         "trigram_below": "lake",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-61.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-61.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-62",
@@ -10533,8 +10208,7 @@
         "trigram_below": "mountain",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-62.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-62.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-63",
@@ -10568,8 +10242,7 @@
         "trigram_below": "fire",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-63.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-63.svg"
     },
     {
       "id": "iching-hd-meta-categories::hex-64",
@@ -10603,8 +10276,7 @@
         "trigram_below": "water",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-64.svg",
-      "level": 1
+      "image_url": "https://iching.recursive.eco/img/hd/gate-64.svg"
     },
     {
       "id": "iching-hd-meta-categories::sign-aquarius",
@@ -10634,8 +10306,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::sign-pisces",
@@ -10665,8 +10336,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::sign-aries",
@@ -10696,8 +10366,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::sign-taurus",
@@ -10727,8 +10396,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::sign-gemini",
@@ -10758,8 +10426,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::sign-cancer",
@@ -10789,8 +10456,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::sign-leo",
@@ -10820,8 +10486,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::sign-virgo",
@@ -10851,8 +10516,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::sign-libra",
@@ -10882,8 +10546,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::sign-scorpio",
@@ -10913,8 +10576,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::sign-sagittarius",
@@ -10944,8 +10606,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::sign-capricorn",
@@ -10975,8 +10636,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::chakra-muladhara",
@@ -11011,8 +10671,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::chakra-svadhisthana",
@@ -11049,8 +10708,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::chakra-manipura",
@@ -11087,8 +10745,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::chakra-anahata",
@@ -11125,8 +10782,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::chakra-vishuddha",
@@ -11167,8 +10823,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::chakra-ajna",
@@ -11206,8 +10861,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::chakra-sahasrara",
@@ -11244,8 +10898,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::trigram-heaven",
@@ -11271,8 +10924,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::trigram-earth",
@@ -11298,8 +10950,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::trigram-thunder",
@@ -11325,8 +10976,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::trigram-water",
@@ -11352,8 +11002,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::trigram-mountain",
@@ -11379,8 +11028,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::trigram-wind",
@@ -11406,8 +11054,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::trigram-fire",
@@ -11433,8 +11080,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::trigram-lake",
@@ -11460,8 +11106,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::l3-trigrams",
@@ -11488,8 +11133,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::l3-signs",
@@ -11516,8 +11160,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::l3-chakras",
@@ -11543,8 +11186,7 @@
       "metadata": {
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::chat-1782322634752-wgvwjy",
@@ -11563,8 +11205,7 @@
         "play_session": true,
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": null,
-      "level": 1
+      "image_url": null
     },
     {
       "id": "iching-hd-meta-categories::img-1782324125117-1v28z8",
@@ -11582,14 +11223,12 @@
         "image_description": "Create an image for \"Creative Power\" — Full Item section.\nFull item:\nImage: Heaven's movement is full of power. Thus the superior one makes themselves strong and untiring.\nLine 1: Hidden creative powe",
         "source_grammar": "iching-hd-meta-categories"
       },
-      "image_url": "https://pub-71ebbc217e6247ecacb85126a6616699.r2.dev/flow-image-gen/1782324124244-4a8vzvkh9vp.png",
-      "level": 1
+      "image_url": "https://pub-71ebbc217e6247ecacb85126a6616699.r2.dev/flow-image-gen/1782324124244-4a8vzvkh9vp.png"
     },
     {
       "id": "three-lenses-64::hex-1",
       "number": 1,
       "name": "Creative Power",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "creativity",
@@ -11610,7 +11249,6 @@
       "id": "three-lenses-64::hex-2",
       "number": 2,
       "name": "Receptive Flow",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "receptivity",
@@ -11631,7 +11269,6 @@
       "id": "three-lenses-64::hex-3",
       "number": 3,
       "name": "Difficulty at the Beginning",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "mutation",
@@ -11652,7 +11289,6 @@
       "id": "three-lenses-64::hex-4",
       "number": 4,
       "name": "Youthful Folly",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "formulization",
@@ -11673,7 +11309,6 @@
       "id": "three-lenses-64::hex-5",
       "number": 5,
       "name": "Waiting",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "fixed-patterns",
@@ -11694,7 +11329,6 @@
       "id": "three-lenses-64::hex-6",
       "number": 6,
       "name": "Conflict",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "intimacy",
@@ -11715,7 +11349,6 @@
       "id": "three-lenses-64::hex-7",
       "number": 7,
       "name": "The Army",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "leadership",
@@ -11736,7 +11369,6 @@
       "id": "three-lenses-64::hex-8",
       "number": 8,
       "name": "Holding Together",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "contribution",
@@ -11757,7 +11389,6 @@
       "id": "three-lenses-64::hex-9",
       "number": 9,
       "name": "Taming Power of the Small",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "focus",
@@ -11778,7 +11409,6 @@
       "id": "three-lenses-64::hex-10",
       "number": 10,
       "name": "Treading",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "behavior",
@@ -11799,7 +11429,6 @@
       "id": "three-lenses-64::hex-11",
       "number": 11,
       "name": "Peace",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "ideas",
@@ -11820,7 +11449,6 @@
       "id": "three-lenses-64::hex-12",
       "number": 12,
       "name": "Standstill",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "caution",
@@ -11841,7 +11469,6 @@
       "id": "three-lenses-64::hex-13",
       "number": 13,
       "name": "Fellowship",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "listening",
@@ -11862,7 +11489,6 @@
       "id": "three-lenses-64::hex-14",
       "number": 14,
       "name": "Possession in Great Measure",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "skills",
@@ -11883,7 +11509,6 @@
       "id": "three-lenses-64::hex-15",
       "number": 15,
       "name": "Modesty",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "extremes",
@@ -11904,7 +11529,6 @@
       "id": "three-lenses-64::hex-16",
       "number": 16,
       "name": "Enthusiasm",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "skills",
@@ -11925,7 +11549,6 @@
       "id": "three-lenses-64::hex-17",
       "number": 17,
       "name": "Following",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "opinions",
@@ -11946,7 +11569,6 @@
       "id": "three-lenses-64::hex-18",
       "number": 18,
       "name": "Work on the Decayed",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "correction",
@@ -11967,7 +11589,6 @@
       "id": "three-lenses-64::hex-19",
       "number": 19,
       "name": "Approach",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "wanting",
@@ -11988,7 +11609,6 @@
       "id": "three-lenses-64::hex-20",
       "number": 20,
       "name": "Contemplation",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "presence",
@@ -12009,7 +11629,6 @@
       "id": "three-lenses-64::hex-21",
       "number": 21,
       "name": "Biting Through",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "control",
@@ -12030,7 +11649,6 @@
       "id": "three-lenses-64::hex-22",
       "number": 22,
       "name": "Grace",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "grace",
@@ -12051,7 +11669,6 @@
       "id": "three-lenses-64::hex-23",
       "number": 23,
       "name": "Splitting Apart",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "assimilation",
@@ -12072,7 +11689,6 @@
       "id": "three-lenses-64::hex-24",
       "number": 24,
       "name": "Return",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "return",
@@ -12093,7 +11709,6 @@
       "id": "three-lenses-64::hex-25",
       "number": 25,
       "name": "Innocence",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "innocence",
@@ -12114,7 +11729,6 @@
       "id": "three-lenses-64::hex-26",
       "number": 26,
       "name": "Taming Power of the Great",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "taming",
@@ -12135,7 +11749,6 @@
       "id": "three-lenses-64::hex-27",
       "number": 27,
       "name": "Nourishment",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "nourishment",
@@ -12156,7 +11769,6 @@
       "id": "three-lenses-64::hex-28",
       "number": 28,
       "name": "Preponderance of the Great",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "risk",
@@ -12177,7 +11789,6 @@
       "id": "three-lenses-64::hex-29",
       "number": 29,
       "name": "The Abysmal Water",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "commitment",
@@ -12198,7 +11809,6 @@
       "id": "three-lenses-64::hex-30",
       "number": 30,
       "name": "The Clinging Fire",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "feelings",
@@ -12219,7 +11829,6 @@
       "id": "three-lenses-64::hex-31",
       "number": 31,
       "name": "Influence",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "influence",
@@ -12240,7 +11849,6 @@
       "id": "three-lenses-64::hex-32",
       "number": 32,
       "name": "Duration",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "continuity",
@@ -12261,7 +11869,6 @@
       "id": "three-lenses-64::hex-33",
       "number": 33,
       "name": "Retreat",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "privacy",
@@ -12282,7 +11889,6 @@
       "id": "three-lenses-64::hex-34",
       "number": 34,
       "name": "Power of the Great",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "power",
@@ -12303,7 +11909,6 @@
       "id": "three-lenses-64::hex-35",
       "number": 35,
       "name": "Progress",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "progress",
@@ -12324,7 +11929,6 @@
       "id": "three-lenses-64::hex-36",
       "number": 36,
       "name": "Darkening of the Light",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "crisis",
@@ -12345,7 +11949,6 @@
       "id": "three-lenses-64::hex-37",
       "number": 37,
       "name": "The Family",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "family",
@@ -12366,7 +11969,6 @@
       "id": "three-lenses-64::hex-38",
       "number": 38,
       "name": "Opposition",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "opposition",
@@ -12387,7 +11989,6 @@
       "id": "three-lenses-64::hex-39",
       "number": 39,
       "name": "Obstruction",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "provocation",
@@ -12408,7 +12009,6 @@
       "id": "three-lenses-64::hex-40",
       "number": 40,
       "name": "Deliverance",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "deliverance",
@@ -12429,7 +12029,6 @@
       "id": "three-lenses-64::hex-41",
       "number": 41,
       "name": "Decrease",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "contraction",
@@ -12450,7 +12049,6 @@
       "id": "three-lenses-64::hex-42",
       "number": 42,
       "name": "Increase",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "growth",
@@ -12471,7 +12069,6 @@
       "id": "three-lenses-64::hex-43",
       "number": 43,
       "name": "Breakthrough",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "breakthrough",
@@ -12492,7 +12089,6 @@
       "id": "three-lenses-64::hex-44",
       "number": 44,
       "name": "Coming to Meet",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "alertness",
@@ -12513,7 +12109,6 @@
       "id": "three-lenses-64::hex-45",
       "number": 45,
       "name": "Gathering Together",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "gathering",
@@ -12534,7 +12129,6 @@
       "id": "three-lenses-64::hex-46",
       "number": 46,
       "name": "Pushing Upward",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "determination",
@@ -12555,7 +12149,6 @@
       "id": "three-lenses-64::hex-47",
       "number": 47,
       "name": "Oppression",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "realization",
@@ -12576,7 +12169,6 @@
       "id": "three-lenses-64::hex-48",
       "number": 48,
       "name": "The Well",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "depth",
@@ -12597,7 +12189,6 @@
       "id": "three-lenses-64::hex-49",
       "number": 49,
       "name": "Revolution",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "revolution",
@@ -12618,7 +12209,6 @@
       "id": "three-lenses-64::hex-50",
       "number": 50,
       "name": "The Cauldron",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "values",
@@ -12639,7 +12229,6 @@
       "id": "three-lenses-64::hex-51",
       "number": 51,
       "name": "The Arousing",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "shock",
@@ -12660,7 +12249,6 @@
       "id": "three-lenses-64::hex-52",
       "number": 52,
       "name": "Keeping Still",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "stillness",
@@ -12681,7 +12269,6 @@
       "id": "three-lenses-64::hex-53",
       "number": 53,
       "name": "Development",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "beginnings",
@@ -12702,7 +12289,6 @@
       "id": "three-lenses-64::hex-54",
       "number": 54,
       "name": "The Marrying Maiden",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "ambition",
@@ -12723,7 +12309,6 @@
       "id": "three-lenses-64::hex-55",
       "number": 55,
       "name": "Abundance",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "abundance",
@@ -12744,7 +12329,6 @@
       "id": "three-lenses-64::hex-56",
       "number": 56,
       "name": "The Wanderer",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "stimulation",
@@ -12765,7 +12349,6 @@
       "id": "three-lenses-64::hex-57",
       "number": 57,
       "name": "The Gentle",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "intuition",
@@ -12786,7 +12369,6 @@
       "id": "three-lenses-64::hex-58",
       "number": 58,
       "name": "The Joyous",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "vitality",
@@ -12807,7 +12389,6 @@
       "id": "three-lenses-64::hex-59",
       "number": 59,
       "name": "Dispersion",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "dispersion",
@@ -12828,7 +12409,6 @@
       "id": "three-lenses-64::hex-60",
       "number": 60,
       "name": "Limitation",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "limitation",
@@ -12849,7 +12429,6 @@
       "id": "three-lenses-64::hex-61",
       "number": 61,
       "name": "Inner Truth",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "mystery",
@@ -12870,7 +12449,6 @@
       "id": "three-lenses-64::hex-62",
       "number": 62,
       "name": "Preponderance of the Small",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "detail",
@@ -12891,7 +12469,6 @@
       "id": "three-lenses-64::hex-63",
       "number": 63,
       "name": "After Completion",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "doubt",
@@ -12912,7 +12489,6 @@
       "id": "three-lenses-64::hex-64",
       "number": 64,
       "name": "Before Completion",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "confusion",
@@ -12932,7 +12508,6 @@
     {
       "id": "three-lenses-64::sign-aquarius",
       "name": "Aquarius: Innovation Through Individuality",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "innovation",
@@ -12956,7 +12531,6 @@
     {
       "id": "three-lenses-64::sign-pisces",
       "name": "Pisces: Dissolution and Transcendence",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "dissolution",
@@ -12980,7 +12554,6 @@
     {
       "id": "three-lenses-64::sign-aries",
       "name": "Aries: Initiation Through Challenge",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "initiation",
@@ -13004,7 +12577,6 @@
     {
       "id": "three-lenses-64::sign-taurus",
       "name": "Taurus: Grounding Innovation in Form",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "grounding",
@@ -13028,7 +12600,6 @@
     {
       "id": "three-lenses-64::sign-gemini",
       "name": "Gemini: Communication and Connection",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "communication",
@@ -13052,7 +12623,6 @@
     {
       "id": "three-lenses-64::sign-cancer",
       "name": "Cancer: Nurturing Through Boundaries",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "nurturing",
@@ -13076,7 +12646,6 @@
     {
       "id": "three-lenses-64::sign-leo",
       "name": "Leo: Creative Authority and Leadership",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "leadership",
@@ -13100,7 +12669,6 @@
     {
       "id": "three-lenses-64::sign-virgo",
       "name": "Virgo: Refinement Through Analysis",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "refinement",
@@ -13124,7 +12692,6 @@
     {
       "id": "three-lenses-64::sign-libra",
       "name": "Libra: Relationship Through Friction",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "relationship",
@@ -13148,7 +12715,6 @@
     {
       "id": "three-lenses-64::sign-scorpio",
       "name": "Scorpio: Transformation Through Intensity",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "transformation",
@@ -13172,7 +12738,6 @@
     {
       "id": "three-lenses-64::sign-sagittarius",
       "name": "Sagittarius: Seeking Truth and Meaning",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "seeking",
@@ -13196,7 +12761,6 @@
     {
       "id": "three-lenses-64::sign-capricorn",
       "name": "Capricorn: Mastery Through Structure",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "mastery",
@@ -13220,7 +12784,6 @@
     {
       "id": "three-lenses-64::chakra-muladhara",
       "name": "Root Chakra (Muladhara)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "grounding",
@@ -13243,7 +12806,6 @@
     {
       "id": "three-lenses-64::chakra-svadhisthana",
       "name": "Sacral Chakra (Svadhisthana)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "creativity",
@@ -13267,7 +12829,6 @@
     {
       "id": "three-lenses-64::chakra-manipura",
       "name": "Solar Plexus Chakra (Manipura)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "power",
@@ -13291,7 +12852,6 @@
     {
       "id": "three-lenses-64::chakra-anahata",
       "name": "Heart Chakra (Anahata)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "love",
@@ -13315,7 +12875,6 @@
     {
       "id": "three-lenses-64::chakra-vishuddha",
       "name": "Throat Chakra (Vishuddha)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "communication",
@@ -13339,7 +12898,6 @@
     {
       "id": "three-lenses-64::chakra-ajna",
       "name": "Third Eye Chakra (Ajna)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "intuition",
@@ -13363,7 +12921,6 @@
     {
       "id": "three-lenses-64::chakra-sahasrara",
       "name": "Crown Chakra (Sahasrara)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "spirituality",
@@ -13387,7 +12944,6 @@
     {
       "id": "three-lenses-64::trigram-heaven",
       "name": "Heaven (Qian)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "creative",
@@ -13409,7 +12965,6 @@
     {
       "id": "three-lenses-64::trigram-earth",
       "name": "Earth (Kun)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "receptive",
@@ -13431,7 +12986,6 @@
     {
       "id": "three-lenses-64::trigram-thunder",
       "name": "Thunder (Zhen)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "arousing",
@@ -13453,7 +13007,6 @@
     {
       "id": "three-lenses-64::trigram-water",
       "name": "Water (Kan)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "abysmal",
@@ -13475,7 +13028,6 @@
     {
       "id": "three-lenses-64::trigram-mountain",
       "name": "Mountain (Gen)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "stillness",
@@ -13497,7 +13049,6 @@
     {
       "id": "three-lenses-64::trigram-wind",
       "name": "Wind (Xun)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "gentle",
@@ -13519,7 +13070,6 @@
     {
       "id": "three-lenses-64::trigram-fire",
       "name": "Fire (Li)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "clinging",
@@ -13541,7 +13091,6 @@
     {
       "id": "three-lenses-64::trigram-lake",
       "name": "Lake (Dui)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "joyous",
@@ -13563,7 +13112,6 @@
     {
       "id": "three-lenses-64::l3-trigrams",
       "name": "Trigrams (Bagua)",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "fundamental-forces",
@@ -13584,7 +13132,6 @@
     {
       "id": "three-lenses-64::l3-signs",
       "name": "Zodiac Signs",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "astrology",
@@ -13605,7 +13152,6 @@
     {
       "id": "three-lenses-64::l3-chakras",
       "name": "Chakras",
-      "level": 1,
       "category": "three-lenses-64",
       "keywords": [
         "chakras",
@@ -13628,7 +13174,6 @@
       "name": "Hexagram 6 · 訟 Sòng · Conflict",
       "sort_order": 1,
       "category": "repair-iching",
-      "level": 1,
       "sections": {
         "Hexagram": "☰ Heaven above, ☵ Water below. Heaven moves upward, water flows downward — they move in opposite directions. This is the image of Conflict. Not conflict as failure, but conflict as a fundamental structure of relationship: two forces that are both right and moving apart.",
         "Repair Reading": "Chapter 1 of the Repair book asks: what if 69% of problems never get solved? Hexagram 6 is the I Ching's answer. Conflict arises not from error but from structure. Heaven and Water are not enemies — they simply have different natures. The judgment says: 'It is advantageous to see the great man. It is not advantageous to cross the great water.' Translation: seek mediation. Don't escalate. The problem is perpetual. The repair is in how you hold it.",
@@ -13658,7 +13203,6 @@
       "name": "Hexagram 29 · 坎 Kǎn · The Abysmal (Water)",
       "sort_order": 2,
       "category": "repair-iching",
-      "level": 1,
       "sections": {
         "Hexagram": "☵ Water above, ☵ Water below. Water doubled. The abyss within the abyss. This is the most dangerous hexagram — and the most honest. Water doesn't avoid the pit. It flows into it. Through it. Water is sincere because it has no choice: it goes where gravity takes it.",
         "Repair Reading": "Chapter 2 asks: what is the cry beneath the fight? Hexagram 29 IS that cry. The Abysmal is not about falling into danger — it's about the danger you were already in. The attachment wound. The pit you've been circling since childhood. Bowlby watched children separate from their mothers and saw protest, despair, detachment. That's Water in the Pit: you cry (protest), you go quiet (despair), you stop needing (detachment). The I Ching says: 'If you are sincere, you have success in your heart, and whatever you do succeeds.' Sincerity here means naming the pit. Not climbing out. Naming it.",
@@ -13690,7 +13234,6 @@
       "name": "Hexagram 58 · 兌 Duì · The Joyous (Lake)",
       "sort_order": 3,
       "category": "repair-iching",
-      "level": 1,
       "sections": {
         "Hexagram": "☱ Lake above, ☱ Lake below. Two lakes connected — they replenish each other. Joy doubled. The image is of two people in genuine conversation, where each other's depth feeds their own. The judgment says: 'The joyous. Success. Perseverance is favorable.'",
         "Repair Reading": "Chapter 3 is 'Hold Me Tight' — Sue Johnson's EFT, the vulnerability request that repairs by reaching rather than defending. Hexagram 58 is the I Ching's version: two lakes, connected underground, each feeding the other. Joy in the I Ching is not happiness — it's resonance. The kind that happens when you say 'I need you' and the other person doesn't flinch. The connected lake. The image says: 'Thus the superior person joins with friends for discussion and practice.' Repair is never solo. Two lakes, or nothing.",
@@ -13722,7 +13265,6 @@
       "name": "Hexagram 24 · 復 Fù · Return (The Turning Point)",
       "sort_order": 4,
       "category": "repair-iching",
-      "level": 1,
       "sections": {
         "Hexagram": "☷ Earth above, ☳ Thunder below. Thunder within the earth. The first yang line returns at the bottom after five yin lines — light returns after darkness. The winter solstice. The turning point. The image: 'Thunder within the earth. The ancient kings closed the passes at the time of the solstice.'",
         "Repair Reading": "Chapter 4 is Making Amends — the AA tradition of returning to the people you've harmed. Hexagram 24 is literally called 'Return.' In Hebrew, teshuvah means the same thing: turning back. The hexagram shows one bright line appearing at the bottom of five dark ones. The amends is not dramatic. It's the first flicker. The single honest sentence after years of silence. 'I was wrong. I'm sorry. What can I do?' That's thunder within the earth — barely audible, but the whole cycle turns on it.",
@@ -13754,7 +13296,6 @@
       "name": "Hexagram 63 · 既濟 Jì Jì · After Completion",
       "sort_order": 5,
       "category": "repair-iching",
-      "level": 1,
       "sections": {
         "Hexagram": "☵ Water above, ☲ Fire below. Every line is in its correct place — yin in yin positions, yang in yang positions. Perfect order. This is the only hexagram where everything is exactly right. And the judgment warns: 'Success in small matters. Perseverance is favorable. In the beginning good fortune, in the end disorder.'",
         "Repair Reading": "Chapter 5 is 'Staying Alive in the Fire' — Linehan's DBT, radical acceptance, surviving without being consumed. Hexagram 63 is the I Ching's deepest teaching on this: perfect balance is inherently unstable. Water over Fire — if water boils away, fire has nothing to temper it. If fire goes out, water goes cold. The only hexagram where everything is in its right place is also the hexagram that warns: this won't last. That's radical acceptance in six lines. You don't survive the fire by putting it out. You survive by understanding that fire and water need each other, and that the moment of perfect balance is already the beginning of the next imbalance. Linehan: 'You can bear this moment. You can bear the next one. That's all you need.'",
@@ -13786,7 +13327,6 @@
       "name": "Hexagram 50 · 鼎 Dǐng · The Caldron",
       "sort_order": 6,
       "category": "repair-iching",
-      "level": 1,
       "sections": {
         "Hexagram": "☲ Fire above, ☴ Wind/Wood below. Wood feeds fire, fire transforms what's placed in the caldron. This is the hexagram of cultural transformation — the vessel that takes raw materials and makes them nourishing. The caldron is civilization's oldest technology: cooking. Taking what is inedible and making it food.",
         "Repair Reading": "Chapter 6 asks: What Survives the Turning? The caldron is the answer. Not the raw materials — they change. Not the fire — it burns out and is relit. The caldron itself: the PRACTICE of transformation. The vessel. Every culture that survived did so not because its content was superior but because it had a caldron — a way of cooking new experience into something nourishing. The commons. The village fire. The grandmother's recipe. The I Ching itself is a caldron: 3,000 years of raw experience cooked into 64 hexagrams. What survives the turning is the turning itself.",
@@ -13818,7 +13358,6 @@
       "name": "Hexagram 47 · 困 Kùn · Oppression (Exhaustion)",
       "sort_order": 7,
       "category": "repair-iching",
-      "level": 1,
       "sections": {
         "Hexagram": "☱ Lake above, ☵ Water below. The lake has no water — it has drained into the pit below. Exhaustion. Oppression. The image of a lake that has lost its substance. The judgment: 'Oppression. Success. Perseverance. The great man brings about good fortune. No blame. When one has something to say, it is not believed.'",
         "Repair Reading": "Chapter 7 is 'The Comfortable Bondage' — Andreotti's hospicing of modernity, the extraction economy we're all inside. Hexagram 47 names what that feels like from within: oppression that you can't even articulate, because 'when one has something to say, it is not believed.' The lake is drained. You can see the empty basin. You can point at it. No one believes you. That's the comfortable bondage — the exhaustion of living inside a system that extracts while insisting it provides. The I Ching's radical move: 'Success.' Even in oppression. Not because oppression is good, but because naming it — even when no one believes you — is its own kind of arrival.",
@@ -13850,7 +13389,6 @@
       "name": "Hexagram 49 · 革 Gé · Revolution (Molting)",
       "sort_order": 8,
       "category": "repair-iching",
-      "level": 1,
       "sections": {
         "Hexagram": "☱ Lake above, ☲ Fire below. Fire under the lake — the two elements fight each other. Fire evaporates water, water extinguishes fire. This is not harmony. This is revolution. Molting — shedding the old skin. The judgment: 'Revolution. On your own day you are believed. Supreme success. Perseverance is favorable. Remorse disappears.'",
         "Repair Reading": "Chapter 8 is 'The First Fire' — the 50,000-year-old practice of controlled burning, and the catastrophic burning that happens when you forget how. Hexagram 49 is Fire under Lake: the revolution that happens when elements that should be separate meet. Aboriginal fire-tending is revolution in the I Ching's sense — not violent overthrow but intentional transformation. Molting. The snake doesn't fight its old skin. It grows a new one and the old one falls away. The I Ching says revolution succeeds 'on your own day' — when the time is right. Not forced. Not scheduled. Felt. The fire-tenders read the land. The land tells them when to burn. Revolution as listening.",
@@ -13882,7 +13420,6 @@
       "name": "Hexagram 53 · 漸 Jiàn · Gradual Progress",
       "sort_order": 9,
       "category": "repair-iching",
-      "level": 1,
       "sections": {
         "Hexagram": "☴ Wind/Wood above, ☶ Mountain below. A tree on a mountain. It grows slowly because it's exposed. But it grows deep roots. The image of the wild goose gradually approaching the shore — in six stages, landing on different perches. The judgment: 'Gradual progress. The maiden is given in marriage. Good fortune. Perseverance is favorable.'",
         "Repair Reading": "Chapter 9 is 'A Vocation, Not a Prophecy' — Parker Palmer's listening for what your life wants to be. Hexagram 53 is the I Ching's most patient hexagram. The wild goose doesn't rush to the shore. It lands on a rock, then a cliff, then a hill, then a tree, then a summit, then high clouds. Each stage is complete in itself AND part of a journey. That's vocation: not a destination but a gradual approach. Palmer says 'before you tell your life what you intend to do with it, listen for what it intends to do with you.' The wild goose listens to the wind. The tree listens to the mountain. Vocation is the gradual progress of becoming what you already are.",
@@ -13914,7 +13451,6 @@
       "name": "Hexagram 11 · 泰 Tài · Peace",
       "sort_order": 10,
       "category": "repair-iching",
-      "level": 1,
       "sections": {
         "Hexagram": "☷ Earth above, ☰ Heaven below. Earth sinks, Heaven rises — they move toward each other. Their energies meet and mingle. This is Peace: not the absence of movement but the presence of mutual approach. The small departs, the great approaches. Spring.",
         "Repair Reading": "Chapter 10 is 'Re-Pairing' — the culminating practice of turning toward each other, toward the earth, toward the cosmos. Hexagram 11 is what that looks like in the I Ching: Heaven and Earth approaching each other. Not stasis — communion. The judgment says: 'Peace. The small departs, the great approaches. Good fortune. Success.' In Gottman's terms: the repair attempt lands. In Johnson's: the vulnerability request is received. In Akomolafe's: the crack opens into a garden. In the I Ching's: Earth descends and Heaven rises and they meet in the middle, which is where all life happens — in the middle. Not above. Not below. In the meeting.",
@@ -13946,7 +13482,6 @@
       "name": "Hexagram 20 · 觀 Guān · Contemplation (View)",
       "sort_order": 11,
       "category": "repair-iching",
-      "level": 1,
       "sections": {
         "Hexagram": "☴ Wind above, ☷ Earth below. Wind blows over the earth, reaching everywhere. The image of the ancient tower from which the king surveyed the land — but also the image of being surveyed. To contemplate AND to be contemplated. Seeing and being seen. The oracle and the one who consults it are the same.",
         "Repair Reading": "Chapter 11 is 'Showing Up for the Conversation' — tarot, oracular practice, the therapeutic mechanism of symbolic reframing. Hexagram 20 IS contemplation — the practice of looking deeply. The I Ching's word for this hexagram, 觀 (guān), means both 'to look' and 'to show.' The tower is where you look out AND where you are seen. When you draw a tarot card or throw I Ching coins, you're not just consulting an oracle — you're BEING consulted. The hexagram reads you. The practice is mutual: you contemplate the symbol, and the symbol contemplates you. That's what Chapter 11 discovered about tarot. Hexagram 20 makes it explicit.",
@@ -13979,7 +13514,6 @@
       "name": "Hexagram 64 · 未濟 Wèi Jì · Before Completion",
       "sort_order": 12,
       "category": "repair-iching",
-      "level": 1,
       "sections": {
         "Hexagram": "☲ Fire above, ☵ Water below. Fire moves upward, water flows downward — they move apart. No line is in its correct place. This is the LAST hexagram, the 64th, and it is called 'Before Completion.' The I Ching ends not with triumph but with incompleteness. The book of changes changes its own ending into a beginning.",
         "Repair Reading": "Chapter 12 is 'The Book of Changes' — the I Ching itself as repair practice. And the hexagram for this chapter is the last one in the entire book: Before Completion. Not After Completion (Hex 63, Chapter 5) — BEFORE. The I Ching's final word is: we're not done. We're never done. The 69% never gets solved. The cry beneath the fight never fully quiets. The amends are never fully made. The fire never goes out. The vocation never fully arrives. The practice never completes.\n\nThis is not pessimism. This is the deepest repair teaching in any wisdom tradition: completion is not the goal. The goal is the willingness to stay in process. Before Completion means everything is still possible. Everything can still change. That's the Book of Changes' last gift: it refuses to end.\n\nThe image says: 'The fox has almost crossed the water, but gets its tail wet.' Almost. Not quite. That 'not quite' is where we live. That's the human condition — not failed completion but permanent almost. And the I Ching says: this is fine. This is more than fine. This is the only honest position. The only honest book ends before it's done.",
@@ -14011,8 +13545,7 @@
       "name": "Repair as Change: The Twelve Hexagrams",
       "sort_order": 13,
       "category": "repair-iching",
-      "level": 1,
-      "composite_of": [
+      "parts": [
         "repair-iching::hex06-conflict",
         "repair-iching::hex29-the-abysmal",
         "repair-iching::hex58-the-joyous",
@@ -14051,8 +13584,7 @@
       "name": "The Repair I Ching",
       "sort_order": 14,
       "category": "repair-iching",
-      "level": 1,
-      "composite_of": [
+      "parts": [
         "repair-iching::repair-as-change",
         "repair-iching::hex06-conflict",
         "repair-iching::hex29-the-abysmal",
@@ -14112,8 +13644,7 @@
       "metadata": {
         "role": "intro",
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-1",
@@ -14136,8 +13667,7 @@
         "pinyin": "Qián",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-2",
@@ -14160,8 +13690,7 @@
         "pinyin": "Kūn",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-3",
@@ -14184,8 +13713,7 @@
         "pinyin": "Zhūn",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-4",
@@ -14208,8 +13736,7 @@
         "pinyin": "Méng",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-5",
@@ -14232,8 +13759,7 @@
         "pinyin": "Xū",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-6",
@@ -14256,8 +13782,7 @@
         "pinyin": "Sòng",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-7",
@@ -14280,8 +13805,7 @@
         "pinyin": "Shī",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-8",
@@ -14304,8 +13828,7 @@
         "pinyin": "Bǐ",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-9",
@@ -14328,8 +13851,7 @@
         "pinyin": "Xiǎo Xù",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-10",
@@ -14352,8 +13874,7 @@
         "pinyin": "Lǚ",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-11",
@@ -14376,8 +13897,7 @@
         "pinyin": "Tài",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-12",
@@ -14400,8 +13920,7 @@
         "pinyin": "Pǐ",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-13",
@@ -14424,8 +13943,7 @@
         "pinyin": "Tóng Rén",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-14",
@@ -14448,8 +13966,7 @@
         "pinyin": "Dà Yǒu",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-15",
@@ -14472,8 +13989,7 @@
         "pinyin": "Qiān",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-16",
@@ -14496,8 +14012,7 @@
         "pinyin": "Yù",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-17",
@@ -14520,8 +14035,7 @@
         "pinyin": "Suí",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-18",
@@ -14544,8 +14058,7 @@
         "pinyin": "Gǔ",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-19",
@@ -14568,8 +14081,7 @@
         "pinyin": "Lín",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-20",
@@ -14592,8 +14104,7 @@
         "pinyin": "Guān",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-21",
@@ -14616,8 +14127,7 @@
         "pinyin": "Shì Kè",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-22",
@@ -14640,8 +14150,7 @@
         "pinyin": "Bì",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-23",
@@ -14664,8 +14173,7 @@
         "pinyin": "Bō",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-24",
@@ -14688,8 +14196,7 @@
         "pinyin": "Fù",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-25",
@@ -14712,8 +14219,7 @@
         "pinyin": "Wú Wàng",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-26",
@@ -14736,8 +14242,7 @@
         "pinyin": "Dà Xù",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-27",
@@ -14760,8 +14265,7 @@
         "pinyin": "Yí",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-28",
@@ -14784,8 +14288,7 @@
         "pinyin": "Dà Guò",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-29",
@@ -14808,8 +14311,7 @@
         "pinyin": "Kǎn",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-30",
@@ -14832,8 +14334,7 @@
         "pinyin": "Lí",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-31",
@@ -14856,8 +14357,7 @@
         "pinyin": "Xián",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-32",
@@ -14880,8 +14380,7 @@
         "pinyin": "Héng",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-33",
@@ -14904,8 +14403,7 @@
         "pinyin": "Dùn",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-34",
@@ -14928,8 +14426,7 @@
         "pinyin": "Dà Zhuàng",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-35",
@@ -14952,8 +14449,7 @@
         "pinyin": "Jìn",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-36",
@@ -14976,8 +14472,7 @@
         "pinyin": "Míng Yí",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-37",
@@ -15000,8 +14495,7 @@
         "pinyin": "Jiā Rén",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-38",
@@ -15024,8 +14518,7 @@
         "pinyin": "Kuí",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-39",
@@ -15048,8 +14541,7 @@
         "pinyin": "Jiǎn",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-40",
@@ -15072,8 +14564,7 @@
         "pinyin": "Xiè",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-41",
@@ -15096,8 +14587,7 @@
         "pinyin": "Sǔn",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-42",
@@ -15120,8 +14610,7 @@
         "pinyin": "Yì",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-43",
@@ -15144,8 +14633,7 @@
         "pinyin": "Guài",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-44",
@@ -15168,8 +14656,7 @@
         "pinyin": "Gòu",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-45",
@@ -15192,8 +14679,7 @@
         "pinyin": "Cuì",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-46",
@@ -15216,8 +14702,7 @@
         "pinyin": "Shēng",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-47",
@@ -15240,8 +14725,7 @@
         "pinyin": "Kùn",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-48",
@@ -15264,8 +14748,7 @@
         "pinyin": "Jǐng",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-49",
@@ -15288,8 +14771,7 @@
         "pinyin": "Gé",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-50",
@@ -15312,8 +14794,7 @@
         "pinyin": "Dǐng",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-51",
@@ -15336,8 +14817,7 @@
         "pinyin": "Zhèn",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-52",
@@ -15360,8 +14840,7 @@
         "pinyin": "Gèn",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-53",
@@ -15384,8 +14863,7 @@
         "pinyin": "Jiàn",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-54",
@@ -15408,8 +14886,7 @@
         "pinyin": "Guī Mèi",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-55",
@@ -15432,8 +14909,7 @@
         "pinyin": "Fēng",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-56",
@@ -15456,8 +14932,7 @@
         "pinyin": "Lǚ",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-57",
@@ -15480,8 +14955,7 @@
         "pinyin": "Xùn",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-58",
@@ -15504,8 +14978,7 @@
         "pinyin": "Duì",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-59",
@@ -15528,8 +15001,7 @@
         "pinyin": "Huàn",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-60",
@@ -15552,8 +15024,7 @@
         "pinyin": "Jié",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-61",
@@ -15576,8 +15047,7 @@
         "pinyin": "Zhōng Fú",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-62",
@@ -15600,8 +15070,7 @@
         "pinyin": "Xiǎo Guò",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-63",
@@ -15624,8 +15093,7 @@
         "pinyin": "Jì Jì",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::hex-64",
@@ -15648,8 +15116,7 @@
         "pinyin": "Wèi Jì",
         "story_written": false,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     },
     {
       "id": "the-recursive-iching-book::end",
@@ -15669,8 +15136,7 @@
         "role": "end",
         "number": 1,
         "source_grammar": "the-recursive-iching-book"
-      },
-      "level": 1
+      }
     }
   ]
 }

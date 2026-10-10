@@ -137,18 +137,18 @@
     const numOf = it => (it.metadata && it.metadata.number) || (( /^hex-(\d+)$/.exec(it.id || '') || [])[1] && +/^hex-(\d+)$/.exec(it.id)[1]) || null;
     const byNum = g => {
       const map = {};
-      if (g && g.items) for (const it of g.items) { const n = numOf(it); if (n) map[n] = it; }
+      if (g && g.nodes) for (const it of g.nodes) { const n = numOf(it); if (n) map[n] = it; }
       return map;
     };
     const zhouyiByNum = byNum(zhouyi), wingsByNum = byNum(wings), summByNum = byNum(summarized);
     const lensByNum = {};
-    if (lenses && lenses.items) {
-      for (const it of lenses.items) {
+    if (lenses && lenses.nodes) {
+      for (const it of lenses.nodes) {
         const m = /^hex-(\d+)$/.exec(it.id || '');
         if (m) lensByNum[+m[1]] = it;
       }
     }
-    for (const it of chinese.items) {
+    for (const it of chinese.nodes) {
       const n = it.metadata.number;
       byNumber[n] = { chinese: it, zhouyi: zhouyiByNum[n] || null, wings: wingsByNum[n] || null,
                       summ: summByNum[n] || null, lens: lensByNum[n] || null };

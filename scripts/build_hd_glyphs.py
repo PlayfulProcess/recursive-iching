@@ -124,7 +124,7 @@ if __name__ == "__main__":
     hd = json.load(io.open(hdp, encoding="utf-8")) if os.path.exists(hdp) else None
     names = {}
     if hd:
-        for it in hd["items"]:
+        for it in hd["nodes"]:
             m = (it.get("metadata") or {}).get("number")
             if m: names[int(m)] = it.get("name", "")
     for n in range(1, 65):
@@ -132,7 +132,7 @@ if __name__ == "__main__":
     print("wrote 64 glyphs to", OUT)
     if "--wire" in sys.argv and hd:
         k = 0
-        for it in hd["items"]:
+        for it in hd["nodes"]:
             m = (it.get("metadata") or {}).get("number")
             if m:
                 it["image_url"] = f"{BASE_URL}gate-{int(m):02d}.svg"; k += 1

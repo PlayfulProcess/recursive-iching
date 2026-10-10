@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """Build grammars/meta-iching/grammar.json — "The I Ching, all lenses": one composite item per
-hexagram whose `composite_of` points at that hexagram's item in every I Ching grammar in this repo,
+hexagram whose `parts` point at that hexagram's item in every I Ching grammar in this repo,
 plus the 8 trigrams as the scenery. Mirrors recursive-tarot's all-decks-many-lenses meta grammar
-(items carry `composite_of` + `emergence_kind`).
+(nodes carry `parts` + `emergence_kind`).
 
 The author's framing (5 Sep 2026): the hexagrams and trigrams are the SCENERY; the Human Design
 lens (three-lenses-64) is the ACTION the hexagram asks of a person; the book chapter is the STORY;
@@ -52,22 +52,21 @@ for slug in SOURCES:
     g = load(slug)
     if not g:
         continue
-    for it in g["items"]:
+    for it in g["nodes"]:
         if str(it.get("id", "")).startswith("trigram-") and slug == "three-lenses-64":
             trigrams.append(it)
         n = num_of(it, slug)
         cid = f"{slug}::{it['id']}"
         copy = dict(it)
         copy["id"] = cid
-        copy["level"] = 1
         copy["category"] = slug
         copy.setdefault("metadata", {})
         copy["metadata"] = dict(copy["metadata"] or {})
         copy["metadata"]["source_grammar"] = slug
         # A copied group points at its siblings by their own ids; give those the same prefix
         # (otherwise repair-iching's two groups pointed at ids that don't exist in the meta).
-        if copy.get("composite_of"):
-            copy["composite_of"] = [f"{slug}::{c}" for c in copy["composite_of"]]
+        if copy.get("parts"):
+            copy["parts"] = [f"{slug}::{c}" for c in copy["parts"]]
         items.append(copy)
         if n and 1 <= n <= 64 and not str(it.get("id", "")).startswith(("sign-", "chakra-", "trigram-", "l3-", "intro", "end")):
             by_hex[n][slug] = copy
@@ -105,11 +104,10 @@ for n in range(1, 65):
         "number": n,   # King Wen 1-64 at the top level: the viewers' relating-hexagram lookup reads item.number (finding V-1)
         "name": f"{n} · {name}",
         "symbol": (summ or {}).get("symbol") or table[str(n)].get("symbol", ""),
-        "level": 2,
         "category": "hexagram",
         "sort_order": n,
         "emergence_kind": "all-lenses",
-        "composite_of": [v["id"] for v in src.values()],
+        "parts": [v["id"] for v in src.values()],
         "keywords": list((summ or {}).get("keywords") or [])[:6] + list((lens or {}).get("keywords") or [])[:4],
         # A lens with nothing for this hexagram adds no section (52 of the 64 had an empty
         # "Wound": the Repair I Ching reads twelve hexagrams, not all 64).
@@ -145,7 +143,7 @@ grammar = {
     "tags": ["iching", "meta", "all-lenses", "human-design", "composite"],
     "creator_name": "PlayfulProcess",
     "creator_link": "https://iching.recursive.eco",
-    "items": composites + items,
+    "nodes": composites + items,
 }
 os.makedirs(OUT, exist_ok=True)
 io.open(os.path.join(OUT, "grammar.json"), "w", encoding="utf-8").write(json.dumps(grammar, ensure_ascii=False, indent=2) + "\n")

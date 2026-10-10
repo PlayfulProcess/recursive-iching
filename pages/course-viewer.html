@@ -193,10 +193,10 @@ async function main(){
   // (the translations course is the tree's translation nodes only). Chapters follow sort_order.
   const where = manifest.chapterWhere || {};
   const passes = it => Object.entries(where).every(([k, vals]) => vals.includes((it.metadata || {})[k]));
-  const chapterItems = grammar.items.filter(it => it.id.startsWith(manifest.chapterIdPrefix) && passes(it))
+  const chapterItems = grammar.nodes.filter(it => it.id.startsWith(manifest.chapterIdPrefix) && passes(it))
     .sort((a, b) => (a.sort_order ?? 0) - (b.sort_order ?? 0));
   const BIB = Object.fromEntries((grammar.bibliography || []).map(b => [b.key, b]));
-  const appendixItems = grammar.items.filter(it => it.id.startsWith(manifest.appendixIdPrefix));
+  const appendixItems = grammar.nodes.filter(it => it.id.startsWith(manifest.appendixIdPrefix));
   const allItems = chapterItems.concat(appendixItems);
   const byId = Object.fromEntries(allItems.map(it => [it.id, it]));
 

@@ -110,7 +110,7 @@ def chop(number: int) -> str:
 
 
 def first_hexagram(g: dict) -> int | None:
-    items = sorted(g.get("items", []), key=lambda it: (it.get("sort_order") is None, it.get("sort_order") or 0))
+    items = sorted(g.get("nodes", []), key=lambda it: (it.get("sort_order") is None, it.get("sort_order") or 0))
     for it in items:
         meta = it.get("metadata") or {}
         if "role" in meta:            # the book's frame items are not hexagrams

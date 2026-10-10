@@ -121,7 +121,7 @@ def main():
             "branch": branch,
             "is_meta": False,
             "default_preview": g.get("default_preview"),
-            "items": len(g.get("items", [])),
+            "nodes": len(g.get("nodes", [])),
             "cover_image_url": g.get("cover_image_url"),
             "thumb": thumb_of(slug, g.get("cover_image_url")),
             "mark": f"img/covers/{slug}.svg",
@@ -157,7 +157,7 @@ def main():
         "grammars": grammars_index,
     }
     json.dump(collection, open(OUT, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
-    n_items = sum(e["items"] for e in grammars_index)
+    n_items = sum(e["nodes"] for e in grammars_index)
     print(f"Wrote {OUT} — {len(grammars_index)} grammars ({n_items} items), {len(branch_index)} branches")
 
 

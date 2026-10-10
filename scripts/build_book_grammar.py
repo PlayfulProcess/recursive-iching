@@ -32,7 +32,7 @@ summ = load(SUMM)
 table = load(BIN)["hexagrams"]
 
 by_num = {}
-for it in summ["items"]:
+for it in summ["nodes"]:
     n = (it.get("metadata") or {}).get("number")
     if n:
         by_num[int(n)] = it
@@ -125,7 +125,7 @@ grammar = {
     "tags": ["iching", "book", "path-caster", "combinatorial", "cast-your-book"],
     "creator_name": "PlayfulProcess",
     "creator_link": "https://iching.recursive.eco/viewers/caster.html",
-    "items": items,
+    "nodes": items,
 }
 
 out = os.path.join(G, "grammar.json")

@@ -21,7 +21,7 @@
  *                           manual override callers still send), otherwise the
  *                           shape the data has. Never requires the param.
  *
- * Works on raw items (document_data.items) and on the viewer's normalized
+ * Works on raw nodes (document_data.nodes) and on the viewer's normalized
  * items alike: both keep `metadata`, and the normalized ones lift
  * chinese_name / trigram_* to the top level.
  *
@@ -89,13 +89,12 @@
         return 'plain';
     }
 
-    // Every item list a grammar document can carry: the unified `items`
-    // (or its old `_unified_items` name), `emergences`, and the legacy
-    // `hexagrams` / `cards` arrays.
+    // Every item list a grammar document can carry: the `nodes` array,
+    // `emergences`, and the legacy `hexagrams` / `cards` arrays.
     function grammarItems(data) {
         if (!data || typeof data !== 'object') return [];
         var out = [];
-        ['items', '_unified_items', 'emergences', 'hexagrams', 'cards'].forEach(function (k) {
+        ['nodes', 'emergences', 'hexagrams', 'cards'].forEach(function (k) {
             if (Array.isArray(data[k])) out = out.concat(data[k]);
         });
         return out;

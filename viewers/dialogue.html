@@ -143,11 +143,11 @@
     const [bin, summ, lens, book] = await Promise.all([
       get('scripts/hexagram-binary.json'), get('grammars/i-ching-summarized/grammar.json'),
       get('grammars/three-lenses-64/grammar.json'), get('grammars/the-recursive-iching-book/grammar.json')]);
-    const byNum = g => { const m = {}; (g && g.items || []).forEach(it => { const n = (it.metadata || {}).number; if (n) m[n] = it; }); return m; };
+    const byNum = g => { const m = {}; (g && g.nodes || []).forEach(it => { const n = (it.metadata || {}).number; if (n) m[n] = it; }); return m; };
     const numByBin = {};
     Object.entries(bin.hexagrams).forEach(([n, h]) => { numByBin[h.binary] = +n; });
     const tri = {};
-    (lens && lens.items || []).forEach(it => { if (/^trigram-/.test(it.id)) tri[it.id.slice(8)] = it; });
+    (lens && lens.nodes || []).forEach(it => { if (/^trigram-/.test(it.id)) tri[it.id.slice(8)] = it; });
     data = { bin: bin.hexagrams, numByBin, summ: byNum(summ), book: byNum(book), tri };
     return data;
   }

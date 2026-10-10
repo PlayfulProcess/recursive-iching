@@ -1,5 +1,19 @@
 # Changelog — The Recursive I Ching
 
+## October 10, 2026 — Grammar format v2: node all the way down
+
+- Every grammar.json uses the v2 words of recursive.eco's format: `nodes` (was `items`), `parts`
+  (was `composite_of`), and no stored `level` (depth is computed from `parts`). The
+  `_collection.json` counts are `nodes` too.
+- The generators write v2 (`build_book_grammar.py`, `build_meta_iching.py`, `build_collection.py`;
+  `build_covers.py` and `build_hd_glyphs.py` read it), and a rebuild gives the same files. `check.py`
+  validates `nodes` and `parts`.
+- The viewers read v2 only: cards, tree, explorer and the dimension engine (depth from `parts`),
+  the caster (its saved journeys and books are v2 grammars), dialogue, source text, genealogy
+  tree, lenses, timeline, the course page, `item-shape.js` and `reference-resolve.js`
+  (`metadata.source_node_id`). The spec: recursive-eco
+  `docs/architecture/model-track/FORMAT-V2-NODES.md`.
+
 ## October 7, 2026 (review) — two fixes found while checking this round
 
 - **Cards on a phone:** the side list (`#hierarchy-sidebar`) was 10 px wider than a 375 px screen,

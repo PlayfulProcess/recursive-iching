@@ -304,6 +304,19 @@
     lenses: null,           // book: Set of grammar slugs feeding each step (null = all)
   };
 
+  // depth from parts: a node with no parts is 1; otherwise 1 + the deepest part. Cycle-safe.
+  function nodeDepth(node, byId, seen) {
+    const parts = node && node.parts;
+    if (!parts || !parts.length) return 1;
+    seen = seen || new Set();
+    if (seen.has(node.id)) return 1;
+    seen.add(node.id);
+    let d = 1;
+    for (const id of parts) { const c = byId.get(id); if (c) d = Math.max(d, 1 + nodeDepth(c, byId, seen)); }
+    seen.delete(node.id);
+    return d;
+  }
+
   // ── boot: load the verified binary table + the two content grammars ──
   async function boot() {
     const [table, summarized, lenses, bookG, metaG, coll] = await Promise.all([
@@ -314,17 +327,18 @@
       fetch(PFX + 'grammars/meta-iching/grammar.json').then(r => r.json()).catch(() => null),
       fetch(PFX + 'grammars/_collection.json').then(r => r.json()).catch(() => null),
     ]);
-    if (metaG && metaG.items) {
+    if (metaG && metaG.nodes) {
       meta = { byNumber: {}, byId: {} };
-      for (const it of metaG.items) {
+      const byIdMap = new Map(metaG.nodes.map(it => [it.id, it]));
+      for (const it of metaG.nodes) {
         meta.byId[it.id] = it;
-        if (it.level === 2 && it.metadata && it.metadata.number) meta.byNumber[it.metadata.number] = it;
+        if (nodeDepth(it, byIdMap) === 2 && it.metadata && it.metadata.number) meta.byNumber[it.metadata.number] = it;
       }
     }
     collection = coll || null;
-    if (bookG && bookG.items) {
+    if (bookG && bookG.nodes) {
       book = { intro: null, end: null, byNumber: {}, name: bookG.name, description: bookG.description };
-      for (const it of bookG.items) {
+      for (const it of bookG.nodes) {
         if (it.id === 'intro') book.intro = it;
         else if (it.id === 'end') book.end = it;
         else if (it.metadata && it.metadata.number) book.byNumber[it.metadata.number] = it;
@@ -332,14 +346,14 @@
     }
 
     const lensByNum = {};
-    if (lenses && lenses.items) {
-      for (const it of lenses.items) {
+    if (lenses && lenses.nodes) {
+      for (const it of lenses.nodes) {
         const m = /^hex-(\d+)$/.exec(it.id || '');
         if (m) lensByNum[+m[1]] = it;
       }
     }
     const summByNum = {};
-    for (const it of (summarized.items || [])) {
+    for (const it of (summarized.nodes || [])) {
       const n = it.metadata && it.metadata.number;
       if (n) summByNum[n] = it;
     }
@@ -440,7 +454,7 @@
     const comp = meta.byNumber[n];
     if (!comp) return '';
     const bySlug = {};
-    for (const cid of comp.composite_of || []) { const it = meta.byId[cid]; if (it) bySlug[cid.split('::')[0]] = it; }
+    for (const cid of comp.parts || []) { const it = meta.byId[cid]; if (it) bySlug[cid.split('::')[0]] = it; }
     let out = '';
     for (const slug of lensSlugs()) {
       if (slug === 'the-recursive-iching-book') continue;   // the book is the spine of the card already
@@ -847,7 +861,7 @@
       items.push({
         id: `step-${i}`,
         name: `${i === 0 ? 'Where I was' : 'Step ' + i}: Hexagram ${r.n} — ${r.hex.name}`,
-        symbol: r.hex.symbol, level: 1, category: 'step', keywords: [],
+        symbol: r.hex.symbol, category: 'step', keywords: [],
         metadata: { step: i, hexagram_number: r.n, binary: s.binary, changing_line: r.changing },
         sections: {
           Judgment: (r.hex.sections && r.hex.sections.Judgment) || '',
@@ -866,7 +880,7 @@
       cover_image_url: null,
       tags: ['iching', 'my-book', 'path-caster'],
       grammar_type: 'book',
-      items, creator_name: '', creator_link: '', is_published: false,
+      nodes: items, creator_name: '', creator_link: '', is_published: false,
     };
   }
   function buildBookMarkdown() {
@@ -908,7 +922,6 @@
       return {
         id: `step-${i}`,
         name: `${i === 0 ? 'Origin' : 'Step ' + i}: Hexagram ${n} — ${hex.name}`,
-        level: 1,
         category: 'custom',
         keywords: [],
         metadata: { step: i, hexagram_number: n, binary: s.binary, changing_line: changing },
@@ -926,7 +939,7 @@
       cover_image_url: null,
       tags: ['path-caster', 'journey'],
       grammar_type: 'custom',
-      items,
+      nodes: items,
       creator_name: 'PlayfulProcess',
       creator_link: '',
       is_published: false,
