@@ -54,6 +54,9 @@ BRANCH_OF = {
     "tree-of-the-iching":     "history",
     "schools-of-the-iching":  "history",
     "hd-mandala-wheel":       "synthesis",
+    "hd-lines-zhouyi":        "synthesis",
+    "origin-accounts":        "history",
+    "oracle-to-chart":        "readings",
 }
 
 # slug -> (sortable year, display label, provenance). Only the classical text itself

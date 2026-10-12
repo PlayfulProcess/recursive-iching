@@ -90,7 +90,7 @@ def main():
         ("note-what-is-left-out", "What this grammar leaves out", {
             "Left out": "Human Design's gate names and keynotes, the line texts of the Rave I'Ching, the descriptions of the "
                         "channels and the Incarnation Crosses. They are Ra Uru Hu's writing, and Jovian Archive Media states "
-                        "that it holds the exclusive rights to it (jovianarchive.com, Terms and Conditions, Copyright notice). "
+                        "that it holds the exclusive rights to it (Jovian Archive website, Terms and Conditions, Copyright notice). "
                         "The wheel, the hexagram figures and the zodiac arithmetic are facts that anyone may state; the "
                         "Florence court order of June 3 2020 says the same about the system as a whole (a system or method is "
                         "not itself covered by copyright). We rely on the narrower point: we copy no text.",
@@ -129,6 +129,7 @@ def main():
             },
             "metadata": {
                 "number": gate, "binary": b, "wheel_position": pos + 1, "start": zodiac(start),
+                "title": name_of[gate], "pinyin": binary[str(gate)]["pinyin"], "chinese_name": binary[str(gate)]["chinese_name"],
                 "start_arcseconds": start % (360 * 3600), "opposite_gate": opposite, "centre": centre,
                 "lower_trigram": lower, "upper_trigram": upper,
             },
@@ -147,7 +148,7 @@ def main():
                              "note": "design and curation; computed by scripts/build_hd_wheel.py, prose written with AI"}],
             "sources": [
                 "Order and start of the wheel: checked against the table of gate degrees at https://bonniesorsby.com/human-design-gates-by-degree/ for gates 41, 25, 1, 2 and 60, and against the Fu Xi circle computed from scripts/hexagram-binary.json.",
-                "Gates in centres: the system's own rule, as stated for gates 1 and 58 on https://jovianarchive.com/pages/gates-and-hexagrams-in-human-design and checked against this repo's iching-hd-meta-categories grammar.",
+                "Gates in centres: the system's own rule, as stated for gates 1 and 58 on the Jovian Archive page 'Gates and Hexagrams in Human Design' (cited by title; its Terms ask that it not be linked without consent) and checked against this repo's iching-hd-meta-categories grammar.",
                 "Hexagram names and facts: grammars/zhouyi-core (James Legge, 1882, public domain) and scripts/hexagram-binary.json.",
             ],
         },

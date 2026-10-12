@@ -24,6 +24,7 @@
       "id": "synthesis",
       "name": "Synthesis — cross-lens readings of the 64 hexagrams",
       "deck_slugs": [
+        "hd-lines-zhouyi",
         "hd-mandala-wheel",
         "iching-hd-meta-categories",
         "meta-iching",
@@ -35,6 +36,7 @@
       "id": "readings",
       "name": "Readings — thematic contemplative practices, not interpretation sets",
       "deck_slugs": [
+        "oracle-to-chart",
         "repair-iching"
       ]
     },
@@ -42,12 +44,28 @@
       "id": "history",
       "name": "History — the books of the Changes, one book per node",
       "deck_slugs": [
+        "origin-accounts",
         "schools-of-the-iching",
         "tree-of-the-iching"
       ]
     }
   ],
   "grammars": [
+    {
+      "slug": "hd-lines-zhouyi",
+      "name": "The 384 Lines on the Wheel",
+      "type": "custom",
+      "branch": "synthesis",
+      "is_meta": false,
+      "default_preview": "grammar",
+      "nodes": 386,
+      "cover_image_url": null,
+      "thumb": "img/covers/hd-lines-zhouyi.svg",
+      "mark": "img/covers/hd-lines-zhouyi.svg",
+      "blurb": "Human Design cuts each of the 64 gates into six lines of 56'15\". This grammar pairs each of those 384 cells, in wheel order, with the Zhouyi's own line statement for the same hexagram and line (Legge,…",
+      "path": "grammars/hd-lines-zhouyi/grammar.json",
+      "provenance": "living"
+    },
     {
       "slug": "hd-mandala-wheel",
       "name": "The 64 Gates Around the Wheel",
@@ -125,6 +143,36 @@
       "mark": "img/covers/meta-iching.svg",
       "blurb": "Every I Ching grammar in this repo, read together. One composite item per hexagram gathers its item from each lens: the trigrams and the Great Image as scenery, Legge's text, the Human Design reading …",
       "path": "grammars/meta-iching/grammar.json",
+      "provenance": "living"
+    },
+    {
+      "slug": "oracle-to-chart",
+      "name": "From Oracle to Chart",
+      "type": "custom",
+      "branch": "readings",
+      "is_meta": false,
+      "default_preview": "course",
+      "nodes": 9,
+      "cover_image_url": null,
+      "thumb": "img/covers/oracle-to-chart.svg",
+      "mark": "img/covers/oracle-to-chart.svg",
+      "blurb": "How a bronze-age divination text became a binary circle, a wheel on the zodiac, a body chart and a self-help system: nine short chapters on what is known, what is claimed and what can be tested. Draft…",
+      "path": "grammars/oracle-to-chart/grammar.json",
+      "provenance": "living"
+    },
+    {
+      "slug": "origin-accounts",
+      "name": "How Human Design and the Gene Keys Say They Began",
+      "type": "custom",
+      "branch": "history",
+      "is_meta": false,
+      "default_preview": "grammar",
+      "nodes": 10,
+      "cover_image_url": null,
+      "thumb": "img/covers/origin-accounts.svg",
+      "mark": "img/covers/origin-accounts.svg",
+      "blurb": "A dated, sourced record of the origin accounts of Human Design (Ra Uru Hu, 1987, 'the Voice') and the Gene Keys (Richard Rudd): what each source says, where sources differ, and what a test would need.…",
+      "path": "grammars/origin-accounts/grammar.json",
       "provenance": "living"
     },
     {

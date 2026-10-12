@@ -106,7 +106,7 @@
       "author": "Ra Uru Hu (Jovian Archive blog)",
       "title": "The Voice",
       "year": 2023,
-      "url": "https://jovianarchive.com/blogs/human-design-history-legacy/the-voice",
+      "url": null,
       "note": "posted Nov 21 2023; read in full Oct 12 2026; the page does not name the lecture"
     },
     {
@@ -114,7 +114,7 @@
       "author": "Jovian Archive Media Pte. Ltd.",
       "title": "Terms and Conditions",
       "year": 2025,
-      "url": "https://jovianarchive.com/pages/terms-and-conditions",
+      "url": null,
       "note": "updated Sep 25 2025; read in full Oct 12 2026"
     },
     {
@@ -122,7 +122,7 @@
       "author": "Jovian Archive",
       "title": "The Mandala and the BodyGraph in Human Design",
       "year": 2026,
-      "url": "https://jovianarchive.com/pages/the-mandala-and-the-bodygraph-in-human-design",
+      "url": null,
       "note": "read in full Oct 12 2026"
     },
     {
@@ -130,7 +130,7 @@
       "author": "International Human Design School",
       "title": "Ra Uru Hu",
       "year": 2026,
-      "url": "https://www.ihdschool.com/about-us/ra-uru-hu",
+      "url": null,
       "note": "read in full Oct 12 2026; the school's own account (3 January 1987; eight days and eight nights)"
     },
     {
@@ -138,7 +138,7 @@
       "author": "Jovian Archive",
       "title": "About Ra Uru Hu",
       "year": 2026,
-      "url": "https://jovianarchive.com/pages/about-ra-uru-hu",
+      "url": null,
       "note": "read in full Oct 12 2026"
     },
     {
@@ -251,7 +251,7 @@
         "Chinese (public domain)": "43.3: 壯于頄，有凶。君子夬夬，獨行遇雨，若濡有慍，無咎。\n58, Judgment: 亨，利貞。\n58.3: 來兌，凶。 (Project Gutenberg #25501, the Chinese text in this library's i-ching-chinese-original.)",
         "Legge 1882 (public domain), 43 line 3": "The third NINE, undivided, shows its subject (about to advance) with strong (and determined) looks. There will be evil. (But) the superior man, bent on cutting off (the criminal), will walk alone and encounter the rain, (till he be hated by his proper associates) as if he were contaminated (by the others). (In the end) there will be no blame against him. Words in brackets are Legge's own additions.",
         "Legge 1882 (public domain), 58": "Judgment: Tui intimates that (under its conditions) there will be progress and attainment. (But) it will be advantageous to be firm and correct. Line 3: The third SIX, divided, shows its subject bringing round himself whatever can give pleasure. There will be evil.",
-        "Where to read the whole": "Legge's Yî King, Sacred Books of the East vol. 16 (Oxford, 1882): https://sacred-texts.com/ich/ and the scan https://archive.org/details/wg916. In this library: zhouyi-core (Judgment and lines), ten-wings (the Great Image).",
+        "Where to read the whole": "Legge's Yî King, Sacred Books of the East vol. 16 (Oxford, 1882): https://sacred-texts.com/ich/ and the scan https://archive.org/details/wg916. In this library: zhouyi-core (Judgment and lines), ten-wings (the Great Image, the Commentary on the Judgment and the Small Image of the lines).",
         "Mark": "Text of the line and its Legge rendering ✔ (copied from this library's grammars, which cross-checked three digitisations); the facts about the figure ✔ (scripts/hexagram-binary.json: 43 is 111110 from the bottom, 58 is 110110)."
       },
       "metadata": {
@@ -474,7 +474,7 @@
         "Jovian Archive"
       ],
       "sections": {
-        "Who and when": "Alan Robert Krakower, who used the name Ra Uru Hu (born 1948; died March 2011), said that in January 1987 on Ibiza he spent about eight days receiving the system from a 'Voice'. The International Human Design School dates the start to the evening of 3 January 1987 and says the work took eight days and nights ✔ (ihdschool.com). The first book, The Human Design System, is dated 1992 ✔ (Wikipedia). See docs/RESEARCH-gene-keys-and-human-design-2026-10-12.md for his own words, dated and linked.",
+        "Who and when": "Alan Robert Krakower, who used the name Ra Uru Hu (born 1948; died March 2011), said that in January 1987 on Ibiza he spent about eight days receiving the system from a 'Voice'. The International Human Design School dates the start to the evening of 3 January 1987 and says the work took eight days and nights ✔ (International Human Design School, page on Ra Uru Hu). The first book, The Human Design System, is dated 1992 ✔ (Wikipedia). See docs/RESEARCH-gene-keys-and-human-design-2026-10-12.md for his own words, dated and linked.",
         "Method": "The 64 hexagrams are 'gates', laid round the zodiac in the Fu Xi circle order, each 5°37'30\" wide, starting at 2° Aquarius ✔ (see the wheel grammar). Each gate is cut into six lines of 56'15\". A birth chart is read twice: the planets' positions at birth, and again at a moment about 88 days earlier ✔ (Jovian Archive's Mandala page says 'approximately 88 days'; the Gene Keys profile page uses the same 88 days; the system defines it as 88 degrees of the Sun's travel ◇). Each planet falls in a gate and a line; the gates sit on a body chart of nine centres joined by 36 channels ✔ (Jovian Archive, Mandala page). The practice is a 'strategy' and 'authority' by type, which the system says is to be tested as an experiment ✔ (Ra: 'don't believe me and do not trust me').",
         "What it stresses": "Mechanics of difference: what is consistent in a person and what is open to conditioning. The hexagram is a position and a theme; the Zhouyi's sentences and the Ten Wings are replaced by the system's own gate themes and line keynotes ✔ (Tree: book-human-design).",
         "Example: 43.3 to 58": "(An illustration of the method, written by us. We do not quote or paraphrase the system's gate or line texts, which are Ra Uru Hu's writing.) There is no 'changing line' in a chart: 43.3 is a place on the wheel. Gate 43 begins at 18°52'30\" Scorpio and ends at 24°30'; its third line runs from 20°45' to 21°41'15\" Scorpio (our arithmetic, from the wheel). Gate 43 belongs to the Ajna centre, and a planet in it would be read for what that gate is said to do there, whether the gate at the other end of its channel (gate 23) is also lit, and which planet it is. Gate 58, the other figure in our cast, is a separate gate in another centre (Root) at another point on the wheel; it is not what 43 'becomes'. So the system has nothing like the school above's second-figure question.",

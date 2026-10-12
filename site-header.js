@@ -61,12 +61,15 @@
   // wheel and tarot's Spread Caster. See docs/DESIGN-path-caster.md.
   const INSTRUMENT_VIEWS = [
     ['caster', 'Path Caster', PFX + 'viewers/caster.html'],
+    ['wheel',  'The Wheel (gates on the zodiac)', PFX + 'pages/wheel.html'],
   ];
   // Courses — read via pages/course-viewer.html?course=…
   const COURSES = [
     ['books-of-the-changes', 'The Books of the Changes — a history, one book per chapter', PFX + 'pages/course-viewer.html?course=books-of-the-changes'],
     ['translations', 'How the Translators Changed the Text', PFX + 'pages/course-viewer.html?course=translations'],
     ['three-lenses', 'Three Lenses — a reading of the 64 hexagrams', PFX + 'pages/course-viewer.html?course=three-lenses'],
+    ['schools-of-the-iching', 'Schools of the I Ching — how each school reads a line', PFX + 'pages/course-viewer.html?course=schools-of-the-iching'],
+    ['oracle-to-chart', 'From Oracle to Chart — a draft course', PFX + 'pages/course-viewer.html?course=oracle-to-chart'],
   ];
   const TOOLS = [
     ['github', 'GitHub ↗', 'https://github.com/PlayfulProcess/recursive-iching', 't-github', true],
@@ -82,6 +85,7 @@
     if (f.startsWith('timeline')) return 'timeline';
     if (f.startsWith('genealogy')) return 'genealogy';
     if (f.startsWith('caster')) return 'caster';
+    if (f.startsWith('wheel')) return 'wheel';
     if (f.startsWith('course-viewer') || f.startsWith('course')) return 'course';
     if (f === 'index.html' || f === '') return 'home';
     return 'home';
