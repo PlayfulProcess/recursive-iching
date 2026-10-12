@@ -1,5 +1,19 @@
 # Changelog — The Recursive I Ching
 
+## October 12, 2026 — Research: the Gene Keys, Human Design's I Ching, the Voice; two draft grammars
+
+- **Research and proposal:** `docs/RESEARCH-gene-keys-and-human-design-2026-10-12.md` (Gene Keys structure; how Human
+  Design uses the I Ching; Ra Uru Hu's own account of "the Voice", dated and linked; the evidence side; the three tests;
+  the licence and trademark position at the source) and `docs/PROPOSAL-hd-gene-keys-grammars-and-course-2026-10-12.md`
+  (five grammar ideas, a course outline, a book-or-information decision per school).
+- **`grammars/hd-mandala-wheel/`** (new, draft, `_generated`): the 64 gates in Human Design wheel order with zodiac
+  degrees, the opposite gate and the centre. Built by `scripts/build_hd_wheel.py`, which fails if the order stops being
+  the Fu Xi circle. No Human Design or Gene Keys text.
+- **`grammars/schools-of-the-iching/`** (new, draft, `_source_of_truth: "repo"`): how the main schools read the Changes,
+  with the same line (43.3 to 58) read each way, the changing-line rules, books and licence status.
+- `CLAUDE.md`: the wheel generator joins the build order; new rule against Human Design and Gene Keys text in grammars.
+  `docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md` and `docs/FOR-THE-PLATFORM.md` carry the decisions for the new folders.
+
 ## October 10, 2026 — Grammar format v2: node all the way down
 
 - Every grammar.json uses the v2 words of recursive.eco's format: `nodes` (was `items`), `parts`

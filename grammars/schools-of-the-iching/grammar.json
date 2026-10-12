@@ -1,0 +1,548 @@
+{
+  "_source_of_truth": "repo",
+  "_draft_note": "Oct 12 2026 draft. recursive.eco's importer skips this folder (_source_of_truth: repo). To let the assistant read it, PlayfulProcess decides; then remove that line, import, put the new id in ids.json and add the slug to _public_now. See docs/PROPOSAL-hd-gene-keys-grammars-and-course-2026-10-12.md.",
+  "_grammar_commons": {
+    "schema_version": "1.0",
+    "license": "CC-BY-SA-4.0 (PlayfulProcess) for the prose. Legge's 1882 English, quoted in the base-text node, is public domain. No in-copyright text, no Human Design text and no Gene Keys text is reproduced; books are named and described only.",
+    "attribution": [
+      {
+        "name": "PlayfulProcess",
+        "date": "2026-10-12",
+        "note": "design and curation; prose written with AI from the cited sources, marked by what was checked"
+      }
+    ]
+  },
+  "name": "Schools of the I Ching",
+  "description": "How the main schools read the Changes: classical Confucian, images and numbers, Zhu Xi, Daoist inner alchemy, early Zhou philology, Jung, Human Design and the Gene Keys. Each says who and when, its method, what it stresses, its key books and their licences, and reads one line (43.3 changing to 58) its own way. A reference for readers, the assistant and the MCP.",
+  "grammar_type": "custom",
+  "default_preview": "course",
+  "is_published": false,
+  "provenance": "record",
+  "creator_name": "PlayfulProcess",
+  "tags": [
+    "i-ching",
+    "schools",
+    "commentary",
+    "course",
+    "draft"
+  ],
+  "marks": [
+    {
+      "mark": "✔",
+      "label": "checked: read in the cited source"
+    },
+    {
+      "mark": "○",
+      "label": "indirect: a source that summarises another, or a summary by a tool"
+    },
+    {
+      "mark": "◆",
+      "label": "contested, or the sources disagree"
+    },
+    {
+      "mark": "◇",
+      "label": "from memory, not yet checked against a source"
+    }
+  ],
+  "bibliography": [
+    {
+      "key": "legge1882_scan",
+      "author": "James Legge (tr.); F. Max Müller (ed.)",
+      "title": "The Yî King, Sacred Books of the East vol. 16 (Oxford, 1882), archive.org scan",
+      "year": 1882,
+      "url": "https://archive.org/details/wg916",
+      "note": "public domain; listed in the Tree of the Changes bibliography"
+    },
+    {
+      "key": "legge1882",
+      "author": "James Legge (tr.)",
+      "title": "The Yî King (Sacred Books of the East, vol. 16)",
+      "year": 1882,
+      "url": "https://sacred-texts.com/ich/",
+      "note": "public domain"
+    },
+    {
+      "key": "hathi_wilhelm1924",
+      "author": "HathiTrust (catalogue record)",
+      "title": "I Ging; das Buch der Wandlungen, trans. Richard Wilhelm (Jena: E. Diederichs, 1924, 2 vols)",
+      "year": 2026,
+      "url": "https://catalog.hathitrust.org/Record/103049296",
+      "note": "record listed in the Tree of the Changes; the viewing rights of each copy were not checked here"
+    },
+    {
+      "key": "cottrell_rules",
+      "author": "Russell Cottrell",
+      "title": "Rules of Interpretation (Virtual Yarrow Stalks)",
+      "year": 2026,
+      "url": "https://russellcottrell.com/VirtualYarrowStalks/rules.htm",
+      "note": "read in full Oct 12 2026 (through a page-reading tool, then the Chu Hsi page directly)"
+    },
+    {
+      "key": "cottrell_chuhsi",
+      "author": "Russell Cottrell (on Chu Hsi, tr. Joseph A. Adler 2002)",
+      "title": "Chu Hsi's Rules (Yixue qimeng, chapter 4)",
+      "year": 2026,
+      "url": "https://russellcottrell.com/VirtualYarrowStalks/ChuHsiRules.htm",
+      "note": "read in full Oct 12 2026; Cottrell's reading of the three-line rule is his own"
+    },
+    {
+      "key": "biroco_basics",
+      "author": "Yijing Dao (anonymous author)",
+      "title": "How to consult the Yijing",
+      "year": 2025,
+      "url": "https://www.biroco.com/yijing/basics.htm",
+      "note": "read Oct 12 2026 through a page-reading tool; agrees with Cottrell on Zhu Xi's rules"
+    },
+    {
+      "key": "tree",
+      "author": "PlayfulProcess",
+      "title": "The Tree of the Changes (grammars/tree-of-the-iching)",
+      "year": 2026,
+      "url": "https://github.com/PlayfulProcess/recursive-iching/tree/main/grammars/tree-of-the-iching",
+      "note": "claims marked ✔ there are carried here as ✔ only where the node says so; its bibliography holds the sources"
+    },
+    {
+      "key": "jovian_voice",
+      "author": "Ra Uru Hu (Jovian Archive blog)",
+      "title": "The Voice",
+      "year": 2023,
+      "url": "https://jovianarchive.com/blogs/human-design-history-legacy/the-voice",
+      "note": "posted Nov 21 2023; read in full Oct 12 2026; the page does not name the lecture"
+    },
+    {
+      "key": "jovian_terms",
+      "author": "Jovian Archive Media Pte. Ltd.",
+      "title": "Terms and Conditions",
+      "year": 2025,
+      "url": "https://jovianarchive.com/pages/terms-and-conditions",
+      "note": "updated Sep 25 2025; read in full Oct 12 2026"
+    },
+    {
+      "key": "jovian_mandala",
+      "author": "Jovian Archive",
+      "title": "The Mandala and the BodyGraph in Human Design",
+      "year": 2026,
+      "url": "https://jovianarchive.com/pages/the-mandala-and-the-bodygraph-in-human-design",
+      "note": "read in full Oct 12 2026"
+    },
+    {
+      "key": "ihds_ra",
+      "author": "International Human Design School",
+      "title": "Ra Uru Hu",
+      "year": 2026,
+      "url": "https://www.ihdschool.com/about-us/ra-uru-hu",
+      "note": "read in full Oct 12 2026; the school's own account (3 January 1987; eight days and eight nights)"
+    },
+    {
+      "key": "jovian_aboutra",
+      "author": "Jovian Archive",
+      "title": "About Ra Uru Hu",
+      "year": 2026,
+      "url": "https://jovianarchive.com/pages/about-ra-uru-hu",
+      "note": "read in full Oct 12 2026"
+    },
+    {
+      "key": "sorsby_degrees",
+      "author": "Bonnie Sorsby",
+      "title": "Human Design Gates By Degree",
+      "year": 2026,
+      "url": "https://bonniesorsby.com/human-design-gates-by-degree/",
+      "note": "a practitioner's table; checked at gates 41, 25, 1, 2, 60 against this library's computed wheel"
+    },
+    {
+      "key": "wp_hd",
+      "author": "Wikipedia",
+      "title": "Human Design",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/w/index.php?title=Human_Design&oldid=1372852944",
+      "note": "read Oct 12 2026 (lead, origins, copyright controversy, references)"
+    },
+    {
+      "key": "gk_intro",
+      "author": "Richard Rudd (Gene Keys)",
+      "title": "Gene Keys – a simple introduction",
+      "year": 2018,
+      "url": "https://genekeys.com/articles/gene-keys-a-simple-introduction/",
+      "note": "14 Aug 2018; read in full Oct 12 2026"
+    },
+    {
+      "key": "gk_ihd",
+      "author": "Richard Rudd (Gene Keys)",
+      "title": "Integral Human Design – A New View of the Bodygraph",
+      "year": 2018,
+      "url": "https://genekeys.com/articles/integral-human-design-2/",
+      "note": "27 Jul 2018; read in full Oct 12 2026"
+    },
+    {
+      "key": "gk_profile",
+      "author": "Gene Keys",
+      "title": "How to read your profile",
+      "year": 2026,
+      "url": "https://genekeys.com/how-to-read-your-profile/",
+      "note": "read Oct 12 2026 (spheres, sequences, programming partners, FAQ)"
+    },
+    {
+      "key": "gk_gloss",
+      "author": "Gene Keys",
+      "title": "The Glossary of Empowerment",
+      "year": 2026,
+      "url": "https://genekeys.com/the-glossary-of-empowerment/",
+      "note": "read Oct 12 2026 (Golden Path, sequences and their planets, codon rings, frequency bands)"
+    },
+    {
+      "key": "gk_terms",
+      "author": "Gene Keys Ltd",
+      "title": "Terms and conditions",
+      "year": 2026,
+      "url": "https://genekeys.com/terms-and-conditions",
+      "note": "read in full Oct 12 2026 (copyright, IHD keynotes, trademark, AI use)"
+    },
+    {
+      "key": "gk_books",
+      "author": "Gene Keys",
+      "title": "Books",
+      "year": 2026,
+      "url": "https://genekeys.com/books/",
+      "note": "read Oct 12 2026"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "schools-intro",
+      "name": "Schools of the I Ching: how to use this",
+      "category": "guide",
+      "sort_order": 1,
+      "keywords": [
+        "guide",
+        "schools",
+        "assistant"
+      ],
+      "sections": {
+        "What this is": "A map of the main ways the Changes have been read, one node per school. Each node says who and when, the method in our own words, what the school stresses in a reading, its key books with their licence status, where a public-domain full text can be read, and one example: the same line (hexagram 43, line 3, changing into hexagram 58) read that school's way. It is a reference for a reader, for the assistant and for the MCP. It is not a ranking: the schools ask different questions of the same text.",
+        "How the examples work": "Every example is an illustration of the school's method, written by us. It is not a summary of what a named commentator wrote about this line, unless the node says so. The base text is James Legge's English of 1882, which is public domain and is in this library (the Zhouyi Core and Ten Wings grammars). Read the base text first: node 'base-43-3'.",
+        "Fact and interpretation": "Each node keeps two kinds of statement apart. Method, dates, books and licences are claims of fact and carry a mark that says how far they were checked: ✔ read in the cited source; ○ indirect (a source that summarises another); ◆ contested, or the sources disagree; ◇ from memory, not yet checked. The reading is interpretation: it carries no mark, because it can only be judged, not checked.",
+        "Licence key": "PD means public domain: the text can be copied and quoted in full. © means in copyright: give the title, the author, the year and a short paraphrase in your own words, and quote no more than a few words. Unclear means we have not established the status: treat it as ©.",
+        "For the assistant and the MCP": "To answer 'how would other schools read this?': (1) give the base text from the public-domain layers; (2) for each school, say what question it asks, then what its method makes of the passage; (3) say which parts are method (fact) and which are the reading (interpretation); (4) quote in-copyright books only by title and a few words; (5) for Human Design and the Gene Keys use only the structural facts in their nodes, never their word lists or texts: Jovian Archive and Gene Keys Ltd reserve their rights, and the Gene Keys terms bar the use of their materials to train or operate AI systems. State that the views here are ours and are not endorsed by either; (6) when a mark is ◆ or ◇, say so.",
+        "Marks": "✔ checked in the cited source · ○ indirect · ◆ contested · ◇ from memory, still to check."
+      },
+      "metadata": {
+        "see": [
+          "zhouyi-core",
+          "ten-wings",
+          "tree-of-the-iching",
+          "iching-hd-meta-categories",
+          "hd-mandala-wheel"
+        ]
+      }
+    },
+    {
+      "id": "base-43-3",
+      "name": "The example line: hexagram 43, line 3, changing to 58",
+      "category": "guide",
+      "sort_order": 2,
+      "keywords": [
+        "base text",
+        "Legge",
+        "43",
+        "58"
+      ],
+      "sections": {
+        "The cast": "Hexagram 43, Kwâi in Legge's spelling (Guài, 夬), with its third line changing. A yang line becomes yin, and the figure becomes hexagram 58, Tui (Duì, 兌). Hexagram 43 is five solid lines under one broken line. The third line is a solid line in the third place from the bottom.",
+        "Chinese (public domain)": "43.3: 壯于頄，有凶。君子夬夬，獨行遇雨，若濡有慍，無咎。\n58, Judgment: 亨，利貞。\n58.3: 來兌，凶。 (Project Gutenberg #25501, the Chinese text in this library's i-ching-chinese-original.)",
+        "Legge 1882 (public domain), 43 line 3": "The third NINE, undivided, shows its subject (about to advance) with strong (and determined) looks. There will be evil. (But) the superior man, bent on cutting off (the criminal), will walk alone and encounter the rain, (till he be hated by his proper associates) as if he were contaminated (by the others). (In the end) there will be no blame against him. Words in brackets are Legge's own additions.",
+        "Legge 1882 (public domain), 58": "Judgment: Tui intimates that (under its conditions) there will be progress and attainment. (But) it will be advantageous to be firm and correct. Line 3: The third SIX, divided, shows its subject bringing round himself whatever can give pleasure. There will be evil.",
+        "Where to read the whole": "Legge's Yî King, Sacred Books of the East vol. 16 (Oxford, 1882): https://sacred-texts.com/ich/ and the scan https://archive.org/details/wg916. In this library: zhouyi-core (Judgment and lines), ten-wings (the Great Image).",
+        "Mark": "Text of the line and its Legge rendering ✔ (copied from this library's grammars, which cross-checked three digitisations); the facts about the figure ✔ (scripts/hexagram-binary.json: 43 is 111110 from the bottom, 58 is 110110)."
+      },
+      "metadata": {
+        "example_hexagram": 43,
+        "example_line": 3,
+        "relating_hexagram": 58,
+        "see": [
+          "zhouyi-core",
+          "ten-wings",
+          "i-ching-chinese-original"
+        ]
+      }
+    },
+    {
+      "id": "method-changing-lines",
+      "name": "How to read changing lines, school by school",
+      "category": "method",
+      "sort_order": 3,
+      "keywords": [
+        "changing lines",
+        "Zhu Xi",
+        "Wilhelm",
+        "method"
+      ],
+      "sections": {
+        "What a changing line is": "In a cast, each line comes out as one of four values. Two of them are 'changing': the line is about to turn into its opposite, so the first figure leads into a second one, often called the relating or resulting hexagram. The Zhouyi's own text gives no casting rules; the rules we have were written later, and they differ. That difference is why the same cast can be read several ways. ◇",
+        "Zhu Xi's rules (1186)": "From chapter 4 of the Yixue qimeng, in Joseph Adler's 2002 translation, as set out by Russell Cottrell ✔ (a summary of a translation, so ○ for Zhu Xi's own words). No changing line: the Judgment of the first figure. One changing line: that line's statement. Two: both lines' statements, the upper one weightier. Three: the Judgments of both figures, and which weighs more follows 32 charts that come with the text (Cottrell reads the rule as: the first figure if the bottom line changes, otherwise the second; that reading is his, ◆). Four: the two lines that did not change in the second figure, the lower one weightier. Five: the one line that did not change in the second figure. Six: the Judgment of the second figure, except for hexagrams 1 and 2, which have their own extra text.",
+        "Wilhelm and Baynes (1950 English)": "Read the Judgment and Image of the first figure, then the statement of each changing line, then consider the second figure as the direction things are moving; the second figure's own line statements are set aside. Russell Cottrell notes that Wilhelm gives the method briefly and without a source, and that Richard Rutt calls it a popular form of the Song tradition ○. The Wilhelm/Baynes text is in copyright; this note is a description of a method.",
+        "Other modern rule sets": "Some authors read one changing line as the answer and, with two or more, read the two figures together as a movement from the first to the second (Gregory Whincup ✔ via Cottrell). Others pick one line by a count: Master Yin's rules as given by Alfred Huang use the middle line for three changes and the one unchanging line for five ✔ via Cottrell. There is no agreed rule; a reader can say which they use.",
+        "Early practice": "The divination accounts in the Zuozhuan and Guoyu (7th to 5th century BCE) name a result as one figure 'going to' another and cite the line statement; scholars still argue about the rules behind them (Kidder Smith 1989 ○; Cottrell mentions the 'Nanjing rules' as an attempt to model them, and questions how useful they are ✔).",
+        "Human Design and the Gene Keys": "Neither uses changing lines. In both, a 'line' is a position: a sixth of a gate or key, set by where a planet falls at birth. See their nodes. ✔",
+        "Our cast, 43.3 to 58": "Zhu Xi: one changing line, so the statement of 43.3 is the answer. Wilhelm/Baynes: read 43, read 43.3, then look at 58 as where it leads; do not read 58's own lines. Whincup: one changing line, so 43.3 is the answer. Master Yin: the rule for one line is not given on the page we read. All of them put 43.3 first; they differ over how much 58 counts."
+      },
+      "metadata": {
+        "see": [
+          "school-zhu-xi",
+          "school-confucian",
+          "school-human-design",
+          "school-gene-keys"
+        ]
+      }
+    },
+    {
+      "id": "school-confucian",
+      "name": "Classical Confucian: meanings and principles (Wang Bi, Cheng Yi, Legge, Wilhelm)",
+      "category": "school",
+      "sort_order": 4,
+      "keywords": [
+        "Wang Bi",
+        "Cheng Yi",
+        "Legge",
+        "Wilhelm",
+        "Baynes",
+        "yili"
+      ],
+      "sections": {
+        "Who and when": "The line of readers who look for a moral teaching in the words. Wang Bi (3rd century CE) set aside the older image-and-number methods; Cheng Yi (preface dated 1099) read each figure as a lesson in conduct and government; the Kangxi emperor's editors (1715) put this reading, with Zhu Xi's, into the imperial edition. Legge (1882) and Wilhelm (1924) translated from that imperial edition. ✔ (Tree of the Changes: book-wang-bi, book-cheng-yi, book-zhezhong, book-legge, book-wilhelm). That Wilhelm follows the Song 'meanings and principles' line he learned from his teacher is ◇.",
+        "Method": "Read the sentence for what it teaches a person in that situation. Use the Ten Wings (the Image, the Judgment commentary) as the guide to the sentence. Look at the structure of the figure for the reasons: which line is strong or weak, whether it sits in a fitting place, which line answers it, which line it leans on or presses. ◇ (the vocabulary of place, answer and nearness is standard in this tradition; we have not re-checked it against Wang Bi's or Cheng Yi's own words.)",
+        "What it stresses": "Character in action: timing, restraint, right relationship to those above and below, the cost of acting without care. Divination recedes; the book becomes a guide to conduct.",
+        "Example: 43.3 to 58": "(An illustration of the method, written by us. It does not summarise what Wang Bi, Cheng Yi or Wilhelm wrote on this line.) Five strong lines press on one weak line. The third line is strong and sits in a strong place, so it is at risk of showing its force in the face; the line says so first: evil. The way through is character, not display. The person keeps to the course, walks alone, and takes being misread by their own company (the rain, the stain) without answering in kind. The ending, no blame, belongs to resolve that stays quiet. The relating figure, 58, is pleasant company; its third line warns against seeking pleasure by pleasing everyone. So the turn from firm to agreeable is the thing to watch.",
+        "Key books": "Wang Bi, commentary on the Zhouyi (3rd century): Chinese PD; English, Richard John Lynn, The Classic of Changes (Columbia UP, 1994 ◇): ©. Cheng Yi, Yi chuan (preface 1099): Chinese PD; English, L. Michael Harrington, The Yi River Commentary on the Book of Changes (Yale UP, 2019 ✔ per Adler's review): ©. James Legge, The Yî King (Sacred Books of the East 16, Oxford 1882; 2nd ed. 1899): PD, Legge died 1897. Richard Wilhelm, I Ging: Das Buch der Wandlungen (Jena: Diederichs, 1924, 2 vols ✔): see the licence note. Cary F. Baynes, tr., The I Ching or Book of Changes (Bollingen Series XIX, 1950, foreword by C. G. Jung): ©, still in copyright; this library removed Wilhelm/Baynes wording in September 2026 ✔.",
+        "Licence note on Wilhelm": "Wilhelm died in 1930 ○. In countries that protect a work for 70 years after the author's death (Germany, Brazil), the German of 1924 has been free since 2001; in the United States a work published in 1924 became free on 1 January 2020 ○ (both from this repo's docs/DECIDE-books-and-grammars.md). Two cautions: later Diederichs printings add material by Hellmut Wilhelm, so only a dated 1924 scan is safe; and the German hosted at schuledesrades.org does not state its edition, so do not copy from it. The 1950 English of Baynes is a separate, protected work.",
+        "Public-domain full text": "Legge: https://sacred-texts.com/ich/ ; https://archive.org/details/wg916 (1882) ; https://archive.org/details/sacredbooksofchi12conf (1899). Wilhelm 1924, catalogue record with scans: https://catalog.hathitrust.org/Record/103049296 (check the viewing rights of the copy you open). In this library: zhouyi-core, ten-wings, i-ching-summarized.",
+        "Fact or reading": "Dates, books and licences above are fact (marks as shown). The method summary is our description. The example is our reading."
+      },
+      "metadata": {
+        "branch": "meanings and principles",
+        "see": [
+          "tree-of-the-iching",
+          "zhouyi-core",
+          "ten-wings"
+        ]
+      }
+    },
+    {
+      "id": "school-image-number",
+      "name": "Images and numbers (Jing Fang, Shao Yong)",
+      "category": "school",
+      "sort_order": 5,
+      "keywords": [
+        "Jing Fang",
+        "Shao Yong",
+        "xiangshu",
+        "binary"
+      ],
+      "sections": {
+        "Who and when": "The line of readers who look for the order of the world in the figures themselves. Jing Fang (1st century BCE) tied the hexagrams to the calendar and to cycles; Shao Yong (1011 to 1077) arranged the 64 figures in binary order, as a square and as a circle. ✔ (Tree of the Changes: book-jing-fang, book-shao-yong). Zhu Xi took the diagrams into his Benyi with a note crediting them to Shao Yong; who placed them there is disputed ◆.",
+        "Method": "Treat the lines as a system: yang and yin, positions, the way one figure turns into another. Meaning comes from where the figure sits in a pattern, before the words are read. The 64 figures are laid out by counting in binary, and that circle is the wheel Human Design uses (see the wheel grammar; this library checked that its order is the Shao Yong circle).",
+        "What it stresses": "Structure, cycles and correspondence: the season, the direction, the neighbours of a figure in the pattern.",
+        "Example: 43.3 to 58": "(An illustration of the method, written by us.) Hexagram 43 is five solid lines and one broken line at the top: yang has filled almost the whole figure and one yin line is left. In the calendar scheme of twelve 'waxing and waning' figures, as we remember it, 43 is the step just before the pure yang of hexagram 1 ◇. Changing the third line turns a solid line broken and gives 58, two lakes. A reader of structure sees the move as yang giving way at the middle of the figure, not at its edge, and asks what that does to the balance.",
+        "Key books": "Jing Fang's Changes: Chinese PD. Shao Yong's diagrams: Chinese PD. Zhu Xi, Zhouyi benyi (with nine diagrams; Wu Ge's 1265 print is on ctext.org, whose licence for its transcription is not stated here, so Unclear). A modern English study: Richard J. Smith, Fathoming the Cosmos and Ordering the World (2008): © ○ (not opened).",
+        "Public-domain full text": "Chinese texts on ctext.org (https://ctext.org/book-of-changes): the ancient text is PD; ctext's own transcription terms need checking before this library copies from it."
+      },
+      "metadata": {
+        "branch": "images and numbers",
+        "see": [
+          "tree-of-the-iching",
+          "hd-mandala-wheel"
+        ]
+      }
+    },
+    {
+      "id": "school-zhu-xi",
+      "name": "Zhu Xi: divination as a practice of self-cultivation",
+      "category": "school",
+      "sort_order": 6,
+      "keywords": [
+        "Zhu Xi",
+        "Yixue qimeng",
+        "Benyi",
+        "divination"
+      ],
+      "sections": {
+        "Who and when": "Zhu Xi (1130 to 1200). He held that the book was first of all for divination, and that divination could serve moral self-cultivation. He rebuilt the yarrow-stalk method from the Xici in the Yixue qimeng (preface dated 1186). His Zhouyi benyi ('The Original Meaning') is dated 1188 in Adler's recent work and 1177 in the older view ◆. A Yuan decree of 1313 named his and Cheng Yi's commentaries as the main ones for the Changes in the examinations. ✔ (Tree of the Changes: book-zhu-xi, which cites Adler 2021 and the Qimeng preface).",
+        "Method": "Cast by the rebuilt yarrow method, then read by rules that depend on the number of changing lines (see 'How to read changing lines'). The line statement is the oracle's answer; the Ten Wings and the principles behind them tell you how to take it. ✔",
+        "What it stresses": "That the answer comes from the text as an oracle, and that the person is changed by taking it seriously. Divination and ethics are one practice, not two.",
+        "Example: 43.3 to 58": "(An illustration of the method, written by us.) One line changes, so the statement of 43.3 is the answer and 58 is not read for text. The answer has a hard start and a good end: strong looks bring trouble; the person who goes on alone, takes the rain, and is resented by their own company comes through without blame. In Zhu Xi's frame the diviner is also asked whether this describes the way they are holding themselves.",
+        "Key books": "Zhu Xi, Yixue qimeng (1186) and Zhouyi benyi: Chinese PD. English: Joseph A. Adler, Introduction to the Study of the Classic of Change (Global Scholarly Publications, 2002 ✔ via Cottrell) and The Original Meaning of the Yijing (Columbia UP, 2020 ○): ©. Adler also puts essays on his Kenyon College pages (https://www2.kenyon.edu/Depts/Religion/Fac/Adler/Writings/); read them there, their licence is not stated, so Unclear and not copied here.",
+        "Public-domain full text": "Wu Ge's 1265 print of the Benyi, as text, on ctext.org (https://ctext.org/wiki.pl?if=en&res=697461): the work is PD; ctext's transcription terms need checking."
+      },
+      "metadata": {
+        "branch": "meanings and principles",
+        "see": [
+          "tree-of-the-iching",
+          "method-changing-lines"
+        ]
+      }
+    },
+    {
+      "id": "school-daoist-alchemy",
+      "name": "Daoist inner alchemy (Liu Yiming, Wei Boyang)",
+      "category": "school",
+      "sort_order": 7,
+      "keywords": [
+        "Liu Yiming",
+        "Cleary",
+        "inner alchemy",
+        "Daoist"
+      ],
+      "sections": {
+        "Who and when": "Liu Yiming (1734 to 1821), a master of Daoist inner alchemy in the Longmen line, wrote the Zhouyi chanzhen ('Uncovering the True in the Book of Changes'); his preface is dated 1798, and the English publisher's note says 1796 ◆. ✔ (Tree of the Changes: book-liu-yiming). The older alchemical use of the hexagrams runs back to the Cantong qi, ascribed to Wei Boyang in the Eastern Han ◇.",
+        "Method": "Read the hexagrams, in their order, as one course of inner cultivation. In Liu's scheme, as the Tree describes it, one strand advances the yang fire and one circulates the yin tally; Qian opens the first and Kun the second, and each later figure follows on from the one two places before it ✔. The lines are stages of the work on body, breath and mind, and the text is a code for that work.",
+        "What it stresses": "Nature and destiny, the refining of energy, and timing in the sense of the right phase of a process. Liu says in his preface that the Yi is not a book of divination but a study of principle, nature and destiny ✔ (Tree).",
+        "Example: 43.3 to 58": "(An illustration of the method, written by us. We have not read Liu's comment on this line; his text is on zh.wikisource, which is the check still to do.) A reader in this line would take the five strong lines as yang gathered almost to fullness, and the one broken line as the last residue still to be cut away, which is what the figure's name suggests. The third line then marks a risk in the work: strength that shows in the face is strength spent. The rain and the stain are the damp of the lower nature met on the way. That is a reading of method, and a different school would not recognise it as the line's meaning.",
+        "Key books": "Liu Yiming, Zhouyi chanzhen (1796/1798): Chinese PD (the text is on zh.wikisource: https://zh.wikisource.org/ ; transcription not checked against a scan). English: Thomas Cleary, The Taoist I Ching (Shambhala, 1986 ✔ per Open Library): ©; it leaves out the opening chapter of charts ✔. Wei Boyang, Cantong qi: Chinese PD; English, Fabrizio Pregadio, The Seal of the Unity of the Three (Golden Elixir Press, 2011 ◇): ©.",
+        "Public-domain full text": "Liu Yiming's commentary in Chinese on zh.wikisource (the Daoshu shi'er zhong text; see the Tree's bibliography entry liu_chanzhen_text for the version we read). No English full text is public domain."
+      },
+      "metadata": {
+        "branch": "Daoist readings",
+        "see": [
+          "tree-of-the-iching"
+        ]
+      }
+    },
+    {
+      "id": "school-early-zhou",
+      "name": "Early Zhou and philological readings (Shaughnessy, Rutt, Kunst, Redmond)",
+      "category": "school",
+      "sort_order": 8,
+      "keywords": [
+        "Shaughnessy",
+        "Rutt",
+        "Redmond",
+        "Kunst",
+        "Mawangdui",
+        "philology"
+      ],
+      "sections": {
+        "Who and when": "From the 1920s on, scholars pulled the layers of the book apart. Gushi bian vol. 3 (1931) argued that the Zhouyi was a Zhou diviner's handbook ✔ (Tree: book-gushibian). Edward Shaughnessy's thesis (Stanford, 1983) and Richard Kunst's (Berkeley, 1985) dated the text to the Western Zhou; Richard Rutt (1996) and Geoffrey Redmond (2017) translated it as a bronze-age document ✔ (Tree: book-shaughnessy-1983, book-modern-zhouyi). Tomb finds, among them the Mawangdui silk text (buried 168 BCE) and the Shanghai bamboo text (about 300 BCE), give copies older than the received text ✔ (Tree).",
+        "Method": "Read the Zhouyi on its own, without the Ten Wings. Treat the line statements as records of divination: an image or event, then a prognostic term such as 'ominous' or 'no blame'. Use the early manuscripts and the old forms of the characters to decide what a rare word means. Compare translations word by word.",
+        "What it stresses": "What the words said before the moral reading: the images, the omens, the rare characters, the variants between manuscripts. Both Rutt and Redmond translate words like zhen as an act of divining, where Legge has 'correct and firm' ✔ (Tree).",
+        "Example: 43.3 to 58": "(An illustration of the method, written by us.) Without the Wings, 43.3 is a run of images with two verdicts. The first image, 壯于頄, turns on a rare character, 頄, which a dictionary entry we found glosses as the cheekbone ○; Legge's 'strong looks' is his reading of it, and translators differ here. Then a verdict, 凶, ominous. Then a second image: a person goes on alone, meets rain, is as if soaked, and is resentful; then 無咎, no blame. The reading does not need the word 'superior man' to mean a moral ideal, and it does not need 58 at all, since the early accounts we know cite the line statement. The question for this school is: what was the diviner recording, and what does each manuscript write?",
+        "Key books": "Richard Rutt, The Book of Changes (Zhouyi): A Bronze Age Document (Curzon, 1996; RoutledgeCurzon paperback, 2002 ✔): ©. Geoffrey Redmond, The I Ching (Book of Changes): A Critical Translation of the Ancient Text (Bloomsbury, 2017 ✔): ©. Edward L. Shaughnessy, I Ching: The Classic of Changes (the Mawangdui text; Ballantine, 1997 ✔) and Unearthing the Changes (Columbia UP, 2014 ✔ title): ©. Shaughnessy, The Origin and Early Development of the Zhou Changes (Brill, 2022, open access ✔): the open-access licence was not read here, so Unclear. Kidder Smith Jr., 'Zhouyi Interpretation from Accounts in the Zuozhuan' (HJAS 49.2, 1989 ○): ©. Richard J. Smith, The I Ching: A Biography (Princeton UP, 2012): ©.",
+        "Public-domain full text": "The Zhouyi itself, in Chinese: PD (this library's i-ching-chinese-original, Project Gutenberg #25501). Legge's 1882 English is the nearest PD translation to this method: it prints the Text apart from the Wings. The excavated manuscripts are ancient, but modern transcriptions are scholarly work with their own status; do not copy one without its licence."
+      },
+      "metadata": {
+        "branch": "doubt and excavation",
+        "see": [
+          "tree-of-the-iching",
+          "zhouyi-core",
+          "i-ching-chinese-original"
+        ]
+      }
+    },
+    {
+      "id": "school-jungian",
+      "name": "Jung and synchronicity (Baynes edition, 1950)",
+      "category": "school",
+      "sort_order": 9,
+      "keywords": [
+        "Jung",
+        "synchronicity",
+        "Baynes"
+      ],
+      "sections": {
+        "Who and when": "C. G. Jung's foreword (Zurich, 1949) to the Wilhelm/Baynes English edition (Bollingen XIX, 1950) set the casts within his idea of synchronicity ✔ (Tree: book-baynes). The edition reached the American counterculture of the 1960s ✔.",
+        "Method": "A cast is treated as a pattern that coincides in meaning with the person's state at that moment, with no claim that the text causes or predicts anything. The reading asks what the passage mirrors in the person.",
+        "What it stresses": "The person's own psychology: what the passage shows them about their attitude, their shadow, their stage of life.",
+        "Example: 43.3 to 58": "(An illustration of the method, written by us.) A Jungian reader asks where in the person's life there is a resolve that has become a show of force, and who in their company would misread it. The rain and the resentment become a picture of the cost of standing apart. The second figure, 58, becomes the question of what pleasing people has been standing in for.",
+        "Key books": "C. G. Jung, foreword to The I Ching or Book of Changes (Bollingen XIX, 1950): ©. Wilhelm/Baynes: ©.",
+        "Public-domain full text": "None for the English. The ideas can be described; the foreword cannot be copied."
+      },
+      "metadata": {
+        "branch": "into other languages",
+        "see": [
+          "tree-of-the-iching"
+        ]
+      }
+    },
+    {
+      "id": "school-human-design",
+      "name": "Human Design: the hexagrams as gates (Ra Uru Hu, 1987)",
+      "category": "school",
+      "sort_order": 10,
+      "keywords": [
+        "Human Design",
+        "gates",
+        "wheel",
+        "Ra Uru Hu",
+        "Jovian Archive"
+      ],
+      "sections": {
+        "Who and when": "Alan Robert Krakower, who used the name Ra Uru Hu (born 1948; died March 2011), said that in January 1987 on Ibiza he spent about eight days receiving the system from a 'Voice'. The International Human Design School dates the start to the evening of 3 January 1987 and says the work took eight days and nights ✔ (ihdschool.com). The first book, The Human Design System, is dated 1992 ✔ (Wikipedia). See docs/RESEARCH-gene-keys-and-human-design-2026-10-12.md for his own words, dated and linked.",
+        "Method": "The 64 hexagrams are 'gates', laid round the zodiac in the Fu Xi circle order, each 5°37'30\" wide, starting at 2° Aquarius ✔ (see the wheel grammar). Each gate is cut into six lines of 56'15\". A birth chart is read twice: the planets' positions at birth, and again at a moment about 88 days earlier ✔ (Jovian Archive's Mandala page says 'approximately 88 days'; the Gene Keys profile page uses the same 88 days; the system defines it as 88 degrees of the Sun's travel ◇). Each planet falls in a gate and a line; the gates sit on a body chart of nine centres joined by 36 channels ✔ (Jovian Archive, Mandala page). The practice is a 'strategy' and 'authority' by type, which the system says is to be tested as an experiment ✔ (Ra: 'don't believe me and do not trust me').",
+        "What it stresses": "Mechanics of difference: what is consistent in a person and what is open to conditioning. The hexagram is a position and a theme; the Zhouyi's sentences and the Ten Wings are replaced by the system's own gate themes and line keynotes ✔ (Tree: book-human-design).",
+        "Example: 43.3 to 58": "(An illustration of the method, written by us. We do not quote or paraphrase the system's gate or line texts, which are Ra Uru Hu's writing.) There is no 'changing line' in a chart: 43.3 is a place on the wheel. Gate 43 begins at 18°52'30\" Scorpio and ends at 24°30'; its third line runs from 20°45' to 21°41'15\" Scorpio (our arithmetic, from the wheel). Gate 43 belongs to the Ajna centre, and a planet in it would be read for what that gate is said to do there, whether the gate at the other end of its channel (gate 23) is also lit, and which planet it is. Gate 58, the other figure in our cast, is a separate gate in another centre (Root) at another point on the wheel; it is not what 43 'becomes'. So the system has nothing like the school above's second-figure question.",
+        "Key books": "Ra Uru Hu, The Human Design System (1992) and The Complete Rave I'Ching (editions of 2001 and 2011 are both listed ◆): ©, held by Jovian Archive Media Pte. Ltd., which states in its Terms that it holds the exclusive worldwide rights to the system and to Ra Uru Hu's works ✔. Richard Rudd, Human Design: The Revelation (republished by Gene Keys; ✔ listed on genekeys.com): ©. Karen Curry, Understanding Human Design (Hierophant, 2013 ✔ via Wikipedia): ©. J. R. Hustwit, 'Myself, Only Moreso', Open Theology 2(1), 2016, describes the system as a 'transreligious project' (as cited on Wikipedia ○; the article was not opened).",
+        "Licence and trademark": "A court in Florence (Case RG 2756/2020, order of 3 June 2020) found that no copyright can exist over the Human Design system as such, only over specific works ○ (Wikipedia). That is one court in one country, and it does not free the texts. Jovian Archive Media states exclusive rights ✔. 'JOVIAN ARCHIVE HUMAN DESIGN' was registered in the US on 12 August 2025 by Jovian Archive Media Pte. Ltd., and other 'HUMAN DESIGN' marks are held by Human Design, LLC ○ (a search summary of USPTO records, not re-opened: look up the live records before any commercial use). What this library does: facts and positions, its own words, no text from Jovian, and the name 'Human Design' only to say what it describes.",
+        "Public-domain full text": "None. The facts in the wheel grammar are computed, not copied.",
+        "Fact or reading": "The structure (gates, wheel, lines, centres, channels) is the system's own definition and can be checked against its pages. Whether it describes anything beyond a symbolic vocabulary is open; no empirical test of its claims was found in this round (see the research note)."
+      },
+      "metadata": {
+        "branch": "into other languages",
+        "see": [
+          "iching-hd-meta-categories",
+          "hd-mandala-wheel",
+          "tree-of-the-iching"
+        ]
+      }
+    },
+    {
+      "id": "school-gene-keys",
+      "name": "The Gene Keys (Richard Rudd, 2013)",
+      "category": "school",
+      "sort_order": 11,
+      "keywords": [
+        "Gene Keys",
+        "Rudd",
+        "Golden Path",
+        "Shadow Gift Siddhi"
+      ],
+      "sections": {
+        "Who and when": "Richard Rudd. He writes that he followed the type and strategy of Human Design for seven years and that it let him find his own inner power ✔ (Integral Human Design, 27 Jul 2018); a summary of another genekeys.com page says he studied and taught Human Design with Ra Uru Hu between 1997 and 2004 ○ (not re-opened). He dates the Gene Keys to 1987, tells of visions that began that year, and says a book 'came pouring through' him after 25 years of study ✔ (Gene Keys: 'a simple introduction', 14 Aug 2018). The Gene Keys book was published by Watkins in 2013 ○. The site and its books are run by Gene Keys Ltd and Gene Keys Publishing Ltd.",
+        "Method": "Each of the 64 hexagrams is a 'Gene Key', a point on a spectrum of three bands: a Shadow, a Gift and a Siddhi. The method is contemplation of one's own keys, in a set order. A free 'Hologenetic Profile' is calculated from birth data (the Human Design wheel, with the planets of the birth chart and the 88-days-earlier chart), and gives eleven 'spheres', each a Gene Key and a line, in three sequences that together make the 'Golden Path': the Activation Sequence (four 'Prime Gifts', calculated from the position of the Sun at birth: Life's Work, Evolution, Radiance, Purpose; the FAQ ties its 192 possible combinations to the geometry of the Human Design 'Incarnation Cross'), the Venus Sequence (six keys, from the positions of the Earth, Moon, Mars and Venus), and the Pearl Sequence (four keys, from Mars, Jupiter and the Sun) ✔ (genekeys.com: 'How to read your profile', the Glossary of Empowerment). Each key also has a 'programming partner', the key directly opposite it on the wheel; the 64 keys make 32 pairs ✔. The keys are grouped into 21 'codon rings', one for each amino acid or stop signal ✔.",
+        "What it stresses": "Inner change by sustained attention to one's own shadows, with the claim that this reaches the body. The site says the work is 'neither astrology nor a traditional profiling system' ✔.",
+        "Example: 43.3 to 58": "(An illustration of the method, written by us; we reproduce none of the Gene Keys words.) As in Human Design, there is no changing line. The 43rd Gene Key would be met as one point on a three-band spectrum, and the question is which of the eleven spheres of the person's profile it fills, because the sphere changes what the key is being asked to do. Its line, the third, is one of six line themes each key can carry. The 'programming partner' of 43 is the key directly opposite on the wheel, which is gate 23; 58's partner is gate 52. So, unlike the changing-line schools, it pairs a key with its opposite, not with the figure it becomes.",
+        "Key books": "Richard Rudd, Gene Keys (Watkins, 2013 ○; the publisher is now Gene Keys Publishing); Genius, Love, Prosperity (guides to the Activation, Venus and Pearl sequences); The 64 Ways; Contemplation (Hay House, released 9 June 2026; first self-published in 2018 as The Art of Contemplation) ✔ (genekeys.com/books): all ©, all Gene Keys Ltd or its licensees.",
+        "Licence and trademark": "Gene Keys Ltd's terms ✔ (genekeys.com/terms-and-conditions): all rights reserved; one personal printout or extracts for non-commercial reference; commercial use needs a licence; anyone who guides others through the content must complete the Guides Programme; a public reference must say the views are the speaker's own and are not attributed to Gene Keys; the use of their materials to develop, train, test or operate AI or machine-learning systems is prohibited without written consent; and the Integral Human Design keynotes are for personal contemplation only and may not be used in products, publications or courses. 'Gene Keys' is a registered trademark of Gene Keys Publishing Ltd. What this library does: structure only, in its own words, and no word lists. Because the assistant is an AI, it must not be given Gene Keys text. These are our views and are not those of Gene Keys, and nothing here is endorsed by them.",
+        "Public-domain full text": "None.",
+        "Fact or reading": "The structure is described on the official pages and can be checked there. That contemplating the keys 'influences your DNA' is the system's own claim; the biology it leans on (a link from thought to gene activity) is described by reviewers as going beyond what is established ○ (a 2025 review of Bruce Lipton's work). We treat the DNA language as metaphor."
+      },
+      "metadata": {
+        "branch": "into other languages",
+        "see": [
+          "hd-mandala-wheel",
+          "school-human-design"
+        ]
+      }
+    },
+    {
+      "id": "licence-table",
+      "name": "Which books can be copied, and which can only be pointed to",
+      "category": "guide",
+      "sort_order": 12,
+      "keywords": [
+        "licence",
+        "copyright",
+        "public domain"
+      ],
+      "sections": {
+        "Public domain, in this library already": "James Legge, The Yî King (1882) as zhouyi-core, ten-wings and i-ching-summarized. The Zhouyi in Chinese (i-ching-chinese-original, Project Gutenberg #25501).",
+        "Public domain, not yet in this library": "Wilhelm, I Ging (1924, German): free in life-plus-70 countries since 2001 and in the US since 2020, if a dated 1924 scan is used ○. McClatchie (1876), Régis (printed 1834). The old Chinese commentaries (Wang Bi, Cheng Yi, Zhu Xi, Liu Yiming) as ancient text, once a transcription with a stated licence is found.",
+        "In copyright, point to only": "Baynes 1950; Jung's foreword; Cleary 1986; Lynn 1994 ◇; Harrington 2019; Adler 2002 and 2020; Rutt 1996; Redmond 2017; Shaughnessy 1997 and 2014; Smith 2012; everything by Ra Uru Hu; everything by Gene Keys Ltd and Richard Rudd.",
+        "Unclear": "Shaughnessy 2022 (open access, licence not read); Adler's essays on his Kenyon pages; ctext.org's transcriptions; the German text at schuledesrades.org (edition not stated).",
+        "The rule we follow": "Quote in full only what is public domain with a dated source. For everything else: title, author, year, a paraphrase in our own words, a link. When in doubt, treat it as in copyright."
+      },
+      "metadata": {
+        "see": [
+          "tree-of-the-iching"
+        ]
+      }
+    }
+  ]
+}

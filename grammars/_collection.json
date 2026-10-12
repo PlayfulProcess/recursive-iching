@@ -24,6 +24,7 @@
       "id": "synthesis",
       "name": "Synthesis — cross-lens readings of the 64 hexagrams",
       "deck_slugs": [
+        "hd-mandala-wheel",
         "iching-hd-meta-categories",
         "meta-iching",
         "the-recursive-iching-book",
@@ -41,11 +42,27 @@
       "id": "history",
       "name": "History — the books of the Changes, one book per node",
       "deck_slugs": [
+        "schools-of-the-iching",
         "tree-of-the-iching"
       ]
     }
   ],
   "grammars": [
+    {
+      "slug": "hd-mandala-wheel",
+      "name": "The 64 Gates Around the Wheel",
+      "type": "custom",
+      "branch": "synthesis",
+      "is_meta": false,
+      "default_preview": "grammar",
+      "nodes": 66,
+      "cover_image_url": null,
+      "thumb": "img/covers/hd-mandala-wheel.svg",
+      "mark": "img/covers/hd-mandala-wheel.svg",
+      "blurb": "The 64 hexagrams in the order of the Human Design wheel, with where each begins in the zodiac, the gate across from it, and the centre it belongs to. Positions and facts only: no Human Design text.",
+      "path": "grammars/hd-mandala-wheel/grammar.json",
+      "provenance": "living"
+    },
     {
       "slug": "i-ching-chinese-original",
       "name": "I Ching — Chinese Original (Project Gutenberg)",
@@ -123,6 +140,21 @@
       "mark": "img/covers/repair-iching.svg",
       "blurb": "A meta-grammar that weaves the I Ching into the Repair framework. Twelve hexagrams — one for each chapter of 'Repair: An Open Source Book' — chosen not to predict but to reperceive. Each hexagram illu…",
       "path": "grammars/repair-iching/grammar.json",
+      "provenance": "living"
+    },
+    {
+      "slug": "schools-of-the-iching",
+      "name": "Schools of the I Ching",
+      "type": "custom",
+      "branch": "history",
+      "is_meta": false,
+      "default_preview": "course",
+      "nodes": 12,
+      "cover_image_url": null,
+      "thumb": "img/covers/schools-of-the-iching.svg",
+      "mark": "img/covers/schools-of-the-iching.svg",
+      "blurb": "How the main schools read the Changes: classical Confucian, images and numbers, Zhu Xi, Daoist inner alchemy, early Zhou philology, Jung, Human Design and the Gene Keys. Each says who and when, its me…",
+      "path": "grammars/schools-of-the-iching/grammar.json",
       "provenance": "living"
     },
     {

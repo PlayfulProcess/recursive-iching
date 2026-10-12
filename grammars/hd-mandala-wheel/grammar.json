@@ -1,0 +1,2051 @@
+{
+  "_generated": true,
+  "_generated_by": "scripts/build_hd_wheel.py",
+  "_draft_note": "Oct 12 2026 draft. Skipped by recursive.eco's importer (_generated). PlayfulProcess decides whether it becomes a grammar; see docs/PROPOSAL-hd-gene-keys-grammars-and-course-2026-10-12.md.",
+  "_grammar_commons": {
+    "schema_version": "1.0",
+    "license": "CC-BY-SA-4.0 (PlayfulProcess) for the words and the arrangement. The positions, numbers and hexagram facts are facts; no Human Design or Gene Keys text is reproduced.",
+    "attribution": [
+      {
+        "name": "PlayfulProcess",
+        "date": "2026-10-12",
+        "note": "design and curation; computed by scripts/build_hd_wheel.py, prose written with AI"
+      }
+    ],
+    "sources": [
+      "Order and start of the wheel: checked against the table of gate degrees at https://bonniesorsby.com/human-design-gates-by-degree/ for gates 41, 25, 1, 2 and 60, and against the Fu Xi circle computed from scripts/hexagram-binary.json.",
+      "Gates in centres: the system's own rule, as stated for gates 1 and 58 on https://jovianarchive.com/pages/gates-and-hexagrams-in-human-design and checked against this repo's iching-hd-meta-categories grammar.",
+      "Hexagram names and facts: grammars/zhouyi-core (James Legge, 1882, public domain) and scripts/hexagram-binary.json."
+    ]
+  },
+  "name": "The 64 Gates Around the Wheel",
+  "description": "The 64 hexagrams in the order of the Human Design wheel, with where each begins in the zodiac, the gate across from it, and the centre it belongs to. Positions and facts only: no Human Design text.",
+  "grammar_type": "custom",
+  "default_preview": "grammar",
+  "is_published": false,
+  "creator_name": "PlayfulProcess",
+  "tags": [
+    "human-design",
+    "i-ching",
+    "wheel",
+    "zodiac",
+    "draft"
+  ],
+  "nodes": [
+    {
+      "id": "note-what-this-is",
+      "name": "What this is",
+      "category": "note",
+      "sort_order": 1,
+      "keywords": [
+        "human-design",
+        "wheel"
+      ],
+      "sections": {
+        "The wheel": "Human Design lays the 64 hexagrams round a circle and calls them gates. The circle is the zodiac: each gate takes 5 degrees 37 minutes 30 seconds of it (360 degrees divided by 64), and the first, gate 41, begins at 2 degrees Aquarius. This grammar lists the gates in that order. Everything on a gate's card is a position or a fact about the figure; none of it is Human Design's own text.",
+        "The order": "The order round the wheel is not the King Wen order (1, 2, 3 ...). It is the binary counting order that Shao Yong drew as a circle in the 11th century, the 'Fu Xi' circle: read the figures with the bottom line as the biggest digit and the order is two runs of counting, one up from 0 and one down from 63, joined into a ring. scripts/build_hd_wheel.py checks this for the list it uses.",
+        "Lines": "Each gate is cut into six lines of 0 degrees 56 minutes 15 seconds each (5 degrees 37 minutes 30 seconds divided by six). In Human Design, 'line' names that sixth of a gate, which is where a planet falls. It is not the same thing as a changing line in a cast; see the Schools of the I Ching grammar for that."
+      },
+      "metadata": {}
+    },
+    {
+      "id": "note-what-is-left-out",
+      "name": "What this grammar leaves out",
+      "category": "note",
+      "sort_order": 2,
+      "keywords": [
+        "human-design",
+        "wheel"
+      ],
+      "sections": {
+        "Left out": "Human Design's gate names and keynotes, the line texts of the Rave I'Ching, the descriptions of the channels and the Incarnation Crosses. They are Ra Uru Hu's writing, and Jovian Archive Media states that it holds the exclusive rights to it (jovianarchive.com, Terms and Conditions, Copyright notice). The wheel, the hexagram figures and the zodiac arithmetic are facts that anyone may state; the Florence court order of June 3 2020 says the same about the system as a whole (a system or method is not itself covered by copyright). We rely on the narrower point: we copy no text.",
+        "Gene Keys": "The Gene Keys use the same wheel and call the pair of opposite gates 'programming partners'. Their word lists and book text are not used here (Gene Keys Ltd reserves its rights, and bars use of its materials to train or operate AI systems). See docs/RESEARCH-gene-keys-and-human-design-2026-10-12.md."
+      },
+      "metadata": {}
+    },
+    {
+      "id": "gate-41",
+      "number": 41,
+      "name": "Gate 41 · Decrease",
+      "symbol": "䷨",
+      "category": "gate",
+      "sort_order": 3,
+      "keywords": [
+        "gate",
+        "root-centre",
+        "lake-mountain"
+      ],
+      "sections": {
+        "The figure": "Hexagram 41 (King Wen order), Sǔn 損: Mountain above, Lake below. Lines from the bottom: 110001 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 1 of 64, counting from gate 41. It begins at 2°00' Aquarius and ends at 7°37'30\" Aquarius.",
+        "Opposite gate": "Gate 31, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Root centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 41,
+        "binary": "110001",
+        "wheel_position": 1,
+        "start": "2°00' Aquarius",
+        "start_arcseconds": 1087200,
+        "opposite_gate": 31,
+        "centre": "Root",
+        "lower_trigram": "Lake",
+        "upper_trigram": "Mountain"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-19",
+      "number": 19,
+      "name": "Gate 19 · Approach",
+      "symbol": "䷒",
+      "category": "gate",
+      "sort_order": 4,
+      "keywords": [
+        "gate",
+        "root-centre",
+        "lake-earth"
+      ],
+      "sections": {
+        "The figure": "Hexagram 19 (King Wen order), Lín 臨: Earth above, Lake below. Lines from the bottom: 110000 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 2 of 64, counting from gate 41. It begins at 7°37'30\" Aquarius and ends at 13°15' Aquarius.",
+        "Opposite gate": "Gate 33, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Root centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 19,
+        "binary": "110000",
+        "wheel_position": 2,
+        "start": "7°37'30\" Aquarius",
+        "start_arcseconds": 1107450,
+        "opposite_gate": 33,
+        "centre": "Root",
+        "lower_trigram": "Lake",
+        "upper_trigram": "Earth"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-13",
+      "number": 13,
+      "name": "Gate 13 · Fellowship with Men",
+      "symbol": "䷌",
+      "category": "gate",
+      "sort_order": 5,
+      "keywords": [
+        "gate",
+        "g-centre",
+        "fire-heaven"
+      ],
+      "sections": {
+        "The figure": "Hexagram 13 (King Wen order), Tóng Rén 同人: Heaven above, Fire below. Lines from the bottom: 101111 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 3 of 64, counting from gate 41. It begins at 13°15' Aquarius and ends at 18°52'30\" Aquarius.",
+        "Opposite gate": "Gate 7, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The G centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 13,
+        "binary": "101111",
+        "wheel_position": 3,
+        "start": "13°15' Aquarius",
+        "start_arcseconds": 1127700,
+        "opposite_gate": 7,
+        "centre": "G",
+        "lower_trigram": "Fire",
+        "upper_trigram": "Heaven"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-49",
+      "number": 49,
+      "name": "Gate 49 · Revolution (Molting)",
+      "symbol": "䷰",
+      "category": "gate",
+      "sort_order": 6,
+      "keywords": [
+        "gate",
+        "solar-plexus-centre",
+        "fire-lake"
+      ],
+      "sections": {
+        "The figure": "Hexagram 49 (King Wen order), Gé 革: Lake above, Fire below. Lines from the bottom: 101110 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 4 of 64, counting from gate 41. It begins at 18°52'30\" Aquarius and ends at 24°30' Aquarius.",
+        "Opposite gate": "Gate 4, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Solar Plexus centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 49,
+        "binary": "101110",
+        "wheel_position": 4,
+        "start": "18°52'30\" Aquarius",
+        "start_arcseconds": 1147950,
+        "opposite_gate": 4,
+        "centre": "Solar Plexus",
+        "lower_trigram": "Fire",
+        "upper_trigram": "Lake"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-30",
+      "number": 30,
+      "name": "Gate 30 · The Clinging, Fire",
+      "symbol": "䷝",
+      "category": "gate",
+      "sort_order": 7,
+      "keywords": [
+        "gate",
+        "solar-plexus-centre",
+        "fire-fire"
+      ],
+      "sections": {
+        "The figure": "Hexagram 30 (King Wen order), Lí 離: Fire above, Fire below. Lines from the bottom: 101101 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 5 of 64, counting from gate 41. It begins at 24°30' Aquarius and ends at 0°07'30\" Pisces.",
+        "Opposite gate": "Gate 29, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Solar Plexus centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 30,
+        "binary": "101101",
+        "wheel_position": 5,
+        "start": "24°30' Aquarius",
+        "start_arcseconds": 1168200,
+        "opposite_gate": 29,
+        "centre": "Solar Plexus",
+        "lower_trigram": "Fire",
+        "upper_trigram": "Fire"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-55",
+      "number": 55,
+      "name": "Gate 55 · Abundance",
+      "symbol": "䷶",
+      "category": "gate",
+      "sort_order": 8,
+      "keywords": [
+        "gate",
+        "solar-plexus-centre",
+        "fire-thunder"
+      ],
+      "sections": {
+        "The figure": "Hexagram 55 (King Wen order), Fēng 豐: Thunder above, Fire below. Lines from the bottom: 101100 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 6 of 64, counting from gate 41. It begins at 0°07'30\" Pisces and ends at 5°45' Pisces.",
+        "Opposite gate": "Gate 59, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Solar Plexus centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 55,
+        "binary": "101100",
+        "wheel_position": 6,
+        "start": "0°07'30\" Pisces",
+        "start_arcseconds": 1188450,
+        "opposite_gate": 59,
+        "centre": "Solar Plexus",
+        "lower_trigram": "Fire",
+        "upper_trigram": "Thunder"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-37",
+      "number": 37,
+      "name": "Gate 37 · The Family [The Clan]",
+      "symbol": "䷤",
+      "category": "gate",
+      "sort_order": 9,
+      "keywords": [
+        "gate",
+        "solar-plexus-centre",
+        "fire-wind"
+      ],
+      "sections": {
+        "The figure": "Hexagram 37 (King Wen order), Jiā Rén 家人: Wind above, Fire below. Lines from the bottom: 101011 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 7 of 64, counting from gate 41. It begins at 5°45' Pisces and ends at 11°22'30\" Pisces.",
+        "Opposite gate": "Gate 40, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Solar Plexus centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 37,
+        "binary": "101011",
+        "wheel_position": 7,
+        "start": "5°45' Pisces",
+        "start_arcseconds": 1208700,
+        "opposite_gate": 40,
+        "centre": "Solar Plexus",
+        "lower_trigram": "Fire",
+        "upper_trigram": "Wind"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-63",
+      "number": 63,
+      "name": "Gate 63 · After Completion",
+      "symbol": "䷾",
+      "category": "gate",
+      "sort_order": 10,
+      "keywords": [
+        "gate",
+        "head-centre",
+        "fire-water"
+      ],
+      "sections": {
+        "The figure": "Hexagram 63 (King Wen order), Jì Jì 既濟: Water above, Fire below. Lines from the bottom: 101010 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 8 of 64, counting from gate 41. It begins at 11°22'30\" Pisces and ends at 17°00' Pisces.",
+        "Opposite gate": "Gate 64, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Head centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 63,
+        "binary": "101010",
+        "wheel_position": 8,
+        "start": "11°22'30\" Pisces",
+        "start_arcseconds": 1228950,
+        "opposite_gate": 64,
+        "centre": "Head",
+        "lower_trigram": "Fire",
+        "upper_trigram": "Water"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-22",
+      "number": 22,
+      "name": "Gate 22 · Grace",
+      "symbol": "䷕",
+      "category": "gate",
+      "sort_order": 11,
+      "keywords": [
+        "gate",
+        "solar-plexus-centre",
+        "fire-mountain"
+      ],
+      "sections": {
+        "The figure": "Hexagram 22 (King Wen order), Bì 賁: Mountain above, Fire below. Lines from the bottom: 101001 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 9 of 64, counting from gate 41. It begins at 17°00' Pisces and ends at 22°37'30\" Pisces.",
+        "Opposite gate": "Gate 47, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Solar Plexus centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 22,
+        "binary": "101001",
+        "wheel_position": 9,
+        "start": "17°00' Pisces",
+        "start_arcseconds": 1249200,
+        "opposite_gate": 47,
+        "centre": "Solar Plexus",
+        "lower_trigram": "Fire",
+        "upper_trigram": "Mountain"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-36",
+      "number": 36,
+      "name": "Gate 36 · Darkening of the Light",
+      "symbol": "䷣",
+      "category": "gate",
+      "sort_order": 12,
+      "keywords": [
+        "gate",
+        "solar-plexus-centre",
+        "fire-earth"
+      ],
+      "sections": {
+        "The figure": "Hexagram 36 (King Wen order), Míng Yí 明夷: Earth above, Fire below. Lines from the bottom: 101000 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 10 of 64, counting from gate 41. It begins at 22°37'30\" Pisces and ends at 28°15' Pisces.",
+        "Opposite gate": "Gate 6, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Solar Plexus centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 36,
+        "binary": "101000",
+        "wheel_position": 10,
+        "start": "22°37'30\" Pisces",
+        "start_arcseconds": 1269450,
+        "opposite_gate": 6,
+        "centre": "Solar Plexus",
+        "lower_trigram": "Fire",
+        "upper_trigram": "Earth"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-25",
+      "number": 25,
+      "name": "Gate 25 · Innocence (The Unexpected)",
+      "symbol": "䷘",
+      "category": "gate",
+      "sort_order": 13,
+      "keywords": [
+        "gate",
+        "g-centre",
+        "thunder-heaven"
+      ],
+      "sections": {
+        "The figure": "Hexagram 25 (King Wen order), Wú Wàng 無妄: Heaven above, Thunder below. Lines from the bottom: 100111 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 11 of 64, counting from gate 41. It begins at 28°15' Pisces and ends at 3°52'30\" Aries.",
+        "Opposite gate": "Gate 46, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The G centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 25,
+        "binary": "100111",
+        "wheel_position": 11,
+        "start": "28°15' Pisces",
+        "start_arcseconds": 1289700,
+        "opposite_gate": 46,
+        "centre": "G",
+        "lower_trigram": "Thunder",
+        "upper_trigram": "Heaven"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-17",
+      "number": 17,
+      "name": "Gate 17 · Following",
+      "symbol": "䷐",
+      "category": "gate",
+      "sort_order": 14,
+      "keywords": [
+        "gate",
+        "ajna-centre",
+        "thunder-lake"
+      ],
+      "sections": {
+        "The figure": "Hexagram 17 (King Wen order), Suí 隨: Lake above, Thunder below. Lines from the bottom: 100110 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 12 of 64, counting from gate 41. It begins at 3°52'30\" Aries and ends at 9°30' Aries.",
+        "Opposite gate": "Gate 18, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Ajna centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 17,
+        "binary": "100110",
+        "wheel_position": 12,
+        "start": "3°52'30\" Aries",
+        "start_arcseconds": 13950,
+        "opposite_gate": 18,
+        "centre": "Ajna",
+        "lower_trigram": "Thunder",
+        "upper_trigram": "Lake"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-21",
+      "number": 21,
+      "name": "Gate 21 · Biting Through",
+      "symbol": "䷔",
+      "category": "gate",
+      "sort_order": 15,
+      "keywords": [
+        "gate",
+        "heart-centre",
+        "thunder-fire"
+      ],
+      "sections": {
+        "The figure": "Hexagram 21 (King Wen order), Shì Kè 噬嗑: Fire above, Thunder below. Lines from the bottom: 100101 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 13 of 64, counting from gate 41. It begins at 9°30' Aries and ends at 15°07'30\" Aries.",
+        "Opposite gate": "Gate 48, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Heart centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 21,
+        "binary": "100101",
+        "wheel_position": 13,
+        "start": "9°30' Aries",
+        "start_arcseconds": 34200,
+        "opposite_gate": 48,
+        "centre": "Heart",
+        "lower_trigram": "Thunder",
+        "upper_trigram": "Fire"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-51",
+      "number": 51,
+      "name": "Gate 51 · The Arousing (Shock, Thunder)",
+      "symbol": "䷲",
+      "category": "gate",
+      "sort_order": 16,
+      "keywords": [
+        "gate",
+        "heart-centre",
+        "thunder-thunder"
+      ],
+      "sections": {
+        "The figure": "Hexagram 51 (King Wen order), Zhèn 震: Thunder above, Thunder below. Lines from the bottom: 100100 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 14 of 64, counting from gate 41. It begins at 15°07'30\" Aries and ends at 20°45' Aries.",
+        "Opposite gate": "Gate 57, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Heart centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 51,
+        "binary": "100100",
+        "wheel_position": 14,
+        "start": "15°07'30\" Aries",
+        "start_arcseconds": 54450,
+        "opposite_gate": 57,
+        "centre": "Heart",
+        "lower_trigram": "Thunder",
+        "upper_trigram": "Thunder"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-42",
+      "number": 42,
+      "name": "Gate 42 · Increase",
+      "symbol": "䷩",
+      "category": "gate",
+      "sort_order": 17,
+      "keywords": [
+        "gate",
+        "sacral-centre",
+        "thunder-wind"
+      ],
+      "sections": {
+        "The figure": "Hexagram 42 (King Wen order), Yì 益: Wind above, Thunder below. Lines from the bottom: 100011 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 15 of 64, counting from gate 41. It begins at 20°45' Aries and ends at 26°22'30\" Aries.",
+        "Opposite gate": "Gate 32, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Sacral centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 42,
+        "binary": "100011",
+        "wheel_position": 15,
+        "start": "20°45' Aries",
+        "start_arcseconds": 74700,
+        "opposite_gate": 32,
+        "centre": "Sacral",
+        "lower_trigram": "Thunder",
+        "upper_trigram": "Wind"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-3",
+      "number": 3,
+      "name": "Gate 3 · Difficulty at the Beginning",
+      "symbol": "䷂",
+      "category": "gate",
+      "sort_order": 18,
+      "keywords": [
+        "gate",
+        "sacral-centre",
+        "thunder-water"
+      ],
+      "sections": {
+        "The figure": "Hexagram 3 (King Wen order), Zhūn 屯: Water above, Thunder below. Lines from the bottom: 100010 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 16 of 64, counting from gate 41. It begins at 26°22'30\" Aries and ends at 2°00' Taurus.",
+        "Opposite gate": "Gate 50, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Sacral centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 3,
+        "binary": "100010",
+        "wheel_position": 16,
+        "start": "26°22'30\" Aries",
+        "start_arcseconds": 94950,
+        "opposite_gate": 50,
+        "centre": "Sacral",
+        "lower_trigram": "Thunder",
+        "upper_trigram": "Water"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-27",
+      "number": 27,
+      "name": "Gate 27 · The Corners of the Mouth (Providing Nourishment)",
+      "symbol": "䷚",
+      "category": "gate",
+      "sort_order": 19,
+      "keywords": [
+        "gate",
+        "sacral-centre",
+        "thunder-mountain"
+      ],
+      "sections": {
+        "The figure": "Hexagram 27 (King Wen order), Yí 頤: Mountain above, Thunder below. Lines from the bottom: 100001 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 17 of 64, counting from gate 41. It begins at 2°00' Taurus and ends at 7°37'30\" Taurus.",
+        "Opposite gate": "Gate 28, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Sacral centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 27,
+        "binary": "100001",
+        "wheel_position": 17,
+        "start": "2°00' Taurus",
+        "start_arcseconds": 115200,
+        "opposite_gate": 28,
+        "centre": "Sacral",
+        "lower_trigram": "Thunder",
+        "upper_trigram": "Mountain"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-24",
+      "number": 24,
+      "name": "Gate 24 · Return (The Turning Point)",
+      "symbol": "䷗",
+      "category": "gate",
+      "sort_order": 20,
+      "keywords": [
+        "gate",
+        "ajna-centre",
+        "thunder-earth"
+      ],
+      "sections": {
+        "The figure": "Hexagram 24 (King Wen order), Fù 復: Earth above, Thunder below. Lines from the bottom: 100000 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 18 of 64, counting from gate 41. It begins at 7°37'30\" Taurus and ends at 13°15' Taurus.",
+        "Opposite gate": "Gate 44, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Ajna centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 24,
+        "binary": "100000",
+        "wheel_position": 18,
+        "start": "7°37'30\" Taurus",
+        "start_arcseconds": 135450,
+        "opposite_gate": 44,
+        "centre": "Ajna",
+        "lower_trigram": "Thunder",
+        "upper_trigram": "Earth"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-2",
+      "number": 2,
+      "name": "Gate 2 · The Receptive",
+      "symbol": "䷁",
+      "category": "gate",
+      "sort_order": 21,
+      "keywords": [
+        "gate",
+        "g-centre",
+        "earth-earth"
+      ],
+      "sections": {
+        "The figure": "Hexagram 2 (King Wen order), Kūn 坤: Earth above, Earth below. Lines from the bottom: 000000 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 19 of 64, counting from gate 41. It begins at 13°15' Taurus and ends at 18°52'30\" Taurus.",
+        "Opposite gate": "Gate 1, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The G centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 2,
+        "binary": "000000",
+        "wheel_position": 19,
+        "start": "13°15' Taurus",
+        "start_arcseconds": 155700,
+        "opposite_gate": 1,
+        "centre": "G",
+        "lower_trigram": "Earth",
+        "upper_trigram": "Earth"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-23",
+      "number": 23,
+      "name": "Gate 23 · Splitting Apart",
+      "symbol": "䷖",
+      "category": "gate",
+      "sort_order": 22,
+      "keywords": [
+        "gate",
+        "throat-centre",
+        "earth-mountain"
+      ],
+      "sections": {
+        "The figure": "Hexagram 23 (King Wen order), Bō 剝: Mountain above, Earth below. Lines from the bottom: 000001 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 20 of 64, counting from gate 41. It begins at 18°52'30\" Taurus and ends at 24°30' Taurus.",
+        "Opposite gate": "Gate 43, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Throat centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 23,
+        "binary": "000001",
+        "wheel_position": 20,
+        "start": "18°52'30\" Taurus",
+        "start_arcseconds": 175950,
+        "opposite_gate": 43,
+        "centre": "Throat",
+        "lower_trigram": "Earth",
+        "upper_trigram": "Mountain"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-8",
+      "number": 8,
+      "name": "Gate 8 · Holding Together [Union]",
+      "symbol": "䷇",
+      "category": "gate",
+      "sort_order": 23,
+      "keywords": [
+        "gate",
+        "throat-centre",
+        "earth-water"
+      ],
+      "sections": {
+        "The figure": "Hexagram 8 (King Wen order), Bǐ 比: Water above, Earth below. Lines from the bottom: 000010 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 21 of 64, counting from gate 41. It begins at 24°30' Taurus and ends at 0°07'30\" Gemini.",
+        "Opposite gate": "Gate 14, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Throat centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 8,
+        "binary": "000010",
+        "wheel_position": 21,
+        "start": "24°30' Taurus",
+        "start_arcseconds": 196200,
+        "opposite_gate": 14,
+        "centre": "Throat",
+        "lower_trigram": "Earth",
+        "upper_trigram": "Water"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-20",
+      "number": 20,
+      "name": "Gate 20 · Contemplation [View]",
+      "symbol": "䷓",
+      "category": "gate",
+      "sort_order": 24,
+      "keywords": [
+        "gate",
+        "throat-centre",
+        "earth-wind"
+      ],
+      "sections": {
+        "The figure": "Hexagram 20 (King Wen order), Guān 觀: Wind above, Earth below. Lines from the bottom: 000011 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 22 of 64, counting from gate 41. It begins at 0°07'30\" Gemini and ends at 5°45' Gemini.",
+        "Opposite gate": "Gate 34, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Throat centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 20,
+        "binary": "000011",
+        "wheel_position": 22,
+        "start": "0°07'30\" Gemini",
+        "start_arcseconds": 216450,
+        "opposite_gate": 34,
+        "centre": "Throat",
+        "lower_trigram": "Earth",
+        "upper_trigram": "Wind"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-16",
+      "number": 16,
+      "name": "Gate 16 · Enthusiasm",
+      "symbol": "䷏",
+      "category": "gate",
+      "sort_order": 25,
+      "keywords": [
+        "gate",
+        "throat-centre",
+        "earth-thunder"
+      ],
+      "sections": {
+        "The figure": "Hexagram 16 (King Wen order), Yù 豫: Thunder above, Earth below. Lines from the bottom: 000100 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 23 of 64, counting from gate 41. It begins at 5°45' Gemini and ends at 11°22'30\" Gemini.",
+        "Opposite gate": "Gate 9, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Throat centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 16,
+        "binary": "000100",
+        "wheel_position": 23,
+        "start": "5°45' Gemini",
+        "start_arcseconds": 236700,
+        "opposite_gate": 9,
+        "centre": "Throat",
+        "lower_trigram": "Earth",
+        "upper_trigram": "Thunder"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-35",
+      "number": 35,
+      "name": "Gate 35 · Progress",
+      "symbol": "䷢",
+      "category": "gate",
+      "sort_order": 26,
+      "keywords": [
+        "gate",
+        "throat-centre",
+        "earth-fire"
+      ],
+      "sections": {
+        "The figure": "Hexagram 35 (King Wen order), Jìn 晉: Fire above, Earth below. Lines from the bottom: 000101 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 24 of 64, counting from gate 41. It begins at 11°22'30\" Gemini and ends at 17°00' Gemini.",
+        "Opposite gate": "Gate 5, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Throat centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 35,
+        "binary": "000101",
+        "wheel_position": 24,
+        "start": "11°22'30\" Gemini",
+        "start_arcseconds": 256950,
+        "opposite_gate": 5,
+        "centre": "Throat",
+        "lower_trigram": "Earth",
+        "upper_trigram": "Fire"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-45",
+      "number": 45,
+      "name": "Gate 45 · Gathering Together [Massing]",
+      "symbol": "䷬",
+      "category": "gate",
+      "sort_order": 27,
+      "keywords": [
+        "gate",
+        "throat-centre",
+        "earth-lake"
+      ],
+      "sections": {
+        "The figure": "Hexagram 45 (King Wen order), Cuì 萃: Lake above, Earth below. Lines from the bottom: 000110 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 25 of 64, counting from gate 41. It begins at 17°00' Gemini and ends at 22°37'30\" Gemini.",
+        "Opposite gate": "Gate 26, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Throat centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 45,
+        "binary": "000110",
+        "wheel_position": 25,
+        "start": "17°00' Gemini",
+        "start_arcseconds": 277200,
+        "opposite_gate": 26,
+        "centre": "Throat",
+        "lower_trigram": "Earth",
+        "upper_trigram": "Lake"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-12",
+      "number": 12,
+      "name": "Gate 12 · Standstill [Stagnation]",
+      "symbol": "䷋",
+      "category": "gate",
+      "sort_order": 28,
+      "keywords": [
+        "gate",
+        "throat-centre",
+        "earth-heaven"
+      ],
+      "sections": {
+        "The figure": "Hexagram 12 (King Wen order), Pǐ 否: Heaven above, Earth below. Lines from the bottom: 000111 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 26 of 64, counting from gate 41. It begins at 22°37'30\" Gemini and ends at 28°15' Gemini.",
+        "Opposite gate": "Gate 11, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Throat centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 12,
+        "binary": "000111",
+        "wheel_position": 26,
+        "start": "22°37'30\" Gemini",
+        "start_arcseconds": 297450,
+        "opposite_gate": 11,
+        "centre": "Throat",
+        "lower_trigram": "Earth",
+        "upper_trigram": "Heaven"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-15",
+      "number": 15,
+      "name": "Gate 15 · Modesty",
+      "symbol": "䷎",
+      "category": "gate",
+      "sort_order": 29,
+      "keywords": [
+        "gate",
+        "g-centre",
+        "mountain-earth"
+      ],
+      "sections": {
+        "The figure": "Hexagram 15 (King Wen order), Qiān 謙: Earth above, Mountain below. Lines from the bottom: 001000 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 27 of 64, counting from gate 41. It begins at 28°15' Gemini and ends at 3°52'30\" Cancer.",
+        "Opposite gate": "Gate 10, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The G centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 15,
+        "binary": "001000",
+        "wheel_position": 27,
+        "start": "28°15' Gemini",
+        "start_arcseconds": 317700,
+        "opposite_gate": 10,
+        "centre": "G",
+        "lower_trigram": "Mountain",
+        "upper_trigram": "Earth"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-52",
+      "number": 52,
+      "name": "Gate 52 · Keeping Still, Mountain",
+      "symbol": "䷳",
+      "category": "gate",
+      "sort_order": 30,
+      "keywords": [
+        "gate",
+        "root-centre",
+        "mountain-mountain"
+      ],
+      "sections": {
+        "The figure": "Hexagram 52 (King Wen order), Gèn 艮: Mountain above, Mountain below. Lines from the bottom: 001001 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 28 of 64, counting from gate 41. It begins at 3°52'30\" Cancer and ends at 9°30' Cancer.",
+        "Opposite gate": "Gate 58, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Root centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 52,
+        "binary": "001001",
+        "wheel_position": 28,
+        "start": "3°52'30\" Cancer",
+        "start_arcseconds": 337950,
+        "opposite_gate": 58,
+        "centre": "Root",
+        "lower_trigram": "Mountain",
+        "upper_trigram": "Mountain"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-39",
+      "number": 39,
+      "name": "Gate 39 · Obstruction",
+      "symbol": "䷦",
+      "category": "gate",
+      "sort_order": 31,
+      "keywords": [
+        "gate",
+        "root-centre",
+        "mountain-water"
+      ],
+      "sections": {
+        "The figure": "Hexagram 39 (King Wen order), Jiǎn 蹇: Water above, Mountain below. Lines from the bottom: 001010 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 29 of 64, counting from gate 41. It begins at 9°30' Cancer and ends at 15°07'30\" Cancer.",
+        "Opposite gate": "Gate 38, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Root centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 39,
+        "binary": "001010",
+        "wheel_position": 29,
+        "start": "9°30' Cancer",
+        "start_arcseconds": 358200,
+        "opposite_gate": 38,
+        "centre": "Root",
+        "lower_trigram": "Mountain",
+        "upper_trigram": "Water"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-53",
+      "number": 53,
+      "name": "Gate 53 · Development (Gradual Progress)",
+      "symbol": "䷴",
+      "category": "gate",
+      "sort_order": 32,
+      "keywords": [
+        "gate",
+        "root-centre",
+        "mountain-wind"
+      ],
+      "sections": {
+        "The figure": "Hexagram 53 (King Wen order), Jiàn 漸: Wind above, Mountain below. Lines from the bottom: 001011 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 30 of 64, counting from gate 41. It begins at 15°07'30\" Cancer and ends at 20°45' Cancer.",
+        "Opposite gate": "Gate 54, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Root centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 53,
+        "binary": "001011",
+        "wheel_position": 30,
+        "start": "15°07'30\" Cancer",
+        "start_arcseconds": 378450,
+        "opposite_gate": 54,
+        "centre": "Root",
+        "lower_trigram": "Mountain",
+        "upper_trigram": "Wind"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-62",
+      "number": 62,
+      "name": "Gate 62 · Preponderance of the Small",
+      "symbol": "䷽",
+      "category": "gate",
+      "sort_order": 33,
+      "keywords": [
+        "gate",
+        "throat-centre",
+        "mountain-thunder"
+      ],
+      "sections": {
+        "The figure": "Hexagram 62 (King Wen order), Xiǎo Guò 小過: Thunder above, Mountain below. Lines from the bottom: 001100 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 31 of 64, counting from gate 41. It begins at 20°45' Cancer and ends at 26°22'30\" Cancer.",
+        "Opposite gate": "Gate 61, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Throat centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 62,
+        "binary": "001100",
+        "wheel_position": 31,
+        "start": "20°45' Cancer",
+        "start_arcseconds": 398700,
+        "opposite_gate": 61,
+        "centre": "Throat",
+        "lower_trigram": "Mountain",
+        "upper_trigram": "Thunder"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-56",
+      "number": 56,
+      "name": "Gate 56 · The Wanderer",
+      "symbol": "䷷",
+      "category": "gate",
+      "sort_order": 34,
+      "keywords": [
+        "gate",
+        "throat-centre",
+        "mountain-fire"
+      ],
+      "sections": {
+        "The figure": "Hexagram 56 (King Wen order), Lǚ 旅: Fire above, Mountain below. Lines from the bottom: 001101 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 32 of 64, counting from gate 41. It begins at 26°22'30\" Cancer and ends at 2°00' Leo.",
+        "Opposite gate": "Gate 60, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Throat centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 56,
+        "binary": "001101",
+        "wheel_position": 32,
+        "start": "26°22'30\" Cancer",
+        "start_arcseconds": 418950,
+        "opposite_gate": 60,
+        "centre": "Throat",
+        "lower_trigram": "Mountain",
+        "upper_trigram": "Fire"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-31",
+      "number": 31,
+      "name": "Gate 31 · Influence (Wooing)",
+      "symbol": "䷞",
+      "category": "gate",
+      "sort_order": 35,
+      "keywords": [
+        "gate",
+        "throat-centre",
+        "mountain-lake"
+      ],
+      "sections": {
+        "The figure": "Hexagram 31 (King Wen order), Xián 咸: Lake above, Mountain below. Lines from the bottom: 001110 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 33 of 64, counting from gate 41. It begins at 2°00' Leo and ends at 7°37'30\" Leo.",
+        "Opposite gate": "Gate 41, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Throat centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 31,
+        "binary": "001110",
+        "wheel_position": 33,
+        "start": "2°00' Leo",
+        "start_arcseconds": 439200,
+        "opposite_gate": 41,
+        "centre": "Throat",
+        "lower_trigram": "Mountain",
+        "upper_trigram": "Lake"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-33",
+      "number": 33,
+      "name": "Gate 33 · Retreat",
+      "symbol": "䷠",
+      "category": "gate",
+      "sort_order": 36,
+      "keywords": [
+        "gate",
+        "throat-centre",
+        "mountain-heaven"
+      ],
+      "sections": {
+        "The figure": "Hexagram 33 (King Wen order), Dùn 遯: Heaven above, Mountain below. Lines from the bottom: 001111 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 34 of 64, counting from gate 41. It begins at 7°37'30\" Leo and ends at 13°15' Leo.",
+        "Opposite gate": "Gate 19, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Throat centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 33,
+        "binary": "001111",
+        "wheel_position": 34,
+        "start": "7°37'30\" Leo",
+        "start_arcseconds": 459450,
+        "opposite_gate": 19,
+        "centre": "Throat",
+        "lower_trigram": "Mountain",
+        "upper_trigram": "Heaven"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-7",
+      "number": 7,
+      "name": "Gate 7 · The Army",
+      "symbol": "䷆",
+      "category": "gate",
+      "sort_order": 37,
+      "keywords": [
+        "gate",
+        "g-centre",
+        "water-earth"
+      ],
+      "sections": {
+        "The figure": "Hexagram 7 (King Wen order), Shī 師: Earth above, Water below. Lines from the bottom: 010000 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 35 of 64, counting from gate 41. It begins at 13°15' Leo and ends at 18°52'30\" Leo.",
+        "Opposite gate": "Gate 13, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The G centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 7,
+        "binary": "010000",
+        "wheel_position": 35,
+        "start": "13°15' Leo",
+        "start_arcseconds": 479700,
+        "opposite_gate": 13,
+        "centre": "G",
+        "lower_trigram": "Water",
+        "upper_trigram": "Earth"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-4",
+      "number": 4,
+      "name": "Gate 4 · Youthful Folly",
+      "symbol": "䷃",
+      "category": "gate",
+      "sort_order": 38,
+      "keywords": [
+        "gate",
+        "ajna-centre",
+        "water-mountain"
+      ],
+      "sections": {
+        "The figure": "Hexagram 4 (King Wen order), Méng 蒙: Mountain above, Water below. Lines from the bottom: 010001 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 36 of 64, counting from gate 41. It begins at 18°52'30\" Leo and ends at 24°30' Leo.",
+        "Opposite gate": "Gate 49, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Ajna centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 4,
+        "binary": "010001",
+        "wheel_position": 36,
+        "start": "18°52'30\" Leo",
+        "start_arcseconds": 499950,
+        "opposite_gate": 49,
+        "centre": "Ajna",
+        "lower_trigram": "Water",
+        "upper_trigram": "Mountain"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-29",
+      "number": 29,
+      "name": "Gate 29 · The Abysmal (Water)",
+      "symbol": "䷜",
+      "category": "gate",
+      "sort_order": 39,
+      "keywords": [
+        "gate",
+        "sacral-centre",
+        "water-water"
+      ],
+      "sections": {
+        "The figure": "Hexagram 29 (King Wen order), Kǎn 坎: Water above, Water below. Lines from the bottom: 010010 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 37 of 64, counting from gate 41. It begins at 24°30' Leo and ends at 0°07'30\" Virgo.",
+        "Opposite gate": "Gate 30, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Sacral centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 29,
+        "binary": "010010",
+        "wheel_position": 37,
+        "start": "24°30' Leo",
+        "start_arcseconds": 520200,
+        "opposite_gate": 30,
+        "centre": "Sacral",
+        "lower_trigram": "Water",
+        "upper_trigram": "Water"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-59",
+      "number": 59,
+      "name": "Gate 59 · Dispersion [Dissolution]",
+      "symbol": "䷺",
+      "category": "gate",
+      "sort_order": 40,
+      "keywords": [
+        "gate",
+        "sacral-centre",
+        "water-wind"
+      ],
+      "sections": {
+        "The figure": "Hexagram 59 (King Wen order), Huàn 渙: Wind above, Water below. Lines from the bottom: 010011 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 38 of 64, counting from gate 41. It begins at 0°07'30\" Virgo and ends at 5°45' Virgo.",
+        "Opposite gate": "Gate 55, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Sacral centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 59,
+        "binary": "010011",
+        "wheel_position": 38,
+        "start": "0°07'30\" Virgo",
+        "start_arcseconds": 540450,
+        "opposite_gate": 55,
+        "centre": "Sacral",
+        "lower_trigram": "Water",
+        "upper_trigram": "Wind"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-40",
+      "number": 40,
+      "name": "Gate 40 · Deliverance",
+      "symbol": "䷧",
+      "category": "gate",
+      "sort_order": 41,
+      "keywords": [
+        "gate",
+        "heart-centre",
+        "water-thunder"
+      ],
+      "sections": {
+        "The figure": "Hexagram 40 (King Wen order), Xiè 解: Thunder above, Water below. Lines from the bottom: 010100 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 39 of 64, counting from gate 41. It begins at 5°45' Virgo and ends at 11°22'30\" Virgo.",
+        "Opposite gate": "Gate 37, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Heart centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 40,
+        "binary": "010100",
+        "wheel_position": 39,
+        "start": "5°45' Virgo",
+        "start_arcseconds": 560700,
+        "opposite_gate": 37,
+        "centre": "Heart",
+        "lower_trigram": "Water",
+        "upper_trigram": "Thunder"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-64",
+      "number": 64,
+      "name": "Gate 64 · Before Completion",
+      "symbol": "䷿",
+      "category": "gate",
+      "sort_order": 42,
+      "keywords": [
+        "gate",
+        "head-centre",
+        "water-fire"
+      ],
+      "sections": {
+        "The figure": "Hexagram 64 (King Wen order), Wèi Jì 未濟: Fire above, Water below. Lines from the bottom: 010101 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 40 of 64, counting from gate 41. It begins at 11°22'30\" Virgo and ends at 17°00' Virgo.",
+        "Opposite gate": "Gate 63, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Head centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 64,
+        "binary": "010101",
+        "wheel_position": 40,
+        "start": "11°22'30\" Virgo",
+        "start_arcseconds": 580950,
+        "opposite_gate": 63,
+        "centre": "Head",
+        "lower_trigram": "Water",
+        "upper_trigram": "Fire"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-47",
+      "number": 47,
+      "name": "Gate 47 · Oppression (Exhaustion)",
+      "symbol": "䷮",
+      "category": "gate",
+      "sort_order": 43,
+      "keywords": [
+        "gate",
+        "ajna-centre",
+        "water-lake"
+      ],
+      "sections": {
+        "The figure": "Hexagram 47 (King Wen order), Kùn 困: Lake above, Water below. Lines from the bottom: 010110 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 41 of 64, counting from gate 41. It begins at 17°00' Virgo and ends at 22°37'30\" Virgo.",
+        "Opposite gate": "Gate 22, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Ajna centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 47,
+        "binary": "010110",
+        "wheel_position": 41,
+        "start": "17°00' Virgo",
+        "start_arcseconds": 601200,
+        "opposite_gate": 22,
+        "centre": "Ajna",
+        "lower_trigram": "Water",
+        "upper_trigram": "Lake"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-6",
+      "number": 6,
+      "name": "Gate 6 · Conflict",
+      "symbol": "䷅",
+      "category": "gate",
+      "sort_order": 44,
+      "keywords": [
+        "gate",
+        "solar-plexus-centre",
+        "water-heaven"
+      ],
+      "sections": {
+        "The figure": "Hexagram 6 (King Wen order), Sòng 訟: Heaven above, Water below. Lines from the bottom: 010111 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 42 of 64, counting from gate 41. It begins at 22°37'30\" Virgo and ends at 28°15' Virgo.",
+        "Opposite gate": "Gate 36, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Solar Plexus centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 6,
+        "binary": "010111",
+        "wheel_position": 42,
+        "start": "22°37'30\" Virgo",
+        "start_arcseconds": 621450,
+        "opposite_gate": 36,
+        "centre": "Solar Plexus",
+        "lower_trigram": "Water",
+        "upper_trigram": "Heaven"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-46",
+      "number": 46,
+      "name": "Gate 46 · Pushing Upward",
+      "symbol": "䷭",
+      "category": "gate",
+      "sort_order": 45,
+      "keywords": [
+        "gate",
+        "g-centre",
+        "wind-earth"
+      ],
+      "sections": {
+        "The figure": "Hexagram 46 (King Wen order), Shēng 升: Earth above, Wind below. Lines from the bottom: 011000 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 43 of 64, counting from gate 41. It begins at 28°15' Virgo and ends at 3°52'30\" Libra.",
+        "Opposite gate": "Gate 25, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The G centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 46,
+        "binary": "011000",
+        "wheel_position": 43,
+        "start": "28°15' Virgo",
+        "start_arcseconds": 641700,
+        "opposite_gate": 25,
+        "centre": "G",
+        "lower_trigram": "Wind",
+        "upper_trigram": "Earth"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-18",
+      "number": 18,
+      "name": "Gate 18 · Work on what has been spoiled [Decay]",
+      "symbol": "䷑",
+      "category": "gate",
+      "sort_order": 46,
+      "keywords": [
+        "gate",
+        "spleen-centre",
+        "wind-mountain"
+      ],
+      "sections": {
+        "The figure": "Hexagram 18 (King Wen order), Gǔ 蠱: Mountain above, Wind below. Lines from the bottom: 011001 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 44 of 64, counting from gate 41. It begins at 3°52'30\" Libra and ends at 9°30' Libra.",
+        "Opposite gate": "Gate 17, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Spleen centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 18,
+        "binary": "011001",
+        "wheel_position": 44,
+        "start": "3°52'30\" Libra",
+        "start_arcseconds": 661950,
+        "opposite_gate": 17,
+        "centre": "Spleen",
+        "lower_trigram": "Wind",
+        "upper_trigram": "Mountain"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-48",
+      "number": 48,
+      "name": "Gate 48 · The Well",
+      "symbol": "䷯",
+      "category": "gate",
+      "sort_order": 47,
+      "keywords": [
+        "gate",
+        "spleen-centre",
+        "wind-water"
+      ],
+      "sections": {
+        "The figure": "Hexagram 48 (King Wen order), Jǐng 井: Water above, Wind below. Lines from the bottom: 011010 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 45 of 64, counting from gate 41. It begins at 9°30' Libra and ends at 15°07'30\" Libra.",
+        "Opposite gate": "Gate 21, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Spleen centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 48,
+        "binary": "011010",
+        "wheel_position": 45,
+        "start": "9°30' Libra",
+        "start_arcseconds": 682200,
+        "opposite_gate": 21,
+        "centre": "Spleen",
+        "lower_trigram": "Wind",
+        "upper_trigram": "Water"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-57",
+      "number": 57,
+      "name": "Gate 57 · The Gentle (The Penetrating, Wind)",
+      "symbol": "䷸",
+      "category": "gate",
+      "sort_order": 48,
+      "keywords": [
+        "gate",
+        "spleen-centre",
+        "wind-wind"
+      ],
+      "sections": {
+        "The figure": "Hexagram 57 (King Wen order), Xùn 巽: Wind above, Wind below. Lines from the bottom: 011011 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 46 of 64, counting from gate 41. It begins at 15°07'30\" Libra and ends at 20°45' Libra.",
+        "Opposite gate": "Gate 51, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Spleen centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 57,
+        "binary": "011011",
+        "wheel_position": 46,
+        "start": "15°07'30\" Libra",
+        "start_arcseconds": 702450,
+        "opposite_gate": 51,
+        "centre": "Spleen",
+        "lower_trigram": "Wind",
+        "upper_trigram": "Wind"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-32",
+      "number": 32,
+      "name": "Gate 32 · Duration",
+      "symbol": "䷟",
+      "category": "gate",
+      "sort_order": 49,
+      "keywords": [
+        "gate",
+        "spleen-centre",
+        "wind-thunder"
+      ],
+      "sections": {
+        "The figure": "Hexagram 32 (King Wen order), Héng 恆: Thunder above, Wind below. Lines from the bottom: 011100 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 47 of 64, counting from gate 41. It begins at 20°45' Libra and ends at 26°22'30\" Libra.",
+        "Opposite gate": "Gate 42, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Spleen centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 32,
+        "binary": "011100",
+        "wheel_position": 47,
+        "start": "20°45' Libra",
+        "start_arcseconds": 722700,
+        "opposite_gate": 42,
+        "centre": "Spleen",
+        "lower_trigram": "Wind",
+        "upper_trigram": "Thunder"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-50",
+      "number": 50,
+      "name": "Gate 50 · The Caldron",
+      "symbol": "䷱",
+      "category": "gate",
+      "sort_order": 50,
+      "keywords": [
+        "gate",
+        "spleen-centre",
+        "wind-fire"
+      ],
+      "sections": {
+        "The figure": "Hexagram 50 (King Wen order), Dǐng 鼎: Fire above, Wind below. Lines from the bottom: 011101 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 48 of 64, counting from gate 41. It begins at 26°22'30\" Libra and ends at 2°00' Scorpio.",
+        "Opposite gate": "Gate 3, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Spleen centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 50,
+        "binary": "011101",
+        "wheel_position": 48,
+        "start": "26°22'30\" Libra",
+        "start_arcseconds": 742950,
+        "opposite_gate": 3,
+        "centre": "Spleen",
+        "lower_trigram": "Wind",
+        "upper_trigram": "Fire"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-28",
+      "number": 28,
+      "name": "Gate 28 · Preponderance of the Great",
+      "symbol": "䷛",
+      "category": "gate",
+      "sort_order": 51,
+      "keywords": [
+        "gate",
+        "spleen-centre",
+        "wind-lake"
+      ],
+      "sections": {
+        "The figure": "Hexagram 28 (King Wen order), Dà Guò 大過: Lake above, Wind below. Lines from the bottom: 011110 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 49 of 64, counting from gate 41. It begins at 2°00' Scorpio and ends at 7°37'30\" Scorpio.",
+        "Opposite gate": "Gate 27, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Spleen centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 28,
+        "binary": "011110",
+        "wheel_position": 49,
+        "start": "2°00' Scorpio",
+        "start_arcseconds": 763200,
+        "opposite_gate": 27,
+        "centre": "Spleen",
+        "lower_trigram": "Wind",
+        "upper_trigram": "Lake"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-44",
+      "number": 44,
+      "name": "Gate 44 · Coming to Meet",
+      "symbol": "䷫",
+      "category": "gate",
+      "sort_order": 52,
+      "keywords": [
+        "gate",
+        "spleen-centre",
+        "wind-heaven"
+      ],
+      "sections": {
+        "The figure": "Hexagram 44 (King Wen order), Gòu 姤: Heaven above, Wind below. Lines from the bottom: 011111 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 50 of 64, counting from gate 41. It begins at 7°37'30\" Scorpio and ends at 13°15' Scorpio.",
+        "Opposite gate": "Gate 24, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Spleen centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 44,
+        "binary": "011111",
+        "wheel_position": 50,
+        "start": "7°37'30\" Scorpio",
+        "start_arcseconds": 783450,
+        "opposite_gate": 24,
+        "centre": "Spleen",
+        "lower_trigram": "Wind",
+        "upper_trigram": "Heaven"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-1",
+      "number": 1,
+      "name": "Gate 1 · The Creative",
+      "symbol": "䷀",
+      "category": "gate",
+      "sort_order": 53,
+      "keywords": [
+        "gate",
+        "g-centre",
+        "heaven-heaven"
+      ],
+      "sections": {
+        "The figure": "Hexagram 1 (King Wen order), Qián 乾: Heaven above, Heaven below. Lines from the bottom: 111111 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 51 of 64, counting from gate 41. It begins at 13°15' Scorpio and ends at 18°52'30\" Scorpio.",
+        "Opposite gate": "Gate 2, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The G centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 1,
+        "binary": "111111",
+        "wheel_position": 51,
+        "start": "13°15' Scorpio",
+        "start_arcseconds": 803700,
+        "opposite_gate": 2,
+        "centre": "G",
+        "lower_trigram": "Heaven",
+        "upper_trigram": "Heaven"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-43",
+      "number": 43,
+      "name": "Gate 43 · Break-through (Resoluteness)",
+      "symbol": "䷪",
+      "category": "gate",
+      "sort_order": 54,
+      "keywords": [
+        "gate",
+        "ajna-centre",
+        "heaven-lake"
+      ],
+      "sections": {
+        "The figure": "Hexagram 43 (King Wen order), Guài 夬: Lake above, Heaven below. Lines from the bottom: 111110 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 52 of 64, counting from gate 41. It begins at 18°52'30\" Scorpio and ends at 24°30' Scorpio.",
+        "Opposite gate": "Gate 23, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Ajna centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 43,
+        "binary": "111110",
+        "wheel_position": 52,
+        "start": "18°52'30\" Scorpio",
+        "start_arcseconds": 823950,
+        "opposite_gate": 23,
+        "centre": "Ajna",
+        "lower_trigram": "Heaven",
+        "upper_trigram": "Lake"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-14",
+      "number": 14,
+      "name": "Gate 14 · Possession in Great Measure",
+      "symbol": "䷍",
+      "category": "gate",
+      "sort_order": 55,
+      "keywords": [
+        "gate",
+        "sacral-centre",
+        "heaven-fire"
+      ],
+      "sections": {
+        "The figure": "Hexagram 14 (King Wen order), Dà Yǒu 大有: Fire above, Heaven below. Lines from the bottom: 111101 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 53 of 64, counting from gate 41. It begins at 24°30' Scorpio and ends at 0°07'30\" Sagittarius.",
+        "Opposite gate": "Gate 8, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Sacral centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 14,
+        "binary": "111101",
+        "wheel_position": 53,
+        "start": "24°30' Scorpio",
+        "start_arcseconds": 844200,
+        "opposite_gate": 8,
+        "centre": "Sacral",
+        "lower_trigram": "Heaven",
+        "upper_trigram": "Fire"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-34",
+      "number": 34,
+      "name": "Gate 34 · The Power of the Great",
+      "symbol": "䷡",
+      "category": "gate",
+      "sort_order": 56,
+      "keywords": [
+        "gate",
+        "sacral-centre",
+        "heaven-thunder"
+      ],
+      "sections": {
+        "The figure": "Hexagram 34 (King Wen order), Dà Zhuàng 大壯: Thunder above, Heaven below. Lines from the bottom: 111100 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 54 of 64, counting from gate 41. It begins at 0°07'30\" Sagittarius and ends at 5°45' Sagittarius.",
+        "Opposite gate": "Gate 20, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Sacral centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 34,
+        "binary": "111100",
+        "wheel_position": 54,
+        "start": "0°07'30\" Sagittarius",
+        "start_arcseconds": 864450,
+        "opposite_gate": 20,
+        "centre": "Sacral",
+        "lower_trigram": "Heaven",
+        "upper_trigram": "Thunder"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-9",
+      "number": 9,
+      "name": "Gate 9 · The Taming Power of the Small",
+      "symbol": "䷈",
+      "category": "gate",
+      "sort_order": 57,
+      "keywords": [
+        "gate",
+        "sacral-centre",
+        "heaven-wind"
+      ],
+      "sections": {
+        "The figure": "Hexagram 9 (King Wen order), Xiǎo Xù 小畜: Wind above, Heaven below. Lines from the bottom: 111011 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 55 of 64, counting from gate 41. It begins at 5°45' Sagittarius and ends at 11°22'30\" Sagittarius.",
+        "Opposite gate": "Gate 16, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Sacral centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 9,
+        "binary": "111011",
+        "wheel_position": 55,
+        "start": "5°45' Sagittarius",
+        "start_arcseconds": 884700,
+        "opposite_gate": 16,
+        "centre": "Sacral",
+        "lower_trigram": "Heaven",
+        "upper_trigram": "Wind"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-5",
+      "number": 5,
+      "name": "Gate 5 · Waiting (Nourishment)",
+      "symbol": "䷄",
+      "category": "gate",
+      "sort_order": 58,
+      "keywords": [
+        "gate",
+        "sacral-centre",
+        "heaven-water"
+      ],
+      "sections": {
+        "The figure": "Hexagram 5 (King Wen order), Xū 需: Water above, Heaven below. Lines from the bottom: 111010 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 56 of 64, counting from gate 41. It begins at 11°22'30\" Sagittarius and ends at 17°00' Sagittarius.",
+        "Opposite gate": "Gate 35, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Sacral centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 5,
+        "binary": "111010",
+        "wheel_position": 56,
+        "start": "11°22'30\" Sagittarius",
+        "start_arcseconds": 904950,
+        "opposite_gate": 35,
+        "centre": "Sacral",
+        "lower_trigram": "Heaven",
+        "upper_trigram": "Water"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-26",
+      "number": 26,
+      "name": "Gate 26 · The Taming Power of the Great",
+      "symbol": "䷙",
+      "category": "gate",
+      "sort_order": 59,
+      "keywords": [
+        "gate",
+        "heart-centre",
+        "heaven-mountain"
+      ],
+      "sections": {
+        "The figure": "Hexagram 26 (King Wen order), Dà Xù 大畜: Mountain above, Heaven below. Lines from the bottom: 111001 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 57 of 64, counting from gate 41. It begins at 17°00' Sagittarius and ends at 22°37'30\" Sagittarius.",
+        "Opposite gate": "Gate 45, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Heart centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 26,
+        "binary": "111001",
+        "wheel_position": 57,
+        "start": "17°00' Sagittarius",
+        "start_arcseconds": 925200,
+        "opposite_gate": 45,
+        "centre": "Heart",
+        "lower_trigram": "Heaven",
+        "upper_trigram": "Mountain"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-11",
+      "number": 11,
+      "name": "Gate 11 · Peace",
+      "symbol": "䷊",
+      "category": "gate",
+      "sort_order": 60,
+      "keywords": [
+        "gate",
+        "ajna-centre",
+        "heaven-earth"
+      ],
+      "sections": {
+        "The figure": "Hexagram 11 (King Wen order), Tài 泰: Earth above, Heaven below. Lines from the bottom: 111000 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 58 of 64, counting from gate 41. It begins at 22°37'30\" Sagittarius and ends at 28°15' Sagittarius.",
+        "Opposite gate": "Gate 12, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Ajna centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 11,
+        "binary": "111000",
+        "wheel_position": 58,
+        "start": "22°37'30\" Sagittarius",
+        "start_arcseconds": 945450,
+        "opposite_gate": 12,
+        "centre": "Ajna",
+        "lower_trigram": "Heaven",
+        "upper_trigram": "Earth"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-10",
+      "number": 10,
+      "name": "Gate 10 · Treading [Conduct]",
+      "symbol": "䷉",
+      "category": "gate",
+      "sort_order": 61,
+      "keywords": [
+        "gate",
+        "g-centre",
+        "lake-heaven"
+      ],
+      "sections": {
+        "The figure": "Hexagram 10 (King Wen order), Lǚ 履: Heaven above, Lake below. Lines from the bottom: 110111 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 59 of 64, counting from gate 41. It begins at 28°15' Sagittarius and ends at 3°52'30\" Capricorn.",
+        "Opposite gate": "Gate 15, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The G centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 10,
+        "binary": "110111",
+        "wheel_position": 59,
+        "start": "28°15' Sagittarius",
+        "start_arcseconds": 965700,
+        "opposite_gate": 15,
+        "centre": "G",
+        "lower_trigram": "Lake",
+        "upper_trigram": "Heaven"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-58",
+      "number": 58,
+      "name": "Gate 58 · The Joyous, Lake",
+      "symbol": "䷹",
+      "category": "gate",
+      "sort_order": 62,
+      "keywords": [
+        "gate",
+        "root-centre",
+        "lake-lake"
+      ],
+      "sections": {
+        "The figure": "Hexagram 58 (King Wen order), Duì 兌: Lake above, Lake below. Lines from the bottom: 110110 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 60 of 64, counting from gate 41. It begins at 3°52'30\" Capricorn and ends at 9°30' Capricorn.",
+        "Opposite gate": "Gate 52, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Root centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 58,
+        "binary": "110110",
+        "wheel_position": 60,
+        "start": "3°52'30\" Capricorn",
+        "start_arcseconds": 985950,
+        "opposite_gate": 52,
+        "centre": "Root",
+        "lower_trigram": "Lake",
+        "upper_trigram": "Lake"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-38",
+      "number": 38,
+      "name": "Gate 38 · Opposition",
+      "symbol": "䷥",
+      "category": "gate",
+      "sort_order": 63,
+      "keywords": [
+        "gate",
+        "root-centre",
+        "lake-fire"
+      ],
+      "sections": {
+        "The figure": "Hexagram 38 (King Wen order), Kuí 睽: Fire above, Lake below. Lines from the bottom: 110101 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 61 of 64, counting from gate 41. It begins at 9°30' Capricorn and ends at 15°07'30\" Capricorn.",
+        "Opposite gate": "Gate 39, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Root centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 38,
+        "binary": "110101",
+        "wheel_position": 61,
+        "start": "9°30' Capricorn",
+        "start_arcseconds": 1006200,
+        "opposite_gate": 39,
+        "centre": "Root",
+        "lower_trigram": "Lake",
+        "upper_trigram": "Fire"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-54",
+      "number": 54,
+      "name": "Gate 54 · The Marrying Maiden",
+      "symbol": "䷵",
+      "category": "gate",
+      "sort_order": 64,
+      "keywords": [
+        "gate",
+        "root-centre",
+        "lake-thunder"
+      ],
+      "sections": {
+        "The figure": "Hexagram 54 (King Wen order), Guī Mèi 歸妹: Thunder above, Lake below. Lines from the bottom: 110100 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 62 of 64, counting from gate 41. It begins at 15°07'30\" Capricorn and ends at 20°45' Capricorn.",
+        "Opposite gate": "Gate 53, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Root centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 54,
+        "binary": "110100",
+        "wheel_position": 62,
+        "start": "15°07'30\" Capricorn",
+        "start_arcseconds": 1026450,
+        "opposite_gate": 53,
+        "centre": "Root",
+        "lower_trigram": "Lake",
+        "upper_trigram": "Thunder"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-61",
+      "number": 61,
+      "name": "Gate 61 · Inner Truth",
+      "symbol": "䷼",
+      "category": "gate",
+      "sort_order": 65,
+      "keywords": [
+        "gate",
+        "head-centre",
+        "lake-wind"
+      ],
+      "sections": {
+        "The figure": "Hexagram 61 (King Wen order), Zhōng Fú 中孚: Wind above, Lake below. Lines from the bottom: 110011 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 63 of 64, counting from gate 41. It begins at 20°45' Capricorn and ends at 26°22'30\" Capricorn.",
+        "Opposite gate": "Gate 62, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Head centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 61,
+        "binary": "110011",
+        "wheel_position": 63,
+        "start": "20°45' Capricorn",
+        "start_arcseconds": 1046700,
+        "opposite_gate": 62,
+        "centre": "Head",
+        "lower_trigram": "Lake",
+        "upper_trigram": "Wind"
+      },
+      "image_url": null
+    },
+    {
+      "id": "gate-60",
+      "number": 60,
+      "name": "Gate 60 · Limitation",
+      "symbol": "䷻",
+      "category": "gate",
+      "sort_order": 66,
+      "keywords": [
+        "gate",
+        "root-centre",
+        "lake-water"
+      ],
+      "sections": {
+        "The figure": "Hexagram 60 (King Wen order), Jié 節: Water above, Lake below. Lines from the bottom: 110010 (1 solid, 0 broken).",
+        "Place on the wheel": "Number 64 of 64, counting from gate 41. It begins at 26°22'30\" Capricorn and ends at 2°00' Aquarius.",
+        "Opposite gate": "Gate 56, directly across the wheel. Its figure is this one with every line flipped.",
+        "Centre": "The Root centre. This is the system's own assignment of gates to its nine centres."
+      },
+      "metadata": {
+        "number": 60,
+        "binary": "110010",
+        "wheel_position": 64,
+        "start": "26°22'30\" Capricorn",
+        "start_arcseconds": 1066950,
+        "opposite_gate": 56,
+        "centre": "Root",
+        "lower_trigram": "Lake",
+        "upper_trigram": "Water"
+      },
+      "image_url": null
+    }
+  ]
+}

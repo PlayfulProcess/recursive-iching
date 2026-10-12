@@ -52,6 +52,8 @@ BRANCH_OF = {
     "three-lenses-64":        "synthesis",
     "repair-iching":          "readings",
     "tree-of-the-iching":     "history",
+    "schools-of-the-iching":  "history",
+    "hd-mandala-wheel":       "synthesis",
 }
 
 # slug -> (sortable year, display label, provenance). Only the classical text itself
