@@ -19,15 +19,25 @@
     "_note": "The partner header and footer recursive.eco draws around its previews of this collection (recursive-eco apps/landing/docs/grammar-format.md, \"A partner's header and footer\"). Colours and font match theme.css's zen look (Oct 6 2026): rice paper, sumi ink, seal red, Shippori Mincho. No logo: a logo must be an image uploaded to recursive.eco, and recursive.eco's own spiral leads every header anyway.",
     "name": "The Recursive I Ching",
     "home": "https://iching.recursive.eco/",
-    "colors": { "background": "#f3efe6", "text": "#1c1a17", "accent": "#9c3b2a" },
+    "colors": {
+      "background": "#f3efe6",
+      "text": "#1c1a17",
+      "accent": "#9c3b2a"
+    },
     "font": "Shippori Mincho"
   },
   "grammars": {
-    "paths": ["grammars/*/grammar.json"],
+    "paths": [
+      "grammars/*/grammar.json"
+    ],
     "exclude": [],
     "_exclude_note": "All four grammars in this repo are real, castable/readable content — none are generated meta or reference-only apparatus, so nothing is excluded (unlike tarot's all-decks-many-lenses / tree-of-tarot / people-of-tarot / books-of-tarot, which are meta grammars this repo has no equivalent of yet).",
     "id_map": "ids.json"
   },
-  "maintainers": ["pp@playfulprocess.com"],
-  "default_branch": "main"
+  "maintainers": [
+    "pp@playfulprocess.com"
+  ],
+  "default_branch": "main",
+  "source_of_truth": "repo",
+  "_source_of_truth_note": "Oct 12 2026 (PlayfulProcess: the I Ching collection works like recursive-tarot and recursive-learning, repo first): the GitHub link in recursive.eco (Create -> Import -> From GitHub -> Link a repo) reads this and makes the repo canonical; app edits come back as pull requests."
 }
