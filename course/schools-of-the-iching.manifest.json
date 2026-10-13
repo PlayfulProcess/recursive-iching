@@ -1,0 +1,25 @@
+{
+  "_note": "Course manifest for 'Schools of the I Ching'. Read by pages/course-viewer.html?course=schools-of-the-iching. Chapters come from grammars/schools-of-the-iching/grammar.json; edit the grammar, not this file.",
+  "title": "Schools of the I Ching",
+  "kicker": "The Recursive I Ching · how each school reads the same line",
+  "description": "Classical Confucian, images and numbers, Zhu Xi, Daoist inner alchemy, early Zhou philology, Jung, Human Design and the Gene Keys: who and when, the method, the key books and their licences, and one line (43.3 changing to 58) read each way.",
+  "sourceGrammar": "schools-of-the-iching",
+  "chapterIdPrefix": "",
+  "appendixIdPrefix": "none-",
+  "appendixTitle": "Appendix",
+  "appendixIntro": "",
+  "sectionOrder": [
+    "Who and when",
+    "Method",
+    "What it stresses",
+    "Example: 43.3 to 58",
+    "Key books",
+    "Licence note on Wilhelm",
+    "Licence and trademark",
+    "Public-domain full text",
+    "Fact or reading"
+  ],
+  "appendixSectionOrder": [],
+  "companions": {},
+  "draft": "This reference is a draft. Each example reading is an illustration of a school's method written for this library; it does not summarise what a named commentator wrote about this line. Human Design and the Gene Keys are described by structure only."
+}

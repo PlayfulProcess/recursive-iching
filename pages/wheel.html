@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Wheel: the 64 hexagrams on the zodiac — The Recursive I Ching</title>
+<meta name="description" content="The 64 hexagrams laid round the zodiac in the Fu Xi circle order, at their true degrees, with each gate's opposite. Facts only.">
+<link rel="stylesheet" href="../theme.css?v=4">
+<style>
+  /* Layout only: every colour comes from theme.css, except the nine centre hues below (a categorical key, not chrome). */
+  html,body{margin:0;background:var(--bg);color:var(--ink);color-scheme:light;
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+  .wrap{max-width:1180px;margin:0 auto;padding:24px 18px 70px}
+  .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
+  h1{font-family:var(--serif-display);font-weight:600;letter-spacing:.02em;font-size:30px;line-height:1.2;margin:8px 0 10px}
+  .lede{max-width:70ch;font-family:var(--serif-body);font-size:16.5px;line-height:1.7;margin:0 0 18px}
+  .stage{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:26px;align-items:start}
+  @media (max-width:900px){ .stage{grid-template-columns:1fr} }
+  .wheelbox{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:8px}
+  svg#wheel{display:block;width:100%;height:auto;max-width:860px;margin:0 auto;touch-action:manipulation;user-select:none}
+  .tools{display:flex;flex-wrap:wrap;gap:6px 16px;margin:10px 4px 2px;font-size:13px;color:var(--ink-soft)}
+  .tools label{display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+  .tools select{font:inherit;font-size:13px;max-width:200px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:3px 6px}
+  .panel{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:16px 18px;position:sticky;top:78px}
+  @media (max-width:900px){ .panel{position:static} }
+  .panel h2{font-family:var(--serif-display);font-size:20px;margin:0 0 4px;color:var(--ink)}
+  .panel .sub{font-size:13px;color:var(--muted);margin:0 0 12px}
+  .panel dl{margin:0;font-size:14px}
+  .panel dt{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-top:10px}
+  .panel dd{margin:2px 0 0}
+  .pair{display:flex;gap:18px;align-items:flex-end;margin:6px 0 4px}
+  .pair figure{margin:0;text-align:center;font-size:12px;color:var(--muted)}
+  .pair svg{display:block;margin:0 auto 4px}
+  .lines{font-size:12.5px;color:var(--ink-soft);margin:6px 0 0;padding:0;list-style:none;font-variant-numeric:tabular-nums}
+  .key{margin:22px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px 14px;font-size:13px;color:var(--ink-soft)}
+  .key span.sw{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px;border:1px solid rgba(28,26,23,.25)}
+  .notes{max-width:78ch;margin:30px 0 0;font-family:var(--serif-body);font-size:15.5px;line-height:1.7}
+  .notes h2{font-family:var(--serif-display);font-size:18px;margin:22px 0 6px}
+  .notes ul{padding-left:1.2em;margin:6px 0}
+  .fine{font-size:13px;color:var(--muted);margin-top:22px;border-top:1px solid var(--line);padding-top:12px}
+  #err{color:var(--bad,#8a2a1a)}
+  .gate{cursor:pointer;outline:none}
+  .gate:focus-visible .cell{stroke:var(--seal);stroke-width:2.2}
+  .cell{fill:var(--paper);stroke:var(--line-soft);stroke-width:.6}
+  .gate:hover .cell{fill:var(--chip)}
+  .gate.sel .cell{fill:#f1d9c9;stroke:var(--seal);stroke-width:1.6}
+  .gate.opp .cell{fill:#dfe6ef;stroke:#34536f;stroke-width:1.6}
+  .gnum{font-size:10.5px;font-family:Inter,system-ui,sans-serif;fill:var(--ink);text-anchor:middle;dominant-baseline:central;pointer-events:none;font-weight:600}
+  .yang,.yin{fill:var(--ink)}
+  .gate.sel .yang,.gate.sel .yin{fill:var(--seal-deep)}
+  .glyph{font-family:"Segoe UI Symbol","Noto Sans Symbols","Noto Sans Symbols 2","DejaVu Sans",serif;font-size:20px;fill:var(--seal);text-anchor:middle;dominant-baseline:central}
+  .signname{font-size:7.5px;fill:var(--muted);text-anchor:middle;dominant-baseline:central;letter-spacing:.04em;text-transform:uppercase}
+  .deg{font-size:7px;fill:var(--muted);text-anchor:middle;dominant-baseline:central}
+  .hide{display:none}
+</style>
+</head>
+<body>
+<script src="../site-header.js?v=49"></script>
+<site-header active="wheel"></site-header>
+<div class="wrap">
+  <div class="kicker">The Recursive I Ching · an instrument</div>
+  <h1>The Wheel</h1>
+  <p class="lede">The 64 hexagrams laid round the zodiac, at their true degrees. The order round the ring is not the King Wen order (1, 2, 3 ...). It is the binary circle that Shao Yong drew in the 11th century, the Fu Xi circle, laid on the zodiac. Human Design calls these figures gates and uses this wheel; this page shows the geometry only: positions, figures and opposites. Hover or tap a gate to see its opposite.</p>
+
+  <p id="loading" class="kicker">Loading…</p>
+  <p id="err" hidden></p>
+
+  <div class="stage" id="stage" hidden>
+    <div>
+      <div class="wheelbox">
+        <svg id="wheel" viewBox="0 0 1000 1000" role="img" aria-label="The zodiac ring with the 64 hexagrams round it, in the Fu Xi circle order"></svg>
+        <div class="tools">
+          <label><input type="checkbox" id="t-centre" checked> Colour by centre</label>
+          <label><input type="checkbox" id="t-value"> Shade by binary number</label>
+          <label><input type="checkbox" id="t-lines" checked> Line ticks (56'15")</label>
+          <label><input type="checkbox" id="t-chord" checked> Draw the pair</label>
+          <label>Go to gate <select id="t-gate" aria-label="Choose a gate by number"></select></label>
+        </div>
+      </div>
+      <div class="key" id="key" aria-label="Colour key: the nine centres"></div>
+    </div>
+    <aside class="panel" id="panel" aria-live="polite">
+      <h2>Choose a gate</h2>
+      <p class="sub">Hover, tap or tab to a gate on the wheel.</p>
+    </aside>
+  </div>
+
+  <div class="notes">
+    <h2>How to read it</h2>
+    <ul>
+      <li><b>The zodiac.</b> The outer ring holds the twelve signs, Aries at the left and the signs running counter-clockwise, as in a printed chart. A degree scale runs inside it.</li>
+      <li><b>The gates.</b> Each of the 64 cells is 5°37'30" wide (360 ÷ 64). Gate 41 begins at 2°00' Aquarius, and the rest follow round the ring.</li>
+      <li><b>The figures.</b> Each cell shows its hexagram: a solid bar is a yang line, a broken bar is a yin line, with line 1 nearest the centre and line 6 outermost.</li>
+      <li><b>The binary pattern.</b> Read each figure as a six-digit binary number, bottom line as the largest digit. Going round the ring from gate 41 the number counts 49 down to 32, jumps to 0 and counts up to 31, jumps to 63 and counts down to 50. Switch on "Shade by binary number" to see the two runs. This is the Fu Xi circle.</li>
+      <li><b>The opposite.</b> The gate across the wheel is the same figure with every line flipped, solid to broken and broken to solid. The Gene Keys call such a pair "programming partners".</li>
+      <li><b>The lines.</b> Each gate divides into six lines of 56'15", and line numbers follow the degrees. Tick marks show them; select a gate to see its six ranges.</li>
+      <li><b>The colours.</b> They group the gates by the nine centres of the Human Design body chart. That grouping is the system's own rule, not part of the Zhouyi.</li>
+    </ul>
+    <h2>What is and is not here</h2>
+    <p>Everything on the wheel is a fact that can be checked: the order is the Fu Xi circle (this library's build script asserts it), the degrees are arithmetic from the start point, and the opposite is computed from the figure. What the Human Design system adds to the Fu Xi circle is where it starts and the overlay of the zodiac. No Human Design or Gene Keys text is used, and nothing here says what a gate means for a person. For the Zhouyi's own sentences, open the hexagram in the <a href="../index.html">library</a>.</p>
+    <p class="fine">Source: <code>grammars/hd-mandala-wheel/grammar.json</code>, built by <code>scripts/build_hd_wheel.py</code>. The research behind it is in <code>docs/RESEARCH-gene-keys-and-human-design-2026-10-12.md</code>.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  const NS = 'http://www.w3.org/2000/svg';
+  const $ = s => document.querySelector(s);
+  const SIGNS = ['Aries','Taurus','Gemini','Cancer','Leo','Virgo','Libra','Scorpio','Sagittarius','Capricorn','Aquarius','Pisces'];
+  const GLYPH = ['♈','♉','♊','♋','♌','♍','♎','♏','♐','♑','♒','♓'].map(g => g + '︎');
+  // The nine centres: a categorical key (Okabe-Ito based, readable together), not part of the page chrome.
+  const CENTRE = {
+    'Head': '#e8d84a', 'Ajna': '#2fa37a', 'Throat': '#62b6e8', 'G': '#2f6db0', 'Heart': '#d4622a',
+    'Spleen': '#c97fae', 'Solar Plexus': '#e3a21c', 'Sacral': '#8d6a3f', 'Root': '#8a8a85'
+  };
+  const GATE_ARC = 5.625, LINE_ARC = GATE_ARC / 6;
+  const CX = 500, CY = 500;
+  const R = { zOut: 492, zIn: 452, scaleIn: 440, gOut: 432, gIn: 336, lineOut: 334, lineIn: 322, centreOut: 320, centreIn: 308, valOut: 306, valIn: 292 };
+
+  const ang = lon => (180 + lon) * Math.PI / 180;               // ecliptic longitude -> screen angle (Aries at the left, counter-clockwise)
+  const pt = (r, lon) => [CX + r * Math.cos(ang(lon)), CY - r * Math.sin(ang(lon))];
+  const f = n => n.toFixed(2);
+  function sector(r0, r1, lon0, lon1) {
+    const [x0, y0] = pt(r1, lon0), [x1, y1] = pt(r1, lon1), [x2, y2] = pt(r0, lon1), [x3, y3] = pt(r0, lon0);
+    const large = (lon1 - lon0) > 180 ? 1 : 0;
+    // screen y is flipped: increasing longitude runs counter-clockwise on screen, i.e. sweep-flag 0
+    return `M${f(x0)} ${f(y0)} A${r1} ${r1} 0 ${large} 0 ${f(x1)} ${f(y1)} L${f(x2)} ${f(y2)} A${r0} ${r0} 0 ${large} 1 ${f(x3)} ${f(y3)} Z`;
+  }
+  const el = (name, attrs, parent) => { const e = document.createElementNS(NS, name); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+  function dms(arcsec) {
+    arcsec = ((Math.round(arcsec) % 1296000) + 1296000) % 1296000;
+    const s = Math.floor(arcsec / 108000), r = arcsec - s * 108000;
+    const d = Math.floor(r / 3600), m = Math.floor((r % 3600) / 60), sec = r % 60;
+    return `${d}°${String(m).padStart(2, '0')}'${sec ? String(sec).padStart(2, '0') + '"' : ''} ${SIGNS[s]}`;
+  }
+
+  async function main() {
+    let g;
+    try {
+      g = await fetch('../grammars/hd-mandala-wheel/grammar.json').then(r => { if (!r.ok) throw new Error('grammar ' + r.status); return r.json(); });
+    } catch (err) {
+      $('#loading').hidden = true; const e = $('#err'); e.hidden = false;
+      e.innerHTML = '<b>Could not load the wheel.</b> If you opened this file directly, browsers block <code>file://</code> fetches: run <code>python -m http.server 8000</code> in the repo root and visit <code>http://localhost:8000/pages/wheel.html</code>. Details: ' + (err.message || err);
+      return;
+    }
+    const gates = g.nodes.filter(n => n.category === 'gate').map(n => ({ id: n.id, ...n.metadata, n: n.metadata.number })).sort((a, b) => a.wheel_position - b.wheel_position);
+    const by = Object.fromEntries(gates.map(x => [x.n, x]));
+    for (const x of gates) { x.lon0 = x.start_arcseconds / 3600; x.mid = x.lon0 + GATE_ARC / 2; x.val = [...x.binary].reduce((a, c, i) => a + (c === '1' ? 1 << (5 - i) : 0), 0); }
+
+    const svg = $('#wheel');
+    const gZ = el('g', {}, svg), gG = el('g', {}, svg), gOver = el('g', { 'pointer-events': 'none' }, svg);
+
+    // zodiac ring
+    SIGNS.forEach((name, i) => {
+      el('path', { d: sector(R.zIn, R.zOut, i * 30, (i + 1) * 30), fill: i % 2 ? 'var(--paper)' : 'var(--surface)', stroke: 'var(--line-soft)', 'stroke-width': .8 }, gZ);
+      const [x, y] = pt((R.zIn + R.zOut) / 2 + 3, i * 30 + 15);
+      const t = el('text', { x: f(x), y: f(y), class: 'glyph' }, gZ); t.textContent = GLYPH[i];
+      const tt = el('title', {}, t); tt.textContent = name;
+      const [nx, ny] = pt(R.zIn + 6, i * 30 + 15);
+      const nm = el('text', { x: f(nx), y: f(ny), class: 'signname' }, gZ); nm.textContent = name;
+    });
+    // degree scale
+    for (let d = 0; d < 360; d++) {
+      const major = d % 10 === 0, mid = d % 5 === 0;
+      const [x0, y0] = pt(R.scaleIn, d), [x1, y1] = pt(R.scaleIn + (major ? 11 : mid ? 7 : 4), d);
+      el('line', { x1: f(x0), y1: f(y0), x2: f(x1), y2: f(y1), stroke: major ? 'var(--ink-soft)' : 'var(--faint)', 'stroke-width': major ? .8 : .5 }, gZ);
+      if (d % 30 !== 0 && major) {
+        const [tx, ty] = pt(R.scaleIn + 16, d + .0);
+        const t = el('text', { x: f(tx), y: f(ty), class: 'deg' }, gZ); t.textContent = (d % 30) + '°';
+      }
+    }
+
+    // gates
+    const cells = {};
+    for (const x of gates) {
+      const grp = el('g', { class: 'gate', tabindex: 0, role: 'button', 'aria-label': `Gate ${x.n}, ${x.title}, begins at ${x.start}; opposite gate ${x.opposite_gate}`, 'data-n': x.n }, gG);
+      const path = el('path', { d: sector(R.gIn, R.gOut, x.lon0, x.lon0 + GATE_ARC), class: 'cell' }, grp);
+      el('title', {}, grp).textContent = `Gate ${x.n} · ${x.title}`;
+      // value shade ring + centre band + line ticks
+      x.valEl = el('path', { d: sector(R.valIn, R.valOut, x.lon0, x.lon0 + GATE_ARC), fill: `hsl(30 12% ${96 - x.val / 63 * 78}%)`, stroke: 'none', class: 'valring' }, grp);
+      x.centreEl = el('path', { d: sector(R.centreIn, R.centreOut, x.lon0, x.lon0 + GATE_ARC), fill: CENTRE[x.centre], stroke: 'none', class: 'centreband' }, grp);
+      // the figure: line 1 innermost; local frame has +x pointing outward
+      const [fx, fy] = pt(R.gIn + 14, x.mid);
+      const fg = el('g', { transform: `translate(${f(fx)} ${f(fy)}) rotate(${f(-(180 + x.mid))})` }, grp);
+      [...x.binary].forEach((c, i) => {
+        const r0 = i * 7.2;
+        if (c === '1') el('rect', { x: f(r0), y: -9.5, width: 4.2, height: 19, class: 'yang' }, fg);
+        else { el('rect', { x: f(r0), y: -9.5, width: 4.2, height: 7.6, class: 'yin' }, fg); el('rect', { x: f(r0), y: 1.9, width: 4.2, height: 7.6, class: 'yin' }, fg); }
+      });
+      const [nx, ny] = pt(R.gOut - 11, x.mid);
+      const nt = el('text', { x: f(nx), y: f(ny), class: 'gnum' }, grp); nt.textContent = x.n;
+      grp.addEventListener('mouseenter', () => select(x.n));
+      grp.addEventListener('focus', () => select(x.n));
+      grp.addEventListener('click', ev => { select(x.n); pinned = x.n; ev.stopPropagation(); });
+      grp.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); select(x.n); pinned = x.n; } });
+      cells[x.n] = grp; x.grp = grp;
+    }
+    // line ticks, one per 56'15"
+    const gTicks = el('g', { id: 'ticks', 'pointer-events': 'none' }, svg);
+    for (let i = 0; i < 384; i++) {
+      const lon = gates[0].lon0 + i * LINE_ARC;
+      const first = i % 6 === 0;
+      const [x0, y0] = pt(R.lineIn + (first ? 0 : 5), lon), [x1, y1] = pt(R.lineOut, lon);
+      el('line', { x1: f(x0), y1: f(y0), x2: f(x1), y2: f(y1), stroke: first ? 'var(--ink-soft)' : 'var(--faint)', 'stroke-width': first ? .9 : .5 }, gTicks);
+    }
+    // centre text
+    const tc = el('text', { x: CX, y: CY - 14, 'text-anchor': 'middle', 'font-family': 'var(--serif-display)', 'font-size': 22, fill: 'var(--ink)' }, svg); tc.textContent = 'The Fu Xi circle';
+    const tc2 = el('text', { x: CX, y: CY + 12, 'text-anchor': 'middle', 'font-size': 13, fill: 'var(--muted)' }, svg); tc2.textContent = 'laid on the zodiac';
+    const tc3 = el('text', { x: CX, y: CY + 36, 'text-anchor': 'middle', 'font-size': 11, fill: 'var(--faint)' }, svg); tc3.textContent = '64 gates · 5°37′30″ each';
+    // overlay: chord between a gate and its opposite
+    const chord = el('line', { stroke: 'var(--seal)', 'stroke-width': 1.2, 'stroke-dasharray': '5 4', opacity: 0 }, gOver);
+
+    // colour key
+    const counts = {};
+    gates.forEach(x => counts[x.centre] = (counts[x.centre] || 0) + 1);
+    $('#key').innerHTML = Object.keys(CENTRE).map(c => `<div><span class="sw" style="background:${CENTRE[c]}"></span>${c} <span style="color:var(--faint)">(${counts[c]})</span></div>`).join('')
+      + '<div style="grid-column:1/-1;color:var(--faint);font-size:12px">The centres are the system’s own grouping of gates.</div>';
+
+    // figure drawn large for the panel
+    function figSVG(binary, flipAgainst) {
+      const rows = [...binary].map((c, i) => {
+        const y = (5 - i) * 11, changed = flipAgainst && flipAgainst[i] !== c;
+        const fill = changed ? 'var(--seal-deep)' : 'var(--ink)';
+        return c === '1' ? `<rect x="0" y="${y}" width="46" height="6" fill="${fill}"/>`
+          : `<rect x="0" y="${y}" width="19" height="6" fill="${fill}"/><rect x="27" y="${y}" width="19" height="6" fill="${fill}"/>`;
+      }).join('');
+      return `<svg width="46" height="66" viewBox="0 0 46 66" aria-hidden="true">${rows}</svg>`;
+    }
+    let pinned = null, cur = null;
+    function select(n) {
+      cur = n; if ($('#t-gate')) $('#t-gate').value = String(n);
+      const x = by[n], o = by[x.opposite_gate];
+      gates.forEach(y => y.grp.classList.remove('sel', 'opp'));
+      x.grp.classList.add('sel'); o.grp.classList.add('opp');
+      x.grp.parentNode.appendChild(x.grp); o.grp.parentNode.appendChild(o.grp);   // bring both to the front
+      const [x0, y0] = pt(R.gIn - 4, x.mid), [x1, y1] = pt(R.gIn - 4, o.mid);
+      chord.setAttribute('x1', f(x0)); chord.setAttribute('y1', f(y0)); chord.setAttribute('x2', f(x1)); chord.setAttribute('y2', f(y1));
+      chord.setAttribute('opacity', $('#t-chord').checked ? .85 : 0);
+      const lines = [1, 2, 3, 4, 5, 6].map(l => `<li>Line ${l}: ${dms(x.start_arcseconds + (l - 1) * 3375)} to ${dms(x.start_arcseconds + l * 3375)}</li>`).join('');
+      $('#panel').innerHTML = `
+        <h2>Gate ${x.n} · ${x.title}</h2>
+        <p class="sub">Hexagram ${x.n} in King Wen’s order · ${x.pinyin} ${x.chinese_name} · ${x.upper_trigram} above, ${x.lower_trigram} below</p>
+        <div class="pair"><figure>${figSVG(x.binary, o.binary)}Gate ${x.n}</figure><figure style="align-self:center;font-size:20px;color:var(--faint)">⇆</figure><figure>${figSVG(o.binary, x.binary)}Gate ${o.n}</figure></div>
+        <p class="sub" style="margin-top:2px">Across the wheel: gate ${o.n}, ${o.title}. Its figure is gate ${x.n} with every line flipped (flipped lines in red).</p>
+        <dl>
+          <dt>Where it sits</dt><dd>Number ${x.wheel_position} of 64. ${x.start} to ${dms(x.start_arcseconds + 20250)}.</dd>
+          <dt>Binary number</dt><dd>${x.binary} (bottom line first, 1 solid and 0 broken) = ${x.val}. Gate ${o.n} is ${o.val}; the two add up to 63.</dd>
+          <dt>Centre</dt><dd><span class="sw" style="display:inline-block;width:11px;height:11px;border-radius:2px;margin-right:6px;background:${CENTRE[x.centre]};border:1px solid rgba(28,26,23,.25)"></span>${x.centre} (the system’s own grouping)</dd>
+          <dt>Its six lines, 56′15″ each</dt><dd><ul class="lines">${lines}</ul></dd>
+        </dl>`;
+    }
+    svg.addEventListener('mouseleave', () => { if (pinned) select(pinned); });
+    document.addEventListener('click', e => { if (!e.target.closest('.gate') && !e.target.closest('.panel')) { pinned = null; } });
+
+    // toggles
+    const apply = () => {
+      document.querySelectorAll('.centreband').forEach(e => e.classList.toggle('hide', !$('#t-centre').checked));
+      document.querySelectorAll('.valring').forEach(e => e.classList.toggle('hide', !$('#t-value').checked));
+      $('#ticks').classList.toggle('hide', !$('#t-lines').checked);
+      if (cur) select(cur);
+    };
+    // a list for small screens, where the cells are too small to tap
+    $('#t-gate').innerHTML = [...gates].sort((a, b) => a.n - b.n).map(x => `<option value="${x.n}">${x.n} · ${x.title}</option>`).join('');
+    $('#t-gate').addEventListener('change', e => { const n = +e.target.value; select(n); pinned = n; });
+    ['#t-centre', '#t-value', '#t-lines', '#t-chord'].forEach(s => $(s).addEventListener('change', apply));
+    apply();
+    $('#loading').hidden = true; $('#stage').hidden = false;
+    select(43);
+  }
+  main();
+})();
+</script>
+<script src="../site-footer.js?v=3"></script>
+<script src="../assistant.js?v=2" defer></script>
+<site-footer base="../"></site-footer>
+</body>
+</html>

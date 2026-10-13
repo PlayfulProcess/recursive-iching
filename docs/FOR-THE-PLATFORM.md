@@ -4,6 +4,24 @@
 Newest first. Started Oct 4 2026 with the reading-as-dialogue prototype
 (`docs/DESIGN-reading-as-dialogue.md`, `viewers/dialogue.html`).*
 
+## Oct 12 2026: letting the assistant consult the schools
+
+A reading often raises "how would other schools read this?" (classical Confucian, Zhu Xi's changing-line rules, Daoist
+inner alchemy, early Zhou philology, Human Design, the Gene Keys). The assistant answered from general knowledge. This repo now
+holds a draft reference for it: `grammars/schools-of-the-iching/` (12 nodes; one per school, plus the changing-line methods and a
+licence table). It is skipped by the importer until PlayfulProcess decides. When it is imported, what the platform side could do,
+with no change to recursive.eco's code:
+
+1. Ground the embed on the grammar through `ids.json` and `_public_now`, as for any other grammar (the site's `assistant.js`
+   already does this).
+2. Optional, in the assistant's brief: "for other schools' readings consult Schools of the I Ching; never invent a school's
+   reading; say which statements are method and which are the reading."
+3. A rule the assistant must keep: **no Gene Keys text is to be put in front of it.** Gene Keys Ltd's terms bar the use of its
+   materials to train or operate AI systems; Jovian Archive reserves the Human Design texts. The grammar holds structure only,
+   in our words. See `docs/RESEARCH-gene-keys-and-human-design-2026-10-12.md`.
+
+`corpus_search` indexes a different corpus and does not search this repo; the MCP's `get_grammar` by id is the way in.
+
 ## Oct 4 2026: reading as dialogue
 
 The prototype offers passages tied to a real cast. The person marks which ones speak to them,

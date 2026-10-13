@@ -1,0 +1,201 @@
+{
+  "import_visibility": "private",
+  "_draft_note": "Oct 12 2026 draft course. Skipped by recursive.eco's importer (_source_of_truth: repo). The thesis, the chapter order and the prose await confirmation by the owner of this project; the wording is plain and neutral, not yet in her voice.",
+  "_grammar_commons": {
+    "schema_version": "1.0",
+    "license": "CC-BY-SA-4.0 (PlayfulProcess). Legge's 1882 English is public domain. No Human Design text and no Gene Keys text is reproduced; both systems are described in our own words, and the sources are named.",
+    "attribution": [
+      {
+        "name": "PlayfulProcess",
+        "date": "2026-10-12",
+        "note": "course design; draft prose written with AI from the cited sources, to be revised"
+      }
+    ]
+  },
+  "name": "From Oracle to Chart",
+  "description": "How a bronze-age divination text became a binary circle, a wheel on the zodiac, a body chart and a self-help system: nine short chapters on what is known, what is claimed and what can be tested. Draft.",
+  "grammar_type": "custom",
+  "default_preview": "course",
+  "is_published": false,
+  "provenance": "record",
+  "creator_name": "PlayfulProcess",
+  "tags": [
+    "course",
+    "i-ching",
+    "human-design",
+    "gene-keys",
+    "draft"
+  ],
+  "nodes": [
+    {
+      "id": "ch-1",
+      "name": "A map is not the territory",
+      "category": "chapter",
+      "sort_order": 1,
+      "keywords": [
+        "course",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "We make beliefs in order to make meaning. A meaning is at best a map: useful for some country and silent about the rest. When a map stops serving, we draw another. The new one is not truer, only better suited to where we are now.\n\nThe I Ching is a set of 64 maps of that kind. Each is made of six lines, and each line is one of two kinds, solid or broken. For nearly three thousand years people have read those figures in different ways: as an oracle, as a guide to conduct, as a calendar, as a chart of the self. This course follows what happened to the 64 figures in each of those readings.\n\nA reading doesn't tell you your fate; it might help you create it. Each chapter says what is known, what is claimed, and what has been tested, and says so plainly where nothing has.",
+        "What is checked, what is claimed": "The draft thesis, to be confirmed: the same 64 figures have been read as an oracle, a moral guide, a cosmology and a chart of the self; each reading is a map that serves some purposes and not others; none has been shown to predict a life.",
+        "Sources": "This course's thesis is a draft for the owner of this project to confirm (see the note at the top of the page). The wording draws on docs/HOW-TO-WRITE-A-COURSE.md and the thesis of the library's other courses."
+      },
+      "metadata": {
+        "chapter": 1,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-2",
+      "name": "The Zhouyi on its own",
+      "category": "chapter",
+      "sort_order": 2,
+      "keywords": [
+        "course",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "Before the commentaries, there was a short book of 64 figures and 384 line statements, six for each hexagram, with a Judgment for the figure as a whole. Scholars date its core to the late Western Zhou, about the ninth century BCE (Edward Shaughnessy). It reads like a diviner's record: an image or an event, then a verdict such as 'ominous' or 'no blame'.\n\nTake one line, the third line of hexagram 43. In James Legge's English of 1882 it says that the line shows its subject with strong, determined looks, that there will be evil, and that the superior man, bent on cutting off the criminal, will walk alone and meet the rain, be hated by his associates as if he were contaminated, and in the end be without blame. The Chinese is a few images and two verdicts. The rest is the translator's help, and Legge puts his additions in brackets.\n\nEverything later in this course keeps coming back to sentences like that one. They are public domain, and the library holds them whole.",
+        "What is checked, what is claimed": "The text and its English are checked (this library's grammars cross-checked three digitisations). The date is a scholar's estimate and is disputed in detail.",
+        "Sources": "The Zhouyi in Chinese: grammars/i-ching-chinese-original (Project Gutenberg #25501). Legge, The Yi King, Sacred Books of the East 16 (1882): grammars/zhouyi-core. The dating: the Tree of the Changes, nodes book-zhouyi and book-modern-zhouyi, citing Shaughnessy."
+      },
+      "metadata": {
+        "chapter": 2,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-3",
+      "name": "A circle of 64",
+      "category": "chapter",
+      "sort_order": 3,
+      "keywords": [
+        "course",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "In the 11th century Shao Yong arranged the 64 figures by counting. Read each figure as a six-digit binary number, with the bottom line as the largest digit, and go round a circle: the count runs down from 63 on one side and up from 0 on the other. This is the binary circle, often called the Fu Xi arrangement. It has nothing to do with the order in which the book lists the figures (King Wen's), and it has nothing to do with the sky.\n\nHuman Design lays this same circle on the zodiac. Each of the 64 cells takes 5 degrees 37 minutes 30 seconds, and the first, hexagram 41, begins at 2 degrees Aquarius. We checked by script that the order Human Design uses is exactly the binary circle. What the system adds is the starting point and the laying onto the zodiac.\n\nThe figure across the circle from any other is the same figure with every line flipped. [Open the wheel](../pages/wheel.html) and tap a gate to see its pair. All of this is geometry: it can be checked, and it says nothing yet about people.",
+        "What is checked, what is claimed": "Checked: the order, the width of a cell, the opposite pairs. Taken from the system: where the circle starts.",
+        "Sources": "Shao Yong: the Tree of the Changes, node book-shao-yong. The order and the degrees: scripts/build_hd_wheel.py in this repo, which fails if the order stops being the binary circle; the degrees agree with a practitioner's published table at five gates (Bonnie Sorsby, 'Human Design Gates By Degree'). The wheel page and the grammar hd-mandala-wheel."
+      },
+      "metadata": {
+        "chapter": 3,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-4",
+      "name": "A body chart",
+      "category": "chapter",
+      "sort_order": 4,
+      "keywords": [
+        "course",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "On top of the circle Human Design builds a chart of the body, which it calls the bodygraph. By the system's own account it has nine centres, drawn from the chakra tradition, and 36 channels, drawn from the Kabbalistic Tree of Life, and each channel joins two gates. Each gate is also cut into six lines of 56 minutes 15 seconds. Where the Sun, the Moon and the planets stood at birth, and where they stood about 88 days earlier, decides which gates and lines are 'defined' in a person's chart.\n\nThat is the structure. The sentences that say what each gate or line means are the founder's own writing. Jovian Archive Media, which holds his rights, states that they are protected, so this library does not reproduce them, and this course does not either. What we can say is how the structure is built. A chart can be calculated exactly from a birth date, time and place. What a chart means for a person is a separate question, and chapter 7 takes it up.",
+        "What is checked, what is claimed": "Checked: the structure as the system describes it. Claimed by the system: the origins of the centres and channels, and what the gates mean.",
+        "Sources": "Jovian Archive website, pages 'The Mandala and the BodyGraph in Human Design' and 'Gates and Hexagrams in Human Design' (cited by title; the site's terms ask that it not be linked without consent). The wheel grammar records the system's grouping of gates into centres."
+      },
+      "metadata": {
+        "chapter": 4,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-5",
+      "name": "A spectrum",
+      "category": "chapter",
+      "sort_order": 5,
+      "keywords": [
+        "course",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "Richard Rudd's Gene Keys use the same 64 numbers and the same wheel, and add a way of working with them. Each key is a spectrum with three bands, which the system calls Shadow, Gift and Siddhi. A free chart gives eleven 'spheres', each holding one key and one line, grouped in three sequences taken in order: the Activation Sequence, the Venus Sequence and the Pearl Sequence, which together make up what it calls the Golden Path. The planets that set each sphere are named in its own materials. Each key has a 'programming partner', which is the gate directly across the wheel, and the keys are sorted into 21 'codon rings', one for each of the 20 amino acids and the stop signal in the genetic code.\n\nThe words of the three bands are Rudd's writing, and the Gene Keys terms bar the use of their materials to train or operate AI systems, so this course describes the structure and leaves the words out. Rudd was a Human Design teacher before the Gene Keys: by his own account he proposed a book on Human Design in the 1990s, and the Gene Keys site says that from 1997 to 2004 he studied and taught Human Design with its founder.",
+        "What is checked, what is claimed": "Checked: the structure, as the system's own pages state it. Claimed by the system: that the keys 'communicate' with the 64 codons of DNA, and that contemplating them influences DNA. We treat that language as metaphor.",
+        "Sources": "Gene Keys: 'How to read your profile', 'The Glossary of Empowerment', 'Integral Human Design' and Rudd's article 'Integral Human Design – A New View of the Bodygraph' (27 Jul 2018); Rudd's preface to 'An A to Z of You'. These views are ours and are not endorsed by Gene Keys."
+      },
+      "metadata": {
+        "chapter": 5,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-6",
+      "name": "How each says it began",
+      "category": "chapter",
+      "sort_order": 6,
+      "keywords": [
+        "course",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "Both systems tell of a sudden experience in 1987. The founder of Human Design, Ra Uru Hu, said that on Ibiza he met a Voice for about eight days. He did not name it: he said he called it the Voice only because he had no other name, and that if it had wanted one it would have given it. By his account its first words were 'Are you ready to work?'. The school he founded dates the start to the evening of 3 January 1987.\n\nRudd tells of waking in a Sussex oak forest surrounded by three adders, then of visions, and, after a long search, of a book that 'came pouring through' him. He names no speaker.\n\nTwo things stand out. Ra says he did not speak of the Voice for his first 18 and a half years, and told audiences not to believe him: the accounts we have are recollections made long after 1987. And the retellings grow more definite than his own words. Neither account can be checked from outside. Both are testimony, and testimony can be sincere without being checkable.",
+        "What is checked, what is claimed": "Where sources differ (eight days or seven, the exact date), the record marks it. We give no verdict on what the Voice was.",
+        "Sources": "Ra Uru Hu, 'The Voice' and 'The Practicality of Rave Cosmology' (Jovian Archive website, blog; cited by title); the International Human Design School page on Ra Uru Hu; Osho News (16 Jul 2011); Rudd, 'Gene Keys – a simple introduction' (14 Aug 2018). The record is in the grammar origin-accounts."
+      },
+      "metadata": {
+        "chapter": 6,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-7",
+      "name": "What can be tested",
+      "category": "chapter",
+      "sort_order": 7,
+      "keywords": [
+        "course",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "Some of this is arithmetic and can be checked at once: which gate and line a planet falls in on a given day. Some can be tested in principle and, as far as we found, has not been: whether a person's chart tells you something a description not based on the chart would not, and whether following a system's 'strategy' helps people more than another regular practice. We found no study of either. We did not search the main psychology databases, so the first job of any follow-up is that search.\n\nTwo things make a test necessary. In 1948 to 1949 Bertram Forer gave 39 students a 'personal' description assembled from general lines, and they rated it highly accurate, about 4.3 out of 5 on average. A description that is general, flattering and presented as yours will feel accurate, so 'it fits me' cannot tell a real description from a generic one. And the claim that neutrinos carry birth-time information to a person has no mechanism we could find. Neutrinos do pass through us, and their mass was confirmed by experiments that won the 2015 Nobel Prize in Physics, but having mass is not the same as carrying information. A design that has been used for a similar claim: practitioners match charts to independently measured profiles, blind and pre-registered, as Shawn Carlson did for astrology in 1985, with a chance-level result that later authors dispute.",
+        "What is checked, what is claimed": "Where no test exists, we say so. The absence of a test is not evidence that a system is wrong, and it is not evidence that it is right.",
+        "Sources": "Forer (1949), Journal of Abnormal and Social Psychology 44; Carlson (1985), Nature 318; the Nobel Prize in Physics 2015 (nobelprize.org); the research note docs/RESEARCH-gene-keys-and-human-design-2026-10-12.md, section 5."
+      },
+      "metadata": {
+        "chapter": 7,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-8",
+      "name": "Useful, kind, true, or a shared fiction",
+      "category": "chapter",
+      "sort_order": 8,
+      "keywords": [
+        "course",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "Three questions can be put to any system like this, and the answers can differ. Is it useful: for whom, and how? Is it kind: where does it help a person accept themselves, and where might a fixed type or a label such as 'not-self' narrow them? Does it fit the data: what is testable, and what is not? On the evidence we found, the numbers fit exactly, the claims about people are untested, and the claims borrowed from physics and genetics are not supported.\n\nThere is a second way to ask. Suppose the question is not whether a system is true but what happens to people who share it. A shared story can help a group coordinate, whether or not it is literally true. A shared vocabulary for differences of pace and decision-making can be a relief, and a practice that is opt-in, cheap to try and open about being an experiment is a light one. The same arrangement can also turn into dependence: interpretation paid for, texts kept behind rights claims, and ideas such as 'conditioning' that explain away any doubt. Five questions help tell the two apart. Can a person try it and stop, with nothing lost? Can its claims be doubted inside its own community? Are the costs in proportion to what a person gets? Does it make room for other help? Does it say which of its claims are untested?\n\nThis course does not decide between those readings.",
+        "What is checked, what is claimed": "These are judgements, not findings. Each side is stated as its supporters and critics state it.",
+        "Sources": "The research note, sections 6 and 7. Jovian Archive website, pages 'The Mandala and the BodyGraph in Human Design' and 'About Ra Uru Hu' (cited by title). Rudd, 'Integral Human Design – A New View of the Bodygraph'."
+      },
+      "metadata": {
+        "chapter": 8,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-9",
+      "name": "Back to the line",
+      "category": "chapter",
+      "sort_order": 9,
+      "keywords": [
+        "course",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "Return to the third line of hexagram 43. A classical Confucian reader looks at the line's place in the figure and takes it as a lesson in conduct: resolve that does not show off. Zhu Xi reads it as an oracle's answer, and as a mirror for how the diviner is holding themselves. A Daoist reader of the alchemical line treats the five strong lines as energy gathered almost to fullness. A philologist sees a few images and two verdicts and asks what a diviner was recording. A Jungian asks where a resolve has turned into a show of force. Human Design and the Gene Keys do not read the line at all: for them it is a position on a wheel, from 20 degrees 45 minutes to 21 degrees 41 minutes of Scorpio, with an opposite across the circle.\n\nThose are different maps of one line. The line itself is still a few images and two verdicts, public domain, in a book of 64 figures. [The Schools of the I Ching](course-viewer.html?course=schools-of-the-iching) sets them side by side. The figures keep their shape under every one of them, and what a person does with a reading is theirs.",
+        "Sources": "The Schools of the I Ching grammar (grammars/schools-of-the-iching) and the wheel grammar. The example readings there are illustrations of each school's method, written for this library; they do not summarise what a named commentator wrote about this line."
+      },
+      "metadata": {
+        "chapter": 9,
+        "status": "draft"
+      }
+    }
+  ]
+}

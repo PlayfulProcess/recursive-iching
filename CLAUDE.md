@@ -13,15 +13,19 @@ static site at iching.recursive.eco. Call the owner PlayfulProcess; never write 
   recursive.eco's framed previews; fix a viewer bug on recursive.eco, not here.
 - **Edit sources and generators, never generated files.** Generated: `grammars/_collection.json`
   (`scripts/build_collection.py`), `grammars/meta-iching/` (`scripts/build_meta_iching.py`),
+  `grammars/hd-mandala-wheel/` (`scripts/build_hd_wheel.py`), `grammars/hd-lines-zhouyi/`
+  (`scripts/build_hd_lines.py`, which reads the wheel and `zhouyi-core`),
   `grammars/the-recursive-iching-book/grammar.json` (`scripts/build_book_grammar.py`, from
   `frame.json` and `stories/`).
 - **Before every push**, from the repo root, in this order:
   1. `python scripts/build_book_grammar.py`
   2. `python scripts/build_meta_iching.py` (it copies the book, so it runs after it)
-  3. `python scripts/build_collection.py`
-  4. `python check.py` (must print OK)
-  5. `node scripts/determinism-check.js`
-  6. `python scripts/check_book_mode.py` when the caster or the book changed (needs Playwright)
+  3. `python scripts/build_hd_wheel.py`
+  4. `python scripts/build_hd_lines.py` (after the wheel)
+  5. `python scripts/build_collection.py`
+  6. `python check.py` (must print OK)
+  7. `node scripts/determinism-check.js`
+  8. `python scripts/check_book_mode.py` when the caster or the book changed (needs Playwright)
 - **Every hexagram item carries its King Wen number twice:** `"number": N` at the top level and
   `metadata.number`. recursive.eco's relating-hexagram lookup reads the top-level one (finding V-1);
   `check.py` enforces it.
@@ -31,4 +35,12 @@ static site at iching.recursive.eco. Call the owner PlayfulProcess; never write 
   every new folder before the next import.
 - **Item ids must match the app's** for a mapped grammar: the import pairs items by `id`, then by
   `name`, and an unpaired item arrives as a duplicate.
+- **No Human Design or Gene Keys text in any grammar.** Jovian Archive Media (Human Design) and Gene Keys Ltd
+  reserve their rights, and the Gene Keys terms bar the use of their materials to train or operate AI
+  systems, which includes this site's assistant. Facts, positions and our own words only; see
+  `docs/RESEARCH-gene-keys-and-human-design-2026-10-12.md`.
+- **No live links to jovianarchive.com** (nor to the IHDS or myBodyGraph pages) in a public page or grammar: its
+  Terms ask that the site not be linked without written consent. Cite its pages by title and date.
+- **`ten-wings` is a mapped grammar:** change it only by adding sections (`scripts/add_ten_wings_sections.py`
+  shows how); never change an item id or name.
 - Never merge to `main` yourself; push a branch and open a PR.

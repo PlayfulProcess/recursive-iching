@@ -1,0 +1,19 @@
+{
+  "_note": "Course manifest for 'From Oracle to Chart'. Read by pages/course-viewer.html?course=oracle-to-chart. Chapters come from grammars/oracle-to-chart/grammar.json; edit the grammar, not this file.",
+  "title": "From Oracle to Chart",
+  "kicker": "The Recursive I Ching · a draft course in nine chapters",
+  "description": "How a bronze-age divination text became a binary circle, a wheel on the zodiac, a body chart and a self-help system, and what can and cannot be tested.",
+  "sourceGrammar": "oracle-to-chart",
+  "chapterIdPrefix": "ch-",
+  "appendixIdPrefix": "none-",
+  "appendixTitle": "Appendix",
+  "appendixIntro": "",
+  "sectionOrder": [
+    "Reading",
+    "What is checked, what is claimed",
+    "Sources"
+  ],
+  "appendixSectionOrder": [],
+  "companions": {},
+  "draft": "The thesis, the chapter order and the prose are a draft awaiting confirmation by the owner of this project. The wording is plain and neutral and is not yet in her voice. Nothing here reproduces Human Design or Gene Keys text."
+}

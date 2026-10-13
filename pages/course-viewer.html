@@ -81,7 +81,7 @@
 </style>
 </head>
 <body>
-<script src="../site-header.js?v=48"></script>
+<script src="../site-header.js?v=49"></script>
 <site-header active="course"></site-header>
 <div class="wrap">
   <aside>
@@ -91,6 +91,7 @@
   </aside>
 
   <main>
+    <div class="note" id="draft-banner" hidden style="margin:0 0 18px"></div>
     <p id="loading">Loading…</p>
     <p id="err" hidden></p>
     <article id="article" hidden>
@@ -106,16 +107,7 @@
       <nav class="navrow" id="navrow"></nav>
     </article>
 
-    <div class="note">
-      <b>How this works.</b> This chapter is read live from
-      <code>grammars/three-lenses-64/grammar.json</code> — the same grammar behind
-      <a href="../index.html">the library</a> and <a href="../viewers/lenses.html">Lenses</a>. Nothing here is
-      duplicated content: edit that grammar and this course updates with it. See
-      <code>course/three-lenses.manifest.json</code> for the chapter ordering and companion-grammar links.
-      <b>Note:</b> the source grammar's chapter items currently carry names and keywords but empty
-      <code>sections</code> — this course renders honestly empty chapter bodies until that content is
-      written; see the field report for why.
-    </div>
+    <div class="note" id="course-note"></div>
   </main>
 </div>
 
@@ -143,6 +135,8 @@ const COURSES = {
   'three-lenses': { manifest: '../course/three-lenses.manifest.json', art: 'sengai-circle-triangle-square' },
   'books-of-the-changes': { manifest: '../course/books-of-the-changes.manifest.json', art: 'sesshu-haboku' },
   'translations': { manifest: '../course/translations.manifest.json', art: 'muqi-six-persimmons' },
+  'schools-of-the-iching': { manifest: '../course/schools-of-the-iching.manifest.json' },
+  'oracle-to-chart': { manifest: '../course/oracle-to-chart.manifest.json' },
 };
 // The painting for a course, on its first chapter only. Contained, never cropped; the caption names it.
 async function showCourseArt(id){
@@ -188,6 +182,13 @@ async function main(){
   }
 
   document.title = manifest.title + ' — The Recursive I Ching';
+  // The note under every chapter says where the chapter is read from; a manifest may mark the course a draft.
+  const gslug = manifest.sourceGrammar || 'three-lenses-64';
+  $('#course-note').innerHTML = '<b>How this works.</b> This chapter is read live from <code>grammars/' + esc(gslug)
+    + '/grammar.json</code>, the same grammar that sits in <a href="../index.html">the library</a>. Nothing here is duplicated content: edit that grammar and this course updates with it. See <code>course/'
+    + esc(courseSlug) + '.manifest.json</code> for the chapter order.'
+    + (courseSlug === 'three-lenses' ? ' <b>Note:</b> the source grammar’s chapter items currently carry names and keywords but empty <code>sections</code>, so this course renders honestly empty chapter bodies until that content is written; see the field report for why.' : '');
+  if (manifest.draft) { const db = $('#draft-banner'); db.innerHTML = '<b>Draft.</b> ' + esc(manifest.draft); db.hidden = false; }
 
   // Optional manifest.chapterWhere: { metadataKey: [allowed values] } narrows the chapters
   // (the translations course is the tree's translation nodes only). Chapters follow sort_order.
@@ -259,7 +260,7 @@ async function main(){
     return b.url ? `<a href="${esc(b.url)}" target="_blank" rel="noopener">${label}</a>` : label;
   }).join('; ') + ']</span>');
   const links = h => h.replace(/\[([^\]@][^\]]*)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>');
-  const para = t => String(t).split(/\n{2,}/).map(p => `<p>${cite(links(mdLite(p)))}</p>`).join('');
+  const para = t => String(t).split(/\n{2,}/).map(p => `<p>${cite(links(mdLite(p))).replace(/\n/g, '<br>')}</p>`).join('');
   const first = !isAppendix && chapterItems[0] && current.id === chapterItems[0].id;
   if (first) showCourseArt(course.art);
   content.innerHTML = (first && manifest.intro ? `<div class="sec intro">${para(manifest.intro)}</div>` : '')

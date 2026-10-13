@@ -1,5 +1,37 @@
 # Changelog — The Recursive I Ching
 
+## October 12, 2026 (round 2) — pages, the 384 lines, the origin record, a draft course, Legge's appendices
+
+- **`pages/wheel.html`** (new): an astrology-style SVG wheel of the 64 gates at their true degrees: zodiac ring with sign
+  glyphs and a degree scale, hexagram figures, line ticks (56'15"), the Fu Xi binary pattern (an optional shading by binary
+  number), the opposite gate drawn on hover or tap, the nine centres as an optional colour key, and a list for small screens.
+  Facts only. In the Views menu and on the home page.
+- **Schools of the I Ching** and **From Oracle to Chart** are reachable through `pages/course-viewer.html` (new manifests,
+  Courses menu, home page). The viewer now shows a draft banner when a manifest has one, says which grammar each course is read
+  from, and keeps single line breaks.
+- **`grammars/hd-lines-zhouyi/`** (new, draft, `_generated`, `scripts/build_hd_lines.py`): the 384 line cells paired with
+  Legge's Zhouyi lines. **`grammars/origin-accounts/`** (new, draft): how each system says it began, dated and sourced.
+  **`grammars/oracle-to-chart/`** (new, draft): the nine-chapter course.
+- **`grammars/ten-wings/`**: two sections added to each of the 64 hexagram items, Legge's Commentary on the Judgment and
+  Small Image of the lines (`scripts/add_ten_wings_sections.py`, text in `scripts/legge-appendices.json`, checked against the 1899
+  scan). No id, name or existing section changed.
+- Live links to jovianarchive.com, the IHDS and myBodyGraph removed from public pages and grammars (cited by title).
+- `site-header.js` version 49 on every page that loads it.
+
+## October 12, 2026 — Research: the Gene Keys, Human Design's I Ching, the Voice; two draft grammars
+
+- **Research and proposal:** `docs/RESEARCH-gene-keys-and-human-design-2026-10-12.md` (Gene Keys structure; how Human
+  Design uses the I Ching; Ra Uru Hu's own account of "the Voice", dated and linked; the evidence side; the three tests;
+  the licence and trademark position at the source) and `docs/PROPOSAL-hd-gene-keys-grammars-and-course-2026-10-12.md`
+  (five grammar ideas, a course outline, a book-or-information decision per school).
+- **`grammars/hd-mandala-wheel/`** (new, draft, `_generated`): the 64 gates in Human Design wheel order with zodiac
+  degrees, the opposite gate and the centre. Built by `scripts/build_hd_wheel.py`, which fails if the order stops being
+  the Fu Xi circle. No Human Design or Gene Keys text.
+- **`grammars/schools-of-the-iching/`** (new, draft, `_source_of_truth: "repo"`): how the main schools read the Changes,
+  with the same line (43.3 to 58) read each way, the changing-line rules, books and licence status.
+- `CLAUDE.md`: the wheel generator joins the build order; new rule against Human Design and Gene Keys text in grammars.
+  `docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md` and `docs/FOR-THE-PLATFORM.md` carry the decisions for the new folders.
+
 ## October 10, 2026 — Grammar format v2: node all the way down
 
 - Every grammar.json uses the v2 words of recursive.eco's format: `nodes` (was `items`), `parts`

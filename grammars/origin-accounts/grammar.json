@@ -1,0 +1,344 @@
+{
+  "_source_of_truth": "repo",
+  "_draft_note": "Oct 12 2026 draft. Skipped by recursive.eco's importer (_source_of_truth: repo) until PlayfulProcess decides.",
+  "_grammar_commons": {
+    "schema_version": "1.0",
+    "license": "CC-BY-SA-4.0 (PlayfulProcess) for the prose. The sources are cited and quoted a few words at a time; no Human Design or Gene Keys text is reproduced beyond those short attributed quotations.",
+    "attribution": [
+      {
+        "name": "PlayfulProcess",
+        "date": "2026-10-12",
+        "note": "design and curation; prose written with AI from the cited sources, marked by what was checked"
+      }
+    ]
+  },
+  "name": "How Human Design and the Gene Keys Say They Began",
+  "description": "A dated, sourced record of the origin accounts of Human Design (Ra Uru Hu, 1987, 'the Voice') and the Gene Keys (Richard Rudd): what each source says, where sources differ, and what a test would need. No verdict on whether any source was real.",
+  "grammar_type": "custom",
+  "default_preview": "grammar",
+  "is_published": false,
+  "provenance": "record",
+  "creator_name": "PlayfulProcess",
+  "tags": [
+    "human-design",
+    "gene-keys",
+    "origin",
+    "sources",
+    "draft"
+  ],
+  "marks": [
+    {
+      "mark": "✔",
+      "label": "checked: read in the cited source"
+    },
+    {
+      "mark": "○",
+      "label": "indirect: a summary or a source that reports another"
+    },
+    {
+      "mark": "◆",
+      "label": "the sources disagree"
+    },
+    {
+      "mark": "◇",
+      "label": "from memory, not yet checked"
+    }
+  ],
+  "bibliography": [
+    {
+      "key": "jovian_blog",
+      "author": "Ra Uru Hu (Jovian Archive website, blog)",
+      "title": "Human Design History & Legacy: The Voice; The Practicality of Rave Cosmology; The Phoenicians; Sailing Neutrino Seas",
+      "year": 2023,
+      "url": null,
+      "note": "cited by title only (the site's Terms ask that it not be linked without consent); posted 2020 to 2023; read in full 12 Oct 2026"
+    },
+    {
+      "key": "jovian_about",
+      "author": "Jovian Archive",
+      "title": "About Ra Uru Hu",
+      "year": 2026,
+      "url": null,
+      "note": "cited by title only; read in full 12 Oct 2026"
+    },
+    {
+      "key": "ihds_ra",
+      "author": "International Human Design School",
+      "title": "Ra Uru Hu",
+      "year": 2026,
+      "url": null,
+      "note": "cited by title only; read in full 12 Oct 2026"
+    },
+    {
+      "key": "mbg_ra",
+      "author": "myBodyGraph",
+      "title": "About Ra Uru Hu",
+      "year": 2026,
+      "url": null,
+      "note": "cited by title only; read through a summary"
+    },
+    {
+      "key": "osho_2011",
+      "author": "Osho News",
+      "title": "What is Human Design?",
+      "year": 2011,
+      "url": "https://www.oshonews.com/2011/07/16/what-is-human-design/",
+      "note": "16 Jul 2011; read through a summary"
+    },
+    {
+      "key": "wp_hd",
+      "author": "Wikipedia",
+      "title": "Human Design",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/w/index.php?title=Human_Design&oldid=1372852944",
+      "note": "read 12 Oct 2026"
+    },
+    {
+      "key": "gk_intro",
+      "author": "Richard Rudd (Gene Keys)",
+      "title": "Gene Keys – a simple introduction",
+      "year": 2018,
+      "url": "https://genekeys.com/articles/gene-keys-a-simple-introduction/",
+      "note": "14 Aug 2018; read in full 12 Oct 2026"
+    },
+    {
+      "key": "gk_ihd",
+      "author": "Richard Rudd (Gene Keys)",
+      "title": "Integral Human Design – A New View of the Bodygraph",
+      "year": 2018,
+      "url": "https://genekeys.com/articles/integral-human-design-2/",
+      "note": "27 Jul 2018; read in full 12 Oct 2026"
+    },
+    {
+      "key": "gk_ihd_page",
+      "author": "Gene Keys",
+      "title": "Integral Human Design (page)",
+      "year": 2026,
+      "url": "https://genekeys.com/integral-human-design/",
+      "note": "states the 1997 to 2004 study and teaching with Ra Uru Hu; read 12 Oct 2026"
+    },
+    {
+      "key": "gk_atoz",
+      "author": "Richard Rudd",
+      "title": "The Human Design System: An A to D of You (preface and chapters 1 to 4), © Gene Keys Publishing Ltd 2008",
+      "year": 2008,
+      "url": "https://genekeys.com/wp-content/uploads/2018/09/An-A-to-Z-of-You-chs-1-4-copy.pdf",
+      "note": "PDF on genekeys.com; read 12 Oct 2026 (the preface states the 1990s proposal and the shelved book)"
+    },
+    {
+      "key": "gk_books",
+      "author": "Gene Keys",
+      "title": "Books",
+      "year": 2026,
+      "url": "https://genekeys.com/books/",
+      "note": "read 12 Oct 2026"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "origin-guide",
+      "name": "How to read this record",
+      "category": "guide",
+      "sort_order": 1,
+      "keywords": [
+        "guide"
+      ],
+      "sections": {
+        "What it is": "A sourced, dated record of how Human Design and the Gene Keys each say they began. It holds what each source says, when and where it said it, and where sources differ. It gives no verdict on whether the Voice, or any other source of the systems, was real. Each node names its sources in the Record section.",
+        "Rules we follow": "Short attributed quotes only (a few words, with the source and date). Our own words for everything else. The Jovian Archive pages are cited by title and date, with no link, because the site's terms ask that it not be linked without its consent. Arguments, not people: we describe claims fairly.",
+        "Marks": "✔ checked in the cited source (read as text on 12 Oct 2026) · ○ indirect, or read through a summary · ◆ the sources disagree · ◇ from memory, not yet checked.",
+        "Related": "docs/RESEARCH-gene-keys-and-human-design-2026-10-12.md has the full note, including the three tests and the evidence side. The course From Oracle to Chart uses this record."
+      },
+      "metadata": {}
+    },
+    {
+      "id": "origin-ra-own-words",
+      "name": "Ra Uru Hu, in his own words (lectures posted by Jovian Archive)",
+      "category": "account",
+      "sort_order": 2,
+      "keywords": [
+        "Ra Uru Hu",
+        "Voice",
+        "1987"
+      ],
+      "sections": {
+        "Who, where, when": "Ra Uru Hu (born Alan Robert Krakower, Montreal, 1948; died March 2011). The texts below are first-person lecture passages that the Jovian Archive website posts as blog pages with dates between 2020 and 2023. The pages do not say which lecture each comes from. The 'Sailing Neutrino Seas' piece is stated to have been recorded on 20 Oct 2006.",
+        "What he said about the Voice": "He calls it the Voice only because he has no other name for it, and says that if it had wanted a name 'it would have given it to me, and it didn't' ✔. He describes it as, at first impression, male ('much more my fear'), then as like 'some very, very old woman who has been chain smoking all her life' ✔. He separates it from the experience as a whole, which he describes as physical, painful, audible, visual and 'more than that' ✔. Its first words, as he reports them, were 'Are you ready to work?', which he took as 'a warning' ✔.",
+        "Condition and place": "He says that for eight days he did not eat, sleep or take liquids, in what he calls a closed, womb-like setting ✔. He places the experience behind a ruin he lived in on Ibiza, next to an old Phoenician well ✔.",
+        "What he said about how to hold it": "He calls himself a mystic and says that for his first 18½ years of teaching he did not speak of the Voice or of his 'mystical journey'. His opening line to audiences, he says, was 'don't believe me and do not trust me', and he presented the system as 'logical', 'not spiritual', 'just a mechanical knowledge' ✔.",
+        "What he said about the physics": "In 2006 he describes the neutrino field as the 'consciousness field' and himself as 'the great neutrino salesperson', selling 'neutrinos with mass that had yet to be confirmed by science' ✔.",
+        "What these texts do not say": "They give no name, species or origin for the Voice beyond the words above. They are recollections made many years after January 1987: if the 18½ years of silence began that year, the first public mention was around 2005. We found no document from 1987 itself. Websites that call the Voice an 'impersonal, mechanical intelligence' or mention 'unseen friends' go beyond these words, and we could not find those phrases from him ◇.",
+        "Record": "Jovian Archive website, blog 'Human Design History & Legacy': 'The Voice' (posted 21 Nov 2023); 'The Practicality of Rave Cosmology' (posted 21 Jul 2020); 'The Phoenicians' (posted 24 Mar 2020, credited to Design Concepts); 'Sailing Neutrino Seas' (recorded 20 Oct 2006, posted 14 Dec 2021). All read in full as text on 12 Oct 2026."
+      },
+      "metadata": {
+        "year": 1987,
+        "kind": "account",
+        "source_type": "lecture, posted later"
+      }
+    },
+    {
+      "id": "origin-dates",
+      "name": "Date, length and place: where the sources differ",
+      "category": "account",
+      "sort_order": 3,
+      "keywords": [
+        "dates",
+        "discrepancy"
+      ],
+      "sections": {
+        "The question": "How long it lasted, and on what date it began.",
+        "Eight days and nights": "The International Human Design School's page on Ra Uru Hu says it began on the evening of 3 January 1987 and that he worked for eight days and eight nights ✔. The Jovian Archive page 'About Ra Uru Hu' says 'over eight days and nights' in January 1987 ✔. The myBodyGraph page says the same ○. Ra himself says '8 days' ✔.",
+        "Seven": "An Osho News article of 16 July 2011 says seven days and nights ○. It is written by the paper, not by Ra.",
+        "Other dates": "One secondary site quotes Ra as giving 11 January as the day the Voice left ◇ (not found at a primary source). Birth: 9 April 1948 on Jovian's page ✔; 9 March on some sites ◆.",
+        "Place": "Ibiza ✔ (Jovian, IHDS, Ra). In 1983 he had moved there from Toronto, 'during a personal crisis' ✔ (Jovian).",
+        "Why it matters": "None of this settles what the Voice was. It shows how fixed the story is: the length and the date are stable across the school's and the archive's pages, and differ only in an outside article.",
+        "Record": "International Human Design School, page 'Ra Uru Hu'; Jovian Archive website, page 'About Ra Uru Hu'; myBodyGraph, page 'About Ra Uru Hu'; Osho News, 'What is Human Design?' (16 Jul 2011); Ra Uru Hu, 'The Voice' (Jovian blog). Read 12 Oct 2026."
+      },
+      "metadata": {
+        "year": 1987,
+        "kind": "comparison"
+      }
+    },
+    {
+      "id": "origin-ra-after",
+      "name": "After 1987: when each thing was first said or published",
+      "category": "account",
+      "sort_order": 4,
+      "keywords": [
+        "timeline"
+      ],
+      "sections": {
+        "Timeline": "1987 (Jan): the experience, by his account. 1992: The Human Design System is published ✔ (Wikipedia, citing the book), and he begins to teach extensively ○ (Osho News). From about 2005 on: by his own account he starts to speak of the Voice, after 18½ years ✔ (inferred from his words). 2000: he founds the International Human Design School ✔ (Jovian). March 2011: he dies.",
+        "What follows": "The public form of the origin story is a late addition to a system that, by his own telling, was first taught as 'logical' and 'mechanical'. That is a fact about the order of events. It does not say the account is false or true.",
+        "Record": "Wikipedia, 'Human Design' (revision 1372852944); Jovian Archive, 'The Practicality of Rave Cosmology' and 'About Ra Uru Hu'; Osho News (16 Jul 2011). The 2005 date is our arithmetic from his words, so ◇."
+      },
+      "metadata": {
+        "year": 1992,
+        "kind": "timeline"
+      }
+    },
+    {
+      "id": "origin-school-and-press",
+      "name": "How others retell it: the school, the archive, the press",
+      "category": "account",
+      "sort_order": 5,
+      "keywords": [
+        "retellings"
+      ],
+      "sections": {
+        "The International Human Design School": "Gives the evening of 3 January 1987, calls it 'a terrifying experience', repeats the first words, and says he spent eight days and nights 'transcribing in detail' what became the system ✔.",
+        "Jovian Archive": "Calls it 'a mystical and transformative experience', says he 'received what he called The Voice, a transmission of knowledge that revealed the mechanics of life itself', and names the sources it draws on: the I Ching, astrology, Kabbalah, genetics, quantum physics and the Hindu-Brahman chakra system ✔.",
+        "Osho News (2011)": "Says he was 'penetrated by a voice for seven days and nights' and was told it was time for 'many esoteric secrets to be revealed' ○. This last claim is the article's, and we found it nowhere in Ra's own words.",
+        "What changes between retellings": "'Received the Voice' (Jovian) turns the Voice into a thing he received. 'Transcribing' (IHDS) makes him a scribe. Ra's own wording is that he had no name for it. Each retelling is a little more definite than the last.",
+        "Record": "International Human Design School, 'Ra Uru Hu'; Jovian Archive, 'About Ra Uru Hu'; Osho News, 'What is Human Design?' (16 Jul 2011). Read 12 Oct 2026."
+      },
+      "metadata": {
+        "kind": "comparison"
+      }
+    },
+    {
+      "id": "origin-rudd-1987",
+      "name": "Richard Rudd's account of the Gene Keys",
+      "category": "account",
+      "sort_order": 6,
+      "keywords": [
+        "Rudd",
+        "Gene Keys",
+        "1987"
+      ],
+      "sections": {
+        "Who, where, when": "Richard Rudd, in a text on genekeys.com dated 14 Aug 2018.",
+        "What he says": "He dates the Gene Keys to 1987. In an oak forest in Sussex he fell asleep and woke encircled by three adders; 'shortly after that terrifying encounter' he 'inexplicably began to experience visions'. After a 25-year search, 'a vast book just came pouring through me', uniting what he had studied. The book took him seven years to write and refine ✔.",
+        "What he says of its source": "He calls the Gene Keys a 'transmission' and a synthesis, and does not name a speaker or a voice ✔.",
+        "The same year": "1987 is also the year Ra Uru Hu gives for his experience. That is a fact about the two accounts. It says nothing about whether either is accurate.",
+        "Record": "Gene Keys, 'Gene Keys – a simple introduction' (14 Aug 2018), read in full 12 Oct 2026."
+      },
+      "metadata": {
+        "year": 1987,
+        "kind": "account"
+      }
+    },
+    {
+      "id": "origin-rudd-human-design-first",
+      "name": "Was Richard Rudd first a Human Design person?",
+      "category": "account",
+      "sort_order": 7,
+      "keywords": [
+        "Rudd",
+        "Human Design",
+        "chronology"
+      ],
+      "sections": {
+        "Short answer": "By his own words and by the Gene Keys site, yes: he worked in Human Design before the Gene Keys appeared as a book. The dating is looser than 'first' suggests, because his own account puts a first vision in 1987 and his Human Design work from the 1990s.",
+        "What is confirmed (read at the source)": "He proposed a book on Human Design 'in the 1990's'; the publisher 'decided not to publish' it, he 'shelved' it, and 'went on to create the Gene Keys' ✔ (his preface to the free web-book 'An A to Z of You', which carries a Gene Keys Publishing copyright line of 2008). The Gene Keys site states: 'During a 7-year period between 1997 and 2004 Richard Rudd studied and taught the Human Design System with founder Ra Uru Hu. Much of this knowledge was integrated to become the foundation of the Gene Keys' ✔ (page 'Integral Human Design'). He writes that he followed the type and strategy of Human Design for seven years, and that Human Design 'allowed me to find my own inner power' ✔ (article, 27 Jul 2018). The Gene Keys site lists, as books by him on Human Design, Circuitry (a guide to the circuits, channels and gates) and The Revelation (republished 'after many years out of print') ✔.",
+        "What is not settled": "The first publication dates of the two Human Design books were not found ◇. The first publication of the Gene Keys book is given as 2013 (Watkins) ○; other sources give 2009 or 2011 ◆. The 1990s proposal and the 1997 to 2004 study overlap, and the sources do not say which began first.",
+        "What this means for the origin question": "Rudd's visions, as he dates them, begin in 1987, a decade before the study he describes. The Gene Keys are, by his account, an integration of Human Design with what he had studied and received; by the Gene Keys site, 'much of this knowledge' is from Human Design. Both can be true at once.",
+        "Record": "Richard Rudd, preface to 'An A to Z of You' (PDF on genekeys.com, © 2008); Gene Keys, page 'Integral Human Design'; Rudd, 'Integral Human Design – A New View of the Bodygraph' (27 Jul 2018); Gene Keys, page 'Books'. Read 12 Oct 2026. The 2013 date: a search summary of publisher listings, not opened."
+      },
+      "metadata": {
+        "year": 1997,
+        "kind": "timeline"
+      }
+    },
+    {
+      "id": "origin-compare",
+      "name": "The two accounts side by side",
+      "category": "comparison",
+      "sort_order": 8,
+      "keywords": [
+        "comparison"
+      ],
+      "sections": {
+        "What they share": "A year (1987); a sudden experience; a synthesis said to have been received in full; years of work to teach it; a language that joins the I Ching, the zodiac and ideas about the body.",
+        "Where they differ": "Ra says he met a Voice, for eight days, and did not name it. Rudd tells of visions, then a book that 'poured through' him after twenty-five years, and names no speaker. Ra presents the system as mechanical knowledge to be tested on oneself. Rudd presents the Gene Keys as contemplation and a 'living transmission'.",
+        "Who says what about proof": "Ra: 'don't believe me and do not trust me', and 'a mechanical knowledge' ✔. Rudd: the keys 'teach from within you' (the site's wording is 'teaches from within you'); the site speaks of 'actually influencing your DNA' ✔. Ra's frame invites a test; Rudd's invites a practice. Neither source offers an outside test.",
+        "A fair reading": "Both accounts are testimony. Testimony can be sincere and still not be checkable. Whether the content came from outside the writer cannot be settled by the record; the parts that can be checked are in the next node.",
+        "Record": "The nodes above. Marks as given there."
+      },
+      "metadata": {
+        "kind": "comparison"
+      }
+    },
+    {
+      "id": "origin-prior-pairings",
+      "name": "Earlier pairings of the I Ching with the genetic code",
+      "category": "background",
+      "sort_order": 9,
+      "keywords": [
+        "genetic code",
+        "prior art"
+      ],
+      "sections": {
+        "The fact": "The hexagrams and the DNA codons are both 64 (two states taken six at a time; four bases taken three at a time). That the two sets match in number was noted in print before 1987: Gunther Stent in 1969, and Martin Schönberger in 'Verborgener Schlüssel zum Leben' (1973; English, 'The I Ching and the Genetic Code') ○.",
+        "Why it matters here": "It shows that the number match, and the idea of mapping hexagrams to codons, did not need a Voice or a vision to arise: others had it already. It does not show that the particular mapping is right, and we found no biological test of any mapping ◇.",
+        "Also older": "The order of the 64 figures round the Human Design wheel is the binary circle Shao Yong drew in the 11th century, which this library verified by script (see the wheel page). What Human Design adds is the start (gate 41 at 2° Aquarius) and the overlay on the zodiac.",
+        "Record": "Search summaries of publisher and bookseller listings for Schönberger and Stent (not opened) ○; this library's scripts/build_hd_wheel.py for the circle ✔."
+      },
+      "metadata": {
+        "year": 1973,
+        "kind": "background"
+      }
+    },
+    {
+      "id": "origin-what-a-test-needs",
+      "name": "What a test would need",
+      "category": "method",
+      "sort_order": 10,
+      "keywords": [
+        "test",
+        "Forer",
+        "Carlson"
+      ],
+      "sections": {
+        "What can be tested": "Not whether a Voice spoke. But the practical claims can be: that charts calculated from birth data say something about a person that a description not based on the chart does not; or that following a 'strategy' improves how people feel or decide more than another regular practice would.",
+        "A design that has been used for a similar claim": "Shawn Carlson's 1985 matching test of astrologers (Nature 318, 419 to 425) had practitioners match charts to personality profiles measured separately, with the matching done blind; the result is reported as chance-level, and later authors dispute his analysis ◆ ○. The same shape could be used here: pre-register the claim, have practitioners match charts to independent profiles blind, and publish whatever comes out.",
+        "The effect to control for": "People rate general, flattering descriptions as personal. In Forer's 1949 classroom demonstration (39 students) the average accuracy rating was about 4.3 out of 5 ○. 'It felt accurate to me' cannot distinguish a real description from a generic one.",
+        "What is open": "We found no study of either system. We did not search PsycINFO, Google Scholar or dissertation databases. The first job of any follow-up is that search.",
+        "Record": "Forer, 'The fallacy of personal validation', Journal of Abnormal and Social Psychology 44 (1949) 118 to 123 ○; Carlson, Nature 318 (1985) 419 to 425 ○. Both through search summaries, not opened. See the research note, section 5."
+      },
+      "metadata": {
+        "kind": "method"
+      }
+    }
+  ]
+}
