@@ -24,6 +24,7 @@ static site at iching.recursive.eco. Call the owner PlayfulProcess; never write 
   4. `python scripts/build_hd_lines.py` (after the wheel)
   5. `python scripts/build_collection.py`
   6. `python check.py` (must print OK)
+     and `python scripts/casting_odds.py --quiet` (must print OK: the odds behind the Casting and Chance course, and the course quoting them)
   7. `node scripts/determinism-check.js`
   8. `python scripts/check_book_mode.py` when the caster or the book changed (needs Playwright)
 - **Every hexagram item carries its King Wen number twice:** `"number": N` at the top level and

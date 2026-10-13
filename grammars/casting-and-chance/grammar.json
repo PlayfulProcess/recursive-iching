@@ -1,0 +1,348 @@
+{
+  "import_visibility": "private",
+  "_draft_note": "Oct 13 2026 draft course, written with AI from the cited sources for PlayfulProcess to revise. Arrives Private on first import (import_visibility). Every number is computed by scripts/casting_odds.py, which fails if this grammar stops quoting them.",
+  "_grammar_commons": {
+    "schema_version": "1.0",
+    "license": "CC-BY-SA-4.0 (PlayfulProcess). The Chinese of the Great Commentary is public domain. No in-copyright text is reproduced; books are named and described only.",
+    "attribution": [
+      {
+        "name": "PlayfulProcess",
+        "date": "2026-10-13",
+        "note": "question and course design; draft prose written with AI from the cited sources, numbers checked by script"
+      }
+    ]
+  },
+  "name": "Casting and Chance",
+  "description": "Coins, stalks, cards and shells: how an oracle is cast and what the odds are. The three-coin and yarrow methods, changing lines and the relating hexagram, four ways to render the I Ching as cards, Búzios as a weighted deck of 17, Ifá's opele as two draws from 16, card-game sketches, and what card form gains and loses. Draft.",
+  "grammar_type": "custom",
+  "default_preview": "course",
+  "is_published": false,
+  "provenance": "record",
+  "creator_name": "PlayfulProcess",
+  "tags": [
+    "course",
+    "i-ching",
+    "casting",
+    "probability",
+    "tarot",
+    "buzios",
+    "ifa",
+    "draft"
+  ],
+  "marks": [
+    {
+      "mark": "✔",
+      "label": "checked: computed by script, or read in the cited source"
+    },
+    {
+      "mark": "○",
+      "label": "indirect: a source that summarises another, or a summary by a tool"
+    },
+    {
+      "mark": "◆",
+      "label": "contested, or untested"
+    },
+    {
+      "mark": "◇",
+      "label": "from memory, not yet checked against a source"
+    }
+  ],
+  "bibliography": [
+    {
+      "key": "xici_ws",
+      "author": "Xici zhuan (the 'Great Commentary'), upper part, chapter 9; Chinese Wikisource",
+      "title": "周易/繫辭上",
+      "year": 2026,
+      "url": "https://zh.wikisource.org/wiki/周易/繫辭上",
+      "note": "the passage beginning 大衍之數五十 read Oct 13 2026; public domain"
+    },
+    {
+      "key": "legge1882",
+      "author": "James Legge (tr.)",
+      "title": "The Yî King (Sacred Books of the East, vol. 16), Appendix III",
+      "year": 1882,
+      "url": "https://sacred-texts.com/ich/",
+      "note": "public domain; the English of the Great Commentary"
+    },
+    {
+      "key": "cottrell_chuhsi",
+      "author": "Russell Cottrell (on Chu Hsi, tr. Joseph A. Adler 2002)",
+      "title": "Chu Hsi's Rules (Yixue qimeng, chapter 4)",
+      "year": 2026,
+      "url": "https://russellcottrell.com/VirtualYarrowStalks/ChuHsiRules.htm",
+      "note": "Zhu Xi's rules for reading changing lines; also cited in the Schools of the I Ching"
+    },
+    {
+      "key": "cottrell_coins",
+      "author": "Russell Cottrell",
+      "title": "Coins (Virtual Yarrow Stalks)",
+      "year": 2026,
+      "url": "https://russellcottrell.com/VirtualYarrowStalks/coins.htm",
+      "note": "read Oct 13 2026 through a page-reading tool: gives yarrow 1/16, 5/16, 7/16, 3/16 and coins 1/8, 3/8, 3/8, 1/8, and says a four-coin method reproduces the yarrow odds"
+    },
+    {
+      "key": "biroco_basics",
+      "author": "Yijing Dao (anonymous author)",
+      "title": "How to consult the Yijing",
+      "year": 2025,
+      "url": "https://www.biroco.com/yijing/basics.htm",
+      "note": "read Oct 13 2026 through a page-reading tool: heads 3, tails 2; the coin method's Chinese name, huozhulin fa"
+    },
+    {
+      "key": "wp_icd",
+      "author": "Wikipedia",
+      "title": "I Ching divination",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/I_Ching_divination",
+      "note": "read Oct 13 2026 through a page-reading tool; its yarrow table agrees with Cottrell; mentions methods with sixteen objects and a four-coin method that matches the yarrow odds"
+    },
+    {
+      "key": "wp_cowrie",
+      "author": "Wikipedia",
+      "title": "Cowrie-shell divination",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/Cowrie-shell_divination",
+      "note": "read Oct 13 2026 through a page-reading tool: sixteen shells; the number that fall mouth up selects the odù; called jogo de búzios or merindilogun in Brazil"
+    },
+    {
+      "key": "bascom1980",
+      "author": "William Bascom",
+      "title": "Sixteen Cowries: Yoruba Divination from Africa to the New World (Indiana University Press, 1980; paperback 1993)",
+      "year": 1980,
+      "url": null,
+      "note": "not read for this course; its contents list a chapter for each count of open shells, zero included (seen in catalogue and search snippets)"
+    },
+    {
+      "key": "wp_ifa",
+      "author": "Wikipedia",
+      "title": "Ifá",
+      "year": 2026,
+      "url": "https://en.wikipedia.org/wiki/If%C3%A1",
+      "note": "read Oct 13 2026 through a page-reading tool: the opele chain of eight half-nuts, or the ikin nuts; 256 odù, 16 principal"
+    },
+    {
+      "key": "bascom1969",
+      "author": "William Bascom",
+      "title": "Ifa Divination: Communication between Gods and Men in West Africa (Indiana University Press, 1969)",
+      "year": 1969,
+      "url": null,
+      "note": "the standard study of Ifá casting; not read for this course"
+    },
+    {
+      "key": "odds_script",
+      "author": "PlayfulProcess",
+      "title": "scripts/casting_odds.py (this repo)",
+      "year": 2026,
+      "url": "https://github.com/PlayfulProcess/recursive-iching/blob/main/scripts/casting_odds.py",
+      "note": "computes every figure in this course exactly, mostly twice (formula and full enumeration), and fails if the course stops quoting them"
+    },
+    {
+      "key": "caster",
+      "author": "PlayfulProcess",
+      "title": "viewers/caster-engine.js (the Path Caster, this repo)",
+      "year": 2026,
+      "url": "https://github.com/PlayfulProcess/recursive-iching/blob/main/viewers/caster-engine.js",
+      "note": "casts by three coins by default, with yarrow odds as a setting"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ch-1",
+      "name": "Why the method shapes the reading",
+      "category": "chapter",
+      "sort_order": 1,
+      "keywords": [
+        "course",
+        "casting",
+        "probability",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "PlayfulProcess asked, on October 13 2026: could we also render the I Ching in a tarot form, and would that be desirable? Short answer: yes, in more than one way, and each way keeps some of the odds and drops others. A deck of 16 cards can give exactly the odds of the yarrow stalks. A deck of 64 cards gives each hexagram its fair share but loses the changing lines. Whether either is desirable depends on what the casting is for.\n\nA method of casting is a machine for odds. Three coins and fifty yarrow stalks both give each of the 64 hexagrams the same chance, 1 in 64, and yet they disagree about which lines move, and so about where a reading goes next. Sixteen cowries make a count of 8 open shells about 12,870 times as likely as a count of 0. A tarot deck never deals the same card twice in a spread. None of this says what a reading means. It says how often each answer comes up, and that shapes what a person meets over a hundred readings. Each method here is described as it is practised, and none is held up as the right one.\n\nA reading doesn't tell you your fate; it might help you create it. The odds of a method change what comes up, and leave open what a person does with it.",
+        "The odds": "| Method | What is counted | Outcomes | Are they equally likely? |\n|---|---|---|---|\n| Three coins, six times | line values 6, 7, 8, 9 | 4,096 casts, 64 hexagrams | hexagrams yes; line values no |\n| Yarrow stalks, six lines | line values 6, 7, 8, 9 | 4,096 casts, 64 hexagrams | hexagrams yes; line values no, and not the coin odds |\n| A 78-card tarot, three cards | cards in positions | 456,456 ordered spreads | yes, and no card twice |\n| Sixteen cowries | how many fall open | 17 counts, 0 to 16 | no: 8 open is 19.6%, 0 open is 1 in 65,536 |\n| Ifá opele | two legs of four seeds | 256 odù | yes, 1 in 256 each |",
+        "Checked and claimed": "Checked by script: every number in the table ✔ [@odds_script]. The model behind them, stated once: a coin, a shell or a seed falls either way half the time, and a split of the stalks leaves each remainder equally likely. Real objects and hands need not be fair; later chapters say where that matters ◆.",
+        "Sources": "The question is PlayfulProcess's, October 13 2026. Numbers: scripts/casting_odds.py [@odds_script]."
+      },
+      "metadata": {
+        "chapter": 1,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-2",
+      "name": "Three coins",
+      "category": "chapter",
+      "sort_order": 2,
+      "keywords": [
+        "course",
+        "casting",
+        "probability",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "Throw three coins. Count heads as 3 and tails as 2, and add them [@biroco_basics]. The sum is 6, 7, 8 or 9. An odd sum is a solid (yang) line, an even sum a broken (yin) line, and 6 and 9 are the 'old' lines that change. Throw six times and build the figure from the bottom up. The method is old enough to have a Chinese name, huozhulin fa, the 'forest of fire pearls' [@biroco_basics]; some readers count heads and tails the other way round.\n\nThree coins can fall eight ways, and only one of them gives three tails. So a 6 comes 1 time in 8, a 9 1 time in 8, and 7 and 8 each 3 times in 8. A solid line comes half the time, so each hexagram comes 1 time in 64 (1.56%). Each line changes 1 time in 4, solid or broken alike.\n\nThe Path Caster on this site casts by three coins unless you choose yarrow [@caster].",
+        "The odds": "| Coins | Sum | Line | Odds |\n|---|---|---|---|\n| T T T | 6 | old yin, changing | 1/8 = 12.5% |\n| H T T (3 ways) | 7 | young yang | 3/8 = 37.5% |\n| H H T (3 ways) | 8 | young yin | 3/8 = 37.5% |\n| H H H | 9 | old yang, changing | 1/8 = 12.5% |\n\nA solid line: 7 or 9, 1/2. A hexagram: (1/2) to the sixth power, 1/64, for each of the 64.",
+        "Checked and claimed": "Checked by script, by listing the eight falls ✔ [@odds_script]. The heads-3 convention ○ [@biroco_basics]; the coin odds also given by Cottrell ○ [@cottrell_coins].",
+        "Sources": "Yijing Dao, 'How to consult the Yijing' [@biroco_basics]; Cottrell, 'Coins' [@cottrell_coins]; scripts/casting_odds.py [@odds_script]."
+      },
+      "metadata": {
+        "chapter": 2,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-3",
+      "name": "Yarrow stalks",
+      "category": "chapter",
+      "sort_order": 3,
+      "keywords": [
+        "course",
+        "casting",
+        "probability",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "The stalk method comes from the Great Commentary: 大衍之數五十，其用四十有九 [@xici_ws], which we read as 'the number of the great expansion is fifty; forty-nine are used'. Legge's English of 1882 is public domain [@legge1882]. The procedure most people follow today is Zhu Xi's reconstruction of 1186 [@cottrell_chuhsi].\n\nSet one stalk aside, leaving 49. Split them into two piles. Take one stalk from the right pile and hold it between the fingers. Count each pile off by fours; the remainder of each is 1, 2, 3 or 4 (4 when it divides evenly). Put the held stalk and both remainders aside: that is 5 or 9 stalks. Gather what is left and do the same twice more; these times 4 or 8 go aside. After three rounds, 36, 32, 28 or 24 stalks remain. Divide by four: 9, 8, 7 or 6. One line takes three rounds, so a hexagram takes eighteen.\n\nWhere do the odds come from? On the first round the two remainders add to 4 three times out of four (5 aside) and to 8 once (9 aside). On the second and third rounds they add to 3 or 7 half the time each (4 or 8 aside). Multiply through and the four line values come 1, 5, 7 and 3 times in 16.\n\nA solid line (7 or 9) still comes 8 times in 16, half the time, so each hexagram is again 1 in 64. What differs is which lines change: a 9 (an old solid line) comes three times as often as a 6. Chapter 4 follows where that leads.",
+        "The odds": "| Line | Coins | Yarrow |\n|---|---|---|\n| 6, old yin (changing) | 1/8 = 12.5% | 1/16 = 6.25% |\n| 7, young yang | 3/8 = 37.5% | 5/16 = 31.25% |\n| 8, young yin | 3/8 = 37.5% | 7/16 = 43.75% |\n| 9, old yang (changing) | 1/8 = 12.5% | 3/16 = 18.75% |\n\nA four-coin method, and a deck of 16 cards (chapter 5), reproduce the yarrow column exactly [@cottrell_coins] [@wp_icd].",
+        "Checked and claimed": "Checked by script, by working through every remainder of the three rounds ✔ [@odds_script]; the same figures in Cottrell ○ [@cottrell_coins] and Wikipedia ○ [@wp_icd]. The Chinese passage ✔ [@xici_ws].\n\n◆ The 1, 5, 7, 3 assume each remainder is equally likely, which is the usual reading. If instead every pile size were equally likely, the script finds about 5.2%, 28.9%, 44.8% and 21.1%: 49 stalks do not split evenly into fours, and real hands split near the middle. How real hands split has not been measured here.",
+        "Sources": "Great Commentary, upper part, chapter 9 [@xici_ws]; Legge 1882, Appendix III [@legge1882]; Zhu Xi, Yixue qimeng (1186), via Cottrell [@cottrell_chuhsi]; Cottrell, 'Coins' [@cottrell_coins]; Wikipedia, 'I Ching divination' [@wp_icd]; scripts/casting_odds.py [@odds_script]."
+      },
+      "metadata": {
+        "chapter": 3,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-4",
+      "name": "Changing lines and the relating hexagram",
+      "category": "chapter",
+      "sort_order": 4,
+      "keywords": [
+        "course",
+        "casting",
+        "probability",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "A 6 or a 9 is a line in motion. Turn each one over (a 6 becomes solid, a 9 broken) and you get a second figure, often called the relating hexagram. With no changing lines there is no second figure, and the reading rests on the first.\n\nBy either method a line changes 1 time in 4, so the number of changing lines in a cast follows the same curve for coins and stalks. No changing line comes in 17.8% of casts, one in 35.6%, two in 29.7%, three in 13.2%, and four or more in about 3.8%. Zhu Xi's rules for reading two, three or more changing lines exist because those casts are common [@cottrell_chuhsi]; the Schools of the I Ching course sets the rules out.\n\nThe two methods part on which lines change. With coins a solid line and a broken line change equally, 1 time in 4. With yarrow a solid line changes 3 times in 8 and a broken line 1 time in 8. So hexagram 1, six solid lines, has at least one changing line in 94.0% of yarrow casts, and hexagram 2, six broken lines, in 55.1%; with coins both are 82.2%.\n\nThat tilt carries into the second figure. With yarrow a line of the relating hexagram is solid only 3 times in 8, so readings drift from yang toward yin. Given at least one change, the relating figure is hexagram 2 about 6.4% of the time and hexagram 1 about 0.23%; with coins each is 1 in 64.\n\nOne pair, the example line of the Schools course: hexagram 43 with its third line changing, becoming 58. By coins it comes about 1 in 1,079 casts; by yarrow about 1 in 1,278. Any one pair is rare, and every cast is one of 4,096.",
+        "The odds": "| Changing lines | Odds (coins and yarrow) |\n|---|---|\n| 0 | 729/4096 = 17.8% |\n| 1 | 1458/4096 = 35.6% |\n| 2 | 1215/4096 = 29.7% |\n| 3 | 540/4096 = 13.2% |\n| 4 | 135/4096 = 3.3% |\n| 5 | 18/4096 = 0.44% |\n| 6 | 1/4096 = 0.02% |\n\n| | Coins | Yarrow |\n|---|---|---|\n| A solid line changes | 1/4 | 3/8 |\n| A broken line changes | 1/4 | 1/8 |\n| Hexagram 1 has a changing line | 82.2% | 94.0% |\n| Hexagram 2 has a changing line | 82.2% | 55.1% |\n| Relating figure is 2, given a change | 1.56% | 6.40% |\n| Relating figure is 1, given a change | 1.56% | 0.23% |\n| 43 changing at line 3 to 58 | 1 in 1,079 | 1 in 1,278 |",
+        "Checked and claimed": "Checked by script, by listing all 4,096 casts under each method ✔ [@odds_script]. The figures for 43 and 58 come from this repo's table of hexagram lines (scripts/hexagram-binary.json) ✔. That the drift toward yin is meaningful is a reading, not a fact: some readers prefer coins for their symmetry, others the stalks for theirs ◇.",
+        "Sources": "Zhu Xi's rules via Cottrell [@cottrell_chuhsi]; scripts/casting_odds.py [@odds_script]; the Schools of the I Ching course, node 'method-changing-lines'."
+      },
+      "metadata": {
+        "chapter": 4,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-5",
+      "name": "The I Ching as cards",
+      "category": "chapter",
+      "sort_order": 5,
+      "keywords": [
+        "course",
+        "casting",
+        "probability",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "A tarot draw works differently from a cast. The deck holds 78 cards, and a card drawn stays out, so a spread never shows the same card twice. Three cards can be dealt in 456,456 orders; as a set they are 76,076 combinations, and the difference is the positions: past, present and future read the same three cards three different ways. Allow reversals and three cards have 3,651,648 outcomes. Any given card turns up in a three-card spread 3.85% of the time. A cast is the other way round: each line is fresh, so a 9 can come six times running.\n\nHere are four ways to cast the I Ching with cards. Each keeps some of the odds.\n\n(a) A 64-card deck. One card, one hexagram, each 1 in 64: the same odds as coins or stalks for the first figure, but no changing lines and no second figure. A gentler version: two decks of the eight trigrams, one draw for the lower and one for the upper, again 1 in 64, and you learn the trigrams by handling them. A trap: drawing a second card from the 64 as the 'relating' figure. Two independent cards are identical only 1.56% of the time, where a cast has no change 17.8% of the time, and they differ in three lines most often, where a cast most often changes one.\n\n(b) A 16-card line deck: one card marked 6, five marked 7, seven marked 8, three marked 9. Draw one, write the line, shuffle it back, six times from the bottom up. This gives the yarrow method's odds exactly. Methods with sixteen objects are described elsewhere [@wp_icd]; a deck with these counts gives the yarrow odds by construction. Shuffling back matters. Keep the drawn cards out and a cast with no changing line falls to 11.5%, and hexagram 1 to 0.35% instead of 1.56%, because the solid cards run out.\n\n(c) A coin deck: eight cards, one 6, three 7s, three 8s, one 9, drawn six times with replacement, gives the three-coin odds exactly. A four-card deck with one of each value is the tempting shortcut and the wrong one: every second line would change, and a cast with no change would drop to 1.56%.\n\n(d) A hexagram card and a change deck. Draw a figure from the 64, then for each line draw from a small deck that says 'changes' or 'stays'. One change deck of four cards with one 'changes' gives the coin odds. Two decks of eight, one for solid lines with three 'changes' cards and one for broken lines with one, give the yarrow odds exactly.",
+        "The odds": "| Rendering | First figure | Changing lines | Matches |\n|---|---|---|---|\n| (a) 64 cards, one draw | 1/64 each | none | the first figure only |\n| (a) two trigram decks of 8 | 1/64 each | none | the first figure only |\n| (b) 16-card line deck, cards back | 1/64 each | yes, yarrow odds | yarrow, exactly |\n| (b) same, cards kept out | not equal (hexagram 1: 0.35%) | too few (no change: 11.5%) | neither |\n| (c) 8-card coin deck, cards back | 1/64 each | yes, coin odds | coins, exactly |\n| (c) 4 cards, one of each value | 1/64 each | half of all lines | neither |\n| (d) 64 cards + change decks | 1/64 each | yes | coins or yarrow, by the decks |\n\n| Lines that differ | Cast (either method) | Two cards from the 64 |\n|---|---|---|\n| 0 | 17.80% | 1.56% |\n| 1 | 35.60% | 9.38% |\n| 2 | 29.66% | 23.44% |\n| 3 | 13.18% | 31.25% |\n| 4 | 3.30% | 23.44% |\n| 5 | 0.44% | 9.38% |\n| 6 | 0.02% | 1.56% |",
+        "Checked and claimed": "Checked by script: each deck's odds against the coins and the stalks, the no-replacement case by listing every hand of six from the 16, the tarot counts ✔ [@odds_script]. That sixteen-object methods are in use ○ [@wp_icd]. The deck designs are ours, offered as designs.",
+        "Sources": "scripts/casting_odds.py [@odds_script]; Wikipedia, 'I Ching divination' [@wp_icd]."
+      },
+      "metadata": {
+        "chapter": 5,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-6",
+      "name": "Búzios as a weighted deck",
+      "category": "chapter",
+      "sort_order": 6,
+      "keywords": [
+        "course",
+        "casting",
+        "probability",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "In the jogo de búzios sixteen cowries are thrown, and the number that fall with the mouth up selects the odù [@wp_cowrie] [@bascom1980]. There are 17 possible counts, 0 to 16, but they are far from equally likely. Sixteen shells can fall 65,536 ways, and 12,870 of those ways leave exactly 8 open. Only one way leaves all sixteen closed, and one leaves all open.\n\nSo a deck that stands in for the shells has 17 cards with weights: card k carries the number of ways k shells can fall open, the binomial coefficient C(16, k). Card 8 comes up 19.6% of the time, cards 7 and 9 17.5% each, cards 6 and 10 12.2%, and cards 0 and 16 once in 65,536 throws each. recursive.eco's Búzios deck is being built this way (October 2026).\n\nThe tempting mistake is a plain deck of 17 cards. Then every count comes 5.9% of the time: 0 open would turn up 3,855 times more often than the shells give it, and 8 open 3.3 times less often. The rare counts would become ordinary: 0 open alone would come once in every 17 throws, where the shells give it almost never.\n\nThe weights assume a fair shell, open or closed half the time. A cowrie is not a coin. If a shell fell open 40% of the time, the most likely count would be 6, not 8, and the table would shift. We found no published measurement of how cowries fall ◆.\n\nHow each count is named and read, and what a house does with zero open, belongs to the house. Bascom's study gives a chapter to each count, zero included, as practised by the Yoruba diviners he worked with [@bascom1980].",
+        "The odds": "| Open | Ways (of 65,536) | Weighted deck | Plain 17-card deck |\n|---|---|---|---|\n| 0 or 16 | 1 | 0.002% | 5.9% |\n| 1 or 15 | 16 | 0.024% | 5.9% |\n| 2 or 14 | 120 | 0.183% | 5.9% |\n| 3 or 13 | 560 | 0.854% | 5.9% |\n| 4 or 12 | 1,820 | 2.8% | 5.9% |\n| 5 or 11 | 4,368 | 6.7% | 5.9% |\n| 6 or 10 | 8,008 | 12.2% | 5.9% |\n| 7 or 9 | 11,440 | 17.5% | 5.9% |\n| 8 | 12,870 | 19.6% | 5.9% |",
+        "Checked and claimed": "Checked by script, by listing all 65,536 falls ✔ [@odds_script]. Sixteen shells and the count of open mouths ○ [@wp_cowrie]; Bascom's chapter per count ○ (seen in its contents, the book not read here) [@bascom1980]. Whether real cowries fall half and half ◆.",
+        "Sources": "Wikipedia, 'Cowrie-shell divination' [@wp_cowrie]; William Bascom, Sixteen Cowries (1980) [@bascom1980]; scripts/casting_odds.py [@odds_script]."
+      },
+      "metadata": {
+        "chapter": 6,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-7",
+      "name": "Ifá as two cards",
+      "category": "chapter",
+      "sort_order": 7,
+      "keywords": [
+        "course",
+        "casting",
+        "probability",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "One of the ways Ifá casts is the opele, a chain of eight half-nuts [@wp_ifa]. Each half falls one of two ways, and the chain lies as two legs of four. A leg of four can fall 16 ways, and each of those 16 figures has a name. The two legs together give 16 times 16, 256 odù, the corpus of Ifá [@wp_ifa].\n\nBecause every half-nut is a fair coin in this model, every one of the 256 odù is equally likely, 1 in 256. That makes the card version simple: a deck of 16 figures, draw one, put it back, draw again. The first card is one leg, the second card the other. Order counts, because a figure on the right and another on the left is a different odù from the same two figures swapped; recursive.eco reads the right leg first. When both draws give the same figure the odù is one of the 16 principal odù, the Meji, and that happens 16 times in 256, 6.25%.\n\nPlayfulProcess liked this version because it is simpler and 'not trying to mimic the tradition': two cards from sixteen give the same odds as the chain without imitating the chain.\n\nSet it beside the other two. The I Ching hexagram is also two halves, two trigrams of three lines, 8 times 8. Búzios counts open shells and ignores which ones, so its 17 outcomes are unequal; the opele keeps which seed is which, so its 256 are equal.",
+        "The odds": "| | Opele | Two cards from 16 |\n|---|---|---|\n| Outcomes | 2^8 = 256 falls | 16 x 16 = 256 ordered pairs |\n| Each odù | 1/256 = 0.39% | 1/256 = 0.39% |\n| A Meji (both legs alike) | 16/256 = 6.25% | 16/256 = 6.25% |\n| Any other odù | 240/256 = 93.75% | 240/256 = 93.75% |",
+        "Checked and claimed": "Checked by script, by listing all 256 falls ✔ [@odds_script]. The chain of eight halves and the 256 odù ○ [@wp_ifa]. The fairness of each half-nut ◆, as with the cowries.",
+        "Sources": "Wikipedia, 'Ifá' [@wp_ifa]; scripts/casting_odds.py [@odds_script]. Further reading, not read for this course: William Bascom, Ifa Divination (1969) [@bascom1969]."
+      },
+      "metadata": {
+        "chapter": 7,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-8",
+      "name": "If it were a card game",
+      "category": "chapter",
+      "sort_order": 8,
+      "keywords": [
+        "course",
+        "casting",
+        "probability",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "Sketches, not rules. Each keeps the odds of one method, so play does not quietly change what comes up.\n\nBuild the figure. A 16-card line deck in the middle of the table. Players take turns drawing one card, laying the line in its place from the bottom up and shuffling the card back. When the sixth line is down, the 6s and 9s are turned sideways, and the table reads the first figure, then the relating one. Yarrow odds, and everyone has a hand in the cast.\n\nTwo halves. Two small decks of the eight trigrams, each card with its image: heaven, lake, fire, thunder, wind, water, mountain, earth. Draw a lower and an upper, name the hexagram they make, and look it up. A way to learn the 64 by their halves, with fair odds.\n\nThe change deck. One 64-card deck of hexagrams, illustrated like a tarot, and two thin change decks (chapter 5, rendering d). A player draws a figure, then a 'changes' or 'stays' card for each line, solid lines from one deck, broken lines from the other. The figure card can carry the art; the change decks carry the odds.\n\nShells and legs. A 17-card Búzios deck printed with its weights, card 8 in many copies and cards 0 and 16 once each in a very large deck, is awkward to print: the smallest exact deck has 65,536 cards. A spinner or a digital draw keeps the weights where cards cannot. The Ifá deck needs only 16 cards, drawn twice.",
+        "The odds": "| Sketch | Cards | Odds kept |\n|---|---|---|\n| Build the figure | 16 | yarrow, exactly |\n| Two halves | 8 + 8 | first figure only |\n| The change deck | 64 + 8 + 8 | yarrow, exactly (or coins with one deck of 4) |\n| Búzios, printed | 65,536 for exact weights | exact only digitally |\n| Ifá, two cards | 16 | exactly |",
+        "Checked and claimed": "Checked by script: the odds each sketch keeps ✔ [@odds_script]. The sketches are ours and untested at a table.",
+        "Sources": "scripts/casting_odds.py [@odds_script]."
+      },
+      "metadata": {
+        "chapter": 8,
+        "status": "draft"
+      }
+    },
+    {
+      "id": "ch-9",
+      "name": "Is it desirable?",
+      "category": "chapter",
+      "sort_order": 9,
+      "keywords": [
+        "course",
+        "casting",
+        "probability",
+        "draft"
+      ],
+      "sections": {
+        "Reading": "Card form gains some things. It is quick: six draws instead of eighteen rounds of counting stalks. It is easy to share: a deck can be passed round a table, photographed, played in a group. The odds are visible, since anyone can count seven cards marked 8 in a line deck. And the figures become objects to handle and to learn, which may suit a beginner.\n\nCard form also loses some things. The time of the stalks goes, and with it the slowness that many readers value: the counting is part of the practice, not only a way to get a number. The hand's own split goes too. A 64-card deck loses the changing lines, and so the second figure and the movement between the two. A careless deck loses the odds altogether: a plain 17-card Búzios deck or a four-card line deck changes what a person meets, reading after reading, without saying so.\n\nSo the answer depends on the use. For learning, for play, for reading with others, a deck that keeps the odds (the 16-card line deck, the change deck, the two Ifá cards) gives up little. For someone whose practice is the slow casting, a deck is a different practice, and calling it the same would hide that. A 64-card draw is closest to a tarot card of the day: a figure to sit with, without the motion of the changing lines.\n\nA method changes the odds of what comes up. What a person does with the figure in front of them is theirs.",
+        "The odds": "| Card form | Gains | Loses |\n|---|---|---|\n| 64 cards | speed; art on every figure; a daily draw | changing lines; the second figure |\n| 16-card line deck | yarrow odds exactly; play in a group | the time and the hand of the stalks |\n| 64 cards + change decks | art and full odds | a little speed; three decks to keep |\n| Búzios weighted, digital | the true weights | the shells in the hand |\n| Ifá, two cards from 16 | the true odds; simplicity | the chain itself |",
+        "Checked and claimed": "Checked: the odds each form keeps ✔ [@odds_script]. The gains and losses are judgments, ours, offered for PlayfulProcess to weigh.",
+        "Sources": "This course's chapters 2 to 8; scripts/casting_odds.py [@odds_script]."
+      },
+      "metadata": {
+        "chapter": 9,
+        "status": "draft"
+      }
+    }
+  ]
+}

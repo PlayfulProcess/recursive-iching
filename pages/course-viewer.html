@@ -63,6 +63,12 @@
   .cite{font-size:.85em;color:var(--muted)}
   .cite a{color:inherit}
   .sec.intro{border-left:3px solid var(--accent);padding-left:14px}
+  /* —— Markdown tables in a section (odds tables) —— */
+  .content .tbl{overflow-x:auto;margin:10px 0 14px}
+  .content table{border-collapse:collapse;font-size:14px;min-width:100%}
+  .content th,.content td{border-bottom:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
+  .content th{color:var(--ink-soft);font-weight:600;font-size:12.5px}
+  .content td{font-variant-numeric:tabular-nums}
 
   /* —— the course's painting, on its first chapter: one public-domain work (img/zen/credits.json) —— */
   .course-art{display:flex;gap:24px;align-items:flex-end;margin:4px 0 30px;padding:0 0 28px;border-bottom:1px solid var(--line)}
@@ -81,7 +87,7 @@
 </style>
 </head>
 <body>
-<script src="../site-header.js?v=49"></script>
+<script src="../site-header.js?v=50"></script>
 <site-header active="course"></site-header>
 <div class="wrap">
   <aside>
@@ -137,6 +143,7 @@ const COURSES = {
   'translations': { manifest: '../course/translations.manifest.json', art: 'muqi-six-persimmons' },
   'schools-of-the-iching': { manifest: '../course/schools-of-the-iching.manifest.json' },
   'oracle-to-chart': { manifest: '../course/oracle-to-chart.manifest.json' },
+  'casting-and-chance': { manifest: '../course/casting-and-chance.manifest.json' },
 };
 // The painting for a course, on its first chapter only. Contained, never cropped; the caption names it.
 async function showCourseArt(id){
@@ -260,7 +267,16 @@ async function main(){
     return b.url ? `<a href="${esc(b.url)}" target="_blank" rel="noopener">${label}</a>` : label;
   }).join('; ') + ']</span>');
   const links = h => h.replace(/\[([^\]@][^\]]*)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>');
-  const para = t => String(t).split(/\n{2,}/).map(p => `<p>${cite(links(mdLite(p))).replace(/\n/g, '<br>')}</p>`).join('');
+  // A paragraph whose every line starts with '|' is a Markdown table: a header row, the |---| rule, body rows.
+  const isTable = p => { const ls = p.trim().split('\n'); return ls.length > 1 && ls.every(l => l.trim().startsWith('|')); };
+  const cells = l => l.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => cite(links(mdLite(c.trim()))));
+  const table = p => {
+    const [head, ...body] = p.trim().split('\n').filter(l => !/^\|[\s:|-]+\|$/.test(l.trim())).map(cells);
+    return '<div class="tbl"><table><thead><tr>' + head.map(c => `<th>${c}</th>`).join('') + '</tr></thead><tbody>'
+      + body.map(r => '<tr>' + r.map(c => `<td>${c}</td>`).join('') + '</tr>').join('') + '</tbody></table></div>';
+  };
+  const para = t => String(t).split(/\n{2,}/).map(p => isTable(p) ? table(p)
+    : `<p>${cite(links(mdLite(p))).replace(/\n/g, '<br>')}</p>`).join('');
   const first = !isAppendix && chapterItems[0] && current.id === chapterItems[0].id;
   if (first) showCourseArt(course.art);
   content.innerHTML = (first && manifest.intro ? `<div class="sec intro">${para(manifest.intro)}</div>` : '')
