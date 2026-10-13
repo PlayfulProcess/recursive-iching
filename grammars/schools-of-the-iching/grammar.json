@@ -1,5 +1,4 @@
 {
-  "_source_of_truth": "repo",
   "import_visibility": "private",
   "_draft_note": "Oct 12 2026 draft. recursive.eco's importer skips this folder (_source_of_truth: repo). To let the assistant read it, PlayfulProcess decides; then remove that line, import (it arrives Private: import_visibility) and put the new id in ids.json; publishing it is her choice, made in the app. See docs/PROPOSAL-hd-gene-keys-grammars-and-course-2026-10-12.md.",
   "_grammar_commons": {
