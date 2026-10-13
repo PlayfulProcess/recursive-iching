@@ -249,3 +249,12 @@ Round 2 (same day) adds three more unmapped folders and one change to a mapped o
 
 The schools reference (`schools-of-the-iching`) and the course (`oracle-to-chart`) are read by `pages/course-viewer.html` through
 `course/*.manifest.json`; the wheel has its own page, `pages/wheel.html`.
+
+## Oct 13 2026: one new draft folder
+
+| Folder | How it is built | What the importer does | Why |
+|---|---|---|---|
+| `casting-and-chance` | hand-written; `import_visibility: "private"`, no `_source_of_truth` stamp | creates a NEW grammar on the next import, **Private** | the draft course on casting odds (coins, yarrow, cards, Búzios, Ifá), PlayfulProcess's question of Oct 13. Same pattern as `schools-of-the-iching` and `oracle-to-chart` since Oct 12: importable, arriving Private; publishing is her choice in the app. After the import, put its id in `ids.json` (not in `_public_now` until it is public) |
+
+Every number in it is computed by `scripts/casting_odds.py`, which fails if the grammar stops quoting them. The course is read by
+`pages/course-viewer.html?course=casting-and-chance` through `course/casting-and-chance.manifest.json`.

@@ -1,0 +1,20 @@
+{
+  "_note": "Course manifest for 'Casting and Chance'. Read by pages/course-viewer.html?course=casting-and-chance. Chapters come from grammars/casting-and-chance/grammar.json; edit the grammar, not this file. Every number in it is checked by scripts/casting_odds.py.",
+  "title": "Casting and Chance",
+  "kicker": "The Recursive I Ching · coins, stalks, cards and shells",
+  "description": "How an oracle is cast and what the odds are: three coins, yarrow stalks, changing lines, the I Ching as cards, Búzios as a weighted deck, Ifá as two cards, card-game sketches, and what card form gains and loses.",
+  "sourceGrammar": "casting-and-chance",
+  "chapterIdPrefix": "ch-",
+  "appendixIdPrefix": "none-",
+  "appendixTitle": "Appendix",
+  "appendixIntro": "",
+  "sectionOrder": [
+    "Reading",
+    "The odds",
+    "Checked and claimed",
+    "Sources"
+  ],
+  "appendixSectionOrder": [],
+  "companions": {},
+  "draft": "A draft written with AI from the cited sources, for PlayfulProcess to revise. The numbers are computed exactly by scripts/casting_odds.py; the prose is not yet in her voice. Each method is described as practised, without claiming any is the right one."
+}

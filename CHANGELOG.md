@@ -1,5 +1,20 @@
 # Changelog — The Recursive I Ching
 
+## October 13, 2026 — Casting and Chance: a draft course on how an oracle is cast and what the odds are
+
+- **`grammars/casting-and-chance/`** (new, draft, `import_visibility: "private"`): nine chapters answering PlayfulProcess's
+  question of Oct 13 (could the I Ching take a tarot form, and would it be desirable?): why the method shapes the reading;
+  three coins; yarrow stalks (the Great Commentary's 49 stalks, Zhu Xi's procedure); changing lines and the relating
+  hexagram (binomial 6, 1/4; the yarrow tilt, solid lines changing 3 times as often as broken ones); four card renderings
+  of the I Ching (64 cards, a 16-card line deck with the yarrow odds exactly, an 8-card coin deck, a hexagram deck with change
+  decks); Búzios as a weighted 17-card deck (C(16, k) of 65,536) and the plain-17 mistake; Ifá's opele as two draws from 16
+  (256 odù, Meji 6.25%); card-game sketches; what card form gains and loses. Odds in tables, sources and marks per chapter.
+- **`scripts/casting_odds.py`** (new): every figure in the course, exact, mostly twice (formula and full enumeration of the
+  method); fails if an identity breaks or the course stops quoting a figure. Added to the pre-push list in `CLAUDE.md`.
+- **`pages/course-viewer.html`**: registers the course, and renders a paragraph of `|` lines as a table.
+  `course/casting-and-chance.manifest.json`, the Courses menu and the home page link to it. `site-header.js` version 50.
+- `docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md`: the new folder decided (a new Private grammar on the next import).
+
 ## October 12, 2026 (round 2) — pages, the 384 lines, the origin record, a draft course, Legge's appendices
 
 - **`pages/wheel.html`** (new): an astrology-style SVG wheel of the 64 gates at their true degrees: zodiac ring with sign

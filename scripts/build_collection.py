@@ -57,6 +57,7 @@ BRANCH_OF = {
     "hd-lines-zhouyi":        "synthesis",
     "origin-accounts":        "history",
     "oracle-to-chart":        "readings",
+    "casting-and-chance":     "readings",
 }
 
 # slug -> (sortable year, display label, provenance). Only the classical text itself

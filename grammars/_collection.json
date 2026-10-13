@@ -36,6 +36,7 @@
       "id": "readings",
       "name": "Readings — thematic contemplative practices, not interpretation sets",
       "deck_slugs": [
+        "casting-and-chance",
         "oracle-to-chart",
         "repair-iching"
       ]
@@ -51,6 +52,21 @@
     }
   ],
   "grammars": [
+    {
+      "slug": "casting-and-chance",
+      "name": "Casting and Chance",
+      "type": "custom",
+      "branch": "readings",
+      "is_meta": false,
+      "default_preview": "course",
+      "nodes": 9,
+      "cover_image_url": null,
+      "thumb": "img/covers/casting-and-chance.svg",
+      "mark": "img/covers/casting-and-chance.svg",
+      "blurb": "Coins, stalks, cards and shells: how an oracle is cast and what the odds are. The three-coin and yarrow methods, changing lines and the relating hexagram, four ways to render the I Ching as cards, Búz…",
+      "path": "grammars/casting-and-chance/grammar.json",
+      "provenance": "living"
+    },
     {
       "slug": "hd-lines-zhouyi",
       "name": "The 384 Lines on the Wheel",
