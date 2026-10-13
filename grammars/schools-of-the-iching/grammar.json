@@ -1,6 +1,7 @@
 {
   "_source_of_truth": "repo",
-  "_draft_note": "Oct 12 2026 draft. recursive.eco's importer skips this folder (_source_of_truth: repo). To let the assistant read it, PlayfulProcess decides; then remove that line, import, put the new id in ids.json and add the slug to _public_now. See docs/PROPOSAL-hd-gene-keys-grammars-and-course-2026-10-12.md.",
+  "import_visibility": "private",
+  "_draft_note": "Oct 12 2026 draft. recursive.eco's importer skips this folder (_source_of_truth: repo). To let the assistant read it, PlayfulProcess decides; then remove that line, import (it arrives Private: import_visibility) and put the new id in ids.json; publishing it is her choice, made in the app. See docs/PROPOSAL-hd-gene-keys-grammars-and-course-2026-10-12.md.",
   "_grammar_commons": {
     "schema_version": "1.0",
     "license": "CC-BY-SA-4.0 (PlayfulProcess) for the prose. Legge's 1882 English, quoted in the base-text node, is public domain. No in-copyright text, no Human Design text and no Gene Keys text is reproduced; books are named and described only.",
