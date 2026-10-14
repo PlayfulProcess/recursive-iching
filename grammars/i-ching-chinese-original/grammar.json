@@ -98,8 +98,8 @@
         "binary": "100010",
         "pinyin": "Zhūn",
         "chinese_name": "屯",
-        "trigram_above": "thunder",
-        "trigram_below": "water"
+        "trigram_above": "water",
+        "trigram_below": "thunder"
       }
     },
     {
@@ -125,8 +125,8 @@
         "binary": "010001",
         "pinyin": "Méng",
         "chinese_name": "蒙",
-        "trigram_above": "water",
-        "trigram_below": "mountain"
+        "trigram_above": "mountain",
+        "trigram_below": "water"
       }
     },
     {
@@ -152,8 +152,8 @@
         "binary": "111010",
         "pinyin": "Xū",
         "chinese_name": "需",
-        "trigram_above": "heaven",
-        "trigram_below": "water"
+        "trigram_above": "water",
+        "trigram_below": "heaven"
       }
     },
     {
@@ -179,8 +179,8 @@
         "binary": "010111",
         "pinyin": "Sòng",
         "chinese_name": "訟",
-        "trigram_above": "water",
-        "trigram_below": "heaven"
+        "trigram_above": "heaven",
+        "trigram_below": "water"
       }
     },
     {
@@ -206,8 +206,8 @@
         "binary": "010000",
         "pinyin": "Shī",
         "chinese_name": "師",
-        "trigram_above": "water",
-        "trigram_below": "earth"
+        "trigram_above": "earth",
+        "trigram_below": "water"
       }
     },
     {
@@ -233,8 +233,8 @@
         "binary": "000010",
         "pinyin": "Bǐ",
         "chinese_name": "比",
-        "trigram_above": "earth",
-        "trigram_below": "water"
+        "trigram_above": "water",
+        "trigram_below": "earth"
       }
     },
     {
@@ -260,8 +260,8 @@
         "binary": "111011",
         "pinyin": "Xiǎo Chù",
         "chinese_name": "小畜",
-        "trigram_above": "heaven",
-        "trigram_below": "wind"
+        "trigram_above": "wind",
+        "trigram_below": "heaven"
       }
     },
     {
@@ -287,8 +287,8 @@
         "binary": "110111",
         "pinyin": "Lǚ",
         "chinese_name": "履",
-        "trigram_above": "lake",
-        "trigram_below": "heaven"
+        "trigram_above": "heaven",
+        "trigram_below": "lake"
       }
     },
     {
@@ -314,8 +314,8 @@
         "binary": "111000",
         "pinyin": "Tài",
         "chinese_name": "泰",
-        "trigram_above": "heaven",
-        "trigram_below": "earth"
+        "trigram_above": "earth",
+        "trigram_below": "heaven"
       }
     },
     {
@@ -341,8 +341,8 @@
         "binary": "000111",
         "pinyin": "Pǐ",
         "chinese_name": "否",
-        "trigram_above": "earth",
-        "trigram_below": "heaven"
+        "trigram_above": "heaven",
+        "trigram_below": "earth"
       }
     },
     {
@@ -368,8 +368,8 @@
         "binary": "101111",
         "pinyin": "Tóng Rén",
         "chinese_name": "同人",
-        "trigram_above": "fire",
-        "trigram_below": "heaven"
+        "trigram_above": "heaven",
+        "trigram_below": "fire"
       }
     },
     {
@@ -395,8 +395,8 @@
         "binary": "111101",
         "pinyin": "Dà Yǒu",
         "chinese_name": "大有",
-        "trigram_above": "heaven",
-        "trigram_below": "fire"
+        "trigram_above": "fire",
+        "trigram_below": "heaven"
       }
     },
     {
@@ -422,8 +422,8 @@
         "binary": "001000",
         "pinyin": "Qiān",
         "chinese_name": "謙",
-        "trigram_above": "mountain",
-        "trigram_below": "earth"
+        "trigram_above": "earth",
+        "trigram_below": "mountain"
       }
     },
     {
@@ -449,8 +449,8 @@
         "binary": "000100",
         "pinyin": "Yù",
         "chinese_name": "豫",
-        "trigram_above": "earth",
-        "trigram_below": "thunder"
+        "trigram_above": "thunder",
+        "trigram_below": "earth"
       }
     },
     {
@@ -476,8 +476,8 @@
         "binary": "100110",
         "pinyin": "Suí",
         "chinese_name": "隨",
-        "trigram_above": "thunder",
-        "trigram_below": "lake"
+        "trigram_above": "lake",
+        "trigram_below": "thunder"
       }
     },
     {
@@ -503,8 +503,8 @@
         "binary": "011001",
         "pinyin": "Gǔ",
         "chinese_name": "蠱",
-        "trigram_above": "wind",
-        "trigram_below": "mountain"
+        "trigram_above": "mountain",
+        "trigram_below": "wind"
       }
     },
     {
@@ -530,8 +530,8 @@
         "binary": "110000",
         "pinyin": "Lín",
         "chinese_name": "臨",
-        "trigram_above": "lake",
-        "trigram_below": "earth"
+        "trigram_above": "earth",
+        "trigram_below": "lake"
       }
     },
     {
@@ -557,8 +557,8 @@
         "binary": "000011",
         "pinyin": "Guān",
         "chinese_name": "觀",
-        "trigram_above": "earth",
-        "trigram_below": "wind"
+        "trigram_above": "wind",
+        "trigram_below": "earth"
       }
     },
     {
@@ -584,8 +584,8 @@
         "binary": "100101",
         "pinyin": "Shì Kè",
         "chinese_name": "噬嗑",
-        "trigram_above": "thunder",
-        "trigram_below": "fire"
+        "trigram_above": "fire",
+        "trigram_below": "thunder"
       }
     },
     {
@@ -611,8 +611,8 @@
         "binary": "101001",
         "pinyin": "Bì",
         "chinese_name": "賁",
-        "trigram_above": "fire",
-        "trigram_below": "mountain"
+        "trigram_above": "mountain",
+        "trigram_below": "fire"
       }
     },
     {
@@ -638,8 +638,8 @@
         "binary": "000001",
         "pinyin": "Bō",
         "chinese_name": "剝",
-        "trigram_above": "earth",
-        "trigram_below": "mountain"
+        "trigram_above": "mountain",
+        "trigram_below": "earth"
       }
     },
     {
@@ -665,8 +665,8 @@
         "binary": "100000",
         "pinyin": "Fù",
         "chinese_name": "復",
-        "trigram_above": "thunder",
-        "trigram_below": "earth"
+        "trigram_above": "earth",
+        "trigram_below": "thunder"
       }
     },
     {
@@ -692,8 +692,8 @@
         "binary": "100111",
         "pinyin": "Wú Wàng",
         "chinese_name": "無妄",
-        "trigram_above": "thunder",
-        "trigram_below": "heaven"
+        "trigram_above": "heaven",
+        "trigram_below": "thunder"
       }
     },
     {
@@ -719,8 +719,8 @@
         "binary": "111001",
         "pinyin": "Dà Chù",
         "chinese_name": "大畜",
-        "trigram_above": "heaven",
-        "trigram_below": "mountain"
+        "trigram_above": "mountain",
+        "trigram_below": "heaven"
       }
     },
     {
@@ -746,8 +746,8 @@
         "binary": "100001",
         "pinyin": "Yí",
         "chinese_name": "頤",
-        "trigram_above": "thunder",
-        "trigram_below": "mountain"
+        "trigram_above": "mountain",
+        "trigram_below": "thunder"
       }
     },
     {
@@ -773,8 +773,8 @@
         "binary": "011110",
         "pinyin": "Dà Guò",
         "chinese_name": "大過",
-        "trigram_above": "wind",
-        "trigram_below": "lake"
+        "trigram_above": "lake",
+        "trigram_below": "wind"
       }
     },
     {
@@ -854,8 +854,8 @@
         "binary": "001110",
         "pinyin": "Xián",
         "chinese_name": "咸",
-        "trigram_above": "mountain",
-        "trigram_below": "lake"
+        "trigram_above": "lake",
+        "trigram_below": "mountain"
       }
     },
     {
@@ -881,8 +881,8 @@
         "binary": "011100",
         "pinyin": "Héng",
         "chinese_name": "恆",
-        "trigram_above": "wind",
-        "trigram_below": "thunder"
+        "trigram_above": "thunder",
+        "trigram_below": "wind"
       }
     },
     {
@@ -908,8 +908,8 @@
         "binary": "001111",
         "pinyin": "Dùn",
         "chinese_name": "遯",
-        "trigram_above": "mountain",
-        "trigram_below": "heaven"
+        "trigram_above": "heaven",
+        "trigram_below": "mountain"
       }
     },
     {
@@ -935,8 +935,8 @@
         "binary": "111100",
         "pinyin": "Dà Zhuàng",
         "chinese_name": "大壯",
-        "trigram_above": "heaven",
-        "trigram_below": "thunder"
+        "trigram_above": "thunder",
+        "trigram_below": "heaven"
       }
     },
     {
@@ -962,8 +962,8 @@
         "binary": "000101",
         "pinyin": "Jìn",
         "chinese_name": "晉",
-        "trigram_above": "earth",
-        "trigram_below": "fire"
+        "trigram_above": "fire",
+        "trigram_below": "earth"
       }
     },
     {
@@ -989,8 +989,8 @@
         "binary": "101000",
         "pinyin": "Míng Yí",
         "chinese_name": "明夷",
-        "trigram_above": "fire",
-        "trigram_below": "earth"
+        "trigram_above": "earth",
+        "trigram_below": "fire"
       }
     },
     {
@@ -1016,8 +1016,8 @@
         "binary": "101011",
         "pinyin": "Jiā Rén",
         "chinese_name": "家人",
-        "trigram_above": "fire",
-        "trigram_below": "wind"
+        "trigram_above": "wind",
+        "trigram_below": "fire"
       }
     },
     {
@@ -1043,8 +1043,8 @@
         "binary": "110101",
         "pinyin": "Kuí",
         "chinese_name": "睽",
-        "trigram_above": "lake",
-        "trigram_below": "fire"
+        "trigram_above": "fire",
+        "trigram_below": "lake"
       }
     },
     {
@@ -1070,8 +1070,8 @@
         "binary": "001010",
         "pinyin": "Jiǎn",
         "chinese_name": "蹇",
-        "trigram_above": "mountain",
-        "trigram_below": "water"
+        "trigram_above": "water",
+        "trigram_below": "mountain"
       }
     },
     {
@@ -1097,8 +1097,8 @@
         "binary": "010100",
         "pinyin": "Xiè",
         "chinese_name": "解",
-        "trigram_above": "water",
-        "trigram_below": "thunder"
+        "trigram_above": "thunder",
+        "trigram_below": "water"
       }
     },
     {
@@ -1124,8 +1124,8 @@
         "binary": "110001",
         "pinyin": "Sǔn",
         "chinese_name": "損",
-        "trigram_above": "lake",
-        "trigram_below": "mountain"
+        "trigram_above": "mountain",
+        "trigram_below": "lake"
       }
     },
     {
@@ -1151,8 +1151,8 @@
         "binary": "100011",
         "pinyin": "Yì",
         "chinese_name": "益",
-        "trigram_above": "thunder",
-        "trigram_below": "wind"
+        "trigram_above": "wind",
+        "trigram_below": "thunder"
       }
     },
     {
@@ -1178,8 +1178,8 @@
         "binary": "111110",
         "pinyin": "Guài",
         "chinese_name": "夬",
-        "trigram_above": "heaven",
-        "trigram_below": "lake"
+        "trigram_above": "lake",
+        "trigram_below": "heaven"
       }
     },
     {
@@ -1205,8 +1205,8 @@
         "binary": "011111",
         "pinyin": "Gòu",
         "chinese_name": "姤",
-        "trigram_above": "wind",
-        "trigram_below": "heaven"
+        "trigram_above": "heaven",
+        "trigram_below": "wind"
       }
     },
     {
@@ -1232,8 +1232,8 @@
         "binary": "000110",
         "pinyin": "Cuì",
         "chinese_name": "萃",
-        "trigram_above": "earth",
-        "trigram_below": "lake"
+        "trigram_above": "lake",
+        "trigram_below": "earth"
       }
     },
     {
@@ -1259,8 +1259,8 @@
         "binary": "011000",
         "pinyin": "Shēng",
         "chinese_name": "升",
-        "trigram_above": "wind",
-        "trigram_below": "earth"
+        "trigram_above": "earth",
+        "trigram_below": "wind"
       }
     },
     {
@@ -1286,8 +1286,8 @@
         "binary": "010110",
         "pinyin": "Kùn",
         "chinese_name": "困",
-        "trigram_above": "water",
-        "trigram_below": "lake"
+        "trigram_above": "lake",
+        "trigram_below": "water"
       }
     },
     {
@@ -1313,8 +1313,8 @@
         "binary": "011010",
         "pinyin": "Jǐng",
         "chinese_name": "井",
-        "trigram_above": "wind",
-        "trigram_below": "water"
+        "trigram_above": "water",
+        "trigram_below": "wind"
       }
     },
     {
@@ -1340,8 +1340,8 @@
         "binary": "101110",
         "pinyin": "Gé",
         "chinese_name": "革",
-        "trigram_above": "fire",
-        "trigram_below": "lake"
+        "trigram_above": "lake",
+        "trigram_below": "fire"
       }
     },
     {
@@ -1367,8 +1367,8 @@
         "binary": "011101",
         "pinyin": "Dǐng",
         "chinese_name": "鼎",
-        "trigram_above": "wind",
-        "trigram_below": "fire"
+        "trigram_above": "fire",
+        "trigram_below": "wind"
       }
     },
     {
@@ -1448,8 +1448,8 @@
         "binary": "001011",
         "pinyin": "Jiàn",
         "chinese_name": "漸",
-        "trigram_above": "mountain",
-        "trigram_below": "wind"
+        "trigram_above": "wind",
+        "trigram_below": "mountain"
       }
     },
     {
@@ -1475,8 +1475,8 @@
         "binary": "110100",
         "pinyin": "Guī Mèi",
         "chinese_name": "歸妹",
-        "trigram_above": "lake",
-        "trigram_below": "thunder"
+        "trigram_above": "thunder",
+        "trigram_below": "lake"
       }
     },
     {
@@ -1502,8 +1502,8 @@
         "binary": "101100",
         "pinyin": "Fēng",
         "chinese_name": "豐",
-        "trigram_above": "fire",
-        "trigram_below": "thunder"
+        "trigram_above": "thunder",
+        "trigram_below": "fire"
       }
     },
     {
@@ -1529,8 +1529,8 @@
         "binary": "001101",
         "pinyin": "Lǚ",
         "chinese_name": "旅",
-        "trigram_above": "mountain",
-        "trigram_below": "fire"
+        "trigram_above": "fire",
+        "trigram_below": "mountain"
       }
     },
     {
@@ -1610,8 +1610,8 @@
         "binary": "010011",
         "pinyin": "Huàn",
         "chinese_name": "渙",
-        "trigram_above": "water",
-        "trigram_below": "wind"
+        "trigram_above": "wind",
+        "trigram_below": "water"
       }
     },
     {
@@ -1637,8 +1637,8 @@
         "binary": "110010",
         "pinyin": "Jié",
         "chinese_name": "節",
-        "trigram_above": "lake",
-        "trigram_below": "water"
+        "trigram_above": "water",
+        "trigram_below": "lake"
       }
     },
     {
@@ -1664,8 +1664,8 @@
         "binary": "110011",
         "pinyin": "Zhōng Fú",
         "chinese_name": "中孚",
-        "trigram_above": "lake",
-        "trigram_below": "wind"
+        "trigram_above": "wind",
+        "trigram_below": "lake"
       }
     },
     {
@@ -1691,8 +1691,8 @@
         "binary": "001100",
         "pinyin": "Xiǎo Guò",
         "chinese_name": "小過",
-        "trigram_above": "mountain",
-        "trigram_below": "thunder"
+        "trigram_above": "thunder",
+        "trigram_below": "mountain"
       }
     },
     {
@@ -1718,8 +1718,8 @@
         "binary": "101010",
         "pinyin": "Jì Jì",
         "chinese_name": "既濟",
-        "trigram_above": "fire",
-        "trigram_below": "water"
+        "trigram_above": "water",
+        "trigram_below": "fire"
       }
     },
     {
@@ -1745,8 +1745,8 @@
         "binary": "010101",
         "pinyin": "Wèi Jì",
         "chinese_name": "未濟",
-        "trigram_above": "water",
-        "trigram_below": "fire"
+        "trigram_above": "fire",
+        "trigram_below": "water"
       }
     }
   ]
