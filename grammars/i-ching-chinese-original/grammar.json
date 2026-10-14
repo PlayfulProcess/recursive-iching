@@ -7,16 +7,15 @@
       "PlayfulProcess (AI-assisted one-line hexagram-name gloss only, Claude Code)"
     ]
   },
-  "name": "I Ching — Chinese Original (Project Gutenberg)",
-  "description": "The classical Chinese source text -- Judgment, Image, and all six Line statements -- for each of the 64 hexagrams, character for character as digitized by Project Gutenberg (ebook #25501, 易經, catalogued as \"Anonymous\"). Project Gutenberg only distributes works confirmed public domain in the US; this is the ≈ 3,000-year-old Zhouyi/Yijing text itself, with no modern translator and no added copyright layer -- verified against Gutenberg's own catalogue before this grammar was built. Only the short hexagram NAME per item (e.g. \"The Creative\") is an AI-generated English gloss (Claude Code) -- a title, not a scholarly translation of the full passage. Read it alongside 'The 64 Hexagrams' (this site's English condensation) and 'Three Lenses' in the Source Text viewer, which stacks all three as separate, clearly labeled layers of the same hexagram.",
-  "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
-  "grammar_type": "iching",
+  "name": "I Ching - Chinese Original With Brief Translation.",
+  "description": "This was extracted from Project Gutenberg's Archives. https://www.gutenberg.org/ebooks/25501. AI made short translations to the text (Claude Code)",
+  "cover_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/I-Ching-chinese-book.jpg",
+  "grammar_type": "custom",
   "tags": [
     "chinese",
-    "original-language",
+    "original",
     "public-domain",
-    "primary-source",
-    "gutenberg"
+    "oracle"
   ],
   "creator_name": "PlayfulProcess",
   "creator_link": "https://recursive.eco",
@@ -26,7 +25,7 @@
       "number": 1,
       "name": "The Creative",
       "symbol": "䷀",
-      "category": "heaven",
+      "category": "trigram",
       "sort_order": 0,
       "sections": {
         "Image": "天行健，君子以自強不息。潛龍勿用，陽在下也。見龍在田，德施普也。終日乾乾，反復道也。或躍在淵，進無咎也。飛龍在天，大人造也。亢龍有悔，盈不可久也。",
@@ -46,14 +45,16 @@
         "chinese_name": "乾",
         "trigram_above": "heaven",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-2",
       "number": 2,
       "name": "The Receptive",
       "symbol": "䷁",
-      "category": "earth",
+      "category": "trigram",
       "sort_order": 1,
       "sections": {
         "Image": "地勢坤，君子以厚德載物。",
@@ -73,14 +74,16 @@
         "chinese_name": "坤",
         "trigram_above": "earth",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-3",
       "number": 3,
       "name": "Difficulty at the Beginning",
       "symbol": "䷂",
-      "category": "water",
+      "category": "trigram",
       "sort_order": 2,
       "sections": {
         "Image": "雲，雷，屯；君子以經綸。",
@@ -100,14 +103,16 @@
         "chinese_name": "屯",
         "trigram_above": "thunder",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-4",
       "number": 4,
       "name": "Youthful Folly",
       "symbol": "䷃",
-      "category": "mountain",
+      "category": "trigram",
       "sort_order": 3,
       "sections": {
         "Image": "山下出泉，蒙；君子以果行育德。",
@@ -127,14 +132,16 @@
         "chinese_name": "蒙",
         "trigram_above": "water",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-5",
       "number": 5,
       "name": "Waiting",
       "symbol": "䷄",
-      "category": "water",
+      "category": "trigram",
       "sort_order": 4,
       "sections": {
         "Image": "雲上於天，需；君子以飲食宴樂。",
@@ -154,14 +161,16 @@
         "chinese_name": "需",
         "trigram_above": "heaven",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-6",
       "number": 6,
       "name": "Conflict",
       "symbol": "䷅",
-      "category": "heaven",
+      "category": "trigram",
       "sort_order": 5,
       "sections": {
         "Image": "天與水違行，訟；君子以作事謀始。",
@@ -181,14 +190,16 @@
         "chinese_name": "訟",
         "trigram_above": "water",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-7",
       "number": 7,
       "name": "The Army",
       "symbol": "䷆",
-      "category": "earth",
+      "category": "trigram",
       "sort_order": 6,
       "sections": {
         "Image": "地中有水，師；君子以容民畜眾。",
@@ -208,14 +219,16 @@
         "chinese_name": "師",
         "trigram_above": "water",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-8",
       "number": 8,
       "name": "Holding Together",
       "symbol": "䷇",
-      "category": "water",
+      "category": "trigram",
       "sort_order": 7,
       "sections": {
         "Image": "地上有水，比；先王以建萬國，親諸侯。",
@@ -235,14 +248,16 @@
         "chinese_name": "比",
         "trigram_above": "earth",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-9",
       "number": 9,
       "name": "Small Taming",
       "symbol": "䷈",
-      "category": "wind",
+      "category": "trigram",
       "sort_order": 8,
       "sections": {
         "Image": "風行天上，小畜；君子以懿文德。",
@@ -262,14 +277,16 @@
         "chinese_name": "小畜",
         "trigram_above": "heaven",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-10",
       "number": 10,
       "name": "Treading",
       "symbol": "䷉",
-      "category": "heaven",
+      "category": "trigram",
       "sort_order": 9,
       "sections": {
         "Image": "上天下澤，履；君子以辯上下，定民志。",
@@ -289,14 +306,16 @@
         "chinese_name": "履",
         "trigram_above": "lake",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-11",
       "number": 11,
       "name": "Peace",
       "symbol": "䷊",
-      "category": "earth",
+      "category": "trigram",
       "sort_order": 10,
       "sections": {
         "Image": "天地交泰，后以財成天地之道，輔相天地之宜，以左右民。",
@@ -316,14 +335,16 @@
         "chinese_name": "泰",
         "trigram_above": "heaven",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-12",
       "number": 12,
       "name": "Standstill",
       "symbol": "䷋",
-      "category": "heaven",
+      "category": "trigram",
       "sort_order": 11,
       "sections": {
         "Image": "天地不交，否；君子以儉德辟難，不可榮以祿。",
@@ -343,14 +364,16 @@
         "chinese_name": "否",
         "trigram_above": "earth",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-13",
       "number": 13,
       "name": "Fellowship",
       "symbol": "䷌",
-      "category": "heaven",
+      "category": "trigram",
       "sort_order": 12,
       "sections": {
         "Image": "天與火，同人；君子以類族辨物。",
@@ -370,14 +393,16 @@
         "chinese_name": "同人",
         "trigram_above": "fire",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-14",
       "number": 14,
       "name": "Great Possession",
       "symbol": "䷍",
-      "category": "fire",
+      "category": "trigram",
       "sort_order": 13,
       "sections": {
         "Image": "火在天上，大有；君子以遏惡揚善，順天休命。",
@@ -397,14 +422,16 @@
         "chinese_name": "大有",
         "trigram_above": "heaven",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-15",
       "number": 15,
       "name": "Modesty",
       "symbol": "䷎",
-      "category": "earth",
+      "category": "trigram",
       "sort_order": 14,
       "sections": {
         "Image": "地中有山，謙；君子以裒多益寡，稱物平施。",
@@ -424,14 +451,16 @@
         "chinese_name": "謙",
         "trigram_above": "mountain",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-16",
       "number": 16,
       "name": "Enthusiasm",
       "symbol": "䷏",
-      "category": "thunder",
+      "category": "trigram",
       "sort_order": 15,
       "sections": {
         "Image": "雷出地奮，豫。先王以作樂崇德，殷薦之上帝，以配祖考。",
@@ -451,14 +480,16 @@
         "chinese_name": "豫",
         "trigram_above": "earth",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-17",
       "number": 17,
       "name": "Following",
       "symbol": "䷐",
-      "category": "lake",
+      "category": "trigram",
       "sort_order": 16,
       "sections": {
         "Image": "澤中有雷，隨；君子以嚮晦入宴息。",
@@ -478,14 +509,16 @@
         "chinese_name": "隨",
         "trigram_above": "thunder",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-18",
       "number": 18,
       "name": "Work on the Decayed",
       "symbol": "䷑",
-      "category": "mountain",
+      "category": "trigram",
       "sort_order": 17,
       "sections": {
         "Image": "山下有風，蠱；君子以振民育德。",
@@ -505,14 +538,16 @@
         "chinese_name": "蠱",
         "trigram_above": "wind",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-19",
       "number": 19,
       "name": "Approach",
       "symbol": "䷒",
-      "category": "earth",
+      "category": "trigram",
       "sort_order": 18,
       "sections": {
         "Image": "澤上有地，臨；君子以教思無窮，容保民無疆。",
@@ -532,14 +567,16 @@
         "chinese_name": "臨",
         "trigram_above": "lake",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-20",
       "number": 20,
       "name": "Contemplation",
       "symbol": "䷓",
-      "category": "wind",
+      "category": "trigram",
       "sort_order": 19,
       "sections": {
         "Image": "風行地上，觀；先王以省方，觀民設教。",
@@ -559,14 +596,16 @@
         "chinese_name": "觀",
         "trigram_above": "earth",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-21",
       "number": 21,
       "name": "Biting Through",
       "symbol": "䷔",
-      "category": "fire",
+      "category": "trigram",
       "sort_order": 20,
       "sections": {
         "Image": "雷電噬嗑；先王以明罰敕法。",
@@ -586,14 +625,16 @@
         "chinese_name": "噬嗑",
         "trigram_above": "thunder",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-22",
       "number": 22,
       "name": "Grace",
       "symbol": "䷕",
-      "category": "mountain",
+      "category": "trigram",
       "sort_order": 21,
       "sections": {
         "Image": "山下有火，賁；君子以明庶政，無敢折獄。",
@@ -613,14 +654,16 @@
         "chinese_name": "賁",
         "trigram_above": "fire",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-23",
       "number": 23,
       "name": "Splitting Apart",
       "symbol": "䷖",
-      "category": "mountain",
+      "category": "trigram",
       "sort_order": 22,
       "sections": {
         "Image": "山附于地，剝；上以厚下，安宅。",
@@ -640,14 +683,16 @@
         "chinese_name": "剝",
         "trigram_above": "earth",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-24",
       "number": 24,
       "name": "Return",
       "symbol": "䷗",
-      "category": "earth",
+      "category": "trigram",
       "sort_order": 23,
       "sections": {
         "Image": "雷在地中，復；先王以至日閉關，商旅不行，后不省方。",
@@ -667,14 +712,16 @@
         "chinese_name": "復",
         "trigram_above": "thunder",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-25",
       "number": 25,
       "name": "Innocence",
       "symbol": "䷘",
-      "category": "heaven",
+      "category": "trigram",
       "sort_order": 24,
       "sections": {
         "Image": "天下雷行，物與無妄；先王以茂對時，育萬物。",
@@ -694,14 +741,16 @@
         "chinese_name": "無妄",
         "trigram_above": "thunder",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-26",
       "number": 26,
       "name": "Great Taming",
       "symbol": "䷙",
-      "category": "mountain",
+      "category": "trigram",
       "sort_order": 25,
       "sections": {
         "Image": "天在山中，大畜；君子以多識前言往行，以畜其德。",
@@ -721,14 +770,16 @@
         "chinese_name": "大畜",
         "trigram_above": "heaven",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-27",
       "number": 27,
       "name": "Nourishment",
       "symbol": "䷚",
-      "category": "mountain",
+      "category": "trigram",
       "sort_order": 26,
       "sections": {
         "Image": "山下有雷，頤；君子以慎言語，節飲食。",
@@ -748,14 +799,16 @@
         "chinese_name": "頤",
         "trigram_above": "thunder",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-28",
       "number": 28,
       "name": "Great Excess",
       "symbol": "䷛",
-      "category": "lake",
+      "category": "trigram",
       "sort_order": 27,
       "sections": {
         "Image": "澤滅木，大過；君子以獨立不懼，遯世無悶。",
@@ -775,14 +828,16 @@
         "chinese_name": "大過",
         "trigram_above": "wind",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-29",
       "number": 29,
       "name": "The Abysmal",
       "symbol": "䷜",
-      "category": "water",
+      "category": "trigram",
       "sort_order": 28,
       "sections": {
         "Image": "水洊至，習坎；君子以常德行，習教事。",
@@ -802,14 +857,16 @@
         "chinese_name": "坎",
         "trigram_above": "water",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-30",
       "number": 30,
       "name": "The Clinging",
       "symbol": "䷝",
-      "category": "fire",
+      "category": "trigram",
       "sort_order": 29,
       "sections": {
         "Image": "明兩作離，大人以繼明照于四方。",
@@ -829,14 +886,16 @@
         "chinese_name": "離",
         "trigram_above": "fire",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-31",
       "number": 31,
       "name": "Influence",
       "symbol": "䷞",
-      "category": "lake",
+      "category": "trigram",
       "sort_order": 30,
       "sections": {
         "Image": "山上有澤，咸；君子以虛受人。",
@@ -856,14 +915,16 @@
         "chinese_name": "咸",
         "trigram_above": "mountain",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-32",
       "number": 32,
       "name": "Duration",
       "symbol": "䷟",
-      "category": "thunder",
+      "category": "trigram",
       "sort_order": 31,
       "sections": {
         "Image": "雷風，恆；君子以立不易方。",
@@ -883,14 +944,16 @@
         "chinese_name": "恆",
         "trigram_above": "wind",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-33",
       "number": 33,
       "name": "Retreat",
       "symbol": "䷠",
-      "category": "heaven",
+      "category": "trigram",
       "sort_order": 32,
       "sections": {
         "Image": "天下有山，遯；君子以遠小人，不惡而嚴。",
@@ -910,14 +973,16 @@
         "chinese_name": "遯",
         "trigram_above": "mountain",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-34",
       "number": 34,
       "name": "Great Power",
       "symbol": "䷡",
-      "category": "thunder",
+      "category": "trigram",
       "sort_order": 33,
       "sections": {
         "Image": "雷在天上，大壯；君子以非禮弗履。",
@@ -937,14 +1002,16 @@
         "chinese_name": "大壯",
         "trigram_above": "heaven",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-35",
       "number": 35,
       "name": "Progress",
       "symbol": "䷢",
-      "category": "fire",
+      "category": "trigram",
       "sort_order": 34,
       "sections": {
         "Image": "明出地上，晉；君子以自昭明德。",
@@ -964,14 +1031,16 @@
         "chinese_name": "晉",
         "trigram_above": "earth",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-36",
       "number": 36,
       "name": "Darkening of the Light",
       "symbol": "䷣",
-      "category": "earth",
+      "category": "trigram",
       "sort_order": 35,
       "sections": {
         "Image": "明入地中，明夷；君子以蒞眾，用晦而明。",
@@ -991,14 +1060,16 @@
         "chinese_name": "明夷",
         "trigram_above": "fire",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-37",
       "number": 37,
       "name": "The Family",
       "symbol": "䷤",
-      "category": "wind",
+      "category": "trigram",
       "sort_order": 36,
       "sections": {
         "Image": "風自火出，家人；君子以言有物，而行有恆。",
@@ -1018,14 +1089,16 @@
         "chinese_name": "家人",
         "trigram_above": "fire",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-38",
       "number": 38,
       "name": "Opposition",
       "symbol": "䷥",
-      "category": "fire",
+      "category": "trigram",
       "sort_order": 37,
       "sections": {
         "Image": "上火下澤，睽；君子以同而異。",
@@ -1045,14 +1118,16 @@
         "chinese_name": "睽",
         "trigram_above": "lake",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-39",
       "number": 39,
       "name": "Obstruction",
       "symbol": "䷦",
-      "category": "water",
+      "category": "trigram",
       "sort_order": 38,
       "sections": {
         "Image": "山上有水，蹇；君子以反身修德。",
@@ -1072,14 +1147,16 @@
         "chinese_name": "蹇",
         "trigram_above": "mountain",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-40",
       "number": 40,
       "name": "Deliverance",
       "symbol": "䷧",
-      "category": "thunder",
+      "category": "trigram",
       "sort_order": 39,
       "sections": {
         "Image": "雷雨作，解；君子以赦過宥罪。",
@@ -1099,14 +1176,16 @@
         "chinese_name": "解",
         "trigram_above": "water",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-41",
       "number": 41,
       "name": "Decrease",
       "symbol": "䷨",
-      "category": "mountain",
+      "category": "trigram",
       "sort_order": 40,
       "sections": {
         "Image": "山下有澤，損；君子以懲忿窒欲。",
@@ -1126,14 +1205,16 @@
         "chinese_name": "損",
         "trigram_above": "lake",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-42",
       "number": 42,
       "name": "Increase",
       "symbol": "䷩",
-      "category": "wind",
+      "category": "trigram",
       "sort_order": 41,
       "sections": {
         "Image": "風雷，益；君子以見善則遷，有過則改。",
@@ -1153,14 +1234,16 @@
         "chinese_name": "益",
         "trigram_above": "thunder",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-43",
       "number": 43,
       "name": "Breakthrough",
       "symbol": "䷪",
-      "category": "lake",
+      "category": "trigram",
       "sort_order": 42,
       "sections": {
         "Image": "澤上于天，夬；君子以施祿及下，居德則忌。",
@@ -1180,14 +1263,16 @@
         "chinese_name": "夬",
         "trigram_above": "heaven",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-44",
       "number": 44,
       "name": "Coming to Meet",
       "symbol": "䷫",
-      "category": "heaven",
+      "category": "trigram",
       "sort_order": 43,
       "sections": {
         "Image": "天下有風，姤；后以施命誥四方。",
@@ -1207,14 +1292,16 @@
         "chinese_name": "姤",
         "trigram_above": "wind",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-45",
       "number": 45,
       "name": "Gathering Together",
       "symbol": "䷬",
-      "category": "lake",
+      "category": "trigram",
       "sort_order": 44,
       "sections": {
         "Image": "澤上於地，萃；君子以除戎器，戒不虞。",
@@ -1234,14 +1321,16 @@
         "chinese_name": "萃",
         "trigram_above": "earth",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-46",
       "number": 46,
       "name": "Pushing Upward",
       "symbol": "䷭",
-      "category": "earth",
+      "category": "trigram",
       "sort_order": 45,
       "sections": {
         "Image": "地中生木，升；君子以順德，積小以高大。",
@@ -1261,14 +1350,16 @@
         "chinese_name": "升",
         "trigram_above": "wind",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-47",
       "number": 47,
       "name": "Oppression",
       "symbol": "䷮",
-      "category": "lake",
+      "category": "trigram",
       "sort_order": 46,
       "sections": {
         "Image": "澤無水，困；君子以致命遂志。",
@@ -1288,14 +1379,16 @@
         "chinese_name": "困",
         "trigram_above": "water",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-48",
       "number": 48,
       "name": "The Well",
       "symbol": "䷯",
-      "category": "water",
+      "category": "trigram",
       "sort_order": 47,
       "sections": {
         "Image": "木上有水，井；君子以勞民勸相。",
@@ -1315,14 +1408,16 @@
         "chinese_name": "井",
         "trigram_above": "wind",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-49",
       "number": 49,
       "name": "Revolution",
       "symbol": "䷰",
-      "category": "lake",
+      "category": "trigram",
       "sort_order": 48,
       "sections": {
         "Image": "澤中有火，革；君子以治歷明時。",
@@ -1342,14 +1437,16 @@
         "chinese_name": "革",
         "trigram_above": "fire",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-50",
       "number": 50,
       "name": "The Cauldron",
       "symbol": "䷱",
-      "category": "fire",
+      "category": "trigram",
       "sort_order": 49,
       "sections": {
         "Image": "木上有火，鼎；君子以正位凝命。",
@@ -1369,14 +1466,16 @@
         "chinese_name": "鼎",
         "trigram_above": "wind",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-51",
       "number": 51,
       "name": "The Arousing",
       "symbol": "䷲",
-      "category": "thunder",
+      "category": "trigram",
       "sort_order": 50,
       "sections": {
         "Image": "洊雷，震；君子以恐懼修身。",
@@ -1396,14 +1495,16 @@
         "chinese_name": "震",
         "trigram_above": "thunder",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-52",
       "number": 52,
       "name": "Keeping Still",
       "symbol": "䷳",
-      "category": "mountain",
+      "category": "trigram",
       "sort_order": 51,
       "sections": {
         "Image": "兼山，艮；君子以思不出其位。",
@@ -1423,14 +1524,16 @@
         "chinese_name": "艮",
         "trigram_above": "mountain",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-53",
       "number": 53,
       "name": "Development",
       "symbol": "䷴",
-      "category": "wind",
+      "category": "trigram",
       "sort_order": 52,
       "sections": {
         "Image": "山上有木，漸；君子以居賢德，善俗。",
@@ -1450,14 +1553,16 @@
         "chinese_name": "漸",
         "trigram_above": "mountain",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-54",
       "number": 54,
       "name": "The Marrying Maiden",
       "symbol": "䷵",
-      "category": "thunder",
+      "category": "trigram",
       "sort_order": 53,
       "sections": {
         "Image": "澤上有雷，歸妹；君子以永終知敝。",
@@ -1477,14 +1582,16 @@
         "chinese_name": "歸妹",
         "trigram_above": "lake",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-55",
       "number": 55,
       "name": "Abundance",
       "symbol": "䷶",
-      "category": "thunder",
+      "category": "trigram",
       "sort_order": 54,
       "sections": {
         "Image": "雷電皆至，豐；君子以折獄致刑。",
@@ -1504,14 +1611,16 @@
         "chinese_name": "豐",
         "trigram_above": "fire",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-56",
       "number": 56,
       "name": "The Wanderer",
       "symbol": "䷷",
-      "category": "fire",
+      "category": "trigram",
       "sort_order": 55,
       "sections": {
         "Image": "山上有火，旅；君子以明慎用刑，而不留獄。",
@@ -1531,14 +1640,16 @@
         "chinese_name": "旅",
         "trigram_above": "mountain",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-57",
       "number": 57,
       "name": "The Gentle",
       "symbol": "䷸",
-      "category": "wind",
+      "category": "trigram",
       "sort_order": 56,
       "sections": {
         "Image": "隨風，巽；君子以申命行事。",
@@ -1558,14 +1669,16 @@
         "chinese_name": "巽",
         "trigram_above": "wind",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-58",
       "number": 58,
       "name": "The Joyous",
       "symbol": "䷹",
-      "category": "lake",
+      "category": "trigram",
       "sort_order": 57,
       "sections": {
         "Image": "麗澤，兌；君子以朋友講習。",
@@ -1585,14 +1698,16 @@
         "chinese_name": "兌",
         "trigram_above": "lake",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-59",
       "number": 59,
       "name": "Dispersion",
       "symbol": "䷺",
-      "category": "wind",
+      "category": "trigram",
       "sort_order": 58,
       "sections": {
         "Image": "風行水上，渙；先王以享于帝立廟。",
@@ -1612,14 +1727,16 @@
         "chinese_name": "渙",
         "trigram_above": "water",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-60",
       "number": 60,
       "name": "Limitation",
       "symbol": "䷻",
-      "category": "water",
+      "category": "trigram",
       "sort_order": 59,
       "sections": {
         "Image": "澤上有水，節；君子以制數度，議德行。",
@@ -1639,14 +1756,16 @@
         "chinese_name": "節",
         "trigram_above": "lake",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-61",
       "number": 61,
       "name": "Inner Truth",
       "symbol": "䷼",
-      "category": "wind",
+      "category": "trigram",
       "sort_order": 60,
       "sections": {
         "Image": "澤上有風，中孚；君子以議獄緩死。",
@@ -1666,14 +1785,16 @@
         "chinese_name": "中孚",
         "trigram_above": "lake",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-62",
       "number": 62,
       "name": "Small Exceeding",
       "symbol": "䷽",
-      "category": "thunder",
+      "category": "trigram",
       "sort_order": 61,
       "sections": {
         "Image": "山上有雷，小過；君子以行過乎恭，喪過乎哀，用過乎儉。",
@@ -1693,14 +1814,16 @@
         "chinese_name": "小過",
         "trigram_above": "mountain",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-63",
       "number": 63,
       "name": "After Completion",
       "symbol": "䷾",
-      "category": "water",
+      "category": "trigram",
       "sort_order": 62,
       "sections": {
         "Image": "水在火上，既濟；君子以思患而預防之。",
@@ -1720,14 +1843,16 @@
         "chinese_name": "既濟",
         "trigram_above": "fire",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-64",
       "number": 64,
       "name": "Before Completion",
       "symbol": "䷿",
-      "category": "fire",
+      "category": "trigram",
       "sort_order": 63,
       "sections": {
         "Image": "火在水上，未濟；君子以慎辨物居方。",
@@ -1747,7 +1872,15 @@
         "chinese_name": "未濟",
         "trigram_above": "water",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     }
-  ]
+  ],
+  "license": "CC-BY-4.0",
+  "rights_note": "The historical sources are in the public domain; CC BY covers the commentary and arrangement.",
+  "default_view": "cards",
+  "_is_published_to_community": true,
+  "_recursive_eco_url": "https://recursive.eco/g/476b17da-e6dd-4c10-925a-fad9992ea12c?view=reading",
+  "_recursive_eco_edit_url": "https://recursive.eco/create/dashboard/unified/new?id=476b17da-e6dd-4c10-925a-fad9992ea12c"
 }
