@@ -7,19 +7,18 @@
       "PlayfulProcess (AI-assisted interpretation gloss, curation)"
     ]
   },
-  "name": "The 64 Hexagrams",
-  "description": "The Judgment, Image, and all six line texts for each of the 64 hexagrams, in James Legge's public-domain English translation (1882), with a short interpretation gloss per hexagram. This is the flagship reading text of The Recursive I Ching — companion to 'The Repair I Ching' (a 12-hexagram contemplative practice) and 'Three Lenses' (hexagrams cross-read through Human Design gates, zodiac signs, and chakras). The Judgment and Lines are the oldest layer (see 'Zhouyi Core'); the Image is the Great Image from the Ten Wings, a Confucian layer added centuries later (see 'The Ten Wings'). Words in (parentheses) are Legge's own additions, not the original.",
-  "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
-  "grammar_type": "iching",
+  "name": "I Ching Summarized by AI",
+  "description": "This was extracted from Project Gutenberg's Archives. https://www.gutenberg.org/ebooks/25501. AI made short translations to the text (Claude Code)",
+  "cover_image_url": "https://en.wikipedia.org/wiki/Yin_and_yang#/media/File%3AYin_and_Yang_symbol.svg",
+  "grammar_type": "custom",
   "tags": [
-    "iching",
-    "hexagrams",
-    "divination",
-    "classical-text",
-    "64-hexagrams"
+    "chinese",
+    "original",
+    "public-domain",
+    "oracle"
   ],
   "creator_name": "PlayfulProcess",
-  "creator_link": "https://recursive.eco",
+  "creator_link": "https://lifeisprocess.substack.com/",
   "nodes": [
     {
       "id": "hexagram-1",
@@ -47,7 +46,10 @@
         "chinese_name": "乾",
         "trigram_above": "heaven",
         "trigram_below": "heaven"
-      }
+      },
+      "image_url": "https://pub-71ebbc217e6247ecacb85126a6616699.r2.dev/grammar-image-gen/1783700876181-ls7c9yfno7o.png",
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-2",
@@ -75,14 +77,17 @@
         "chinese_name": "坤",
         "trigram_above": "earth",
         "trigram_below": "earth"
-      }
+      },
+      "image_url": "https://pub-71ebbc217e6247ecacb85126a6616699.r2.dev/grammar-image-gen/1783730125124-63au24km3wu.png",
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-3",
       "number": 3,
       "name": "Difficulty at the Beginning",
       "symbol": "䷂",
-      "category": "thunder",
+      "category": "water",
       "sort_order": 2,
       "sections": {
         "Judgment": "Kun (indicates that in the case which it presupposes) there will be great progress and success, and the advantage will come from being correct and firm. (But) any movement in advance should not be (lightly) undertaken. There will be advantage in appointing feudal princes.",
@@ -103,14 +108,17 @@
         "chinese_name": "屯",
         "trigram_above": "water",
         "trigram_below": "thunder"
-      }
+      },
+      "image_url": "https://pub-71ebbc217e6247ecacb85126a6616699.r2.dev/grammar-image-gen/1783705631012-426g106ro96.png",
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-4",
       "number": 4,
       "name": "Youthful Folly",
       "symbol": "䷃",
-      "category": "water",
+      "category": "mountain",
       "sort_order": 3,
       "sections": {
         "Judgment": "Măng (indicates that in the case which it presupposes) there will be progress and success. I do not (go and) seek the youthful and inexperienced, but he comes and seeks me. When he shows (the sincerity that marks) the first recourse to divination, I instruct him. If he apply a second and third time, that is troublesome; and I do not instruct the troublesome. There will be advantage in being firm and correct.",
@@ -131,14 +139,16 @@
         "chinese_name": "蒙",
         "trigram_above": "mountain",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-5",
       "number": 5,
       "name": "Waiting (Nourishment)",
       "symbol": "䷄",
-      "category": "heaven",
+      "category": "water",
       "sort_order": 4,
       "sections": {
         "Judgment": "Hsü intimates that, with the sincerity which is declared in it, there will be brilliant success. With firmness there will be good fortune; and it will be advantageous to cross the great stream.",
@@ -159,14 +169,16 @@
         "chinese_name": "需",
         "trigram_above": "water",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-6",
       "number": 6,
       "name": "Conflict",
       "symbol": "䷅",
-      "category": "water",
+      "category": "heaven",
       "sort_order": 5,
       "sections": {
         "Judgment": "Sung intimates how, though there is sincerity in one's contention, he will yet meet with opposition and obstruction; but if he cherish an apprehensive caution, there will be good fortune, while, if he must prosecute the contention to the (bitter) end, there will be evil. It will be advantageous to see the great man; it will not be advantageous to cross the great stream.",
@@ -187,14 +199,16 @@
         "chinese_name": "訟",
         "trigram_above": "heaven",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-7",
       "number": 7,
       "name": "The Army",
       "symbol": "䷆",
-      "category": "water",
+      "category": "earth",
       "sort_order": 6,
       "sections": {
         "Judgment": "Sze indicates how, in the case which it supposes, with firmness and correctness, and (a leader of) age and experience, there will be good fortune and no error.",
@@ -215,14 +229,16 @@
         "chinese_name": "師",
         "trigram_above": "earth",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-8",
       "number": 8,
       "name": "Holding Together [Union]",
       "symbol": "䷇",
-      "category": "earth",
+      "category": "water",
       "sort_order": 7,
       "sections": {
         "Judgment": "Pî indicates that (under the conditions which it supposes) there is good fortune. But let (the principal party intended in it) re-examine himself, (as if) by divination, whether his virtue be great, unintermitting, and firm. If it be so, there will be no error. Those who have not rest will then come to him; and with those who are (too) late in coming it will be ill.",
@@ -243,14 +259,16 @@
         "chinese_name": "比",
         "trigram_above": "water",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-9",
       "number": 9,
       "name": "The Taming Power of the Small",
       "symbol": "䷈",
-      "category": "heaven",
+      "category": "wind",
       "sort_order": 8,
       "sections": {
         "Judgment": "Hsiâo Khû indicates that (under its conditions) there will be progress and success. (We see) dense clouds, but no rain coming from our borders in the west.",
@@ -271,14 +289,16 @@
         "chinese_name": "小畜",
         "trigram_above": "wind",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-10",
       "number": 10,
       "name": "Treading [Conduct]",
       "symbol": "䷉",
-      "category": "lake",
+      "category": "heaven",
       "sort_order": 9,
       "sections": {
         "Judgment": "(Lî suggests the idea of) one treading on the tail of a tiger, which does not bite him. There will be progress and success.",
@@ -299,14 +319,16 @@
         "chinese_name": "履",
         "trigram_above": "heaven",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-11",
       "number": 11,
       "name": "Peace",
       "symbol": "䷊",
-      "category": "heaven",
+      "category": "earth",
       "sort_order": 10,
       "sections": {
         "Judgment": "In Thâi (we see) the little gone and the great come. (It indicates that) there will be good fortune, with progress and success.",
@@ -317,7 +339,7 @@
         "Line 4": "The fourth SIX, divided, shows its subject fluttering (down);—not relying on his own rich resources, but calling in his neighbours. (They all come) not as having received warning, but in the sincerity (of their hearts).",
         "Line 5": "The fifth SIX, divided, reminds us of (king) Tî-yî's (rule about the) marriage of his younger sister. By such a course there is happiness and there will be great good fortune.",
         "Line 6": "The sixth six, divided, shows us the city wall returned into the moat. It is not the time to use the army. (The subject of the line) may, indeed, announce his orders to the people of his own city; but however correct and firm he may be, he will have cause for regret.",
-        "Interpretation": "A state of harmony where heaven and earth interact, leading to growth and prosperity for all."
+        "Interpretation": "A state of harmony where heaven and earth interact, leading to growth and prosperity for all. [cite: 3]"
       },
       "keywords": [],
       "metadata": {
@@ -327,14 +349,16 @@
         "chinese_name": "泰",
         "trigram_above": "earth",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-12",
       "number": 12,
       "name": "Standstill [Stagnation]",
       "symbol": "䷋",
-      "category": "earth",
+      "category": "heaven",
       "sort_order": 11,
       "sections": {
         "Judgment": "In Phî there is the want of good understanding between the (different classes of) men, and its indication is unfavourable to the firm and correct course of the superior man. We see in it the great gone and the little come.",
@@ -345,7 +369,7 @@
         "Line 4": "The fourth NINE, undivided, shows its subject acting in accordance with the ordination (of Heaven), and committing no error. His companions will come and share in his happiness.",
         "Line 5": "In the fifth NINE, undivided, we see him who brings the distress and obstruction to a close,—the great man and fortunate. (But let him say), 'We may perish! We may perish!' (so shall the state of things become firm, as if) bound to a clump of bushy mulberry trees.",
         "Line 6": "The sixth NINE, undivided, shows the overthrow (and removal of) the condition of distress and obstruction. Before this there was that condition. Hereafter there will be joy.",
-        "Interpretation": "A period of disconnect where creative forces are blocked and small-mindedness prevails."
+        "Interpretation": "A period of disconnect where creative forces are blocked and small-mindedness prevails. [cite: 3]"
       },
       "keywords": [],
       "metadata": {
@@ -355,14 +379,16 @@
         "chinese_name": "否",
         "trigram_above": "heaven",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-13",
       "number": 13,
       "name": "Fellowship with Men",
       "symbol": "䷌",
-      "category": "fire",
+      "category": "heaven",
       "sort_order": 12,
       "sections": {
         "Judgment": "Thung Zăn (or 'Union of men') appears here (as we find it) in the (remote districts of the) country, indicating progress and success. It will be advantageous to cross the great stream. It will be advantageous to maintain the firm correctness of the superior man.",
@@ -373,7 +399,7 @@
         "Line 4": "The fourth NINE, undivided, (shows its subject) mounted on the city wall; but he does not proceed to make the attack (he contemplates). There will be good fortune.",
         "Line 5": "In the fifth NINE, undivided, (the representative of) the union of men first wails and cries out, and then laughs. His great host conquers, and he (and the subject of the second line) meet together.",
         "Line 6": "The topmost NINE, undivided, (shows the representative of) the union of men in the suburbs. There will be no occasion for repentance.",
-        "Interpretation": "Focuses on universal brotherhood and collaboration based on shared goals and openness."
+        "Interpretation": "Focuses on universal brotherhood and collaboration based on shared goals and openness. [cite: 3]"
       },
       "keywords": [],
       "metadata": {
@@ -383,14 +409,16 @@
         "chinese_name": "同人",
         "trigram_above": "heaven",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-14",
       "number": 14,
       "name": "Possession in Great Measure",
       "symbol": "䷍",
-      "category": "heaven",
+      "category": "fire",
       "sort_order": 13,
       "sections": {
         "Judgment": "Tâ Yû indicates that, (under the circumstances which it implies), there will be great progress and success.",
@@ -401,7 +429,7 @@
         "Line 4": "The fourth NINE, undivided, shows its subject keeping his great resources under restraint. There will be no error.",
         "Line 5": "The fifth SIX, divided, shows the sincerity of its subject reciprocated by that of all the others (represented in the hexagram). Let him display a proper majesty, and there will be good fortune.",
         "Line 6": "The topmost NINE, undivided, shows its subject with help accorded to him from Heaven. There will be good fortune, advantage in every respect.",
-        "Interpretation": "Represents a time of great abundance and the responsibility to use that power for the common good."
+        "Interpretation": "Represents a time of great abundance and the responsibility to use that power for the common good. [cite: 3]"
       },
       "keywords": [],
       "metadata": {
@@ -411,14 +439,16 @@
         "chinese_name": "大有",
         "trigram_above": "fire",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-15",
       "number": 15,
       "name": "Modesty",
       "symbol": "䷎",
-      "category": "mountain",
+      "category": "earth",
       "sort_order": 14,
       "sections": {
         "Judgment": "Khien indicates progress and success. The superior man, (being humble as it implies), will have a (good) issue (to his undertakings).",
@@ -429,7 +459,7 @@
         "Line 4": "The fourth SIX, divided, shows one, whose action would be in every way advantageous, stirring up (the more) his humility.",
         "Line 5": "The fifth SIX, divided, shows one who, without being rich, is able to employ his neighbours. He may advantageously use the force of arms. All his movements will be advantageous.",
         "Line 6": "The sixth SIX, divided, shows us humility that has made itself recognised. The subject of it will with advantage put his hosts in motion; but (he will only) punish his own towns and state.",
-        "Interpretation": "True strength that does not boast, allowing one to influence others without creating resistance."
+        "Interpretation": "True strength that does not boast, allowing one to influence others without creating resistance. [cite: 3]"
       },
       "keywords": [],
       "metadata": {
@@ -439,14 +469,16 @@
         "chinese_name": "謙",
         "trigram_above": "earth",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-16",
       "number": 16,
       "name": "Enthusiasm",
       "symbol": "䷏",
-      "category": "earth",
+      "category": "thunder",
       "sort_order": 15,
       "sections": {
         "Judgment": "Yü indicates that, (in the state which it implies), feudal princes may be set up, and the hosts put in motion, with advantage.",
@@ -457,7 +489,7 @@
         "Line 4": "The fourth NINE, undivided, shows him from whom the harmony and satisfaction come. Great is the success which he obtains. Let him not allow suspicions to enter his mind, and thus friends will gather around him.",
         "Line 5": "The fifth SIX, divided, shows one with a chronic complaint, but who lives on without dying.",
         "Line 6": "The topmost SIX, divided, shows its subject with darkened mind devoted to the pleasure and satisfaction (of the time); but if he change his course even when (it may be considered as) completed, there will be no error.",
-        "Interpretation": "A state of shared joy and movement that inspires action, but requires groundedness to avoid delusion."
+        "Interpretation": "A state of shared joy and movement that inspires action, but requires groundedness to avoid delusion. [cite: 3]"
       },
       "keywords": [],
       "metadata": {
@@ -467,14 +499,16 @@
         "chinese_name": "豫",
         "trigram_above": "thunder",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-17",
       "number": 17,
       "name": "Following",
       "symbol": "䷐",
-      "category": "thunder",
+      "category": "lake",
       "sort_order": 16,
       "sections": {
         "Judgment": "Sui indicates that (under its conditions) there will be great progress and success. But it will be advantageous to be firm and correct. There will (then) be no error.",
@@ -485,7 +519,7 @@
         "Line 4": "The fourth NINE, undivided, shows us one followed and obtaining (adherents). Though he be firm and correct, there will be evil. If he be sincere (however) in his course, and make that evident, into what error will he fall?",
         "Line 5": "The fifth NINE, undivided, shows us (the ruler) sincere in (fostering all) that is excellent. There will be good fortune.",
         "Line 6": "The topmost SIX, divided, shows us (that sincerity) firmly held and clung to, yea, and bound fast. (We see) the king with it presenting his offerings on the western mountain.",
-        "Interpretation": "Adapting to the requirements of the time and following what is right rather than forcing one's will."
+        "Interpretation": "Adapting to the requirements of the time and following what is right rather than forcing one's will. [cite: 3]"
       },
       "keywords": [],
       "metadata": {
@@ -495,14 +529,16 @@
         "chinese_name": "隨",
         "trigram_above": "lake",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-18",
       "number": 18,
       "name": "Work on what has been spoiled [Decay]",
       "symbol": "䷑",
-      "category": "wind",
+      "category": "mountain",
       "sort_order": 17,
       "sections": {
         "Judgment": "Kû indicates great progress and success (to him who deals properly with the condition represented by it). There will be advantage in (efforts like that of) crossing the great stream. (He should weigh well, however, the events of) three days before the turning point, and those (to be done) three days after it.",
@@ -513,7 +549,7 @@
         "Line 4": "The fourth SIX, divided, shows (a son) viewing indulgently the troubles caused by his father. If he go forward, he will find cause to regret it.",
         "Line 5": "The fifth SIX, divided, shows (a son) dealing with the troubles caused by his father. He obtains the praise of using (the fit instrument for his work).",
         "Line 6": "The sixth NINE, undivided, shows us one who does not serve either king or feudal lord, but in a lofty spirit prefers (to attend to) his own affairs.",
-        "Interpretation": "Identifying areas of stagnation or corruption and taking active steps to restore health and order."
+        "Interpretation": "Identifying areas of stagnation or corruption and taking active steps to restore health and order. [cite: 3]"
       },
       "keywords": [],
       "metadata": {
@@ -523,14 +559,16 @@
         "chinese_name": "蠱",
         "trigram_above": "mountain",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-19",
       "number": 19,
       "name": "Approach",
       "symbol": "䷒",
-      "category": "lake",
+      "category": "earth",
       "sort_order": 18,
       "sections": {
         "Judgment": "Lin indicates that under the conditions supposed in it there will be great progress and success, while it will be advantageous to be firmly correct. In the eighth month there will be evil.",
@@ -541,7 +579,7 @@
         "Line 4": "The fourth SIX, divided, shows one advancing in the highest mode. There will be no error.",
         "Line 5": "The fifth SIX, divided, shows the advance of wisdom, such as befits the great ruler. There will be good fortune.",
         "Line 6": "The sixth SIX, divided, shows the advance of honesty and generosity. There will be good fortune, and no error.",
-        "Interpretation": "A time of promising growth and nearing success, but with a warning to prepare for the eventual turn of the cycle."
+        "Interpretation": "A time of promising growth and nearing success, but with a warning to prepare for the eventual turn of the cycle. [cite: 3]"
       },
       "keywords": [],
       "metadata": {
@@ -551,14 +589,16 @@
         "chinese_name": "臨",
         "trigram_above": "earth",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-20",
       "number": 20,
       "name": "Contemplation [View]",
       "symbol": "䷓",
-      "category": "earth",
+      "category": "wind",
       "sort_order": 19,
       "sections": {
         "Judgment": "Kwân shows (how he whom it represents should be like) the worshipper who has washed his hands, but not (yet) presented his offerings;—with sincerity and an appearance of dignity (commanding reverent regard).",
@@ -569,7 +609,7 @@
         "Line 4": "The fourth SIX, divided, shows one contemplating the glory of the kingdom. It will be advantageous for him, being such as he is, (to seek) to be a guest of the king.",
         "Line 5": "The fifth NINE, undivided, shows its subject contemplating his own life(-course). A superior man, he will (thus) fall into no error.",
         "Line 6": "The sixth NINE, undivided, shows its subject contemplating his character to see if it be indeed that of a superior man. He will not fall into error.",
-        "Interpretation": "Observing the world and oneself with a focus on spiritual depth and setting an example for others."
+        "Interpretation": "Observing the world and oneself with a focus on spiritual depth and setting an example for others. [cite: 3]"
       },
       "keywords": [],
       "metadata": {
@@ -579,14 +619,16 @@
         "chinese_name": "觀",
         "trigram_above": "wind",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-21",
       "number": 21,
       "name": "Biting Through",
       "symbol": "䷔",
-      "category": "thunder",
+      "category": "fire",
       "sort_order": 20,
       "sections": {
         "Judgment": "Shih Ho indicates successful progress (in the condition of things which it supposes). It will be advantageous to use legal constraints.",
@@ -607,14 +649,16 @@
         "chinese_name": "噬嗑",
         "trigram_above": "fire",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-22",
       "number": 22,
       "name": "Grace",
       "symbol": "䷕",
-      "category": "fire",
+      "category": "mountain",
       "sort_order": 21,
       "sections": {
         "Judgment": "Pî indicates that there should be free course (in what it denotes). There will be little advantage (however) if it be allowed to advance (and take the lead).",
@@ -635,14 +679,16 @@
         "chinese_name": "賁",
         "trigram_above": "mountain",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-23",
       "number": 23,
       "name": "Splitting Apart",
       "symbol": "䷖",
-      "category": "earth",
+      "category": "mountain",
       "sort_order": 22,
       "sections": {
         "Judgment": "Po indicates that (in the state which it symbolises) it will not be advantageous to make a movement in any direction whatever.",
@@ -663,14 +709,16 @@
         "chinese_name": "剝",
         "trigram_above": "mountain",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-24",
       "number": 24,
       "name": "Return (The Turning Point)",
       "symbol": "䷗",
-      "category": "thunder",
+      "category": "earth",
       "sort_order": 23,
       "sections": {
         "Judgment": "Fû indicates that there will be free course and progress (in what it denotes). (The subject of it) finds no one to distress him in his exits and entrances; friends come to him, and no error is committed. He will return and repeat his (proper) course. In seven days comes his return. There will be advantage in whatever direction movement is made.",
@@ -691,14 +739,16 @@
         "chinese_name": "復",
         "trigram_above": "earth",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-25",
       "number": 25,
       "name": "Innocence (The Unexpected)",
       "symbol": "䷘",
-      "category": "thunder",
+      "category": "heaven",
       "sort_order": 24,
       "sections": {
         "Judgment": "Wû Wang indicates great progress and success, while there will be advantage in being firm and correct. If (its subject and his action) be not correct, he will fall into errors, and it will not be advantageous for him to move in any direction.",
@@ -719,14 +769,16 @@
         "chinese_name": "無妄",
         "trigram_above": "heaven",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-26",
       "number": 26,
       "name": "The Taming Power of the Great",
       "symbol": "䷙",
-      "category": "heaven",
+      "category": "mountain",
       "sort_order": 25,
       "sections": {
         "Judgment": "Under the conditions of Tâ Khû it will be advantageous to be firm and correct. (If its subject do not seek to) enjoy his revenues in his own family (without taking service at court), there will be good fortune. It will be advantageous for him to cross the great stream.",
@@ -747,14 +799,16 @@
         "chinese_name": "大畜",
         "trigram_above": "mountain",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-27",
       "number": 27,
       "name": "The Corners of the Mouth (Providing Nourishment)",
       "symbol": "䷚",
-      "category": "thunder",
+      "category": "mountain",
       "sort_order": 26,
       "sections": {
         "Judgment": "Î indicates that with firm correctness there will be good fortune (in what is denoted by it). We must look at what we are seeking to nourish, and by the exercise of our thoughts seek for the proper aliment.",
@@ -775,14 +829,16 @@
         "chinese_name": "頤",
         "trigram_above": "mountain",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-28",
       "number": 28,
       "name": "Preponderance of the Great",
       "symbol": "䷛",
-      "category": "wind",
+      "category": "lake",
       "sort_order": 27,
       "sections": {
         "Judgment": "Tâ Kwo suggests to us a beam that is weak. There will be advantage in moving (under its conditions) in any direction whatever; there will be success.",
@@ -803,7 +859,9 @@
         "chinese_name": "大過",
         "trigram_above": "lake",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-29",
@@ -831,7 +889,10 @@
         "chinese_name": "坎",
         "trigram_above": "water",
         "trigram_below": "water"
-      }
+      },
+      "image_url": "https://pub-71ebbc217e6247ecacb85126a6616699.r2.dev/grammar-image-gen/1783654500827-1x9rf9urhua.png",
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-30",
@@ -859,14 +920,16 @@
         "chinese_name": "離",
         "trigram_above": "fire",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-31",
       "number": 31,
       "name": "Influence (Wooing)",
       "symbol": "䷞",
-      "category": "mountain",
+      "category": "lake",
       "sort_order": 30,
       "sections": {
         "Judgment": "Hsien indicates that, (on the fulfilment of the conditions implied in it), there will be free course and success. Its advantageousness will depend on the being firm and correct, (as) in marrying a young lady. There will be good fortune.",
@@ -887,14 +950,16 @@
         "chinese_name": "咸",
         "trigram_above": "lake",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-32",
       "number": 32,
       "name": "Duration",
       "symbol": "䷟",
-      "category": "wind",
+      "category": "thunder",
       "sort_order": 31,
       "sections": {
         "Judgment": "Hăng indicates successful progress and no error (in what it denotes). But the advantage will come from being firm and correct; and movement in any direction whatever will be advantageous.",
@@ -915,14 +980,16 @@
         "chinese_name": "恆",
         "trigram_above": "thunder",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-33",
       "number": 33,
       "name": "Retreat",
       "symbol": "䷠",
-      "category": "mountain",
+      "category": "heaven",
       "sort_order": 32,
       "sections": {
         "Judgment": "Thun indicates successful progress (in its circumstances). To a small extent it will (still) be advantageous to be firm and correct.",
@@ -943,14 +1010,16 @@
         "chinese_name": "遯",
         "trigram_above": "heaven",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-34",
       "number": 34,
       "name": "The Power of the Great",
       "symbol": "䷡",
-      "category": "heaven",
+      "category": "thunder",
       "sort_order": 33,
       "sections": {
         "Judgment": "Tâ Kwang indicates that (under the conditions which it symbolises) it will be advantageous to be firm and correct.",
@@ -971,14 +1040,16 @@
         "chinese_name": "大壯",
         "trigram_above": "thunder",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-35",
       "number": 35,
       "name": "Progress",
       "symbol": "䷢",
-      "category": "earth",
+      "category": "fire",
       "sort_order": 34,
       "sections": {
         "Judgment": "In Žin we see a prince who secures the tranquillity (of the people) presented on that account with numerous horses (by the king), and three times in a day received at interviews.",
@@ -999,14 +1070,16 @@
         "chinese_name": "晉",
         "trigram_above": "fire",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-36",
       "number": 36,
       "name": "Darkening of the Light",
       "symbol": "䷣",
-      "category": "fire",
+      "category": "earth",
       "sort_order": 35,
       "sections": {
         "Judgment": "Ming Î indicates that (in the circumstances which it denotes) it will be advantageous to realise the difficulty (of the position), and maintain firm correctness.",
@@ -1027,14 +1100,16 @@
         "chinese_name": "明夷",
         "trigram_above": "earth",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-37",
       "number": 37,
       "name": "The Family [The Clan]",
       "symbol": "䷤",
-      "category": "fire",
+      "category": "wind",
       "sort_order": 36,
       "sections": {
         "Judgment": "For (the realisation of what is taught in) Kiâ Zăn, (or for the regulation of the family), what is most advantageous is that the wife be firm and correct.",
@@ -1055,14 +1130,16 @@
         "chinese_name": "家人",
         "trigram_above": "wind",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-38",
       "number": 38,
       "name": "Opposition",
       "symbol": "䷥",
-      "category": "lake",
+      "category": "fire",
       "sort_order": 37,
       "sections": {
         "Judgment": "Khwei indicates that, (notwithstanding the condition of things which it denotes), in small matters there will (still) be good success.",
@@ -1083,14 +1160,16 @@
         "chinese_name": "睽",
         "trigram_above": "fire",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-39",
       "number": 39,
       "name": "Obstruction",
       "symbol": "䷦",
-      "category": "mountain",
+      "category": "water",
       "sort_order": 38,
       "sections": {
         "Judgment": "In (the state indicated by) Kien advantage will be found in the south-west, and the contrary in the north-east. It will be advantageous (also) to meet with the great man. (In these circumstances), with firmness and correctness, there will be good fortune.",
@@ -1111,14 +1190,16 @@
         "chinese_name": "蹇",
         "trigram_above": "water",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-40",
       "number": 40,
       "name": "Deliverance",
       "symbol": "䷧",
-      "category": "water",
+      "category": "thunder",
       "sort_order": 39,
       "sections": {
         "Judgment": "In (the state indicated by) Kieh advantage will be found in the south-west. If no (further) operations be called for, there will be good fortune in coming back (to the old conditions). If some operations be called for, there will be good fortune in the early conducting of them.",
@@ -1139,14 +1220,16 @@
         "chinese_name": "解",
         "trigram_above": "thunder",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-41",
       "number": 41,
       "name": "Decrease",
       "symbol": "䷨",
-      "category": "lake",
+      "category": "mountain",
       "sort_order": 40,
       "sections": {
         "Judgment": "In (what is denoted by) Sun, if there be sincerity (in him who employs it), there will be great good fortune:—freedom from error; firmness and correctness that can be maintained; and advantage in every movement that shall be made. In what shall this (sincerity in the exercise of Sun) be employed? (Even) in sacrifice two baskets of grain, (though there be nothing else), may be presented.",
@@ -1167,14 +1250,16 @@
         "chinese_name": "損",
         "trigram_above": "mountain",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-42",
       "number": 42,
       "name": "Increase",
       "symbol": "䷩",
-      "category": "thunder",
+      "category": "wind",
       "sort_order": 41,
       "sections": {
         "Judgment": "Yî indicates that (in the state which it denotes) there will be advantage in every movement which shall be undertaken, that it will be advantageous (even) to cross the great stream.",
@@ -1195,14 +1280,16 @@
         "chinese_name": "益",
         "trigram_above": "wind",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-43",
       "number": 43,
       "name": "Break-through (Resoluteness)",
       "symbol": "䷪",
-      "category": "heaven",
+      "category": "lake",
       "sort_order": 42,
       "sections": {
         "Judgment": "Kwâi requires (in him who would fulfil its meaning) the exhibition (of the culprit's guilt) in the royal court, and a sincere and earnest appeal (for sympathy and support), with a consciousness of the peril (involved in cutting off the criminal). He should (also) make announcement in his own city, and show that it will not be well to have recourse at once to arms. (In this way) there will be advantage in whatever he shall go forward to.",
@@ -1223,14 +1310,16 @@
         "chinese_name": "夬",
         "trigram_above": "lake",
         "trigram_below": "heaven"
-      }
+      },
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-44",
       "number": 44,
       "name": "Coming to Meet",
       "symbol": "䷫",
-      "category": "wind",
+      "category": "heaven",
       "sort_order": 43,
       "sections": {
         "Judgment": "Kâu shows a female who is bold and strong. It will not be good to marry (such) a female.",
@@ -1251,14 +1340,16 @@
         "chinese_name": "姤",
         "trigram_above": "heaven",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-45",
       "number": 45,
       "name": "Gathering Together [Massing]",
       "symbol": "䷬",
-      "category": "earth",
+      "category": "lake",
       "sort_order": 44,
       "sections": {
         "Judgment": "In (the state denoted by) Žhui, the king will repair to his ancestral temple. It will be advantageous (also) to meet with the great man; and then there will be progress and success, though the advantage must come through firm correctness. The use of great victims will conduce to good fortune; and in whatever direction movement is made, it will be advantageous.",
@@ -1279,14 +1370,16 @@
         "chinese_name": "萃",
         "trigram_above": "lake",
         "trigram_below": "earth"
-      }
+      },
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-46",
       "number": 46,
       "name": "Pushing Upward",
       "symbol": "䷭",
-      "category": "wind",
+      "category": "earth",
       "sort_order": 45,
       "sections": {
         "Judgment": "Shăng indicates that (under its conditions) there will be great progress and success. Seeking by (the qualities implied in it) to meet with the great man, its subject need have no anxiety. Advance to the south will be fortunate.",
@@ -1307,14 +1400,16 @@
         "chinese_name": "升",
         "trigram_above": "earth",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-47",
       "number": 47,
       "name": "Oppression (Exhaustion)",
       "symbol": "䷮",
-      "category": "water",
+      "category": "lake",
       "sort_order": 46,
       "sections": {
         "Judgment": "In (the condition denoted by) Khwăn there may (yet be) progress and success. For the firm and correct, the (really) great man, there will be good fortune. He will fall into no error. If he make speeches, his words cannot be made good.",
@@ -1335,14 +1430,16 @@
         "chinese_name": "困",
         "trigram_above": "lake",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-48",
       "number": 48,
       "name": "The Well",
       "symbol": "䷯",
-      "category": "wind",
+      "category": "water",
       "sort_order": 47,
       "sections": {
         "Judgment": "(Looking at) Žing, (we think of) how (the site of) a town may be changed, while (the fashion of) its wells undergoes no change. (The water of a well) never disappears and never receives (any great) increase, and those who come and those who go can draw and enjoy the benefit. If (the drawing) have nearly been accomplished, but, before the rope has quite reached the water, the bucket is broken, this is evil.",
@@ -1363,14 +1460,16 @@
         "chinese_name": "井",
         "trigram_above": "water",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-49",
       "number": 49,
       "name": "Revolution (Molting)",
       "symbol": "䷰",
-      "category": "fire",
+      "category": "lake",
       "sort_order": 48,
       "sections": {
         "Judgment": "(What takes place as indicated by) Ko is believed in only after it has been accomplished. There will be great progress and success. Advantage will come from being firm and correct. (In that case) occasion for repentance will disappear.",
@@ -1391,14 +1490,16 @@
         "chinese_name": "革",
         "trigram_above": "lake",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-50",
       "number": 50,
       "name": "The Caldron",
       "symbol": "䷱",
-      "category": "wind",
+      "category": "fire",
       "sort_order": 49,
       "sections": {
         "Judgment": "Ting gives the intimation of great progress and success.",
@@ -1419,7 +1520,9 @@
         "chinese_name": "鼎",
         "trigram_above": "fire",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-51",
@@ -1447,7 +1550,9 @@
         "chinese_name": "震",
         "trigram_above": "thunder",
         "trigram_below": "thunder"
-      }
+      },
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-52",
@@ -1475,14 +1580,16 @@
         "chinese_name": "艮",
         "trigram_above": "mountain",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-53",
       "number": 53,
       "name": "Development (Gradual Progress)",
       "symbol": "䷴",
-      "category": "mountain",
+      "category": "wind",
       "sort_order": 52,
       "sections": {
         "Judgment": "Kien suggests to us the marriage of a young lady, and the good fortune (attending it). There will be advantage in being firm and correct.",
@@ -1503,14 +1610,16 @@
         "chinese_name": "漸",
         "trigram_above": "wind",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-54",
       "number": 54,
       "name": "The Marrying Maiden",
       "symbol": "䷵",
-      "category": "lake",
+      "category": "thunder",
       "sort_order": 53,
       "sections": {
         "Judgment": "Kwei Mei indicates that (under the conditions which it denotes) action will be evil, and in no wise advantageous.",
@@ -1531,14 +1640,16 @@
         "chinese_name": "歸妹",
         "trigram_above": "thunder",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-55",
       "number": 55,
       "name": "Abundance",
       "symbol": "䷶",
-      "category": "fire",
+      "category": "thunder",
       "sort_order": 54,
       "sections": {
         "Judgment": "Făng intimates progress and development. When a king has reached the point (which the name denotes) there is no occasion to be anxious (through fear of a change). Let him be as the sun at noon.",
@@ -1559,14 +1670,16 @@
         "chinese_name": "豐",
         "trigram_above": "thunder",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-56",
       "number": 56,
       "name": "The Wanderer",
       "symbol": "䷷",
-      "category": "mountain",
+      "category": "fire",
       "sort_order": 55,
       "sections": {
         "Judgment": "Lü intimates that (in the condition which it denotes) there may be some little attainment and progress. If the stranger or traveller be firm and correct as he ought to be, there will be good fortune.",
@@ -1587,7 +1700,9 @@
         "chinese_name": "旅",
         "trigram_above": "fire",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-57",
@@ -1615,7 +1730,9 @@
         "chinese_name": "巽",
         "trigram_above": "wind",
         "trigram_below": "wind"
-      }
+      },
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-58",
@@ -1643,14 +1760,16 @@
         "chinese_name": "兌",
         "trigram_above": "lake",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-59",
       "number": 59,
       "name": "Dispersion [Dissolution]",
       "symbol": "䷺",
-      "category": "water",
+      "category": "wind",
       "sort_order": 58,
       "sections": {
         "Judgment": "Hwân intimates that (under its conditions) there will be progress and success. The king goes to his ancestral temple; and it will be advantageous to cross the great stream. It will be advantageous to be firm and correct.",
@@ -1671,14 +1790,16 @@
         "chinese_name": "渙",
         "trigram_above": "wind",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-60",
       "number": 60,
       "name": "Limitation",
       "symbol": "䷻",
-      "category": "lake",
+      "category": "water",
       "sort_order": 59,
       "sections": {
         "Judgment": "Kieh intimates that (under its conditions) there will be progress and attainment. (But) if the regulations (which it prescribes) be severe and difficult, they cannot be permanent.",
@@ -1699,14 +1820,16 @@
         "chinese_name": "節",
         "trigram_above": "water",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-61",
       "number": 61,
       "name": "Inner Truth",
       "symbol": "䷼",
-      "category": "lake",
+      "category": "wind",
       "sort_order": 60,
       "sections": {
         "Judgment": "Kung Fû (moves even) pigs and fish, and leads to good fortune. There will be advantage in crossing the great stream. There will be advantage in being firm and correct.",
@@ -1727,14 +1850,16 @@
         "chinese_name": "中孚",
         "trigram_above": "wind",
         "trigram_below": "lake"
-      }
+      },
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-62",
       "number": 62,
       "name": "Preponderance of the Small",
       "symbol": "䷽",
-      "category": "mountain",
+      "category": "thunder",
       "sort_order": 61,
       "sections": {
         "Judgment": "Hsiâo Kwo indicates that (in the circumstances which it implies) there will be progress and attainment. But it will be advantageous to be firm and correct. (What the name denotes) may be done in small affairs, but not in great affairs. (It is like) the notes that come down from a bird on the wing;—to descend is better than to ascend. There will (in this way) be great good fortune.",
@@ -1755,14 +1880,16 @@
         "chinese_name": "小過",
         "trigram_above": "thunder",
         "trigram_below": "mountain"
-      }
+      },
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-63",
       "number": 63,
       "name": "After Completion",
       "symbol": "䷾",
-      "category": "fire",
+      "category": "water",
       "sort_order": 62,
       "sections": {
         "Judgment": "Kî Žî intimates progress and success in small matters. There will be advantage in being firm and correct. There has been good fortune in the beginning; there may be disorder in the end.",
@@ -1783,14 +1910,16 @@
         "chinese_name": "既濟",
         "trigram_above": "water",
         "trigram_below": "fire"
-      }
+      },
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hexagram-64",
       "number": 64,
       "name": "Before Completion",
       "symbol": "䷿",
-      "category": "water",
+      "category": "fire",
       "sort_order": 63,
       "sections": {
         "Judgment": "Wei Žî intimates progress and success (in the circumstances which it implies). (We see) a young fox that has nearly crossed (the stream), when its tail gets immersed. There will be no advantage in any way.",
@@ -1811,7 +1940,14 @@
         "chinese_name": "未濟",
         "trigram_above": "fire",
         "trigram_below": "water"
-      }
+      },
+      "subcategory": "water",
+      "grammar_type": "iching"
     }
-  ]
+  ],
+  "license": "CC-BY-4.0",
+  "rights_note": "The historical sources are in the public domain; CC BY covers the commentary and arrangement.",
+  "default_view": "cards",
+  "_recursive_eco_url": "https://recursive.eco/g/b5161d12-4e93-47ba-850b-b0f50d1133c6?view=reading",
+  "_recursive_eco_edit_url": "https://recursive.eco/create/dashboard/unified/new?id=b5161d12-4e93-47ba-850b-b0f50d1133c6"
 }
