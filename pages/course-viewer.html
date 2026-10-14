@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Three Lenses — The Recursive I Ching</title>
-<link rel="stylesheet" href="../theme.css?v=4">
+<link rel="stylesheet" href="../theme.css?v=5">
 <style>
   /* Layout only — every colour comes from theme.css (the one source). Do not add colour tokens here. */
   html,body{margin:0;background:var(--bg);color:var(--ink);color-scheme:light;
@@ -69,6 +69,9 @@
   .content th,.content td{border-bottom:1px solid var(--line);padding:6px 10px;text-align:left;vertical-align:top}
   .content th{color:var(--ink-soft);font-weight:600;font-size:12.5px}
   .content td{font-variant-numeric:tabular-nums}
+  /* a cell that states 吉 and 凶 rates (the Changing-Lines Lens) is shaded warm to cool; its numbers stay in the text */
+  .content td.vh{--a:0;white-space:nowrap;background:rgb(var(--tone) / var(--a))}
+  .content td.vh.cool{--tone:var(--verdict-cool-rgb)} .content td.vh.warm{--tone:var(--verdict-warm-rgb)}
 
   /* —— reading mode: Continuous (default) · One at a time —— */
   .mode-toggle{display:flex;align-items:center;gap:6px;margin:0 0 12px;font-size:12.5px;color:var(--faint)}
@@ -101,7 +104,7 @@
 </style>
 </head>
 <body>
-<script src="../site-header.js?v=51"></script>
+<script src="../site-header.js?v=52"></script>
 <site-header active="course"></site-header>
 <div class="wrap">
   <aside>
@@ -294,10 +297,18 @@ async function main(){
   // A paragraph whose every line starts with '|' is a Markdown table: a header row, the |---| rule, body rows.
   const isTable = p => { const ls = p.trim().split('\n'); return ls.length > 1 && ls.every(l => l.trim().startsWith('|')); };
   const cells = l => l.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => cite(links(mdLite(c.trim()))));
+  // A cell like "吉 38% (12/32) · 凶 3% (1/32)" is shaded by its 吉 count minus its 凶 count (full colour at 50 points apart).
+  const VERDICT = /^吉 \d+% \((\d+)\/(\d+)\) · 凶 \d+% \((\d+)\/\d+\)$/;
+  const tdOf = c => {
+    const m = VERDICT.exec(c);
+    if (!m) return `<td>${c}</td>`;
+    const t = Math.max(-1, Math.min(1, (+m[1] - +m[3]) / +m[2] / 0.5));
+    return `<td class="vh ${t >= 0 ? 'cool' : 'warm'}" style="--a:${(Math.abs(t) * 0.62).toFixed(3)}">${c}</td>`;
+  };
   const table = p => {
     const [head, ...body] = p.trim().split('\n').filter(l => !/^\|[\s:|-]+\|$/.test(l.trim())).map(cells);
     return '<div class="tbl"><table><thead><tr>' + head.map(c => `<th>${c}</th>`).join('') + '</tr></thead><tbody>'
-      + body.map(r => '<tr>' + r.map(c => `<td>${c}</td>`).join('') + '</tr>').join('') + '</tbody></table></div>';
+      + body.map(r => '<tr>' + r.map(tdOf).join('') + '</tr>').join('') + '</tbody></table></div>';
   };
   const para = t => String(t).split(/\n{2,}/).map(p => isTable(p) ? table(p)
     : `<p>${cite(links(mdLite(p))).replace(/\n/g, '<br>')}</p>`).join('');

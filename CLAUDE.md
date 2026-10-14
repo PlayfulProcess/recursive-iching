@@ -17,7 +17,10 @@ static site at iching.recursive.eco. Call the owner PlayfulProcess; never write 
   (`scripts/build_hd_lines.py`, which reads the wheel and `zhouyi-core`),
   `grammars/the-recursive-iching-book/grammar.json` (`scripts/build_book_grammar.py`, from
   `frame.json` and `stories/`), and the twelve `tbl-` nodes of `grammars/changing-lines-lens/`
-  (`scripts/changing_lines.py --build`; that course's `ch-` chapters are hand-written).
+  (`scripts/changing_lines.py --build`; that course's `ch-` chapters are hand-written), and
+  `data/verdict-words.json` (`scripts/verdict_words.py --build`: the verdict-word rates behind
+  `pages/verdict-heatmaps.html`; the page's three header sentences and the position × polarity table in the course's
+  "The figures" are computed there and `--check` fails if either stops stating them verbatim).
 - **Before every push**, from the repo root, in this order:
   1. `python scripts/build_book_grammar.py`
   2. `python scripts/build_meta_iching.py` (it copies the book, so it runs after it)
@@ -26,7 +29,7 @@ static site at iching.recursive.eco. Call the owner PlayfulProcess; never write 
   5. `python scripts/build_collection.py`
   6. `python check.py` (must print OK)
      and `python scripts/casting_odds.py --quiet` (must print OK: the odds behind the Casting and Chance course, and the course quoting them)
-     and `python scripts/changing_lines.py --check --quiet` (must print OK: the twelve changing-line tables are current, and the Changing-Lines Lens course quotes the figures)
+     and `python scripts/changing_lines.py --check --quiet` (must print OK: the twelve changing-line tables are current, the Changing-Lines Lens course quotes the figures, and `data/verdict-words.json` and its heatmap page are current)
   7. `node scripts/determinism-check.js`
   8. `python scripts/check_book_mode.py` when the caster or the book changed (needs Playwright)
 - **Every hexagram item carries its King Wen number twice:** `"number": N` at the top level and

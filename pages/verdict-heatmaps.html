@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auspicious and ominous: the verdict words of the 384 lines — The Recursive I Ching</title>
+<meta name="description" content="How often the classical Chinese of the 384 line texts holds 吉 (auspicious) or 凶 (ominous), cut by place, yin and yang, trigram and hexagram, as heatmaps with the percentage and the count in every cell.">
+<link rel="stylesheet" href="../theme.css?v=5">
+<style>
+  /* Layout only: every colour comes from theme.css (the warm-to-cool tones are --verdict-*-rgb there). */
+  html,body{margin:0;background:var(--bg);color:var(--ink);color-scheme:light;
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+  .wrap{max-width:1000px;margin:0 auto;padding:24px 16px 70px}
+  .kicker{font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
+  h1{font-family:var(--serif-display);font-weight:600;letter-spacing:.02em;font-size:30px;line-height:1.2;margin:8px 0 10px}
+  h2{font-family:var(--serif-display);font-weight:600;font-size:21px;margin:42px 0 4px;scroll-margin-top:72px}
+  .lede,.prose{max-width:72ch;font-family:var(--serif-body);font-size:16px;line-height:1.7;margin:0 0 14px}
+  .sub{max-width:72ch;font-size:13.5px;color:var(--muted);margin:0 0 12px}
+  code{font-size:.9em}
+  a{color:var(--accent)}
+
+  /* what stands out */
+  .finds{max-width:76ch;margin:18px 0 0;padding:14px 18px;background:var(--surface);border:1px solid var(--line);
+    border-left:3px solid var(--accent);border-radius:4px}
+  .finds h2{font-family:var(--sans);font-size:11.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 6px}
+  .finds p{margin:0 0 8px;font-family:var(--serif-body);font-size:15.5px;line-height:1.65}
+  .finds p.cav{font-size:13.5px;color:var(--ink-soft);margin:10px 0 0}
+
+  /* controls */
+  .bar{position:sticky;top:0;z-index:5;margin:22px -16px 0;padding:10px 16px;background:var(--bg);border-bottom:1px solid var(--line);
+    display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;font-size:13px;color:var(--ink-soft)}
+  .bar label{display:inline-flex;align-items:center;gap:6px}
+  select{font:inherit;font-size:13px;background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:3px;padding:4px 6px;max-width:100%}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:3px;overflow:hidden}
+  .seg button{font:inherit;font-size:12.5px;background:var(--surface);color:var(--ink-soft);border:0;border-right:1px solid var(--line);padding:5px 10px;cursor:pointer}
+  .seg button:last-child{border-right:0}
+  .seg button[aria-pressed="true"]{background:var(--chip);color:var(--ink);font-weight:600;cursor:default}
+  .legend{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-soft);flex-wrap:wrap}
+  .ramp{display:inline-block;width:150px;height:12px;border:1px solid var(--line-soft);border-radius:2px}
+  .ramp.net{background:linear-gradient(90deg,rgb(var(--verdict-warm-rgb) / .62),var(--surface) 50%,rgb(var(--verdict-cool-rgb) / .62))}
+  .ramp.cool{background:linear-gradient(90deg,var(--surface),rgb(var(--verdict-cool-rgb) / .62))}
+  .ramp.warm{background:linear-gradient(90deg,var(--surface),rgb(var(--verdict-warm-rgb) / .62))}
+  .ramp.ink{background:linear-gradient(90deg,var(--surface),rgb(var(--verdict-ink-rgb) / .62))}
+  @media (max-width:600px){ .bar{position:static} }
+
+  /* the grids scroll inside their boxes, never the page */
+  .box{overflow-x:auto;max-width:100%;border:1px solid var(--line);border-radius:4px;background:var(--surface);-webkit-overflow-scrolling:touch}
+  table.heat{border-collapse:separate;border-spacing:3px;width:100%}
+  table.heat th{font-weight:600;font-size:12px;color:var(--ink-soft);text-align:center;padding:4px 6px;white-space:nowrap}
+  table.heat th.rh{text-align:left;position:sticky;left:0;background:var(--surface);z-index:1}
+  table.heat caption{text-align:left;font-size:12px;color:var(--muted);padding:8px 8px 2px;caption-side:top}
+  td.c{--a:0;padding:6px 8px;text-align:center;font-size:12.5px;line-height:1.35;font-variant-numeric:tabular-nums;border-radius:3px;
+    min-width:112px;vertical-align:middle;background:rgb(var(--tone, 255 255 255) / var(--a))}
+  td.c.cool{--tone:var(--verdict-cool-rgb)} td.c.warm{--tone:var(--verdict-warm-rgb)} td.c.ink{--tone:var(--verdict-ink-rgb)}
+  td.c.zero{background:var(--panel2)}
+  td.c .w{display:block;white-space:nowrap}
+  td.c .w b{font-weight:600}
+  td.c .ok{font-size:10.5px;color:var(--muted);display:block}
+  td.c .tx{font-size:11px;color:var(--ink-soft)}
+  td.hx{padding:0;min-width:84px}
+  td.hx button{all:unset;box-sizing:border-box;display:block;width:100%;padding:5px 5px;cursor:pointer;text-align:center;border-radius:3px;line-height:1.3}
+  td.hx button:focus-visible{outline:2px solid var(--seal);outline-offset:1px}
+  td.hx.sel{outline:2px solid var(--seal)}
+  td.hx .hn{display:block;font-weight:700;font-size:13px}
+  td.hx .hs{font-family:"Segoe UI Symbol","Noto Sans Symbols 2","Noto Sans Symbols","DejaVu Sans",serif;font-size:17px;vertical-align:-2px;margin-left:3px;font-weight:400}
+  td.hx .w{font-size:11px;white-space:nowrap;display:block}
+  .tri{font-family:"Segoe UI Symbol","Noto Sans Symbols 2","Noto Sans Symbols","DejaVu Sans",serif;font-size:15px;margin-right:3px}
+  td.n{font-size:12px;color:var(--ink-soft);text-align:right;white-space:nowrap;padding:4px 6px;font-variant-numeric:tabular-nums}
+  .tools{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;margin:8px 0;font-size:13px;color:var(--ink-soft)}
+
+  /* hexagram detail */
+  #detail{margin-top:14px;padding:16px 18px;background:var(--surface);border:1px solid var(--line);border-radius:4px;scroll-margin-top:60px}
+  #detail h3{font-family:var(--serif-display);font-size:19px;margin:0 0 2px}
+  #detail .sub2{font-size:13px;color:var(--muted);margin:0 0 8px}
+  #detail ol{list-style:none;margin:10px 0 0;padding:0}
+  #detail li{padding:10px 0;border-top:1px solid var(--line)}
+  #detail li .lh{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  #detail li .zh{font-size:19px;margin:2px 0 2px;line-height:1.5}
+  #detail li .en{font-family:var(--serif-body);font-size:14.5px;line-height:1.6;color:var(--ink-soft)}
+  mark.v{background:none;color:inherit;font-weight:700;text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:3px}
+  mark.v.good{text-decoration-color:rgb(var(--verdict-cool-rgb))}
+  mark.v.bad{text-decoration-color:rgb(var(--verdict-warm-rgb))}
+  mark.v.neu{text-decoration-color:rgb(var(--verdict-ink-rgb));text-decoration-style:dotted}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+  .chip{font-size:12.5px;padding:2px 10px;border-radius:999px;background:var(--chip);border:1px solid var(--line-soft);font-variant-numeric:tabular-nums}
+
+  .notes{max-width:76ch;margin:38px 0 0;font-family:var(--serif-body);font-size:15.5px;line-height:1.7}
+  .notes h2{margin:22px 0 6px;font-size:18px}
+  .notes ul{padding-left:1.2em;margin:6px 0}
+  .fine{font-size:13px;color:var(--muted);margin-top:22px;border-top:1px solid var(--line);padding-top:12px}
+  #err{color:var(--bad)}
+</style>
+</head>
+<body>
+<script src="../site-header.js?v=52"></script>
+<site-header active="verdicts"></site-header>
+<div class="wrap">
+  <div class="kicker">The Recursive I Ching · an instrument</div>
+  <h1>Auspicious and ominous: the verdict words</h1>
+  <p class="lede">The 384 line texts of the Zhouyi, read in the classical Chinese, hold a handful of verdict words: 吉 (auspicious), 凶 (ominous), 悔 (regret), 吝 (humiliation), 咎 (blame, mostly 無咎, no blame) and 厲 (danger). Each cell below is the share of the texts in that cell that hold the word, with the count beside it. Colour runs from warm (more 凶 than 吉) through paper (even) to cool (more 吉 than 凶), and every cell prints its numbers, so nothing depends on colour. Tap a hexagram to read its six lines.</p>
+
+  <section class="finds" aria-labelledby="finds-h">
+    <h2 id="finds-h">What stands out, computed</h2>
+    <p>The clearest pattern is the place: the central lines (2 and 5) carry 吉 in 44% of their 128 texts against 24% of the other 256, and 凶 in 7% against 17% (p = 0.00016 and p = 0.0073, exact Fisher).</p>
+    <p>Solid or broken matters much less. In the fifth place the broken (yin) line carries 吉 in 17 of 32 texts (53%) and the solid (yang) line in 12 of 32 (38%), yet with 32 texts a side that gap does not separate them (p = 0.32).</p>
+    <p>Lines in a correct place (yang in 1, 3, 5; yin in 2, 4, 6) carry 吉 in 30% of 192 texts, no more than lines in an incorrect place (32%).</p>
+    <p class="cav">These are counts of words, a pattern to test and not a rule. 貞吉 ("firmness brings good fortune") is a condition, 悔亡 ("regret vanishes") holds 悔, and one text can hold both 吉 and 凶. The p-values are not adjusted for the many cuts on this page, and the 384 texts are not independent draws.</p>
+  </section>
+
+  <div class="bar" role="group" aria-label="Colouring">
+    <label>Colour by
+      <select id="metric" aria-label="What the colour shows"></select>
+    </label>
+    <span class="legend" id="legend" aria-hidden="true"></span>
+  </div>
+
+  <p id="loading" class="kicker" style="margin-top:20px">Loading…</p>
+  <p id="err" hidden></p>
+
+  <main id="main" hidden>
+    <h2 id="position">Place, yin and yang</h2>
+    <p class="sub">The six places (top line first, as a hexagram is drawn) against the solid (yang, a 9 when it moves) and broken (yin, a 6) lines. ✓ marks a line in its correct place; the central places are 2 and 5.</p>
+    <div class="box"><table class="heat" id="t-position"></table></div>
+
+    <h2 id="groups">Correct places and central lines</h2>
+    <p class="sub">A line is in a correct place when it is yang in an odd place or yin in an even one. The table crosses that with the central places (2 and 5).</p>
+    <div class="box"><table class="heat" id="t-groups"></table></div>
+
+    <h2 id="trigrams">The eight trigrams</h2>
+    <p class="sub">Each trigram as the lower trigram (lines 1 to 3) and as the upper (lines 4 to 6), in Fu Xi order.</p>
+    <div class="tools"><span id="tri-basis-label">Count</span>
+      <span class="seg" role="group" aria-labelledby="tri-basis-label">
+        <button type="button" data-basis="own" aria-pressed="true">The 3 lines inside the trigram (24 texts)</button>
+        <button type="button" data-basis="hex" aria-pressed="false">All 6 lines of its 8 hexagrams (48 texts)</button>
+      </span></div>
+    <div class="box"><table class="heat" id="t-trigram"></table></div>
+
+    <h2 id="hexagrams">The 64 hexagrams</h2>
+    <p class="sub">Each hexagram's six line texts. Tap one to read them.</p>
+    <div class="tools"><span id="hex-order-label">Order</span>
+      <span class="seg" role="group" aria-labelledby="hex-order-label">
+        <button type="button" data-order="kw" aria-pressed="true">King Wen (1 to 64)</button>
+        <button type="button" data-order="fx" aria-pressed="false">Trigram grid (Fu Xi): lower trigram down, upper across</button>
+      </span></div>
+    <div class="box"><table class="heat" id="t-hex"></table></div>
+    <div id="detail" aria-live="polite" hidden></div>
+
+    <h2 id="words">Every word, every cut</h2>
+    <p class="sub">The same counts for all seven words. Each column is shaded on its own scale (cool for 吉, warm for 凶, ink for the rest).</p>
+    <div class="box"><table class="heat" id="t-words"></table></div>
+  </main>
+
+  <div class="notes">
+    <h2>How it is counted</h2>
+    <ul>
+      <li><b>The texts.</b> The 384 line texts (64 hexagrams, 6 lines) in the classical Chinese of <code>grammars/i-ching-chinese-original</code> (Project Gutenberg #25501, public domain). The Judgments and the Wings are not counted.</li>
+      <li><b>The words.</b> A text is counted once for each word it holds. 無咎 is also counted on its own, as a part of 咎 (85 of its 90 texts). The text uses 無 and 厲, never 无 or 厉.</li>
+      <li><b>Yang and yin.</b> A line is solid (yang, a 9 when it moves) or broken (yin, a 6) in the hexagram as it stands, from <code>scripts/hexagram-binary.json</code>.</li>
+      <li><b>The colour.</b> In the default view a cell is shaded by its share of 吉 minus its share of 凶, fully at 50 points apart. Choose a single word to shade by its own share instead. The pale cells are the near-even ones.</li>
+      <li><b>The p-values.</b> Exact two-sided Fisher tests on the pairs named above, as a guide to how much a gap could be chance. They are not corrected for the many cuts here and the texts are not independent, so none of them settles anything.</li>
+    </ul>
+    <h2>What this does and does not show</h2>
+    <p>It shows where the words fall in the book as written. It does not say what a line means, how a reader should weigh a verdict word against the rest of its text, or what a cast will bring. The same counts for the fifth place are the table in <a href="course-viewer.html?course=changing-lines-lens">The Changing-Lines Lens</a>.</p>
+    <p class="fine">Data: <code>data/verdict-words.json</code>, built by <code>scripts/verdict_words.py</code>, which <code>scripts/changing_lines.py --check</code> runs. Line texts on tap: Legge's English (<code>grammars/zhouyi-core</code>, public domain) beside the Chinese.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  // Whole percent, halves up: the same rule as scripts/verdict_words.py, so the two always print one number.
+  const pct = (a, n) => Math.floor((200 * a + n) / (2 * n));
+  const NET = 'net';
+  const TRI_GLYPH = { Qian:'☰', Dui:'☱', Li:'☲', Zhen:'☳', Xun:'☴', Kan:'☵', Gen:'☶', Kun:'☷' };
+  const TRI_ORDER = ['Qian','Dui','Li','Zhen','Xun','Kan','Gen','Kun'];
+  const ORD = { 1:'first', 2:'second', 3:'third', 4:'fourth', 5:'fifth', 6:'top' };
+  let D, KEYS, MAX = {}, metric = NET, triBasis = 'own', hexOrder = 'kw', selHex = null;
+  let texts = null;   // lazily: { zh: {n: node}, en: {n: node} }
+
+  const WORDCLASS = w => w === '吉' ? 'cool' : w === '凶' ? 'warm' : 'ink';
+  const label = w => { const x = D.words.find(k => k.key === w); return w + ' ' + (x ? x.en : ''); };
+
+  // —— one cell: class, alpha and text for the current metric ——
+  function heat(c, m) {
+    m = m || metric;
+    if (m === NET) {
+      const t = Math.max(-1, Math.min(1, (c['吉'] - c['凶']) / c.n / 0.5));
+      return { cls: t >= 0 ? 'cool' : 'warm', a: Math.abs(t) * 0.62 };
+    }
+    const t = Math.min(1, c[m] / c.n / (MAX[m] || 1));
+    return { cls: WORDCLASS(m), a: t * 0.62 };
+  }
+  const rate = (c, w) => `${pct(c[w], c.n)}% · ${c[w]}/${c.n}`;
+  function lines(c, compact) {
+    if (metric === NET) return `<span class="w"><b>吉</b> ${rate(c, '吉')}</span><span class="w"><b>凶</b> ${rate(c, '凶')}</span>`;
+    return `<span class="w"><b>${metric}</b> ${rate(c, metric)}</span>`;
+  }
+  function ariaOf(c) {
+    return metric === NET ? `吉 ${rate(c, '吉')}, 凶 ${rate(c, '凶')}` : `${metric} ${rate(c, metric)}`;
+  }
+  function td(c, extra) {
+    const h = heat(c);
+    const zero = (metric === NET ? (c['吉'] + c['凶']) : c[metric]) === 0;
+    return `<td class="c ${h.cls}${zero ? ' zero' : ''}" style="--a:${h.a.toFixed(3)}" title="${esc(ariaOf(c))}">${lines(c)}${extra || ''}</td>`;
+  }
+  const head = cols => `<thead><tr><th scope="col" class="rh"></th>${cols.map(c => `<th scope="col">${c}</th>`).join('')}</tr></thead>`;
+
+  // —— 1. place x polarity ——
+  function drawPosition() {
+    const rows = [];
+    for (let p = 6; p >= 1; p--) {
+      const cen = (p === 2 || p === 5) ? ' <span class="tx">(centre)</span>' : '';
+      const cell = (k, yang) => {
+        const ok = yang === (p % 2 === 1);
+        return td(D.position_polarity[`${p}-${k}`], ok ? '<span class="ok">✓ correct place</span>' : '');
+      };
+      rows.push(`<tr><th scope="row" class="rh">Line ${p}${p === 6 ? ' (top)' : ''}${cen}</th>${cell('yang', true)}${cell('yin', false)}${td(D.position[p])}</tr>`);
+    }
+    rows.push(`<tr><th scope="row" class="rh">All six places</th>${td(D.polarity.yang)}${td(D.polarity.yin)}${td(totalCell())}</tr>`);
+    $('#t-position').innerHTML = head(['Yang (solid, a 9)', 'Yin (broken, a 6)', 'Both']) + `<tbody>${rows.join('')}</tbody>`;
+  }
+  function totalCell() {
+    const t = { n: 0 }; D.words.forEach(w => t[w.key] = 0);
+    for (let p = 1; p <= 6; p++) { const c = D.position[p]; t.n += c.n; D.words.forEach(w => t[w.key] += c[w.key]); }
+    return t;
+  }
+
+  // —— 2. correct x central ——
+  function drawGroups() {
+    const g = D.correct_central, sum = (a, b) => { const t = { n: a.n + b.n }; D.words.forEach(w => t[w.key] = a[w.key] + b[w.key]); return t; };
+    const rows = [
+      ['Correct place', g.correct_central, g.correct_not_central, D.correct.correct],
+      ['Incorrect place', g.incorrect_central, g.incorrect_not_central, D.correct.incorrect],
+      ['Both', sum(g.correct_central, g.incorrect_central), sum(g.correct_not_central, g.incorrect_not_central), totalCell()],
+    ];
+    $('#t-groups').innerHTML = head(['Central (2, 5)', 'Not central (1, 3, 4, 6)', 'Either'])
+      + `<tbody>${rows.map(r => `<tr><th scope="row" class="rh">${r[0]}</th>${td(r[1])}${td(r[2])}${td(r[3])}</tr>`).join('')}</tbody>`;
+  }
+
+  // —— 3. trigrams ——
+  function drawTrigrams() {
+    const lo = triBasis === 'own' ? 'lower_own' : 'lower_hex', up = triBasis === 'own' ? 'upper_own' : 'upper_hex';
+    const rows = TRI_ORDER.map(nm => {
+      const t = D.trigram[nm];
+      return `<tr><th scope="row" class="rh"><span class="tri" aria-hidden="true">${TRI_GLYPH[nm]}</span>${nm} ${t.chinese} <span class="tx">${t.image}</span></th>${td(t[lo])}${td(t[up])}</tr>`;
+    });
+    $('#t-trigram').innerHTML = head(['As the lower trigram', 'As the upper trigram']) + `<tbody>${rows.join('')}</tbody>`;
+  }
+
+  // —— 4. hexagrams ——
+  function hexCell(n) {
+    const h = D.hexagram[n], hh = heat(h);
+    const zero = (metric === NET ? (h['吉'] + h['凶']) : h[metric]) === 0;
+    const aria = `Hexagram ${n}, ${h.name}: ${ariaOf(h)}`;
+    return `<td class="c hx ${hh.cls}${zero ? ' zero' : ''}${selHex === n ? ' sel' : ''}" style="--a:${hh.a.toFixed(3)}">`
+      + `<button type="button" data-n="${n}" aria-label="${esc(aria)}" title="${esc(n + ' ' + h.name + ' ' + h.chinese + ': ' + ariaOf(h))}">`
+      + `<span class="hn">${n}<span class="hs" aria-hidden="true">${esc(h.symbol)}</span></span>${lines(h)}</button></td>`;
+  }
+  function drawHex() {
+    let html;
+    if (hexOrder === 'kw') {
+      html = `<thead><tr><th scope="col" class="rh">Hexagrams</th>${[1,2,3,4,5,6,7,8].map(i => `<th scope="col">${i}th of 8</th>`).join('')}</tr></thead>`;
+      let body = '';
+      for (let r = 0; r < 8; r++) {
+        body += `<tr><th scope="row" class="rh">${r * 8 + 1}–${r * 8 + 8}</th>`;
+        for (let c = 1; c <= 8; c++) body += hexCell(r * 8 + c);
+        body += '</tr>';
+      }
+      html += `<tbody>${body}</tbody>`;
+    } else {
+      const byPair = {};
+      Object.keys(D.hexagram).forEach(n => { const h = D.hexagram[n]; byPair[h.lower + '/' + h.upper] = +n; });
+      let body = '';
+      TRI_ORDER.forEach(lw => {
+        const t = D.trigram[lw];
+        body += `<tr><th scope="row" class="rh"><span class="tri" aria-hidden="true">${TRI_GLYPH[lw]}</span>${lw} below</th>`;
+        TRI_ORDER.forEach(upn => { body += hexCell(byPair[lw + '/' + upn]); });
+        body += '</tr>';
+      });
+      html = `<thead><tr><th scope="col" class="rh"></th>${TRI_ORDER.map(u => `<th scope="col"><span class="tri" aria-hidden="true">${TRI_GLYPH[u]}</span>${u} above</th>`).join('')}</tr></thead><tbody>${body}</tbody>`;
+    }
+    $('#t-hex').innerHTML = html;
+  }
+
+  // —— 5. all words ——
+  function drawWords() {
+    const ws = D.words.map(w => w.key);
+    const rowsDef = [];
+    for (let p = 6; p >= 1; p--) {
+      rowsDef.push([`Line ${p}${p === 6 ? ' (top)' : ''}`, D.position[p]],
+        [`Line ${p}, yang`, D.position_polarity[`${p}-yang`]], [`Line ${p}, yin`, D.position_polarity[`${p}-yin`]]);
+    }
+    rowsDef.push(['Yang lines', D.polarity.yang], ['Yin lines', D.polarity.yin],
+      ['Correct places', D.correct.correct], ['Incorrect places', D.correct.incorrect],
+      ['Central (2, 5)', D.central.central], ['Not central', D.central.not_central], ['All 384 texts', totalCell()]);
+    const cell = (c, w) => {
+      const t = Math.min(1, c[w] / c.n / (MAX[w] || 1));
+      return `<td class="c ${WORDCLASS(w)}${c[w] === 0 ? ' zero' : ''}" style="--a:${(t * 0.62).toFixed(3)}" title="${esc(w + ' ' + rate(c, w))}"><span class="w">${rate(c, w)}</span></td>`;
+    };
+    $('#t-words').innerHTML = `<thead><tr><th scope="col" class="rh"></th><th scope="col">Texts</th>${ws.map(w => `<th scope="col">${esc(label(w))}</th>`).join('')}</tr></thead>`
+      + `<tbody>${rowsDef.map(([nm, c]) => `<tr><th scope="row" class="rh">${nm}</th><td class="n">${c.n}</td>${ws.map(w => cell(c, w)).join('')}</tr>`).join('')}</tbody>`;
+  }
+
+  // —— legend ——
+  function drawLegend() {
+    const lg = $('#legend');
+    if (metric === NET) lg.innerHTML = '<span>more 凶 than 吉</span><span class="ramp net"></span><span>more 吉 than 凶</span><span>(full colour at 50 points apart)</span>';
+    else lg.innerHTML = `<span>0%</span><span class="ramp ${WORDCLASS(metric)}"></span><span>${Math.round(MAX[metric] * 100)}% of the texts (the most in any place and polarity)</span>`;
+  }
+
+  // —— hexagram detail ——
+  async function loadTexts() {
+    if (texts) return texts;
+    const get = u => fetch(u).then(r => { if (!r.ok) throw new Error(u + ' ' + r.status); return r.json(); });
+    const [zh, en] = await Promise.all([get('../grammars/i-ching-chinese-original/grammar.json'), get('../grammars/zhouyi-core/grammar.json')]);
+    const by = g => Object.fromEntries(g.nodes.filter(x => x.number).map(x => [x.number, x]));
+    texts = { zh: by(zh), en: by(en) };
+    return texts;
+  }
+  const WORD_RE = /無咎|吉|凶|悔|吝|咎|厲/g;
+  const mark = t => esc(t).replace(WORD_RE, w => `<mark class="v ${w === '吉' ? 'good' : w === '凶' ? 'bad' : 'neu'}">${w}</mark>`);
+  async function showHex(n, scroll) {
+    selHex = n;
+    drawHex();
+    const box = $('#detail'), h = D.hexagram[n];
+    box.hidden = false;
+    box.innerHTML = `<h3>${n} · ${esc(h.name)} <span aria-hidden="true">${esc(h.symbol)}</span></h3>`
+      + `<p class="sub2">${esc(h.chinese)} ${esc(h.pinyin)} · ${esc(h.lower)} below, ${esc(h.upper)} above</p>`
+      + `<div class="chips">${D.words.map(w => `<span class="chip">${esc(w.key)} ${h[w.key]} of 6</span>`).join('')}</div><p class="sub2">Loading the line texts…</p>`;
+    if (scroll) box.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    try { history.replaceState(null, '', '#hexagram-' + n); } catch (e) {}
+    let T;
+    try { T = await loadTexts(); } catch (e) { box.insertAdjacentHTML('beforeend', '<p class="sub2">The line texts could not be loaded.</p>'); return; }
+    if (selHex !== n) return;
+    let li = '';
+    for (let p = 6; p >= 1; p--) {
+      const yang = h.binary[p - 1] === '1';
+      const zh = (T.zh[n].sections || {})['Line ' + p] || '', en = (T.en[n].sections || {})['Line ' + p] || '';
+      li += `<li><div class="lh">Line ${p} (${ORD[p]}) · ${yang ? 'yang, solid' : 'yin, broken'}${(p === 2 || p === 5) ? ' · central' : ''}${yang === (p % 2 === 1) ? ' · correct place' : ''}</div>`
+        + `<div class="zh" lang="zh">${mark(zh)}</div><div class="en">${esc(en)}</div></li>`;
+    }
+    box.querySelector('.sub2:last-of-type') && box.querySelector('p.sub2:last-of-type').remove();
+    box.insertAdjacentHTML('beforeend', `<p class="sub2">The words counted are underlined (solid for 吉 and 凶 in cool and warm, dotted for the others). Legge's English (1882) beneath the Chinese.</p><ol>${li}</ol>`);
+  }
+
+  function drawAll() { drawPosition(); drawGroups(); drawTrigrams(); drawHex(); drawWords(); drawLegend(); }
+
+  async function main() {
+    try {
+      D = await fetch('../data/verdict-words.json').then(r => { if (!r.ok) throw new Error('data ' + r.status); return r.json(); });
+    } catch (e) {
+      $('#loading').hidden = true;
+      const er = $('#err'); er.hidden = false;
+      er.textContent = 'Could not load data/verdict-words.json (' + (e && e.message || e) + '). If you opened this file directly, run python -m http.server in the repo root.';
+      return;
+    }
+    KEYS = D.words.map(w => w.key);
+    // the darkest shade of a single word: the largest share in any of the 12 place x polarity cells, rounded up to 5%
+    KEYS.forEach(w => { let m = 0; Object.values(D.position_polarity).forEach(c => { m = Math.max(m, c[w] / c.n); }); MAX[w] = Math.ceil(m * 20) / 20; });
+    const sel = $('#metric');
+    sel.innerHTML = `<option value="${NET}">Auspicious minus ominous (吉 − 凶)</option>` + D.words.map(w => `<option value="${esc(w.key)}">${esc(w.key)} ${esc(w.en)} (share of texts)</option>`).join('');
+    sel.addEventListener('change', () => { metric = sel.value; drawAll(); });
+    document.querySelectorAll('[data-basis]').forEach(b => b.addEventListener('click', () => {
+      triBasis = b.dataset.basis; document.querySelectorAll('[data-basis]').forEach(x => x.setAttribute('aria-pressed', x === b)); drawTrigrams();
+    }));
+    document.querySelectorAll('[data-order]').forEach(b => b.addEventListener('click', () => {
+      hexOrder = b.dataset.order; document.querySelectorAll('[data-order]').forEach(x => x.setAttribute('aria-pressed', x === b)); drawHex();
+    }));
+    $('#t-hex').addEventListener('click', e => {
+      const b = e.target.closest('button[data-n]');
+      if (b) showHex(+b.dataset.n, true);
+    });
+    drawAll();
+    $('#loading').hidden = true;
+    $('#main').hidden = false;
+    const m = /^#hexagram-(\d+)$/.exec(location.hash);
+    if (m && D.hexagram[+m[1]]) showHex(+m[1], false);
+  }
+  main();
+})();
+</script>
+
+<script src="../site-footer.js?v=3"></script>
+<script src="../assistant.js?v=2" defer></script>
+<site-footer base="../"></site-footer>
+</body>
+</html>

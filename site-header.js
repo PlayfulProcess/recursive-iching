@@ -62,6 +62,7 @@
   const INSTRUMENT_VIEWS = [
     ['caster', 'Path Caster', PFX + 'viewers/caster.html'],
     ['wheel',  'The Wheel (gates on the zodiac)', PFX + 'pages/wheel.html'],
+    ['verdicts', 'Verdict heatmaps (吉 and 凶 by line)', PFX + 'pages/verdict-heatmaps.html'],
   ];
   // Courses — read via pages/course-viewer.html?course=…
   const COURSES = [
@@ -88,6 +89,7 @@
     if (f.startsWith('genealogy')) return 'genealogy';
     if (f.startsWith('caster')) return 'caster';
     if (f.startsWith('wheel')) return 'wheel';
+    if (f.startsWith('verdict')) return 'verdicts';
     if (f.startsWith('course-viewer') || f.startsWith('course')) return 'course';
     if (f === 'index.html' || f === '') return 'home';
     return 'home';

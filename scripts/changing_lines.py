@@ -11,6 +11,10 @@ the twelve appendix nodes (ids starting 'tbl-') belong to this script and are re
     python scripts/changing_lines.py --counts              # the verdict words by position and polarity
     python scripts/changing_lines.py --build               # rewrite the twelve tbl- nodes of the course grammar
     python scripts/changing_lines.py --check [--quiet]     # identities + the grammar is up to date + it quotes the figures
+                                                           # + the verdict-word data and its heatmap page are current
+
+The verdict-word rates by place, polarity, trigram and hexagram live in scripts/verdict_words.py, which writes
+data/verdict-words.json for pages/verdict-heatmaps.html; --check here runs its check too.
 
 Sources, all already in this repo and public domain:
   scripts/hexagram-binary.json                 the verified binary of each hexagram (line 1 = first character)
@@ -33,6 +37,9 @@ ZHOUYI = os.path.join(ROOT, "grammars", "zhouyi-core", "grammar.json")
 APPX = os.path.join(ROOT, "scripts", "legge-appendices.json")
 CHINESE = os.path.join(ROOT, "grammars", "i-ching-chinese-original", "grammar.json")
 COURSE = os.path.join(ROOT, "grammars", "changing-lines-lens", "grammar.json")
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))   # python -I does not add the script's folder
+import verdict_words as vw  # noqa: E402
 
 ERRORS = []
 
@@ -168,6 +175,14 @@ def counts():
 
 COUNTS, SIZE = counts()
 check(sum(SIZE.values()) == 384 and all(v == 32 for v in SIZE.values()), "the 384 lines are not 12 cells of 32")
+# the sibling script counts the same words the same way: its position x polarity cells must equal these
+for (p_, y_), c_ in COUNTS.items():
+    cell_ = vw.DATA["position_polarity"][f"{p_}-{'yang' if y_ else 'yin'}"]
+    check(all(cell_[w] == c_.get(w, 0) for w, _ in WORDS) and cell_["n"] == SIZE[(p_, y_)],
+          f"verdict_words.py and changing_lines.py count line {p_} {'yang' if y_ else 'yin'} differently")
+check([(b, n, z) for b, n, z, _ in vw.TRIGRAMS] == [(b, TRIGRAMS[b][0], TRIGRAMS[b][1]) for b in
+                                                     ("111", "110", "101", "100", "011", "010", "001", "000")],
+      "verdict_words.py names the trigrams differently")
 
 
 def ji(p, yang):
@@ -282,6 +297,7 @@ def course_quotes():
     for key in ((True, True), (False, True), (True, False), (False, False)):
         rows.append(", ".join(f"{n}→{rel}" for n, rel, a, b in PAIRS_5 if (a, b) == key))
     rows.append(", ".join(str(n) for n, _, a, _ in PAIRS_5 if a))
+    rows += vw.inline_table_md().split(chr(10))[2:]       # the position x polarity table of "The figures"
     return rows + [
         f"{tot_ji[5]} of the 64 fifth lines", f"{tot_ji[3]} of the 64 third lines",
         f"{tot_xi[5]} of the 64 fifth lines", f"{tot_xi[3]} of the 64 third lines",
@@ -337,6 +353,8 @@ def build():
 
 
 def check_course():
+    vw.check_file()
+    ERRORS.extend(vw.ERRORS)
     if not os.path.exists(COURSE):
         ERRORS.append(f"missing {COURSE}")
         return
