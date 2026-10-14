@@ -1,5 +1,22 @@
 # Changelog — The Recursive I Ching
 
+## October 14, 2026 (later) — Search: one page per hexagram, a sitemap, share images
+
+- **`hexagram/<n>-<pinyin>-<name>.html`** (64 new pages) and **`hexagrams.html`** (the list and the 8×8 trigram chart), written by
+  **`scripts/build_hexagram_pages.py`** from zhouyi-core, ten-wings, i-ching-chinese-original and i-ching-summarized. Until now every
+  hexagram lived only inside the JavaScript viewers, so a search engine saw one page called "Cards" for all 64. Each page carries in
+  its HTML the Judgment, the Image and the six lines in Chinese and in Legge, the Commentary on the Judgment, the Small Images, the
+  hexagram each changing line leads to, the nuclear, opposite and inverse hexagrams, previous/next links, a unique title and
+  description, a canonical URL, Open Graph tags and JSON-LD (WebPage + Chapter of Legge's *Yî King* as a Book, BreadcrumbList).
+  Trigrams are computed from `scripts/hexagram-binary.json`: i-ching-chinese-original's `trigram_above`/`trigram_below` are
+  swapped in 56 of 64 hexagrams (left unedited here; it is a mapped grammar).
+- **`sitemap.xml`** (70 URLs) and **`robots.txt`**: new. `<lastmod>` comes from `data/sitemap-lastmod.json` and moves only when a page's
+  bytes change; `--check` fails when a listed page changed without a re-run.
+- **`img/og/`**: a 1200×630 share image per hexagram plus `site.png`, drawn by **`scripts/build_og_images.py`** (Pillow).
+- `index.html`: canonical, og:image, Twitter card, WebSite JSON-LD, favicon; the "64 Hexagrams" way and a hero button now open
+  `hexagrams.html`. `viewers/caster.html` and `viewers/source-text.html`: a meta description, canonical and og:image (head only).
+- CLAUDE.md: the build is step 9 of the pre-push list; the merge line follows her Oct 13 rule.
+
 ## October 14, 2026 — Auspicious and ominous: the verdict words as heatmaps
 
 - **`pages/verdict-heatmaps.html`** (new), in answer to PlayfulProcess's request for a more visual table of the auspicious and
