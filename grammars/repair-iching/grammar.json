@@ -39,7 +39,21 @@
   "description": "A meta-grammar that weaves the I Ching into the Repair framework. Twelve hexagrams — one for each chapter of 'Repair: An Open Source Book' — chosen not to predict but to reperceive. Each hexagram illuminates a repair theme: the perpetual problem, the attachment cry, the amends, the fire, the practice. This is not a divination grammar. It is a contemplative grammar. Each item invites illustration: find or create an image that embodies the hexagram's repair teaching. The practice of searching for that image IS the practice.\n\nCompanion grammars: 'Repair: An Open Source Book' (the full book), 'I Ching — Chinese Original With Brief Translation' (the 64 hexagrams), '易經 · Emergent Structure' (cosmological architecture).\n\nPUBLIC DOMAIN ILLUSTRATION REFERENCES: Chinese landscape painting from the Metropolitan Museum CC0 collection. Smithsonian Open Access botanical and geological images. Biodiversity Heritage Library nature illustrations. NASA planetary imagery. Hokusai woodcuts (Thirty-six Views of Mount Fuji). Traditional Chinese ink wash painting reproductions.",
   "grammar_type": "iching",
   "creator_name": "PlayfulProcess",
-  "tags": ["iching", "repair", "contemplation", "illustration-practice", "change", "yin-yang", "hexagrams", "nature", "open-source-book", "practice-grammar"],
+  "tags": [
+    "iching",
+    "repair",
+    "contemplation",
+    "illustration-practice",
+    "change",
+    "yin-yang",
+    "hexagrams",
+    "nature",
+    "open-source-book",
+    "practice-grammar",
+    "earth",
+    "mirror",
+    "oracle"
+  ],
   "roots": ["eastern-wisdom", "indigenous-knowledge", "psychology", "mysticism"],
   "shelves": ["wisdom", "resilience", "mirror"],
   "lineages": ["Akomolafe", "Andreotti", "Shrei", "Gottman", "Johnson", "Linehan", "Kelty"],
@@ -101,7 +115,15 @@
         "Contemplative Practice": "Find or create an image of two things connected that replenish each other. Two cups sharing the same saucer. Two trees whose roots intertwine underground. Two people laughing — not performing joy, but caught in it. Two bodies of water connected by a stream.\n\nOr: photograph your hands holding someone else's hands. Two lakes. Connected.",
         "The Crack": "The vulnerability that Sue Johnson asks for — 'can you hold me tight?' — requires safety. Not everyone has it. Two lakes connected can also mean two lakes drowning together. Codependence looks like resonance from the inside. How do you tell the difference between repair-through-connection and enmeshment? Maybe the I Ching's 'perseverance is favorable' is the hint: real connection perseveres. Enmeshment just can't stop."
       },
-      "keywords": ["joy", "lake", "connection", "eft", "vulnerability", "sue-johnson", "resonance"],
+      "keywords": [
+        "joy",
+        "lake",
+        "connection",
+        "eft",
+        "vulnerability",
+        "sue-johnson",
+        "resonance"
+      ],
       "metadata": {
         "number": 58,
         "hexagram_number": 58,
@@ -145,7 +167,15 @@
         "Contemplative Practice": "Find or create an image of something in perfect balance that you know won't last. A soap bubble. A stacked stone cairn. A child sleeping. A candle flame in still air.\n\nThis is the hardest contemplative practice in the grammar: sit with something beautiful and know it's ending. Not in a sad way. In the I Ching's way — the ending is already the beginning of the next thing. Water over Fire. The steam is going somewhere.",
         "The Crack": "Radical acceptance can be used to justify anything. 'Accept that the world is burning' is a very different sentence depending on whether it's said by a Zen master or an oil executive. The I Ching warns that After Completion leads to disorder — but it doesn't say whose disorder, or who benefits from the acceptance. Linehan designed DBT for people in extreme suffering, not for systems that cause it. Accepting your pain is not the same as accepting the system that produces it. Which fire are we staying alive in? Whose fire?"
       },
-      "keywords": ["completion", "balance", "impermanence", "dbt", "linehan", "radical-acceptance", "fire-water"],
+      "keywords": [
+        "completion",
+        "balance",
+        "impermanence",
+        "dbt",
+        "linehan",
+        "radical-acceptance",
+        "fire-water"
+      ],
       "metadata": {
         "number": 63,
         "hexagram_number": 63,
@@ -167,7 +197,15 @@
         "Contemplative Practice": "Find or create an image of transformation through containment. A cooking pot on a fire. A kiln. A compost heap (where raw matter becomes soil). A cocoon. A womb. A library.\n\nOr: photograph your own kitchen. The stove, the pots, the residue of last night's meal. Your kitchen is a caldron. What did you transform today? What nourishment did you create from raw ingredients?",
         "The Crack": "The caldron metaphor romanticizes cooking. But who does the cooking? In most cultures, historically: women. The 'cultural transformation technology' was built on unpaid labor. The grandmother's recipe is wisdom AND exploitation. The caldron is beautiful, but someone has to scrub it. Whose hands are raw?"
       },
-      "keywords": ["caldron", "transformation", "cooking", "culture", "vessel", "nourishment", "commons"],
+      "keywords": [
+        "caldron",
+        "transformation",
+        "cooking",
+        "culture",
+        "vessel",
+        "nourishment",
+        "commons"
+      ],
       "metadata": {
         "number": 50,
         "hexagram_number": 50,
@@ -189,7 +227,15 @@
         "Contemplative Practice": "Find or create an image of something drained. A dry lake bed. An empty well. A burned-out building. An exhausted face. Not beautiful emptiness — real emptiness. The kind that makes you uncomfortable.\n\nOr: photograph something in your life that is depleted. A bank account. An empty fridge. Your own eyes at the end of a long week. Oppression lives in the mundane. The contemplative practice is seeing it without looking away.",
         "The Crack": "The I Ching says 'the great man brings about good fortune' even in oppression. But what if there is no great man? What if the oppression is systemic and the great man is a fantasy that keeps people waiting instead of acting? Andreotti would say: the 'great man' is the colonial hero narrative itself. The I Ching, written in a feudal society, assumes hierarchy as natural. What if the caldron (Hex 50) and the oppression (Hex 47) are the same system — transformation AND extraction, depending on whose hands are in the fire?"
       },
-      "keywords": ["oppression", "exhaustion", "extraction", "andreotti", "colonialism", "comfortable-bondage", "drained"],
+      "keywords": [
+        "oppression",
+        "exhaustion",
+        "extraction",
+        "andreotti",
+        "colonialism",
+        "comfortable-bondage",
+        "drained"
+      ],
       "metadata": {
         "number": 47,
         "hexagram_number": 47,
@@ -211,7 +257,15 @@
         "Contemplative Practice": "Find or create an image of transformation through destruction that is not violence. A snake's shed skin. A forest floor after a controlled burn — black earth, already sprouting. A building being deconstructed (not demolished). A butterfly emerging from a cocoon (the cocoon doesn't survive).\n\nOr: photograph something you've outgrown. Clothes that don't fit. A journal from years ago. An old version of yourself in a photograph. Revolution is not always dramatic. Sometimes it's just: this doesn't fit anymore.",
         "The Crack": "Revolution is romanticized by people who won't be consumed by it. 'Controlled burning' is fire-tending practiced by communities with 65,000 years of knowledge. When amateurs burn, forests die. The I Ching says 'on your own day you are believed' — but what counts as 'your own day'? Who decides when the revolution is ripe and when it's premature? Every colonizer thought it was 'their day.' Every empire thought the old skin was someone else's."
       },
-      "keywords": ["revolution", "molting", "fire", "transformation", "controlled-burning", "aboriginal", "deep-time"],
+      "keywords": [
+        "revolution",
+        "molting",
+        "fire",
+        "transformation",
+        "controlled-burning",
+        "aboriginal",
+        "deep-time"
+      ],
       "metadata": {
         "number": 49,
         "hexagram_number": 49,
@@ -233,7 +287,15 @@
         "Contemplative Practice": "Find or create an image of slow, patient growth. A tree on an exposed hillside. A bird approaching land after a long flight over water. A child learning to walk — the same step, the same fall, the same step, over weeks.\n\nOr: photograph the oldest living thing near you. A tree. A stone wall. Lichen on a rock. Gradual progress is not human-speed. It's earth-speed. The I Ching teaches patience by talking about geese. What teaches you patience?",
         "The Crack": "'Gradual progress' is a privilege. For people in crisis — poverty, war, illness — patience is not a virtue but a luxury. The wild goose approaches the shore gradually because it can. Some people are drowning and need a boat, not a hexagram about geese. Palmer's 'listen to your life' works best when your life isn't screaming at you. The I Ching, like most wisdom traditions, was written by people with enough leisure to contemplate."
       },
-      "keywords": ["gradual-progress", "patience", "vocation", "wild-goose", "palmer", "listening", "mountain-tree"],
+      "keywords": [
+        "gradual-progress",
+        "patience",
+        "vocation",
+        "wild-goose",
+        "palmer",
+        "listening",
+        "mountain-tree"
+      ],
       "metadata": {
         "number": 53,
         "hexagram_number": 53,
@@ -255,7 +317,15 @@
         "Contemplative Practice": "Find or create an image of two things meeting in the middle. Sky reflected in still water. Two hands reaching from opposite directions. A horizon line — the exact place where earth and heaven meet.\n\nOr: go outside at dawn or dusk — the time when day and night meet. Photograph the liminal light. Peace in the I Ching is not noon or midnight. It's the threshold. The changing line. The moment between.",
         "The Crack": "Peace (Hexagram 11) is immediately followed in the sequence by Standstill (Hexagram 12) — Heaven above, Earth below, moving apart. The I Ching's brutal honesty: peace is a phase, not a destination. Every re-pairing will be followed by re-separation. Every dawn by dusk. The question isn't 'how do we achieve peace?' It's 'how do we return to it?' Which is Chapter 4. Which is Hexagram 24. Which is Return. The I Ching is recursive."
       },
-      "keywords": ["peace", "communion", "heaven-earth", "re-pairing", "spring", "threshold", "meeting"],
+      "keywords": [
+        "peace",
+        "communion",
+        "heaven-earth",
+        "re-pairing",
+        "spring",
+        "threshold",
+        "meeting"
+      ],
       "metadata": {
         "number": 11,
         "hexagram_number": 11,
@@ -277,7 +347,16 @@
         "Contemplative Practice": "Find or create an image of seeing and being seen simultaneously. A mirror. An eye. A window at night — you see out, but you're also visible from outside. A lake that reflects the viewer.\n\nOr: take a selfie while looking at something beautiful. The photo will show you looking — and now someone else can see you seeing. That's Hexagram 20: contemplation as relationship, not isolation. The hermit who watches from the tower is also the one the village watches.",
         "The Crack": "Contemplation requires distance — the tower, the overview, the step back. But distance is also disconnection. The king on the tower sees the land but doesn't smell the soil. Contemplation as 'view from above' is the colonial gaze: mapping, surveying, categorizing. The I Ching balances this with 觀's double meaning (seeing/being seen), but that balance is easily lost. Every meditation app is a contemplation tower. Every wellness practice risks becoming surveillance of the self. When does looking deeply become just another form of extraction — mining yourself for insight?"
       },
-      "keywords": ["contemplation", "seeing", "being-seen", "oracle", "tower", "mutual", "tarot", "symbolic"],
+      "keywords": [
+        "contemplation",
+        "seeing",
+        "being-seen",
+        "oracle",
+        "tower",
+        "mutual",
+        "tarot",
+        "symbolic"
+      ],
       "metadata": {
         "number": 20,
         "hexagram_number": 20,
@@ -299,7 +378,16 @@
         "Contemplative Practice": "Find or create an image of something almost but not quite complete. A nearly finished puzzle with one piece missing. A bridge under construction. A sentence that trails off into—\n\nOr: look at this grammar. It has 64 hexagrams mapped to 12 chapters, which means 52 hexagrams are not represented. Those 52 are the Before Completion of this practice. They're the missing piece. They're your invitation: pick any hexagram not in this grammar. Map it to a moment in your life. Illustrate it. Add it. The grammar refuses to be complete because the I Ching refuses to be complete. That refusal IS the practice.\n\nOr simply: leave something unfinished today. On purpose. Not because you're lazy. Because completion is a fantasy and the I Ching is honest about it.",
         "The Crack": "We ended with Before Completion, which is elegant. Maybe too elegant. The danger of ending with 'we're never done' is that it can justify never starting. 'Everything is always in process' is either the deepest wisdom or the best excuse. The fox gets its tail wet — but does it ever cross? The I Ching doesn't say. Some foxes drown. Some rivers should not be crossed. 'Before Completion' as a permanent state is beautiful for people with time and safety. For people in crisis, it's just another word for stuck.\n\nAnd: this grammar paired 12 hexagrams with 12 chapters and ignored 52 others. That's an 81% exclusion rate. We called it 'your invitation to add the rest.' But it's also: we cherry-picked. The hexagrams that didn't fit the repair narrative — Hexagram 36 (Darkening of the Light), Hexagram 18 (Work on What Has Been Spoiled), Hexagram 43 (Breakthrough) — might tell a different story. One where repair isn't gentle or gradual or contemplative. One where it's furious and necessary and now. Before Completion means the furious version is still possible too."
       },
-      "keywords": ["before-completion", "incompleteness", "process", "beginning", "ending", "fox", "change", "recursive"],
+      "keywords": [
+        "before-completion",
+        "incompleteness",
+        "process",
+        "beginning",
+        "ending",
+        "fox",
+        "change",
+        "recursive"
+      ],
       "metadata": {
         "number": 64,
         "hexagram_number": 64,
@@ -314,13 +402,33 @@
       "name": "Repair as Change: The Twelve Hexagrams",
       "sort_order": 13,
       "category": "emergence",
-      "parts": ["hex06-conflict", "hex29-the-abysmal", "hex58-the-joyous", "hex24-return", "hex63-after-completion", "hex50-the-caldron", "hex47-oppression", "hex49-revolution", "hex53-gradual-progress", "hex11-peace", "hex20-contemplation", "hex64-before-completion"],
+      "parts": [
+        "hex06-conflict",
+        "hex29-the-abysmal",
+        "hex58-the-joyous",
+        "hex24-return",
+        "hex63-after-completion",
+        "hex50-the-caldron",
+        "hex47-oppression",
+        "hex49-revolution",
+        "hex53-gradual-progress",
+        "hex11-peace",
+        "hex20-contemplation",
+        "hex64-before-completion"
+      ],
       "relationship_type": "emergence",
       "sections": {
         "About": "Twelve hexagrams from the I Ching, one for each chapter of 'Repair: An Open Source Book.' Together they form a journey through the hexagram sequence that mirrors the book's arc: from Conflict (the perpetual problem) through The Abysmal (the depth of the wound) to Joy (connection) to Return (amends) to After Completion (radical acceptance) to The Caldron (cultural transformation) to Oppression (the comfortable bondage) to Revolution (the fire) to Gradual Progress (vocation) to Peace (re-pairing) to Contemplation (practice) to Before Completion (the honest ending that is also a beginning).\n\nThis is a meta-grammar — it doesn't replace the I Ching but reads it through the lens of repair. The 52 hexagrams not included are invitations: what repair readings do YOU see in Hexagram 36 (Darkening of the Light)? In Hexagram 42 (Increase)? In Hexagram 1 (The Creative)?\n\nThe contemplative illustration practice runs through all twelve: for each hexagram, find or create an image. Search the Smithsonian, the Met, the Biodiversity Heritage Library, NASA. Or go outside with your phone. Or draw. The search for the right image is the meditation. The hexagram reads you while you illustrate it.",
         "How to Use": "AS A READING: Draw one of these 12 hexagrams at random (number 1-12 and use a die or random generator). Read the hexagram AND its corresponding Repair chapter. Let them speak to each other.\n\nAS AN ILLUSTRATION PROJECT: Illustrate all 12. One per week for three months. Or one per month for a year. Upload to recursive.eco. Share the images. See what other people's versions look like.\n\nAS A COUPLES PRACTICE: With a partner, throw coins and see which of these 12 hexagrams you land closest to. Read the repair chapter together. Talk about it over dinner. That's the whole practice.\n\nAS A BRIDGE: Use this grammar as a doorway to the full I Ching. When a hexagram speaks to you here, go find it in the 'I Ching — Chinese Original' grammar or the 'Emergent Structure' grammar. Read the original text. See what we left out. What the original says that the repair reading doesn't. The gap between our reading and the original is itself a hexagram — Before Completion, probably."
       },
-      "keywords": ["emergence", "twelve-hexagrams", "repair-journey", "meta-grammar", "contemplation", "illustration-practice"],
+      "keywords": [
+        "emergence",
+        "twelve-hexagrams",
+        "repair-journey",
+        "meta-grammar",
+        "contemplation",
+        "illustration-practice"
+      ],
       "metadata": {
         "hexagram_count": 12,
         "missing_hexagrams": 52,
@@ -332,13 +440,36 @@
       "name": "The Repair I Ching",
       "sort_order": 14,
       "category": "meta",
-      "parts": ["repair-as-change", "hex06-conflict", "hex29-the-abysmal", "hex58-the-joyous", "hex24-return", "hex63-after-completion", "hex50-the-caldron", "hex47-oppression", "hex49-revolution", "hex53-gradual-progress", "hex11-peace", "hex20-contemplation", "hex64-before-completion"],
+      "parts": [
+        "repair-as-change",
+        "hex06-conflict",
+        "hex29-the-abysmal",
+        "hex58-the-joyous",
+        "hex24-return",
+        "hex63-after-completion",
+        "hex50-the-caldron",
+        "hex47-oppression",
+        "hex49-revolution",
+        "hex53-gradual-progress",
+        "hex11-peace",
+        "hex20-contemplation",
+        "hex64-before-completion"
+      ],
       "relationship_type": "emergence",
       "sections": {
         "About": "The Repair I Ching is a contemplative practice grammar. It is not the I Ching — it is one reading of the I Ching, through the lens of a book about repair. It is 12 hexagrams out of 64. It is incomplete by design — because the I Ching's last hexagram (64, Before Completion) teaches that incompleteness is not failure but honesty.\n\nThe I Ching survived 3,000 years because it was misread. Colonizers classified it as fortune-telling and left it alone while burning philosophy, history, and poetry. The deepest cosmological text in Chinese civilization survived by looking like a gadget. This is the trickster's gift: wisdom that protects itself by being underestimated.\n\nThis grammar inherits that gift. It looks like a card deck. It looks like a self-help tool. It looks like a coloring book for adults. Underneath, it's an invitation to sit with 3,000 years of people who watched rivers and mountains and seasons and said: everything changes. Everything is always changing. And that's not chaos — that's the pattern. The pattern IS the change.\n\nThe practice: illustrate each hexagram. Search public domain archives. Photograph nature. Draw. Use AI. Let the search for the right image be the meditation. The hexagram reads you while you illustrate it. You are not decorating a text. You are joining a 3,000-year conversation about what it means to pay attention to change.",
         "The Recursive Practice": "This grammar lives in a public git repository. It can be forked, extended, illustrated, translated, argued with, composted. The I Ching has always worked this way — each generation adds a layer. You are the next layer.\n\nThe practice of forking and extending a grammar is itself recursive: you change the book of changes. The tool changes you. You change the tool. This is what Christopher Kelty calls a 'recursive public' — a community that creates and maintains the conditions of its own existence. The I Ching is the oldest recursive public: a text that has been rewriting itself for 3,000 years, maintained by the community of people who consult it.\n\nrecursive.eco is built on this principle: grammars are public infrastructure, maintained by the people who use them. This grammar is an invitation to join that maintenance. Illustrate a hexagram. Write a crack. Map a hexagram we missed to a repair theme we didn't see. Push a commit. The repository is the caldron. The commits are the fire. What gets cooked is up to all of us."
       },
-      "keywords": ["meta", "repair-iching", "recursive-public", "kelty", "contemplation", "illustration", "open-source", "3000-years"],
+      "keywords": [
+        "meta",
+        "repair-iching",
+        "recursive-public",
+        "kelty",
+        "contemplation",
+        "illustration",
+        "open-source",
+        "3000-years"
+      ],
       "metadata": {
         "companion_grammars": [
           "repair-an-open-source-book",
@@ -351,5 +482,8 @@
         "completion_percentage": "18.75% — Before Completion"
       }
     }
-  ]
+  ],
+  "license": "CC-BY-NC-4.0",
+  "_recursive_eco_url": "https://recursive.eco/g/b7a59594-1822-4770-8600-155514f323e0?view=reading",
+  "_recursive_eco_edit_url": "https://recursive.eco/create/dashboard/unified/new?id=b7a59594-1822-4770-8600-155514f323e0"
 }
