@@ -70,6 +70,20 @@
   .content th{color:var(--ink-soft);font-weight:600;font-size:12.5px}
   .content td{font-variant-numeric:tabular-nums}
 
+  /* —— reading mode: Continuous (default) · One at a time —— */
+  .mode-toggle{display:flex;align-items:center;gap:6px;margin:0 0 12px;font-size:12.5px;color:var(--faint)}
+  .mode-toggle button{font:inherit;background:none;border:0;padding:3px 2px;color:var(--muted);cursor:pointer;border-bottom:1px solid transparent}
+  .mode-toggle button:hover{color:var(--ink)}
+  .mode-toggle button.on{color:var(--ink);font-weight:600;border-bottom-color:var(--accent);cursor:default}
+  .chapter{margin:0;padding:30px 0 6px;border-top:1px solid var(--line);scroll-margin-top:72px}
+  .chapter:first-child{border-top:0;padding-top:0}
+  .chapter .ch-title{font-family:var(--serif-display);font-weight:600;letter-spacing:.02em;font-size:25px;line-height:1.25;margin:6px 0 12px}
+  .chapter .ch-title a{color:var(--ink);text-decoration:none}
+  .chapter .ch-title a:hover{color:var(--accent)}
+  .part-sep{margin:34px 0 0;padding:22px 0 0;border-top:3px double var(--line)}
+  .part-sep .part-title{font-size:12px;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-weight:700}
+  .part-sep + .chapter{border-top:0}
+
   /* —— the course's painting, on its first chapter: one public-domain work (img/zen/credits.json) —— */
   .course-art{display:flex;gap:24px;align-items:flex-end;margin:4px 0 30px;padding:0 0 28px;border-bottom:1px solid var(--line)}
   .course-art .mat{flex:0 0 auto}
@@ -92,6 +106,9 @@
 <div class="wrap">
   <aside>
     <a class="toc-back" href="../index.html">← Back to the library</a>
+    <div class="mode-toggle" id="mode-toggle" role="group" aria-label="How to read the course" hidden>
+      <button type="button" data-mode="continuous">Continuous</button><span aria-hidden="true">·</span><button type="button" data-mode="paged">One at a time</button>
+    </div>
     <div class="toc-kicker" id="toc-kicker">Three Lenses</div>
     <nav class="toc" id="toc" aria-label="Course chapters"></nav>
   </aside>
@@ -128,6 +145,16 @@ const params = new URLSearchParams(location.search);
 
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const mdLite = s => esc(s).replace(/\*(.+?)\*/g, '<em>$1</em>').replace(/`(.+?)`/g, '<code>$1</code>');
+
+// Reading mode (Oct 14 2026, PlayfulProcess: "change all courses to continuous"): Continuous is the
+// default, the whole course on one page with each chapter's id as its anchor; "One at a time" is the
+// old one-chapter-per-page view. A ?mode=paged|continuous URL wins over the choice remembered here.
+const MODE_KEY = 'recursive-iching:course-mode';
+const MODES = ['continuous', 'paged'];
+function storedMode(){ try { const m = localStorage.getItem(MODE_KEY); return MODES.includes(m) ? m : null; } catch (e) { return null; } }
+function storeMode(m){ try { localStorage.setItem(MODE_KEY, m); return localStorage.getItem(MODE_KEY) === m; } catch (e) { return false; } }
+const urlMode = MODES.includes(params.get('mode')) ? params.get('mode') : null;
+const MODE = urlMode || storedMode() || 'continuous';
 
 // Multi-course (ported Jul 2026 from recursive-astrology/pages/course-viewer.html):
 // ?course=<slug> picks the manifest + source grammar. This repo ships one course so
@@ -169,8 +196,9 @@ async function main(){
   const courseSlug = COURSES[courseParam] ? courseParam : 'three-lenses';
   const course = COURSES[courseSlug];
   // Every in-course link keeps ?course= (before Oct 4 2026 the TOC dropped it, which only
-  // worked because there was one course).
-  const chapterHref = id => 'course-viewer.html?course=' + encodeURIComponent(courseSlug) + '&chapter=' + encodeURIComponent(id);
+  // worked because there was one course), and keeps ?mode= when the URL carried one.
+  const modeQ = urlMode ? '&mode=' + urlMode : '';
+  const chapterHref = id => 'course-viewer.html?course=' + encodeURIComponent(courseSlug) + modeQ + '&chapter=' + encodeURIComponent(id);
   try {
     manifest = await fetch(course.manifest).then(r => { if(!r.ok) throw new Error('manifest '+r.status); return r.json(); });
     // The manifest names its source grammar; fall back to the three-lenses grammar for the default course.
@@ -190,9 +218,9 @@ async function main(){
   }
 
   document.title = manifest.title + ' — The Recursive I Ching';
-  // The note under every chapter says where the chapter is read from; a manifest may mark the course a draft.
+  // The note under the course says where it is read from; a manifest may mark the course a draft.
   const gslug = manifest.sourceGrammar || 'three-lenses-64';
-  $('#course-note').innerHTML = '<b>How this works.</b> This chapter is read live from <code>grammars/' + esc(gslug)
+  $('#course-note').innerHTML = '<b>How this works.</b> This ' + (MODE === 'paged' ? 'chapter' : 'course') + ' is read live from <code>grammars/' + esc(gslug)
     + '/grammar.json</code>, the same grammar that sits in <a href="../index.html">the library</a>. Nothing here is duplicated content: edit that grammar and this course updates with it. See <code>course/'
     + esc(courseSlug) + '.manifest.json</code> for the chapter order.'
     + (courseSlug === 'three-lenses' ? ' <b>Note:</b> the source grammar’s chapter items currently carry names and keywords but empty <code>sections</code>, so this course renders honestly empty chapter bodies until that content is written; see the field report for why.' : '');
@@ -208,8 +236,11 @@ async function main(){
   const appendixItems = grammar.nodes.filter(it => it.id.startsWith(manifest.appendixIdPrefix));
   const allItems = chapterItems.concat(appendixItems);
   const byId = Object.fromEntries(allItems.map(it => [it.id, it]));
+  const isAppx = it => it.id.startsWith(manifest.appendixIdPrefix);
 
-  const requested = params.get('chapter');
+  // ?chapter=X, or #X (the anchor the continuous view writes), names the chapter to open or scroll to.
+  let hashId = ''; try { hashId = decodeURIComponent(location.hash.slice(1)); } catch (e) {}
+  const requested = params.get('chapter') || hashId;
   const current = byId[requested] || chapterItems[0];
   if (!current) {
     $('#loading').hidden = true;
@@ -217,50 +248,42 @@ async function main(){
     $('#err').textContent = 'This course has no chapters yet.';
     return;
   }
-  const isAppendix = current.id.startsWith(manifest.appendixIdPrefix);
 
-  // —— sidebar TOC ——
-  $('#toc-kicker').textContent = manifest.title;
-  const toc = $('#toc');
-  chapterItems.forEach((it, i) => {
-    const a = document.createElement('a');
-    a.href = chapterHref(it.id);
-    a.className = it.id === current.id ? 'active' : '';
-    a.innerHTML = `<span class="toc-num">${i + 1}.</span> ${it.name}`;
-    toc.appendChild(a);
-  });
-  if (appendixItems.length) {
-    const hr = document.createElement('hr'); hr.className = 'toc-sep'; toc.appendChild(hr);
-    const label = document.createElement('div'); label.className = 'toc-append';
-    label.textContent = manifest.appendixTitle || 'Patterns across eras'; toc.appendChild(label);
-    appendixItems.forEach(it => {
-      const a = document.createElement('a');
-      a.href = chapterHref(it.id);
-      a.className = it.id === current.id ? 'active' : '';
-      a.textContent = it.name;
-      toc.appendChild(a);
+  // —— the mode toggle: remember the choice, then reopen at the same chapter ——
+  const toggle = $('#mode-toggle');
+  let visibleId = current.id;   // the continuous view keeps this in step with the scroll
+  toggle.querySelectorAll('button').forEach(b => {
+    const on = b.dataset.mode === MODE;
+    b.classList.toggle('on', on);
+    b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    b.addEventListener('click', () => {
+      const m = b.dataset.mode;
+      if (m === MODE) return;
+      const saved = storeMode(m);
+      const q = new URLSearchParams();
+      q.set('course', courseSlug);
+      if (!saved || urlMode) q.set('mode', m);   // without storage, the URL carries the choice
+      if (m === 'paged') q.set('chapter', visibleId);
+      location.href = 'course-viewer.html?' + q.toString()
+        + (m === 'continuous' && visibleId !== chapterItems[0].id ? '#' + encodeURIComponent(visibleId) : '');
     });
-  }
+  });
+  toggle.hidden = false;
 
-  // —— content ——
-  const meta = current.metadata || {};
-  $('#cintro').textContent = isAppendix
+  // —— rendering helpers, shared by both modes ——
+  const kickerFor = it => isAppx(it)
     ? (manifest.appendixTitle || 'Patterns across eras') + ' · ' + (manifest.appendixKicker || 'a cross-cutting thread, not a single era')
-    : `${manifest.title} · chapter ${chapterItems.findIndex(it => it.id === current.id) + 1} of ${chapterItems.length}`;
-  $('#ctitle').textContent = current.name;
-
-  const metaRow = $('#meta-row');
-  metaRow.innerHTML = '';
-  if (meta.when) metaRow.innerHTML += `<span class="pill">${esc(meta.when)}</span>`;
-  if (meta.era) metaRow.innerHTML += `<span class="pill">${esc(meta.era)}</span>`;
-  if (meta.region) metaRow.innerHTML += `<span class="pill">${esc(meta.region)}</span>`;
-  if (meta.stance) metaRow.innerHTML += `<span class="pill">${esc(meta.stance.replace(/-/g,' '))}</span>`;
-  if (meta.confidence) metaRow.innerHTML += `<span class="pill confidence-${esc(meta.confidence)}">confidence: ${esc(meta.confidence)}</span>`;
-
-  const order = isAppendix ? (manifest.appendixSectionOrder || []) : (manifest.sectionOrder || []);
-  const sections = current.sections || {};
-  const orderedKeys = order.filter(k => sections[k]).concat(Object.keys(sections).filter(k => !order.includes(k)));
-  const content = $('#content');
+    : `${manifest.title} · chapter ${chapterItems.findIndex(x => x.id === it.id) + 1} of ${chapterItems.length}`;
+  const pillsFor = it => {
+    const meta = it.metadata || {};
+    let h = '';
+    if (meta.when) h += `<span class="pill">${esc(meta.when)}</span>`;
+    if (meta.era) h += `<span class="pill">${esc(meta.era)}</span>`;
+    if (meta.region) h += `<span class="pill">${esc(meta.region)}</span>`;
+    if (meta.stance) h += `<span class="pill">${esc(meta.stance.replace(/-/g,' '))}</span>`;
+    if (meta.confidence) h += `<span class="pill confidence-${esc(meta.confidence)}">confidence: ${esc(meta.confidence)}</span>`;
+    return h;
+  };
   // [@key] citations become links to the grammar's bibliography; blank lines become paragraphs.
   const cite = h => h.replace(/\[@([^\]]+)\]/g, (m, keys) => '<span class="cite">[' + keys.split(';').map(k => {
     k = k.trim().replace(/^@/, ''); const b = BIB[k]; if (!b) return esc(k);
@@ -278,17 +301,20 @@ async function main(){
   };
   const para = t => String(t).split(/\n{2,}/).map(p => isTable(p) ? table(p)
     : `<p>${cite(links(mdLite(p))).replace(/\n/g, '<br>')}</p>`).join('');
-  const first = !isAppendix && chapterItems[0] && current.id === chapterItems[0].id;
-  if (first) showCourseArt(course.art);
-  content.innerHTML = (first && manifest.intro ? `<div class="sec intro">${para(manifest.intro)}</div>` : '')
-    + orderedKeys.map(k => `<div class="sec"><h2>${esc(k)}</h2>${para(sections[k])}</div>`).join('')
-    + (meta.grammar_slug ? `<p><a class="eco-chip" href="../viewers/cards.html?src=${encodeURIComponent('../grammars/' + meta.grammar_slug + '/grammar.json')}">Open this book in the library →</a></p>` : '');
-
-  // —— companion links (primary-source grammars, from ids.json) ——
-  const companionSlugs = (manifest.companions || {})[current.id] || [];
-  if (companionSlugs.length && ids && ids.ids) {
-    const clinks = $('#clinks');
-    clinks.innerHTML = '';
+  const bodyFor = (it, withIntro) => {
+    const order = isAppx(it) ? (manifest.appendixSectionOrder || []) : (manifest.sectionOrder || []);
+    const sections = it.sections || {};
+    const keys = order.filter(k => sections[k]).concat(Object.keys(sections).filter(k => !order.includes(k)));
+    const meta = it.metadata || {};
+    return (withIntro && manifest.intro ? `<div class="sec intro">${para(manifest.intro)}</div>` : '')
+      + keys.map(k => `<div class="sec"><h2>${esc(k)}</h2>${para(sections[k])}</div>`).join('')
+      + (meta.grammar_slug ? `<p><a class="eco-chip" href="../viewers/cards.html?src=${encodeURIComponent('../grammars/' + meta.grammar_slug + '/grammar.json')}">Open this book in the library →</a></p>` : '');
+  };
+  // Companion links (primary-source grammars, from ids.json) into `box`; returns how many grammars.
+  const fillCompanions = (it, box) => {
+    const companionSlugs = (manifest.companions || {})[it.id] || [];
+    if (!companionSlugs.length || !ids || !ids.ids) return 0;
+    box.innerHTML = '';
     companionSlugs.forEach(slug => {
       // Only a grammar visitors can open on recursive.eco (ids.json's _public_now).
       const uuid = (!Array.isArray(ids._public_now) || ids._public_now.includes(slug)) ? ids.ids[slug] : null;
@@ -296,29 +322,136 @@ async function main(){
       const raw = document.createElement('a');
       raw.className = 'eco-chip'; raw.href = '../grammars/' + slug + '/grammar.json';
       raw.textContent = label + ' — raw JSON';
-      clinks.appendChild(raw);
+      box.appendChild(raw);
       if (uuid) {
         // recursive.eco's previews, framed for this collection: ?shell=iching draws the I Ching
         // header and footer once recursive.eco carries it (docs/PARITY-with-recursive-eco-2026-10-07.md);
         // until then the page ignores it. Cards opens at this chapter's hexagram (hex-N -> number N).
-        const hexN = (/^hex-(\d+)$/.exec(current.id) || [])[1];
+        const hexN = (/^hex-(\d+)$/.exec(it.id) || [])[1];
         [['Cards', 'grammar-viewer'], ['Study', 'study-viewer'], ['Tree', 'tree-viewer']].forEach(([lbl, page]) => {
           const a = document.createElement('a');
           a.className = 'eco-chip'; a.target = '_blank'; a.rel = 'noopener';
           a.href = `https://recursive.eco/pages/${page}.html?type=iching&id=${uuid}&shell=iching`
             + (page === 'grammar-viewer' && hexN ? `&hexagram=${hexN}` : '');
           a.textContent = label + ' — ' + lbl;
-          clinks.appendChild(a);
+          box.appendChild(a);
         });
         const play = document.createElement('a');
         play.className = 'eco-chip'; play.target = '_blank'; play.rel = 'noopener';
         play.href = `https://flow.recursive.eco/play?id=${uuid}`;
         play.textContent = label + ' — Play';
-        clinks.appendChild(play);
+        box.appendChild(play);
       }
     });
-    $('#companions').hidden = false;
+    return companionSlugs.length;
+  };
+
+  // —— sidebar TOC: page links one at a time, anchors on the continuous page ——
+  $('#toc-kicker').textContent = manifest.title;
+  const toc = $('#toc');
+  const tocLink = it => {
+    const a = document.createElement('a');
+    a.href = MODE === 'paged' ? chapterHref(it.id) : '#' + encodeURIComponent(it.id);
+    a.dataset.id = it.id;
+    a.className = MODE === 'paged' && it.id === current.id ? 'active' : '';
+    return a;
+  };
+  chapterItems.forEach((it, i) => {
+    const a = tocLink(it);
+    a.innerHTML = `<span class="toc-num">${i + 1}.</span> ${it.name}`;
+    toc.appendChild(a);
+  });
+  if (appendixItems.length) {
+    const hr = document.createElement('hr'); hr.className = 'toc-sep'; toc.appendChild(hr);
+    const label = document.createElement('div'); label.className = 'toc-append';
+    label.textContent = manifest.appendixTitle || 'Patterns across eras'; toc.appendChild(label);
+    appendixItems.forEach(it => {
+      const a = tocLink(it);
+      a.textContent = it.name;
+      toc.appendChild(a);
+    });
   }
+
+  if (MODE === 'continuous') {
+    // —— the whole course on one page ——
+    $('#cintro').textContent = manifest.kicker || manifest.title;
+    $('#ctitle').textContent = manifest.title;
+    $('#meta-row').hidden = true;
+    $('#navrow').hidden = true;
+    const content = $('#content');
+    content.innerHTML = '';
+    let lastWasChapter = true;
+    allItems.forEach((it, i) => {
+      if (isAppx(it) && lastWasChapter) {
+        const sep = document.createElement('div');
+        sep.className = 'part-sep';
+        sep.innerHTML = `<div class="part-title">${esc(manifest.appendixTitle || 'Patterns across eras')}</div>`
+          + (manifest.appendixIntro ? para(manifest.appendixIntro) : '');
+        content.appendChild(sep);
+      }
+      lastWasChapter = !isAppx(it);
+      const sec = document.createElement('section');
+      sec.className = 'chapter';
+      sec.id = it.id;
+      const pills = pillsFor(it);
+      sec.innerHTML = `<div class="kicker">${esc(kickerFor(it))}</div>`
+        + `<h2 class="ch-title"><a href="#${esc(encodeURIComponent(it.id))}">${esc(it.name)}</a></h2>`
+        + (pills ? `<div class="meta-row">${pills}</div>` : '')
+        + bodyFor(it, i === 0);
+      const box = document.createElement('div');
+      if (fillCompanions(it, box)) {
+        const c = document.createElement('div'); c.className = 'companions';
+        c.innerHTML = '<h3>Read the primary source</h3>';
+        box.className = 'clinks'; c.appendChild(box); sec.appendChild(c);
+      }
+      content.appendChild(sec);
+    });
+    await showCourseArt(course.art);   // before scrolling, so the painting does not push the target down
+
+    // A link inside the course to one of its own chapters scrolls instead of reloading.
+    content.addEventListener('click', e => {
+      const a = e.target.closest('a[href]');
+      if (!a || a.target) return;
+      let u; try { u = new URL(a.href, location.href); } catch (err) { return; }
+      const ch = u.searchParams.get('chapter');
+      if (!/course-viewer\.html$/.test(u.pathname) || (u.searchParams.get('course') || 'three-lenses') !== courseSlug || !ch || !byId[ch]) return;
+      e.preventDefault();
+      location.hash = encodeURIComponent(ch);
+    });
+
+    // The TOC follows the scroll.
+    const tocLinks = [...toc.querySelectorAll('a[data-id]')];
+    const markActive = id => {
+      visibleId = id;
+      tocLinks.forEach(a => a.classList.toggle('active', a.dataset.id === id));
+    };
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(en => { if (en.isIntersecting) markActive(en.target.id); });
+      }, { rootMargin: '-90px 0px -65% 0px' });
+      content.querySelectorAll('section.chapter').forEach(s => io.observe(s));
+    }
+    markActive(current.id);
+
+    $('#loading').hidden = true;
+    $('#article').hidden = false;
+    // An old ?chapter=X link lands on chapter X; the URL then names it as #X.
+    if (requested && byId[requested]) {
+      const q = new URLSearchParams(location.search); q.delete('chapter');
+      try { history.replaceState(null, '', location.pathname + '?' + q.toString() + '#' + encodeURIComponent(requested)); } catch (e) {}
+      document.getElementById(requested).scrollIntoView();
+    }
+    return;
+  }
+
+  // —— one chapter at a time ——
+  $('#cintro').textContent = kickerFor(current);
+  $('#ctitle').textContent = current.name;
+  $('#meta-row').innerHTML = pillsFor(current);
+  const first = !isAppx(current) && chapterItems[0] && current.id === chapterItems[0].id;
+  if (first) showCourseArt(course.art);
+  $('#content').innerHTML = bodyFor(current, first);
+  if (fillCompanions(current, $('#clinks'))) $('#companions').hidden = false;
 
   // —— prev / next ——
   const navrow = $('#navrow');
