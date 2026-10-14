@@ -32,6 +32,7 @@ static site at iching.recursive.eco. Call the owner PlayfulProcess; never write 
      and `python scripts/changing_lines.py --check --quiet` (must print OK: the twelve changing-line tables are current, the Changing-Lines Lens course quotes the figures, and `data/verdict-words.json` and its heatmap page are current)
   7. `node scripts/determinism-check.js`
   8. `python scripts/check_book_mode.py` when the caster or the book changed (needs Playwright)
+  9. `python scripts/build_hexagram_pages.py`, then `python scripts/build_hexagram_pages.py --check` (must print OK). It writes the 64 static hexagram pages (`hexagram/*.html`), the chart `hexagrams.html`, `sitemap.xml` and `data/sitemap-lastmod.json`, all generated: never hand-edit them. Re-run it after editing zhouyi-core, ten-wings, i-ching-chinese-original, i-ching-summarized, `scripts/hexagram-binary.json`, or any page it lists in the sitemap (index.html, the wheel, the heatmaps, the caster, the source text): a page's `<lastmod>` moves only when its bytes change. After a hexagram's name changes, also `python scripts/build_og_images.py` (the share images in `img/og/`; needs Pillow).
 - **Every hexagram item carries its King Wen number twice:** `"number": N` at the top level and
   `metadata.number`. recursive.eco's relating-hexagram lookup reads the top-level one (finding V-1);
   `check.py` enforces it.
@@ -49,4 +50,4 @@ static site at iching.recursive.eco. Call the owner PlayfulProcess; never write 
   Terms ask that the site not be linked without written consent. Cite its pages by title and date.
 - **`ten-wings` is a mapped grammar:** change it only by adding sections (`scripts/add_ten_wings_sections.py`
   shows how); never change an item id or name.
-- Never merge to `main` yourself; push a branch and open a PR.
+- Push a branch and open a PR. Since PlayfulProcess's rule of Oct 13 2026 (root `CLAUDE.md`, "Merging pull requests"), Claude may merge a PR here once the checks above pass, with a normal merge commit; recursive-tarot and recursive-eco still wait for her word.
