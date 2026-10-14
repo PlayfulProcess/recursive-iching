@@ -1,5 +1,15 @@
 # Changelog — The Recursive I Ching
 
+## October 14, 2026 (trigram fix) — i-ching-chinese-original: upper and lower trigram no longer swapped
+
+- **`grammars/i-ching-chinese-original/grammar.json`**: `trigram_above` and `trigram_below` were swapped in 56 of the 64 hexagrams
+  (112 values corrected; the 8 hexagrams whose two trigrams are equal, 1, 2, 29, 30, 51, 52, 57 and 58, were already right). The bottom
+  three lines are the lower trigram, the top three the upper one: 11 Tai is Earth above, Heaven below; 12 Pi is Heaven above, Earth
+  below. Checked against the King Wen table and against `scripts/hexagram-binary.json` for all 64. No other grammar had the bug
+  (i-ching-summarized, iching-hd-meta-categories, the-recursive-iching-book, meta-iching and repair-iching already agree with their lines).
+- **`check.py`** now fails when any hexagram's `trigram_above`/`trigram_below` (plain names or the glyph form repair-iching uses) disagree
+  with its lines in `scripts/hexagram-binary.json`, or when a `metadata.binary` differs from that table, so the swap cannot come back.
+
 ## October 14, 2026 (later) — Search: one page per hexagram, a sitemap, share images
 
 - **`hexagram/<n>-<pinyin>-<name>.html`** (64 new pages) and **`hexagrams.html`** (the list and the 8×8 trigram chart), written by
