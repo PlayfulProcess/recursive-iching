@@ -1,0 +1,129 @@
+{
+  "format": "recursive-eco/repository",
+  "version": 1,
+  "name": "The Recursive I Ching",
+  "members": [
+    {
+      "slug": "changing-lines-lens"
+    },
+    {
+      "slug": "i-ching-chinese-original"
+    },
+    {
+      "slug": "i-ching-summarized"
+    },
+    {
+      "slug": "iching-hd-meta-categories"
+    },
+    {
+      "slug": "repair-iching"
+    },
+    {
+      "slug": "ten-wings"
+    },
+    {
+      "slug": "zhouyi-core"
+    },
+    {
+      "slug": "casting-and-chance"
+    },
+    {
+      "slug": "hd-lines-zhouyi"
+    },
+    {
+      "slug": "hd-mandala-wheel"
+    },
+    {
+      "slug": "meta-iching"
+    },
+    {
+      "slug": "oracle-to-chart"
+    },
+    {
+      "slug": "origin-accounts"
+    },
+    {
+      "slug": "schools-of-the-iching"
+    },
+    {
+      "slug": "the-recursive-iching-book"
+    },
+    {
+      "slug": "three-lenses-64"
+    }
+  ],
+  "repositories": [
+    {
+      "slug": "primary-sources",
+      "name": "Primary Sources — the classical text itself, in translation",
+      "members": [
+        {
+          "slug": "i-ching-chinese-original"
+        },
+        {
+          "slug": "i-ching-summarized"
+        },
+        {
+          "slug": "ten-wings"
+        },
+        {
+          "slug": "zhouyi-core"
+        }
+      ]
+    },
+    {
+      "slug": "synthesis",
+      "name": "Synthesis — cross-lens readings of the 64 hexagrams",
+      "members": [
+        {
+          "slug": "iching-hd-meta-categories"
+        },
+        {
+          "slug": "hd-lines-zhouyi"
+        },
+        {
+          "slug": "hd-mandala-wheel"
+        },
+        {
+          "slug": "meta-iching"
+        },
+        {
+          "slug": "the-recursive-iching-book"
+        },
+        {
+          "slug": "three-lenses-64"
+        }
+      ]
+    },
+    {
+      "slug": "readings",
+      "name": "Readings — thematic contemplative practices, not interpretation sets",
+      "members": [
+        {
+          "slug": "changing-lines-lens"
+        },
+        {
+          "slug": "repair-iching"
+        },
+        {
+          "slug": "casting-and-chance"
+        },
+        {
+          "slug": "oracle-to-chart"
+        }
+      ]
+    },
+    {
+      "slug": "history",
+      "name": "History — the books of the Changes, one book per node",
+      "members": [
+        {
+          "slug": "origin-accounts"
+        },
+        {
+          "slug": "schools-of-the-iching"
+        }
+      ]
+    }
+  ]
+}
