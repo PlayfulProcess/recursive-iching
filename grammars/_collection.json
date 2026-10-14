@@ -37,6 +37,7 @@
       "name": "Readings — thematic contemplative practices, not interpretation sets",
       "deck_slugs": [
         "casting-and-chance",
+        "changing-lines-lens",
         "oracle-to-chart",
         "repair-iching"
       ]
@@ -65,6 +66,21 @@
       "mark": "img/covers/casting-and-chance.svg",
       "blurb": "Coins, stalks, cards and shells: how an oracle is cast and what the odds are. The three-coin and yarrow methods, changing lines and the relating hexagram, four ways to render the I Ching as cards, Búz…",
       "path": "grammars/casting-and-chance/grammar.json",
+      "provenance": "living"
+    },
+    {
+      "slug": "changing-lines-lens",
+      "name": "The Changing-Lines Lens",
+      "type": "custom",
+      "branch": "readings",
+      "is_meta": false,
+      "default_preview": "course",
+      "nodes": 19,
+      "cover_image_url": null,
+      "thumb": "img/covers/changing-lines-lens.svg",
+      "mark": "img/covers/changing-lines-lens.svg",
+      "blurb": "The I Ching read one line and one direction at a time. It starts with the fifth line, the ruler's place, turning from yang to yin: what the tradition says about the six places, the four trigrams that …",
+      "path": "grammars/changing-lines-lens/grammar.json",
       "provenance": "living"
     },
     {

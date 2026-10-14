@@ -1,0 +1,25 @@
+{
+  "_note": "Course manifest for 'The Changing-Lines Lens'. Read by pages/course-viewer.html?course=changing-lines-lens. Chapters (ch-) come from grammars/changing-lines-lens/grammar.json and are hand-written; the twelve appendix tables (tbl-) are built by scripts/changing_lines.py --build. Edit the grammar, not this file.",
+  "title": "The Changing-Lines Lens",
+  "kicker": "The Recursive I Ching · one line, one direction, 32 hexagrams",
+  "description": "The I Ching read one line and one direction at a time, starting with the fifth line, the ruler's place, turning from yang to yin: the tradition on the six places, the four trigrams that lose their middle, the 32 solid fifth lines and the 32 broken ones they become, and how often a cast lands there. Twelve tables in the appendix.",
+  "sourceGrammar": "changing-lines-lens",
+  "chapterIdPrefix": "ch-",
+  "appendixIdPrefix": "tbl-",
+  "appendixTitle": "The twelve tables",
+  "appendixKicker": "built by scripts/changing_lines.py from Legge's public-domain text",
+  "appendixIntro": "",
+  "sectionOrder": [
+    "Reading",
+    "The figures",
+    "Checked and claimed",
+    "Sources"
+  ],
+  "appendixSectionOrder": [
+    "About this table",
+    "The 32 changes",
+    "The line texts (Legge)"
+  ],
+  "companions": {},
+  "draft": "A draft written with AI from the cited sources, for PlayfulProcess to revise. The tables, counts and odds are built by scripts/changing_lines.py from the public-domain texts in this repo; the groupings of the line texts are readings, not rules."
+}

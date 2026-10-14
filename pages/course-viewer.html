@@ -87,7 +87,7 @@
 </style>
 </head>
 <body>
-<script src="../site-header.js?v=50"></script>
+<script src="../site-header.js?v=51"></script>
 <site-header active="course"></site-header>
 <div class="wrap">
   <aside>
@@ -144,6 +144,7 @@ const COURSES = {
   'schools-of-the-iching': { manifest: '../course/schools-of-the-iching.manifest.json' },
   'oracle-to-chart': { manifest: '../course/oracle-to-chart.manifest.json' },
   'casting-and-chance': { manifest: '../course/casting-and-chance.manifest.json' },
+  'changing-lines-lens': { manifest: '../course/changing-lines-lens.manifest.json' },
 };
 // The painting for a course, on its first chapter only. Contained, never cropped; the caption names it.
 async function showCourseArt(id){
@@ -244,7 +245,7 @@ async function main(){
   // —— content ——
   const meta = current.metadata || {};
   $('#cintro').textContent = isAppendix
-    ? (manifest.appendixTitle || 'Patterns across eras') + ' · a cross-cutting thread, not a single era'
+    ? (manifest.appendixTitle || 'Patterns across eras') + ' · ' + (manifest.appendixKicker || 'a cross-cutting thread, not a single era')
     : `${manifest.title} · chapter ${chapterItems.findIndex(it => it.id === current.id) + 1} of ${chapterItems.length}`;
   $('#ctitle').textContent = current.name;
 

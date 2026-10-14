@@ -71,6 +71,7 @@
     ['schools-of-the-iching', 'Schools of the I Ching — how each school reads a line', PFX + 'pages/course-viewer.html?course=schools-of-the-iching'],
     ['oracle-to-chart', 'From Oracle to Chart — a draft course', PFX + 'pages/course-viewer.html?course=oracle-to-chart'],
     ['casting-and-chance', 'Casting and Chance — coins, stalks, cards and shells', PFX + 'pages/course-viewer.html?course=casting-and-chance'],
+    ['changing-lines-lens', 'The Changing-Lines Lens — one line, one direction, 32 hexagrams', PFX + 'pages/course-viewer.html?course=changing-lines-lens'],
   ];
   const TOOLS = [
     ['github', 'GitHub ↗', 'https://github.com/PlayfulProcess/recursive-iching', 't-github', true],
