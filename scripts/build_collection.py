@@ -58,6 +58,7 @@ BRANCH_OF = {
     "origin-accounts":        "history",
     "oracle-to-chart":        "readings",
     "casting-and-chance":     "readings",
+    "changing-lines-lens":    "readings",
 }
 
 # slug -> (sortable year, display label, provenance). Only the classical text itself

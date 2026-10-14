@@ -1,5 +1,24 @@
 # Changelog — The Recursive I Ching
 
+## October 13, 2026 (later) — The Changing-Lines Lens: the I Ching read one line and one direction at a time
+
+- **`grammars/changing-lines-lens/`** (new, draft, `import_visibility: "private"`): PlayfulProcess's question of Oct 13, what
+  yang turning to yin in the fifth line means across every hexagram where it can happen. Seven chapters: the lens (one place,
+  one direction, 32 hexagrams); what the tradition says about the six places (Legge's Introduction on correct places, centres
+  and correlates; the Great Commentary on the third and fifth places; Wang Bi on the ruler; Li Guangdi's two rulers named),
+  checked against the verdict words of the 384 Chinese line texts; the four trigrams with a solid middle line (Qian, Kan, Xun,
+  Dui, not Gen) and where they go; the 32 solid fifth lines; the 32 broken fifth lines they become; how often a cast lands there
+  (a 9 in fifth place 1 in 8 by coins, 3 in 16 by yarrow); reading with the lens. Appendix: all twelve tables (6 places × 2
+  directions × 32 hexagrams) with relating hexagram, changing trigram, Legge's line text and Small Image.
+- **`scripts/changing_lines.py`** (new): builds the twelve tables from `hexagram-binary.json`, `zhouyi-core`,
+  `legge-appendices.json` and `i-ching-chinese-original`; checks that Legge's 384 lines name the polarity the binary gives,
+  that each table has 32 rows and the two directions are inverse, and that line 5 yang to yin maps Qian→Li, Kan→Kun, Xun→Gen,
+  Dui→Zhen; counts the verdict words by place; `--check` fails if the tables drift or the chapters stop quoting a figure.
+  Added to the pre-push list in `CLAUDE.md`.
+- Manifest `course/changing-lines-lens.manifest.json`; the course viewer, the Courses menu and the home page link to it;
+  collection branch `readings`; `site-header.js` version 51.
+- `docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md`: the new folder decided (a new Private grammar on the next import).
+
 ## October 13, 2026 — Casting and Chance: a draft course on how an oracle is cast and what the odds are
 
 - **`grammars/casting-and-chance/`** (new, draft, `import_visibility: "private"`): nine chapters answering PlayfulProcess's

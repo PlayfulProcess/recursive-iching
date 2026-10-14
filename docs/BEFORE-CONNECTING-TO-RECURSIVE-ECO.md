@@ -258,3 +258,11 @@ The schools reference (`schools-of-the-iching`) and the course (`oracle-to-chart
 
 Every number in it is computed by `scripts/casting_odds.py`, which fails if the grammar stops quoting them. The course is read by
 `pages/course-viewer.html?course=casting-and-chance` through `course/casting-and-chance.manifest.json`.
+
+## Oct 13 2026 (later): one more draft folder
+
+| Folder | How it is built | What the importer does | Why |
+|---|---|---|---|
+| `changing-lines-lens` | chapters (`ch-`) hand-written; the twelve appendix tables (`tbl-`) built by `scripts/changing_lines.py --build`; `import_visibility: "private"`, no `_source_of_truth` or `_generated` stamp | creates a NEW grammar on the next import, **Private** | the draft course reading the I Ching one line and one direction at a time, starting with line 5 yang to yin (PlayfulProcess's question of Oct 13). Same pattern as `casting-and-chance`. After the import, put its id in `ids.json` (not in `_public_now` until it is public). An app edit to a `tbl-` node would be undone by the next `--build`, and `--check` fails until it is: edit the line texts in `zhouyi-core` or `legge-appendices.json` instead |
+
+The course is read by `pages/course-viewer.html?course=changing-lines-lens` through `course/changing-lines-lens.manifest.json`.
