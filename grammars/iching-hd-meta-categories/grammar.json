@@ -5,18 +5,16 @@
     "source": "recursive.eco grammar ad36491a-b504-4b7f-87aa-7337cc1bd0e3, pulled 2026-09-06 via MCP get_grammar; the repo's three-lenses-64 is the earlier thin copy (names + keywords only)"
   },
   "name": "I Ching HD Meta-Categories: Three Lenses for Viewing the 64 Hexagrams",
-  "description": "This interpretation maps the 64 I Ching hexagrams to Human Design 'gates'—a synthesis channeled by Ra Uru Hu in 1987 after an eight-day encounter with 'the Voice' on Ibiza. The system is only about 30 years old, which means we're still discovering what it actually describes, if anything beyond symbolic vocabulary. Ra claimed the Voice transmitted a complete system mapping I Ching hexagrams around an astrological wheel in specific relationships to planetary positions. Whether this represents genuine cosmic blueprints, a playful reconfiguration of ancient symbolic systems, or simply altered consciousness creating coherent pattern, remains genuinely open. What's documented: many people find the 'types' (Manifestor, Generator, Projector, Reflector, Manifesting Generator) and gate activations offer useful language for recognizing their patterns. The identity game is always dangerous, especially when systems are lifted from their traditional contexts and sold as objective truth. Over-identification with any typology can become a cage. That said, personally discovering I was supposedly a 'Projector' rather than trying to operate like a 'Generator' released me from exhausting patterns—it gave me permission to develop recursive.eco intimately rather than forcing myself into productivity modes that never fit. That release alone makes the system worth studying, even if it's 'just' a useful fiction. Whether it serves you is yours to discover. The gates maintain exact I Ching numbering (Gate 1 = Hexagram 1, etc.) and are arranged around the Rave Mandala wheel in Fu Xi sequence. Each gate occupies approximately 5.625 degrees, with some gates spanning two zodiac signs. Use this as contemplative material for self-reflection and pattern recognition, not as fixed identity or limitation. Hold it lightly. Fork it freely.",
+  "description": "This interpretation maps the 64 I Ching hexagrams to Human Design 'gates': a synthesis Ra Uru Hu said he received in January 1987 on Ibiza, during an eight-day encounter with what he called 'the Voice'. The system is less than forty years old, which means we are still discovering what it actually describes, if anything beyond symbolic vocabulary. Ra said the Voice transmitted a complete system placing the I Ching hexagrams around an astrological wheel, in fixed relation to planetary positions. Whether this represents a real blueprint, a playful reconfiguration of ancient symbolic systems, or altered consciousness creating a coherent pattern remains open. What's documented: many people find the 'types' (Manifestor, Generator, Projector, Reflector, Manifesting Generator) and gate activations useful language for recognizing their patterns. The identity game can be risky, especially when systems are lifted from their traditional contexts and sold as objective truth, and over-identification with any typology can become a cage. Some people find a type releases them from patterns that never fit them; whether it serves you is yours to discover. The gates keep the I Ching's numbering (Gate 1 = Hexagram 1, and so on) and are arranged around the Rave Mandala wheel in the Fu Xi binary sequence. Each gate occupies 5.625 degrees, and some gates span two zodiac signs. Use this as contemplative material for self-reflection and pattern recognition, not as fixed identity or limitation. Hold it lightly. Fork it freely.",
   "cover_image_url": "https://commons.wikimedia.org/wiki/File:Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg",
-  "grammar_type": "iching",
+  "grammar_type": "custom",
   "tags": [
     "human-design",
     "iching",
     "gates",
     "energetic-archetypes",
     "bodygraph",
-    "oracle",
-    "human-design",
-    "hd"
+    "oracle"
   ],
   "creator_name": "PlayfulProcess",
   "creator_link": "https://recursive.eco/pages/grammar-viewer.html?type=custom&id=ad36491a-b504-4b7f-87aa-7337cc1bd0e3",
@@ -26,7 +24,7 @@
       "number": 1,
       "name": "Creative Power",
       "symbol": "䷀",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 1,
       "sections": {
         "Image": "Heaven's movement is full of power. Thus the superior one makes themselves strong and untiring.",
@@ -52,14 +50,16 @@
         "trigram_above": "heaven",
         "trigram_below": "heaven"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-01.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-01.svg",
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-2",
       "number": 2,
       "name": "Receptive Flow",
       "symbol": "䷁",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 2,
       "sections": {
         "Image": "The earth's condition is receptive devotion. Thus the superior one carries all things with spacious virtue.",
@@ -85,14 +85,16 @@
         "trigram_above": "earth",
         "trigram_below": "earth"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-02.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-02.svg",
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-3",
       "number": 3,
       "name": "Difficulty at the Beginning",
       "symbol": "䷂",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 3,
       "sections": {
         "Image": "Thunder and water mix: difficulty at the beginning. The superior one brings order out of chaos.",
@@ -118,14 +120,16 @@
         "trigram_above": "water",
         "trigram_below": "thunder"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-03.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-03.svg",
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-4",
       "number": 4,
       "name": "Youthful Folly",
       "symbol": "䷃",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 4,
       "sections": {
         "Image": "A spring flows from the base of the mountain: the image of youth. The superior one develops character through thorough actions.",
@@ -151,14 +155,16 @@
         "trigram_above": "mountain",
         "trigram_below": "water"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-04.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-04.svg",
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-5",
       "number": 5,
       "name": "Waiting",
       "symbol": "䷄",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 5,
       "sections": {
         "Image": "Clouds rise up to heaven: the image of waiting. The superior one eats, drinks, and remains serene.",
@@ -184,14 +190,16 @@
         "trigram_above": "water",
         "trigram_below": "heaven"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-05.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-05.svg",
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-6",
       "number": 6,
       "name": "Conflict",
       "symbol": "䷅",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 6,
       "sections": {
         "Image": "Heaven and water move in opposite directions: the image of conflict. The superior one carefully considers the beginning when undertaking affairs.",
@@ -217,14 +225,16 @@
         "trigram_above": "heaven",
         "trigram_below": "water"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-06.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-06.svg",
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-7",
       "number": 7,
       "name": "The Army",
       "symbol": "䷆",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 7,
       "sections": {
         "Image": "Water in the earth: the army's image. The superior one increases their masses by generous treatment of the people.",
@@ -250,14 +260,16 @@
         "trigram_above": "earth",
         "trigram_below": "water"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-07.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-07.svg",
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-8",
       "number": 8,
       "name": "Holding Together",
       "symbol": "䷇",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 8,
       "sections": {
         "Image": "Water flows over earth: the image of holding together. Ancient kings established states and maintained connection with feudal lords.",
@@ -283,14 +295,16 @@
         "trigram_above": "water",
         "trigram_below": "earth"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-08.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-08.svg",
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-9",
       "number": 9,
       "name": "Taming Power of the Small",
       "symbol": "䷈",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 9,
       "sections": {
         "Image": "Wind moves across heaven: taming power of the small. The superior one refines the outward aspect of their character.",
@@ -316,14 +330,16 @@
         "trigram_above": "wind",
         "trigram_below": "heaven"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-09.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-09.svg",
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-10",
       "number": 10,
       "name": "Treading",
       "symbol": "䷉",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 10,
       "sections": {
         "Image": "Heaven above, the lake below: treading. The superior one discriminates between high and low and thereby fortifies the thinking of the people.",
@@ -349,14 +365,16 @@
         "trigram_above": "heaven",
         "trigram_below": "lake"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-10.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-10.svg",
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-11",
       "number": 11,
       "name": "Peace",
       "symbol": "䷊",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 11,
       "sections": {
         "Image": "Heaven and earth unite: the image of peace. The sovereign divides and completes the course of heaven and earth.",
@@ -382,14 +400,16 @@
         "trigram_above": "earth",
         "trigram_below": "heaven"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-11.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-11.svg",
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-12",
       "number": 12,
       "name": "Standstill",
       "symbol": "䷋",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 12,
       "sections": {
         "Image": "Heaven and earth do not unite: the image of standstill. The superior one falls back upon their inner worth to escape difficulties.",
@@ -415,14 +435,16 @@
         "trigram_above": "heaven",
         "trigram_below": "earth"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-12.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-12.svg",
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-13",
       "number": 13,
       "name": "Fellowship",
       "symbol": "䷌",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 13,
       "sections": {
         "Image": "Heaven together with fire: the image of fellowship. The superior one organizes clans and makes distinctions between things.",
@@ -448,14 +470,16 @@
         "trigram_above": "heaven",
         "trigram_below": "fire"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-13.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-13.svg",
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-14",
       "number": 14,
       "name": "Possession in Great Measure",
       "symbol": "䷍",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 14,
       "sections": {
         "Image": "Fire in heaven above: possession in great measure. The superior one curbs evil and furthers good, obedient to the benevolent will of heaven.",
@@ -481,14 +505,16 @@
         "trigram_above": "fire",
         "trigram_below": "heaven"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-14.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-14.svg",
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-15",
       "number": 15,
       "name": "Modesty",
       "symbol": "䷎",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 15,
       "sections": {
         "Image": "Within the earth, a mountain: modesty. The superior one reduces what is too much and augments what is too little.",
@@ -514,14 +540,16 @@
         "trigram_above": "earth",
         "trigram_below": "mountain"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-15.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-15.svg",
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-16",
       "number": 16,
       "name": "Enthusiasm",
       "symbol": "䷏",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 16,
       "sections": {
         "Image": "Thunder comes resounding out of the earth: enthusiasm. The ancient kings made music to honor merit.",
@@ -547,14 +575,16 @@
         "trigram_above": "thunder",
         "trigram_below": "earth"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-16.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-16.svg",
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-17",
       "number": 17,
       "name": "Following",
       "symbol": "䷐",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 17,
       "sections": {
         "Image": "Thunder in the middle of the lake: following. The superior one at nightfall goes indoors for rest and recuperation.",
@@ -580,14 +610,16 @@
         "trigram_above": "lake",
         "trigram_below": "thunder"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-17.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-17.svg",
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-18",
       "number": 18,
       "name": "Work on the Decayed",
       "symbol": "䷑",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 18,
       "sections": {
         "Image": "The wind blows low on the mountain: decay. The superior one stirs up the people and strengthens their spirit.",
@@ -613,14 +645,16 @@
         "trigram_above": "mountain",
         "trigram_below": "wind"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-18.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-18.svg",
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-19",
       "number": 19,
       "name": "Approach",
       "symbol": "䷒",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 19,
       "sections": {
         "Image": "The earth above the lake: approach. The superior one is inexhaustible in their will to teach, and without limits in their tolerance and protection of the people.",
@@ -646,14 +680,16 @@
         "trigram_above": "earth",
         "trigram_below": "lake"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-19.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-19.svg",
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-20",
       "number": 20,
       "name": "Contemplation",
       "symbol": "䷓",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 20,
       "sections": {
         "Image": "The wind blows over the earth: contemplation. The ancient kings visited the regions of the world, contemplated the people, and gave them instruction.",
@@ -679,14 +715,16 @@
         "trigram_above": "wind",
         "trigram_below": "earth"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-20.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-20.svg",
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-21",
       "number": 21,
       "name": "Biting Through",
       "symbol": "䷔",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 21,
       "sections": {
         "Image": "Thunder and lightning: biting through. The ancient kings made firm the laws through clearly defined penalties.",
@@ -712,14 +750,16 @@
         "trigram_above": "fire",
         "trigram_below": "thunder"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-21.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-21.svg",
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-22",
       "number": 22,
       "name": "Grace",
       "symbol": "䷕",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 22,
       "sections": {
         "Image": "Fire at the foot of the mountain: grace. The superior one brings clarity to all matters of government but dares not decide controversial issues.",
@@ -745,14 +785,16 @@
         "trigram_above": "mountain",
         "trigram_below": "fire"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-22.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-22.svg",
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-23",
       "number": 23,
       "name": "Splitting Apart",
       "symbol": "䷖",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 23,
       "sections": {
         "Image": "The mountain rests on the earth: splitting apart. The superior one through generosity toward their subordinates ensures their own position.",
@@ -778,14 +820,16 @@
         "trigram_above": "mountain",
         "trigram_below": "earth"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-23.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-23.svg",
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-24",
       "number": 24,
       "name": "Return",
       "symbol": "䷗",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 24,
       "sections": {
         "Image": "Thunder within the earth: return. The ancient kings closed the passes at the time of solstice. Merchants and strangers did not go about, and the ruler did not travel through the provinces.",
@@ -811,14 +855,16 @@
         "trigram_above": "earth",
         "trigram_below": "thunder"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-24.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-24.svg",
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-25",
       "number": 25,
       "name": "Innocence",
       "symbol": "䷘",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 25,
       "sections": {
         "Image": "Under heaven thunder rolls: innocence. The ancient kings nourished all beings richly in accord with the time.",
@@ -844,14 +890,16 @@
         "trigram_above": "heaven",
         "trigram_below": "thunder"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-25.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-25.svg",
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-26",
       "number": 26,
       "name": "Taming Power of the Great",
       "symbol": "䷙",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 26,
       "sections": {
         "Image": "Heaven within the mountain: taming power of the great. The superior one acquires knowledge of many sayings of antiquity and deeds of the past to strengthen their character.",
@@ -877,14 +925,16 @@
         "trigram_above": "mountain",
         "trigram_below": "heaven"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-26.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-26.svg",
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-27",
       "number": 27,
       "name": "Nourishment",
       "symbol": "䷚",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 27,
       "sections": {
         "Image": "At the foot of the mountain, thunder: nourishment. The superior one is careful of their words and temperate in eating and drinking.",
@@ -910,14 +960,16 @@
         "trigram_above": "mountain",
         "trigram_below": "thunder"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-27.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-27.svg",
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-28",
       "number": 28,
       "name": "Preponderance of the Great",
       "symbol": "䷛",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 28,
       "sections": {
         "Image": "The lake rises above the trees: preponderance of the great. The superior one stands alone without fear and retreats from the world without regret.",
@@ -943,14 +995,16 @@
         "trigram_above": "lake",
         "trigram_below": "wind"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-28.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-28.svg",
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-29",
       "number": 29,
       "name": "The Abysmal Water",
       "symbol": "䷜",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 29,
       "sections": {
         "Image": "Water flows on uninterruptedly and reaches its goal: the abysmal repeated. The superior one walks in lasting virtue and carries on teaching.",
@@ -976,14 +1030,16 @@
         "trigram_above": "water",
         "trigram_below": "water"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-29.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-29.svg",
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-30",
       "number": 30,
       "name": "The Clinging Fire",
       "symbol": "䷝",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 30,
       "sections": {
         "Image": "Brightness rises twice: the image of fire. The great one, by perpetuating this brightness, illuminates the four quarters of the world.",
@@ -1009,14 +1065,16 @@
         "trigram_above": "fire",
         "trigram_below": "fire"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-30.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-30.svg",
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-31",
       "number": 31,
       "name": "Influence",
       "symbol": "䷞",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 31,
       "sections": {
         "Image": "A lake on the mountain: influence. The superior one encourages people to approach and accepts them.",
@@ -1042,14 +1100,16 @@
         "trigram_above": "lake",
         "trigram_below": "mountain"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-31.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-31.svg",
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-32",
       "number": 32,
       "name": "Duration",
       "symbol": "䷟",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 32,
       "sections": {
         "Image": "Thunder and wind: duration. The superior one stands firm and does not change their direction.",
@@ -1075,14 +1135,16 @@
         "trigram_above": "thunder",
         "trigram_below": "wind"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-32.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-32.svg",
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-33",
       "number": 33,
       "name": "Retreat",
       "symbol": "䷠",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 33,
       "sections": {
         "Image": "Mountain under heaven: retreat. The superior one keeps the inferior person at a distance, not angrily but with reserve.",
@@ -1108,14 +1170,16 @@
         "trigram_above": "heaven",
         "trigram_below": "mountain"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-33.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-33.svg",
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-34",
       "number": 34,
       "name": "Power of the Great",
       "symbol": "䷡",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 34,
       "sections": {
         "Image": "Thunder in heaven above: power of the great. The superior one does not tread paths that do not accord with established order.",
@@ -1141,14 +1205,16 @@
         "trigram_above": "thunder",
         "trigram_below": "heaven"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-34.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-34.svg",
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-35",
       "number": 35,
       "name": "Progress",
       "symbol": "䷢",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 35,
       "sections": {
         "Image": "The sun rises over the earth: progress. The superior one brightens their own virtue.",
@@ -1174,14 +1240,16 @@
         "trigram_above": "fire",
         "trigram_below": "earth"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-35.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-35.svg",
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-36",
       "number": 36,
       "name": "Darkening of the Light",
       "symbol": "䷣",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 36,
       "sections": {
         "Image": "The light has sunk into the earth: darkening of the light. The superior one lives with the great mass veiling their light, yet still bright.",
@@ -1207,14 +1275,16 @@
         "trigram_above": "earth",
         "trigram_below": "fire"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-36.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-36.svg",
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-37",
       "number": 37,
       "name": "The Family",
       "symbol": "䷤",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 37,
       "sections": {
         "Image": "Wind comes forth from fire: the family. The superior one has substance in their words and duration in their way of life.",
@@ -1240,14 +1310,16 @@
         "trigram_above": "wind",
         "trigram_below": "fire"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-37.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-37.svg",
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-38",
       "number": 38,
       "name": "Opposition",
       "symbol": "䷥",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 38,
       "sections": {
         "Image": "Above, fire; below, the lake: opposition. The superior one retains their individuality in community.",
@@ -1273,14 +1345,16 @@
         "trigram_above": "fire",
         "trigram_below": "lake"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-38.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-38.svg",
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-39",
       "number": 39,
       "name": "Obstruction",
       "symbol": "䷦",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 39,
       "sections": {
         "Image": "Water on the mountain: obstruction. The superior one turns their attention to themselves and molds their character.",
@@ -1306,14 +1380,16 @@
         "trigram_above": "water",
         "trigram_below": "mountain"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-39.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-39.svg",
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-40",
       "number": 40,
       "name": "Deliverance",
       "symbol": "䷧",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 40,
       "sections": {
         "Image": "Thunder and rain set in: deliverance. The superior one pardons mistakes and forgives misdeeds.",
@@ -1339,14 +1415,16 @@
         "trigram_above": "thunder",
         "trigram_below": "water"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-40.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-40.svg",
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-41",
       "number": 41,
       "name": "Decrease",
       "symbol": "䷨",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 41,
       "sections": {
         "Image": "At the foot of the mountain, the lake: decrease. The superior one controls their anger and restrains their instincts.",
@@ -1372,14 +1450,16 @@
         "trigram_above": "mountain",
         "trigram_below": "lake"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-41.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-41.svg",
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-42",
       "number": 42,
       "name": "Increase",
       "symbol": "䷩",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 42,
       "sections": {
         "Image": "Wind and thunder: increase. The superior one, seeing what is good, imitates it; having faults, they rid themselves of them.",
@@ -1405,14 +1485,16 @@
         "trigram_above": "wind",
         "trigram_below": "thunder"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-42.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-42.svg",
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-43",
       "number": 43,
       "name": "Breakthrough",
       "symbol": "䷪",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 43,
       "sections": {
         "Image": "The lake has risen up to heaven: breakthrough. The superior one distributes riches downward and refrains from resting on their virtue.",
@@ -1438,14 +1520,16 @@
         "trigram_above": "lake",
         "trigram_below": "heaven"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-43.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-43.svg",
+      "subcategory": "heaven",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-44",
       "number": 44,
       "name": "Coming to Meet",
       "symbol": "䷫",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 44,
       "sections": {
         "Image": "Under heaven, wind: coming to meet. The prince proclaims commands to the four quarters of heaven.",
@@ -1471,14 +1555,16 @@
         "trigram_above": "heaven",
         "trigram_below": "wind"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-44.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-44.svg",
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-45",
       "number": 45,
       "name": "Gathering Together",
       "symbol": "䷬",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 45,
       "sections": {
         "Image": "Over the earth, the lake: gathering together. The superior one renews their weapons to meet the unforeseen.",
@@ -1504,14 +1590,16 @@
         "trigram_above": "lake",
         "trigram_below": "earth"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-45.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-45.svg",
+      "subcategory": "earth",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-46",
       "number": 46,
       "name": "Pushing Upward",
       "symbol": "䷭",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 46,
       "sections": {
         "Image": "Within the earth, wood grows: pushing upward. The superior one of devoted character heaps up small things to achieve high and great.",
@@ -1537,14 +1625,16 @@
         "trigram_above": "earth",
         "trigram_below": "wind"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-46.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-46.svg",
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-47",
       "number": 47,
       "name": "Oppression",
       "symbol": "䷮",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 47,
       "sections": {
         "Image": "There is no water in the lake: oppression. The superior one stakes their life on following their will.",
@@ -1570,14 +1660,16 @@
         "trigram_above": "lake",
         "trigram_below": "water"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-47.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-47.svg",
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-48",
       "number": 48,
       "name": "The Well",
       "symbol": "䷯",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 48,
       "sections": {
         "Image": "Water over wood: the well. The superior one encourages the people at their work and exhorts them to help one another.",
@@ -1603,14 +1695,16 @@
         "trigram_above": "water",
         "trigram_below": "wind"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-48.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-48.svg",
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-49",
       "number": 49,
       "name": "Revolution",
       "symbol": "䷰",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 49,
       "sections": {
         "Image": "Fire in the lake: revolution. The superior one sets the calendar in order and makes the seasons clear.",
@@ -1636,14 +1730,16 @@
         "trigram_above": "lake",
         "trigram_below": "fire"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-49.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-49.svg",
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-50",
       "number": 50,
       "name": "The Cauldron",
       "symbol": "䷱",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 50,
       "sections": {
         "Image": "Fire over wood: the cauldron. The superior one consolidates their fate by making their position correct.",
@@ -1669,14 +1765,16 @@
         "trigram_above": "fire",
         "trigram_below": "wind"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-50.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-50.svg",
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-51",
       "number": 51,
       "name": "The Arousing",
       "symbol": "䷲",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 51,
       "sections": {
         "Image": "Thunder repeated: shock. The superior one in fear and trembling sets their life in order and examines themselves.",
@@ -1702,14 +1800,16 @@
         "trigram_above": "thunder",
         "trigram_below": "thunder"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-51.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-51.svg",
+      "subcategory": "thunder",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-52",
       "number": 52,
       "name": "Keeping Still",
       "symbol": "䷳",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 52,
       "sections": {
         "Image": "Mountains standing close together: keeping still. The superior one does not permit their thoughts to go beyond their situation.",
@@ -1735,14 +1835,16 @@
         "trigram_above": "mountain",
         "trigram_below": "mountain"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-52.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-52.svg",
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-53",
       "number": 53,
       "name": "Development",
       "symbol": "䷴",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 53,
       "sections": {
         "Image": "On the mountain, a tree: development. The superior one abides in dignity and virtue, in order to improve the mores.",
@@ -1768,14 +1870,16 @@
         "trigram_above": "wind",
         "trigram_below": "mountain"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-53.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-53.svg",
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-54",
       "number": 54,
       "name": "The Marrying Maiden",
       "symbol": "䷵",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 54,
       "sections": {
         "Image": "Thunder over the lake: the marrying maiden. The superior one understands the transitory in the light of the eternity of the end.",
@@ -1801,14 +1905,16 @@
         "trigram_above": "thunder",
         "trigram_below": "lake"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-54.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-54.svg",
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-55",
       "number": 55,
       "name": "Abundance",
       "symbol": "䷶",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 55,
       "sections": {
         "Image": "Both thunder and lightning come: abundance. The superior one decides lawsuits and carries out punishments.",
@@ -1834,14 +1940,16 @@
         "trigram_above": "thunder",
         "trigram_below": "fire"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-55.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-55.svg",
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-56",
       "number": 56,
       "name": "The Wanderer",
       "symbol": "䷷",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 56,
       "sections": {
         "Image": "Fire on the mountain: the wanderer. The superior one is clear-minded and cautious in imposing penalties, and protracts no lawsuits.",
@@ -1867,14 +1975,16 @@
         "trigram_above": "fire",
         "trigram_below": "mountain"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-56.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-56.svg",
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-57",
       "number": 57,
       "name": "The Gentle",
       "symbol": "䷸",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 57,
       "sections": {
         "Image": "Winds following one upon the other: the gentle. The superior one spreads their commands abroad and carries out their undertakings.",
@@ -1900,14 +2010,16 @@
         "trigram_above": "wind",
         "trigram_below": "wind"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-57.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-57.svg",
+      "subcategory": "wind",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-58",
       "number": 58,
       "name": "The Joyous",
       "symbol": "䷹",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 58,
       "sections": {
         "Image": "Lakes resting one on the other: the joyous. The superior one joins with friends for discussion and practice.",
@@ -1933,14 +2045,16 @@
         "trigram_above": "lake",
         "trigram_below": "lake"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-58.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-58.svg",
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-59",
       "number": 59,
       "name": "Dispersion",
       "symbol": "䷺",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 59,
       "sections": {
         "Image": "The wind drives over the water: dispersion. The ancient kings sacrificed to the Lord and built temples.",
@@ -1966,14 +2080,16 @@
         "trigram_above": "wind",
         "trigram_below": "water"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-59.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-59.svg",
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-60",
       "number": 60,
       "name": "Limitation",
       "symbol": "䷻",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 60,
       "sections": {
         "Image": "Water over lake: limitation. The superior one creates number and measure and examines the nature of virtue and correct conduct.",
@@ -1999,14 +2115,16 @@
         "trigram_above": "water",
         "trigram_below": "lake"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-60.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-60.svg",
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-61",
       "number": 61,
       "name": "Inner Truth",
       "symbol": "䷼",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 61,
       "sections": {
         "Image": "Wind over lake: inner truth. The superior one discusses criminal cases in order to delay executions.",
@@ -2032,14 +2150,16 @@
         "trigram_above": "wind",
         "trigram_below": "lake"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-61.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-61.svg",
+      "subcategory": "lake",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-62",
       "number": 62,
       "name": "Preponderance of the Small",
       "symbol": "䷽",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 62,
       "sections": {
         "Image": "Thunder on the mountain: preponderance of the small. The superior one is extraordinarily conscientious in conduct, extraordinarily thoughtful in grief, and extraordinarily economical in expenditure.",
@@ -2065,14 +2185,16 @@
         "trigram_above": "thunder",
         "trigram_below": "mountain"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-62.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-62.svg",
+      "subcategory": "mountain",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-63",
       "number": 63,
       "name": "After Completion",
       "symbol": "䷾",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 63,
       "sections": {
         "Image": "Water over fire: after completion. The superior one takes thought of misfortune and arms themself against it in advance.",
@@ -2098,14 +2220,16 @@
         "trigram_above": "water",
         "trigram_below": "fire"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-63.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-63.svg",
+      "subcategory": "fire",
+      "grammar_type": "iching"
     },
     {
       "id": "hex-64",
       "number": 64,
       "name": "Before Completion",
       "symbol": "䷿",
-      "category": "hexagram",
+      "category": "trigram",
       "sort_order": 64,
       "sections": {
         "Image": "Fire over water: before completion. The superior one is careful in the differentiation of things so that each finds its place.",
@@ -2131,14 +2255,16 @@
         "trigram_above": "fire",
         "trigram_below": "water"
       },
-      "image_url": "https://iching.recursive.eco/img/hd/gate-64.svg"
+      "image_url": "https://iching.recursive.eco/img/hd/gate-64.svg",
+      "subcategory": "water",
+      "grammar_type": "iching"
     },
     {
       "id": "sign-aquarius",
       "name": "Aquarius: Innovation Through Individuality",
       "symbol": "♒",
-      "category": "meta-category",
-      "sort_order": 65,
+      "category": "zodiac-synthesis",
+      "sort_order": 11,
       "sections": {
         "gift": "Natural innovation through being genuinely yourself. Your differentness isn't performed; it emerges from authentic desire and honest expression. You inspire others to be unique by modeling that individuality serves evolution.",
         "shadow": "Rebellion for rebellion's sake, speaking without listening, forcing uniqueness rather than allowing authentic expression, or addiction to being an outsider.",
@@ -2159,14 +2285,24 @@
         "uniqueness"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-41",
+        "hex-19",
+        "hex-13",
+        "hex-49",
+        "hex-30"
+      ],
+      "parent_l3": "l3-signs",
+      "grammar_type": "iching",
+      "relationship_type": "emergence"
     },
     {
       "id": "sign-pisces",
       "name": "Pisces: Dissolution and Transcendence",
       "symbol": "♓",
-      "category": "meta-category",
-      "sort_order": 66,
+      "category": "zodiac-synthesis",
+      "sort_order": 12,
       "sections": {
         "gift": "Comfort with uncertainty and transition. You can hold space in the dissolving phase when forms are breaking down but new patterns haven't yet emerged. Your grace through crisis helps others trust the process of transformation.",
         "shadow": "Drowning in emotion, losing boundaries entirely, spiritual bypassing, getting lost in the liminal without emerging, or addiction to crisis states.",
@@ -2187,14 +2323,24 @@
         "liminality"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-55",
+        "hex-37",
+        "hex-63",
+        "hex-22",
+        "hex-36"
+      ],
+      "parent_l3": "l3-signs",
+      "grammar_type": "iching",
+      "relationship_type": "emergence"
     },
     {
       "id": "sign-aries",
       "name": "Aries: Initiation Through Challenge",
       "symbol": "♈",
-      "category": "meta-category",
-      "sort_order": 67,
+      "category": "zodiac-synthesis",
+      "sort_order": 1,
       "sections": {
         "gift": "Natural courage for new beginnings. You're willing to step into the unknown with innocent openness, can follow guidance even when it's uncomfortable, and grow through challenge without losing yourself in it.",
         "shadow": "Recklessness disguised as courage, following without discernment, controlling through force, shock addiction, or growth without integration.",
@@ -2215,14 +2361,24 @@
         "beginning"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-25",
+        "hex-17",
+        "hex-21",
+        "hex-51",
+        "hex-42"
+      ],
+      "parent_l3": "l3-signs",
+      "grammar_type": "iching",
+      "relationship_type": "emergence"
     },
     {
       "id": "sign-taurus",
       "name": "Taurus: Grounding Innovation in Form",
       "symbol": "♉",
-      "category": "meta-category",
-      "sort_order": 68,
+      "category": "zodiac-synthesis",
+      "sort_order": 2,
       "sections": {
         "gift": "Patience with the forming process. You can take innovative chaos and slowly, sustainably build it into lasting form. Your consistent nourishment of new things helps them survive the vulnerable early stages.",
         "shadow": "Forcing form prematurely, over-nourishing to the point of smothering, getting stuck in renewal cycles without forward motion, or assimilating everything without discernment.",
@@ -2243,14 +2399,24 @@
         "material"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-3",
+        "hex-27",
+        "hex-24",
+        "hex-2",
+        "hex-23"
+      ],
+      "parent_l3": "l3-signs",
+      "grammar_type": "iching",
+      "relationship_type": "emergence"
     },
     {
       "id": "sign-gemini",
       "name": "Gemini: Communication and Connection",
       "symbol": "♊",
-      "category": "meta-category",
-      "sort_order": 69,
+      "category": "zodiac-synthesis",
+      "sort_order": 3,
       "sections": {
         "gift": "Natural bridge-building through communication. You can model authentically, stay present while connecting, express with contagious enthusiasm, and help diverse people gather around shared purpose.",
         "shadow": "Performing contribution rather than authentic modeling, scattered presence without depth, skill without substance, progress addiction, or gathering without discernment about who belongs.",
@@ -2271,14 +2437,24 @@
         "bridge-building"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-8",
+        "hex-20",
+        "hex-16",
+        "hex-35",
+        "hex-45"
+      ],
+      "parent_l3": "l3-signs",
+      "grammar_type": "iching",
+      "relationship_type": "emergence"
     },
     {
       "id": "sign-cancer",
       "name": "Cancer: Nurturing Through Boundaries",
       "symbol": "♋",
-      "category": "meta-category",
-      "sort_order": 70,
+      "category": "zodiac-synthesis",
+      "sort_order": 4,
       "sections": {
         "gift": "Wise protector energy. You know when to create safe pauses, can hold extremes with modesty, offer stillness when systems are overwhelmed, and support gradual development without forcing premature exposure.",
         "shadow": "Over-protection that prevents growth, extreme mood swings masked as sensitivity, stillness that becomes stuck, provocative testing that damages rather than strengthens, or slow development that's actually avoidance.",
@@ -2299,14 +2475,24 @@
         "pacing"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-12",
+        "hex-15",
+        "hex-52",
+        "hex-39",
+        "hex-53"
+      ],
+      "parent_l3": "l3-signs",
+      "grammar_type": "iching",
+      "relationship_type": "emergence"
     },
     {
       "id": "sign-leo",
       "name": "Leo: Creative Authority and Leadership",
       "symbol": "♌",
-      "category": "meta-category",
-      "sort_order": 71,
+      "category": "zodiac-synthesis",
+      "sort_order": 5,
       "sections": {
         "gift": "Leadership through authentic presence. You lead by being genuinely yourself, paying attention to details without losing vision, stimulating growth through your own vitality, and knowing when to step forward versus when to retreat.",
         "shadow": "Micromanagement disguised as detail orientation, restless wandering without purpose, manipulation through charisma, retreating from responsibility, or inflated sense of leadership role.",
@@ -2327,14 +2513,24 @@
         "vitality"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-62",
+        "hex-56",
+        "hex-31",
+        "hex-33",
+        "hex-7"
+      ],
+      "parent_l3": "l3-signs",
+      "grammar_type": "iching",
+      "relationship_type": "emergence"
     },
     {
       "id": "sign-virgo",
       "name": "Virgo: Refinement Through Analysis",
       "symbol": "♍",
-      "category": "meta-category",
-      "sort_order": 72,
+      "category": "zodiac-synthesis",
+      "sort_order": 6,
       "sections": {
         "gift": "Intelligent refinement. You can organize complexity into workable systems, know when to disperse rigid patterns, deliver yourself and others from mental traps, perfect without obsessing, and recognize when exhaustion signals needed change.",
         "shadow": "Analysis paralysis, dispersing connections through over-thinking, premature deliverance without integration, perfectionism that prevents completion, or pushing through exhaustion without rest.",
@@ -2355,14 +2551,24 @@
         "breakthrough"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-4",
+        "hex-59",
+        "hex-40",
+        "hex-64",
+        "hex-47"
+      ],
+      "parent_l3": "l3-signs",
+      "grammar_type": "iching",
+      "relationship_type": "emergence"
     },
     {
       "id": "sign-libra",
       "name": "Libra: Relationship Through Friction",
       "symbol": "♎",
-      "category": "meta-category",
-      "sort_order": 73,
+      "category": "zodiac-synthesis",
+      "sort_order": 7,
       "sections": {
         "gift": "Honest relationship. You can handle friction as intimacy-building rather than relationship-destroying, push for growth without domination, repair damage through patient work, access deep wisdom, and penetrate gently to truth.",
         "shadow": "Conflict avoidance disguised as peace-keeping, pushing agendas rather than authentic growth, fixing others instead of working on yourself, depth without boundaries, or manipulation through gentleness.",
@@ -2383,14 +2589,24 @@
         "wisdom"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-6",
+        "hex-46",
+        "hex-18",
+        "hex-48",
+        "hex-57"
+      ],
+      "parent_l3": "l3-signs",
+      "grammar_type": "iching",
+      "relationship_type": "emergence"
     },
     {
       "id": "sign-scorpio",
       "name": "Scorpio: Transformation Through Intensity",
       "symbol": "♏",
-      "category": "meta-category",
-      "sort_order": 74,
+      "category": "zodiac-synthesis",
+      "sort_order": 8,
       "sections": {
         "gift": "Transformative depth. You can endure intensity that transforms, discover authentic values through crisis, handle extreme pressure, meet shadow material without collapsing, and create from what most would consider destruction.",
         "shadow": "Intensity addiction, rigid values that become dogma, being crushed by excess, paranoid projection onto what meets you, or creative destruction without creation.",
@@ -2411,14 +2627,24 @@
         "power"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-32",
+        "hex-50",
+        "hex-28",
+        "hex-44",
+        "hex-1"
+      ],
+      "parent_l3": "l3-signs",
+      "grammar_type": "iching",
+      "relationship_type": "emergence"
     },
     {
       "id": "sign-sagittarius",
       "name": "Sagittarius: Seeking Truth and Meaning",
       "symbol": "♐",
-      "category": "meta-category",
-      "sort_order": 75,
+      "category": "zodiac-synthesis",
+      "sort_order": 9,
       "sections": {
         "gift": "Expansive wisdom. You can breakthrough to larger patterns, share abundance generously, wield power with philosophical understanding, focus broad vision through small details, and wait with active preparation.",
         "shadow": "Insight addiction without integration, hoarding resources rather than sharing abundance, power without wisdom, scattered focus that never deepens, or passive waiting without preparation.",
@@ -2439,14 +2665,24 @@
         "wisdom"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-43",
+        "hex-14",
+        "hex-34",
+        "hex-9",
+        "hex-5"
+      ],
+      "parent_l3": "l3-signs",
+      "grammar_type": "iching",
+      "relationship_type": "emergence"
     },
     {
       "id": "sign-capricorn",
       "name": "Capricorn: Mastery Through Structure",
       "symbol": "♑",
-      "category": "meta-category",
-      "sort_order": 76,
+      "category": "zodiac-synthesis",
+      "sort_order": 10,
       "sections": {
         "gift": "Wise structure-building. You can accumulate power responsibly, create peace through clear agreements, tread carefully without paralysis, maintain vitality under pressure, and use opposition to refine rather than destroy.",
         "shadow": "Control disguised as structure, superficial harmony that suppresses conflict, treading so carefully nothing moves, forced joy, or opposition for its own sake.",
@@ -2467,14 +2703,24 @@
         "refinement"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-26",
+        "hex-11",
+        "hex-10",
+        "hex-58",
+        "hex-38"
+      ],
+      "parent_l3": "l3-signs",
+      "grammar_type": "iching",
+      "relationship_type": "emergence"
     },
     {
       "id": "chakra-muladhara",
       "name": "Root Chakra (Muladhara)",
       "symbol": "🔴",
-      "category": "meta-category",
-      "sort_order": 77,
+      "category": "chakra-synthesis",
+      "sort_order": 1,
       "sections": {
         "Element": "Earth - The element of stability, foundation, and material manifestation. Earth energy in these hexagrams emphasizes patience, receptivity to what is, and the slow, inevitable process of taking form.",
         "Practice": "Root Chakra contemplation through these hexagrams invites grounding practices: sitting meditation feeling weight and gravity, walking barefoot on earth, working with hands in soil, honoring ancestors and lineage, examining your relationship with material security and survival fears, noticing when you're ungrounded (scattered, anxious, dissociated) versus rooted (present, stable, here). The hexagrams offer different faces of grounding—from Receptive's yielding stability to Stillness's concentrated presence to Return's cyclical renewal.",
@@ -2500,14 +2746,28 @@
         "ancestors"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-2",
+        "hex-8",
+        "hex-15",
+        "hex-23",
+        "hex-24",
+        "hex-26",
+        "hex-52"
+      ],
+      "element": "Earth",
+      "location": "Base of spine",
+      "parent_l3": "l3-chakras",
+      "grammar_type": "chakra",
+      "relationship_type": "emergence"
     },
     {
       "id": "chakra-svadhisthana",
       "name": "Sacral Chakra (Svadhisthana)",
       "symbol": "🟠",
-      "category": "meta-category",
-      "sort_order": 78,
+      "category": "chakra-synthesis",
+      "sort_order": 2,
       "sections": {
         "Element": "Water - The element of flow, emotion, adaptability, and deep nourishment. Water in these hexagrams emphasizes allowing, dissolving boundaries, intimacy, and the generative power of following natural currents.",
         "Practice": "Sacral Chakra work through these hexagrams invites practices of flow and generation: moving with fluidity (dance, yoga, swimming), creative expression without judgment, exploring your relationship with desire and pleasure, emotional processing that allows feelings to flow rather than dam up, examining blocks to creativity and sexuality, noticing when you're forcing versus allowing. The hexagrams offer different aspects of water wisdom—from Waiting's patient flow to Intimacy's boundary dissolution to Growth's natural cycles of increase.",
@@ -2535,14 +2795,29 @@
         "generation"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-3",
+        "hex-5",
+        "hex-27",
+        "hex-29",
+        "hex-42",
+        "hex-48",
+        "hex-59",
+        "hex-60"
+      ],
+      "element": "Water",
+      "location": "Lower abdomen",
+      "parent_l3": "l3-chakras",
+      "grammar_type": "chakra",
+      "relationship_type": "emergence"
     },
     {
       "id": "chakra-manipura",
       "name": "Solar Plexus Chakra (Manipura)",
       "symbol": "🟡",
-      "category": "meta-category",
-      "sort_order": 79,
+      "category": "chakra-synthesis",
+      "sort_order": 3,
       "sections": {
         "Element": "Fire - The element of transformation, will, warmth, and digestion. Fire in these hexagrams emphasizes the active, yang, transformative power that metabolizes experience and generates energy for action.",
         "Practice": "Solar Plexus work through these hexagrams invites practices of power and will: examining your relationship with personal power and authority, noticing when you give power away versus claim it, exploring healthy ego versus inflation or deflation, working with anger as fire that can illuminate or destroy, practicing decisive action from clarity rather than reaction, feeling your 'yes' and 'no' in your gut. The hexagrams show different faces of fire power—from Creative's pure force to Control's executive will to Shock's arousing intensity.",
@@ -2570,14 +2845,29 @@
         "choice"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-1",
+        "hex-14",
+        "hex-21",
+        "hex-25",
+        "hex-26",
+        "hex-30",
+        "hex-34",
+        "hex-51"
+      ],
+      "element": "Fire",
+      "location": "Upper abdomen",
+      "parent_l3": "l3-chakras",
+      "grammar_type": "chakra",
+      "relationship_type": "emergence"
     },
     {
       "id": "chakra-anahata",
       "name": "Heart Chakra (Anahata)",
       "symbol": "💚",
-      "category": "meta-category",
-      "sort_order": 80,
+      "category": "chakra-synthesis",
+      "sort_order": 4,
       "sections": {
         "Element": "Air - The element of breath, connection, space, and movement. Air in these hexagrams emphasizes circulation, bridging, the space that allows relationship, and the breath that connects all beings.",
         "Practice": "Heart Chakra work through these hexagrams invites practices of opening and connection: breath work and pranayama, working with grief as the price of love, examining walls around your heart and when they serve versus trap, practicing compassion that includes boundaries, exploring self-love as foundation for loving others, noticing when you're truly present with others versus performing connection. The hexagrams offer different faces of heart wisdom—from Listener's witnessing to Grace's openness to Friction's honest intimacy.",
@@ -2605,14 +2895,29 @@
         "bridge"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-6",
+        "hex-10",
+        "hex-13",
+        "hex-22",
+        "hex-25",
+        "hex-31",
+        "hex-37",
+        "hex-46"
+      ],
+      "element": "Air",
+      "location": "Center of chest",
+      "parent_l3": "l3-chakras",
+      "grammar_type": "chakra",
+      "relationship_type": "emergence"
     },
     {
       "id": "chakra-vishuddha",
       "name": "Throat Chakra (Vishuddha)",
       "symbol": "🔵",
-      "category": "meta-category",
-      "sort_order": 81,
+      "category": "chakra-synthesis",
+      "sort_order": 5,
       "sections": {
         "Element": "Ether/Space - The element of vibration, sound, space that carries voice, and the medium through which all communication travels. Ether emphasizes resonance, frequency, and the spaciousness that allows sound.",
         "Practice": "Throat Chakra work through these hexagrams invites practices of expression and truth: singing, chanting, toning, speaking what's true even when difficult, examining when you silence yourself versus when silence is wisdom, noticing the difference between authentic voice and performance, practicing listening as deeply as speaking, working with timing—when words land versus when they scatter. The hexagrams show many faces of expression—from Contribution's authentic modeling to Caution's wise restraint to Insight's breakthrough truth.",
@@ -2644,14 +2949,33 @@
         "sound"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-8",
+        "hex-12",
+        "hex-16",
+        "hex-20",
+        "hex-23",
+        "hex-31",
+        "hex-33",
+        "hex-35",
+        "hex-43",
+        "hex-45",
+        "hex-56",
+        "hex-62"
+      ],
+      "element": "Ether",
+      "location": "Throat",
+      "parent_l3": "l3-chakras",
+      "grammar_type": "chakra",
+      "relationship_type": "emergence"
     },
     {
       "id": "chakra-ajna",
       "name": "Third Eye Chakra (Ajna)",
       "symbol": "💜",
-      "category": "meta-category",
-      "sort_order": 82,
+      "category": "chakra-synthesis",
+      "sort_order": 6,
       "sections": {
         "Element": "Light - The element of illumination, clarity, vision, and the capacity to perceive. Light in these hexagrams emphasizes seeing clearly, bringing awareness to what was hidden, and the interplay of light and shadow in understanding.",
         "Practice": "Third Eye work through these hexagrams invites practices of perception and insight: meditation focusing on the point between eyebrows, examining your relationship with knowing versus not-knowing, noticing mental patterns and when they serve versus trap, working with confusion as potential rather than problem, practicing healthy skepticism and questioning, allowing insights to emerge rather than forcing understanding. The hexagrams show different aspects of seeing—from Ideas' conceptual vision to Insight's breakthrough knowing to Mystery's comfortable unknowing.",
@@ -2680,14 +3004,30 @@
         "seeing"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-4",
+        "hex-11",
+        "hex-17",
+        "hex-24",
+        "hex-43",
+        "hex-47",
+        "hex-61",
+        "hex-63",
+        "hex-64"
+      ],
+      "element": "Light",
+      "location": "Between eyebrows",
+      "parent_l3": "l3-chakras",
+      "grammar_type": "chakra",
+      "relationship_type": "emergence"
     },
     {
       "id": "chakra-sahasrara",
       "name": "Crown Chakra (Sahasrara)",
       "symbol": "⚪",
-      "category": "meta-category",
-      "sort_order": 83,
+      "category": "chakra-synthesis",
+      "sort_order": 7,
       "sections": {
         "Element": "Cosmic Consciousness - Beyond elemental—the unified field of awareness itself, the space in which all elements arise and dissolve. This 'element' emphasizes pure consciousness, emptiness that contains everything, and the recognition of non-separation.",
         "Practice": "Crown Chakra work through these hexagrams invites practices of opening and transcendence: meditation on emptiness or pure awareness, contemplating impermanence and the dissolution of fixed identity, working with spiritual crisis as opening rather than breakdown, examining spiritual bypass versus genuine integration, practicing recognition of consciousness in all beings, allowing reverence and wonder. The hexagrams show many faces of transcendence—from Creative's pure source to Spirit's abundance to Mystery's cosmic wonder.",
@@ -2715,14 +3055,29 @@
         "source"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-1",
+        "hex-2",
+        "hex-11",
+        "hex-25",
+        "hex-36",
+        "hex-49",
+        "hex-55",
+        "hex-61"
+      ],
+      "element": "Cosmic Consciousness",
+      "location": "Top of head",
+      "parent_l3": "l3-chakras",
+      "grammar_type": "chakra",
+      "relationship_type": "emergence"
     },
     {
       "id": "trigram-heaven",
       "name": "Heaven (Qian)",
       "symbol": "☰",
-      "category": "trigram",
-      "sort_order": 84,
+      "category": "trigram-synthesis",
+      "sort_order": 1,
       "sections": {
         "Interpretation": "Heaven represents pure creative force—yang energy in its most concentrated form. When Heaven appears in a hexagram (above or below), it brings qualities of initiative, strength, persistence, and forward momentum. This is the archetype of the father, the leader, the initiator. Heaven doesn't wait or yield; it acts with sustained force and creative power.",
         "In_Human_Design": "Heaven trigram appears in gates associated with individual power, will, and creative expression—particularly in the Ego/Heart center and areas dealing with direction and manifestation.",
@@ -2739,14 +3094,36 @@
         "action"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-1",
+        "hex-10",
+        "hex-11",
+        "hex-14",
+        "hex-25",
+        "hex-26",
+        "hex-34",
+        "hex-43",
+        "hex-9",
+        "hex-13",
+        "hex-5",
+        "hex-6",
+        "hex-12",
+        "hex-33",
+        "hex-44"
+      ],
+      "element": "Strong Yang",
+      "parent_l3": "l3-trigrams",
+      "grammar_type": "iching",
+      "trigram_lines": "≡≡≡",
+      "relationship_type": "emergence"
     },
     {
       "id": "trigram-earth",
       "name": "Earth (Kun)",
       "symbol": "☷",
-      "category": "trigram",
-      "sort_order": 85,
+      "category": "trigram-synthesis",
+      "sort_order": 2,
       "sections": {
         "Interpretation": "Earth represents pure receptive force—yin energy in its most complete form. When Earth appears in a hexagram, it brings qualities of receptivity, support, nourishment, and yielding strength. This is the archetype of the mother, the supporter, the one who receives and makes space. Earth doesn't force; it allows, contains, and sustains with gentle persistence.",
         "In_Human_Design": "Earth trigram appears in gates associated with receptive knowing, direction through yielding, and the power of response—particularly in the G Center and Sacral response energy.",
@@ -2763,14 +3140,36 @@
         "response"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-2",
+        "hex-7",
+        "hex-8",
+        "hex-15",
+        "hex-16",
+        "hex-23",
+        "hex-24",
+        "hex-35",
+        "hex-19",
+        "hex-20",
+        "hex-36",
+        "hex-45",
+        "hex-46",
+        "hex-11",
+        "hex-12"
+      ],
+      "element": "Strong Yin",
+      "parent_l3": "l3-trigrams",
+      "grammar_type": "iching",
+      "trigram_lines": "≡ ≡\n≡ ≡\n≡ ≡",
+      "relationship_type": "emergence"
     },
     {
       "id": "trigram-thunder",
       "name": "Thunder (Zhen)",
       "symbol": "☳",
-      "category": "trigram",
-      "sort_order": 86,
+      "category": "trigram-synthesis",
+      "sort_order": 3,
       "sections": {
         "Interpretation": "Thunder represents arousing, shocking movement—yang energy bursting forth from below. When Thunder appears, expect sudden movement, awakening, shock that catalyzes change. This is the archetype of the eldest son, the one who initiates through decisive action. Thunder shakes things up, awakens what's dormant, and demands response through intensity.",
         "In_Human_Design": "Thunder appears in gates associated with sudden knowing, competitive response, shock, and the arousing power of life force—particularly around Sacral energy and initiative.",
@@ -2787,14 +3186,35 @@
         "awakening"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-3",
+        "hex-16",
+        "hex-21",
+        "hex-24",
+        "hex-25",
+        "hex-34",
+        "hex-42",
+        "hex-51",
+        "hex-17",
+        "hex-40",
+        "hex-54",
+        "hex-55",
+        "hex-62",
+        "hex-32"
+      ],
+      "element": "Arousing Wood",
+      "parent_l3": "l3-trigrams",
+      "grammar_type": "iching",
+      "trigram_lines": "≡ ≡\n≡ ≡\n≡≡≡",
+      "relationship_type": "emergence"
     },
     {
       "id": "trigram-water",
       "name": "Water (Kan)",
       "symbol": "☵",
-      "category": "trigram",
-      "sort_order": 87,
+      "category": "trigram-synthesis",
+      "sort_order": 4,
       "sections": {
         "Interpretation": "Water represents danger, depth, and the abysmal—yang surrounded by yin, like water in a ravine. When Water appears, expect challenge, depth, the need to flow around obstacles. This is the archetype of the middle son, the one who knows danger and navigates through it. Water teaches persistence through difficulty and finding the way by flowing.",
         "In_Human_Design": "Water appears in gates dealing with commitment through challenge, depth, intimacy, and the flow that navigates obstacles—often in emotional and relational contexts.",
@@ -2811,14 +3231,35 @@
         "difficulty"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-5",
+        "hex-6",
+        "hex-29",
+        "hex-39",
+        "hex-47",
+        "hex-48",
+        "hex-59",
+        "hex-60",
+        "hex-3",
+        "hex-7",
+        "hex-40",
+        "hex-63",
+        "hex-64",
+        "hex-8"
+      ],
+      "element": "Abysmal Water",
+      "parent_l3": "l3-trigrams",
+      "grammar_type": "iching",
+      "trigram_lines": "≡ ≡\n≡≡≡\n≡ ≡",
+      "relationship_type": "emergence"
     },
     {
       "id": "trigram-mountain",
       "name": "Mountain (Gen)",
       "symbol": "☶",
-      "category": "trigram",
-      "sort_order": 88,
+      "category": "trigram-synthesis",
+      "sort_order": 5,
       "sections": {
         "Interpretation": "Mountain represents stillness, meditation, keeping still—yang resting above yin. When Mountain appears, expect pauses, boundaries, the need to stop and be present. This is the archetype of the youngest son, the one who knows when to stop moving. Mountain teaches the power of stillness and the wisdom of boundaries.",
         "In_Human_Design": "Mountain appears in gates about stillness, boundaries, concentration, and the power of not-moving—particularly around Root pressure to be still and Ajna contemplation.",
@@ -2835,14 +3276,36 @@
         "contemplation"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-4",
+        "hex-15",
+        "hex-18",
+        "hex-22",
+        "hex-23",
+        "hex-26",
+        "hex-27",
+        "hex-52",
+        "hex-31",
+        "hex-33",
+        "hex-39",
+        "hex-41",
+        "hex-53",
+        "hex-56",
+        "hex-62"
+      ],
+      "element": "Stillness Earth",
+      "parent_l3": "l3-trigrams",
+      "grammar_type": "iching",
+      "trigram_lines": "≡≡≡\n≡ ≡\n≡ ≡",
+      "relationship_type": "emergence"
     },
     {
       "id": "trigram-wind",
       "name": "Wind (Xun)",
       "symbol": "☴",
-      "category": "trigram",
-      "sort_order": 89,
+      "category": "trigram-synthesis",
+      "sort_order": 6,
       "sections": {
         "Interpretation": "Wind represents gentle penetration—yin below yang, like wind that enters everywhere through persistent gentleness. When Wind appears, expect gradual influence, gentle persistence, penetrating without force. This is the archetype of the eldest daughter, the one who influences through gentle consistency. Wind teaches that persistent gentleness penetrates what force cannot.",
         "In_Human_Design": "Wind appears in gates about intuition, gentle penetration, gradual development, and influence that works through persistence rather than force—particularly in Spleen intuition.",
@@ -2859,14 +3322,35 @@
         "influence"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-9",
+        "hex-18",
+        "hex-20",
+        "hex-37",
+        "hex-42",
+        "hex-44",
+        "hex-50",
+        "hex-53",
+        "hex-28",
+        "hex-46",
+        "hex-48",
+        "hex-57",
+        "hex-59",
+        "hex-61"
+      ],
+      "element": "Gentle Wood",
+      "parent_l3": "l3-trigrams",
+      "grammar_type": "iching",
+      "trigram_lines": "≡≡≡\n≡≡≡\n≡ ≡",
+      "relationship_type": "emergence"
     },
     {
       "id": "trigram-fire",
       "name": "Fire (Li)",
       "symbol": "☲",
-      "category": "trigram",
-      "sort_order": 90,
+      "category": "trigram-synthesis",
+      "sort_order": 7,
       "sections": {
         "Interpretation": "Fire represents clinging, brightness, illumination—yin surrounded by yang, like flame that clings to fuel. When Fire appears, expect clarity, passion, dependence on what sustains it, illumination that both reveals and consumes. This is the archetype of the middle daughter, the one who brings light. Fire teaches that clarity requires something to illuminate and passion needs proper fuel.",
         "In_Human_Design": "Fire appears in gates about emotional intensity, desire, clarity through feeling, and the clinging nature of attachment—particularly in Solar Plexus emotional awareness.",
@@ -2883,14 +3367,36 @@
         "attachment"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-10",
+        "hex-13",
+        "hex-14",
+        "hex-22",
+        "hex-30",
+        "hex-36",
+        "hex-37",
+        "hex-49",
+        "hex-21",
+        "hex-35",
+        "hex-38",
+        "hex-50",
+        "hex-55",
+        "hex-56",
+        "hex-64"
+      ],
+      "element": "Clinging Fire",
+      "parent_l3": "l3-trigrams",
+      "grammar_type": "iching",
+      "trigram_lines": "≡≡≡\n≡ ≡\n≡≡≡",
+      "relationship_type": "emergence"
     },
     {
       "id": "trigram-lake",
       "name": "Lake (Dui)",
       "symbol": "☱",
-      "category": "trigram",
-      "sort_order": 91,
+      "category": "trigram-synthesis",
+      "sort_order": 8,
       "sections": {
         "Interpretation": "Lake represents joyous exchange—yin above yang, like a lake that gathers and reflects. When Lake appears, expect pleasure, openness, gathering, joyous interaction. This is the archetype of the youngest daughter, the one who brings delight. Lake teaches that true joy comes from exchange, from gathering together, from openness to what life brings.",
         "In_Human_Design": "Lake appears in gates about joy, gathering people, openness, and the pleasure principle—particularly around vitality, enthusiasm, and community formation.",
@@ -2907,14 +3413,36 @@
         "gathering"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "hex-10",
+        "hex-17",
+        "hex-19",
+        "hex-41",
+        "hex-43",
+        "hex-45",
+        "hex-47",
+        "hex-49",
+        "hex-28",
+        "hex-31",
+        "hex-38",
+        "hex-54",
+        "hex-58",
+        "hex-60",
+        "hex-61"
+      ],
+      "element": "Joyous Metal",
+      "parent_l3": "l3-trigrams",
+      "grammar_type": "iching",
+      "trigram_lines": "≡ ≡\n≡≡≡\n≡≡≡",
+      "relationship_type": "emergence"
     },
     {
       "id": "l3-trigrams",
       "name": "Trigrams (Bagua)",
       "symbol": "☰",
-      "category": "meta-category",
-      "sort_order": 92,
+      "category": "organizing-principle",
+      "sort_order": 1,
       "sections": {
         "How_To_Use": "When you encounter a hexagram, look at which two trigrams compose it. Read both the upper and lower trigram emergence cards to understand the forces at play. Notice whether the trigrams complement, contrast, or intensify each other. This gives you a foundational understanding before diving into the hexagram's specific interpretation.",
         "Philosophy": "This is the oldest and most foundational organizing principle in the I Ching. The trigrams emerged from contemplating how yin and yang combine in groups of three, creating eight distinct energetic signatures. When you view hexagrams through the trigram lens, you're seeing them as combinations of fundamental forces—how does creative force (Heaven) combine with receptive power (Earth)? What happens when arousing energy (Thunder) meets abysmal depth (Water)? This lens emphasizes composition, combination, and the interplay of archetypal forces.",
@@ -2932,14 +3460,25 @@
         "archetypal-energies"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "trigram-heaven",
+        "trigram-earth",
+        "trigram-thunder",
+        "trigram-water",
+        "trigram-mountain",
+        "trigram-wind",
+        "trigram-fire",
+        "trigram-lake"
+      ],
+      "relationship_type": "meta-category"
     },
     {
       "id": "l3-signs",
       "name": "Zodiac Signs",
       "symbol": "♈",
-      "category": "meta-category",
-      "sort_order": 93,
+      "category": "organizing-principle",
+      "sort_order": 2,
       "sections": {
         "How_To_Use": "When exploring a hexagram, check which zodiac sign(s) it falls under on the Rave Mandala. Read that sign's emergence card to understand the seasonal/archetypal context. Notice if the hexagram is a 'cusp gate' appearing in two signs—these hexagrams carry transitional energy between archetypal seasons. You can also use this lens to explore which gates are emphasized in your personal Human Design chart based on planetary positions at your birth.",
         "Philosophy": "While the trigram lens emphasizes timeless fundamental forces, the zodiac lens introduces temporal progression—the 64 hexagrams arranged as a journey through the year. This comes from Ra Uru Hu's Human Design synthesis, which mapped I Ching hexagrams to specific degree positions in the zodiac based on his 1987 channeling experience. Whether you believe in the mystical origin or view it as creative recombination of symbolic systems, the zodiac lens offers a way to understand hexagrams through seasonal archetypes and the qualities of time. Each sign represents not just a constellation but a distinct energetic season.",
@@ -2957,14 +3496,31 @@
         "archetypal-journey"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "sign-aquarius",
+        "sign-pisces",
+        "sign-aries",
+        "sign-taurus",
+        "sign-gemini",
+        "sign-cancer",
+        "sign-leo",
+        "sign-virgo",
+        "sign-libra",
+        "sign-scorpio",
+        "sign-sagittarius",
+        "sign-capricorn"
+      ],
+      "sequence_id": "366b0aca-12c1-46bf-87a5-0ed40d56300e",
+      "grammar_type": "iching",
+      "relationship_type": "meta-category"
     },
     {
       "id": "l3-chakras",
       "name": "Chakras",
       "symbol": "🔴",
-      "category": "meta-category",
-      "sort_order": 94,
+      "category": "organizing-principle",
+      "sort_order": 3,
       "sections": {
         "How_To_Use": "When working with a hexagram, check which chakra(s) it's mapped to. Read that chakra emergence card to understand what level of consciousness or embodied experience this hexagram addresses. You can also use this lens for targeted contemplative work: if you're working on power and will issues, explore the Solar Plexus hexagrams; if you're developing intuition, focus on Third Eye hexagrams. The chakra lens makes the I Ching a tool for vertical development work.",
         "Philosophy": "The chakra system comes from yogic and tantric traditions, representing a vertical journey from earthly embodiment to cosmic consciousness. Mapping I Ching hexagrams to chakras is an act of creative synthesis—these two systems emerged from different cultures (Chinese and Indian) and weren't originally designed to correspond. Yet both describe aspects of human experience and consciousness. The chakra lens asks: What does this hexagram teach about grounding? About creative flow? About personal power? About love? About expression? About wisdom? About transcendence? It's a thematic rather than structural organizing principle.",
@@ -2981,14 +3537,24 @@
         "consciousness-levels"
       ],
       "metadata": {},
-      "image_url": null
+      "image_url": null,
+      "parts": [
+        "chakra-muladhara",
+        "chakra-svadhisthana",
+        "chakra-manipura",
+        "chakra-anahata",
+        "chakra-vishuddha",
+        "chakra-ajna",
+        "chakra-sahasrara"
+      ],
+      "relationship_type": "meta-category"
     },
     {
       "id": "chat-1782322634752-wgvwjy",
       "name": "Hello, how are you?",
       "symbol": null,
       "category": "meta-category",
-      "sort_order": 95,
+      "sort_order": 9999,
       "sections": {
         "You said": "Hello, how are you?",
         "AI response": "Hello! Doing well and glad you're here.\n\nIt looks like you're starting with Creative Power — Gate 1. Is there something particular drawing you to this one, or are you just beginning to explore the collection?"
@@ -3006,7 +3572,7 @@
       "name": "Creative Power — Full Item",
       "symbol": null,
       "category": "meta-category",
-      "sort_order": 96,
+      "sort_order": 9999,
       "sections": {
         "Prompt": "Create an image for \"Creative Power\" — Full Item section.\nFull item:\nImage: Heaven's movement is full of power. Thus the superior one makes themselves strong and untiring.\nLine 1: Hidden creative powe"
       },
@@ -3018,5 +3584,8 @@
       },
       "image_url": "https://pub-71ebbc217e6247ecacb85126a6616699.r2.dev/flow-image-gen/1782324124244-4a8vzvkh9vp.png"
     }
-  ]
+  ],
+  "license": "CC-BY-NC-4.0",
+  "_recursive_eco_url": "https://recursive.eco/g/ad36491a-b504-4b7f-87aa-7337cc1bd0e3?view=reading",
+  "_recursive_eco_edit_url": "https://recursive.eco/create/dashboard/unified/new?id=ad36491a-b504-4b7f-87aa-7337cc1bd0e3"
 }
