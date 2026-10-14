@@ -581,5 +581,9 @@
         "generated_by": "scripts/changing_lines.py"
       }
     }
-  ]
+  ],
+  "default_view": "play",
+  "reading_mode_default": "continuous",
+  "_recursive_eco_url": "https://recursive.eco/g/1cfd859a-797c-4a8c-ba1a-3f0ff6138c51?view=reading",
+  "_recursive_eco_edit_url": "https://recursive.eco/create/dashboard/unified/new?id=1cfd859a-797c-4a8c-ba1a-3f0ff6138c51"
 }
