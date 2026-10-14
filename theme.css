@@ -80,6 +80,13 @@
   --good:#3f7a5c; --win:#3f7a5c; --us:#3f7a5c;
   --bad:#c0473b; --lose:#c0473b; --later:#b5651d;
 
+  /* —— heatmap tones (pages/verdict-heatmaps.html, the Changing-Lines Lens tables): a warm-to-cool scale that survives
+     red-green colour blindness. Space-separated RGB so a cell can set its own alpha: rgb(var(--verdict-cool-rgb) / .4).
+     Ominous is warm, auspicious is cool, a word with no sign (regret, blame, danger...) is ink. —— */
+  --verdict-cool-rgb:47 111 168;
+  --verdict-warm-rgb:205 100 40;
+  --verdict-ink-rgb:101 95 85;
+
   /* —— recursive.eco wayfinding (the platform's purple) —— */
   --eco:#9333ea;
   --eco-deep:#7c2fd0;

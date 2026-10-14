@@ -1,5 +1,25 @@
 # Changelog — The Recursive I Ching
 
+## October 14, 2026 — Auspicious and ominous: the verdict words as heatmaps
+
+- **`pages/verdict-heatmaps.html`** (new), in answer to PlayfulProcess's request for a more visual table of the auspicious and
+  the not auspicious: heatmaps with conditional formatting, each cell printing its percentage and count (for example
+  "45% · 29/64") so nothing rests on colour. Place × yang/yin; correct places × central lines; the eight trigrams as lower
+  and as upper (the 3 lines inside the trigram, or all 6 lines of its hexagrams); the 64 hexagrams as an 8×8 grid (King Wen,
+  or lower trigram down and upper across), tap one to read its six lines in Chinese and Legge with the counted words underlined;
+  a reference table for all seven words. Colour is warm (more 凶 than 吉) to paper to cool (more 吉), or one word's own share.
+  Grids scroll inside their boxes at 375 px; plain HTML, no libraries. Header: three computed findings (the central lines 2 and
+  5 carry 吉 in 44% of their texts against 24% of the rest; yin in the fifth 53% against yang 38%, which 32 texts a side do not
+  separate; correct places no better than incorrect) with exact Fisher p-values and the caveats.
+- **`scripts/verdict_words.py`** (new) writes **`data/verdict-words.json`**: 吉, 凶, 悔, 吝, 咎, 無咎 and 厲, counted in the
+  Chinese as the course's figures are (a text once per word), by place, polarity, place × polarity, correct place, central
+  line, trigram (lower/upper) and hexagram, plus exact Fisher p for eight named pairs. `scripts/changing_lines.py --check`
+  runs it: it fails if the JSON drifts, if the two scripts count a cell differently, if the page stops stating its three
+  header sentences, or if the course stops carrying the generated table.
+- **The Changing-Lines Lens**, chapter 2 "The figures": a position × yin/yang table with 吉 and 凶 shares and counts, shaded warm
+  to cool by the course viewer, and a link to the page. `theme.css` gains `--verdict-*-rgb`; the Views menu, the home page and
+  `site-header.js` (version 52) list the page.
+
 ## October 13, 2026 (later) — The Changing-Lines Lens: the I Ching read one line and one direction at a time
 
 - **`grammars/changing-lines-lens/`** (new, draft, `import_visibility: "private"`): PlayfulProcess's question of Oct 13, what
