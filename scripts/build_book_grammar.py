@@ -106,6 +106,18 @@ items.append({
     "metadata": {"role": "end", "number": 1},
 })
 
+# The cover photo is CC BY-SA 3.0: credit the photographer, name and link the licence (checked on
+# its Commons page Oct 19 2026). The three source grammars carry the same object.
+_FILE = "https://commons.wikimedia.org/wiki/File:I-Ching-chinese-book.jpg"
+_LIC = "https://creativecommons.org/licenses/by-sa/3.0/"
+COVER_CREDIT = {
+    "title": "I-Ching-chinese-book.jpg", "creator": "Cooltoye", "source": _FILE,
+    "license": "CC BY-SA 3.0", "license_url": _LIC,
+    "changes": "None (shown resized by Wikimedia's own thumbnailer)",
+    "text": f'Cover photo: "I-Ching-chinese-book.jpg" by Cooltoye ({_FILE}), licensed CC BY-SA 3.0 ({_LIC}); used unmodified (the site may show it smaller).',
+    "verified": "2026-10-19",
+}
+
 grammar = {
     # Built by this script: recursive.eco's importer skips a `_generated` file, so the book stays out
     # of the app until its stories exist (decision, Oct 6 2026; docs/BEFORE-CONNECTING-TO-RECURSIVE-ECO.md).
@@ -117,10 +129,12 @@ grammar = {
                     "public-domain Great Image (The Yî King, SBE vol. XVI, 1882), taken from this repo's "
                     "i-ching-summarized grammar."),
         "built_by": "scripts/build_book_grammar.py",
+        "attribution": [COVER_CREDIT["text"]],
     },
     "name": frame["title"],
     "description": frame["description"],
     "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
+    "cover_image_credit": COVER_CREDIT,
     "grammar_type": "custom",  # "book" is not a platform grammar_type; Book mode reads the items, not the type
     "tags": ["iching", "book", "path-caster", "combinatorial", "cast-your-book"],
     "creator_name": "PlayfulProcess",
