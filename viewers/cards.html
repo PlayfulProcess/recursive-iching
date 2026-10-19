@@ -3449,7 +3449,7 @@
             const readingBtn = document.getElementById('reading-btn');
             if (readingBtn) {
                 readingBtn.target = '_blank';
-                readingBtn.href = getFlowBaseUrl();   // sensible default; the deck is resolved on click
+                readingBtn.href = 'https://recursive.eco/process';   // sensible default; the deck is resolved on click
                 readingBtn.addEventListener('click', async (e) => {
                     e.preventDefault();
                     const flowBaseUrl = getFlowBaseUrl();
@@ -3463,7 +3463,7 @@
                             || items.some(it => typeof it.number === 'number' && it.number >= 1 && it.number <= 64 && (it.binary || it.king_wen || it.trigram_above));
                         const looksLikeAstro = typeStr.includes('astro') || typeStr.includes('birthchart') || typeStr.includes('birth_chart')
                             || (grammarData && Array.isArray(grammarData.birth_charts) && grammarData.birth_charts.length > 0);
-                        url = `${flowBaseUrl}/g/${id}?view=reading`;
+                        url = `https://recursive.eco/process?cast=${id}`;
                     }
                     window.open(url, '_blank', 'noopener');
                 });
@@ -4885,7 +4885,7 @@
             let editUrl;
             // SUPABASE-FIRST: Prefer ?id= when we have document ID
             if (docId) {
-                editUrl = `${offerBaseUrl}/dashboard/unified/new?id=${docId}&type=${grammarType}`;
+                editUrl = `https://recursive.eco/play?id=${docId}&edit=1`;
             } else if (githubSourceUrl) {
                 // Fallback for legacy GitHub URLs
                 editUrl = `${offerBaseUrl}/dashboard/unified/new?community=${encodeURIComponent(githubSourceUrl)}&type=${grammarType}`;
@@ -4895,7 +4895,7 @@
             }
 
             if (cardId) {
-                editUrl += `&card=${encodeURIComponent(cardId)}`;
+                editUrl += `&node=${encodeURIComponent(cardId)}`;
             }
             window.open(editUrl, '_blank');
         }
@@ -4912,7 +4912,7 @@
                     || items.some(it => typeof it.number === 'number' && it.number >= 1 && it.number <= 64 && (it.binary || it.king_wen || it.trigram_above));
                 const looksLikeAstro = typeStr.includes('astro') || typeStr.includes('birthchart') || typeStr.includes('birth_chart')
                     || (grammarData && Array.isArray(grammarData.birth_charts) && grammarData.birth_charts.length > 0);
-                url = `${flowBaseUrl}/g/${id}?view=reading`;
+                url = `https://recursive.eco/play?id=${id}`;
             }
             window.open(url, '_blank', 'noopener');
         }
@@ -4945,7 +4945,7 @@
         // preview links its Ask button there too).
         function ecoCastUrl(id) {
             const flowBaseUrl = getFlowBaseUrl();
-            return id ? `${flowBaseUrl}/g/${encodeURIComponent(id)}?view=reading` : flowBaseUrl;
+            return id ? `https://recursive.eco/process?cast=${encodeURIComponent(id)}` : 'https://recursive.eco/process';
         }
 
         // Cast, with the assistant (Oct 7 2026) — what waits in its chat box,
@@ -4990,7 +4990,7 @@
         function ecoEditUrl(id, item) {
             let itemId = String(item.id || '');
             if (item._deckSlug && itemId.startsWith(item._deckSlug + ':')) itemId = itemId.slice(item._deckSlug.length + 1);
-            return `${getOfferBaseUrl()}/dashboard/unified/new?id=${encodeURIComponent(id)}` + (itemId ? `&card=${encodeURIComponent(itemId)}` : '');
+            return `https://recursive.eco/play?id=${encodeURIComponent(id)}&edit=1` + (itemId ? `&node=${encodeURIComponent(itemId)}` : '');
         }
 
         // Fill both links for the open item: first without an id (the fallback
@@ -5019,7 +5019,7 @@
         async function openEditOnEco() {
             const offerBaseUrl = getOfferBaseUrl();
             let url = offerBaseUrl;
-            try { const id = await resolveDeckFlowId(); if (id) url = `${offerBaseUrl}/dashboard/unified/new?id=${id}&type=${grammarType}`; } catch (e) {}
+            try { const id = await resolveDeckFlowId(); if (id) url = `https://recursive.eco/play?id=${id}&edit=1`; } catch (e) {}
             window.open(url, '_blank', 'noopener');
         }
 
@@ -5040,9 +5040,9 @@
 
             // Prefer Supabase ID for copying (more reliable than GitHub URLs)
             if (id) {
-                let copyUrl = `${offerBaseUrl}/dashboard/unified/new?forkId=${id}&type=${grammarType}`;
+                let copyUrl = `https://recursive.eco/play?id=${id}&copy=1`;
                 if (cardId) {
-                    copyUrl += `&card=${encodeURIComponent(cardId)}`;
+                    copyUrl += `&node=${encodeURIComponent(cardId)}`;
                 }
                 window.open(copyUrl, '_blank');
                 return;
@@ -5060,7 +5060,7 @@
                 if (gitUrl.includes('raw.githubusercontent.com')) {
                     let copyUrl = `${offerBaseUrl}/dashboard/unified/new?copyFrom=${encodeURIComponent(gitUrl)}&type=${grammarType}`;
                     if (cardId) {
-                        copyUrl += `&card=${encodeURIComponent(cardId)}`;
+                        copyUrl += `&node=${encodeURIComponent(cardId)}`;
                     }
                     window.open(copyUrl, '_blank');
                     return;
