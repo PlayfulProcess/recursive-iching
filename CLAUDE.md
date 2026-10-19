@@ -50,4 +50,4 @@ static site at iching.recursive.eco. Call the owner PlayfulProcess; never write 
   Terms ask that the site not be linked without written consent. Cite its pages by title and date.
 - **`ten-wings` is a mapped grammar:** change it only by adding sections (`scripts/add_ten_wings_sections.py`
   shows how); never change an item id or name.
-- Push a branch and open a PR. Since PlayfulProcess's rule of Oct 13 2026 (root `CLAUDE.md`, "Merging pull requests"), Claude may merge a PR here once the checks above pass, with a normal merge commit; recursive-tarot and recursive-eco still wait for her word.
+- Push a branch and open a PR. Claude may merge a PR here once the checks above pass, with a normal merge commit (PlayfulProcess's rule of Oct 13 2026, root `CLAUDE.md` "Merging pull requests", repeated for this repo on Oct 20 2026); recursive-eco still waits for her word.

@@ -4,12 +4,23 @@
     "license": "The Judgment, Image and six Line texts are James Legge's public-domain English translation (The Yî King, Sacred Books of the East vol. XVI, 1882; 2nd ed. 1899; Legge died in 1897), copied verbatim from this repo's zhouyi-core (Judgment, Lines) and ten-wings (Great Image) grammars, where the wording was cross-verified across three independent digitizations. Words in (parentheses) are Legge's own interpolations. The per-hexagram Interpretation gloss, the selection and the description are CC-BY-SA-4.0 (PlayfulProcess).",
     "attribution": [
       "James Legge (tr.), The Yî King, Sacred Books of the East vol. XVI (Oxford, 1882; 2nd ed. 1899) — public domain",
-      "PlayfulProcess (AI-assisted interpretation gloss, curation)"
+      "PlayfulProcess (AI-assisted interpretation gloss, curation)",
+      "Cover photo: \"I-Ching-chinese-book.jpg\" by Cooltoye (https://commons.wikimedia.org/wiki/File:I-Ching-chinese-book.jpg), licensed CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/); used unmodified (the site may show it smaller)."
     ]
   },
   "name": "The 64 Hexagrams",
   "description": "The Judgment, Image, and all six line texts for each of the 64 hexagrams, in James Legge's public-domain English translation (1882), with a short interpretation gloss per hexagram. This is the flagship reading text of The Recursive I Ching — companion to 'The Repair I Ching' (a 12-hexagram contemplative practice) and 'Three Lenses' (hexagrams cross-read through Human Design gates, zodiac signs, and chakras). The Judgment and Lines are the oldest layer (see 'Zhouyi Core'); the Image is the Great Image from the Ten Wings, a Confucian layer added centuries later (see 'The Ten Wings'). Words in (parentheses) are Legge's own additions, not the original.",
   "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
+  "cover_image_credit": {
+    "title": "I-Ching-chinese-book.jpg",
+    "creator": "Cooltoye",
+    "source": "https://commons.wikimedia.org/wiki/File:I-Ching-chinese-book.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "changes": "None (shown resized by Wikimedia's own thumbnailer)",
+    "text": "Cover photo: \"I-Ching-chinese-book.jpg\" by Cooltoye (https://commons.wikimedia.org/wiki/File:I-Ching-chinese-book.jpg), licensed CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/); used unmodified (the site may show it smaller).",
+    "verified": "2026-10-19"
+  },
   "grammar_type": "iching",
   "tags": [
     "iching",

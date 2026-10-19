@@ -3,11 +3,24 @@
   "_grammar_commons": {
     "schema_version": "1.0",
     "license": "CC BY-SA 4.0 (PlayfulProcess) for the frame, the Learn composition and any stories; the underlying I Ching text is public domain; the English Image lines are James Legge's public-domain Great Image (The Yî King, SBE vol. XVI, 1882), taken from this repo's i-ching-summarized grammar.",
-    "built_by": "scripts/build_book_grammar.py"
+    "built_by": "scripts/build_book_grammar.py",
+    "attribution": [
+      "Cover photo: \"I-Ching-chinese-book.jpg\" by Cooltoye (https://commons.wikimedia.org/wiki/File:I-Ching-chinese-book.jpg), licensed CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/); used unmodified (the site may show it smaller)."
+    ]
   },
   "name": "The Recursive I Ching — a book you cast",
   "description": "A book with a fixed beginning and a fixed end, and a middle that does not exist until you cast it. Cast how you are; walk the changing lines toward Hexagram 1, the Creative; learn one hexagram at a time; write your own transitions; save it as your own grammar; print it if you like. A casting, not a prediction.",
   "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
+  "cover_image_credit": {
+    "title": "I-Ching-chinese-book.jpg",
+    "creator": "Cooltoye",
+    "source": "https://commons.wikimedia.org/wiki/File:I-Ching-chinese-book.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "changes": "None (shown resized by Wikimedia's own thumbnailer)",
+    "text": "Cover photo: \"I-Ching-chinese-book.jpg\" by Cooltoye (https://commons.wikimedia.org/wiki/File:I-Ching-chinese-book.jpg), licensed CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/); used unmodified (the site may show it smaller).",
+    "verified": "2026-10-19"
+  },
   "grammar_type": "custom",
   "tags": [
     "iching",

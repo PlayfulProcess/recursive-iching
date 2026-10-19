@@ -4,12 +4,23 @@
     "license": "Public domain classical Chinese text (the Zhouyi / Yijing itself, compiled c. 1046-256 BCE). Sourced verbatim from Project Gutenberg ebook #25501 (易經, catalogued as author \"Anonymous\"), which Project Gutenberg only distributes because it has been confirmed public domain in the US -- Gutenberg's own hosting policy is the second-hand confirmation used here, verified by this session against Gutenberg's own catalogue page and search index before import. The Chinese text carries NO translation layer: the Judgment, Image, and six Line statements are the source characters, untouched. The only added material is a one-to-three-word AI-generated English gloss for each hexagram's `name` field (e.g. \"The Creative\") -- a title, not a translation of the full text -- written by Claude Code and licensed CC-BY-SA-4.0 (PlayfulProcess) for that gloss alone.",
     "attribution": [
       "Project Gutenberg ebook #25501 -- 易經 (I Ching), catalogued as \"Anonymous\" -- https://www.gutenberg.org/ebooks/25501",
-      "PlayfulProcess (AI-assisted one-line hexagram-name gloss only, Claude Code)"
+      "PlayfulProcess (AI-assisted one-line hexagram-name gloss only, Claude Code)",
+      "Cover photo: \"I-Ching-chinese-book.jpg\" by Cooltoye (https://commons.wikimedia.org/wiki/File:I-Ching-chinese-book.jpg), licensed CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/); used unmodified (the site may show it smaller)."
     ]
   },
   "name": "I Ching — Chinese Original (Project Gutenberg)",
   "description": "The classical Chinese source text -- Judgment, Image, and all six Line statements -- for each of the 64 hexagrams, character for character as digitized by Project Gutenberg (ebook #25501, 易經, catalogued as \"Anonymous\"). Project Gutenberg only distributes works confirmed public domain in the US; this is the ≈ 3,000-year-old Zhouyi/Yijing text itself, with no modern translator and no added copyright layer -- verified against Gutenberg's own catalogue before this grammar was built. Only the short hexagram NAME per item (e.g. \"The Creative\") is an AI-generated English gloss (Claude Code) -- a title, not a scholarly translation of the full passage. Read it alongside 'The 64 Hexagrams' (this site's English condensation) and 'Three Lenses' in the Source Text viewer, which stacks all three as separate, clearly labeled layers of the same hexagram.",
   "cover_image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/I-Ching-chinese-book.jpg",
+  "cover_image_credit": {
+    "title": "I-Ching-chinese-book.jpg",
+    "creator": "Cooltoye",
+    "source": "https://commons.wikimedia.org/wiki/File:I-Ching-chinese-book.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "changes": "None (shown resized by Wikimedia's own thumbnailer)",
+    "text": "Cover photo: \"I-Ching-chinese-book.jpg\" by Cooltoye (https://commons.wikimedia.org/wiki/File:I-Ching-chinese-book.jpg), licensed CC BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/); used unmodified (the site may show it smaller).",
+    "verified": "2026-10-19"
+  },
   "grammar_type": "iching",
   "tags": [
     "chinese",
