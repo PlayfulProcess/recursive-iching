@@ -198,6 +198,7 @@ recursive.eco. A one-line platform fix would cover every grammar, not only this 
 | `tree-of-the-iching` | none | created new on import (PR #4 open) |
 | `meta-iching`, `the-recursive-iching-book` | none | skipped (`_generated`) |
 | `three-lenses-64` | none | skipped (`_source_of_truth: "repo"`) |
+| `sources` | none | **Oct 20:** skipped (`_source_of_truth: "repo"`): reference apparatus, like tarot's books and sources grammars. Map it later if she wants it in the app |
 
 ### Duplicates and leftovers, for PlayfulProcess (nothing deleted)
 

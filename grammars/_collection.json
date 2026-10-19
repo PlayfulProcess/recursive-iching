@@ -48,6 +48,7 @@
       "deck_slugs": [
         "origin-accounts",
         "schools-of-the-iching",
+        "sources",
         "tree-of-the-iching"
       ]
     }
@@ -235,6 +236,21 @@
       "mark": "img/covers/schools-of-the-iching.svg",
       "blurb": "How the main schools read the Changes: classical Confucian, images and numbers, Zhu Xi, Daoist inner alchemy, early Zhou philology, Jung, Human Design and the Gene Keys. Each says who and when, its me…",
       "path": "grammars/schools-of-the-iching/grammar.json",
+      "provenance": "living"
+    },
+    {
+      "slug": "sources",
+      "name": "Sources: Where the I Ching Texts and Pictures Live",
+      "type": "custom",
+      "branch": "history",
+      "is_meta": false,
+      "default_preview": null,
+      "nodes": 29,
+      "cover_image_url": null,
+      "thumb": "img/covers/sources.svg",
+      "mark": "img/covers/sources.svg",
+      "blurb": "# Sources: where the I Ching texts and pictures live, and their rights",
+      "path": "grammars/sources/grammar.json",
       "provenance": "living"
     },
     {
