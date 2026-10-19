@@ -1,0 +1,736 @@
+{
+  "_grammar_commons": {
+    "schema_version": "1.0",
+    "license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "attribution": [
+      {
+        "name": "PlayfulProcess",
+        "url": "https://recursive.eco",
+        "date": "2026-10-20",
+        "note": "Sources of the I Ching texts and pictures: holders, quality and rights (text only; the scans and pictures belong to their holders)"
+      }
+    ]
+  },
+  "_source_of_truth": "repo",
+  "name": "Sources: Where the I Ching Texts and Pictures Live",
+  "slug": "sources",
+  "grammar_type": "custom",
+  "provenance": "reference",
+  "creator_name": "PlayfulProcess",
+  "creator_link": "https://recursive.eco",
+  "default_view": "thumbnails",
+  "is_published": true,
+  "tags": [
+    "sources",
+    "rights",
+    "translations",
+    "editions",
+    "reference"
+  ],
+  "description": "# Sources: where the I Ching texts and pictures live, and their rights\n\nFor each book this collection reads from (the Chinese text, Legge's 1882 translation, Wilhelm, the early French translations, the excavated manuscripts) and each picture it shows: who holds the editions and scans, how good they are, and **what their rights allow**, in the holder's own words where they could be read. Each source also says plainly who holds the rights and what we may and may not do.\n\n**Three ways in.** Selections by **book**, by **holder** and by **rights** (free for any use · open licence · permission needed · unclear · in copyright). A source can sit in several.\n\n**Links only.** This grammar copies no text or picture. A source shows an image only where its own statement says public domain, CC0 or CC BY.\n\n**Worth knowing.** Quote Legge from the 1882 scan, not the modern Indian reprint; the cover photograph several grammars use is CC BY-SA 3.0 and needs its photographer's credit; the Chinese Text Project forbids copying in bulk.\n\n**Not legal advice.** Checked 2026-10-20. Hand-edited; the importer skips it (`_source_of_truth: \"repo\"`).\n",
+  "nodes": [
+    {
+      "id": "src-gutenberg-25501",
+      "name": "易經 on Project Gutenberg (ebook 25501)",
+      "category": "source",
+      "sort_order": 0,
+      "keywords": [
+        "sources",
+        "free",
+        "chinese-text"
+      ],
+      "metadata": {
+        "books": [
+          "chinese-text"
+        ],
+        "holder": "Project Gutenberg",
+        "rights_class": "free",
+        "rights_label": "Free for any use, as the holder states (public domain, CC0, PD mark, or no restriction)",
+        "url": "https://www.gutenberg.org/ebooks/25501",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "The text is public domain; Gutenberg's trademark terms apply only if you redistribute its files under its name. Free to quote and reuse.",
+        "Holder": "Project Gutenberg",
+        "What it holds": "The classical Chinese text, catalogued as by \"Anonymous\": the base of the grammar I Ching — Chinese Original.",
+        "Quality": "Plain text and HTML; no pictures.",
+        "Rights as published": "Gutenberg's licence header: \"This eBook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever.\"",
+        "Link": "[https://www.gutenberg.org/ebooks/25501](https://www.gutenberg.org/ebooks/25501)"
+      }
+    },
+    {
+      "id": "src-wu-ching-1842",
+      "name": "Wu ching (the Five Classics), Chinese edition of 1842",
+      "category": "source",
+      "sort_order": 1,
+      "keywords": [
+        "sources",
+        "free",
+        "chinese-text"
+      ],
+      "metadata": {
+        "books": [
+          "chinese-text"
+        ],
+        "holder": "Internet Archive (Princeton Theological Seminary Library)",
+        "rights_class": "free",
+        "rights_label": "Free for any use, as the holder states (public domain, CC0, PD mark, or no restriction)",
+        "url": "https://archive.org/details/wuchingshihching01unse_0",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "No one holds rights in the 1842 printing; the scan carries no terms. Free to use; credit the Princeton Theological Seminary copy.",
+        "Holder": "Internet Archive (Princeton Theological Seminary Library)",
+        "What it holds": "A woodblock-printed Chinese edition of the Five Classics, the I ching among them, in several volumes (wuchingshihching01 to 14).",
+        "Quality": "Page scans of a printed book.",
+        "Rights as published": "The item's metadata carries no rights statement (checked Oct 20 2026); the 1842 printing is public domain.",
+        "Link": "[https://archive.org/details/wuchingshihching01unse_0](https://archive.org/details/wuchingshihching01unse_0)"
+      }
+    },
+    {
+      "id": "src-zh-wikisource",
+      "name": "周易 on Chinese Wikisource",
+      "category": "source",
+      "sort_order": 2,
+      "keywords": [
+        "sources",
+        "open-licence",
+        "chinese-text"
+      ],
+      "metadata": {
+        "books": [
+          "chinese-text"
+        ],
+        "holder": "Wikisource (zh)",
+        "rights_class": "open-licence",
+        "rights_label": "Open licence with conditions (credit, keep the licence)",
+        "url": "https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "The ancient words are free; the editors' typing and notes are CC BY-SA 4.0: credit Wikisource, share alike.",
+        "Holder": "Wikisource (zh)",
+        "What it holds": "A typed edition of the Zhouyi and the Ten Wings, with variants noted by editors.",
+        "Quality": "Searchable text; no pictures.",
+        "Rights as published": "Wikisource's site terms: text under CC BY-SA 4.0 (the classical text itself is public domain).",
+        "Link": "[https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93](https://zh.wikisource.org/wiki/%E5%91%A8%E6%98%93)"
+      }
+    },
+    {
+      "id": "src-ctext",
+      "name": "Book of Changes on the Chinese Text Project",
+      "category": "source",
+      "sort_order": 3,
+      "keywords": [
+        "sources",
+        "permission",
+        "chinese-text",
+        "legge"
+      ],
+      "metadata": {
+        "books": [
+          "chinese-text",
+          "legge"
+        ],
+        "holder": "Chinese Text Project (ctext.org)",
+        "rights_class": "permission",
+        "rights_label": "Permission needed to publish or copy in bulk",
+        "url": "https://ctext.org/book-of-changes",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "Read and link; don't copy from it in bulk. Take the Chinese from Gutenberg or an old printing, Legge from his 1882 book.",
+        "Holder": "Chinese Text Project (ctext.org)",
+        "What it holds": "Chinese text with Legge's English line by line, and scans of old editions.",
+        "Quality": "Very good for reading; scans of woodblock editions.",
+        "Rights as published": "Its FAQ: \"Web scraping of this site is in violation of our terms of service.\"",
+        "Link": "[https://ctext.org/book-of-changes](https://ctext.org/book-of-changes)"
+      }
+    },
+    {
+      "id": "src-legge-1882-scan",
+      "name": "Legge, The Yî King (Sacred Books of the East XVI, 1882): scans",
+      "category": "source",
+      "sort_order": 4,
+      "keywords": [
+        "sources",
+        "free",
+        "legge"
+      ],
+      "metadata": {
+        "books": [
+          "legge"
+        ],
+        "holder": "Internet Archive",
+        "rights_class": "free",
+        "rights_label": "Free for any use, as the holder states (public domain, CC0, PD mark, or no restriction)",
+        "url": "https://archive.org/details/wg916",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "Free for any use. Quote from the 1882 or 1899 scans, not from the modern reprint.",
+        "Holder": "Internet Archive",
+        "What it holds": "The 1882 first edition of Legge's translation: text, appendixes (the Ten Wings) and his diagrams. Also a 1899 printing (iching00jame) and an Indian reprint (mlbd.sacredbooksofeas0000fmax.vol.16, a modern Motilal Banarsidass edition: avoid).",
+        "Quality": "Page scans with OCR.",
+        "Rights as published": "Item metadata carries no rights statement (checked Oct 20 2026). Legge died 1897: the 1882 translation is public domain.",
+        "Link": "[https://archive.org/details/wg916](https://archive.org/details/wg916)"
+      }
+    },
+    {
+      "id": "src-legge-sacred-texts",
+      "name": "Legge's I Ching at sacred-texts",
+      "category": "source",
+      "sort_order": 5,
+      "keywords": [
+        "sources",
+        "free",
+        "legge"
+      ],
+      "metadata": {
+        "books": [
+          "legge"
+        ],
+        "holder": "sacred-texts.com",
+        "rights_class": "free",
+        "rights_label": "Free for any use, as the holder states (public domain, CC0, PD mark, or no restriction)",
+        "url": "https://sacred-texts.com/ich/index.htm",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "Legge's words are free; check doubtful words against the 1882 scan.",
+        "Holder": "sacred-texts.com",
+        "What it holds": "Legge's 1882 translation retyped, hexagram by hexagram.",
+        "Quality": "Text only.",
+        "Rights as published": "The underlying translation is public domain; the site's own terms were not re-read for this entry.",
+        "Link": "[https://sacred-texts.com/ich/index.htm](https://sacred-texts.com/ich/index.htm)"
+      }
+    },
+    {
+      "id": "src-wilhelm-1924",
+      "name": "Richard Wilhelm, I Ging: Das Buch der Wandlungen (Jena, 1924)",
+      "category": "source",
+      "sort_order": 6,
+      "keywords": [
+        "sources",
+        "free",
+        "wilhelm"
+      ],
+      "metadata": {
+        "books": [
+          "wilhelm"
+        ],
+        "holder": "Eugen Diederichs (publisher)",
+        "rights_class": "free",
+        "rights_label": "Free for any use, as the holder states (public domain, CC0, PD mark, or no restriction)",
+        "url": "https://de.wikipedia.org/wiki/I_Ging",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "The 1924 German text is free to translate and quote; later German editions' editorial material may not be.",
+        "Holder": "Eugen Diederichs (publisher)",
+        "What it holds": "Wilhelm's German translation, the source of the English Wilhelm/Baynes. No scan was located in this check.",
+        "Quality": "Printed book.",
+        "Rights as published": "No online statement found. Wilhelm died in 1930: the German text has been public domain in the EU since 2001, and in the US since 2020 (published 1924).",
+        "Link": "[https://de.wikipedia.org/wiki/I_Ging](https://de.wikipedia.org/wiki/I_Ging)"
+      }
+    },
+    {
+      "id": "src-wilhelm-baynes-1950",
+      "name": "Wilhelm/Baynes, The I Ching or Book of Changes (Bollingen, 1950)",
+      "category": "source",
+      "sort_order": 7,
+      "keywords": [
+        "sources",
+        "in-copyright",
+        "wilhelm"
+      ],
+      "metadata": {
+        "books": [
+          "wilhelm"
+        ],
+        "holder": "Princeton University Press (Bollingen Series XIX)",
+        "rights_class": "in-copyright",
+        "rights_label": "In copyright: link and cite only",
+        "url": "https://press.princeton.edu/books/hardcover/9780691097503/the-i-ching-or-book-of-changes",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "Princeton holds it. Name and cite it; don't copy its text.",
+        "Holder": "Princeton University Press (Bollingen Series XIX)",
+        "What it holds": "The English translation of Wilhelm by Cary F. Baynes, with Jung's foreword: the best-known I Ching in English.",
+        "Quality": "Printed book.",
+        "Rights as published": "In copyright (Princeton University Press).",
+        "Link": "[https://press.princeton.edu/books/hardcover/9780691097503/the-i-ching-or-book-of-changes](https://press.princeton.edu/books/hardcover/9780691097503/the-i-ching-or-book-of-changes)"
+      }
+    },
+    {
+      "id": "src-philastre-1885",
+      "name": "Philastre, Le Yi: King (Annales du Musée Guimet VIII, 1885)",
+      "category": "source",
+      "sort_order": 8,
+      "keywords": [
+        "sources",
+        "free",
+        "early-translations"
+      ],
+      "metadata": {
+        "books": [
+          "early-translations"
+        ],
+        "holder": "Internet Archive (Princeton Theological Seminary Library)",
+        "rights_class": "free",
+        "rights_label": "Free for any use, as the holder states (public domain, CC0, PD mark, or no restriction)",
+        "url": "https://archive.org/details/leyikingoulivred01phil",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "Free for any use.",
+        "Holder": "Internet Archive (Princeton Theological Seminary Library)",
+        "What it holds": "The first full French translation, with the commentaries.",
+        "Quality": "Page scans.",
+        "Rights as published": "Item metadata carries no rights statement; the 1885 work is public domain.",
+        "Link": "[https://archive.org/details/leyikingoulivred01phil](https://archive.org/details/leyikingoulivred01phil)"
+      }
+    },
+    {
+      "id": "src-harlez-1889",
+      "name": "Charles de Harlez, Le Yih-king (1889)",
+      "category": "source",
+      "sort_order": 9,
+      "keywords": [
+        "sources",
+        "free",
+        "early-translations"
+      ],
+      "metadata": {
+        "books": [
+          "early-translations"
+        ],
+        "holder": "Internet Archive (Princeton Theological Seminary Library)",
+        "rights_class": "free",
+        "rights_label": "Free for any use, as the holder states (public domain, CC0, PD mark, or no restriction)",
+        "url": "https://archive.org/details/yihking00harl",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "Free for any use.",
+        "Holder": "Internet Archive (Princeton Theological Seminary Library)",
+        "What it holds": "De Harlez's French translation and study.",
+        "Quality": "Page scans.",
+        "Rights as published": "Item metadata carries no rights statement; the 1889 work is public domain.",
+        "Link": "[https://archive.org/details/yihking00harl](https://archive.org/details/yihking00harl)"
+      }
+    },
+    {
+      "id": "src-mawangdui",
+      "name": "The Mawangdui silk manuscript (168 BCE)",
+      "category": "source",
+      "sort_order": 10,
+      "keywords": [
+        "sources",
+        "permission",
+        "manuscripts"
+      ],
+      "metadata": {
+        "books": [
+          "manuscripts"
+        ],
+        "holder": "Hunan Museum, Changsha",
+        "rights_class": "permission",
+        "rights_label": "Permission needed to publish or copy in bulk",
+        "url": "https://en.wikipedia.org/wiki/Mawangdui_Silk_Texts",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "Cite and link; reproducing photographs needs the museum's permission.",
+        "Holder": "Hunan Museum, Changsha",
+        "What it holds": "The oldest near-complete copy of the Zhouyi, with a different hexagram order; translated by Edward Shaughnessy (I Ching: The Classic of Changes, 1996).",
+        "Quality": "Museum photographs in publications; no open online set found.",
+        "Rights as published": "No open image licence found; the museum's photographs and Shaughnessy's translation are in copyright.",
+        "Link": "[https://en.wikipedia.org/wiki/Mawangdui_Silk_Texts](https://en.wikipedia.org/wiki/Mawangdui_Silk_Texts)"
+      }
+    },
+    {
+      "id": "src-shanghai-bamboo",
+      "name": "The Shanghai Museum bamboo Zhouyi (Warring States, c. 300 BCE)",
+      "category": "source",
+      "sort_order": 11,
+      "keywords": [
+        "sources",
+        "permission",
+        "manuscripts"
+      ],
+      "metadata": {
+        "books": [
+          "manuscripts"
+        ],
+        "holder": "Shanghai Museum",
+        "rights_class": "permission",
+        "rights_label": "Permission needed to publish or copy in bulk",
+        "url": "https://en.wikipedia.org/wiki/Shanghai_Museum_corpus",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "Cite and link only.",
+        "Holder": "Shanghai Museum",
+        "What it holds": "Bamboo slips with parts of 34 hexagrams, published from 2003.",
+        "Quality": "Published photographs only.",
+        "Rights as published": "No open image licence found.",
+        "Link": "[https://en.wikipedia.org/wiki/Shanghai_Museum_corpus](https://en.wikipedia.org/wiki/Shanghai_Museum_corpus)"
+      }
+    },
+    {
+      "id": "src-modern-translations",
+      "name": "Modern translations: Lynn (1994), Rutt (1996), Minford (2014)",
+      "category": "source",
+      "sort_order": 12,
+      "keywords": [
+        "sources",
+        "in-copyright",
+        "modern-translations"
+      ],
+      "metadata": {
+        "books": [
+          "modern-translations"
+        ],
+        "holder": "Their publishers (Columbia UP; Curzon/Routledge; Viking)",
+        "rights_class": "in-copyright",
+        "rights_label": "In copyright: link and cite only",
+        "url": "https://en.wikipedia.org/wiki/I_Ching#Translations",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "Name and cite; don't copy.",
+        "Holder": "Their publishers (Columbia UP; Curzon/Routledge; Viking)",
+        "What it holds": "Scholarly translations, Lynn's with Wang Bi's commentary, Rutt's of the Zhouyi as a Bronze Age text, Minford's in two readings.",
+        "Quality": "Printed books.",
+        "Rights as published": "In copyright.",
+        "Link": "[https://en.wikipedia.org/wiki/I_Ching#Translations](https://en.wikipedia.org/wiki/I_Ching#Translations)"
+      }
+    },
+    {
+      "id": "src-leibniz-diagram",
+      "name": "The hexagram diagram Bouvet sent Leibniz (1701)",
+      "category": "source",
+      "sort_order": 13,
+      "keywords": [
+        "sources",
+        "free",
+        "pictures"
+      ],
+      "metadata": {
+        "books": [
+          "pictures"
+        ],
+        "holder": "Wikimedia Commons (the sheet is in the Leibniz papers, Hanover)",
+        "rights_class": "free",
+        "rights_label": "Free for any use, as the holder states (public domain, CC0, PD mark, or no restriction)",
+        "url": "https://commons.wikimedia.org/wiki/File:Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg",
+        "checked": "2026-10-20",
+        "image_credit": "Diagram sent by Joachim Bouvet to Leibniz, 1701; Wikimedia Commons, public domain"
+      },
+      "sections": {
+        "Property rights": "The 1701 sheet is free; the scan comes from a 2004 book, which adds no right in a flat copy (US, EU). Credit the Leibniz papers.",
+        "Holder": "Wikimedia Commons (the sheet is in the Leibniz papers, Hanover)",
+        "What it holds": "The Fuxi square-and-circle arrangement with Leibniz's numbers: the picture of the binary reading.",
+        "Quality": "1,313 x 1,262 px, scanned from Perkins, Leibniz and China (2004), p. 117.",
+        "Rights as published": "File page: \"Public domain\".",
+        "Link": "[https://commons.wikimedia.org/wiki/File:Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg](https://commons.wikimedia.org/wiki/File:Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg)"
+      },
+      "image_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Diagram_of_I_Ching_hexagrams_owned_by_Gottfried_Wilhelm_Leibniz,_1701.jpg?width=600"
+    },
+    {
+      "id": "src-iching-book-photo",
+      "name": "The cover photograph of a Chinese I Ching (Commons)",
+      "category": "source",
+      "sort_order": 14,
+      "keywords": [
+        "sources",
+        "open-licence",
+        "pictures"
+      ],
+      "metadata": {
+        "books": [
+          "pictures"
+        ],
+        "holder": "Wikimedia Commons (photographer Cooltoye)",
+        "rights_class": "open-licence",
+        "rights_label": "Open licence with conditions (credit, keep the licence)",
+        "url": "https://commons.wikimedia.org/wiki/File:I-Ching-chinese-book.jpg",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "The photographer licenses it CC BY-SA 3.0: each grammar that shows it should credit Cooltoye and name the licence.",
+        "Holder": "Wikimedia Commons (photographer Cooltoye)",
+        "What it holds": "A small photograph of a printed I Ching, used as the cover of several grammars on this site.",
+        "Quality": "300 x 190 px.",
+        "Rights as published": "File page: \"CC BY-SA 3.0\", \"Own work\", Cooltoye.",
+        "Link": "[https://commons.wikimedia.org/wiki/File:I-Ching-chinese-book.jpg](https://commons.wikimedia.org/wiki/File:I-Ching-chinese-book.jpg)"
+      }
+    },
+    {
+      "id": "src-met-open-access",
+      "name": "The Met's Open Access paintings (Repair I Ching)",
+      "category": "source",
+      "sort_order": 15,
+      "keywords": [
+        "sources",
+        "free",
+        "pictures"
+      ],
+      "metadata": {
+        "books": [
+          "pictures"
+        ],
+        "holder": "The Metropolitan Museum of Art",
+        "rights_class": "free",
+        "rights_label": "Free for any use, as the holder states (public domain, CC0, PD mark, or no restriction)",
+        "url": "https://www.metmuseum.org/about-the-met/policies-and-documents/open-access",
+        "checked": "2026-10-20"
+      },
+      "sections": {
+        "Property rights": "CC0 where the object page shows the Open Access mark: free for any use.",
+        "Holder": "The Metropolitan Museum of Art",
+        "What it holds": "Chinese landscape paintings the Repair I Ching uses as illustrations.",
+        "Quality": "High-resolution downloads.",
+        "Rights as published": "The Met's policy (as widely published; its page refused automated reading on Oct 20): images of public-domain artworks under Creative Commons Zero (CC0).",
+        "Link": "[https://www.metmuseum.org/about-the-met/policies-and-documents/open-access](https://www.metmuseum.org/about-the-met/policies-and-documents/open-access)"
+      }
+    },
+    {
+      "id": "sel-book-chinese-text",
+      "name": "Book: The Chinese text (Zhouyi and the Ten Wings)",
+      "category": "selection",
+      "parts": [
+        "src-gutenberg-25501",
+        "src-wu-ching-1842",
+        "src-zh-wikisource",
+        "src-ctext"
+      ],
+      "sections": {
+        "About": "Where **The Chinese text (Zhouyi and the Ten Wings)** can be read or seen, and what its rights allow."
+      },
+      "metadata": {
+        "slug": "book-chinese-text",
+        "selection_kind": "book"
+      },
+      "sort_order": 16
+    },
+    {
+      "id": "sel-book-legge",
+      "name": "Book: Legge's translation (1882)",
+      "category": "selection",
+      "parts": [
+        "src-ctext",
+        "src-legge-1882-scan",
+        "src-legge-sacred-texts"
+      ],
+      "sections": {
+        "About": "Where **Legge's translation (1882)** can be read or seen, and what its rights allow."
+      },
+      "metadata": {
+        "slug": "book-legge",
+        "selection_kind": "book"
+      },
+      "sort_order": 17
+    },
+    {
+      "id": "sel-book-wilhelm",
+      "name": "Book: Wilhelm (1924) and Wilhelm/Baynes (1950)",
+      "category": "selection",
+      "parts": [
+        "src-wilhelm-1924",
+        "src-wilhelm-baynes-1950"
+      ],
+      "sections": {
+        "About": "Where **Wilhelm (1924) and Wilhelm/Baynes (1950)** can be read or seen, and what its rights allow."
+      },
+      "metadata": {
+        "slug": "book-wilhelm",
+        "selection_kind": "book"
+      },
+      "sort_order": 18
+    },
+    {
+      "id": "sel-book-early-translations",
+      "name": "Book: Other early translations (French, 1885 and 1889)",
+      "category": "selection",
+      "parts": [
+        "src-philastre-1885",
+        "src-harlez-1889"
+      ],
+      "sections": {
+        "About": "Where **Other early translations (French, 1885 and 1889)** can be read or seen, and what its rights allow."
+      },
+      "metadata": {
+        "slug": "book-early-translations",
+        "selection_kind": "book"
+      },
+      "sort_order": 19
+    },
+    {
+      "id": "sel-book-manuscripts",
+      "name": "Book: Excavated manuscripts (Mawangdui, Shanghai Museum)",
+      "category": "selection",
+      "parts": [
+        "src-mawangdui",
+        "src-shanghai-bamboo"
+      ],
+      "sections": {
+        "About": "Where **Excavated manuscripts (Mawangdui, Shanghai Museum)** can be read or seen, and what its rights allow."
+      },
+      "metadata": {
+        "slug": "book-manuscripts",
+        "selection_kind": "book"
+      },
+      "sort_order": 20
+    },
+    {
+      "id": "sel-book-modern-translations",
+      "name": "Book: Modern translations",
+      "category": "selection",
+      "parts": [
+        "src-modern-translations"
+      ],
+      "sections": {
+        "About": "Where **Modern translations** can be read or seen, and what its rights allow."
+      },
+      "metadata": {
+        "slug": "book-modern-translations",
+        "selection_kind": "book"
+      },
+      "sort_order": 21
+    },
+    {
+      "id": "sel-book-pictures",
+      "name": "Book: Pictures used on this site",
+      "category": "selection",
+      "parts": [
+        "src-leibniz-diagram",
+        "src-iching-book-photo",
+        "src-met-open-access"
+      ],
+      "sections": {
+        "About": "Where **Pictures used on this site** can be read or seen, and what its rights allow."
+      },
+      "metadata": {
+        "slug": "book-pictures",
+        "selection_kind": "book"
+      },
+      "sort_order": 22
+    },
+    {
+      "id": "sel-holder-internet-archive",
+      "name": "Holder: Internet Archive",
+      "category": "selection",
+      "parts": [
+        "src-wu-ching-1842",
+        "src-legge-1882-scan",
+        "src-philastre-1885",
+        "src-harlez-1889"
+      ],
+      "sections": {
+        "About": "Every source held or published by **Internet Archive**."
+      },
+      "metadata": {
+        "slug": "holder-internet-archive",
+        "selection_kind": "holder"
+      },
+      "sort_order": 23
+    },
+    {
+      "id": "sel-holder-wikimedia-commons",
+      "name": "Holder: Wikimedia Commons",
+      "category": "selection",
+      "parts": [
+        "src-leibniz-diagram",
+        "src-iching-book-photo"
+      ],
+      "sections": {
+        "About": "Every source held or published by **Wikimedia Commons**."
+      },
+      "metadata": {
+        "slug": "holder-wikimedia-commons",
+        "selection_kind": "holder"
+      },
+      "sort_order": 24
+    },
+    {
+      "id": "sel-rights-free",
+      "name": "Rights: Free for any use, as the holder states (public domain, CC0, PD mark, or no restriction)",
+      "category": "selection",
+      "parts": [
+        "src-gutenberg-25501",
+        "src-wu-ching-1842",
+        "src-legge-1882-scan",
+        "src-legge-sacred-texts",
+        "src-wilhelm-1924",
+        "src-philastre-1885",
+        "src-harlez-1889",
+        "src-leibniz-diagram",
+        "src-met-open-access"
+      ],
+      "sections": {
+        "About": "Sources whose rights, as their holders publish them, come to: **Free for any use, as the holder states (public domain, CC0, PD mark, or no restriction)**."
+      },
+      "metadata": {
+        "slug": "rights-free",
+        "selection_kind": "rights"
+      },
+      "sort_order": 25
+    },
+    {
+      "id": "sel-rights-open-licence",
+      "name": "Rights: Open licence with conditions (credit, keep the licence)",
+      "category": "selection",
+      "parts": [
+        "src-zh-wikisource",
+        "src-iching-book-photo"
+      ],
+      "sections": {
+        "About": "Sources whose rights, as their holders publish them, come to: **Open licence with conditions (credit, keep the licence)**."
+      },
+      "metadata": {
+        "slug": "rights-open-licence",
+        "selection_kind": "rights"
+      },
+      "sort_order": 26
+    },
+    {
+      "id": "sel-rights-permission",
+      "name": "Rights: Permission needed to publish or copy in bulk",
+      "category": "selection",
+      "parts": [
+        "src-ctext",
+        "src-mawangdui",
+        "src-shanghai-bamboo"
+      ],
+      "sections": {
+        "About": "Sources whose rights, as their holders publish them, come to: **Permission needed to publish or copy in bulk**."
+      },
+      "metadata": {
+        "slug": "rights-permission",
+        "selection_kind": "rights"
+      },
+      "sort_order": 27
+    },
+    {
+      "id": "sel-rights-in-copyright",
+      "name": "Rights: In copyright: link and cite only",
+      "category": "selection",
+      "parts": [
+        "src-wilhelm-baynes-1950",
+        "src-modern-translations"
+      ],
+      "sections": {
+        "About": "Sources whose rights, as their holders publish them, come to: **In copyright: link and cite only**."
+      },
+      "metadata": {
+        "slug": "rights-in-copyright",
+        "selection_kind": "rights"
+      },
+      "sort_order": 28
+    }
+  ]
+}
