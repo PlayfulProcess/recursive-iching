@@ -60,16 +60,17 @@
   // [key, label, href] — every content VIEW of this repo's data, in two groups
   // (mirrors recursive-tarot's Views menu: card-level vs collection-level).
   const CARD_VIEWS = [
-    ['cards',    'Cards',       PFX + 'viewers/cards.html'],
+    ['cards',    'Cards',       PFX + 'archive/cards.html'],
     ['explorer', 'Explorer',    PFX + 'viewers/explorer.html'],
     ['lenses',   'Lenses',      PFX + 'viewers/lenses.html'],
-    ['tree',     'Tree',        PFX + 'viewers/tree-viewer.html'],
+    ['tree',     'Tree',        PFX + 'archive/tree-viewer.html'],
     ['source',   'Source Text', PFX + 'viewers/source-text.html'],
   ];
   const COLLECTION_VIEWS = [
     ['timeline',  'Timeline of the books',  PFX + 'viewers/timeline.html'],
     ['genealogy', 'Genealogy of the books', PFX + 'viewers/genealogy-tree.html'],
     ['all',       'All grammars', PFX + 'index.html#all-grammars'],
+    ['archive',   'Archive: the older views, and how to build your own', PFX + 'archive/index.html'],
   ];
   // Site-specific instrument (playbook §3: additions beside the ported set, never
   // a replacement) — the I Ching's own casting tool, analogue of astro's chart
