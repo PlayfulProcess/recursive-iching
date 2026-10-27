@@ -191,10 +191,31 @@
       }
     },
     {
+      "id": "ch-2-by-hand",
+      "name": "Draw it by hand in Cast",
+      "category": "chapter",
+      "sort_order": 3,
+      "keywords": [
+        "course",
+        "casting",
+        "by-hand",
+        "coins",
+        "yarrow"
+      ],
+      "sections": {
+        "Reading": "You threw the coins yourself. Now let the app read what you threw.\n\nOpen [Cast with three coins](https://recursive.eco/process?cast=804ef00c-7dc4-4f52-9f65-3e4afb724aa8), write your question, and tap **Cast Manually**. Choose **By line**, then **Three coins**.\n\nFor each line, starting at the bottom, tap the three coins as they fell: **H** counts 3, **T** counts 2. Beside each line the app writes the sum and the line, for example *H H T · 3 + 3 + 2 = 8 · young yin*, and marks a 6 or a 9 as changing. When all six lines are in, tap **Read**: the hexagram, its changing lines and the relating hexagram.\n\nUsed yarrow stalks? Choose **Yarrow stalks** and tap the pile you set aside at each of the three changes (small: 5, then 4; large: 9, then 8). Already know each line's number? Choose **Line value** and tap 6, 7, 8 or 9. Already know the hexagram? Choose **By hexagram**, pick it, then tap its changing lines.\n\n**Do this:** enter the six lines you threw and check that the app draws the same hexagram you drew on paper.",
+        "Checked and claimed": "The app adds the coins the same way as the chapter before (heads 3, tails 2, so the sum is the line); with yarrow, the stalks left after the three changes (24, 28, 32 or 36) divided by four give the same 6, 7, 8 or 9. A reading entered by hand goes through the same engine as one cast in the app, so it is saved and read the same way."
+      },
+      "metadata": {
+        "chapter": 3,
+        "status": "draft"
+      }
+    },
+    {
       "id": "ch-3",
       "name": "Yarrow stalks",
       "category": "chapter",
-      "sort_order": 3,
+      "sort_order": 4,
       "keywords": [
         "course",
         "casting",
@@ -208,7 +229,7 @@
         "Sources": "Great Commentary, upper part, chapter 9 [@xici_ws]; Legge 1882, Appendix III [@legge1882]; Zhu Xi, Yixue qimeng (1186), via Cottrell [@cottrell_chuhsi]; Cottrell, 'Coins' [@cottrell_coins]; Wikipedia, 'I Ching divination' [@wp_icd]; scripts/casting_odds.py [@odds_script]."
       },
       "metadata": {
-        "chapter": 3,
+        "chapter": 4,
         "status": "draft"
       }
     },
@@ -216,7 +237,7 @@
       "id": "ch-4",
       "name": "Changing lines and the relating hexagram",
       "category": "chapter",
-      "sort_order": 4,
+      "sort_order": 5,
       "keywords": [
         "course",
         "casting",
@@ -230,7 +251,7 @@
         "Sources": "Zhu Xi's rules via Cottrell [@cottrell_chuhsi]; scripts/casting_odds.py [@odds_script]; the Schools of the I Ching course, node 'method-changing-lines'."
       },
       "metadata": {
-        "chapter": 4,
+        "chapter": 5,
         "status": "draft"
       }
     },
@@ -238,7 +259,7 @@
       "id": "ch-5",
       "name": "The I Ching as cards",
       "category": "chapter",
-      "sort_order": 5,
+      "sort_order": 6,
       "keywords": [
         "course",
         "casting",
@@ -252,7 +273,7 @@
         "Sources": "scripts/casting_odds.py [@odds_script]; Wikipedia, 'I Ching divination' [@wp_icd]."
       },
       "metadata": {
-        "chapter": 5,
+        "chapter": 6,
         "status": "draft"
       }
     },
@@ -260,7 +281,7 @@
       "id": "ch-6",
       "name": "Búzios as a weighted deck",
       "category": "chapter",
-      "sort_order": 6,
+      "sort_order": 7,
       "keywords": [
         "course",
         "casting",
@@ -274,7 +295,7 @@
         "Sources": "Wikipedia, 'Cowrie-shell divination' [@wp_cowrie]; William Bascom, Sixteen Cowries (1980) [@bascom1980]; scripts/casting_odds.py [@odds_script]."
       },
       "metadata": {
-        "chapter": 6,
+        "chapter": 7,
         "status": "draft"
       }
     },
@@ -282,7 +303,7 @@
       "id": "ch-7",
       "name": "Ifá as two cards",
       "category": "chapter",
-      "sort_order": 7,
+      "sort_order": 8,
       "keywords": [
         "course",
         "casting",
@@ -296,7 +317,7 @@
         "Sources": "Wikipedia, 'Ifá' [@wp_ifa]; scripts/casting_odds.py [@odds_script]. Further reading, not read for this course: William Bascom, Ifa Divination (1969) [@bascom1969]."
       },
       "metadata": {
-        "chapter": 7,
+        "chapter": 8,
         "status": "draft"
       }
     },
@@ -304,7 +325,7 @@
       "id": "ch-8",
       "name": "If it were a card game",
       "category": "chapter",
-      "sort_order": 8,
+      "sort_order": 9,
       "keywords": [
         "course",
         "casting",
@@ -318,7 +339,7 @@
         "Sources": "scripts/casting_odds.py [@odds_script]."
       },
       "metadata": {
-        "chapter": 8,
+        "chapter": 9,
         "status": "draft"
       }
     },
@@ -326,7 +347,7 @@
       "id": "ch-9",
       "name": "Is it desirable?",
       "category": "chapter",
-      "sort_order": 9,
+      "sort_order": 10,
       "keywords": [
         "course",
         "casting",
@@ -340,7 +361,7 @@
         "Sources": "This course's chapters 2 to 8; scripts/casting_odds.py [@odds_script]."
       },
       "metadata": {
-        "chapter": 9,
+        "chapter": 10,
         "status": "draft"
       }
     }
