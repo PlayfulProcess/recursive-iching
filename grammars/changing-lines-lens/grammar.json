@@ -161,7 +161,7 @@
       "author": "PlayfulProcess",
       "title": "Casting and Chance (a course on this site)",
       "year": 2026,
-      "url": "https://recursive.eco/play?id=42a94c37-3764-438f-b238-43c21ac7510d&pane=continuous",
+      "url": "https://iching.recursive.eco/pages/course-viewer.html?course=casting-and-chance",
       "note": "the odds of each casting method, computed by scripts/casting_odds.py"
     }
   ],
@@ -286,7 +286,7 @@
         "draft"
       ],
       "sections": {
-        "Reading": "By either method each line changes 1 in 4, and the fifth line is no different [@casting]. Which way it changes depends on the method. A 9 in the fifth place, a solid line about to turn broken, comes 1 in 8 with three coins and 3 in 16 with yarrow stalks. Put the other way: when the fifth line is solid, it moves 1 in 4 with coins and 3 in 8 with yarrow, because yarrow tilts toward moving solid lines.\n\nThe plainest case, the fifth line moving from yang and no other line moving, comes in 2.97% of coin casts and 4.45% of yarrow casts. Then Zhu Xi's rule is simple: read the changing line of the first figure [@cottrell_chuhsi]. Over a hundred yarrow readings, a reader might expect this case about four or five times, spread over 32 hexagrams.\n\nThe odds shape what comes up; they leave open what a reader does with it. [Casting and Chance](https://recursive.eco/play?id=42a94c37-3764-438f-b238-43c21ac7510d&pane=continuous) sets out the methods and their odds in full.",
+        "Reading": "By either method each line changes 1 in 4, and the fifth line is no different [@casting]. Which way it changes depends on the method. A 9 in the fifth place, a solid line about to turn broken, comes 1 in 8 with three coins and 3 in 16 with yarrow stalks. Put the other way: when the fifth line is solid, it moves 1 in 4 with coins and 3 in 8 with yarrow, because yarrow tilts toward moving solid lines.\n\nThe plainest case, the fifth line moving from yang and no other line moving, comes in 2.97% of coin casts and 4.45% of yarrow casts. Then Zhu Xi's rule is simple: read the changing line of the first figure [@cottrell_chuhsi]. Over a hundred yarrow readings, a reader might expect this case about four or five times, spread over 32 hexagrams.\n\nThe odds shape what comes up; they leave open what a reader does with it. [Casting and Chance](https://iching.recursive.eco/pages/course-viewer.html?course=casting-and-chance) sets out the methods and their odds in full.",
         "The figures": "| | Coins | Yarrow |\n|---|---|---|\n| The fifth line changes (either way) | 1 in 4 | 1 in 4 |\n| A 9 in the fifth place (solid turning broken) | 1 in 8 | 3 in 16 |\n| A solid fifth line moves | 1 in 4 | 3 in 8 |\n| Only the fifth line moves, from yang | 243/8192 = 2.97% | 729/16384 = 4.45% |",
         "Checked and claimed": "Computed by script with exact fractions, on the same model as Casting and Chance (coins 1/8, 3/8, 3/8, 1/8 for 6, 7, 8, 9; yarrow 1/16, 5/16, 7/16, 3/16) ✔ [@lens_script; @casting]. Zhu Xi's rule for one changing line ○ [@cottrell_chuhsi].",
         "Sources": "Casting and Chance [@casting]; scripts/changing_lines.py [@lens_script]; Zhu Xi's rules [@cottrell_chuhsi]."
